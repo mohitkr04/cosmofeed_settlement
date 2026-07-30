@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payout Check — Cosmofeed</title>
+<style>
+  :root{
+    --bg:#0f1117; --panel:#171a23; --panel2:#1e222e; --border:#2a2f3c;
+    --text:#e6e8ee; --muted:#9aa3b2; --accent:#6c8cff; --accent2:#3a4a8c;
+    --red:#f4776b; --redbg:#3a1f1f; --orange:#f0a35e; --orangebg:#3a2c1a;
+    --yellow:#e8cf6a; --yellowbg:#39331a; --green:#5bd08a; --greenbg:#16321f;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;
+       background:var(--bg);color:var(--text);font-size:14px}
+  header{padding:18px 26px;border-bottom:1px solid var(--border);display:flex;
+         align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+  h1{font-size:18px;margin:0;font-weight:700}
+  .sub{color:var(--muted);font-size:12px;margin-top:3px}
+  .wrap{padding:20px 26px}
+  /* cards */
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:18px}
+  .card{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:14px 16px}
+  .card .n{font-size:24px;font-weight:700}
+  .card .l{color:var(--muted);font-size:12px;margin-top:2px}
+  .card.redn .n{color:var(--red)} .card.orangen .n{color:var(--orange)} .card.bluen .n{color:var(--accent)}
+  /* tabs */
+  .tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+  .tab{padding:9px 16px;border-radius:8px;border:1px solid var(--border);background:var(--panel);
+       color:var(--text);cursor:pointer;font-size:13px;font-weight:600;display:flex;align-items:center;gap:7px}
+  .tab:hover{border-color:var(--accent2)}
+  .tab.active{background:var(--accent);border-color:var(--accent);color:#fff}
+  .tab .badge{background:rgba(255,255,255,.18);padding:1px 8px;border-radius:20px;font-size:11px}
+  .tab.active .badge{background:rgba(0,0,0,.22)}
+  .toolbar{display:flex;gap:10px;align-items:center;margin-bottom:12px;flex-wrap:wrap}
+  input[type=search]{background:var(--panel2);border:1px solid var(--border);color:var(--text);
+       padding:9px 12px;border-radius:8px;width:280px;font-size:13px}
+  button.act{background:var(--panel2);border:1px solid var(--border);color:var(--text);
+       padding:9px 14px;border-radius:8px;cursor:pointer;font-size:13px}
+  button.act:hover{border-color:var(--accent)}
+  .note{color:var(--muted);font-size:12px}
+  .hint{background:var(--panel);border:1px solid var(--border);border-left:3px solid var(--orange);
+        padding:10px 14px;border-radius:8px;margin-bottom:14px;color:var(--muted);font-size:12.5px;display:none}
+  .hint.show{display:block}
+  /* table */
+  .tablewrap{overflow-x:auto;border:1px solid var(--border);border-radius:10px}
+  table{border-collapse:collapse;width:100%;min-width:900px}
+  th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--border);white-space:nowrap}
+  th{background:var(--panel2);color:var(--muted);font-size:11.5px;text-transform:uppercase;
+     letter-spacing:.4px;position:sticky;top:0;cursor:pointer;user-select:none}
+  tr:hover td{background:var(--panel)}
+  td.amt{text-align:right;font-variant-numeric:tabular-nums}
+  .pill{padding:2px 9px;border-radius:20px;font-size:11px;font-weight:700}
+  .pill.self{background:var(--redbg);color:var(--red)}
+  .pill.adult{background:var(--orangebg);color:var(--orange)}
+  .pill.nolink{background:var(--yellowbg);color:var(--yellow)}
+  .pill.ok{background:var(--greenbg);color:var(--green)}
+  .pill.unk{background:#26262e;color:var(--muted)}
+  .u{font-weight:600}
+  .muted{color:var(--muted)}
+  .expand{cursor:pointer;color:var(--accent)}
+  .detail{background:var(--panel2)!important;font-size:12.5px;color:var(--muted);white-space:normal}
+  .detail table{min-width:0;width:auto;margin:4px 0}
+  .detail th,.detail td{border-bottom:1px solid var(--border);padding:5px 10px;white-space:nowrap}
+  .empty{padding:40px;text-align:center;color:var(--muted)}
+  footer{padding:16px 26px;color:var(--muted);font-size:11.5px;border-top:1px solid var(--border)}
+  .spin{display:inline-block;width:12px;height:12px;border:2px solid var(--muted);border-top-color:transparent;
+        border-radius:50%;animation:sp 0.7s linear infinite;vertical-align:-1px}
+  @keyframes sp{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>💸 Payout Check <span class="muted" style="font-weight:400">— Cosmofeed pending settlements</span></h1>
+    <div class="sub" id="genat">loading…</div>
+  </div>
+  <div class="note">Data source: local <code>data.json</code></div>
+</header>
+
+<div class="wrap">
+  <div class="cards" id="cards"></div>
+
+  <div class="tabs" id="tabs">
+    <div class="tab active" data-f="all">All <span class="badge" id="b-all">0</span></div>
+    <div class="tab" data-f="self">🔴 Self-Transaction <span class="badge" id="b-self">0</span></div>
+    <div class="tab" data-f="adult">🟠 Adult <span class="badge" id="b-adult">0</span></div>
+    <div class="tab" data-f="nolink">🟡 No Link <span class="badge" id="b-nolink">0</span></div>
+  </div>
+
+  <div class="hint" id="hint"></div>
+
+  <div class="toolbar">
+    <input type="search" id="search" placeholder="Search username / email / phone…">
+    <button class="act" id="nolinkBtn" style="display:none">Run No-Link live check (visible rows)</button>
+    <span class="note" id="rowcount"></span>
+  </div>
+
+  <div class="tablewrap">
+    <table id="tbl">
+      <thead>
+        <tr>
+          <th data-k="username">Username</th>
+          <th data-k="email">Email</th>
+          <th data-k="phone">Phone</th>
+          <th data-k="category">Category</th>
+          <th data-k="onboardedBy">Onboarded By</th>
+          <th data-k="payoutAmount" class="amt">Payout (₹)</th>
+          <th data-k="flags">Flags</th>
+          <th>Detail</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+</div>
+
+<footer>
+  Self-Transaction = platform's own <code>selfPayment</code> flag (accurate).
+  Adult = keyword heuristic on username/category (candidates for review; needs the Review Products API for precision).
+  No Link = live page-status check (superprofile pages are bot-protected, so some rows may show “unverifiable”).
+</footer>
+
+<script>
+let DATA = null;
+let filter = "all";
+let sortKey = "payoutAmount", sortDir = -1;
+
+const HINTS = {
+  all: "",
+  self: "Creators who paid themselves — a buyer whose email/phone matches the creator's own. Sorted by pending payout.",
+  adult: "Heuristic keyword matches only (username/category). This dataset had no adult keywords. For real detection I need the internal Review Products API.",
+  nolink: "Click “Run No-Link live check” to test each visible creator's public page. Note: superprofile pages are bot-protected, so many may return “unverifiable — open in browser”.",
+};
+
+function inr(n){ return (n||0).toLocaleString('en-IN'); }
+
+function flagsHtml(r){
+  let h = [];
+  if(r.selfTransaction) h.push(`<span class="pill self">SELF ×${r.selfTxnCount} (₹${inr(r.selfTxnMaxAmount)})</span>`);
+  if(r.adultFlag) h.push(`<span class="pill adult">ADULT</span>`);
+  if(r.noLink===true) h.push(`<span class="pill nolink">NO LINK</span>`);
+  else if(r.noLink===false) h.push(`<span class="pill ok">LINK OK</span>`);
+  if(!h.length) h.push(`<span class="pill unk">—</span>`);
+  return h.join(" ");
+}
+
+function matchFilter(r){
+  if(filter==="all") return true;
+  if(filter==="self") return r.selfTransaction;
+  if(filter==="adult") return r.adultFlag;
+  if(filter==="nolink") return r.noLink===true;
+  return true;
+}
+
+function rows(){
+  const q = document.getElementById('search').value.trim().toLowerCase();
+  let list = DATA.creators.filter(matchFilter);
+  if(q) list = list.filter(r =>
+    (r.username||'').toLowerCase().includes(q) ||
+    (r.email||'').toLowerCase().includes(q) ||
+    (r.phone||'').toLowerCase().includes(q));
+  list.sort((a,b)=>{
+    let x=a[sortKey], y=b[sortKey];
+    if(typeof x==='string'||typeof y==='string'){x=(x||'').toString().toLowerCase();y=(y||'').toString().toLowerCase();return x<y?-sortDir:x>y?sortDir:0;}
+    return ((x||0)-(y||0))*sortDir;
+  });
+  return list;
+}
+
+function render(){
+  const tb = document.getElementById('tbody');
+  const list = rows();
+  document.getElementById('rowcount').textContent = `${list.length} rows`;
+  document.getElementById('hint').className = HINTS[filter] ? "hint show" : "hint";
+  document.getElementById('hint').textContent = HINTS[filter] || "";
+  document.getElementById('nolinkBtn').style.display = (filter==="nolink"||filter==="all") ? "inline-block":"none";
+  if(!list.length){ tb.innerHTML = `<tr><td colspan="8" class="empty">No creators match this filter.</td></tr>`; return; }
+  tb.innerHTML = list.map((r,i)=>`
+    <tr>
+      <td class="u">${r.username||''}</td>
+      <td class="muted">${r.email||''}</td>
+      <td class="muted">${r.phone||''}</td>
+      <td class="muted">${r.category||'—'}</td>
+      <td class="muted">${r.onboardedBy&&r.onboardedBy!=='---'?r.onboardedBy:'—'}</td>
+      <td class="amt">${inr(r.payoutAmount)}</td>
+      <td>${flagsHtml(r)}</td>
+      <td>${(r.selfTxnDetails&&r.selfTxnDetails.length)||r.noLinkReason?`<span class="expand" data-i="${i}">view ▾</span>`:'—'}</td>
+    </tr>`).join('');
+  // wire expanders
+  tb.querySelectorAll('.expand').forEach(el=>{
+    el.onclick = ()=>toggleDetail(el, list[+el.dataset.i]);
+  });
+}
+
+function toggleDetail(el, r){
+  const tr = el.closest('tr');
+  if(tr.nextElementSibling && tr.nextElementSibling.classList.contains('detrow')){
+    tr.nextElementSibling.remove(); return;
+  }
+  let inner = "";
+  if(r.selfTxnDetails && r.selfTxnDetails.length){
+    inner += `<b style="color:var(--red)">Self-transactions</b><table><tr><th>Amount</th><th>Buyer Email</th><th>Buyer Phone</th><th>IP</th><th>Date</th></tr>` +
+      r.selfTxnDetails.map(s=>`<tr><td>₹${inr(s.amount)}</td><td>${s.buyerEmail||''}</td><td>${s.buyerPhone||''}</td><td>${s.IP||''}</td><td>${s.date||''}</td></tr>`).join('') + `</table>`;
+  }
+  if(r.noLinkReason) inner += `<div style="margin-top:6px"><b>No-Link check:</b> ${r.noLinkReason}</div>`;
+  if(r.creatorId) inner += `<div class="muted" style="margin-top:6px">creatorId: ${r.creatorId} · page: <a href="https://superprofile.bio/${r.username}" target="_blank" style="color:var(--accent)">superprofile.bio/${r.username}</a></div>`;
+  const det = document.createElement('tr');
+  det.className='detrow';
+  det.innerHTML = `<td colspan="8" class="detail">${inner||'—'}</td>`;
+  tr.after(det);
+}
+
+async function runNoLink(){
+  const btn = document.getElementById('nolinkBtn');
+  const list = rows();
+  btn.disabled = true;
+  let done=0;
+  for(const r of list){
+    btn.innerHTML = `Checking ${done+1}/${list.length} <span class="spin"></span>`;
+    try{
+      const res = await fetch('/api/nolink?username='+encodeURIComponent(r.username||''));
+      const j = await res.json();
+      r.noLink = j.noLink; r.noLinkReason = j.reason;
+    }catch(e){ r.noLinkReason = 'check failed: '+e; }
+    done++;
+    if(done%5===0) render();
+  }
+  DATA.counts.noLink = DATA.creators.filter(x=>x.noLink===true).length;
+  document.getElementById('b-nolink').textContent = DATA.counts.noLink;
+  btn.disabled=false; btn.textContent='Run No-Link live check (visible rows)';
+  render();
+}
+
+function setCards(){
+  const c = DATA.counts;
+  document.getElementById('cards').innerHTML = `
+    <div class="card"><div class="n">${DATA.totalCreators}</div><div class="l">Pending settlements</div></div>
+    <div class="card redn"><div class="n">${c.selfTransaction}</div><div class="l">Self-transactions</div></div>
+    <div class="card orangen"><div class="n">${c.adult}</div><div class="l">Adult (heuristic)</div></div>
+    <div class="card"><div class="n">${c.noLink}</div><div class="l">No-Link (checked)</div></div>
+    <div class="card bluen"><div class="n">₹${inr(DATA.creators.reduce((s,r)=>s+(r.payoutAmount||0),0))}</div><div class="l">Total pending payout</div></div>`;
+  document.getElementById('b-all').textContent = DATA.totalCreators;
+  document.getElementById('b-self').textContent = c.selfTransaction;
+  document.getElementById('b-adult').textContent = c.adult;
+  document.getElementById('b-nolink').textContent = c.noLink;
+}
+
+function init(){
+  document.getElementById('genat').textContent = 'Generated: '+DATA.generatedAt+' · '+DATA.totalCreators+' creators';
+  setCards();
+  render();
+  document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
+    document.querySelector('.tab.active').classList.remove('active');
+    t.classList.add('active'); filter=t.dataset.f; render();
+  });
+  document.getElementById('search').oninput = render;
+  document.getElementById('nolinkBtn').onclick = runNoLink;
+  document.querySelectorAll('th[data-k]').forEach(th=>th.onclick=()=>{
+    const k=th.dataset.k; if(k==='flags') return;
+    if(sortKey===k) sortDir*=-1; else {sortKey=k; sortDir=(k==='payoutAmount')?-1:1;}
+    render();
+  });
+}
+
+function fatal(html){
+  document.body.innerHTML='<div style="max-width:720px;margin:60px auto;padding:28px;'+
+    'background:#171a23;border:1px solid #2a2f3c;border-radius:12px;line-height:1.6">'+html+'</div>';
+}
+if(location.protocol==='file:'){
+  fatal('<h2 style="color:#f4776b;margin-top:0">⚠️ Galat tareeke se khula hai</h2>'+
+    '<p>Aapne file ko seedha double-click karke khola hai (<code>file://</code>). Isse data load nahi hoga.</p>'+
+    '<p><b>Sahi tareeka:</b></p>'+
+    '<ol><li>VS Code ke terminal mein: <code style="background:#0f1117;padding:2px 8px;border-radius:5px">python3 server.py</code></li>'+
+    '<li>Browser mein kholiye: <a href="http://localhost:8000" style="color:#6c8cff">http://localhost:8000</a></li></ol>');
+} else {
+  fetch('/api/data').then(r=>r.json()).then(d=>{
+    if(d.error){ fatal('<h2 style="color:#f4776b">Data missing</h2><p>'+d.error+'</p>'); return; }
+    DATA=d; init();
+  }).catch(e=>{
+    fatal('<h2 style="color:#f4776b;margin-top:0">Server nahi mila</h2>'+
+      '<p>Dashboard khula hai lekin server tak nahi pahunch pa raha (<code>'+e+'</code>).</p>'+
+      '<p><b>Check karein:</b> VS Code terminal mein <code style="background:#0f1117;padding:2px 8px;border-radius:5px">python3 server.py</code> chal raha hai? '+
+      'Aur browser mein URL <code>http://localhost:8000</code> hai?</p>');
+  });
+}
+</script>
+</body>
+</html>
