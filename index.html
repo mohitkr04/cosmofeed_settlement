@@ -112,10 +112,7 @@
       <thead>
         <tr>
           <th data-k="username">Username</th>
-          <th data-k="email">Email</th>
-          <th data-k="phone">Phone</th>
-          <th data-k="category">Category</th>
-          <th data-k="onboardedBy">Onboarded By</th>
+          <th data-k="creatorId">Creator ID</th>
           <th data-k="payoutAmount" class="amt">Payout (₹)</th>
           <th data-k="selfTxnMaxAmount" class="amt">Self-Txn Max (₹)</th>
           <th data-k="latestSelfTxnTimestamp">Latest Self-Txn Date</th>
@@ -131,7 +128,7 @@
 <footer>
   Self-Transaction = platform's own <code>selfPayment</code> flag (accurate).
   Adult = keyword heuristic on username/category (candidates for review; needs the Review Products API for precision).
-  No Link = live page-status check (superprofile pages are bot-protected, so some rows may show “unverifiable”).
+  No Link = live page-status check (superprofile pages are bot-protected, so many may return “unverifiable”).
 </footer>
 
 <script>
@@ -139,6 +136,7 @@ let DATA = null;
 let filter = "all";
 let userExplicitSortKey = null;
 let sortDir = -1;
+const expandedRows = new Set();
 
 const HINTS = {
   all: "",
@@ -184,6 +182,7 @@ function rows(){
   if(ob) list = list.filter(r => (r.onboardedBy || '') === ob);
   if(q) list = list.filter(r =>
     (r.username||'').toLowerCase().includes(q) ||
+    (r.creatorId||'').toLowerCase().includes(q) ||
     (r.email||'').toLowerCase().includes(q) ||
     (r.phone||'').toLowerCase().includes(q) ||
     (r.category||'').toLowerCase().includes(q) ||
@@ -204,8 +203,8 @@ function rows(){
 
     // Default Priority Sort: Time/Date > Self Txn Amount > Payout Amount
     // 1st Priority: Time / Date (latestSelfTxnTimestamp)
-    const timeA = Number(a.latestSelfTxnTimestamp) || 0;
-    const timeB = Number(b.latestSelfTxnTimestamp) || 0;
+    const timeA = a.selfTransaction ? (Number(a.latestSelfTxnTimestamp) || 0) : 0;
+    const timeB = b.selfTransaction ? (Number(b.latestSelfTxnTimestamp) || 0) : 0;
     if (timeA !== timeB) return timeB - timeA;
 
     // 2nd Priority: Flagged Self-Transacting Amount (selfTxnMaxAmount)
@@ -224,11 +223,12 @@ function rows(){
 function exportCSV(){
   const list = rows();
   if(!list.length){ alert("No rows to export."); return; }
-  const headers = ["Username", "Email", "Phone", "Category", "Onboarded By", "Payout Amount (INR)", "Self Txn Max Amount (INR)", "Latest Self Txn Date", "Self Transaction", "Self Txn Count", "Adult Flag", "Adult Reason", "No Link Status", "No Link Reason"];
+  const headers = ["Username", "Creator ID", "Email", "Phone", "Category", "Onboarded By", "Payout Amount (INR)", "Self Txn Max Amount (INR)", "Latest Self Txn Date", "Self Transaction", "Self Txn Count", "Adult Flag", "Adult Reason", "No Link Status", "No Link Reason"];
   const csvRows = [headers.map(h => `"${h}"`).join(",")];
   for(const r of list){
     const row = [
       r.username || '',
+      r.creatorId || '',
       r.email || '',
       r.phone || '',
       r.category || '',
@@ -253,6 +253,35 @@ function exportCSV(){
   a.click();
 }
 
+function buildDetailHtml(r){
+  let inner = "";
+  inner += `<div style="display:flex;gap:20px;flex-wrap:wrap;margin-bottom:8px;font-size:13px;color:var(--text);background:var(--panel);padding:10px 14px;border-radius:6px;border:1px solid var(--border)">`;
+  inner += `<div><b>Email:</b> ${r.email || '—'}</div>`;
+  inner += `<div><b>Phone:</b> ${r.phone || '—'}</div>`;
+  inner += `<div><b>Category:</b> ${r.category || '—'}</div>`;
+  if (r.onboardedBy && r.onboardedBy !== '---') inner += `<div><b>Onboarded By:</b> ${r.onboardedBy}</div>`;
+  if (r.creatorId) inner += `<div><b>Creator ID:</b> <code>${r.creatorId}</code></div>`;
+  if (r.username) inner += `<div><b>Storefront:</b> <a href="https://superprofile.bio/${r.username}" target="_blank" style="color:var(--accent)">superprofile.bio/${r.username}</a></div>`;
+  inner += `</div>`;
+
+  if(r.selfTxnDetails && r.selfTxnDetails.length){
+    inner += `<b style="color:var(--red)">Self-transactions (${r.selfTxnDetails.length})</b><table><tr><th>Amount</th><th>Buyer Email</th><th>Buyer Phone</th><th>IP</th><th>Date</th></tr>` +
+      r.selfTxnDetails.map(s=>`<tr><td>₹${inr(s.amount)}</td><td>${s.buyerEmail||''}</td><td>${s.buyerPhone||''}</td><td>${s.IP||''}</td><td>${s.date||''}</td></tr>`).join('') + `</table>`;
+  }
+  if(r.noLinkReason) inner += `<div style="margin-top:6px"><b>No-Link check:</b> ${r.noLinkReason}</div>`;
+  return inner || '—';
+}
+
+function toggleDetail(el, r){
+  const key = r.settlementId || r.username;
+  if(expandedRows.has(key)){
+    expandedRows.delete(key);
+  } else {
+    expandedRows.add(key);
+  }
+  render();
+}
+
 function render(){
   const tb = document.getElementById('tbody');
   const list = rows();
@@ -260,42 +289,35 @@ function render(){
   document.getElementById('hint').className = HINTS[filter] ? "hint show" : "hint";
   document.getElementById('hint').textContent = HINTS[filter] || "";
   document.getElementById('nolinkBtn').style.display = (filter==="nolink"||filter==="all") ? "inline-block":"none";
-  if(!list.length){ tb.innerHTML = `<tr><td colspan="10" class="empty">No creators match this filter.</td></tr>`; return; }
-  tb.innerHTML = list.map((r,i)=>`
-    <tr>
-      <td class="u">${r.username||''}</td>
-      <td class="muted">${r.email||''}</td>
-      <td class="muted">${r.phone||''}</td>
-      <td class="muted">${r.category||'—'}</td>
-      <td class="muted">${r.onboardedBy&&r.onboardedBy!=='---'?r.onboardedBy:'—'}</td>
-      <td class="amt">${inr(r.payoutAmount)}</td>
-      <td class="amt">${r.selfTransaction ? `<b style="color:var(--red)">₹${inr(r.selfTxnMaxAmount)}</b>` : '—'}</td>
-      <td class="muted">${r.latestSelfTxnDate ? `<b style="color:var(--orange)">${r.latestSelfTxnDate}</b>` : '—'}</td>
-      <td>${flagsHtml(r)}</td>
-      <td>${(r.selfTxnDetails&&r.selfTxnDetails.length)||r.noLinkReason?`<span class="expand" data-i="${i}">view ▾</span>`:'—'}</td>
-    </tr>`).join('');
+  if(!list.length){ tb.innerHTML = `<tr><td colspan="7" class="empty">No creators match this filter.</td></tr>`; return; }
+
+  let html = "";
+  list.forEach((r, i) => {
+    const key = r.settlementId || r.username;
+    const isExpanded = expandedRows.has(key);
+    
+    html += `
+      <tr>
+        <td class="u">${r.username||''}</td>
+        <td class="muted"><code>${r.creatorId||'—'}</code></td>
+        <td class="amt">${inr(r.payoutAmount)}</td>
+        <td class="amt">${r.selfTransaction ? `<b style="color:var(--red)">₹${inr(r.selfTxnMaxAmount)}</b>` : '—'}</td>
+        <td class="muted">${r.latestSelfTxnDate ? `<b style="color:var(--orange)">${r.latestSelfTxnDate}</b>` : '—'}</td>
+        <td>${flagsHtml(r)}</td>
+        <td><span class="expand" data-i="${i}">${isExpanded ? 'view ▴' : 'view ▾'}</span></td>
+      </tr>`;
+      
+    if (isExpanded) {
+      html += `<tr class="detrow"><td colspan="7" class="detail">${buildDetailHtml(r)}</td></tr>`;
+    }
+  });
+  
+  tb.innerHTML = html;
+  
   // wire expanders
   tb.querySelectorAll('.expand').forEach(el=>{
     el.onclick = ()=>toggleDetail(el, list[+el.dataset.i]);
   });
-}
-
-function toggleDetail(el, r){
-  const tr = el.closest('tr');
-  if(tr.nextElementSibling && tr.nextElementSibling.classList.contains('detrow')){
-    tr.nextElementSibling.remove(); return;
-  }
-  let inner = "";
-  if(r.selfTxnDetails && r.selfTxnDetails.length){
-    inner += `<b style="color:var(--red)">Self-transactions</b><table><tr><th>Amount</th><th>Buyer Email</th><th>Buyer Phone</th><th>IP</th><th>Date</th></tr>` +
-      r.selfTxnDetails.map(s=>`<tr><td>₹${inr(s.amount)}</td><td>${s.buyerEmail||''}</td><td>${s.buyerPhone||''}</td><td>${s.IP||''}</td><td>${s.date||''}</td></tr>`).join('') + `</table>`;
-  }
-  if(r.noLinkReason) inner += `<div style="margin-top:6px"><b>No-Link check:</b> ${r.noLinkReason}</div>`;
-  if(r.creatorId) inner += `<div class="muted" style="margin-top:6px">creatorId: ${r.creatorId} · page: <a href="https://superprofile.bio/${r.username}" target="_blank" style="color:var(--accent)">superprofile.bio/${r.username}</a></div>`;
-  const det = document.createElement('tr');
-  det.className='detrow';
-  det.innerHTML = `<td colspan="10" class="detail">${inner||'—'}</td>`;
-  tr.after(det);
 }
 
 async function runNoLink(){
