@@ -188,9 +188,16 @@ def main():
             if done % 100 == 0:
                 print(f"  {done}/{len(rows)}", flush=True)
 
+    def get_day_key(c):
+        ts = to_float(c.get("latestSelfTxnTimestamp"))
+        if not ts: return 0
+        dt = datetime.datetime.fromtimestamp(ts, tz=datetime.timezone.utc)
+        return dt.year * 10000 + dt.month * 100 + dt.day
+
     out.sort(key=lambda r: (
-        -to_float(r.get("latestSelfTxnTimestamp")),
+        -get_day_key(r),
         -to_float(r.get("selfTxnMaxAmount") if r.get("selfTransaction") else 0),
+        -to_float(r.get("latestSelfTxnTimestamp")),
         -to_float(r.get("payoutAmount"))
     ))
     data = {

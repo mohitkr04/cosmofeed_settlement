@@ -99,6 +99,14 @@
       <option value="7d">📅 Last 7 Days</option>
       <option value="30d">🗓️ Last 30 Days</option>
     </select>
+    <select id="selfAmountFilter" class="act" style="background:var(--panel2);color:var(--text);border:1px solid var(--border);padding:9px 12px;border-radius:8px;font-size:13px">
+      <option value="">All Self-Txn Amounts</option>
+      <option value="10000">₹10,000+ Recent Self-Txn</option>
+      <option value="5000">₹5,000+ Recent Self-Txn</option>
+      <option value="1000">₹1,000+ Recent Self-Txn</option>
+      <option value="500">₹500+ Recent Self-Txn</option>
+      <option value="100">₹100+ Recent Self-Txn</option>
+    </select>
     <select id="onboardFilter" class="act" style="background:var(--panel2);color:var(--text);border:1px solid var(--border);padding:9px 12px;border-radius:8px;font-size:13px">
       <option value="">All Onboarders</option>
     </select>
@@ -114,7 +122,6 @@
           <th data-k="username">Username</th>
           <th data-k="creatorId">Creator ID</th>
           <th data-k="payoutAmount" class="amt">Payout (₹)</th>
-          <th data-k="selfTxnMaxAmount" class="amt">Self-Txn Max (₹)</th>
           <th data-k="latestSelfTxnTimestamp">Latest Self-Txn Date</th>
           <th data-k="flags">Flags</th>
           <th>Detail</th>
@@ -140,7 +147,7 @@ const expandedRows = new Set();
 
 const HINTS = {
   all: "",
-  self: "Priority Order: 1. Latest Time/Date (Newest First), 2. Flagged Self-Txn Max Amount, 3. Payout Amount.",
+  self: "Priority Order: Per Date → Self-Txn Amount (Higher to Lower) → Recent Time → Payout Amount.",
   adult: "Heuristic keyword matches only (username/category). Candidates for human review.",
   nolink: "Click “Run No-Link live check” to test each visible creator's public page.",
 };
@@ -164,7 +171,6 @@ function matchFilter(r){
 
   const tf = document.getElementById('timeframeFilter') ? document.getElementById('timeframeFilter').value : '';
   if(tf){
-    // Determine cutoff from the latest timestamp in the dataset or current time
     const maxTs = Math.max(...DATA.creators.map(c=>c.latestSelfTxnTimestamp||0), 0);
     const ts = r.latestSelfTxnTimestamp || 0;
     if(!ts) return false;
@@ -172,7 +178,20 @@ function matchFilter(r){
     if(tf === "7d" && (maxTs - ts > 7 * 86400)) return false;
     if(tf === "30d" && (maxTs - ts > 30 * 86400)) return false;
   }
+
+  const minSelfAmt = document.getElementById('selfAmountFilter') ? Number(document.getElementById('selfAmountFilter').value) : 0;
+  if(minSelfAmt > 0){
+    if(!r.selfTransaction || (Number(r.selfTxnMaxAmount)||0) < minSelfAmt) return false;
+  }
+
   return true;
+}
+
+function getDayKey(r) {
+  const ts = r.selfTransaction ? (Number(r.latestSelfTxnTimestamp) || 0) : 0;
+  if (!ts) return 0;
+  const d = new Date(ts * 1000);
+  return d.getFullYear() * 10000 + (d.getMonth() + 1) * 100 + d.getDate();
 }
 
 function rows(){
@@ -188,7 +207,7 @@ function rows(){
     (r.category||'').toLowerCase().includes(q) ||
     (r.onboardedBy||'').toLowerCase().includes(q) ||
     (r.latestSelfTxnDate||'').toLowerCase().includes(q));
-  
+
   list.sort((a,b)=>{
     if (userExplicitSortKey) {
       let x=a[userExplicitSortKey], y=b[userExplicitSortKey];
@@ -201,18 +220,19 @@ function rows(){
       return ((Number(x)||0)-(Number(y)||0))*sortDir;
     }
 
-    // Default Priority Sort: Time/Date > Self Txn Amount > Payout Amount
-    // 1st Priority: Time / Date (latestSelfTxnTimestamp)
-    const timeA = a.selfTransaction ? (Number(a.latestSelfTxnTimestamp) || 0) : 0;
-    const timeB = b.selfTransaction ? (Number(b.latestSelfTxnTimestamp) || 0) : 0;
-    if (timeA !== timeB) return timeB - timeA;
+    // Default Priority Sort: Per Date > Flagged Self-Txn Amount (High to Low) > Time > Payout Amount
+    const dayA = getDayKey(a);
+    const dayB = getDayKey(b);
+    if (dayA !== dayB) return dayB - dayA;
 
-    // 2nd Priority: Flagged Self-Transacting Amount (selfTxnMaxAmount)
     const selfAmtA = a.selfTransaction ? (Number(a.selfTxnMaxAmount) || 0) : 0;
     const selfAmtB = b.selfTransaction ? (Number(b.selfTxnMaxAmount) || 0) : 0;
     if (selfAmtA !== selfAmtB) return selfAmtB - selfAmtA;
 
-    // 3rd Priority: Payout Amount (payoutAmount)
+    const timeA = Number(a.latestSelfTxnTimestamp) || 0;
+    const timeB = Number(b.latestSelfTxnTimestamp) || 0;
+    if (timeA !== timeB) return timeB - timeA;
+
     const payoutA = Number(a.payoutAmount) || 0;
     const payoutB = Number(b.payoutAmount) || 0;
     return payoutB - payoutA;
@@ -265,8 +285,11 @@ function buildDetailHtml(r){
   inner += `</div>`;
 
   if(r.selfTxnDetails && r.selfTxnDetails.length){
-    inner += `<b style="color:var(--red)">Self-transactions (${r.selfTxnDetails.length})</b><table><tr><th>Amount</th><th>Buyer Email</th><th>Buyer Phone</th><th>IP</th><th>Date</th></tr>` +
-      r.selfTxnDetails.map(s=>`<tr><td>₹${inr(s.amount)}</td><td>${s.buyerEmail||''}</td><td>${s.buyerPhone||''}</td><td>${s.IP||''}</td><td>${s.date||''}</td></tr>`).join('') + `</table>`;
+    const sortedDetails = [...r.selfTxnDetails].sort((a, b) => (b.timestamp || 0) - (a.timestamp || 0));
+    inner += `<div style="margin-top:10px"><b style="color:var(--red)">Self-transactions Details (${sortedDetails.length} total, in date sequence):</b>` +
+      `<table style="margin-top:6px"><thead><tr><th>Date & Time</th><th>Amount</th><th>Buyer Email</th><th>Buyer Phone</th><th>IP Address</th></tr></thead><tbody>` +
+      sortedDetails.map(s=>`<tr><td style="color:var(--orange);font-weight:600">${s.date||'—'}</td><td>₹${inr(s.amount)}</td><td>${s.buyerEmail||'—'}</td><td>${s.buyerPhone||'—'}</td><td>${s.IP||'—'}</td></tr>`).join('') +
+      `</tbody></table></div>`;
   }
   if(r.noLinkReason) inner += `<div style="margin-top:6px"><b>No-Link check:</b> ${r.noLinkReason}</div>`;
   return inner || '—';
@@ -289,7 +312,7 @@ function render(){
   document.getElementById('hint').className = HINTS[filter] ? "hint show" : "hint";
   document.getElementById('hint').textContent = HINTS[filter] || "";
   document.getElementById('nolinkBtn').style.display = (filter==="nolink"||filter==="all") ? "inline-block":"none";
-  if(!list.length){ tb.innerHTML = `<tr><td colspan="7" class="empty">No creators match this filter.</td></tr>`; return; }
+  if(!list.length){ tb.innerHTML = `<tr><td colspan="6" class="empty">No creators match this filter.</td></tr>`; return; }
 
   let html = "";
   list.forEach((r, i) => {
@@ -301,14 +324,13 @@ function render(){
         <td class="u">${r.username||''}</td>
         <td class="muted"><code>${r.creatorId||'—'}</code></td>
         <td class="amt">${inr(r.payoutAmount)}</td>
-        <td class="amt">${r.selfTransaction ? `<b style="color:var(--red)">₹${inr(r.selfTxnMaxAmount)}</b>` : '—'}</td>
         <td class="muted">${r.latestSelfTxnDate ? `<b style="color:var(--orange)">${r.latestSelfTxnDate}</b>` : '—'}</td>
         <td>${flagsHtml(r)}</td>
         <td><span class="expand" data-i="${i}">${isExpanded ? 'view ▴' : 'view ▾'}</span></td>
       </tr>`;
       
     if (isExpanded) {
-      html += `<tr class="detrow"><td colspan="7" class="detail">${buildDetailHtml(r)}</td></tr>`;
+      html += `<tr class="detrow"><td colspan="6" class="detail">${buildDetailHtml(r)}</td></tr>`;
     }
   });
   
@@ -370,6 +392,7 @@ function init(){
   sel.onchange = render;
 
   document.getElementById('timeframeFilter').onchange = render;
+  document.getElementById('selfAmountFilter').onchange = render;
   document.getElementById('exportBtn').onclick = exportCSV;
 
   render();
