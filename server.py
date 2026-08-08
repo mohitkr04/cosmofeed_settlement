@@ -43,8 +43,12 @@ def live_nolink_check(username):
     try:
         req = urlreq.Request(url, headers=headers)
         with urlreq.urlopen(req, timeout=15) as resp:
+            final_url = resp.geturl().rstrip('/')
             body = resp.read(60000).decode("utf-8", "ignore").lower()
             status = resp.getcode()
+            if final_url in ("https://superprofile.bio", "http://superprofile.bio") or username.lower() not in final_url.lower():
+                return {"reachable": True, "status": status, "noLink": True,
+                        "reason": "page redirected to root (user page not found)"}
     except HTTPError as e:
         if e.code == 404:
             return {"reachable": True, "status": 404, "noLink": True,
@@ -79,6 +83,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         payload = json.dumps(obj).encode("utf-8")
         self.send_response(code)
         self.send_header("Content-Type", "application/json")
+        self.send_header("Access-Control-Allow-Origin", "*")
         self.send_header("Content-Length", str(len(payload)))
         self.end_headers()
         self.wfile.write(payload)

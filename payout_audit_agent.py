@@ -44,6 +44,8 @@ HEADERS_BASE = {
 }
 
 
+import http.client
+
 def api_get(path, token, retries=3, timeout=30):
     """GET a dashboard API path (starting with /), return parsed JSON or None."""
     url = API_BASE + path
@@ -61,9 +63,9 @@ def api_get(path, token, retries=3, timeout=30):
                 time.sleep(3.0 * (attempt + 1))
                 continue
             break
-        except (URLError, TimeoutError, json.JSONDecodeError) as e:
+        except (URLError, TimeoutError, OSError, http.client.HTTPException, json.JSONDecodeError) as e:
             last_err = str(e)
-            time.sleep(1.0 * (attempt + 1))
+            time.sleep(1.5 * (attempt + 1))
     return {"__error__": last_err}
 
 
@@ -78,7 +80,7 @@ def fetch_all_settlements(token, request_type="pending", verbose=True):
     data = (first or {}).get("data", {})
     total_pages = data.get("totalPages", 1)
     total = data.get("totalSettlements", 0)
-    rows.extend(data.get("settelements", []))
+    rows.extend(data.get("settelements") or data.get("settlements") or [])
     if verbose:
         print(f"[step1] total settlements={total} pages={total_pages}", flush=True)
     for page in range(2, total_pages + 1):
@@ -86,7 +88,7 @@ def fetch_all_settlements(token, request_type="pending", verbose=True):
             f"/IDgetSettlements?requestType={request_type}&page={page}&sortField=&onlyFlagged=0"
             f"&AmountGreaterThan=0&AmountLessThan=0&filter=&paymentVerified=", token)
         pdata = (d or {}).get("data", {})
-        rows.extend(pdata.get("settelements", []))
+        rows.extend(pdata.get("settelements") or pdata.get("settlements") or [])
         if verbose and page % 10 == 0:
             print(f"[step1] fetched page {page}/{total_pages} ({len(rows)} rows)", flush=True)
         time.sleep(0.05)
@@ -105,8 +107,8 @@ def resolve_settlement_details(settlement_id, token):
     return {
         "creatorId": user.get("creatorId"),
         "username": user.get("username"),
-        "email": user.get("Email"),
-        "phone": user.get("PhoneNumber"),
+        "email": user.get("Email") or user.get("email"),
+        "phone": user.get("PhoneNumber") or user.get("phone") or user.get("phoneNumber"),
         "flagLevel": user.get("flagLevel"),
         "categoryOfBusiness": user.get("categoryOfBusiness"),
         "subCategoryOfBusiness": user.get("subCategoryOfBusiness"),
@@ -219,7 +221,17 @@ def audit_one(row, token):
     return result
 
 
+def to_float(v):
+    try:
+        return float(v) if v is not None else 0.0
+    except (ValueError, TypeError):
+        return 0.0
+
+
 def main():
+    if hasattr(sys.stdout, 'reconfigure'):
+        sys.stdout.reconfigure(encoding='utf-8')
+
     ap = argparse.ArgumentParser()
     ap.add_argument("--token", default=os.environ.get("COSMOFEED_TOKEN", DEFAULT_TOKEN))
     ap.add_argument("--out", default=os.path.dirname(os.path.abspath(__file__)))
@@ -251,13 +263,6 @@ def main():
     self_txn = [r for r in results if r.get("selfTransactions")]
     flagged = [r for r in results if r.get("contentFlags")]
     errors = [r for r in results if r.get("error")]
-
-def to_float(v):
-    try:
-        return float(v) if v is not None else 0.0
-    except (ValueError, TypeError):
-        return 0.0
-
 
     report = {
         "date": date_label,

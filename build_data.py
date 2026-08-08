@@ -57,10 +57,21 @@ def adult_check(username, display, category, subcategory, product_titles=None):
     hay = " ".join([str(x or "").lower() for x in (username, display, category, subcategory, product_str)])
     hits = []
     for k in ADULT_KEYWORDS:
-        pat = r"(?<![a-z])" + re.escape(k) + r"(?![a-z])"
+        pat = r"(?<![a-z0-9])" + re.escape(k) + r"(?![a-z0-9])"
         if re.search(pat, hay):
             hits.append(k)
     return (len(hits) > 0, ", ".join(hits))
+
+
+def parse_txn_date(s):
+    if not s:
+        return 0.0
+    for fmt in ("%d %b, %Y; %I:%M %p", "%Y-%m-%dT%H:%M:%S.%fZ", "%Y-%m-%dT%H:%M:%SZ", "%Y-%m-%d %H:%M:%S", "%Y-%m-%d"):
+        try:
+            return datetime.datetime.strptime(s.strip(), fmt).timestamp()
+        except Exception:
+            pass
+    return 0.0
 
 
 def enrich_one(row, token):
@@ -70,15 +81,16 @@ def enrich_one(row, token):
     base = {
         "settlementId": sid,
         "username": row.get("username"),
-        "email": row.get("Email"),
-        "phone": row.get("PhoneNumber"),
+        "email": row.get("Email") or row.get("email"),
+        "phone": row.get("PhoneNumber") or row.get("phone"),
         "payoutAmount": to_float(row.get("payoutAmount")),
         "onboardedBy": row.get("onboardedBy"),
         "status": row.get("status"),
         "creatorId": None, "category": None, "subCategory": None, "flagLevel": None,
         "displayName": None,
         "selfTransaction": False, "selfTxnCount": 0, "selfTxnMaxAmount": 0.0,
-        "selfTxnDetails": [], "buyersChecked": 0,
+        "selfTxnDetails": [], "latestSelfTxnDate": "", "latestSelfTxnTimestamp": 0.0,
+        "buyersChecked": 0,
         "productTitles": [], "productsCount": 0,
         "adultFlag": False, "adultReason": "",
         "noLink": None, "noLinkReason": "",
@@ -90,6 +102,10 @@ def enrich_one(row, token):
     cid = detail.get("creatorId")
     base.update({
         "creatorId": cid,
+        "username": base["username"] or detail.get("username"),
+        "email": base["email"] or detail.get("email"),
+        "phone": base["phone"] or detail.get("phone"),
+        "payoutAmount": base["payoutAmount"] or to_float(detail.get("totalMemoAmount")),
         "category": detail.get("categoryOfBusiness"),
         "subCategory": detail.get("subCategoryOfBusiness"),
         "flagLevel": detail.get("flagLevel"),
@@ -103,13 +119,33 @@ def enrich_one(row, token):
             base["selfTransaction"] = len(selfs) > 0
             base["selfTxnCount"] = len(selfs)
             base["selfTxnMaxAmount"] = max((to_float(s.get("amountPaid") or s.get("amount")) for s in selfs), default=0.0)
-            base["selfTxnDetails"] = [{
-                "amount": to_float(s.get("amountPaid") or s.get("amount")), "buyerEmail": s.get("buyerEmail"),
-                "buyerPhone": s.get("buyerPhoneNumber"), "IP": s.get("IP"),
-                "date": s.get("createdAt"), "productId": s.get("purchasedProductId"),
-            } for s in selfs]
+            details = []
+            for s in selfs:
+                d_str = s.get("createdAt") or ""
+                ts = parse_txn_date(d_str)
+                details.append({
+                    "amount": to_float(s.get("amountPaid") or s.get("amount")),
+                    "buyerEmail": s.get("buyerEmail"),
+                    "buyerPhone": s.get("buyerPhoneNumber"),
+                    "IP": s.get("IP"),
+                    "date": d_str,
+                    "timestamp": ts,
+                    "productId": s.get("purchasedProductId"),
+                })
+            details.sort(key=lambda item: -item["timestamp"])
+            base["selfTxnDetails"] = details
+            if details:
+                base["latestSelfTxnDate"] = details[0]["date"]
+                base["latestSelfTxnTimestamp"] = details[0]["timestamp"]
         else:
             base["error"] = "kundli:" + st["__error__"]
+
+        # Fetch product titles for adult/risk analysis
+        prods = agent.check_creator_products(cid, token)
+        if "__error__" not in prods:
+            plist = prods.get("products", [])
+            base["productsCount"] = len(plist)
+            base["productTitles"] = [p.get("title") or p.get("name") for p in plist if isinstance(p, dict) and (p.get("title") or p.get("name"))]
     else:
         base["error"] = "no_creator_id"
 
@@ -152,7 +188,11 @@ def main():
             if done % 100 == 0:
                 print(f"  {done}/{len(rows)}", flush=True)
 
-    out.sort(key=lambda r: -to_float(r.get("payoutAmount")))
+    out.sort(key=lambda r: (
+        -to_float(r.get("latestSelfTxnTimestamp")),
+        -to_float(r.get("selfTxnMaxAmount") if r.get("selfTransaction") else 0),
+        -to_float(r.get("payoutAmount"))
+    ))
     data = {
         "generatedAt": datetime.datetime.now().strftime("%Y-%m-%d %H:%M"),
         "totalCreators": len(out),

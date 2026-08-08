@@ -93,6 +93,16 @@
 
   <div class="toolbar">
     <input type="search" id="search" placeholder="Search username / email / phone…">
+    <select id="timeframeFilter" class="act" style="background:var(--panel2);color:var(--text);border:1px solid var(--border);padding:9px 12px;border-radius:8px;font-size:13px">
+      <option value="">All Time</option>
+      <option value="24h">⏱️ Last 24 Hours</option>
+      <option value="7d">📅 Last 7 Days</option>
+      <option value="30d">🗓️ Last 30 Days</option>
+    </select>
+    <select id="onboardFilter" class="act" style="background:var(--panel2);color:var(--text);border:1px solid var(--border);padding:9px 12px;border-radius:8px;font-size:13px">
+      <option value="">All Onboarders</option>
+    </select>
+    <button class="act" id="exportBtn">📥 Export CSV</button>
     <button class="act" id="nolinkBtn" style="display:none">Run No-Link live check (visible rows)</button>
     <span class="note" id="rowcount"></span>
   </div>
@@ -107,6 +117,8 @@
           <th data-k="category">Category</th>
           <th data-k="onboardedBy">Onboarded By</th>
           <th data-k="payoutAmount" class="amt">Payout (₹)</th>
+          <th data-k="selfTxnMaxAmount" class="amt">Self-Txn Max (₹)</th>
+          <th data-k="latestSelfTxnTimestamp">Latest Self-Txn Date</th>
           <th data-k="flags">Flags</th>
           <th>Detail</th>
         </tr>
@@ -125,13 +137,14 @@
 <script>
 let DATA = null;
 let filter = "all";
-let sortKey = "payoutAmount", sortDir = -1;
+let userExplicitSortKey = null;
+let sortDir = -1;
 
 const HINTS = {
   all: "",
-  self: "Creators who paid themselves — a buyer whose email/phone matches the creator's own. Sorted by pending payout.",
-  adult: "Heuristic keyword matches only (username/category). This dataset had no adult keywords. For real detection I need the internal Review Products API.",
-  nolink: "Click “Run No-Link live check” to test each visible creator's public page. Note: superprofile pages are bot-protected, so many may return “unverifiable — open in browser”.",
+  self: "Priority Order: 1. Latest Time/Date (Newest First), 2. Flagged Self-Txn Max Amount, 3. Payout Amount.",
+  adult: "Heuristic keyword matches only (username/category). Candidates for human review.",
+  nolink: "Click “Run No-Link live check” to test each visible creator's public page.",
 };
 
 function inr(n){ return (n||0).toLocaleString('en-IN'); }
@@ -147,26 +160,97 @@ function flagsHtml(r){
 }
 
 function matchFilter(r){
-  if(filter==="all") return true;
-  if(filter==="self") return r.selfTransaction;
-  if(filter==="adult") return r.adultFlag;
-  if(filter==="nolink") return r.noLink===true;
+  if(filter==="self" && !r.selfTransaction) return false;
+  if(filter==="adult" && !r.adultFlag) return false;
+  if(filter==="nolink" && !(r.noLink===true || r.noLink===null)) return false;
+
+  const tf = document.getElementById('timeframeFilter') ? document.getElementById('timeframeFilter').value : '';
+  if(tf){
+    // Determine cutoff from the latest timestamp in the dataset or current time
+    const maxTs = Math.max(...DATA.creators.map(c=>c.latestSelfTxnTimestamp||0), 0);
+    const ts = r.latestSelfTxnTimestamp || 0;
+    if(!ts) return false;
+    if(tf === "24h" && (maxTs - ts > 86400)) return false;
+    if(tf === "7d" && (maxTs - ts > 7 * 86400)) return false;
+    if(tf === "30d" && (maxTs - ts > 30 * 86400)) return false;
+  }
   return true;
 }
 
 function rows(){
   const q = document.getElementById('search').value.trim().toLowerCase();
+  const ob = document.getElementById('onboardFilter').value;
   let list = DATA.creators.filter(matchFilter);
+  if(ob) list = list.filter(r => (r.onboardedBy || '') === ob);
   if(q) list = list.filter(r =>
     (r.username||'').toLowerCase().includes(q) ||
     (r.email||'').toLowerCase().includes(q) ||
-    (r.phone||'').toLowerCase().includes(q));
+    (r.phone||'').toLowerCase().includes(q) ||
+    (r.category||'').toLowerCase().includes(q) ||
+    (r.onboardedBy||'').toLowerCase().includes(q) ||
+    (r.latestSelfTxnDate||'').toLowerCase().includes(q));
+  
   list.sort((a,b)=>{
-    let x=a[sortKey], y=b[sortKey];
-    if(typeof x==='string'||typeof y==='string'){x=(x||'').toString().toLowerCase();y=(y||'').toString().toLowerCase();return x<y?-sortDir:x>y?sortDir:0;}
-    return ((x||0)-(y||0))*sortDir;
+    if (userExplicitSortKey) {
+      let x=a[userExplicitSortKey], y=b[userExplicitSortKey];
+      if (x === null || x === undefined) x = (typeof y === 'number') ? -1e9 : '';
+      if (y === null || y === undefined) y = (typeof x === 'number') ? -1e9 : '';
+      if(typeof x==='string' || typeof y==='string'){
+        x=x.toString().toLowerCase(); y=y.toString().toLowerCase();
+        return x<y?-sortDir:x>y?sortDir:0;
+      }
+      return ((Number(x)||0)-(Number(y)||0))*sortDir;
+    }
+
+    // Default Priority Sort: Time/Date > Self Txn Amount > Payout Amount
+    // 1st Priority: Time / Date (latestSelfTxnTimestamp)
+    const timeA = Number(a.latestSelfTxnTimestamp) || 0;
+    const timeB = Number(b.latestSelfTxnTimestamp) || 0;
+    if (timeA !== timeB) return timeB - timeA;
+
+    // 2nd Priority: Flagged Self-Transacting Amount (selfTxnMaxAmount)
+    const selfAmtA = a.selfTransaction ? (Number(a.selfTxnMaxAmount) || 0) : 0;
+    const selfAmtB = b.selfTransaction ? (Number(b.selfTxnMaxAmount) || 0) : 0;
+    if (selfAmtA !== selfAmtB) return selfAmtB - selfAmtA;
+
+    // 3rd Priority: Payout Amount (payoutAmount)
+    const payoutA = Number(a.payoutAmount) || 0;
+    const payoutB = Number(b.payoutAmount) || 0;
+    return payoutB - payoutA;
   });
   return list;
+}
+
+function exportCSV(){
+  const list = rows();
+  if(!list.length){ alert("No rows to export."); return; }
+  const headers = ["Username", "Email", "Phone", "Category", "Onboarded By", "Payout Amount (INR)", "Self Txn Max Amount (INR)", "Latest Self Txn Date", "Self Transaction", "Self Txn Count", "Adult Flag", "Adult Reason", "No Link Status", "No Link Reason"];
+  const csvRows = [headers.map(h => `"${h}"`).join(",")];
+  for(const r of list){
+    const row = [
+      r.username || '',
+      r.email || '',
+      r.phone || '',
+      r.category || '',
+      r.onboardedBy || '',
+      r.payoutAmount || 0,
+      r.selfTxnMaxAmount || 0,
+      r.latestSelfTxnDate || '',
+      r.selfTransaction ? 'YES' : 'NO',
+      r.selfTxnCount || 0,
+      r.adultFlag ? 'YES' : 'NO',
+      (r.adultReason || '').replace(/"/g, '""'),
+      r.noLink === true ? 'NO LINK' : (r.noLink === false ? 'OK' : 'UNCHECKED'),
+      (r.noLinkReason || '').replace(/"/g, '""')
+    ];
+    csvRows.push(row.map(v => `"${v}"`).join(","));
+  }
+  const blob = new Blob([csvRows.join("\n")], { type: "text/csv;charset=utf-8;" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = `payout_audit_${filter}_${new Date().toISOString().slice(0,10)}.csv`;
+  a.click();
 }
 
 function render(){
@@ -176,7 +260,7 @@ function render(){
   document.getElementById('hint').className = HINTS[filter] ? "hint show" : "hint";
   document.getElementById('hint').textContent = HINTS[filter] || "";
   document.getElementById('nolinkBtn').style.display = (filter==="nolink"||filter==="all") ? "inline-block":"none";
-  if(!list.length){ tb.innerHTML = `<tr><td colspan="8" class="empty">No creators match this filter.</td></tr>`; return; }
+  if(!list.length){ tb.innerHTML = `<tr><td colspan="10" class="empty">No creators match this filter.</td></tr>`; return; }
   tb.innerHTML = list.map((r,i)=>`
     <tr>
       <td class="u">${r.username||''}</td>
@@ -185,6 +269,8 @@ function render(){
       <td class="muted">${r.category||'—'}</td>
       <td class="muted">${r.onboardedBy&&r.onboardedBy!=='---'?r.onboardedBy:'—'}</td>
       <td class="amt">${inr(r.payoutAmount)}</td>
+      <td class="amt">${r.selfTransaction ? `<b style="color:var(--red)">₹${inr(r.selfTxnMaxAmount)}</b>` : '—'}</td>
+      <td class="muted">${r.latestSelfTxnDate ? `<b style="color:var(--orange)">${r.latestSelfTxnDate}</b>` : '—'}</td>
       <td>${flagsHtml(r)}</td>
       <td>${(r.selfTxnDetails&&r.selfTxnDetails.length)||r.noLinkReason?`<span class="expand" data-i="${i}">view ▾</span>`:'—'}</td>
     </tr>`).join('');
@@ -208,13 +294,16 @@ function toggleDetail(el, r){
   if(r.creatorId) inner += `<div class="muted" style="margin-top:6px">creatorId: ${r.creatorId} · page: <a href="https://superprofile.bio/${r.username}" target="_blank" style="color:var(--accent)">superprofile.bio/${r.username}</a></div>`;
   const det = document.createElement('tr');
   det.className='detrow';
-  det.innerHTML = `<td colspan="8" class="detail">${inner||'—'}</td>`;
+  det.innerHTML = `<td colspan="10" class="detail">${inner||'—'}</td>`;
   tr.after(det);
 }
 
 async function runNoLink(){
   const btn = document.getElementById('nolinkBtn');
-  const list = rows();
+  const list = (filter === "nolink")
+    ? DATA.creators.filter(r => r.noLink !== false)
+    : rows();
+  if(!list.length){ alert("No matching creators to check."); return; }
   btn.disabled = true;
   let done=0;
   for(const r of list){
@@ -250,16 +339,29 @@ function setCards(){
 function init(){
   document.getElementById('genat').textContent = 'Generated: '+DATA.generatedAt+' · '+DATA.totalCreators+' creators';
   setCards();
+  
+  // Populate onboarders filter
+  const onboarders = Array.from(new Set(DATA.creators.map(c => c.onboardedBy).filter(Boolean))).sort();
+  const sel = document.getElementById('onboardFilter');
+  sel.innerHTML = '<option value="">All Onboarders (' + onboarders.length + ')</option>' +
+    onboarders.map(o => `<option value="${o}">${o}</option>`).join('');
+  sel.onchange = render;
+
+  document.getElementById('timeframeFilter').onchange = render;
+  document.getElementById('exportBtn').onclick = exportCSV;
+
   render();
   document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
     document.querySelector('.tab.active').classList.remove('active');
-    t.classList.add('active'); filter=t.dataset.f; render();
+    t.classList.add('active'); filter=t.dataset.f;
+    userExplicitSortKey = null; // Reset to 3-level priority sort on tab change
+    render();
   });
   document.getElementById('search').oninput = render;
   document.getElementById('nolinkBtn').onclick = runNoLink;
   document.querySelectorAll('th[data-k]').forEach(th=>th.onclick=()=>{
     const k=th.dataset.k; if(k==='flags') return;
-    if(sortKey===k) sortDir*=-1; else {sortKey=k; sortDir=(k==='payoutAmount')?-1:1;}
+    if(userExplicitSortKey===k) sortDir*=-1; else {userExplicitSortKey=k; sortDir=(k==='payoutAmount'||k==='latestSelfTxnTimestamp'||k==='selfTxnMaxAmount')?-1:1;}
     render();
   });
 }
