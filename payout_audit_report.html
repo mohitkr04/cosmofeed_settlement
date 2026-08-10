@@ -1,0 +1,2172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cosmofeed Payout Risk Audit Executive Report</title>
+<style>
+  @page {
+    size: A4 portrait;
+    margin: 15mm;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a2e;
+    background: #ffffff;
+    margin: 0;
+    padding: 24px;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+  }
+  .logo {
+    font-size: 22px;
+    font-weight: 800;
+    color: #e53e3e;
+    letter-spacing: -0.5px;
+  }
+  .meta {
+    text-align: right;
+    font-size: 12px;
+    color: #64748b;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  .card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 12px 16px;
+  }
+  .card .num {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0f172a;
+  }
+  .card .num.red { color: #e53e3e; }
+  .card .label {
+    font-size: 11px;
+    color: #64748b;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+  }
+  th {
+    background: #f1f5f9;
+    color: #475569;
+    font-weight: 700;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 8px 12px;
+    border-bottom: 2px solid #cbd5e1;
+  }
+  td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 12px;
+  }
+  tr:nth-child(even) { background: #f8fafc; }
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 700;
+  }
+  .badge-self { background: #fee2e2; color: #dc2626; }
+  .amt { text-align: right; font-variant-numeric: tabular-nums; }
+  .btn-print {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(37,99,235,0.3);
+  }
+  @media print {
+    .btn-print { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<button class="btn-print" onclick="window.print()">🖨️ Save as PDF / Print</button>
+
+<div class="header">
+  <div>
+    <div class="logo">💸 Cosmofeed Payout Risk Audit</div>
+    <div style="font-size:13px;color:#64748b;margin-top:2px">Executive Settlement Risk & Self-Transaction Summary</div>
+  </div>
+  <div class="meta">
+    <div><b>Generated At:</b> 2026-08-10 10:13</div>
+    <div><b>Scope:</b> Pending Settlement Requests</div>
+  </div>
+</div>
+
+<div class="cards">
+  <div class="card">
+    <div class="num">1,671</div>
+    <div class="label">Total Pending Requests</div>
+  </div>
+  <div class="card">
+    <div class="num red">223</div>
+    <div class="label">Self-Transactions Flagged</div>
+  </div>
+  <div class="card">
+    <div class="num">0</div>
+    <div class="label">Adult Keywords Flagged</div>
+  </div>
+  <div class="card">
+    <div class="num">₹9,235,022</div>
+    <div class="label">Total Pending Payout</div>
+  </div>
+</div>
+
+<h3 style="margin-bottom:8px;color:#0f172a">Flagged Self-Transactions (Ordered Per Date ➔ Amount High to Low)</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Username</th>
+      <th>Creator ID</th>
+      <th>Contact Info</th>
+      <th>Latest Self-Txn Date</th>
+      <th class="amt">Max Self-Txn</th>
+      <th class="amt">Payout Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+      <td>1</td>
+      <td><b>swarndev</b></td>
+      <td><code>6444f53be0d2a1002104f5df</code></td>
+      <td style="color:#64748b">swarnendumaity633@gmail.com<br>7602220237</td>
+      <td style="color:#d97706;font-weight:600">10 Aug, 2026; 10:06 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹298.00</td>
+      <td class="amt">₹19,483.00</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><b>teamadzuipts</b></td>
+      <td><code>6666eb1edd28eb0013b3eede</code></td>
+      <td style="color:#64748b">rebirthsoham@gmail.com<br>8957855656</td>
+      <td style="color:#d97706;font-weight:600">09 Aug, 2026; 01:18 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1,869.00</td>
+      <td class="amt">₹1,682.00</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><b>manifestwithruchi</b></td>
+      <td><code>695d12e5f00d9e001366c1d5</code></td>
+      <td style="color:#64748b">ruchiraioffice@gmail.com<br>9718890845</td>
+      <td style="color:#d97706;font-weight:600">09 Aug, 2026; 10:17 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹999.00</td>
+      <td class="amt">₹986.00</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><b>ailogic</b></td>
+      <td><code>67f62e5aa2c58300138b5ee1</code></td>
+      <td style="color:#64748b">forwork01121@gmail.com<br>8971046382</td>
+      <td style="color:#d97706;font-weight:600">10 Aug, 2026; 12:12 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹449.00</td>
+      <td class="amt">₹832.00</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><b>kamboj36e</b></td>
+      <td><code>6a437a4e37d5e5001316f7c1</code></td>
+      <td style="color:#64748b">thedigitallyamit@gmail.com<br>8872274023</td>
+      <td style="color:#d97706;font-weight:600">09 Aug, 2026; 04:06 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹399.00</td>
+      <td class="amt">₹1,314.00</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td><b>Mohanraj4079</b></td>
+      <td><code>69f41980a8c2c600130aee75</code></td>
+      <td style="color:#64748b">mohanithi22@gmail.com<br>9962414552</td>
+      <td style="color:#d97706;font-weight:600">09 Aug, 2026; 08:08 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹199.00</td>
+      <td class="amt">₹187.00</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td><b>Thekingzmedia</b></td>
+      <td><code>637e11adaf57a90032537632</code></td>
+      <td style="color:#64748b">socialpranav31@gmail.com<br>9649172463</td>
+      <td style="color:#d97706;font-weight:600">09 Aug, 2026; 06:16 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹199.00</td>
+      <td class="amt">₹187.00</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td><b>thedigitalhubstore</b></td>
+      <td><code>6a786de77590c2001358fd5f</code></td>
+      <td style="color:#64748b">shopifybyjaahar@gmail.com<br>8979983651</td>
+      <td style="color:#d97706;font-weight:600">10 Aug, 2026; 01:37 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹99.00</td>
+      <td class="amt">₹93.00</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td><b>syedtufail</b></td>
+      <td><code>6a7781691601690013841dfd</code></td>
+      <td style="color:#64748b">syedtufaildesigner@gmail.com<br>8309473794</td>
+      <td style="color:#d97706;font-weight:600">09 Aug, 2026; 12:45 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹79.00</td>
+      <td class="amt">₹74.00</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td><b>99store</b></td>
+      <td><code>68de5470e1910c0013a60656</code></td>
+      <td style="color:#64748b">liteesport12@gmail.com<br>7219815278</td>
+      <td style="color:#d97706;font-weight:600">09 Aug, 2026; 09:53 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹59.00</td>
+      <td class="amt">₹222.00</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td><b>theassamesekid</b></td>
+      <td><code>6a51ac4db9587e0013a58d54</code></td>
+      <td style="color:#64748b">rikislife69@gmail.com<br>9401017969</td>
+      <td style="color:#d97706;font-weight:600">09 Aug, 2026; 02:24 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹30.00</td>
+      <td class="amt">₹56.00</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td><b>therewirelab</b></td>
+      <td><code>69d442b79d735c001379b35f</code></td>
+      <td style="color:#64748b">biz.rewirelives@gmail.com<br>7310863076</td>
+      <td style="color:#d97706;font-weight:600">09 Aug, 2026; 11:48 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.00</td>
+      <td class="amt">₹562.00</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td><b>facelessvaultt</b></td>
+      <td><code>6a69da225ab4c40013eb330b</code></td>
+      <td style="color:#64748b">singladiksha12@gmail.com<br>6239523506</td>
+      <td style="color:#d97706;font-weight:600">08 Aug, 2026; 11:00 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹499.00</td>
+      <td class="amt">₹471.00</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td><b>tutorialmallu</b></td>
+      <td><code>67cf3919c5c61b001367d398</code></td>
+      <td style="color:#64748b">tutorialmallu97@gmail.com<br>9497813096</td>
+      <td style="color:#d97706;font-weight:600">08 Aug, 2026; 08:38 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹499.00</td>
+      <td class="amt">₹1,411.00</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td><b>anayaaaa0</b></td>
+      <td><code>64fe91ec9a30d80029e087c6</code></td>
+      <td style="color:#64748b">anshusoni27at@gmail.com<br>8828593130</td>
+      <td style="color:#d97706;font-weight:600">08 Aug, 2026; 01:11 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹199.00</td>
+      <td class="amt">₹3,621.00</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td><b>sarvesh3197</b></td>
+      <td><code>6a132a4e253c3a00138806bc</code></td>
+      <td style="color:#64748b">kovernoai@gmail.com<br>8545962326</td>
+      <td style="color:#d97706;font-weight:600">08 Aug, 2026; 04:21 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹183.00</td>
+      <td class="amt">₹4,615.00</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td><b>colourpresetstore</b></td>
+      <td><code>6a117125b46be60013d45d68</code></td>
+      <td style="color:#64748b">colourpresetstore@gmail.com<br>8590640488</td>
+      <td style="color:#d97706;font-weight:600">08 Aug, 2026; 06:12 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹99.00</td>
+      <td class="amt">₹3,947.00</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td><b>Rohit2648</b></td>
+      <td><code>6a6cd07a31c9b70013644b17</code></td>
+      <td style="color:#64748b">vistaar2810@gmail.com<br>7021948450</td>
+      <td style="color:#d97706;font-weight:600">08 Aug, 2026; 01:41 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹99.00</td>
+      <td class="amt">₹93.00</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td><b>viralsachin</b></td>
+      <td><code>693e5eb18a94ac001252861b</code></td>
+      <td style="color:#64748b">alldigitaldunya@gmail.com<br>9920468469</td>
+      <td style="color:#d97706;font-weight:600">08 Aug, 2026; 11:39 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹99.00</td>
+      <td class="amt">₹93.00</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td><b>komalklacrafts</b></td>
+      <td><code>695812fb4e594b001349e977</code></td>
+      <td style="color:#64748b">avcreations1518@gmail.com<br>8873239932</td>
+      <td style="color:#d97706;font-weight:600">08 Aug, 2026; 05:41 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹49.00</td>
+      <td class="amt">₹352.00</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td><b>mbbsfusion</b></td>
+      <td><code>6a22f7f3c0c8d20013951113</code></td>
+      <td style="color:#64748b">shahwazlm@gmail.com<br>9060000169</td>
+      <td style="color:#d97706;font-weight:600">09 Aug, 2026; 01:26 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹19.00</td>
+      <td class="amt">₹1,199.00</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td><b>httpssagewithagestore</b></td>
+      <td><code>673b06177ea02f00132f0e99</code></td>
+      <td style="color:#64748b">mittalyash808@gmail.com<br>9827279712</td>
+      <td style="color:#d97706;font-weight:600">08 Aug, 2026; 06:17 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹19.00</td>
+      <td class="amt">₹2,149.00</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td><b>imaannoor</b></td>
+      <td><code>66b4d8d22d27d600137614e1</code></td>
+      <td style="color:#64748b">mrxromio786@gmail.com<br>9864096049</td>
+      <td style="color:#d97706;font-weight:600">08 Aug, 2026; 01:20 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹10.00</td>
+      <td class="amt">₹375.00</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td><b>jatinbaghell</b></td>
+      <td><code>6a58561aa2942500134c11f3</code></td>
+      <td style="color:#64748b">jatinbaghel9000@gmail.com<br>9773985237</td>
+      <td style="color:#d97706;font-weight:600">08 Aug, 2026; 07:21 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.49</td>
+      <td class="amt">₹142.00</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td><b>muzammil1245</b></td>
+      <td><code>6a6b5a6e258d140013a3ce26</code></td>
+      <td style="color:#64748b">muzammilmansoori12345@gmail.com<br>9639260700</td>
+      <td style="color:#d97706;font-weight:600">09 Aug, 2026; 01:13 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.00</td>
+      <td class="amt">₹1,929.00</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td><b>itstiwariaman</b></td>
+      <td><code>6a06c3f237a6130013daa25a</code></td>
+      <td style="color:#64748b">amanbeingreal@gmail.com<br>7977780198</td>
+      <td style="color:#d97706;font-weight:600">07 Aug, 2026; 11:18 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹349.00</td>
+      <td class="amt">₹328.00</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td><b>httpsthesitetoolkitin</b></td>
+      <td><code>68dd21e6e32be10013bee962</code></td>
+      <td style="color:#64748b">yashyakhandya@gmail.com<br>7666852792</td>
+      <td style="color:#d97706;font-weight:600">08 Aug, 2026; 01:57 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹299.00</td>
+      <td class="amt">₹470.00</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td><b>manzoori</b></td>
+      <td><code>6a3787d77b11620014fbfa2f</code></td>
+      <td style="color:#64748b">auraproducts18@gmail.com<br>8306092510</td>
+      <td style="color:#d97706;font-weight:600">08 Aug, 2026; 12:01 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹299.00</td>
+      <td class="amt">₹375.00</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td><b>sohel0971</b></td>
+      <td><code>64cfaef6b261e1001d06553a</code></td>
+      <td style="color:#64748b">sohelakhtar9450@gmail.com<br>8840921632</td>
+      <td style="color:#d97706;font-weight:600">07 Aug, 2026; 07:13 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹149.00</td>
+      <td class="amt">₹1,878.00</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td><b>httpstmecaaspirant15</b></td>
+      <td><code>696290257367310013f1bca0</code></td>
+      <td style="color:#64748b">aggsam2@gmail.com<br>7300759708</td>
+      <td style="color:#d97706;font-weight:600">07 Aug, 2026; 05:03 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹100.00</td>
+      <td class="amt">₹93.00</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td><b>fando</b></td>
+      <td><code>649330ea3b6d6900200fdb05</code></td>
+      <td style="color:#64748b">shashihk0@gmail.com<br>9343949080</td>
+      <td style="color:#d97706;font-weight:600">07 Aug, 2026; 05:47 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹99.00</td>
+      <td class="amt">₹40,455.00</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td><b>pixelvaultai</b></td>
+      <td><code>688dd2d5b3f6180013e2a6d2</code></td>
+      <td style="color:#64748b">bajaj.khushank21@gmail.com<br>7303409500</td>
+      <td style="color:#d97706;font-weight:600">07 Aug, 2026; 10:48 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹99.00</td>
+      <td class="amt">₹560.00</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td><b>shivam2327</b></td>
+      <td><code>648dd0afa2f81f002095aad0</code></td>
+      <td style="color:#64748b">shivammishra635343@gmail.com<br>8173935951</td>
+      <td style="color:#d97706;font-weight:600">07 Aug, 2026; 01:42 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹89.00</td>
+      <td class="amt">₹2,723.00</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td><b>valuewala</b></td>
+      <td><code>63c752e32535bd0037038e91</code></td>
+      <td style="color:#64748b">infovaluewala@gmail.com<br>8445739871</td>
+      <td style="color:#d97706;font-weight:600">07 Aug, 2026; 09:53 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹9.00</td>
+      <td class="amt">₹186.00</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td><b>thebusinessguide</b></td>
+      <td><code>657c62be1f4561001ee6ca05</code></td>
+      <td style="color:#64748b">irfan.s010419@gmail.com<br>7676375340</td>
+      <td style="color:#d97706;font-weight:600">07 Aug, 2026; 12:16 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹5.00</td>
+      <td class="amt">₹1,075.00</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td><b>thebusinessguide</b></td>
+      <td><code>657c62be1f4561001ee6ca05</code></td>
+      <td style="color:#64748b">irfan.s010419@gmail.com<br>7676375340</td>
+      <td style="color:#d97706;font-weight:600">07 Aug, 2026; 12:16 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹5.00</td>
+      <td class="amt">₹896.00</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td><b>thebusinessguide</b></td>
+      <td><code>657c62be1f4561001ee6ca05</code></td>
+      <td style="color:#64748b">irfan.s010419@gmail.com<br>7676375340</td>
+      <td style="color:#d97706;font-weight:600">07 Aug, 2026; 12:16 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹5.00</td>
+      <td class="amt">₹179.00</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td><b>Prashantsuman</b></td>
+      <td><code>651cb4781cccce001db2e08d</code></td>
+      <td style="color:#64748b">prashantsuman86@gmail.com<br>9006870332</td>
+      <td style="color:#d97706;font-weight:600">07 Aug, 2026; 03:08 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹2.00</td>
+      <td class="amt">₹713.00</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td><b>neuraempire</b></td>
+      <td><code>674d3667b705d90013ec5248</code></td>
+      <td style="color:#64748b">vishnuvshnu761@gmail.com<br>6282823558</td>
+      <td style="color:#d97706;font-weight:600">07 Aug, 2026; 06:16 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.00</td>
+      <td class="amt">₹92.00</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td><b>dannywoodyt</b></td>
+      <td><code>671abac0c711890013a4bb54</code></td>
+      <td style="color:#64748b">jubaljukebox@gmail.com<br>8667759837</td>
+      <td style="color:#d97706;font-weight:600">06 Aug, 2026; 04:03 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹210.00</td>
+      <td class="amt">₹790.00</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td><b>d0k</b></td>
+      <td><code>6a74257100da220013423116</code></td>
+      <td style="color:#64748b">dillipmunda777@gmail.com<br>7749933355</td>
+      <td style="color:#d97706;font-weight:600">06 Aug, 2026; 04:34 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹99.00</td>
+      <td class="amt">₹93.00</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td><b>tilindia</b></td>
+      <td><code>64e6289978136a001e9c84c6</code></td>
+      <td style="color:#64748b">bharatbhushankikta@gmail.com<br>7807194238</td>
+      <td style="color:#d97706;font-weight:600">06 Aug, 2026; 04:39 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹50.00</td>
+      <td class="amt">₹139.00</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td><b>educationwalaclubb</b></td>
+      <td><code>6a7152ce9e13ea0013ce0152</code></td>
+      <td style="color:#64748b">yashpalproperty@gmail.com<br>9313588198</td>
+      <td style="color:#d97706;font-weight:600">06 Aug, 2026; 09:01 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹49.00</td>
+      <td class="amt">₹138.00</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td><b>hustlebucks07</b></td>
+      <td><code>646630382647aa001fef4688</code></td>
+      <td style="color:#64748b">adygrows@gmail.com<br>918171127887</td>
+      <td style="color:#d97706;font-weight:600">06 Aug, 2026; 05:23 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.00</td>
+      <td class="amt">₹246.00</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td><b>berdesystems</b></td>
+      <td><code>69c8fbdc660caa0012e04196</code></td>
+      <td style="color:#64748b">contact.berde@gmail.com<br>9619431317</td>
+      <td style="color:#d97706;font-weight:600">06 Aug, 2026; 02:53 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹349.00</td>
+      <td class="amt">₹422.00</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td><b>boltlabs</b></td>
+      <td><code>64819f2309cbc40020db61e5</code></td>
+      <td style="color:#64748b">rajatadhikari77@gmail.com<br>9643063811</td>
+      <td style="color:#d97706;font-weight:600">05 Aug, 2026; 02:44 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹229.00</td>
+      <td class="amt">₹543.00</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td><b>quietthemindd</b></td>
+      <td><code>65e2c98b3f788a0013dfd2ab</code></td>
+      <td style="color:#64748b">quietthemind01@gmail.com<br>6367981452</td>
+      <td style="color:#d97706;font-weight:600">05 Aug, 2026; 04:47 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹199.00</td>
+      <td class="amt">₹5,288.00</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td><b>lawatreach</b></td>
+      <td><code>6926e3deeaf4fb0013dbea48</code></td>
+      <td style="color:#64748b">preetharsh2941@gmail.com<br>8707337105</td>
+      <td style="color:#d97706;font-weight:600">05 Aug, 2026; 12:09 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹199.00</td>
+      <td class="amt">₹282.00</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td><b>shahstore93184</b></td>
+      <td><code>6a6f2e1199878a00138b118d</code></td>
+      <td style="color:#64748b">anamikaaa9354@gmail.com<br>9354011427</td>
+      <td style="color:#d97706;font-weight:600">05 Aug, 2026; 08:53 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹199.00</td>
+      <td class="amt">₹839.00</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td><b>growwithdhaval</b></td>
+      <td><code>6a71a62e99878a0013f6dde8</code></td>
+      <td style="color:#64748b">team.dhavalvyas@gmail.com<br>6352044240</td>
+      <td style="color:#d97706;font-weight:600">05 Aug, 2026; 12:30 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹99.00</td>
+      <td class="amt">₹2,050.00</td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td><b>penfasales2105</b></td>
+      <td><code>676eb2ed83d63d00130f5e8d</code></td>
+      <td style="color:#64748b">churabc3@gmail.com<br>9310322868</td>
+      <td style="color:#d97706;font-weight:600">05 Aug, 2026; 05:27 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹10.00</td>
+      <td class="amt">₹1,381.00</td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td><b>digixora</b></td>
+      <td><code>63274f733eae0710504c1056</code></td>
+      <td style="color:#64748b">prathmeshgupta063@gmail.com<br>8955479053</td>
+      <td style="color:#d97706;font-weight:600">05 Aug, 2026; 01:18 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.00</td>
+      <td class="amt">₹2,523.00</td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td><b>bettermealsdaily</b></td>
+      <td><code>6a4398e21f627c0012f4e516</code></td>
+      <td style="color:#64748b">bettermealsdaily@gmail.com<br>9877566854</td>
+      <td style="color:#d97706;font-weight:600">04 Aug, 2026; 08:05 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹299.00</td>
+      <td class="amt">₹281.00</td>
+    </tr>
+    <tr>
+      <td>54</td>
+      <td><b>Yadhu4115</b></td>
+      <td><code>68f7ab1ff9db6f0013288864</code></td>
+      <td style="color:#64748b">oceanfuture01@gmail.com<br>8848807542</td>
+      <td style="color:#d97706;font-weight:600">04 Aug, 2026; 07:38 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹299.00</td>
+      <td class="amt">₹563.00</td>
+    </tr>
+    <tr>
+      <td>55</td>
+      <td><b>djneshofficial</b></td>
+      <td><code>657de8d69e22c2001e2ffb51</code></td>
+      <td style="color:#64748b">bsindia143@gmail.com<br>9773343316</td>
+      <td style="color:#d97706;font-weight:600">04 Aug, 2026; 02:17 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹299.00</td>
+      <td class="amt">₹95.00</td>
+    </tr>
+    <tr>
+      <td>56</td>
+      <td><b>businesswithmanav</b></td>
+      <td><code>64ae27bcc02540001fcf83dc</code></td>
+      <td style="color:#64748b">manav.kmrofficial@gmail.com<br>9760423854</td>
+      <td style="color:#d97706;font-weight:600">04 Aug, 2026; 04:13 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹29.00</td>
+      <td class="amt">₹136.00</td>
+    </tr>
+    <tr>
+      <td>57</td>
+      <td><b>aisalesconversionin</b></td>
+      <td><code>670348a8010b890013c3e9d3</code></td>
+      <td style="color:#64748b">surojitpaharia3152@gmail.com<br>7994348616</td>
+      <td style="color:#d97706;font-weight:600">04 Aug, 2026; 09:02 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹10.00</td>
+      <td class="amt">₹279.00</td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td><b>saurabh8454</b></td>
+      <td><code>6a27eb1c70bfd600133e21ab</code></td>
+      <td style="color:#64748b">vijaykarne18@gmail.com<br>8793758084</td>
+      <td style="color:#d97706;font-weight:600">04 Aug, 2026; 10:40 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹9.00</td>
+      <td class="amt">₹2,925.00</td>
+    </tr>
+    <tr>
+      <td>59</td>
+      <td><b>cosmicdigitallabcom</b></td>
+      <td><code>6940f74e3ec4ff00132cfaaf</code></td>
+      <td style="color:#64748b">orbitcreatorslab@gmail.com<br>7309917295</td>
+      <td style="color:#d97706;font-weight:600">04 Aug, 2026; 11:18 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹5.00</td>
+      <td class="amt">₹936.00</td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td><b>selfhelpdigitalco</b></td>
+      <td><code>6826cb4458e0880013260971</code></td>
+      <td style="color:#64748b">nahtasujal@gmail.com<br>9327796561</td>
+      <td style="color:#d97706;font-weight:600">05 Aug, 2026; 12:27 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹2.00</td>
+      <td class="amt">₹376.00</td>
+    </tr>
+    <tr>
+      <td>61</td>
+      <td><b>littlewonderlanddiary</b></td>
+      <td><code>6512d831f4d0b1001eb61a22</code></td>
+      <td style="color:#64748b">shopdiarystudio@gmail.com<br>8262921273</td>
+      <td style="color:#d97706;font-weight:600">05 Aug, 2026; 01:27 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.00</td>
+      <td class="amt">₹188.00</td>
+    </tr>
+    <tr>
+      <td>62</td>
+      <td><b>abdigimedia</b></td>
+      <td><code>661e3fa5dc11c80012ab41e4</code></td>
+      <td style="color:#64748b">abankitbansal9717@gmail.com<br>9717444623</td>
+      <td style="color:#d97706;font-weight:600">03 Aug, 2026; 05:44 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹499.00</td>
+      <td class="amt">₹187.00</td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td><b>pramodkrishh</b></td>
+      <td><code>6a363103a69fc60013f4d273</code></td>
+      <td style="color:#64748b">skpp.2004@gmail.com<br>9035422827</td>
+      <td style="color:#d97706;font-weight:600">03 Aug, 2026; 05:23 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹399.00</td>
+      <td class="amt">₹366.00</td>
+    </tr>
+    <tr>
+      <td>64</td>
+      <td><b>shahzebs4f</b></td>
+      <td><code>69ff1f115aab370013db1f57</code></td>
+      <td style="color:#64748b">shahzebm613@gmail.com<br>9149243759</td>
+      <td style="color:#d97706;font-weight:600">04 Aug, 2026; 03:08 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹99.00</td>
+      <td class="amt">₹93.00</td>
+    </tr>
+    <tr>
+      <td>65</td>
+      <td><b>nexmind</b></td>
+      <td><code>6a551d441db8a70013c88c8d</code></td>
+      <td style="color:#64748b">firojalammd72@gmail.com<br>9341982581</td>
+      <td style="color:#d97706;font-weight:600">03 Aug, 2026; 06:25 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.00</td>
+      <td class="amt">₹94.00</td>
+    </tr>
+    <tr>
+      <td>66</td>
+      <td><b>prodxstore</b></td>
+      <td><code>6a35b563a67f620013a88d75</code></td>
+      <td style="color:#64748b">prasannaskvd@gmail.com<br>9440157573</td>
+      <td style="color:#d97706;font-weight:600">02 Aug, 2026; 10:41 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹399.00</td>
+      <td class="amt">₹282.00</td>
+    </tr>
+    <tr>
+      <td>67</td>
+      <td><b>tamilmixereducation</b></td>
+      <td><code>65fc173f21a9a80013a7c3e0</code></td>
+      <td style="color:#64748b">tamilmixereducation@gmail.com<br>9788975128</td>
+      <td style="color:#d97706;font-weight:600">02 Aug, 2026; 07:45 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹79.00</td>
+      <td class="amt">₹89.00</td>
+    </tr>
+    <tr>
+      <td>68</td>
+      <td><b>harishmotheai</b></td>
+      <td><code>6a408047199e1b0013caa5ca</code></td>
+      <td style="color:#64748b">motheharish5@gmail.com<br>8328444617</td>
+      <td style="color:#d97706;font-weight:600">02 Aug, 2026; 03:33 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹3.19</td>
+      <td class="amt">₹600.00</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td><b>editverse0786</b></td>
+      <td><code>66dcff8f3c583f001333c949</code></td>
+      <td style="color:#64748b">ahmadzeeshan4782@gmail.com<br>8630176117</td>
+      <td style="color:#d97706;font-weight:600">02 Aug, 2026; 04:05 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.49</td>
+      <td class="amt">₹95.00</td>
+    </tr>
+    <tr>
+      <td>70</td>
+      <td><b>avtrader</b></td>
+      <td><code>673b7c6178dc700013ad956d</code></td>
+      <td style="color:#64748b">lramannnnn@gmail.com<br>7340010950</td>
+      <td style="color:#d97706;font-weight:600">02 Aug, 2026; 11:03 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.00</td>
+      <td class="amt">₹71,566.00</td>
+    </tr>
+    <tr>
+      <td>71</td>
+      <td><b>booktuberhindi</b></td>
+      <td><code>697878d429ae7400134e9dfb</code></td>
+      <td style="color:#64748b">sourav746sharma@gmail.com<br>8580845820</td>
+      <td style="color:#d97706;font-weight:600">01 Aug, 2026; 11:59 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹799.00</td>
+      <td class="amt">₹1,692.00</td>
+    </tr>
+    <tr>
+      <td>72</td>
+      <td><b>graphifystore</b></td>
+      <td><code>686682fc281b4f0013b39c4c</code></td>
+      <td style="color:#64748b">graphifystore.business@gmail.com<br>8591411080</td>
+      <td style="color:#d97706;font-weight:600">01 Aug, 2026; 08:39 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹199.00</td>
+      <td class="amt">₹795.00</td>
+    </tr>
+    <tr>
+      <td>73</td>
+      <td><b>Arul6285</b></td>
+      <td><code>68e60033cddfee0013491172</code></td>
+      <td style="color:#64748b">arulmurugan.k11@gmail.com<br>8012835994</td>
+      <td style="color:#d97706;font-weight:600">01 Aug, 2026; 08:44 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹20.00</td>
+      <td class="amt">₹6,380.00</td>
+    </tr>
+    <tr>
+      <td>74</td>
+      <td><b>mezzo</b></td>
+      <td><code>697b83dd86f01f001369c01d</code></td>
+      <td style="color:#64748b">shopukerala@gmail.com<br>8078221026</td>
+      <td style="color:#d97706;font-weight:600">31 Jul, 2026; 09:30 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹199.00</td>
+      <td class="amt">₹375.00</td>
+    </tr>
+    <tr>
+      <td>75</td>
+      <td><b>gyaanmetrix24</b></td>
+      <td><code>6a4e6ca8180c810013e71adf</code></td>
+      <td style="color:#64748b">gyaanmetrix24@gmail.com<br>9909569829</td>
+      <td style="color:#d97706;font-weight:600">31 Jul, 2026; 08:29 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹99.00</td>
+      <td class="amt">₹186.00</td>
+    </tr>
+    <tr>
+      <td>76</td>
+      <td><b>codetocrack02</b></td>
+      <td><code>6a6a28bd2519b60013960fd3</code></td>
+      <td style="color:#64748b">krnanish80@gmail.com<br>9003409417</td>
+      <td style="color:#d97706;font-weight:600">31 Jul, 2026; 02:18 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹69.00</td>
+      <td class="amt">₹72.00</td>
+    </tr>
+    <tr>
+      <td>77</td>
+      <td><b>visionhigh</b></td>
+      <td><code>69463a84923fc400137d6422</code></td>
+      <td style="color:#64748b">visionhigh70@gmail.com<br>7082582038</td>
+      <td style="color:#d97706;font-weight:600">31 Jul, 2026; 11:18 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹20.00</td>
+      <td class="amt">₹327.00</td>
+    </tr>
+    <tr>
+      <td>78</td>
+      <td><b>smartscalemanagement</b></td>
+      <td><code>69694ac16ce20400136f6c69</code></td>
+      <td style="color:#64748b">smartscalemanagement@gmail.com<br>6206016235</td>
+      <td style="color:#d97706;font-weight:600">01 Aug, 2026; 01:26 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹11.00</td>
+      <td class="amt">₹375.00</td>
+    </tr>
+    <tr>
+      <td>79</td>
+      <td><b>mindsetshustlerin</b></td>
+      <td><code>6a1ec43f62b0ef00138bace2</code></td>
+      <td style="color:#64748b">ihsanullhaque47@gmail.com<br>8086009090</td>
+      <td style="color:#d97706;font-weight:600">31 Jul, 2026; 03:59 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.00</td>
+      <td class="amt">₹977.00</td>
+    </tr>
+    <tr>
+      <td>80</td>
+      <td><b>eliteashwin</b></td>
+      <td><code>64bfd54dd625ae001fd5ca1e</code></td>
+      <td style="color:#64748b">theeliteashwin@gmail.com<br>9894533184</td>
+      <td style="color:#d97706;font-weight:600">30 Jul, 2026; 08:31 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹15.20</td>
+      <td class="amt">₹598.00</td>
+    </tr>
+    <tr>
+      <td>81</td>
+      <td><b>bundlelabs</b></td>
+      <td><code>67249eea76412b001398822f</code></td>
+      <td style="color:#64748b">sujalpandhare23@gmail.com<br>9960585738</td>
+      <td style="color:#d97706;font-weight:600">31 Jul, 2026; 02:33 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹10.00</td>
+      <td class="amt">₹187.00</td>
+    </tr>
+    <tr>
+      <td>82</td>
+      <td><b>vikas321456</b></td>
+      <td><code>64c102483da55b002b1afcb7</code></td>
+      <td style="color:#64748b">harshbharti3212@gmail.com<br>9990211236</td>
+      <td style="color:#d97706;font-weight:600">30 Jul, 2026; 09:56 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.00</td>
+      <td class="amt">₹178.00</td>
+    </tr>
+    <tr>
+      <td>83</td>
+      <td><b>chakiamit</b></td>
+      <td><code>6700f98cc19cf300133d1b1a</code></td>
+      <td style="color:#64748b">amit.chaki@gmail.com<br>9547272316</td>
+      <td style="color:#d97706;font-weight:600">29 Jul, 2026; 08:04 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹798.00</td>
+      <td class="amt">₹1,502.00</td>
+    </tr>
+    <tr>
+      <td>84</td>
+      <td><b>luxuryinads</b></td>
+      <td><code>6a69ac212519b600137f9792</code></td>
+      <td style="color:#64748b">abhidazzy11@gmail.com<br>9226440731</td>
+      <td style="color:#d97706;font-weight:600">29 Jul, 2026; 10:38 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹29.00</td>
+      <td class="amt">₹55.00</td>
+    </tr>
+    <tr>
+      <td>85</td>
+      <td><b>aruhflex</b></td>
+      <td><code>699f1bddc017fb0013d1f908</code></td>
+      <td style="color:#64748b">itsaryansingh224@gmail.com<br>7889354591</td>
+      <td style="color:#d97706;font-weight:600">29 Jul, 2026; 07:55 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹2.00</td>
+      <td class="amt">₹186.00</td>
+    </tr>
+    <tr>
+      <td>86</td>
+      <td><b>sh00</b></td>
+      <td><code>66d5738082e43a0013dcb2d1</code></td>
+      <td style="color:#64748b">learningwithbasics19@gmail.com<br>07078116106</td>
+      <td style="color:#d97706;font-weight:600">29 Jul, 2026; 11:11 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹2.00</td>
+      <td class="amt">₹3,816.00</td>
+    </tr>
+    <tr>
+      <td>87</td>
+      <td><b>thedan</b></td>
+      <td><code>64d4a112f1a97a001d43190f</code></td>
+      <td style="color:#64748b">danishk1966@gmail.com<br>9131614334</td>
+      <td style="color:#d97706;font-weight:600">29 Jul, 2026; 10:52 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.00</td>
+      <td class="amt">₹896.00</td>
+    </tr>
+    <tr>
+      <td>88</td>
+      <td><b>Ankitbeniwal</b></td>
+      <td><code>64b3d3f03ab1e1002027662b</code></td>
+      <td style="color:#64748b">beniwalankit270@gmail.com<br>9718322576</td>
+      <td style="color:#d97706;font-weight:600">28 Jul, 2026; 04:49 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹199.00</td>
+      <td class="amt">₹299.00</td>
+    </tr>
+    <tr>
+      <td>89</td>
+      <td><b>medboy1012</b></td>
+      <td><code>6442d60a58544c002033d382</code></td>
+      <td style="color:#64748b">medboys1309@gmail.com<br>9664611227</td>
+      <td style="color:#d97706;font-weight:600">29 Jul, 2026; 12:20 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹178.50</td>
+      <td class="amt">₹403.00</td>
+    </tr>
+    <tr>
+      <td>90</td>
+      <td><b>pvj</b></td>
+      <td><code>642efe903817260020576199</code></td>
+      <td style="color:#64748b">pvjtaswirwala@gmail.com<br>9673200044</td>
+      <td style="color:#d97706;font-weight:600">28 Jul, 2026; 09:05 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹49.00</td>
+      <td class="amt">₹93.00</td>
+    </tr>
+    <tr>
+      <td>91</td>
+      <td><b>rushiijinturkar</b></td>
+      <td><code>6a68519f6920d10013bfff11</code></td>
+      <td style="color:#64748b">jinturkarrushikesh6@gmail.com<br>9881962931</td>
+      <td style="color:#d97706;font-weight:600">28 Jul, 2026; 02:09 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹39.00</td>
+      <td class="amt">₹177.00</td>
+    </tr>
+    <tr>
+      <td>92</td>
+      <td><b>httpswwwskills2earnstore</b></td>
+      <td><code>6a64c7cccc4d980013353539</code></td>
+      <td style="color:#64748b">k9163838@gmail.com<br>7321842131</td>
+      <td style="color:#d97706;font-weight:600">28 Jul, 2026; 06:27 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹2.00</td>
+      <td class="amt">₹281.00</td>
+    </tr>
+    <tr>
+      <td>93</td>
+      <td><b>kannadabusinessman1</b></td>
+      <td><code>680c594745969000134f60f2</code></td>
+      <td style="color:#64748b">savalagiambanna@gmail.com<br>9518386781</td>
+      <td style="color:#d97706;font-weight:600">28 Jul, 2026; 08:45 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.00</td>
+      <td class="amt">₹581.00</td>
+    </tr>
+    <tr>
+      <td>94</td>
+      <td><b>krishnasharmaedits</b></td>
+      <td><code>67759efb59744c00134abcb3</code></td>
+      <td style="color:#64748b">ks2422444@gmail.com<br>6204954106</td>
+      <td style="color:#d97706;font-weight:600">28 Jul, 2026; 01:23 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹49.00</td>
+      <td class="amt">₹121.00</td>
+    </tr>
+    <tr>
+      <td>95</td>
+      <td><b>mahirdigitalproducts</b></td>
+      <td><code>68cebba0ffb19f0014011cf0</code></td>
+      <td style="color:#64748b">mahirdigitalproducts@gmail.com<br>9586210372</td>
+      <td style="color:#d97706;font-weight:600">27 Jul, 2026; 12:15 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.00</td>
+      <td class="amt">₹837.00</td>
+    </tr>
+    <tr>
+      <td>96</td>
+      <td><b>rampal-chaliya</b></td>
+      <td><code>6763315c56c23f001330b6b4</code></td>
+      <td style="color:#64748b">rampalchaliya3@gmail.com<br>9351952577</td>
+      <td style="color:#d97706;font-weight:600">26 Jul, 2026; 11:37 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹10.00</td>
+      <td class="amt">₹90.00</td>
+    </tr>
+    <tr>
+      <td>97</td>
+      <td><b>kunwarrverma</b></td>
+      <td><code>6a58ebd9c1f60a0013a7ae92</code></td>
+      <td style="color:#64748b">kunwarstore1@gmail.com<br>8787259641</td>
+      <td style="color:#d97706;font-weight:600">26 Jul, 2026; 11:11 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹2.49</td>
+      <td class="amt">₹187.00</td>
+    </tr>
+    <tr>
+      <td>98</td>
+      <td><b>basicsofstockmarket</b></td>
+      <td><code>69771ce70263e40014683faa</code></td>
+      <td style="color:#64748b">basicsofstockmarket689@gmail.com<br>9001844566</td>
+      <td style="color:#d97706;font-weight:600">26 Jul, 2026; 11:27 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.00</td>
+      <td class="amt">₹192.00</td>
+    </tr>
+    <tr>
+      <td>99</td>
+      <td><b>digitalcraftshopofficial</b></td>
+      <td><code>656f79c2097513001e2d8b44</code></td>
+      <td style="color:#64748b">digitalcraftshopofficial@gmail.com<br>8318124376</td>
+      <td style="color:#d97706;font-weight:600">26 Jul, 2026; 10:03 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.00</td>
+      <td class="amt">₹562.00</td>
+    </tr>
+    <tr>
+      <td>100</td>
+      <td><b>edufield</b></td>
+      <td><code>6427d877326a58001fad2dff</code></td>
+      <td style="color:#64748b">edufieldsolutions@gmail.com<br>9728892566</td>
+      <td style="color:#d97706;font-weight:600">26 Jul, 2026; 01:12 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.00</td>
+      <td class="amt">₹389.00</td>
+    </tr>
+    <tr>
+      <td>101</td>
+      <td><b>medtricks10</b></td>
+      <td><code>69872e31350e1a0014e0d152</code></td>
+      <td style="color:#64748b">satish123hugge@gmail.com<br>9380377671</td>
+      <td style="color:#d97706;font-weight:600">25 Jul, 2026; 04:38 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹199.00</td>
+      <td class="amt">₹84.00</td>
+    </tr>
+    <tr>
+      <td>102</td>
+      <td><b>rudrayuinternational</b></td>
+      <td><code>6a3cb8a79a74380013671688</code></td>
+      <td style="color:#64748b">99naiksai@gmail.com<br>8169370658</td>
+      <td style="color:#d97706;font-weight:600">25 Jul, 2026; 03:28 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹99.00</td>
+      <td class="amt">₹93.00</td>
+    </tr>
+    <tr>
+      <td>103</td>
+      <td><b>Ashis4580</b></td>
+      <td><code>65c50d9ceddc0f001e83f770</code></td>
+      <td style="color:#64748b">asen12.as@gmail.com<br>7872132641</td>
+      <td style="color:#d97706;font-weight:600">25 Jul, 2026; 09:53 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.00</td>
+      <td class="amt">₹178.00</td>
+    </tr>
+    <tr>
+      <td>104</td>
+      <td><b>hammercodex34</b></td>
+      <td><code>661354a2609509001366030c</code></td>
+      <td style="color:#64748b">hammercodexguide@gmail.com<br>6238954403</td>
+      <td style="color:#d97706;font-weight:600">25 Jul, 2026; 01:32 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹2.99</td>
+      <td class="amt">₹745.00</td>
+    </tr>
+    <tr>
+      <td>105</td>
+      <td><b>digitalworldshop</b></td>
+      <td><code>683ae6214a9a010013309cf0</code></td>
+      <td style="color:#64748b">adsagency89@gmail.com<br>8860908904</td>
+      <td style="color:#d97706;font-weight:600">24 Jul, 2026; 05:24 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.00</td>
+      <td class="amt">₹373.00</td>
+    </tr>
+    <tr>
+      <td>106</td>
+      <td><b>viveksreal</b></td>
+      <td><code>69787b3516d6450013ad4e22</code></td>
+      <td style="color:#64748b">viveksreal@gmail.com<br>8968526279</td>
+      <td style="color:#d97706;font-weight:600">24 Jul, 2026; 04:39 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.00</td>
+      <td class="amt">₹75.00</td>
+    </tr>
+    <tr>
+      <td>107</td>
+      <td><b>filmersb</b></td>
+      <td><code>66aff0b505f9600013ddf37a</code></td>
+      <td style="color:#64748b">barsesachin55@gmail.com<br>9146418611</td>
+      <td style="color:#d97706;font-weight:600">23 Jul, 2026; 04:25 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹99.00</td>
+      <td class="amt">₹1,966.00</td>
+    </tr>
+    <tr>
+      <td>108</td>
+      <td><b>digiscaleup</b></td>
+      <td><code>641c86c2bdbc6300205b9a61</code></td>
+      <td style="color:#64748b">reality0077@gmail.com<br>8709029272</td>
+      <td style="color:#d97706;font-weight:600">23 Jul, 2026; 03:05 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹2.99</td>
+      <td class="amt">₹281.00</td>
+    </tr>
+    <tr>
+      <td>109</td>
+      <td><b>adirocks99</b></td>
+      <td><code>64c4f06c791ddd001d166124</code></td>
+      <td style="color:#64748b">soralapps@gmail.com<br>8118857473</td>
+      <td style="color:#d97706;font-weight:600">21 Jul, 2026; 10:14 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹9.00</td>
+      <td class="amt">₹86.00</td>
+    </tr>
+    <tr>
+      <td>110</td>
+      <td><b>vytronexshop</b></td>
+      <td><code>6986f4b7350e1a0014d3c3c1</code></td>
+      <td style="color:#64748b">vytronex.official@gmail.com<br>9925741553</td>
+      <td style="color:#d97706;font-weight:600">21 Jul, 2026; 06:48 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.00</td>
+      <td class="amt">₹1,218.00</td>
+    </tr>
+    <tr>
+      <td>111</td>
+      <td><b>mona6933</b></td>
+      <td><code>64b402e13ab1e1002028e845</code></td>
+      <td style="color:#64748b">officialtotstreasure24@gmail.com<br>7771009006</td>
+      <td style="color:#d97706;font-weight:600">20 Jul, 2026; 09:04 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹59.00</td>
+      <td class="amt">₹358.00</td>
+    </tr>
+    <tr>
+      <td>112</td>
+      <td><b>sudhalifestylecreator</b></td>
+      <td><code>69a82c8680cbb30013076938</code></td>
+      <td style="color:#64748b">sudhascullture@gmail.com<br>9363181127</td>
+      <td style="color:#d97706;font-weight:600">20 Jul, 2026; 08:10 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹50.00</td>
+      <td class="amt">₹244.00</td>
+    </tr>
+    <tr>
+      <td>113</td>
+      <td><b>deepaktoks</b></td>
+      <td><code>6a3ea6dd87eb450013dd9d34</code></td>
+      <td style="color:#64748b">deepaktoks50@gmail.com<br>9188399445</td>
+      <td style="color:#d97706;font-weight:600">20 Jul, 2026; 11:04 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹49.00</td>
+      <td class="amt">₹510.00</td>
+    </tr>
+    <tr>
+      <td>114</td>
+      <td><b>viswa6971</b></td>
+      <td><code>6485ba234454f1002a67a55f</code></td>
+      <td style="color:#64748b">viswa6971@gmail.com<br>6302575826</td>
+      <td style="color:#d97706;font-weight:600">20 Jul, 2026; 08:10 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.00</td>
+      <td class="amt">₹2,331.00</td>
+    </tr>
+    <tr>
+      <td>115</td>
+      <td><b>englishwithpriyaa</b></td>
+      <td><code>668ceb8a92493a0013a4d089</code></td>
+      <td style="color:#64748b">work.pricha@gmail.com<br>9877784101</td>
+      <td style="color:#d97706;font-weight:600">19 Jul, 2026; 11:01 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹6.00</td>
+      <td class="amt">₹1,333.00</td>
+    </tr>
+    <tr>
+      <td>116</td>
+      <td><b>astrovivek</b></td>
+      <td><code>6524279afc8f020028e8e7ce</code></td>
+      <td style="color:#64748b">durgabhawanijyotishsanstha4@gmail.com<br>7096608687</td>
+      <td style="color:#d97706;font-weight:600">18 Jul, 2026; 08:05 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹99.00</td>
+      <td class="amt">₹535.00</td>
+    </tr>
+    <tr>
+      <td>117</td>
+      <td><b>mjlove</b></td>
+      <td><code>6475e5019c04530020d21fa7</code></td>
+      <td style="color:#64748b">mjjoxz@gmail.com<br>7218884392</td>
+      <td style="color:#d97706;font-weight:600">19 Jul, 2026; 01:44 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹40.00</td>
+      <td class="amt">₹931.00</td>
+    </tr>
+    <tr>
+      <td>118</td>
+      <td><b>alphaproductsog</b></td>
+      <td><code>69ec99b752b04c0012c6a65e</code></td>
+      <td style="color:#64748b">premsagergupta2008@gmail.com<br>7870313132</td>
+      <td style="color:#d97706;font-weight:600">18 Jul, 2026; 05:45 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹5.00</td>
+      <td class="amt">₹103.00</td>
+    </tr>
+    <tr>
+      <td>119</td>
+      <td><b>anshhai</b></td>
+      <td><code>674a8011e696e000135e9c97</code></td>
+      <td style="color:#64748b">anshspeakxx@gmail.com<br>8799760839</td>
+      <td style="color:#d97706;font-weight:600">18 Jul, 2026; 05:16 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.00</td>
+      <td class="amt">₹887.00</td>
+    </tr>
+    <tr>
+      <td>120</td>
+      <td><b>365daysbeingdiscipline</b></td>
+      <td><code>66605587f88919001342d15e</code></td>
+      <td style="color:#64748b">rkss2015@gmail.com<br>7047949909</td>
+      <td style="color:#d97706;font-weight:600">18 Jul, 2026; 02:24 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.00</td>
+      <td class="amt">₹358.00</td>
+    </tr>
+    <tr>
+      <td>121</td>
+      <td><b>kafeelgraphics</b></td>
+      <td><code>654b50456160d4001e32a46b</code></td>
+      <td style="color:#64748b">kafeelfaizi@gmail.com<br>7097525237</td>
+      <td style="color:#d97706;font-weight:600">15 Jul, 2026; 02:34 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹199.00</td>
+      <td class="amt">₹180.00</td>
+    </tr>
+    <tr>
+      <td>122</td>
+      <td><b>nagarajan1987</b></td>
+      <td><code>6605c96bb094b2001245cb0e</code></td>
+      <td style="color:#64748b">nagarajan.mechlab@gmail.com<br>8870668209</td>
+      <td style="color:#d97706;font-weight:600">15 Jul, 2026; 05:04 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹99.00</td>
+      <td class="amt">₹373.00</td>
+    </tr>
+    <tr>
+      <td>123</td>
+      <td><b>investmindscape</b></td>
+      <td><code>68997ec604f9310013299dc3</code></td>
+      <td style="color:#64748b">picsparcel@gmail.com<br>6201763919</td>
+      <td style="color:#d97706;font-weight:600">15 Jul, 2026; 01:54 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹2.99</td>
+      <td class="amt">₹563.00</td>
+    </tr>
+    <tr>
+      <td>124</td>
+      <td><b>itsfaaizhusain</b></td>
+      <td><code>6a54e5d1478445001382af33</code></td>
+      <td style="color:#64748b">faaizhusain47@gmail.com<br>7017052209</td>
+      <td style="color:#d97706;font-weight:600">14 Jul, 2026; 03:09 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹299.00</td>
+      <td class="amt">₹214.00</td>
+    </tr>
+    <tr>
+      <td>125</td>
+      <td><b>muleshkumar</b></td>
+      <td><code>6a44a42ce1874100130ed614</code></td>
+      <td style="color:#64748b">officialmulesh01@gmail.com<br>7400840401</td>
+      <td style="color:#d97706;font-weight:600">14 Jul, 2026; 10:02 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹199.00</td>
+      <td class="amt">₹281.00</td>
+    </tr>
+    <tr>
+      <td>126</td>
+      <td><b>user23782</b></td>
+      <td><code>67b9914393f0a00013325d9a</code></td>
+      <td style="color:#64748b">mayankhingrajiya@gmail.com<br>8128171666</td>
+      <td style="color:#d97706;font-weight:600">14 Jul, 2026; 09:23 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹199.00</td>
+      <td class="amt">₹179.00</td>
+    </tr>
+    <tr>
+      <td>127</td>
+      <td><b>sbtrader</b></td>
+      <td><code>62c8635584e4cb17f206459d</code></td>
+      <td style="color:#64748b">yadavankitftp@gmail.com<br>9140866595</td>
+      <td style="color:#d97706;font-weight:600">14 Jul, 2026; 10:27 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹10.00</td>
+      <td class="amt">₹29,345.00</td>
+    </tr>
+    <tr>
+      <td>128</td>
+      <td><b>tradewithme47</b></td>
+      <td><code>6a55d3282f10800012ed9ab0</code></td>
+      <td style="color:#64748b">parthpatilpune0007@gmail.com<br>8890533751</td>
+      <td style="color:#d97706;font-weight:600">14 Jul, 2026; 01:08 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.18</td>
+      <td class="amt">₹17,281.00</td>
+    </tr>
+    <tr>
+      <td>129</td>
+      <td><b>getyourdigitalthingdone</b></td>
+      <td><code>648c6771c16aa70020616b39</code></td>
+      <td style="color:#64748b">theentrovibelaunchpad@gmail.com<br>9408524801</td>
+      <td style="color:#d97706;font-weight:600">13 Jul, 2026; 03:15 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹299.00</td>
+      <td class="amt">₹1,877.00</td>
+    </tr>
+    <tr>
+      <td>130</td>
+      <td><b>investwithsoumyadeep</b></td>
+      <td><code>64c10e82985f36002a91518a</code></td>
+      <td style="color:#64748b">soumyadeepsp@gmail.com<br>7042006372</td>
+      <td style="color:#d97706;font-weight:600">12 Jul, 2026; 10:16 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹250.00</td>
+      <td class="amt">₹855.00</td>
+    </tr>
+    <tr>
+      <td>131</td>
+      <td><b>gobbleandgiggle</b></td>
+      <td><code>687fbcc283371d001310e3ff</code></td>
+      <td style="color:#64748b">anu.scorp15@gmail.com<br>9591702512</td>
+      <td style="color:#d97706;font-weight:600">12 Jul, 2026; 01:03 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹224.25</td>
+      <td class="amt">₹281.00</td>
+    </tr>
+    <tr>
+      <td>132</td>
+      <td><b>vorzilosensi</b></td>
+      <td><code>694675fc8051ad00136bad67</code></td>
+      <td style="color:#64748b">bilalno.2786@gmail.com<br>9352324621</td>
+      <td style="color:#d97706;font-weight:600">12 Jul, 2026; 10:17 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹199.00</td>
+      <td class="amt">₹1,125.00</td>
+    </tr>
+    <tr>
+      <td>133</td>
+      <td><b>yehuyeenabaat</b></td>
+      <td><code>687d1a6bd8ed810013eebc9b</code></td>
+      <td style="color:#64748b">nextorylaunch@gmail.com<br>9834136425</td>
+      <td style="color:#d97706;font-weight:600">10 Jul, 2026; 11:34 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹299.00</td>
+      <td class="amt">₹5,723.00</td>
+    </tr>
+    <tr>
+      <td>134</td>
+      <td><b>suryamishra</b></td>
+      <td><code>69668f8fd9de730013603567</code></td>
+      <td style="color:#64748b">suryaislearning@gmail.com<br>7080642899</td>
+      <td style="color:#d97706;font-weight:600">10 Jul, 2026; 10:42 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹4.99</td>
+      <td class="amt">₹470.00</td>
+    </tr>
+    <tr>
+      <td>135</td>
+      <td><b>intradaygeeks</b></td>
+      <td><code>615afbdba0023812093170e3</code></td>
+      <td style="color:#64748b">jayeshthakkar9096@gmail.com<br>9096970095</td>
+      <td style="color:#d97706;font-weight:600">10 Jul, 2026; 10:55 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.18</td>
+      <td class="amt">₹2,949.00</td>
+    </tr>
+    <tr>
+      <td>136</td>
+      <td><b>itsvaishu1229</b></td>
+      <td><code>6a4d1944cd48f700133e6ac6</code></td>
+      <td style="color:#64748b">shivayamgar767@gmail.com<br>8104695153</td>
+      <td style="color:#d97706;font-weight:600">10 Jul, 2026; 12:03 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.00</td>
+      <td class="amt">₹749.00</td>
+    </tr>
+    <tr>
+      <td>137</td>
+      <td><b>launchhive</b></td>
+      <td><code>6a4232417b30ee001484fc87</code></td>
+      <td style="color:#64748b">launchhive01@gmail.com<br>9987944117</td>
+      <td style="color:#d97706;font-weight:600">05 Jul, 2026; 05:35 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹19.00</td>
+      <td class="amt">₹670.00</td>
+    </tr>
+    <tr>
+      <td>138</td>
+      <td><b>zerbonics</b></td>
+      <td><code>65b63b89aa6275001daa0fd9</code></td>
+      <td style="color:#64748b">zebromics@gmail.com<br>9400337284</td>
+      <td style="color:#d97706;font-weight:600">03 Jul, 2026; 01:15 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹850.00</td>
+      <td class="amt">₹1,076.00</td>
+    </tr>
+    <tr>
+      <td>139</td>
+      <td><b>lumorabyadi</b></td>
+      <td><code>683ed82ccb86120013127309</code></td>
+      <td style="color:#64748b">adityasahoo610@gmail.com<br>8144843646</td>
+      <td style="color:#d97706;font-weight:600">03 Jul, 2026; 10:34 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹5.00</td>
+      <td class="amt">₹2,352.00</td>
+    </tr>
+    <tr>
+      <td>140</td>
+      <td><b>sachinkushwahadigital</b></td>
+      <td><code>65802c2764b988001f1069b1</code></td>
+      <td style="color:#64748b">sachinkushwaha987654321@gmail.com<br>7566160185</td>
+      <td style="color:#d97706;font-weight:600">03 Jul, 2026; 06:49 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.00</td>
+      <td class="amt">₹179.00</td>
+    </tr>
+    <tr>
+      <td>141</td>
+      <td><b>abhishekghunawat72</b></td>
+      <td><code>66c1cd38ac64eb00139337a5</code></td>
+      <td style="color:#64748b">abhishekghunawat0@gmail.com<br>7240584783</td>
+      <td style="color:#d97706;font-weight:600">02 Jul, 2026; 08:39 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹799.00</td>
+      <td class="amt">₹3,599.00</td>
+    </tr>
+    <tr>
+      <td>142</td>
+      <td><b>thebundledukaan</b></td>
+      <td><code>689f5f0a63003900135de6b7</code></td>
+      <td style="color:#64748b">sales.growthmode@gmail.com<br>9877735582</td>
+      <td style="color:#d97706;font-weight:600">03 Jul, 2026; 01:08 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.00</td>
+      <td class="amt">₹168.00</td>
+    </tr>
+    <tr>
+      <td>143</td>
+      <td><b>imrahul10x</b></td>
+      <td><code>6606ecf7a5d8e800140feb9a</code></td>
+      <td style="color:#64748b">rahulsingh827927@gmail.com<br>8279275047</td>
+      <td style="color:#d97706;font-weight:600">02 Jul, 2026; 03:13 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.00</td>
+      <td class="amt">₹51.00</td>
+    </tr>
+    <tr>
+      <td>144</td>
+      <td><b>odtradesoft</b></td>
+      <td><code>6523db21a4e730001df9e661</code></td>
+      <td style="color:#64748b">odtrade.nse@gmail.com<br>9777390628</td>
+      <td style="color:#d97706;font-weight:600">01 Jul, 2026; 02:16 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹300.00</td>
+      <td class="amt">₹6,913.00</td>
+    </tr>
+    <tr>
+      <td>145</td>
+      <td><b>creativestorebyashish</b></td>
+      <td><code>671cbd3b2a62430013b8eee8</code></td>
+      <td style="color:#64748b">kushawahaashishkumar@gmail.com<br>8235775054</td>
+      <td style="color:#d97706;font-weight:600">01 Jul, 2026; 04:31 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹99.00</td>
+      <td class="amt">₹89.00</td>
+    </tr>
+    <tr>
+      <td>146</td>
+      <td><b>skillpreneurlab</b></td>
+      <td><code>67f73e1b6919960013074297</code></td>
+      <td style="color:#64748b">skillpreneur.labz@gmail.com<br>7405861268</td>
+      <td style="color:#d97706;font-weight:600">01 Jul, 2026; 09:22 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹2.00</td>
+      <td class="amt">₹470.00</td>
+    </tr>
+    <tr>
+      <td>147</td>
+      <td><b>jishanex</b></td>
+      <td><code>68f5f105d7068a0013cce7a3</code></td>
+      <td style="color:#64748b">onlysupertech@gmail.com<br>7088136415</td>
+      <td style="color:#d97706;font-weight:600">28 Jun, 2026; 02:26 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.99</td>
+      <td class="amt">₹149.00</td>
+    </tr>
+    <tr>
+      <td>148</td>
+      <td><b>dexonintetnational</b></td>
+      <td><code>6a30041165186a001387da12</code></td>
+      <td style="color:#64748b">exim@dexoninternational.world<br>9041996999</td>
+      <td style="color:#d97706;font-weight:600">26 Jun, 2026; 04:04 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹999.00</td>
+      <td class="amt">₹940.00</td>
+    </tr>
+    <tr>
+      <td>149</td>
+      <td><b>pizzaacheesecake</b></td>
+      <td><code>695f66acd3fac90013ce731c</code></td>
+      <td style="color:#64748b">tanishaaggs95@gmail.com<br>7760816134</td>
+      <td style="color:#d97706;font-weight:600">26 Jun, 2026; 03:27 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹99.00</td>
+      <td class="amt">₹93.00</td>
+    </tr>
+    <tr>
+      <td>150</td>
+      <td><b>ruplaljanghel</b></td>
+      <td><code>665a8fad95a2bb00139c44ac</code></td>
+      <td style="color:#64748b">ruplaljanghel@gmail.com<br>7000715671</td>
+      <td style="color:#d97706;font-weight:600">26 Jun, 2026; 04:07 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹49.00</td>
+      <td class="amt">₹581.00</td>
+    </tr>
+    <tr>
+      <td>151</td>
+      <td><b>prasanjit134</b></td>
+      <td><code>633251a1cc74460957fb8186</code></td>
+      <td style="color:#64748b">teammad19@gmail.com<br>7600627306</td>
+      <td style="color:#d97706;font-weight:600">25 Jun, 2026; 06:15 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹20.00</td>
+      <td class="amt">₹562.00</td>
+    </tr>
+    <tr>
+      <td>152</td>
+      <td><b>buildwithkaran</b></td>
+      <td><code>69fc1c651b03b90013394e3d</code></td>
+      <td style="color:#64748b">karan.pawar3131@gmail.com<br>8469028730</td>
+      <td style="color:#d97706;font-weight:600">23 Jun, 2026; 08:40 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹299.00</td>
+      <td class="amt">₹562.00</td>
+    </tr>
+    <tr>
+      <td>153</td>
+      <td><b>ravider</b></td>
+      <td><code>6a0f1f12e3e1430013185b80</code></td>
+      <td style="color:#64748b">ravinderchhimpa3@gmail.com<br>8764788648</td>
+      <td style="color:#d97706;font-weight:600">23 Jun, 2026; 03:16 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹149.00</td>
+      <td class="amt">₹140.00</td>
+    </tr>
+    <tr>
+      <td>154</td>
+      <td><b>alphabetamumma</b></td>
+      <td><code>6943d5a13a0bfa0013c0497a</code></td>
+      <td style="color:#64748b">kritikagupta1003@gmail.com<br>9980809877</td>
+      <td style="color:#d97706;font-weight:600">23 Jun, 2026; 10:54 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹20.00</td>
+      <td class="amt">₹1,470.00</td>
+    </tr>
+    <tr>
+      <td>155</td>
+      <td><b>virtuallibraryneetpg</b></td>
+      <td><code>67aee9fabd9b860013d76746</code></td>
+      <td style="color:#64748b">aanjnaprepladder@gmail.com<br>7974425107</td>
+      <td style="color:#d97706;font-weight:600">20 Jun, 2026; 01:45 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹10.00</td>
+      <td class="amt">₹588.00</td>
+    </tr>
+    <tr>
+      <td>156</td>
+      <td><b>digitalprofitswithlata</b></td>
+      <td><code>69ddbbcdc4cd690013d6d5c9</code></td>
+      <td style="color:#64748b">digitalprofitswithlata@gmail.com<br>7820858562</td>
+      <td style="color:#d97706;font-weight:600">19 Jun, 2026; 06:07 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹4,000.00</td>
+      <td class="amt">₹140.00</td>
+    </tr>
+    <tr>
+      <td>157</td>
+      <td><b>officialsaditya</b></td>
+      <td><code>64ba838607ee7b002013c312</code></td>
+      <td style="color:#64748b">babaaditya677@gmail.com<br>9005704639</td>
+      <td style="color:#d97706;font-weight:600">17 Jun, 2026; 06:36 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹4,000.00</td>
+      <td class="amt">₹14,646.00</td>
+    </tr>
+    <tr>
+      <td>158</td>
+      <td><b>createyourfilms</b></td>
+      <td><code>6922c335e739de001343c9d7</code></td>
+      <td style="color:#64748b">creyofilms@gmail.com<br>9899021750</td>
+      <td style="color:#d97706;font-weight:600">16 Jun, 2026; 02:06 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹899.10</td>
+      <td class="amt">₹1,598.00</td>
+    </tr>
+    <tr>
+      <td>159</td>
+      <td><b>legaltrader</b></td>
+      <td><code>65897ce155e4ed001eaf2d96</code></td>
+      <td style="color:#64748b">legaltradergroup@gmail.com<br>9337833196</td>
+      <td style="color:#d97706;font-weight:600">15 Jun, 2026; 11:29 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹363.90</td>
+      <td class="amt">₹1,277.00</td>
+    </tr>
+    <tr>
+      <td>160</td>
+      <td><b>likithprasadbn6343</b></td>
+      <td><code>677a802db8a1e400132a1a88</code></td>
+      <td style="color:#64748b">likithprasadbn@gmail.com<br>8123114047</td>
+      <td style="color:#d97706;font-weight:600">15 Jun, 2026; 12:20 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹9.00</td>
+      <td class="amt">₹4,700.00</td>
+    </tr>
+    <tr>
+      <td>161</td>
+      <td><b>jobidventure</b></td>
+      <td><code>6a2d0250872697001329c63c</code></td>
+      <td style="color:#64748b">jobidventure@gmail.com<br>9822003464</td>
+      <td style="color:#d97706;font-weight:600">13 Jun, 2026; 05:29 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹299.00</td>
+      <td class="amt">₹563.00</td>
+    </tr>
+    <tr>
+      <td>162</td>
+      <td><b>thetemplatebox</b></td>
+      <td><code>66e92ec76c05200013a5b965</code></td>
+      <td style="color:#64748b">boharariya@gmail.com<br>8208358796</td>
+      <td style="color:#d97706;font-weight:600">12 Jun, 2026; 05:11 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹199.00</td>
+      <td class="amt">₹358.00</td>
+    </tr>
+    <tr>
+      <td>163</td>
+      <td><b>fxhardiik</b></td>
+      <td><code>69b00b48a1f59e00135f77f5</code></td>
+      <td style="color:#64748b">contactfxhardiik@gmail.com<br>9316839301</td>
+      <td style="color:#d97706;font-weight:600">10 Jun, 2026; 10:53 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹10.00</td>
+      <td class="amt">₹706.00</td>
+    </tr>
+    <tr>
+      <td>164</td>
+      <td><b>bmssdgital</b></td>
+      <td><code>6a04a6e0694a590014237043</code></td>
+      <td style="color:#64748b">bmssdigital@gmail.com<br>9651090909</td>
+      <td style="color:#d97706;font-weight:600">09 Jun, 2026; 09:58 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.00</td>
+      <td class="amt">₹1,316.00</td>
+    </tr>
+    <tr>
+      <td>165</td>
+      <td><b>himacademi</b></td>
+      <td><code>690539e83fef470013c727e9</code></td>
+      <td style="color:#64748b">ajay97624@gmail.com<br>9780196458</td>
+      <td style="color:#d97706;font-weight:600">06 Jun, 2026; 01:31 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹2.49</td>
+      <td class="amt">₹89.00</td>
+    </tr>
+    <tr>
+      <td>166</td>
+      <td><b>stockstraders</b></td>
+      <td><code>65645dfe77f97f00dff1712b</code></td>
+      <td style="color:#64748b">sp2607173@gmail.com<br>9511390674</td>
+      <td style="color:#d97706;font-weight:600">05 Jun, 2026; 01:05 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹6,479.28</td>
+      <td class="amt">₹2,661.00</td>
+    </tr>
+    <tr>
+      <td>167</td>
+      <td><b>ankanmandal</b></td>
+      <td><code>6453df56659b340020a3a4ee</code></td>
+      <td style="color:#64748b">iamankanmandal@gmail.com<br>7031139797</td>
+      <td style="color:#d97706;font-weight:600">05 Jun, 2026; 11:22 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹199.00</td>
+      <td class="amt">₹465.00</td>
+    </tr>
+    <tr>
+      <td>168</td>
+      <td><b>digitivoin</b></td>
+      <td><code>6979e3df4c09f10013922389</code></td>
+      <td style="color:#64748b">deeptiwalia33@gmail.com<br>9990011392</td>
+      <td style="color:#d97706;font-weight:600">05 Jun, 2026; 03:03 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹199.00</td>
+      <td class="amt">₹280.00</td>
+    </tr>
+    <tr>
+      <td>169</td>
+      <td><b>raghavbuilds</b></td>
+      <td><code>68c936c0588acc00139f4f5b</code></td>
+      <td style="color:#64748b">raghav.builds@gmail.com<br>9721384725</td>
+      <td style="color:#d97706;font-weight:600">04 Jun, 2026; 09:03 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹299.00</td>
+      <td class="amt">₹753.00</td>
+    </tr>
+    <tr>
+      <td>170</td>
+      <td><b>itzmel7</b></td>
+      <td><code>6979b1078a51610014a4b5be</code></td>
+      <td style="color:#64748b">prakashmelvin30@gmail.com<br>9361214179</td>
+      <td style="color:#d97706;font-weight:600">29 May, 2026; 09:52 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹49.00</td>
+      <td class="amt">₹92.00</td>
+    </tr>
+    <tr>
+      <td>171</td>
+      <td><b>mrsankalppatil45</b></td>
+      <td><code>69c09e0b43e3830013b7fe23</code></td>
+      <td style="color:#64748b">sankalp311032@gmail.com<br>918237749025</td>
+      <td style="color:#d97706;font-weight:600">28 May, 2026; 09:16 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹51.00</td>
+      <td class="amt">₹291.00</td>
+    </tr>
+    <tr>
+      <td>172</td>
+      <td><b>doliondigitals</b></td>
+      <td><code>6a0e6d5b00e492001325389b</code></td>
+      <td style="color:#64748b">phogatgourav4321@gmail.com<br>9518400342</td>
+      <td style="color:#d97706;font-weight:600">23 May, 2026; 08:11 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹149.00</td>
+      <td class="amt">₹1,868.00</td>
+    </tr>
+    <tr>
+      <td>173</td>
+      <td><b>abhisheksharma-hello</b></td>
+      <td><code>666c561be97fac0013836d05</code></td>
+      <td style="color:#64748b">abhi10sheksharma@gmail.com<br>9163385872</td>
+      <td style="color:#d97706;font-weight:600">18 May, 2026; 11:46 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹5.00</td>
+      <td class="amt">₹449.00</td>
+    </tr>
+    <tr>
+      <td>174</td>
+      <td><b>growwihtmohseen</b></td>
+      <td><code>65795361c879dd001d3691a3</code></td>
+      <td style="color:#64748b">mohseenraza11@gmail.com<br>9711448894</td>
+      <td style="color:#d97706;font-weight:600">13 May, 2026; 10:22 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹9,400.00</td>
+      <td class="amt">₹6,344.00</td>
+    </tr>
+    <tr>
+      <td>175</td>
+      <td><b>alibusyguy1</b></td>
+      <td><code>65d626785e78840013fb559c</code></td>
+      <td style="color:#64748b">pm6484472@gmail.com<br>919235230460</td>
+      <td style="color:#d97706;font-weight:600">07 May, 2026; 10:31 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹19.00</td>
+      <td class="amt">₹93.00</td>
+    </tr>
+    <tr>
+      <td>176</td>
+      <td><b>bestforyou</b></td>
+      <td><code>65eac3b21c7c260013969a05</code></td>
+      <td style="color:#64748b">jiloyaboy7@gmail.com<br>9549189005</td>
+      <td style="color:#d97706;font-weight:600">30 Apr, 2026; 02:55 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.00</td>
+      <td class="amt">₹210.00</td>
+    </tr>
+    <tr>
+      <td>177</td>
+      <td><b>boomenterprisewholesale</b></td>
+      <td><code>67f61e5f6919960013f7ae72</code></td>
+      <td style="color:#64748b">thebusyguy11@gmail.com<br>8800113536</td>
+      <td style="color:#d97706;font-weight:600">29 Apr, 2026; 04:43 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹199.00</td>
+      <td class="amt">₹187.00</td>
+    </tr>
+    <tr>
+      <td>178</td>
+      <td><b>sushrutai</b></td>
+      <td><code>6925b1db38ee090013e7d58e</code></td>
+      <td style="color:#64748b">sushrutnayak1997@gmail.com<br>9113526663</td>
+      <td style="color:#d97706;font-weight:600">16 Apr, 2026; 11:59 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.00</td>
+      <td class="amt">₹2,343.00</td>
+    </tr>
+    <tr>
+      <td>179</td>
+      <td><b>moneyandwealth</b></td>
+      <td><code>679110e71ca4f90013c8d39e</code></td>
+      <td style="color:#64748b">hardikbhatiya066@gmail.com<br>8347609047</td>
+      <td style="color:#d97706;font-weight:600">09 Apr, 2026; 02:31 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹8,999.00</td>
+      <td class="amt">₹5,272.00</td>
+    </tr>
+    <tr>
+      <td>180</td>
+      <td><b>thatsoshani</b></td>
+      <td><code>67e417381d3d5f0013de7c72</code></td>
+      <td style="color:#64748b">collabxshani@gmail.com<br>8955390307</td>
+      <td style="color:#d97706;font-weight:600">06 Apr, 2026; 08:19 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹299.00</td>
+      <td class="amt">₹749.00</td>
+    </tr>
+    <tr>
+      <td>181</td>
+      <td><b>bluehealthh</b></td>
+      <td><code>698cf77eb0b2ec0013591e43</code></td>
+      <td style="color:#64748b">gy519162@gmail.com<br>9689741581</td>
+      <td style="color:#d97706;font-weight:600">06 Apr, 2026; 09:20 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.49</td>
+      <td class="amt">₹234.00</td>
+    </tr>
+    <tr>
+      <td>182</td>
+      <td><b>user55934</b></td>
+      <td><code>68d78be074d2c90013569780</code></td>
+      <td style="color:#64748b">djraulmusic0721@gmail.com<br>9082041711</td>
+      <td style="color:#d97706;font-weight:600">31 Mar, 2026; 09:48 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹49.00</td>
+      <td class="amt">₹93.00</td>
+    </tr>
+    <tr>
+      <td>183</td>
+      <td><b>megaofferzone</b></td>
+      <td><code>69a53abdd5908000133716a7</code></td>
+      <td style="color:#64748b">riteshpatidar92083@gmail.com<br>9770144704</td>
+      <td style="color:#d97706;font-weight:600">29 Mar, 2026; 10:13 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹199.00</td>
+      <td class="amt">₹187.00</td>
+    </tr>
+    <tr>
+      <td>184</td>
+      <td><b>learnifyy</b></td>
+      <td><code>68e3b95a969aa700138bf930</code></td>
+      <td style="color:#64748b">rifasha076@gmail.com<br>8086802784</td>
+      <td style="color:#d97706;font-weight:600">22 Mar, 2026; 08:07 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹99.00</td>
+      <td class="amt">₹470.00</td>
+    </tr>
+    <tr>
+      <td>185</td>
+      <td><b>inderjeetgs</b></td>
+      <td><code>67441138de3d6800131e16f6</code></td>
+      <td style="color:#64748b">ziddeboss794@gmail.com<br>7889820615</td>
+      <td style="color:#d97706;font-weight:600">19 Mar, 2026; 07:32 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹9.00</td>
+      <td class="amt">₹749.00</td>
+    </tr>
+    <tr>
+      <td>186</td>
+      <td><b>harikrishnanskmr</b></td>
+      <td><code>68dca790e1910c0013880398</code></td>
+      <td style="color:#64748b">hari70644@gmail.com<br>9562472673</td>
+      <td style="color:#d97706;font-weight:600">18 Mar, 2026; 09:14 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹149.00</td>
+      <td class="amt">₹280.00</td>
+    </tr>
+    <tr>
+      <td>187</td>
+      <td><b>astrosagar</b></td>
+      <td><code>65536d0bfd3e64001d742ca3</code></td>
+      <td style="color:#64748b">starmedia2222@gmail.com<br>9724241287</td>
+      <td style="color:#d97706;font-weight:600">11 Mar, 2026; 07:34 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.00</td>
+      <td class="amt">₹4,362.00</td>
+    </tr>
+    <tr>
+      <td>188</td>
+      <td><b>bhushanharc</b></td>
+      <td><code>69a2a730f171a2001336b0ef</code></td>
+      <td style="color:#64748b">hindustanayurved2021@gmail.com<br>8080651508</td>
+      <td style="color:#d97706;font-weight:600">03 Mar, 2026; 06:34 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹149.00</td>
+      <td class="amt">₹563.00</td>
+    </tr>
+    <tr>
+      <td>189</td>
+      <td><b>khodalchhoru5380</b></td>
+      <td><code>697358e8c0490e001350c52e</code></td>
+      <td style="color:#64748b">akshaybavishi143@gmail.com<br>9904420075</td>
+      <td style="color:#d97706;font-weight:600">02 Mar, 2026; 02:36 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹149.00</td>
+      <td class="amt">₹93.00</td>
+    </tr>
+    <tr>
+      <td>190</td>
+      <td><b>papermantelugu</b></td>
+      <td><code>6995f9ea5ef8f5001210adb7</code></td>
+      <td style="color:#64748b">zoocaptive@gmail.com<br>6305661631</td>
+      <td style="color:#d97706;font-weight:600">01 Mar, 2026; 06:42 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹199.00</td>
+      <td class="amt">₹190.00</td>
+    </tr>
+    <tr>
+      <td>191</td>
+      <td><b>Jaykishan2</b></td>
+      <td><code>6585ba1fea8865001e3db328</code></td>
+      <td style="color:#64748b">jaykishanchauhan962t@gmail.com<br>8303691740</td>
+      <td style="color:#d97706;font-weight:600">28 Feb, 2026; 07:22 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.99</td>
+      <td class="amt">₹271.00</td>
+    </tr>
+    <tr>
+      <td>192</td>
+      <td><b>mr.lucky_official_89</b></td>
+      <td><code>63b67b9c877064003327f7bb</code></td>
+      <td style="color:#64748b">aap983863@gmail.com<br>9559691814</td>
+      <td style="color:#d97706;font-weight:600">08 Feb, 2026; 11:11 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹127.71</td>
+      <td class="amt">₹149.00</td>
+    </tr>
+    <tr>
+      <td>193</td>
+      <td><b>dhananjay34</b></td>
+      <td><code>64df4f9955aa07001e4ba07e</code></td>
+      <td style="color:#64748b">dhananjay63953@gmail.com<br>9837779161</td>
+      <td style="color:#d97706;font-weight:600">07 Feb, 2026; 04:58 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.00</td>
+      <td class="amt">₹663.00</td>
+    </tr>
+    <tr>
+      <td>194</td>
+      <td><b>abhirix-academy</b></td>
+      <td><code>6717ac91a235f100131ecc54</code></td>
+      <td style="color:#64748b">pesbazaar@gmail.com<br>9999964999</td>
+      <td style="color:#d97706;font-weight:600">06 Feb, 2026; 06:35 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹99.00</td>
+      <td class="amt">₹219.00</td>
+    </tr>
+    <tr>
+      <td>195</td>
+      <td><b>theniteshrajput10x</b></td>
+      <td><code>64a01d2952cb29001f69b335</code></td>
+      <td style="color:#64748b">niteshrajput2244@gmail.com<br>8570877685</td>
+      <td style="color:#d97706;font-weight:600">02 Feb, 2026; 01:01 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹99.00</td>
+      <td class="amt">₹100.00</td>
+    </tr>
+    <tr>
+      <td>196</td>
+      <td><b>mynk0008</b></td>
+      <td><code>697c911f76d2f800133ffcd9</code></td>
+      <td style="color:#64748b">contactwithmynk@gmail.com<br>9817119186</td>
+      <td style="color:#d97706;font-weight:600">30 Jan, 2026; 08:07 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.00</td>
+      <td class="amt">₹187.00</td>
+    </tr>
+    <tr>
+      <td>197</td>
+      <td><b>redvate</b></td>
+      <td><code>69045227bd8137001390102a</code></td>
+      <td style="color:#64748b">alishpagda08@gmail.com<br>7069157943</td>
+      <td style="color:#d97706;font-weight:600">27 Jan, 2026; 04:52 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹14.99</td>
+      <td class="amt">₹1,409.00</td>
+    </tr>
+    <tr>
+      <td>198</td>
+      <td><b>k27artworks</b></td>
+      <td><code>69184157892ce60013e6c2c6</code></td>
+      <td style="color:#64748b">mytime.bright@gmail.com<br>9739314612</td>
+      <td style="color:#d97706;font-weight:600">01 Jan, 2026; 08:30 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹50.00</td>
+      <td class="amt">₹113.00</td>
+    </tr>
+    <tr>
+      <td>199</td>
+      <td><b>raags</b></td>
+      <td><code>61fd7262f1c77f0fdfa3ea7b</code></td>
+      <td style="color:#64748b">raghavendra.dathe@gmail.com<br>9663304606</td>
+      <td style="color:#d97706;font-weight:600">29 Dec, 2025; 01:56 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹80,000.00</td>
+      <td class="amt">₹16,937.00</td>
+    </tr>
+    <tr>
+      <td>200</td>
+      <td><b>growupkhan</b></td>
+      <td><code>693675cee17c2f0013ca67f3</code></td>
+      <td style="color:#64748b">khanzaid1923@gmail.com<br>9152967191</td>
+      <td style="color:#d97706;font-weight:600">17 Dec, 2025; 09:49 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹199.00</td>
+      <td class="amt">₹186.00</td>
+    </tr>
+    <tr>
+      <td>201</td>
+      <td><b>digitalmalayalihub</b></td>
+      <td><code>6565a559cd49b4001d6ebc70</code></td>
+      <td style="color:#64748b">digitalmalayalihub@gmail.com<br>7902236606</td>
+      <td style="color:#d97706;font-weight:600">09 Dec, 2025; 12:52 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹99.00</td>
+      <td class="amt">₹751.00</td>
+    </tr>
+    <tr>
+      <td>202</td>
+      <td><b>kushal3968</b></td>
+      <td><code>6543cabb8d32b6001e508e10</code></td>
+      <td style="color:#64748b">kushalsajja@gmail.com<br>9620543935</td>
+      <td style="color:#d97706;font-weight:600">28 Oct, 2025; 10:09 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1,100.00</td>
+      <td class="amt">₹375.00</td>
+    </tr>
+    <tr>
+      <td>203</td>
+      <td><b>shekharkushwaha9223</b></td>
+      <td><code>640d515ac92ddc001fde4b17</code></td>
+      <td style="color:#64748b">shekharkushwaha599@gmail.com<br>9026865687</td>
+      <td style="color:#d97706;font-weight:600">04 Oct, 2025; 10:12 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹9.90</td>
+      <td class="amt">₹1,800.00</td>
+    </tr>
+    <tr>
+      <td>204</td>
+      <td><b>sv-carrer-zone</b></td>
+      <td><code>64b81eea9a3d40001f89018a</code></td>
+      <td style="color:#64748b">kasettyvijaykumar11@gmail.com<br>6301199614</td>
+      <td style="color:#d97706;font-weight:600">19 Sep, 2025; 10:05 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.00</td>
+      <td class="amt">₹113.00</td>
+    </tr>
+    <tr>
+      <td>205</td>
+      <td><b>djsatyamproductions</b></td>
+      <td><code>661e5da61144c200129e8620</code></td>
+      <td style="color:#64748b">djsatyamproductions@gmail.com<br>9110024048</td>
+      <td style="color:#d97706;font-weight:600">08 Sep, 2025; 09:06 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹29.00</td>
+      <td class="amt">₹63.00</td>
+    </tr>
+    <tr>
+      <td>206</td>
+      <td><b>ddeducationin</b></td>
+      <td><code>64cfc259e74c7f001ea1659e</code></td>
+      <td style="color:#64748b">ashishatoxford@gmail.com<br>9005358477</td>
+      <td style="color:#d97706;font-weight:600">16 Aug, 2025; 04:31 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹87.00</td>
+      <td class="amt">₹626.00</td>
+    </tr>
+    <tr>
+      <td>207</td>
+      <td><b>ddeducationin</b></td>
+      <td><code>64cfc259e74c7f001ea1659e</code></td>
+      <td style="color:#64748b">ashishatoxford@gmail.com<br>9005358477</td>
+      <td style="color:#d97706;font-weight:600">16 Aug, 2025; 04:31 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹87.00</td>
+      <td class="amt">₹178.00</td>
+    </tr>
+    <tr>
+      <td>208</td>
+      <td><b>ddeducationin</b></td>
+      <td><code>64cfc259e74c7f001ea1659e</code></td>
+      <td style="color:#64748b">ashishatoxford@gmail.com<br>9005358477</td>
+      <td style="color:#d97706;font-weight:600">16 Aug, 2025; 04:31 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹87.00</td>
+      <td class="amt">₹89.00</td>
+    </tr>
+    <tr>
+      <td>209</td>
+      <td><b>ddeducationin</b></td>
+      <td><code>64cfc259e74c7f001ea1659e</code></td>
+      <td style="color:#64748b">ashishatoxford@gmail.com<br>9005358477</td>
+      <td style="color:#d97706;font-weight:600">16 Aug, 2025; 04:31 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹87.00</td>
+      <td class="amt">₹89.00</td>
+    </tr>
+    <tr>
+      <td>210</td>
+      <td><b>ddeducationin</b></td>
+      <td><code>64cfc259e74c7f001ea1659e</code></td>
+      <td style="color:#64748b">ashishatoxford@gmail.com<br>9005358477</td>
+      <td style="color:#d97706;font-weight:600">16 Aug, 2025; 04:31 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹87.00</td>
+      <td class="amt">₹70.00</td>
+    </tr>
+    <tr>
+      <td>211</td>
+      <td><b>inoshi</b></td>
+      <td><code>6447b3b487e8c00021393e62</code></td>
+      <td style="color:#64748b">themohhit@gmail.com<br>7506732983</td>
+      <td style="color:#d97706;font-weight:600">15 Aug, 2025; 12:56 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.00</td>
+      <td class="amt">₹179.00</td>
+    </tr>
+    <tr>
+      <td>212</td>
+      <td><b>leevonstories</b></td>
+      <td><code>66d88594d4f6120013395ddc</code></td>
+      <td style="color:#64748b">ameershan53@gmail.com<br>9539643507</td>
+      <td style="color:#d97706;font-weight:600">08 May, 2025; 12:43 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹2.00</td>
+      <td class="amt">₹88.00</td>
+    </tr>
+    <tr>
+      <td>213</td>
+      <td><b>mrsabujbala</b></td>
+      <td><code>666dc0a454d018001447374a</code></td>
+      <td style="color:#64748b">helpsabujbala@gmail.com<br>8927545550</td>
+      <td style="color:#d97706;font-weight:600">05 Jan, 2025; 11:50 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.00</td>
+      <td class="amt">₹1,411.00</td>
+    </tr>
+    <tr>
+      <td>214</td>
+      <td><b>subinyoosuf</b></td>
+      <td><code>64ec23c2dab2cd001d266649</code></td>
+      <td style="color:#64748b">subinyoosuftech@gmail.com<br>8129984612</td>
+      <td style="color:#d97706;font-weight:600">17 Dec, 2024; 05:58 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹9.00</td>
+      <td class="amt">₹250.00</td>
+    </tr>
+    <tr>
+      <td>215</td>
+      <td><b>mydigitalshop</b></td>
+      <td><code>666a7f86d54a490013a5cc34</code></td>
+      <td style="color:#64748b">oxygenaryan@gmail.com<br>9104669406</td>
+      <td style="color:#d97706;font-weight:600">08 Nov, 2024; 05:00 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹333.00</td>
+      <td class="amt">₹1,433.00</td>
+    </tr>
+    <tr>
+      <td>216</td>
+      <td><b>toolsblitzcom</b></td>
+      <td><code>64189ecd190024001f5a3045</code></td>
+      <td style="color:#64748b">sateeshdwivedi2@gmail.com<br>8871620477</td>
+      <td style="color:#d97706;font-weight:600">21 Oct, 2024; 11:44 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.00</td>
+      <td class="amt">₹189.00</td>
+    </tr>
+    <tr>
+      <td>217</td>
+      <td><b>ikhushii-rajput</b></td>
+      <td><code>663dd24d61f04800142f8ce8</code></td>
+      <td style="color:#64748b">theamelia5705@gmail.com<br>9266867307</td>
+      <td style="color:#d97706;font-weight:600">29 May, 2024; 02:47 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹50.00</td>
+      <td class="amt">₹1,115.00</td>
+    </tr>
+    <tr>
+      <td>218</td>
+      <td><b>Plc</b></td>
+      <td><code>64893063b76848002bce44ed</code></td>
+      <td style="color:#64748b">pc9703@gmail.com<br>9680050306</td>
+      <td style="color:#d97706;font-weight:600">06 May, 2024; 10:51 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹149.00</td>
+      <td class="amt">₹269.00</td>
+    </tr>
+    <tr>
+      <td>219</td>
+      <td><b>reelflux1</b></td>
+      <td><code>64638102608807002033f5ea</code></td>
+      <td style="color:#64748b">topfollow2443@gmail.com<br>7873280770</td>
+      <td style="color:#d97706;font-weight:600">18 Jan, 2024; 04:09 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹10.00</td>
+      <td class="amt">₹105.00</td>
+    </tr>
+    <tr>
+      <td>220</td>
+      <td><b>thesaurabh143</b></td>
+      <td><code>656dc106318e10001dcb0580</code></td>
+      <td style="color:#64748b">thessaurabh143@gmail.com<br>9717739678</td>
+      <td style="color:#d97706;font-weight:600">23 Dec, 2023; 04:05 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹9.00</td>
+      <td class="amt">₹100.00</td>
+    </tr>
+    <tr>
+      <td>221</td>
+      <td><b>manishmehta123</b></td>
+      <td><code>65720e927c4aaa001e2232e9</code></td>
+      <td style="color:#64748b">elon40671@gmail.com<br>9855567095</td>
+      <td style="color:#d97706;font-weight:600">10 Dec, 2023; 01:35 AM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹199.00</td>
+      <td class="amt">₹499.00</td>
+    </tr>
+    <tr>
+      <td>222</td>
+      <td><b>officiallaxman23</b></td>
+      <td><code>64aaf3d38c8b4300206490d5</code></td>
+      <td style="color:#64748b">laxmanjk08@gmail.com<br>6005399956</td>
+      <td style="color:#d97706;font-weight:600">20 Jul, 2023; 11:18 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹20.00</td>
+      <td class="amt">₹269.00</td>
+    </tr>
+    <tr>
+      <td>223</td>
+      <td><b>vivek</b></td>
+      <td><code>61472fd1bf6550252deed422</code></td>
+      <td style="color:#64748b">vivek@superprofile.bio<br>9113812408</td>
+      <td style="color:#d97706;font-weight:600">18 Mar, 2023; 01:41 PM</td>
+      <td class="amt" style="color:#dc2626;font-weight:700">₹1.00</td>
+      <td class="amt">₹200.00</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

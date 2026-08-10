@@ -111,6 +111,8 @@
       <option value="">All Onboarders</option>
     </select>
     <button class="act" id="exportBtn">📥 Export CSV</button>
+    <button class="act" id="slackBtn" style="background:#4a154b;color:#fff;border:none">💬 Copy Slack Summary</button>
+    <button class="act" id="pdfReportBtn" style="background:#2563eb;color:#fff;border:none">📄 PDF / Executive Report</button>
     <button class="act" id="nolinkBtn" style="display:none">Run No-Link live check (visible rows)</button>
     <span class="note" id="rowcount"></span>
   </div>
@@ -273,6 +275,130 @@ function exportCSV(){
   a.click();
 }
 
+function exportSlackSummary(){
+  const list = rows().filter(r => r.selfTransaction);
+  if(!list.length){ alert("No self-transaction rows in current view."); return; }
+  
+  let lines = [];
+  lines.push("🚨 *COSMOFEED PAYOUT AUDIT REPORT*");
+  lines.push(`📅 *Generated:* \`${DATA.generatedAt}\` | *Scope:* \`${filter.toUpperCase()}\` (${list.length} self-transactions)`);
+  lines.push("──────────────────────────────────");
+  lines.push("📊 *SUMMARY:*");
+  lines.push(`• Total Flagged Self-Transactions: *${DATA.counts.selfTransaction} creators*`);
+  lines.push(`• Total Flagged Payout Amount: *₹${inr(list.reduce((s,r)=>s+(r.payoutAmount||0),0))}*`);
+  lines.push("");
+  lines.push("🔴 *FLAGGED ACCOUNTS (Per Date ➔ Amount High to Low):*");
+
+  let currDay = null;
+  let count = 0;
+  for(const r of list){
+    count++;
+    const dt = r.latestSelfTxnDate || '—';
+    const day = dt.split(';')[0];
+    if(day !== currDay){
+      currDay = day;
+      lines.push(`\n📅 *${currDay}*`);
+    }
+    const timePart = dt.includes(';') ? dt.split(';')[1].trim() : '';
+    lines.push(`${count}. *${r.username}* (\`${r.creatorId||'—'}\`) — Self-Txn Max: *₹${inr(r.selfTxnMaxAmount)}* (${timePart}) | Payout: *₹${inr(r.payoutAmount)}*`);
+    if(count >= 25){
+      lines.push(`\n_... and ${list.length - 25} more flagged creators in full report._`);
+      break;
+    }
+  }
+
+  const text = lines.join("\n");
+  navigator.clipboard.writeText(text).then(()=>{
+    alert("Copied Slack summary to clipboard! You can paste it directly into Slack.");
+  }).catch(e=>{
+    alert("Slack summary prepared! Copying fallback...");
+  });
+}
+
+function exportHTMLReport(){
+  const list = rows().filter(r => r.selfTransaction);
+  if(!list.length){ alert("No self-transaction rows in current view."); return; }
+
+  let rowsHtml = list.map((r, i) => `
+    <tr>
+      <td>${i+1}</td>
+      <td><b>${r.username||'—'}</b></td>
+      <td><code>${r.creatorId||'—'}</code></td>
+      <td style="color:#64748b">${r.email||'—'}<br>${r.phone||'—'}</td>
+      <td style="color:#d97706;font-weight:600">${r.latestSelfTxnDate||'—'}</td>
+      <td style="text-align:right;color:#dc2626;font-weight:700">₹${inr(r.selfTxnMaxAmount)}</td>
+      <td style="text-align:right">₹${inr(r.payoutAmount)}</td>
+    </tr>`).join('');
+
+  const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cosmofeed Payout Audit Report</title>
+<style>
+  @page { size: A4 portrait; margin: 15mm; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #1a1a2e; margin: 0; padding: 24px; font-size: 13px; }
+  .header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #e2e8f0; padding-bottom: 16px; margin-bottom: 24px; }
+  .logo { font-size: 22px; font-weight: 800; color: #e53e3e; }
+  .meta { text-align: right; font-size: 12px; color: #64748b; }
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 24px; }
+  .card { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px 16px; }
+  .card .num { font-size: 20px; font-weight: 700; color: #0f172a; }
+  .card .num.red { color: #e53e3e; }
+  .card .label { font-size: 11px; color: #64748b; text-transform: uppercase; font-weight: 600; }
+  table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+  th { background: #f1f5f9; color: #475569; font-weight: 700; font-size: 11px; text-transform: uppercase; text-align: left; padding: 8px 12px; border-bottom: 2px solid #cbd5e1; }
+  td { padding: 8px 12px; border-bottom: 1px solid #e2e8f0; font-size: 12px; }
+  tr:nth-child(even) { background: #f8fafc; }
+  .btn-print { position: fixed; bottom: 20px; right: 20px; background: #2563eb; color: white; padding: 10px 20px; border-radius: 20px; border: none; font-weight: 600; cursor: pointer; box-shadow: 0 4px 12px rgba(37,99,235,0.3); }
+  @media print { .btn-print { display: none; } }
+</style>
+</head>
+<body>
+<button class="btn-print" onclick="window.print()">🖨️ Save as PDF / Print</button>
+<div class="header">
+  <div>
+    <div class="logo">💸 Cosmofeed Payout Risk Audit</div>
+    <div style="font-size:13px;color:#64748b;margin-top:2px">Executive Settlement Risk & Self-Transaction Summary</div>
+  </div>
+  <div class="meta">
+    <div><b>Generated At:</b> ${DATA.generatedAt}</div>
+    <div><b>Filtered Rows:</b> ${list.length} Creators</div>
+  </div>
+</div>
+<div class="cards">
+  <div class="card"><div class="num">${DATA.totalCreators}</div><div class="label">Total Pending</div></div>
+  <div class="card"><div class="num red">${list.length}</div><div class="label">Self-Txns (Filtered)</div></div>
+  <div class="card"><div class="num">₹${inr(list.reduce((s,r)=>s+(r.payoutAmount||0),0))}</div><div class="label">Total Payout</div></div>
+</div>
+<h3>Flagged Self-Transactions (Ordered Per Date ➔ Amount High to Low)</h3>
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Username</th>
+      <th>Creator ID</th>
+      <th>Contact Info</th>
+      <th>Latest Self-Txn Date</th>
+      <th style="text-align:right">Max Self-Txn</th>
+      <th style="text-align:right">Payout Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    ${rowsHtml}
+  </tbody>
+</table>
+</body>
+</html>`;
+
+  const blob = new Blob([html], { type: "text/html;charset=utf-8;" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = `payout_audit_executive_report_${new Date().toISOString().slice(0,10)}.html`;
+  a.click();
+}
+
 function buildDetailHtml(r){
   let inner = "";
   inner += `<div style="display:flex;gap:20px;flex-wrap:wrap;margin-bottom:8px;font-size:13px;color:var(--text);background:var(--panel);padding:10px 14px;border-radius:6px;border:1px solid var(--border)">`;
@@ -394,6 +520,8 @@ function init(){
   document.getElementById('timeframeFilter').onchange = render;
   document.getElementById('selfAmountFilter').onchange = render;
   document.getElementById('exportBtn').onclick = exportCSV;
+  document.getElementById('slackBtn').onclick = exportSlackSummary;
+  document.getElementById('pdfReportBtn').onclick = exportHTMLReport;
 
   render();
   document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
