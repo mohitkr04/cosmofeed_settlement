@@ -149,6 +149,138 @@ def check_self_transactions(creator_id, token):
     return {"self": self_txns, "buyers": len(buyers)}
 
 
+PRODUCT_CACHE = {}
+
+def inspect_product_url(url, pid, raw_type="", title=""):
+    """Fetch product page props and determine if content/delivery link is attached."""
+    if not url:
+        return {
+            "productId": pid,
+            "productType": raw_type or "unknown",
+            "productUrl": url or "",
+            "title": title or "",
+            "isAttached": False,
+            "status": "Flagged",
+            "reason": "Payment page exists, but no product/content link is attached"
+        }
+
+    if url in PRODUCT_CACHE:
+        return PRODUCT_CACHE[url]
+
+    norm_type = "vp"
+    if "/vig/" in url or raw_type == "integratedGroup":
+        norm_type = "vig"
+    elif "/course/" in url or raw_type == "course":
+        norm_type = "course"
+    elif "/ps/" in url or raw_type == "ps":
+        norm_type = "ps"
+    elif "/e/" in url or raw_type == "webinar":
+        norm_type = "webinar"
+    elif "/bookings/" in url or raw_type == "oneOnOne":
+        norm_type = "oneOnOne"
+    elif "/vp/" in url or raw_type == "page":
+        norm_type = "vp"
+
+    headers = {
+        "user-agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                       "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"),
+        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+    }
+
+    is_attached = False
+
+    try:
+        req = urlreq.Request(url, headers=headers)
+        with urlreq.urlopen(req, timeout=10) as resp:
+            html = resp.read().decode("utf-8", "ignore")
+            matches = re.findall(r'(\{"props":\{"pageProps":.*?\})\s*</script>', html, re.DOTALL)
+            if not matches:
+                matches = re.findall(r'(\{"props":\{"pageProps":.*)', html, re.DOTALL)
+            if matches:
+                parsed = json.loads(matches[0])
+                page_props = parsed.get("props", {}).get("pageProps", {})
+                data_obj = (page_props.get("prefetchedData") or
+                            page_props.get("courseData", {}).get("collection") or
+                            page_props.get("channelData") or
+                            page_props.get("eventData") or
+                            page_props)
+
+                redir = data_obj.get("redirectionLink")
+                resources = data_obj.get("resourcesDetails") or {}
+                total_res_size = data_obj.get("totalResourcesSize") or 0
+                prods_arr = data_obj.get("products") or []
+                p0 = prods_arr[0] if prods_arr else {}
+                modules = data_obj.get("modules") or data_obj.get("chapters") or []
+                thank_you = data_obj.get("thankYouNote") or {}
+
+                has_redir = False
+                if isinstance(redir, dict):
+                    if redir.get("isEnabled") is not False and redir.get("text"):
+                        has_redir = True
+                elif isinstance(redir, str) and redir.strip():
+                    has_redir = True
+
+                has_file = (resources.get("file", 0) > 0 and total_res_size > 0)
+                has_video = (resources.get("video", 0) > 0)
+                has_link = (resources.get("link", 0) > 0)
+                has_prod_link = bool(p0.get("link") or p0.get("custom") or p0.get("courseIds"))
+                has_modules = bool(len(modules) > 0)
+                has_thankyou = bool(isinstance(thank_you, dict) and (thank_you.get("note") or thank_you.get("isEnabled")))
+
+                if norm_type in ("vp", "ps"):
+                    is_attached = has_file or has_video or has_link or has_redir or has_prod_link or has_modules or has_thankyou
+                elif norm_type == "vig":
+                    is_attached = has_redir or bool(data_obj.get("telegramLink"))
+                elif norm_type == "course":
+                    is_attached = has_modules or has_redir or has_prod_link
+                elif norm_type in ("oneOnOne", "webinar"):
+                    is_attached = True
+    except Exception:
+        is_attached = False
+
+    res = {
+        "productId": pid,
+        "productType": norm_type,
+        "productUrl": url,
+        "title": title,
+        "isAttached": is_attached,
+        "status": "Valid" if is_attached else "Flagged",
+        "reason": "Product Link Attached" if is_attached else "Payment page exists, but no product/content link is attached"
+    }
+
+    PRODUCT_CACHE[url] = res
+    return res
+
+
+def check_creator_product_links(creator_id, token):
+    """Fetch creator's last hundred sold products and inspect each product URL for attached content."""
+    res = check_creator_products(creator_id, token)
+    if "__error__" in res:
+        return {"__error__": res["__error__"], "allProducts": [], "noLinkProducts": []}
+
+    prods = res.get("products", [])
+    inspected = []
+    no_link = []
+
+    for p in prods:
+        pid = p.get("_id") or p.get("productId") or ""
+        purl = p.get("productLink") or ""
+        ptype = p.get("productType") or ""
+        title = p.get("productTtile") or p.get("productTitle") or ""
+
+        info = inspect_product_url(purl, pid, ptype, title)
+        inspected.append(info)
+        if not info["isAttached"]:
+            no_link.append(info)
+
+    return {
+        "allProducts": inspected,
+        "noLinkProducts": no_link,
+        "noLinkCount": len(no_link),
+        "hasNoLink": len(no_link) > 0
+    }
+
+
 def check_creator_products(creator_id, token):
     """Fetch creator's last hundred sold products via getCreatorKundli."""
     d = api_get(f"/getCreatorKundli?type=userId&value={creator_id}"
@@ -167,6 +299,7 @@ def check_previous_payouts(creator_id, token):
         return {"__error__": (d or {}).get("__error__", "unknown"), "payouts": []}
     payouts = extract_kundli_payload(d, "previousPayoutDetails")
     return {"payouts": payouts}
+
 
 
 # ---------- Step 4: content flags (flagLevel + product inspection) ----------

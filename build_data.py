@@ -93,7 +93,7 @@ def enrich_one(row, token):
         "buyersChecked": 0,
         "productTitles": [], "productsCount": 0,
         "adultFlag": False, "adultReason": "",
-        "noLink": None, "noLinkReason": "",
+        "noLink": False, "noLinkCount": 0, "noLinkProducts": [], "noLinkReason": "",
         "error": "",
     }
     if "__error__" in detail:
@@ -140,12 +140,18 @@ def enrich_one(row, token):
         else:
             base["error"] = "kundli:" + st["__error__"]
 
-        # Fetch product titles for adult/risk analysis
-        prods = agent.check_creator_products(cid, token)
-        if "__error__" not in prods:
-            plist = prods.get("products", [])
-            base["productsCount"] = len(plist)
-            base["productTitles"] = [p.get("title") or p.get("name") for p in plist if isinstance(p, dict) and (p.get("title") or p.get("name"))]
+        # Product link inspection & titles for adult/risk analysis
+        prod_res = agent.check_creator_product_links(cid, token)
+        if "__error__" not in prod_res:
+            all_p = prod_res.get("allProducts", [])
+            no_link_p = prod_res.get("noLinkProducts", [])
+            base["productsCount"] = len(all_p)
+            base["productTitles"] = [p.get("title") for p in all_p if p.get("title")]
+            base["noLink"] = prod_res.get("hasNoLink", False)
+            base["noLinkCount"] = len(no_link_p)
+            base["noLinkProducts"] = no_link_p
+            if no_link_p:
+                base["noLinkReason"] = f"Payment page exists, but no product/content link is attached ({len(no_link_p)} products)"
     else:
         base["error"] = "no_creator_id"
 

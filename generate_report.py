@@ -7,6 +7,7 @@ def generate_reports():
 
     creators = data.get('creators', [])
     self_creators = [c for c in creators if c.get('selfTransaction')]
+    nolink_creators = [c for c in creators if c.get('noLink')]
     
     # Sort Per Date > Self Txn Amount (High to Low) > Time > Payout Amount
     def get_day_key(c):
@@ -32,6 +33,7 @@ def generate_reports():
         "📊 *SUMMARY METRICS:*",
         f"• *Total Pending Payout:* ₹{sum(c.get('payoutAmount',0) for c in creators):,.2f}",
         f"• *Self-Transaction Flagged:* `{len(self_creators)}` creators",
+        f"• *No Link / Nothing Attached Flagged:* `{len(nolink_creators)}` creators",
         f"• *Adult Keyword Flagged:* `{data.get('counts',{}).get('adult',0)}` creators",
         "",
         "🔴 *TOP FLAGGED SELF-TRANSACTIONS (Date -> Amount High to Low):*"
@@ -56,6 +58,24 @@ def generate_reports():
         if count >= 30: # Top 30 for Slack readability
             slack_lines.append(f"\n_... and {len(self_creators) - 30} more creators flagged in full report._")
             break
+
+    if nolink_creators:
+        slack_lines.append("\n🟡 *TOP FLAGGED NO-LINK PRODUCTS (Payment page exists, but no product/content link attached):*")
+        nl_count = 0
+        for c in nolink_creators:
+            u = c.get('username')
+            cid = c.get('creatorId', '—')
+            no_prods = c.get('noLinkProducts', [])
+            for np in no_prods:
+                nl_count += 1
+                pid = np.get('productId', '—')
+                ptype = np.get('productType', '—')
+                purl = np.get('productUrl', '—')
+                slack_lines.append(f"{nl_count}. *{u}* (`{cid}`) | Prod: `{pid}` ({ptype}) | URL: {purl} | ⚠️ No Link Attached")
+                if nl_count >= 20:
+                    break
+            if nl_count >= 20:
+                break
 
     slack_report_text = "\n".join(slack_lines)
     with open('slack_report.txt', 'w', encoding='utf-8') as f:
@@ -120,6 +140,7 @@ def generate_reports():
     color: #0f172a;
   }}
   .card .num.red {{ color: #e53e3e; }}
+  .card .num.yellow {{ color: #d97706; }}
   .card .label {{
     font-size: 11px;
     color: #64748b;
@@ -130,6 +151,7 @@ def generate_reports():
     width: 100%;
     border-collapse: collapse;
     margin-top: 12px;
+    margin-bottom: 24px;
   }}
   th {{
     background: #f1f5f9;
@@ -155,6 +177,7 @@ def generate_reports():
     font-weight: 700;
   }}
   .badge-self {{ background: #fee2e2; color: #dc2626; }}
+  .badge-nolink {{ background: #fef3c7; color: #d97706; }}
   .amt {{ text-align: right; font-variant-numeric: tabular-nums; }}
   .btn-print {{
     position: fixed;
@@ -181,7 +204,7 @@ def generate_reports():
 <div class="header">
   <div>
     <div class="logo">💸 Cosmofeed Payout Risk Audit</div>
-    <div style="font-size:13px;color:#64748b;margin-top:2px">Executive Settlement Risk & Self-Transaction Summary</div>
+    <div style="font-size:13px;color:#64748b;margin-top:2px">Executive Settlement Risk & Product Audit Summary</div>
   </div>
   <div class="meta">
     <div><b>Generated At:</b> {data.get('generatedAt', '—')}</div>
@@ -199,8 +222,8 @@ def generate_reports():
     <div class="label">Self-Transactions Flagged</div>
   </div>
   <div class="card">
-    <div class="num">{data.get('counts',{}).get('adult',0)}</div>
-    <div class="label">Adult Keywords Flagged</div>
+    <div class="num yellow">{len(nolink_creators)}</div>
+    <div class="label">No Link Attached</div>
   </div>
   <div class="card">
     <div class="num">₹{sum(c.get('payoutAmount',0) for c in creators):,.0f}</div>
@@ -242,6 +265,55 @@ def generate_reports():
       <td style="color:#d97706;font-weight:600">{dt}</td>
       <td class="amt" style="color:#dc2626;font-weight:700">₹{sa:,.2f}</td>
       <td class="amt">₹{p:,.2f}</td>
+    </tr>"""
+
+    html_content += """
+  </tbody>
+</table>
+
+<h3 style="margin-top:24px;margin-bottom:8px;color:#0f172a">Flagged Products with No Content/Delivery Link Attached</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Creator</th>
+      <th>Product ID</th>
+      <th>Product Type</th>
+      <th>Product URL</th>
+      <th>Status</th>
+      <th>Outcome / Reason</th>
+    </tr>
+  </thead>
+  <tbody>
+"""
+    nl_idx = 0
+    for c in nolink_creators:
+        u = c.get('username', '—')
+        no_prods = c.get('noLinkProducts', [])
+        for np in no_prods:
+            nl_idx += 1
+            pid = np.get('productId', '—')
+            ptype = np.get('productType', '—')
+            purl = np.get('productUrl', '—')
+            status = np.get('status', 'Flagged')
+            reason = np.get('reason', 'Payment page exists, but no product/content link is attached')
+
+            html_content += f"""
+    <tr>
+      <td>{nl_idx}</td>
+      <td><b>{u}</b></td>
+      <td><code>{pid}</code></td>
+      <td><code>{ptype}</code></td>
+      <td><a href="{purl}" target="_blank" style="color:#2563eb">{purl}</a></td>
+      <td><span class="badge badge-nolink">⚠️ {status}</span></td>
+      <td style="color:#d97706;font-weight:600">{reason}</td>
+    </tr>"""
+
+    if nl_idx == 0:
+        html_content += """
+    <tr>
+      <td colspan="7" style="text-align:center;color:#64748b">No products flagged with missing links.</td>
     </tr>"""
 
     html_content += """

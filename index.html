@@ -151,7 +151,7 @@ const HINTS = {
   all: "",
   self: "Priority Order: Per Date → Self-Txn Amount (Higher to Lower) → Recent Time → Payout Amount.",
   adult: "Heuristic keyword matches only (username/category). Candidates for human review.",
-  nolink: "Click “Run No-Link live check” to test each visible creator's public page.",
+  nolink: "Creators with sold payment pages that have no actual product, file, course, or content link attached.",
 };
 
 function inr(n){ return (n||0).toLocaleString('en-IN'); }
@@ -160,7 +160,7 @@ function flagsHtml(r){
   let h = [];
   if(r.selfTransaction) h.push(`<span class="pill self">SELF ×${r.selfTxnCount} (₹${inr(r.selfTxnMaxAmount)})</span>`);
   if(r.adultFlag) h.push(`<span class="pill adult">ADULT</span>`);
-  if(r.noLink===true) h.push(`<span class="pill nolink">NO LINK</span>`);
+  if(r.noLink===true) h.push(`<span class="pill nolink">NO LINK ×${r.noLinkCount||1}</span>`);
   else if(r.noLink===false) h.push(`<span class="pill ok">LINK OK</span>`);
   if(!h.length) h.push(`<span class="pill unk">—</span>`);
   return h.join(" ");
@@ -169,7 +169,7 @@ function flagsHtml(r){
 function matchFilter(r){
   if(filter==="self" && !r.selfTransaction) return false;
   if(filter==="adult" && !r.adultFlag) return false;
-  if(filter==="nolink" && !(r.noLink===true || r.noLink===null)) return false;
+  if(filter==="nolink" && !r.noLink) return false;
 
   const tf = document.getElementById('timeframeFilter') ? document.getElementById('timeframeFilter').value : '';
   if(tf){
@@ -417,7 +417,21 @@ function buildDetailHtml(r){
       sortedDetails.map(s=>`<tr><td style="color:var(--orange);font-weight:600">${s.date||'—'}</td><td>₹${inr(s.amount)}</td><td>${s.buyerEmail||'—'}</td><td>${s.buyerPhone||'—'}</td><td>${s.IP||'—'}</td></tr>`).join('') +
       `</tbody></table></div>`;
   }
-  if(r.noLinkReason) inner += `<div style="margin-top:6px"><b>No-Link check:</b> ${r.noLinkReason}</div>`;
+
+  if(r.noLinkProducts && r.noLinkProducts.length){
+    inner += `<div style="margin-top:10px"><b style="color:var(--yellow)">⚠️ Flagged Sold Products (No Link / Nothing Attached):</b>` +
+      `<table style="margin-top:6px"><thead><tr><th>Product ID</th><th>Product Type</th><th>Payment Page URL</th><th>Status</th><th>Outcome / Reason</th></tr></thead><tbody>` +
+      r.noLinkProducts.map(p=>`<tr>` +
+        `<td><code>${p.productId||'—'}</code></td>` +
+        `<td><span class="pill unk">${p.productType||'—'}</span></td>` +
+        `<td><a href="${p.productUrl}" target="_blank" style="color:var(--accent)">${p.productUrl}</a></td>` +
+        `<td><span class="pill nolink">⚠️ ${p.status||'Flagged'}</span></td>` +
+        `<td style="color:var(--yellow);font-weight:600">${p.reason||'Payment page exists, but no product/content link is attached'}</td>` +
+      `</tr>`).join('') +
+      `</tbody></table></div>`;
+  }
+
+  if(r.noLinkReason) inner += `<div style="margin-top:6px"><b>No-Link Status:</b> ${r.noLinkReason}</div>`;
   return inner || '—';
 }
 

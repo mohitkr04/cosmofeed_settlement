@@ -1,67 +1,84 @@
 🚨 *COSMOFEED PAYOUT RISK AUDIT REPORT*
-📅 *Generated:* `2026-08-10 10:13` | *Total Audited:* `1,671` creators
+📅 *Generated:* `2026-08-11 11:09` | *Total Audited:* `1,860` creators
 ──────────────────────────────────
 📊 *SUMMARY METRICS:*
-• *Total Pending Payout:* ₹9,235,022.00
-• *Self-Transaction Flagged:* `223` creators
-• *Adult Keyword Flagged:* `0` creators
+• *Total Pending Payout:* ₹11,371,135.00
+• *Self-Transaction Flagged:* `238` creators
+• *No Link / Nothing Attached Flagged:* `1821` creators
+• *Adult Keyword Flagged:* `9` creators
 
 🔴 *TOP FLAGGED SELF-TRANSACTIONS (Date -> Amount High to Low):*
 
-📅 *10 Aug, 2026*
-1. *swarndev* (`6444f53be0d2a1002104f5df`) — Self-Txn: *₹298.00* (10:06 AM) | Payout: *₹19,483.00*
-
-📅 *09 Aug, 2026*
-2. *teamadzuipts* (`6666eb1edd28eb0013b3eede`) — Self-Txn: *₹1,869.00* (01:18 PM) | Payout: *₹1,682.00*
-3. *manifestwithruchi* (`695d12e5f00d9e001366c1d5`) — Self-Txn: *₹999.00* (10:17 PM) | Payout: *₹986.00*
+📅 *11 Aug, 2026*
+1. *thebusinessguide* (`657c62be1f4561001ee6ca05`) — Self-Txn: *₹5.00* (09:42 AM) | Payout: *₹1,075.00*
+2. *thebusinessguide* (`657c62be1f4561001ee6ca05`) — Self-Txn: *₹5.00* (09:42 AM) | Payout: *₹896.00*
+3. *thebusinessguide* (`657c62be1f4561001ee6ca05`) — Self-Txn: *₹5.00* (09:42 AM) | Payout: *₹179.00*
 
 📅 *10 Aug, 2026*
-4. *ailogic* (`67f62e5aa2c58300138b5ee1`) — Self-Txn: *₹449.00* (12:12 AM) | Payout: *₹832.00*
+4. *Besthostservice* (`641d6412ddada8001fc9bb60`) — Self-Txn: *₹660.00* (07:44 PM) | Payout: *₹3,886.00*
+5. *vikas550395* (`67ffd4fa8f73600013e29343`) — Self-Txn: *₹299.00* (10:08 PM) | Payout: *₹281.00*
+6. *rashi0728* (`654a4ca2e0767f001e1fc806`) — Self-Txn: *₹299.00* (06:33 PM) | Payout: *₹269.00*
+7. *gurucomputers2021* (`68c66002e4826a001399ab3a`) — Self-Txn: *₹299.00* (04:36 PM) | Payout: *₹281.00*
+8. *swarndev* (`6444f53be0d2a1002104f5df`) — Self-Txn: *₹298.00* (10:06 AM) | Payout: *₹15,726.00*
+9. *skillsdemy* (`64956b48b0f9b80027333f7d`) — Self-Txn: *₹297.00* (06:03 PM) | Payout: *₹1,865.00*
+10. *tradewithhimxnshu* (`63ee9ac580913d0033e7311f`) — Self-Txn: *₹250.80* (10:28 PM) | Payout: *₹229.00*
 
-📅 *09 Aug, 2026*
-5. *kamboj36e* (`6a437a4e37d5e5001316f7c1`) — Self-Txn: *₹399.00* (04:06 PM) | Payout: *₹1,314.00*
-6. *Mohanraj4079* (`69f41980a8c2c600130aee75`) — Self-Txn: *₹199.00* (08:08 PM) | Payout: *₹187.00*
-7. *Thekingzmedia* (`637e11adaf57a90032537632`) — Self-Txn: *₹199.00* (06:16 PM) | Payout: *₹187.00*
+📅 *11 Aug, 2026*
+11. *investwithsoumyadeep* (`64c10e82985f36002a91518a`) — Self-Txn: *₹250.00* (02:14 AM) | Payout: *₹1,710.00*
 
 📅 *10 Aug, 2026*
-8. *thedigitalhubstore* (`6a786de77590c2001358fd5f`) — Self-Txn: *₹99.00* (01:37 AM) | Payout: *₹93.00*
+12. *shubhvaibhava* (`64c32c4d9e31f5001e652e63`) — Self-Txn: *₹199.00* (08:44 PM) | Payout: *₹187.00*
+13. *healing4084* (`69e20e5890424e00137c82dc`) — Self-Txn: *₹175.82* (05:21 PM) | Payout: *₹331.00*
+14. *Ranjith3922* (`68e26da7b67c940013dbc247`) — Self-Txn: *₹149.00* (12:35 PM) | Payout: *₹140.00*
+
+📅 *11 Aug, 2026*
+15. *digiicop* (`67c9a732769f0d001393c709`) — Self-Txn: *₹99.00* (02:09 AM) | Payout: *₹8,664.00*
+
+📅 *10 Aug, 2026*
+16. *aswinajith* (`6684321f25fece00135bdbb5`) — Self-Txn: *₹99.00* (11:21 PM) | Payout: *₹89.00*
+17. *maheshsaini13967* (`66e94b42aec72000139e9d4f`) — Self-Txn: *₹99.00* (10:48 PM) | Payout: *₹133.00*
+18. *dailydosemalayali* (`68b6d351034e140013055993`) — Self-Txn: *₹99.00* (10:10 PM) | Payout: *₹838.00*
+19. *---* (`6a57120cb3218500138395fb`) — Self-Txn: *₹99.00* (05:18 PM) | Payout: *₹93.00*
+20. *ashwinikadam83* (`677d1c1cc0f86b00132435c3`) — Self-Txn: *₹99.00* (02:53 PM) | Payout: *₹186.00*
+21. *digitallittlestudio* (`6a64f7486f7bc6001210c21a`) — Self-Txn: *₹18.00* (05:31 AM) | Payout: *₹392.00*
+
+📅 *11 Aug, 2026*
+22. *bundlelabs* (`67249eea76412b001398822f`) — Self-Txn: *₹10.00* (05:08 AM) | Payout: *₹281.00*
+
+📅 *10 Aug, 2026*
+23. *bullsroom* (`64d8c1ea128b94001ec5b3a9`) — Self-Txn: *₹1.99* (06:20 PM) | Payout: *₹4,883.00*
+24. *odiadigitalseva* (`6670767cffe48100138cad7c`) — Self-Txn: *₹1.00* (04:12 PM) | Payout: *₹1,072.00*
+25. *pbsshop* (`681593967f72220013a85978`) — Self-Txn: *₹1.00* (07:56 AM) | Payout: *₹152.00*
+26. *ailogic* (`67f62e5aa2c58300138b5ee1`) — Self-Txn: *₹449.00* (12:12 AM) | Payout: *₹846.00*
 
 📅 *09 Aug, 2026*
-9. *syedtufail* (`6a7781691601690013841dfd`) — Self-Txn: *₹79.00* (12:45 PM) | Payout: *₹74.00*
-10. *99store* (`68de5470e1910c0013a60656`) — Self-Txn: *₹59.00* (09:53 AM) | Payout: *₹222.00*
-11. *theassamesekid* (`6a51ac4db9587e0013a58d54`) — Self-Txn: *₹30.00* (02:24 PM) | Payout: *₹56.00*
-12. *therewirelab* (`69d442b79d735c001379b35f`) — Self-Txn: *₹1.00* (11:48 PM) | Payout: *₹562.00*
+27. *kamboj36e* (`6a437a4e37d5e5001316f7c1`) — Self-Txn: *₹399.00* (04:06 PM) | Payout: *₹751.00*
 
-📅 *08 Aug, 2026*
-13. *facelessvaultt* (`6a69da225ab4c40013eb330b`) — Self-Txn: *₹499.00* (11:00 PM) | Payout: *₹471.00*
-14. *tutorialmallu* (`67cf3919c5c61b001367d398`) — Self-Txn: *₹499.00* (08:38 PM) | Payout: *₹1,411.00*
-15. *anayaaaa0* (`64fe91ec9a30d80029e087c6`) — Self-Txn: *₹199.00* (01:11 PM) | Payout: *₹3,621.00*
-16. *sarvesh3197* (`6a132a4e253c3a00138806bc`) — Self-Txn: *₹183.00* (04:21 PM) | Payout: *₹4,615.00*
-17. *colourpresetstore* (`6a117125b46be60013d45d68`) — Self-Txn: *₹99.00* (06:12 PM) | Payout: *₹3,947.00*
-18. *Rohit2648* (`6a6cd07a31c9b70013644b17`) — Self-Txn: *₹99.00* (01:41 PM) | Payout: *₹93.00*
-19. *viralsachin* (`693e5eb18a94ac001252861b`) — Self-Txn: *₹99.00* (11:39 AM) | Payout: *₹93.00*
-20. *komalklacrafts* (`695812fb4e594b001349e977`) — Self-Txn: *₹49.00* (05:41 PM) | Payout: *₹352.00*
+📅 *10 Aug, 2026*
+28. *divaa1million* (`661c4c672ab6e800134a3f4d`) — Self-Txn: *₹299.00* (04:03 AM) | Payout: *₹269.00*
+29. *parthjshz* (`6a5cec758411290013cd56ce`) — Self-Txn: *₹199.00* (01:35 AM) | Payout: *₹187.00*
+30. *offcampuscareerhub* (`69577dd6cf5b7b00133ce8b0`) — Self-Txn: *₹149.00* (12:17 AM) | Payout: *₹140.00*
 
-📅 *09 Aug, 2026*
-21. *mbbsfusion* (`6a22f7f3c0c8d20013951113`) — Self-Txn: *₹19.00* (01:26 AM) | Payout: *₹1,199.00*
+_... and 208 more creators flagged in full report._
 
-📅 *08 Aug, 2026*
-22. *httpssagewithagestore* (`673b06177ea02f00132f0e99`) — Self-Txn: *₹19.00* (06:17 PM) | Payout: *₹2,149.00*
-23. *imaannoor* (`66b4d8d22d27d600137614e1`) — Self-Txn: *₹10.00* (01:20 PM) | Payout: *₹375.00*
-24. *jatinbaghell* (`6a58561aa2942500134c11f3`) — Self-Txn: *₹1.49* (07:21 PM) | Payout: *₹142.00*
-
-📅 *09 Aug, 2026*
-25. *muzammil1245* (`6a6b5a6e258d140013a3ce26`) — Self-Txn: *₹1.00* (01:13 AM) | Payout: *₹1,929.00*
-
-📅 *07 Aug, 2026*
-26. *itstiwariaman* (`6a06c3f237a6130013daa25a`) — Self-Txn: *₹349.00* (11:18 PM) | Payout: *₹328.00*
-
-📅 *08 Aug, 2026*
-27. *httpsthesitetoolkitin* (`68dd21e6e32be10013bee962`) — Self-Txn: *₹299.00* (01:57 AM) | Payout: *₹470.00*
-28. *manzoori* (`6a3787d77b11620014fbfa2f`) — Self-Txn: *₹299.00* (12:01 AM) | Payout: *₹375.00*
-
-📅 *07 Aug, 2026*
-29. *sohel0971* (`64cfaef6b261e1001d06553a`) — Self-Txn: *₹149.00* (07:13 AM) | Payout: *₹1,878.00*
-30. *httpstmecaaspirant15* (`696290257367310013f1bca0`) — Self-Txn: *₹100.00* (05:03 PM) | Payout: *₹93.00*
-
-_... and 193 more creators flagged in full report._
+🟡 *TOP FLAGGED NO-LINK PRODUCTS (Payment page exists, but no product/content link attached):*
+1. *thebusinessguide* (`657c62be1f4561001ee6ca05`) | Prod: `67b3f39cae18900013e0aa95` (vp) | URL: https://superprofile.bio/vp/67b3f39cae18900013e0aa95 | ⚠️ No Link Attached
+2. *thebusinessguide* (`657c62be1f4561001ee6ca05`) | Prod: `662bc0195de1120013b2a193` (vp) | URL: https://superprofile.bio/vp/662bc0195de1120013b2a193 | ⚠️ No Link Attached
+3. *thebusinessguide* (`657c62be1f4561001ee6ca05`) | Prod: `657c65fb4c5340001e5b3877` (vp) | URL: https://superprofile.bio/vp/657c65fb4c5340001e5b3877 | ⚠️ No Link Attached
+4. *thebusinessguide* (`657c62be1f4561001ee6ca05`) | Prod: `661d500ed78584001a489569` (vp) | URL: https://superprofile.bio/vp/661d500ed78584001a489569 | ⚠️ No Link Attached
+5. *thebusinessguide* (`657c62be1f4561001ee6ca05`) | Prod: `662bc0195de1120013b2a193` (vp) | URL: https://superprofile.bio/vp/662bc0195de1120013b2a193 | ⚠️ No Link Attached
+6. *thebusinessguide* (`657c62be1f4561001ee6ca05`) | Prod: `67b3f39cae18900013e0aa95` (vp) | URL: https://superprofile.bio/vp/67b3f39cae18900013e0aa95 | ⚠️ No Link Attached
+7. *thebusinessguide* (`657c62be1f4561001ee6ca05`) | Prod: `661d500ed78584001a489569` (vp) | URL: https://superprofile.bio/vp/661d500ed78584001a489569 | ⚠️ No Link Attached
+8. *thebusinessguide* (`657c62be1f4561001ee6ca05`) | Prod: `657c65fb4c5340001e5b3877` (vp) | URL: https://superprofile.bio/vp/657c65fb4c5340001e5b3877 | ⚠️ No Link Attached
+9. *thebusinessguide* (`657c62be1f4561001ee6ca05`) | Prod: `657c65fb4c5340001e5b3877` (vp) | URL: https://superprofile.bio/vp/657c65fb4c5340001e5b3877 | ⚠️ No Link Attached
+10. *thebusinessguide* (`657c62be1f4561001ee6ca05`) | Prod: `662bc0195de1120013b2a193` (vp) | URL: https://superprofile.bio/vp/662bc0195de1120013b2a193 | ⚠️ No Link Attached
+11. *thebusinessguide* (`657c62be1f4561001ee6ca05`) | Prod: `67b3f39cae18900013e0aa95` (vp) | URL: https://superprofile.bio/vp/67b3f39cae18900013e0aa95 | ⚠️ No Link Attached
+12. *thebusinessguide* (`657c62be1f4561001ee6ca05`) | Prod: `661d500ed78584001a489569` (vp) | URL: https://superprofile.bio/vp/661d500ed78584001a489569 | ⚠️ No Link Attached
+13. *Besthostservice* (`641d6412ddada8001fc9bb60`) | Prod: `643d433e52faf60020372fd3` (vp) | URL: https://superprofile.bio/vp/643d433e52faf60020372fd3 | ⚠️ No Link Attached
+14. *Besthostservice* (`641d6412ddada8001fc9bb60`) | Prod: `64482963c9740c00209a2076` (vp) | URL: https://superprofile.bio/vp/64482963c9740c00209a2076 | ⚠️ No Link Attached
+15. *Besthostservice* (`641d6412ddada8001fc9bb60`) | Prod: `643d4412ce577c002aa2181e` (vp) | URL: https://superprofile.bio/vp/643d4412ce577c002aa2181e | ⚠️ No Link Attached
+16. *Besthostservice* (`641d6412ddada8001fc9bb60`) | Prod: `641d81e276e8f40020d4a790` (vp) | URL: https://superprofile.bio/vp/641d81e276e8f40020d4a790 | ⚠️ No Link Attached
+17. *Besthostservice* (`641d6412ddada8001fc9bb60`) | Prod: `6436f1b181b12f0020ef1fb8` (vp) | URL: https://superprofile.bio/vp/6436f1b181b12f0020ef1fb8 | ⚠️ No Link Attached
+18. *Besthostservice* (`641d6412ddada8001fc9bb60`) | Prod: `642302769b672200203f8b2c` (vp) | URL: https://superprofile.bio/vp/642302769b672200203f8b2c | ⚠️ No Link Attached
+19. *Besthostservice* (`641d6412ddada8001fc9bb60`) | Prod: `6436f08930eaa9001f2fb1e9` (vp) | URL: https://superprofile.bio/vp/6436f08930eaa9001f2fb1e9 | ⚠️ No Link Attached
+20. *Besthostservice* (`641d6412ddada8001fc9bb60`) | Prod: `641f4501816402001fbf586e` (vp) | URL: https://superprofile.bio/vp/641f4501816402001fbf586e | ⚠️ No Link Attached
