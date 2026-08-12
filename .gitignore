@@ -1,6 +1,12 @@
-# Sensitive / generated data — DO NOT COMMIT (contains creator PII & payout amounts)
+# Sensitive / generated data & daily reports — DO NOT COMMIT
 data.json
 dashboard.html
+audit_*.json
+audit_*.md
+issue_history.json
+notification_log.json
+slack_report.txt
+payout_audit_report.html
 
 # Secrets
 .env

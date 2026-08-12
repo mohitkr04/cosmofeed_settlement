@@ -69,6 +69,14 @@ def api_get(path, token, retries=3, timeout=30):
     return {"__error__": last_err}
 
 
+def api_get_product_details(product_id, token, product_type="page"):
+    """Query production IDviewProductDetails endpoint for a given product ID and type."""
+    if not product_id:
+        return {"__error__": "missing product_id"}
+    path = f"/IDviewProductDetails?id={product_id}&productType={product_type}"
+    return api_get(path, token, retries=2, timeout=15)
+
+
 # ---------- Step 1: fetch all pending settlements ----------
 
 def fetch_all_settlements(token, request_type="pending", verbose=True):
