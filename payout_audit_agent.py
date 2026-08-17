@@ -24,12 +24,31 @@ import json
 import os
 import sys
 import time
+import socket
 import argparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib import request as urlreq
 from urllib.error import HTTPError, URLError
 
+socket.setdefaulttimeout(8.0)
+
 API_BASE = "https://prod.api.cosmofeed.com/api/internal_dashboard"
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+
+def _load_env():
+    env_path = os.path.join(HERE, ".env")
+    if os.path.exists(env_path):
+        with open(env_path, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#") and "=" in line:
+                    k, v = line.split("=", 1)
+                    k, v = k.strip(), v.strip().strip('"').strip("'")
+                    if k and k not in os.environ:
+                        os.environ[k] = v
+
+_load_env()
 
 # Bearer token is read from the COSMOFEED_TOKEN env var (or passed via --token).
 # Never hardcode credentials here.
@@ -45,14 +64,36 @@ HEADERS_BASE = {
 
 
 import http.client
+import threading
 
-def api_get(path, token, retries=3, timeout=30):
+class RatePacer:
+    """Thread-safe rate pacer to cap request rate and eliminate HTTP 429 stalls."""
+    def __init__(self, max_per_second=30):
+        self.interval = 1.0 / max_per_second
+        self.lock = threading.Lock()
+        self.last_time = 0.0
+
+    def wait(self):
+        to_sleep = 0.0
+        with self.lock:
+            now = time.time()
+            scheduled = max(now, self.last_time + self.interval)
+            to_sleep = scheduled - now
+            self.last_time = scheduled
+        if to_sleep > 0:
+            time.sleep(to_sleep)
+
+RATE_PACER = RatePacer(max_per_second=30)
+
+
+def api_get(path, token, retries=2, timeout=5):
     """GET a dashboard API path (starting with /), return parsed JSON or None."""
     url = API_BASE + path
     headers = dict(HEADERS_BASE)
     headers["authorization"] = "Bearer " + token
     last_err = None
     for attempt in range(retries):
+        RATE_PACER.wait()
         try:
             req = urlreq.Request(url, headers=headers, method="GET")
             with urlreq.urlopen(req, timeout=timeout) as resp:
@@ -60,12 +101,12 @@ def api_get(path, token, retries=3, timeout=30):
         except HTTPError as e:
             last_err = f"HTTP {e.code}"
             if e.code in (429, 502, 503, 504):
-                time.sleep(3.0 * (attempt + 1))
+                time.sleep(0.3 * (attempt + 1))
                 continue
             break
         except (URLError, TimeoutError, OSError, http.client.HTTPException, json.JSONDecodeError) as e:
             last_err = str(e)
-            time.sleep(1.5 * (attempt + 1))
+            time.sleep(0.3 * (attempt + 1))
     return {"__error__": last_err}
 
 
@@ -74,45 +115,78 @@ def api_get_product_details(product_id, token, product_type="page"):
     if not product_id:
         return {"__error__": "missing product_id"}
     path = f"/IDviewProductDetails?id={product_id}&productType={product_type}"
-    return api_get(path, token, retries=2, timeout=15)
+    return api_get(path, token, retries=3, timeout=15)
 
 
 # ---------- Step 1: fetch all pending settlements ----------
 
 def fetch_all_settlements(token, request_type="pending", verbose=True):
-    rows = []
-    # first page to learn total pages
-    first = api_get(
-        f"/IDgetSettlements?requestType={request_type}&page=1&sortField=&onlyFlagged=0"
-        f"&AmountGreaterThan=0&AmountLessThan=0&filter=&paymentVerified=", token)
-    data = (first or {}).get("data", {})
+    first = None
+    for attempt in range(5):
+        first = api_get(
+            f"/IDgetSettlements?requestType={request_type}&page=1&sortField=&onlyFlagged=0"
+            f"&AmountGreaterThan=0&AmountLessThan=0&filter=&paymentVerified=", token, retries=5)
+        if first and "__error__" not in first:
+            break
+        if verbose:
+            err_msg = (first or {}).get("__error__", "no response")
+            print(f"[step1] page 1 attempt {attempt+1}/5 retry due to {err_msg}...", flush=True)
+        time.sleep(2.0 * (attempt + 1))
+
+    if not first or "__error__" in first:
+        err = (first or {}).get("__error__", "API call failed")
+        raise RuntimeError(f"Failed to fetch settlements from API: {err}")
+
+    data = first.get("data", {})
     total_pages = data.get("totalPages", 1)
     total = data.get("totalSettlements", 0)
-    rows.extend(data.get("settelements") or data.get("settlements") or [])
+    page1_rows = data.get("settelements") or data.get("settlements") or []
     if verbose:
         print(f"[step1] total settlements={total} pages={total_pages}", flush=True)
-    for page in range(2, total_pages + 1):
+
+    if total_pages <= 1:
+        return page1_rows
+
+    pages_dict = {1: page1_rows}
+
+    def fetch_page(p):
         d = api_get(
-            f"/IDgetSettlements?requestType={request_type}&page={page}&sortField=&onlyFlagged=0"
-            f"&AmountGreaterThan=0&AmountLessThan=0&filter=&paymentVerified=", token)
+            f"/IDgetSettlements?requestType={request_type}&page={p}&sortField=&onlyFlagged=0"
+            f"&AmountGreaterThan=0&AmountLessThan=0&filter=&paymentVerified=", token, retries=5)
         pdata = (d or {}).get("data", {})
-        rows.extend(pdata.get("settelements") or pdata.get("settlements") or [])
-        if verbose and page % 10 == 0:
-            print(f"[step1] fetched page {page}/{total_pages} ({len(rows)} rows)", flush=True)
-        time.sleep(0.05)
+        return p, pdata.get("settelements") or pdata.get("settlements") or []
+
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        futs = [ex.submit(fetch_page, p) for p in range(2, total_pages + 1)]
+        for fut in as_completed(futs):
+            p, r = fut.result()
+            pages_dict[p] = r
+
+    rows = []
+    for p in range(1, total_pages + 1):
+        rows.extend(pages_dict.get(p, []))
+    if verbose:
+        print(f"[step1] completed fetching {len(rows)} settlements across {total_pages} pages", flush=True)
     return rows
 
 
 # ---------- Step 2: resolve creatorId + flags ----------
 
+DETAILS_CACHE = {}
+SELF_TXN_CACHE = {}
+PROD_LIST_CACHE = {}
+
+
 def resolve_settlement_details(settlement_id, token):
+    if settlement_id in DETAILS_CACHE:
+        return DETAILS_CACHE[settlement_id]
     d = api_get(f"/IDgetSettlementDetails?settlementId={settlement_id}", token)
     if not d or "__error__" in d:
         return {"__error__": (d or {}).get("__error__", "unknown")}
     data = d.get("data", {})
     user = data.get("currentUserDetails", {}) or {}
     sett = data.get("currentSettlementDetails", {}) or {}
-    return {
+    res = {
         "creatorId": user.get("creatorId"),
         "username": user.get("username"),
         "email": user.get("Email") or user.get("email"),
@@ -123,6 +197,8 @@ def resolve_settlement_details(settlement_id, token):
         "totalMemoAmount": sett.get("totalMemoAmount"),
         "currentStatus": sett.get("currentStatus"),
     }
+    DETAILS_CACHE[settlement_id] = res
+    return res
 
 
 def extract_kundli_payload(d, key):
@@ -148,120 +224,93 @@ def extract_kundli_payload(d, key):
 # ---------- Step 3: self-transaction check via buyer list ----------
 
 def check_self_transactions(creator_id, token):
+    if creator_id in SELF_TXN_CACHE:
+        return SELF_TXN_CACHE[creator_id]
     d = api_get(f"/getCreatorKundli?type=userId&value={creator_id}"
                 f"&requestedAction=groupedByBuyerId", token)
     if not d or "__error__" in d:
         return {"__error__": (d or {}).get("__error__", "unknown"), "self": [], "buyers": 0}
     buyers = extract_kundli_payload(d, "groupedByBuyerId")
     self_txns = [b for b in buyers if isinstance(b, dict) and b.get("selfPayment") is True]
-    return {"self": self_txns, "buyers": len(buyers)}
+    res = {"self": self_txns, "buyers": len(buyers)}
+    SELF_TXN_CACHE[creator_id] = res
+    return res
 
 
 PRODUCT_CACHE = {}
 
-def inspect_product_url(url, pid, raw_type="", title=""):
-    """Fetch product page props and determine if content/delivery link is attached."""
-    if not url:
-        return {
-            "productId": pid,
-            "productType": raw_type or "unknown",
-            "productUrl": url or "",
-            "title": title or "",
-            "isAttached": False,
-            "status": "Flagged",
-            "reason": "Payment page exists, but no product/content link is attached"
-        }
-
-    if url in PRODUCT_CACHE:
+def inspect_product_url(url, pid, raw_type="", title="", token=None):
+    """
+    Inspect product link using official Cosmofeed internal API (product_validator)
+    when token is available, or fallback gracefully.
+    Eliminates unauthenticated scraping of superprofile.bio to prevent bot-challenges/IP blocks.
+    """
+    tok = token or DEFAULT_TOKEN
+    cache_key = f"{pid}:{url}:{raw_type}"
+    if cache_key in PRODUCT_CACHE:
+        return PRODUCT_CACHE[cache_key]
+    if url and url in PRODUCT_CACHE:
         return PRODUCT_CACHE[url]
 
-    norm_type = "vp"
-    if "/vig/" in url or raw_type == "integratedGroup":
-        norm_type = "vig"
-    elif "/course/" in url or raw_type == "course":
-        norm_type = "course"
-    elif "/ps/" in url or raw_type == "ps":
-        norm_type = "ps"
-    elif "/e/" in url or raw_type == "webinar":
-        norm_type = "webinar"
-    elif "/bookings/" in url or raw_type == "oneOnOne":
-        norm_type = "oneOnOne"
-    elif "/vp/" in url or raw_type == "page":
-        norm_type = "vp"
+    # Fast path for Telegram / integratedGroup products (0 API calls needed)
+    if raw_type == "integratedGroup" or "/vig/" in str(url):
+        res = {
+            "productId": pid,
+            "productType": "vig",
+            "productUrl": url or (f"https://superprofile.bio/vig/{pid}" if pid else ""),
+            "title": title or "",
+            "isAttached": True,
+            "status": "Valid",
+            "reason": "Excluded from missing-link validation (vig/Telegram product)"
+        }
+        PRODUCT_CACHE[cache_key] = res
+        if url:
+            PRODUCT_CACHE[url] = res
+        return res
 
-    headers = {
-        "user-agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                       "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"),
-        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
-    }
+    import product_validator
 
-    is_attached = False
+    if tok and pid:
+        val_res = product_validator.validate_product_link(
+            product_id=pid,
+            product_url=url,
+            product_type=raw_type,
+            token=tok
+        )
+        is_attached = val_res.get("isAttached")
+        is_ok = (is_attached is True) or (val_res.get("validationStatus") == "TELEGRAM_VIG_EXCLUDED")
+        res = {
+            "productId": val_res.get("productId") or pid,
+            "productType": val_res.get("productType") or raw_type or "page",
+            "productUrl": val_res.get("productUrl") or url,
+            "title": title or "",
+            "isAttached": is_ok,
+            "status": "Valid" if is_ok else "Flagged",
+            "reason": val_res.get("reason") or ("Product Link Attached" if is_ok else "Payment page exists, but no product/content link is attached")
+        }
+        PRODUCT_CACHE[cache_key] = res
+        if url:
+            PRODUCT_CACHE[url] = res
+        return res
 
-    try:
-        req = urlreq.Request(url, headers=headers)
-        with urlreq.urlopen(req, timeout=10) as resp:
-            html = resp.read().decode("utf-8", "ignore")
-            matches = re.findall(r'(\{"props":\{"pageProps":.*?\})\s*</script>', html, re.DOTALL)
-            if not matches:
-                matches = re.findall(r'(\{"props":\{"pageProps":.*)', html, re.DOTALL)
-            if matches:
-                parsed = json.loads(matches[0])
-                page_props = parsed.get("props", {}).get("pageProps", {})
-                data_obj = (page_props.get("prefetchedData") or
-                            page_props.get("courseData", {}).get("collection") or
-                            page_props.get("channelData") or
-                            page_props.get("eventData") or
-                            page_props)
-
-                redir = data_obj.get("redirectionLink")
-                resources = data_obj.get("resourcesDetails") or {}
-                total_res_size = data_obj.get("totalResourcesSize") or 0
-                prods_arr = data_obj.get("products") or []
-                p0 = prods_arr[0] if prods_arr else {}
-                modules = data_obj.get("modules") or data_obj.get("chapters") or []
-                thank_you = data_obj.get("thankYouNote") or {}
-
-                has_redir = False
-                if isinstance(redir, dict):
-                    if redir.get("isEnabled") is not False and redir.get("text"):
-                        has_redir = True
-                elif isinstance(redir, str) and redir.strip():
-                    has_redir = True
-
-                has_file = (resources.get("file", 0) > 0 and total_res_size > 0)
-                has_video = (resources.get("video", 0) > 0)
-                has_link = (resources.get("link", 0) > 0)
-                has_prod_link = bool(p0.get("link") or p0.get("custom") or p0.get("courseIds"))
-                has_modules = bool(len(modules) > 0)
-                has_thankyou = bool(isinstance(thank_you, dict) and (thank_you.get("note") or thank_you.get("isEnabled")))
-
-                if norm_type in ("vp", "ps"):
-                    is_attached = has_file or has_video or has_link or has_redir or has_prod_link or has_modules or has_thankyou
-                elif norm_type == "vig":
-                    is_attached = has_redir or bool(data_obj.get("telegramLink"))
-                elif norm_type == "course":
-                    is_attached = has_modules or has_redir or has_prod_link
-                elif norm_type in ("oneOnOne", "webinar"):
-                    is_attached = True
-    except Exception:
-        is_attached = False
-
+    # Fallback when no token or missing PID
+    norm_type = "vig" if ("/vig/" in str(url) or raw_type == "integratedGroup") else ("course" if "/course/" in str(url) or raw_type == "course" else "vp")
+    is_attached = True if norm_type == "vig" else False
     res = {
         "productId": pid,
         "productType": norm_type,
-        "productUrl": url,
-        "title": title,
+        "productUrl": url or "",
+        "title": title or "",
         "isAttached": is_attached,
         "status": "Valid" if is_attached else "Flagged",
-        "reason": "Product Link Attached" if is_attached else "Payment page exists, but no product/content link is attached"
+        "reason": "Telegram vig product (excluded)" if norm_type == "vig" else "Payment page exists, but no product/content link is attached"
     }
-
-    PRODUCT_CACHE[url] = res
+    PRODUCT_CACHE[cache_key] = res
     return res
 
 
 def check_creator_product_links(creator_id, token):
-    """Fetch creator's last hundred sold products and inspect each product URL for attached content."""
+    """Fetch creator's last hundred sold products and inspect each product using official internal API."""
     res = check_creator_products(creator_id, token)
     if "__error__" in res:
         return {"__error__": res["__error__"], "allProducts": [], "noLinkProducts": []}
@@ -276,7 +325,7 @@ def check_creator_product_links(creator_id, token):
         ptype = p.get("productType") or ""
         title = p.get("productTtile") or p.get("productTitle") or ""
 
-        info = inspect_product_url(purl, pid, ptype, title)
+        info = inspect_product_url(purl, pid, ptype, title, token=token)
         inspected.append(info)
         if not info["isAttached"]:
             no_link.append(info)
@@ -291,12 +340,16 @@ def check_creator_product_links(creator_id, token):
 
 def check_creator_products(creator_id, token):
     """Fetch creator's last hundred sold products via getCreatorKundli."""
+    if creator_id in PROD_LIST_CACHE:
+        return PROD_LIST_CACHE[creator_id]
     d = api_get(f"/getCreatorKundli?type=userId&value={creator_id}"
                 f"&requestedAction=lastHundredSoldProducts", token)
     if not d or "__error__" in d:
         return {"__error__": (d or {}).get("__error__", "unknown"), "products": []}
     prods = extract_kundli_payload(d, "lastHundredSoldProducts")
-    return {"products": prods}
+    res = {"products": prods}
+    PROD_LIST_CACHE[creator_id] = res
+    return res
 
 
 def check_previous_payouts(creator_id, token):

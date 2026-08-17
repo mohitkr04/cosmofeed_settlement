@@ -180,6 +180,9 @@ def main():
 
     print("Fetching pending settlements...", flush=True)
     rows = agent.fetch_all_settlements(token)
+    if not rows and not args.limit:
+        print("Warning: No pending settlements fetched from API. Aborting data.json overwrite.", flush=True)
+        return
     if args.limit:
         rows = rows[:args.limit]
     print(f"Enriching {len(rows)} creators (self-txn + category + adult heuristic)...", flush=True)
@@ -187,11 +190,27 @@ def main():
     out = []
     done = 0
     with ThreadPoolExecutor(max_workers=args.workers) as ex:
-        futs = [ex.submit(enrich_one, r, token) for r in rows]
+        futs = {ex.submit(enrich_one, r, token): r for r in rows}
         for fut in as_completed(futs):
-            out.append(fut.result())
+            try:
+                out.append(fut.result(timeout=15))
+            except Exception as e:
+                r = futs[fut]
+                out.append({
+                    "settlementId": r.get("_id"),
+                    "username": r.get("username"),
+                    "email": r.get("Email") or r.get("email"),
+                    "phone": r.get("PhoneNumber") or r.get("phone"),
+                    "payoutAmount": to_float(r.get("payoutAmount")),
+                    "onboardedBy": r.get("onboardedBy"),
+                    "status": r.get("status"),
+                    "selfTransaction": False,
+                    "adultFlag": False,
+                    "noLink": False,
+                    "error": str(e)
+                })
             done += 1
-            if done % 100 == 0:
+            if done % 100 == 0 or done == len(rows):
                 print(f"  {done}/{len(rows)}", flush=True)
 
     def get_day_key(c):

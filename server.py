@@ -30,11 +30,23 @@ PORT = int(os.environ.get("PORT", "8000"))
 
 
 def live_nolink_check(username):
-    """Best-effort live check of a creator's public page.
-    Returns dict: {reachable, status, noLink, reason}.
-    Note: superprofile pages are bot-protected; a challenge => 'unverifiable'."""
+    """Live check of a creator's public page & product links.
+    Uses official internal API if COSMOFEED_TOKEN is present to avoid bot challenges."""
     if not username:
         return {"reachable": False, "status": 0, "noLink": None, "reason": "no username"}
+
+    token = os.environ.get("COSMOFEED_TOKEN")
+    if token:
+        try:
+            import payout_audit_agent as agent
+            res = agent.check_creator_product_links(username, token)
+            if "__error__" not in res:
+                has_nolink = res.get("hasNoLink", False)
+                reason = "Page and product links verified via internal API" if not has_nolink else f"Payment page exists, but no product/content link attached ({res.get('noLinkCount', 1)} products)"
+                return {"reachable": True, "status": 200, "noLink": has_nolink, "reason": reason}
+        except Exception:
+            pass
+
     url = f"https://superprofile.bio/{username}"
     headers = {"user-agent": ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
                               "AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -57,11 +69,11 @@ def live_nolink_check(username):
     except (URLError, TimeoutError) as e:
         return {"reachable": False, "status": 0, "noLink": True,
                 "reason": f"unreachable: {e}"}
-    # loaded something — is it a real store or a challenge / empty?
+
     if "vercel security checkpoint" in body or "just a moment" in body:
         return {"reachable": True, "status": status, "noLink": None,
                 "reason": "bot-challenge (open in a browser to verify)"}
-    # crude: a working store page references products / buy / superprofile store markup
+
     markers = ["addtocart", "add to cart", "buy now", "/e/", "product", "checkout"]
     has_products = any(m in body for m in markers)
     if not has_products:

@@ -3,141 +3,254 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Payout Check — Cosmofeed</title>
-<style>
-  :root{
-    --bg:#0f1117; --panel:#171a23; --panel2:#1e222e; --border:#2a2f3c;
-    --text:#e6e8ee; --muted:#9aa3b2; --accent:#6c8cff; --accent2:#3a4a8c;
-    --red:#f4776b; --redbg:#3a1f1f; --orange:#f0a35e; --orangebg:#3a2c1a;
-    --yellow:#e8cf6a; --yellowbg:#39331a; --green:#5bd08a; --greenbg:#16321f;
+<title>Payout Check — Cosmofeed Risk & Audit Dashboard</title>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Google Fonts: Plus Jakarta Sans -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+        },
+        colors: {
+          brand: {
+            50: '#eef2ff',
+            100: '#e0e7ff',
+            200: '#c7d2fe',
+            500: '#6366f1',
+            600: '#4f46e5',
+            700: '#4338ca',
+          }
+        }
+      }
+    }
   }
-  *{box-sizing:border-box}
-  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;
-       background:var(--bg);color:var(--text);font-size:14px}
-  header{padding:18px 26px;border-bottom:1px solid var(--border);display:flex;
-         align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
-  h1{font-size:18px;margin:0;font-weight:700}
-  .sub{color:var(--muted);font-size:12px;margin-top:3px}
-  .wrap{padding:20px 26px}
-  /* cards */
-  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:18px}
-  .card{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:14px 16px}
-  .card .n{font-size:24px;font-weight:700}
-  .card .l{color:var(--muted);font-size:12px;margin-top:2px}
-  .card.redn .n{color:var(--red)} .card.orangen .n{color:var(--orange)} .card.bluen .n{color:var(--accent)}
-  /* tabs */
-  .tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
-  .tab{padding:9px 16px;border-radius:8px;border:1px solid var(--border);background:var(--panel);
-       color:var(--text);cursor:pointer;font-size:13px;font-weight:600;display:flex;align-items:center;gap:7px}
-  .tab:hover{border-color:var(--accent2)}
-  .tab.active{background:var(--accent);border-color:var(--accent);color:#fff}
-  .tab .badge{background:rgba(255,255,255,.18);padding:1px 8px;border-radius:20px;font-size:11px}
-  .tab.active .badge{background:rgba(0,0,0,.22)}
-  .toolbar{display:flex;gap:10px;align-items:center;margin-bottom:12px;flex-wrap:wrap}
-  input[type=search]{background:var(--panel2);border:1px solid var(--border);color:var(--text);
-       padding:9px 12px;border-radius:8px;width:280px;font-size:13px}
-  button.act{background:var(--panel2);border:1px solid var(--border);color:var(--text);
-       padding:9px 14px;border-radius:8px;cursor:pointer;font-size:13px}
-  button.act:hover{border-color:var(--accent)}
-  .note{color:var(--muted);font-size:12px}
-  .hint{background:var(--panel);border:1px solid var(--border);border-left:3px solid var(--orange);
-        padding:10px 14px;border-radius:8px;margin-bottom:14px;color:var(--muted);font-size:12.5px;display:none}
-  .hint.show{display:block}
-  /* table */
-  .tablewrap{overflow-x:auto;border:1px solid var(--border);border-radius:10px}
-  table{border-collapse:collapse;width:100%;min-width:900px}
-  th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--border);white-space:nowrap}
-  th{background:var(--panel2);color:var(--muted);font-size:11.5px;text-transform:uppercase;
-     letter-spacing:.4px;position:sticky;top:0;cursor:pointer;user-select:none}
-  tr:hover td{background:var(--panel)}
-  td.amt{text-align:right;font-variant-numeric:tabular-nums}
-  .pill{padding:2px 9px;border-radius:20px;font-size:11px;font-weight:700}
-  .pill.self{background:var(--redbg);color:var(--red)}
-  .pill.adult{background:var(--orangebg);color:var(--orange)}
-  .pill.nolink{background:var(--yellowbg);color:var(--yellow)}
-  .pill.ok{background:var(--greenbg);color:var(--green)}
-  .pill.unk{background:#26262e;color:var(--muted)}
-  .u{font-weight:600}
-  .muted{color:var(--muted)}
-  .expand{cursor:pointer;color:var(--accent)}
-  .detail{background:var(--panel2)!important;font-size:12.5px;color:var(--muted);white-space:normal}
-  .detail table{min-width:0;width:auto;margin:4px 0}
-  .detail th,.detail td{border-bottom:1px solid var(--border);padding:5px 10px;white-space:nowrap}
-  .empty{padding:40px;text-align:center;color:var(--muted)}
-  footer{padding:16px 26px;color:var(--muted);font-size:11.5px;border-top:1px solid var(--border)}
-  .spin{display:inline-block;width:12px;height:12px;border:2px solid var(--muted);border-top-color:transparent;
-        border-radius:50%;animation:sp 0.7s linear infinite;vertical-align:-1px}
-  @keyframes sp{to{transform:rotate(360deg)}}
+</script>
+<style>
+  /* Glassmorphism & Micro-animations */
+  .glass-panel {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.04);
+  }
+  .glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.03);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .glass-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px -4px rgba(0, 0, 0, 0.06);
+    background: rgba(255, 255, 255, 0.85);
+  }
+  .glass-tab {
+    background: rgba(241, 245, 249, 0.7);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .glass-tab:hover {
+    background: rgba(255, 255, 255, 0.95);
+    border-color: rgba(99, 102, 241, 0.3);
+    transform: translateY(-1px);
+    color: #4338ca;
+  }
+  .glass-tab.active {
+    background: #ffffff;
+    border-color: rgba(99, 102, 241, 0.5);
+    color: #4338ca;
+    box-shadow: 0 4px 14px 0 rgba(99, 102, 241, 0.18), 0 0 0 2px rgba(99, 102, 241, 0.2);
+  }
+  .glass-input {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(203, 213, 225, 0.8);
+    transition: all 0.2s ease;
+  }
+  .glass-input:focus {
+    background: #ffffff;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.18);
+    outline: none;
+  }
+  .glass-table-header {
+    background: rgba(248, 250, 252, 0.92);
+    backdrop-filter: blur(10px);
+  }
+  
+  @keyframes spinSlow {
+    to { transform: rotate(360deg); }
+  }
+  .spin {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #94a3b8;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spinSlow 0.7s linear infinite;
+    vertical-align: -2px;
+  }
 </style>
 </head>
-<body>
-<header>
-  <div>
-    <h1>💸 Payout Check <span class="muted" style="font-weight:400">— Cosmofeed pending settlements</span></h1>
-    <div class="sub" id="genat">loading…</div>
+<body class="bg-slate-50 text-slate-800 font-sans min-h-screen selection:bg-indigo-500 selection:text-white relative bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-indigo-100/40 via-slate-50 to-slate-100">
+
+<!-- Header Section -->
+<header class="sticky top-0 z-30 bg-white/80 backdrop-blur-xl border-b border-slate-200/80 shadow-sm px-6 py-4 transition-all">
+  <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-violet-500 flex items-center justify-center text-white shadow-md shadow-indigo-500/20">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      </div>
+      <div>
+        <h1 class="text-xl font-bold text-slate-900 tracking-tight flex items-center gap-2">
+          Payout Risk & Audit Dashboard
+          <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-indigo-50 text-indigo-700 border border-indigo-200">Cosmofeed Live</span>
+        </h1>
+        <p class="text-xs text-slate-500 mt-0.5" id="genat">Loading settlement audit data...</p>
+      </div>
+    </div>
+    <div class="flex items-center gap-3">
+      <div class="text-xs font-medium text-slate-500 bg-slate-100 px-3 py-1.5 rounded-lg border border-slate-200 flex items-center gap-1.5">
+        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        Data source: <code class="text-slate-700 font-semibold">data.json</code>
+      </div>
+    </div>
   </div>
-  <div class="note">Data source: local <code>data.json</code></div>
 </header>
 
-<div class="wrap">
-  <div class="cards" id="cards"></div>
+<!-- Main Wrapper -->
+<main class="max-w-7xl mx-auto px-6 py-8">
 
-  <div class="tabs" id="tabs">
-    <div class="tab active" data-f="all">All <span class="badge" id="b-all">0</span></div>
-    <div class="tab" data-f="self">🔴 Self-Transaction <span class="badge" id="b-self">0</span></div>
-    <div class="tab" data-f="adult">🟠 Adult <span class="badge" id="b-adult">0</span></div>
-    <div class="tab" data-f="nolink">🟡 No Link <span class="badge" id="b-nolink">0</span></div>
+  <!-- Metrics Cards Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-8" id="cards">
+    <!-- Populated by JavaScript -->
   </div>
 
-  <div class="hint" id="hint"></div>
-
-  <div class="toolbar">
-    <input type="search" id="search" placeholder="Search username / email / phone…">
-    <select id="timeframeFilter" class="act" style="background:var(--panel2);color:var(--text);border:1px solid var(--border);padding:9px 12px;border-radius:8px;font-size:13px">
-      <option value="">All Time</option>
-      <option value="24h">⏱️ Last 24 Hours</option>
-      <option value="7d">📅 Last 7 Days</option>
-      <option value="30d">🗓️ Last 30 Days</option>
-    </select>
-    <select id="selfAmountFilter" class="act" style="background:var(--panel2);color:var(--text);border:1px solid var(--border);padding:9px 12px;border-radius:8px;font-size:13px">
-      <option value="">All Self-Txn Amounts</option>
-      <option value="10000">₹10,000+ Recent Self-Txn</option>
-      <option value="5000">₹5,000+ Recent Self-Txn</option>
-      <option value="1000">₹1,000+ Recent Self-Txn</option>
-      <option value="500">₹500+ Recent Self-Txn</option>
-      <option value="100">₹100+ Recent Self-Txn</option>
-    </select>
-    <select id="onboardFilter" class="act" style="background:var(--panel2);color:var(--text);border:1px solid var(--border);padding:9px 12px;border-radius:8px;font-size:13px">
-      <option value="">All Onboarders</option>
-    </select>
-    <button class="act" id="exportBtn">📥 Export CSV</button>
-    <button class="act" id="slackBtn" style="background:#4a154b;color:#fff;border:none">💬 Copy Slack Summary</button>
-    <button class="act" id="pdfReportBtn" style="background:#2563eb;color:#fff;border:none">📄 PDF / Executive Report</button>
-    <button class="act" id="nolinkBtn" style="display:none">Run No-Link live check (visible rows)</button>
-    <span class="note" id="rowcount"></span>
+  <!-- Glassy Filter Tabs -->
+  <div class="flex flex-wrap items-center gap-2 mb-6" id="tabs">
+    <button class="glass-tab active px-4 py-2.5 rounded-xl font-semibold text-sm text-slate-700 flex items-center gap-2" data-f="all">
+      <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg>
+      All Settlements
+      <span class="badge px-2 py-0.5 rounded-full text-xs font-bold bg-slate-200 text-slate-700" id="b-all">0</span>
+    </button>
+    <button class="glass-tab px-4 py-2.5 rounded-xl font-semibold text-sm text-slate-700 flex items-center gap-2" data-f="self">
+      <span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span>
+      Self-Transaction
+      <span class="badge px-2 py-0.5 rounded-full text-xs font-bold bg-rose-100 text-rose-700 border border-rose-200" id="b-self">0</span>
+    </button>
+    <button class="glass-tab px-4 py-2.5 rounded-xl font-semibold text-sm text-slate-700 flex items-center gap-2" data-f="adult">
+      <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+      Adult / Risk
+      <span class="badge px-2 py-0.5 rounded-full text-xs font-bold bg-amber-100 text-amber-800 border border-amber-200" id="b-adult">0</span>
+    </button>
+    <button class="glass-tab px-4 py-2.5 rounded-xl font-semibold text-sm text-slate-700 flex items-center gap-2" data-f="nolink">
+      <span class="w-2.5 h-2.5 rounded-full bg-yellow-500"></span>
+      No Link Attached
+      <span class="badge px-2 py-0.5 rounded-full text-xs font-bold bg-yellow-100 text-yellow-800 border border-yellow-200" id="b-nolink">0</span>
+    </button>
   </div>
 
-  <div class="tablewrap">
-    <table id="tbl">
-      <thead>
-        <tr>
-          <th data-k="username">Username</th>
-          <th data-k="creatorId">Creator ID</th>
-          <th data-k="payoutAmount" class="amt">Payout (₹)</th>
-          <th data-k="latestSelfTxnTimestamp">Latest Self-Txn Date</th>
-          <th data-k="flags">Flags</th>
-          <th>Detail</th>
-        </tr>
-      </thead>
-      <tbody id="tbody"></tbody>
-    </table>
-  </div>
-</div>
+  <!-- Hint Banner -->
+  <div class="glass-card rounded-xl p-4 mb-6 border-l-4 border-l-amber-500 text-slate-600 text-xs leading-relaxed hidden shadow-sm" id="hint"></div>
 
-<footer>
-  Self-Transaction = platform's own <code>selfPayment</code> flag (accurate).
-  Adult = keyword heuristic on username/category (candidates for review; needs the Review Products API for precision).
-  No Link = live page-status check (superprofile pages are bot-protected, so many may return “unverifiable”).
+  <!-- Controls Toolbar -->
+  <div class="glass-panel rounded-2xl p-4 mb-6 flex flex-wrap items-center justify-between gap-3 border border-white/80">
+    <div class="flex flex-wrap items-center gap-3 flex-1 min-w-[280px]">
+      <!-- Search Input -->
+      <div class="relative w-full sm:w-72">
+        <svg class="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        <input type="search" id="search" placeholder="Search username, email, phone..." class="glass-input w-full pl-10 pr-4 py-2 rounded-xl text-sm text-slate-800 placeholder-slate-400">
+      </div>
+
+      <!-- Timeframe Filter -->
+      <select id="timeframeFilter" class="glass-input px-3.5 py-2 rounded-xl text-sm text-slate-700 font-medium">
+        <option value="">All Timeframes</option>
+        <option value="24h">⏱️ Last 24 Hours</option>
+        <option value="7d">📅 Last 7 Days</option>
+        <option value="30d">🗓️ Last 30 Days</option>
+      </select>
+
+      <!-- Self Txn Amount Filter -->
+      <select id="selfAmountFilter" class="glass-input px-3.5 py-2 rounded-xl text-sm text-slate-700 font-medium">
+        <option value="">All Self-Txn Amounts</option>
+        <option value="10000">₹10,000+ Recent Self-Txn</option>
+        <option value="5000">₹5,000+ Recent Self-Txn</option>
+        <option value="1000">₹1,000+ Recent Self-Txn</option>
+        <option value="500">₹500+ Recent Self-Txn</option>
+        <option value="100">₹100+ Recent Self-Txn</option>
+      </select>
+
+      <!-- Onboarder Filter -->
+      <select id="onboardFilter" class="glass-input px-3.5 py-2 rounded-xl text-sm text-slate-700 font-medium">
+        <option value="">All Onboarders</option>
+      </select>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="flex flex-wrap items-center gap-2">
+      <button id="exportBtn" class="px-3.5 py-2 rounded-xl bg-white hover:bg-slate-50 text-slate-700 text-xs font-semibold border border-slate-200 shadow-sm transition flex items-center gap-1.5">
+        <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        Export CSV
+      </button>
+
+      <button id="slackBtn" class="px-3.5 py-2 rounded-xl bg-[#4a154b] hover:bg-[#3b113c] text-white text-xs font-semibold shadow-sm shadow-purple-900/10 transition flex items-center gap-1.5">
+        <svg class="w-4 h-4 text-purple-200" fill="currentColor" viewBox="0 0 24 24"><path d="M6 15a2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2h2v2zm1 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2v5a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-5zm2-7a2 2 0 0 1-2-2 2 2 0 0 1 2-2 2 2 0 0 1 2 2v2H9zm0 1a2 2 0 0 1 2 2 2 2 0 0 1-2 2H4a2 2 0 0 1-2-2 2 2 0 0 1 2-2h5zm7-2a2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2h-2V7zm-1 0a2 2 0 0 1-2 2 2 2 0 0 1-2-2V2a2 2 0 0 1 2-2 2 2 0 0 1 2 2v5zm-2 7a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2v-2h2zm0-1a2 2 0 0 1-2-2 2 2 0 0 1 2-2h5a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-5z"/></svg>
+        Slack Summary
+      </button>
+
+      <button id="pdfReportBtn" class="px-3.5 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold shadow-sm shadow-indigo-600/20 transition flex items-center gap-1.5">
+        <svg class="w-4 h-4 text-indigo-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        PDF Report
+      </button>
+
+      <button id="nolinkBtn" class="hidden px-3.5 py-2 rounded-xl bg-amber-500 hover:bg-amber-600 text-white text-xs font-semibold shadow-sm transition flex items-center gap-1.5">
+        Run No-Link live check
+      </button>
+
+      <span id="rowcount" class="text-xs font-semibold text-slate-500 ml-2"></span>
+    </div>
+  </div>
+
+  <!-- Data Table Container -->
+  <div class="glass-panel rounded-2xl border border-white/80 overflow-hidden shadow-lg shadow-slate-200/50">
+    <div class="overflow-x-auto">
+      <table id="tbl" class="w-full text-left border-collapse min-w-[900px]">
+        <thead>
+          <tr class="glass-table-header border-b border-slate-200/80 text-xs font-bold text-slate-500 uppercase tracking-wider select-none">
+            <th class="py-3.5 px-4 cursor-pointer hover:text-indigo-600 transition" data-k="username">Username</th>
+            <th class="py-3.5 px-4 cursor-pointer hover:text-indigo-600 transition" data-k="creatorId">Creator ID</th>
+            <th class="py-3.5 px-4 text-right cursor-pointer hover:text-indigo-600 transition" data-k="payoutAmount">Payout (₹)</th>
+            <th class="py-3.5 px-4 cursor-pointer hover:text-indigo-600 transition" data-k="latestSelfTxnTimestamp">Latest Self-Txn Date</th>
+            <th class="py-3.5 px-4" data-k="flags">Flags</th>
+            <th class="py-3.5 px-4 text-center">Detail</th>
+          </tr>
+        </thead>
+        <tbody id="tbody" class="divide-y divide-slate-100 text-sm">
+          <!-- Populated by JS -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="max-w-7xl mx-auto px-6 py-6 border-t border-slate-200/80 mt-12 text-xs text-slate-500 flex flex-wrap justify-between gap-4">
+  <div>
+    <strong>Audit Rules:</strong> Self-Transaction relies on platform's native <code class="bg-slate-100 px-1 py-0.5 rounded text-slate-700">selfPayment</code> flag. Adult uses keyword heuristic matching.
+  </div>
+  <div>Cosmofeed Payout Intelligence</div>
 </footer>
 
 <script>
@@ -150,7 +263,7 @@ const expandedRows = new Set();
 const HINTS = {
   all: "",
   self: "Priority Order: Per Date → Self-Txn Amount (Higher to Lower) → Recent Time → Payout Amount.",
-  adult: "Heuristic keyword matches only (username/category). Candidates for human review.",
+  adult: "Heuristic keyword matches only (username/category/product titles). Candidates for human review.",
   nolink: "Creators with sold payment pages that have no actual product, file, course, or content link attached.",
 };
 
@@ -158,11 +271,11 @@ function inr(n){ return (n||0).toLocaleString('en-IN'); }
 
 function flagsHtml(r){
   let h = [];
-  if(r.selfTransaction) h.push(`<span class="pill self">SELF ×${r.selfTxnCount} (₹${inr(r.selfTxnMaxAmount)})</span>`);
-  if(r.adultFlag) h.push(`<span class="pill adult">ADULT</span>`);
-  if(r.noLink===true) h.push(`<span class="pill nolink">NO LINK ×${r.noLinkCount||1}</span>`);
-  else if(r.noLink===false) h.push(`<span class="pill ok">LINK OK</span>`);
-  if(!h.length) h.push(`<span class="pill unk">—</span>`);
+  if(r.selfTransaction) h.push(`<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold bg-rose-100 text-rose-700 border border-rose-200">SELF ×${r.selfTxnCount} (₹${inr(r.selfTxnMaxAmount)})</span>`);
+  if(r.adultFlag) h.push(`<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-100 text-amber-800 border border-amber-200">ADULT</span>`);
+  if(r.noLink===true) h.push(`<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold bg-yellow-100 text-yellow-800 border border-yellow-200">NO LINK ×${r.noLinkCount||1}</span>`);
+  else if(r.noLink===false) h.push(`<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-700 border border-emerald-200">LINK OK</span>`);
+  if(!h.length) h.push(`<span class="text-slate-400 font-mono text-xs">—</span>`);
   return h.join(" ");
 }
 
@@ -222,7 +335,6 @@ function rows(){
       return ((Number(x)||0)-(Number(y)||0))*sortDir;
     }
 
-    // Default Priority Sort: Per Date > Flagged Self-Txn Amount (High to Low) > Time > Payout Amount
     const dayA = getDayKey(a);
     const dayB = getDayKey(b);
     if (dayA !== dayB) return dayB - dayA;
@@ -401,37 +513,41 @@ function exportHTMLReport(){
 
 function buildDetailHtml(r){
   let inner = "";
-  inner += `<div style="display:flex;gap:20px;flex-wrap:wrap;margin-bottom:8px;font-size:13px;color:var(--text);background:var(--panel);padding:10px 14px;border-radius:6px;border:1px solid var(--border)">`;
-  inner += `<div><b>Email:</b> ${r.email || '—'}</div>`;
-  inner += `<div><b>Phone:</b> ${r.phone || '—'}</div>`;
-  inner += `<div><b>Category:</b> ${r.category || '—'}</div>`;
-  if (r.onboardedBy && r.onboardedBy !== '---') inner += `<div><b>Onboarded By:</b> ${r.onboardedBy}</div>`;
-  if (r.creatorId) inner += `<div><b>Creator ID:</b> <code>${r.creatorId}</code></div>`;
-  if (r.username) inner += `<div><b>Storefront:</b> <a href="https://superprofile.bio/${r.username}" target="_blank" style="color:var(--accent)">superprofile.bio/${r.username}</a></div>`;
+  inner += `<div class="grid grid-cols-1 md:grid-cols-3 gap-3 p-4 bg-slate-50/80 rounded-xl border border-slate-200 text-xs mb-3">`;
+  inner += `<div><span class="text-slate-400 font-semibold block mb-0.5">Email</span><span class="text-slate-800 font-medium">${r.email || '—'}</span></div>`;
+  inner += `<div><span class="text-slate-400 font-semibold block mb-0.5">Phone</span><span class="text-slate-800 font-medium">${r.phone || '—'}</span></div>`;
+  inner += `<div><span class="text-slate-400 font-semibold block mb-0.5">Category</span><span class="text-slate-800 font-medium">${r.category || '—'}</span></div>`;
+  if (r.onboardedBy && r.onboardedBy !== '---') inner += `<div><span class="text-slate-400 font-semibold block mb-0.5">Onboarded By</span><span class="text-slate-800 font-medium">${r.onboardedBy}</span></div>`;
+  if (r.creatorId) inner += `<div><span class="text-slate-400 font-semibold block mb-0.5">Creator ID</span><code class="text-indigo-600 bg-indigo-50 px-1.5 py-0.5 rounded font-mono">${r.creatorId}</code></div>`;
+  if (r.username) inner += `<div><span class="text-slate-400 font-semibold block mb-0.5">Storefront Bio</span><a href="https://superprofile.bio/${r.username}" target="_blank" class="text-indigo-600 font-medium hover:underline inline-flex items-center gap-1">superprofile.bio/${r.username} ↗</a></div>`;
   inner += `</div>`;
 
   if(r.selfTxnDetails && r.selfTxnDetails.length){
     const sortedDetails = [...r.selfTxnDetails].sort((a, b) => (b.timestamp || 0) - (a.timestamp || 0));
-    inner += `<div style="margin-top:10px"><b style="color:var(--red)">Self-transactions Details (${sortedDetails.length} total, in date sequence):</b>` +
-      `<table style="margin-top:6px"><thead><tr><th>Date & Time</th><th>Amount</th><th>Buyer Email</th><th>Buyer Phone</th><th>IP Address</th></tr></thead><tbody>` +
-      sortedDetails.map(s=>`<tr><td style="color:var(--orange);font-weight:600">${s.date||'—'}</td><td>₹${inr(s.amount)}</td><td>${s.buyerEmail||'—'}</td><td>${s.buyerPhone||'—'}</td><td>${s.IP||'—'}</td></tr>`).join('') +
-      `</tbody></table></div>`;
+    inner += `<div class="mt-4"><div class="text-xs font-bold text-rose-600 mb-2 flex items-center gap-1.5"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg> Self-Transaction Buyer Logs (${sortedDetails.length} total):</div>` +
+      `<div class="overflow-x-auto rounded-lg border border-slate-200"><table class="w-full text-xs text-left">` +
+      `<thead class="bg-slate-100 text-slate-600 font-semibold"><tr><th class="p-2.5">Date & Time</th><th class="p-2.5">Amount</th><th class="p-2.5">Buyer Email</th><th class="p-2.5">Buyer Phone</th><th class="p-2.5">IP Address</th></tr></thead>` +
+      `<tbody class="divide-y divide-slate-100 bg-white">` +
+      sortedDetails.map(s=>`<tr><td class="p-2.5 font-semibold text-amber-600">${s.date||'—'}</td><td class="p-2.5 font-bold text-rose-600">₹${inr(s.amount)}</td><td class="p-2.5 text-slate-700">${s.buyerEmail||'—'}</td><td class="p-2.5 text-slate-700">${s.buyerPhone||'—'}</td><td class="p-2.5 font-mono text-slate-500">${s.IP||'—'}</td></tr>`).join('') +
+      `</tbody></table></div></div>`;
   }
 
   if(r.noLinkProducts && r.noLinkProducts.length){
-    inner += `<div style="margin-top:10px"><b style="color:var(--yellow)">⚠️ Flagged Sold Products (No Link / Nothing Attached):</b>` +
-      `<table style="margin-top:6px"><thead><tr><th>Product ID</th><th>Product Type</th><th>Payment Page URL</th><th>Status</th><th>Outcome / Reason</th></tr></thead><tbody>` +
+    inner += `<div class="mt-4"><div class="text-xs font-bold text-amber-600 mb-2 flex items-center gap-1.5"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg> Flagged Sold Products (No Link Attached):</div>` +
+      `<div class="overflow-x-auto rounded-lg border border-slate-200"><table class="w-full text-xs text-left">` +
+      `<thead class="bg-slate-100 text-slate-600 font-semibold"><tr><th class="p-2.5">Product ID</th><th class="p-2.5">Type</th><th class="p-2.5">Payment URL</th><th class="p-2.5">Status</th><th class="p-2.5">Reason</th></tr></thead>` +
+      `<tbody class="divide-y divide-slate-100 bg-white">` +
       r.noLinkProducts.map(p=>`<tr>` +
-        `<td><code>${p.productId||'—'}</code></td>` +
-        `<td><span class="pill unk">${p.productType||'—'}</span></td>` +
-        `<td><a href="${p.productUrl}" target="_blank" style="color:var(--accent)">${p.productUrl}</a></td>` +
-        `<td><span class="pill nolink">⚠️ ${p.status||'Flagged'}</span></td>` +
-        `<td style="color:var(--yellow);font-weight:600">${p.reason||'Payment page exists, but no product/content link is attached'}</td>` +
+        `<td class="p-2.5 font-mono">${p.productId||'—'}</td>` +
+        `<td class="p-2.5"><span class="px-2 py-0.5 rounded bg-slate-100 text-slate-600 font-medium">${p.productType||'—'}</span></td>` +
+        `<td class="p-2.5"><a href="${p.productUrl}" target="_blank" class="text-indigo-600 hover:underline">${p.productUrl}</a></td>` +
+        `<td class="p-2.5"><span class="px-2 py-0.5 rounded-full text-xs font-bold bg-amber-100 text-amber-800">⚠️ ${p.status||'Flagged'}</span></td>` +
+        `<td class="p-2.5 font-semibold text-amber-700">${p.reason||'Payment page exists, but no product/content link is attached'}</td>` +
       `</tr>`).join('') +
-      `</tbody></table></div>`;
+      `</tbody></table></div></div>`;
   }
 
-  if(r.noLinkReason) inner += `<div style="margin-top:6px"><b>No-Link Status:</b> ${r.noLinkReason}</div>`;
+  if(r.noLinkReason) inner += `<div class="mt-2 text-xs text-amber-700 font-medium"><b>No-Link Reason:</b> ${r.noLinkReason}</div>`;
   return inner || '—';
 }
 
@@ -449,10 +565,21 @@ function render(){
   const tb = document.getElementById('tbody');
   const list = rows();
   document.getElementById('rowcount').textContent = `${list.length} rows`;
-  document.getElementById('hint').className = HINTS[filter] ? "hint show" : "hint";
-  document.getElementById('hint').textContent = HINTS[filter] || "";
-  document.getElementById('nolinkBtn').style.display = (filter==="nolink"||filter==="all") ? "inline-block":"none";
-  if(!list.length){ tb.innerHTML = `<tr><td colspan="6" class="empty">No creators match this filter.</td></tr>`; return; }
+  
+  const hintEl = document.getElementById('hint');
+  if (HINTS[filter]) {
+    hintEl.textContent = HINTS[filter];
+    hintEl.classList.remove('hidden');
+  } else {
+    hintEl.classList.add('hidden');
+  }
+  
+  document.getElementById('nolinkBtn').style.display = (filter==="nolink"||filter==="all") ? "inline-flex":"none";
+  
+  if(!list.length){
+    tb.innerHTML = `<tr><td colspan="6" class="p-12 text-center text-slate-400 font-medium">No creators match this filter.</td></tr>`;
+    return;
+  }
 
   let html = "";
   list.forEach((r, i) => {
@@ -460,23 +587,22 @@ function render(){
     const isExpanded = expandedRows.has(key);
     
     html += `
-      <tr>
-        <td class="u">${r.username||''}</td>
-        <td class="muted"><code>${r.creatorId||'—'}</code></td>
-        <td class="amt">${inr(r.payoutAmount)}</td>
-        <td class="muted">${r.latestSelfTxnDate ? `<b style="color:var(--orange)">${r.latestSelfTxnDate}</b>` : '—'}</td>
-        <td>${flagsHtml(r)}</td>
-        <td><span class="expand" data-i="${i}">${isExpanded ? 'view ▴' : 'view ▾'}</span></td>
+      <tr class="hover:bg-indigo-50/40 transition-colors">
+        <td class="py-3 px-4 font-bold text-slate-900">${r.username||''}</td>
+        <td class="py-3 px-4 text-slate-500"><code class="bg-slate-100 px-1.5 py-0.5 rounded text-xs font-mono text-slate-600">${r.creatorId||'—'}</code></td>
+        <td class="py-3 px-4 text-right font-bold text-slate-800 font-mono">₹${inr(r.payoutAmount)}</td>
+        <td class="py-3 px-4 text-slate-600">${r.latestSelfTxnDate ? `<span class="font-semibold text-amber-600">${r.latestSelfTxnDate}</span>` : '—'}</td>
+        <td class="py-3 px-4">${flagsHtml(r)}</td>
+        <td class="py-3 px-4 text-center"><button class="expand px-2.5 py-1 rounded-lg text-xs font-semibold text-indigo-600 hover:bg-indigo-50 border border-indigo-100 transition" data-i="${i}">${isExpanded ? 'view ▴' : 'view ▾'}</button></td>
       </tr>`;
       
     if (isExpanded) {
-      html += `<tr class="detrow"><td colspan="6" class="detail">${buildDetailHtml(r)}</td></tr>`;
+      html += `<tr class="detrow"><td colspan="6" class="p-4 bg-slate-50 border-t border-b border-indigo-100/80">${buildDetailHtml(r)}</td></tr>`;
     }
   });
   
   tb.innerHTML = html;
   
-  // wire expanders
   tb.querySelectorAll('.expand').forEach(el=>{
     el.onclick = ()=>toggleDetail(el, list[+el.dataset.i]);
   });
@@ -502,18 +628,71 @@ async function runNoLink(){
   }
   DATA.counts.noLink = DATA.creators.filter(x=>x.noLink===true).length;
   document.getElementById('b-nolink').textContent = DATA.counts.noLink;
-  btn.disabled=false; btn.textContent='Run No-Link live check (visible rows)';
+  btn.disabled=false; btn.textContent='Run No-Link live check';
   render();
 }
 
 function setCards(){
   const c = DATA.counts;
+  const totalPayout = DATA.creators.reduce((s,r)=>s+(r.payoutAmount||0),0);
+  
   document.getElementById('cards').innerHTML = `
-    <div class="card"><div class="n">${DATA.totalCreators}</div><div class="l">Pending settlements</div></div>
-    <div class="card redn"><div class="n">${c.selfTransaction}</div><div class="l">Self-transactions</div></div>
-    <div class="card orangen"><div class="n">${c.adult}</div><div class="l">Adult (heuristic)</div></div>
-    <div class="card"><div class="n">${c.noLink}</div><div class="l">No-Link (checked)</div></div>
-    <div class="card bluen"><div class="n">₹${inr(DATA.creators.reduce((s,r)=>s+(r.payoutAmount||0),0))}</div><div class="l">Total pending payout</div></div>`;
+    <div class="glass-card rounded-2xl p-5 border border-white/80">
+      <div class="flex items-center justify-between text-slate-400 mb-2">
+        <span class="text-xs font-bold uppercase tracking-wider">Pending Settlements</span>
+        <div class="w-8 h-8 rounded-lg bg-indigo-50 flex items-center justify-center text-indigo-600">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+        </div>
+      </div>
+      <div class="text-2xl font-extrabold text-slate-900">${DATA.totalCreators}</div>
+      <div class="text-xs text-slate-500 mt-1">Pending payout requests</div>
+    </div>
+
+    <div class="glass-card rounded-2xl p-5 border border-white/80">
+      <div class="flex items-center justify-between text-rose-500 mb-2">
+        <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Self-Transactions</span>
+        <div class="w-8 h-8 rounded-lg bg-rose-50 flex items-center justify-center text-rose-600">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+        </div>
+      </div>
+      <div class="text-2xl font-extrabold text-rose-600">${c.selfTransaction}</div>
+      <div class="text-xs text-slate-500 mt-1">Platform selfPayment flag</div>
+    </div>
+
+    <div class="glass-card rounded-2xl p-5 border border-white/80">
+      <div class="flex items-center justify-between text-amber-500 mb-2">
+        <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Adult / Risk</span>
+        <div class="w-8 h-8 rounded-lg bg-amber-50 flex items-center justify-center text-amber-600">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+        </div>
+      </div>
+      <div class="text-2xl font-extrabold text-amber-600">${c.adult}</div>
+      <div class="text-xs text-slate-500 mt-1">Heuristic keyword candidates</div>
+    </div>
+
+    <div class="glass-card rounded-2xl p-5 border border-white/80">
+      <div class="flex items-center justify-between text-slate-400 mb-2">
+        <span class="text-xs font-bold uppercase tracking-wider">No-Link Attached</span>
+        <div class="w-8 h-8 rounded-lg bg-yellow-50 flex items-center justify-center text-yellow-600">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>
+        </div>
+      </div>
+      <div class="text-2xl font-extrabold text-slate-900">${c.noLink}</div>
+      <div class="text-xs text-slate-500 mt-1">Sold pages missing link</div>
+    </div>
+
+    <div class="glass-card rounded-2xl p-5 border border-white/80">
+      <div class="flex items-center justify-between text-slate-400 mb-2">
+        <span class="text-xs font-bold uppercase tracking-wider">Total Pending</span>
+        <div class="w-8 h-8 rounded-lg bg-emerald-50 flex items-center justify-center text-emerald-600">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+      </div>
+      <div class="text-2xl font-extrabold text-indigo-600 font-mono">₹${inr(totalPayout)}</div>
+      <div class="text-xs text-slate-500 mt-1">Pending payout sum</div>
+    </div>
+  `;
+
   document.getElementById('b-all').textContent = DATA.totalCreators;
   document.getElementById('b-self').textContent = c.selfTransaction;
   document.getElementById('b-adult').textContent = c.adult;
@@ -521,10 +700,9 @@ function setCards(){
 }
 
 function init(){
-  document.getElementById('genat').textContent = 'Generated: '+DATA.generatedAt+' · '+DATA.totalCreators+' creators';
+  document.getElementById('genat').textContent = 'Generated: '+DATA.generatedAt+' · '+DATA.totalCreators+' pending creators';
   setCards();
   
-  // Populate onboarders filter
   const onboarders = Array.from(new Set(DATA.creators.map(c => c.onboardedBy).filter(Boolean))).sort();
   const sel = document.getElementById('onboardFilter');
   sel.innerHTML = '<option value="">All Onboarders (' + onboarders.length + ')</option>' +
@@ -538,10 +716,10 @@ function init(){
   document.getElementById('pdfReportBtn').onclick = exportHTMLReport;
 
   render();
-  document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
-    document.querySelector('.tab.active').classList.remove('active');
+  document.querySelectorAll('#tabs .glass-tab').forEach(t=>t.onclick=()=>{
+    document.querySelector('#tabs .glass-tab.active').classList.remove('active');
     t.classList.add('active'); filter=t.dataset.f;
-    userExplicitSortKey = null; // Reset to 3-level priority sort on tab change
+    userExplicitSortKey = null;
     render();
   });
   document.getElementById('search').oninput = render;
@@ -554,24 +732,23 @@ function init(){
 }
 
 function fatal(html){
-  document.body.innerHTML='<div style="max-width:720px;margin:60px auto;padding:28px;'+
-    'background:#171a23;border:1px solid #2a2f3c;border-radius:12px;line-height:1.6">'+html+'</div>';
+  document.body.innerHTML='<div class="max-w-xl mx-auto my-16 p-8 glass-panel rounded-2xl border border-rose-200 text-slate-800 leading-relaxed shadow-xl">'+html+'</div>';
 }
+
 if(location.protocol==='file:'){
-  fatal('<h2 style="color:#f4776b;margin-top:0">⚠️ Galat tareeke se khula hai</h2>'+
-    '<p>Aapne file ko seedha double-click karke khola hai (<code>file://</code>). Isse data load nahi hoga.</p>'+
-    '<p><b>Sahi tareeka:</b></p>'+
-    '<ol><li>VS Code ke terminal mein: <code style="background:#0f1117;padding:2px 8px;border-radius:5px">python3 server.py</code></li>'+
-    '<li>Browser mein kholiye: <a href="http://localhost:8000" style="color:#6c8cff">http://localhost:8000</a></li></ol>');
+  fatal('<h2 class="text-xl font-bold text-rose-600 mb-2">⚠️ Opened as Local File</h2>'+
+    '<p class="text-sm text-slate-600">You opened this file directly (<code>file://</code>). Browser security blocks fetching <code>data.json</code>.</p>'+
+    '<p class="mt-4 font-semibold text-xs text-slate-700">How to open properly:</p>'+
+    '<ol class="list-decimal list-inside text-xs text-slate-600 mt-2 space-y-1"><li>Run <code class="bg-slate-100 px-2 py-0.5 rounded text-indigo-600 font-mono">python server.py</code> in terminal</li>'+
+    '<li>Open <a href="http://localhost:8000" class="text-indigo-600 underline font-semibold">http://localhost:8000</a> in browser</li></ol>');
 } else {
   fetch('/api/data').then(r=>r.json()).then(d=>{
-    if(d.error){ fatal('<h2 style="color:#f4776b">Data missing</h2><p>'+d.error+'</p>'); return; }
+    if(d.error){ fatal('<h2 class="text-xl font-bold text-rose-600">Data Missing</h2><p class="text-sm mt-2 text-slate-600">'+d.error+'</p>'); return; }
     DATA=d; init();
   }).catch(e=>{
-    fatal('<h2 style="color:#f4776b;margin-top:0">Server nahi mila</h2>'+
-      '<p>Dashboard khula hai lekin server tak nahi pahunch pa raha (<code>'+e+'</code>).</p>'+
-      '<p><b>Check karein:</b> VS Code terminal mein <code style="background:#0f1117;padding:2px 8px;border-radius:5px">python3 server.py</code> chal raha hai? '+
-      'Aur browser mein URL <code>http://localhost:8000</code> hai?</p>');
+    fatal('<h2 class="text-xl font-bold text-rose-600">Server Unreachable</h2>'+
+      '<p class="text-sm text-slate-600 mt-2">Cannot connect to server API (<code>'+e+'</code>).</p>'+
+      '<p class="text-xs text-slate-500 mt-4">Make sure <code class="bg-slate-100 px-2 py-0.5 rounded font-mono">python server.py</code> is running.</p>');
   });
 }
 </script>
