@@ -34,7 +34,7 @@ jobs:
           COSMOFEED_REFRESH_TOKEN: ${{ secrets.COSMOFEED_REFRESH_TOKEN }}
         run: |
           echo "Running daily audit script..."
-          python payout_audit_agent.py
+          python payout_audit_agent.py --date $(date +'%Y-%m-%d')
           python build_data_from_audit.py
           python generate_report.py
 

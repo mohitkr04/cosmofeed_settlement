@@ -4,9 +4,9 @@ import os
 import datetime
 import re
 
+HERE = os.path.dirname(os.path.abspath(__file__))
 REPORTS_DIR = os.path.join(HERE, "reports")
 os.makedirs(REPORTS_DIR, exist_ok=True)
-AUDIT_JSON = os.path.join(REPORTS_DIR, "audit_2026-08-18.json")
 DATA_JSON = os.path.join(REPORTS_DIR, "data.json")
 
 ADULT_KEYWORDS = [
@@ -50,15 +50,18 @@ def parse_txn_date(d_str):
     return 0.0
 
 def main():
-    if not os.path.exists(AUDIT_JSON):
-        print(f"Error: {AUDIT_JSON} not found!")
+    audit_files = [os.path.join(REPORTS_DIR, f) for f in os.listdir(REPORTS_DIR) if f.startswith("audit_") and f.endswith(".json")]
+    if not audit_files:
+        print(f"Error: No audit_*.json files found in {REPORTS_DIR}!")
         return
 
-    with open(AUDIT_JSON, "r", encoding="utf-8") as f:
+    audit_json = sorted(audit_files, key=os.path.getmtime, reverse=True)[0]
+
+    with open(audit_json, "r", encoding="utf-8") as f:
         audit_data = json.load(f)
 
     all_results = audit_data.get("allResults", [])
-    print(f"Loaded {len(all_results)} audited records from {AUDIT_JSON}")
+    print(f"Loaded {len(all_results)} audited records from {audit_json}")
 
     out = []
     for r in all_results:
