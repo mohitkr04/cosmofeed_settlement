@@ -101,7 +101,9 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             self.path = "/index.html"
             return super().do_GET()
         if parsed.path == "/api/data":
-            fp = os.path.join(HERE, "data.json")
+            fp = os.path.join(HERE, "reports", "data.json")
+            if not os.path.exists(fp):
+                fp = os.path.join(HERE, "data.json")
             if not os.path.exists(fp):
                 return self._json({"error": "data.json not found — run build_data.py"}, 404)
             with open(fp, encoding="utf-8") as f:

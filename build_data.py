@@ -235,9 +235,12 @@ def main():
         },
         "creators": out,
     }
-    with open(os.path.join(HERE, "data.json"), "w", encoding="utf-8") as f:
+    reports_dir = os.path.join(HERE, "reports")
+    os.makedirs(reports_dir, exist_ok=True)
+    out_path = os.path.join(reports_dir, "data.json")
+    with open(out_path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)
-    print(f"\nWrote data.json | creators={len(out)} "
+    print(f"\nWrote {out_path} | creators={len(out)} "
           f"self-txn={data['counts']['selfTransaction']} "
           f"adult(heuristic)={data['counts']['adult']}", flush=True)
 

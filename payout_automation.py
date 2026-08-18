@@ -171,7 +171,10 @@ def process_batch(rows, token=None):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Cosmofeed Payout Automation Orchestrator")
     parser.add_argument("--token", default=os.environ.get("COSMOFEED_TOKEN"))
-    parser.add_argument("--data-file", default="data.json", help="Path to data.json or input sheet JSON")
+    default_data_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "reports", "data.json")
+    if not os.path.exists(default_data_file):
+        default_data_file = "data.json"
+    parser.add_argument("--data-file", default=default_data_file, help="Path to data.json or input sheet JSON")
     parser.add_argument("--limit", type=int, default=10, help="Limit number of rows processed")
     args = parser.parse_args()
 

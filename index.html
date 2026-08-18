@@ -742,14 +742,19 @@ if(location.protocol==='file:'){
     '<ol class="list-decimal list-inside text-xs text-slate-600 mt-2 space-y-1"><li>Run <code class="bg-slate-100 px-2 py-0.5 rounded text-indigo-600 font-mono">python server.py</code> in terminal</li>'+
     '<li>Open <a href="http://localhost:8000" class="text-indigo-600 underline font-semibold">http://localhost:8000</a> in browser</li></ol>');
 } else {
-  fetch('/api/data').then(r=>r.json()).then(d=>{
-    if(d.error){ fatal('<h2 class="text-xl font-bold text-rose-600">Data Missing</h2><p class="text-sm mt-2 text-slate-600">'+d.error+'</p>'); return; }
-    DATA=d; init();
-  }).catch(e=>{
-    fatal('<h2 class="text-xl font-bold text-rose-600">Server Unreachable</h2>'+
-      '<p class="text-sm text-slate-600 mt-2">Cannot connect to server API (<code>'+e+'</code>).</p>'+
-      '<p class="text-xs text-slate-500 mt-4">Make sure <code class="bg-slate-100 px-2 py-0.5 rounded font-mono">python server.py</code> is running.</p>');
-  });
+  fetch('reports/data.json')
+    .then(r => {
+      if (r.ok) return r.json();
+      return fetch('/api/data').then(r2 => r2.json());
+    })
+    .then(d => {
+      if (d.error) { fatal('<h2 class="text-xl font-bold text-rose-600">Data Missing</h2><p class="text-sm mt-2 text-slate-600">'+d.error+'</p>'); return; }
+      DATA = d; init();
+    })
+    .catch(e => {
+      fatal('<h2 class="text-xl font-bold text-rose-600">Server / Data Unreachable</h2>'+
+        '<p class="text-sm text-slate-600 mt-2">Cannot load payout dataset (<code>'+e+'</code>).</p>');
+    });
 }
 </script>
 </body>

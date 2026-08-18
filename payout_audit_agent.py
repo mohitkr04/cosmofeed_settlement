@@ -428,7 +428,9 @@ def main():
 
     ap = argparse.ArgumentParser()
     ap.add_argument("--token", default=os.environ.get("COSMOFEED_TOKEN", DEFAULT_TOKEN))
-    ap.add_argument("--out", default=os.path.dirname(os.path.abspath(__file__)))
+    reports_dir = os.path.join(HERE, "reports")
+    os.makedirs(reports_dir, exist_ok=True)
+    ap.add_argument("--out", default=reports_dir)
     ap.add_argument("--limit", type=int, default=0, help="limit creators (0=all)")
     ap.add_argument("--workers", type=int, default=6)
     ap.add_argument("--date", default="", help="report date label (YYYY-MM-DD)")

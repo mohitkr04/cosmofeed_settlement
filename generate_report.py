@@ -1,8 +1,14 @@
+import os
 import json
 import datetime
 
+HERE = os.path.dirname(os.path.abspath(__file__))
+REPORTS_DIR = os.path.join(HERE, "reports")
+os.makedirs(REPORTS_DIR, exist_ok=True)
+
 def generate_reports():
-    with open('data.json', encoding='utf-8') as f:
+    data_path = os.path.join(REPORTS_DIR, "data.json") if os.path.exists(os.path.join(REPORTS_DIR, "data.json")) else os.path.join(HERE, "data.json")
+    with open(data_path, encoding='utf-8') as f:
         data = json.load(f)
 
     creators = data.get('creators', [])
@@ -78,7 +84,8 @@ def generate_reports():
                 break
 
     slack_report_text = "\n".join(slack_lines)
-    with open('slack_report.txt', 'w', encoding='utf-8') as f:
+    slack_out = os.path.join(REPORTS_DIR, "slack_report.txt")
+    with open(slack_out, 'w', encoding='utf-8') as f:
         f.write(slack_report_text)
 
     # -------------------------------------------------------------
@@ -323,10 +330,11 @@ def generate_reports():
 </body>
 </html>
 """
-    with open('payout_audit_report.html', 'w', encoding='utf-8') as f:
+    html_out = os.path.join(REPORTS_DIR, "payout_audit_report.html")
+    with open(html_out, 'w', encoding='utf-8') as f:
         f.write(html_content)
 
-    print("Generated slack_report.txt and payout_audit_report.html successfully!")
+    print(f"Generated {slack_out} and {html_out} successfully!")
 
 if __name__ == '__main__':
     generate_reports()
