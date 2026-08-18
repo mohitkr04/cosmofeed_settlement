@@ -83,10 +83,10 @@ class RatePacer:
         if to_sleep > 0:
             time.sleep(to_sleep)
 
-RATE_PACER = RatePacer(max_per_second=30)
+RATE_PACER = RatePacer(max_per_second=20)
 
 
-def api_get(path, token, retries=2, timeout=5):
+def api_get(path, token, retries=3, timeout=6):
     """GET a dashboard API path (starting with /), return parsed JSON or None."""
     url = API_BASE + path
     headers = dict(HEADERS_BASE)
@@ -100,13 +100,16 @@ def api_get(path, token, retries=2, timeout=5):
                 return json.loads(resp.read().decode("utf-8"))
         except HTTPError as e:
             last_err = f"HTTP {e.code}"
-            if e.code in (429, 502, 503, 504):
-                time.sleep(0.3 * (attempt + 1))
+            if e.code == 429:
+                time.sleep(1.5 * (attempt + 1))
+                continue
+            elif e.code in (502, 503, 504):
+                time.sleep(0.5 * (attempt + 1))
                 continue
             break
         except (URLError, TimeoutError, OSError, http.client.HTTPException, json.JSONDecodeError) as e:
             last_err = str(e)
-            time.sleep(0.3 * (attempt + 1))
+            time.sleep(0.5 * (attempt + 1))
     return {"__error__": last_err}
 
 
@@ -432,7 +435,7 @@ def main():
     os.makedirs(reports_dir, exist_ok=True)
     ap.add_argument("--out", default=reports_dir)
     ap.add_argument("--limit", type=int, default=0, help="limit creators (0=all)")
-    ap.add_argument("--workers", type=int, default=6)
+    ap.add_argument("--workers", type=int, default=4)
     ap.add_argument("--date", default="", help="report date label (YYYY-MM-DD)")
     args = ap.parse_args()
 
