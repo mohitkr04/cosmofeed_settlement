@@ -100,6 +100,20 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         if parsed.path == "/" or parsed.path == "/index.html":
             self.path = "/index.html"
             return super().do_GET()
+        if parsed.path == "/download-report" or parsed.path == "/reports/download":
+            fp = os.path.join(HERE, "reports", "payout_audit_report.html")
+            if os.path.exists(fp):
+                with open(fp, "rb") as f:
+                    content = f.read()
+                self.send_response(200)
+                self.send_header("Content-Type", "text/html; charset=utf-8")
+                self.send_header("Content-Disposition", 'attachment; filename="Cosmofeed_Payout_Audit_Report_2026-08-22.html"')
+                self.send_header("Content-Length", str(len(content)))
+                self.end_headers()
+                self.wfile.write(content)
+                return
+            else:
+                return self._json({"error": "payout_audit_report.html not found"}, 404)
         if parsed.path == "/api/data":
             fp = os.path.join(HERE, "reports", "data.json")
             if not os.path.exists(fp):
@@ -121,8 +135,21 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 if __name__ == "__main__":
     os.chdir(HERE)
     socketserver.TCPServer.allow_reuse_address = True
+
+    # Automatically open http://localhost:8000 in browser
+    import threading
+    import time
+    import webbrowser
+
+    def open_browser():
+        time.sleep(0.8)
+        webbrowser.open(f"http://localhost:{PORT}")
+
+    threading.Thread(target=open_browser, daemon=True).start()
+
     with socketserver.ThreadingTCPServer(("127.0.0.1", PORT), Handler) as httpd:
-        print(f"\n  Payout Check dashboard running:  http://localhost:{PORT}\n")
+        print(f"\n  Cosmofeed Payout Audit Dashboard running at: http://localhost:{PORT}\n")
+        print("  Automatically opening dashboard in your web browser...\n")
         print("  Press Ctrl+C to stop.\n")
         try:
             httpd.serve_forever()

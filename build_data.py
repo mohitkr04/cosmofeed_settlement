@@ -74,8 +74,11 @@ def parse_txn_date(s):
     return 0.0
 
 
-def enrich_one(row, token):
-    time.sleep(0.01)
+def enrich_one(row, token, delay=0.0):
+    if delay > 0:
+        time.sleep(delay)
+    else:
+        time.sleep(0.01)
     sid = row.get("_id")
     detail = agent.resolve_settlement_details(sid, token)
     base = {
@@ -174,6 +177,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--workers", type=int, default=4)
+    ap.add_argument("--delay", type=float, default=0.0, help="Delay in seconds per creator review")
     ap.add_argument("--token", default=os.environ.get("COSMOFEED_TOKEN", agent.DEFAULT_TOKEN))
     args = ap.parse_args()
     token = args.token
@@ -185,15 +189,15 @@ def main():
         return
     if args.limit:
         rows = rows[:args.limit]
-    print(f"Enriching {len(rows)} creators (self-txn + category + adult heuristic)...", flush=True)
+    print(f"Enriching {len(rows)} creators (self-txn + category + adult heuristic, delay={args.delay}s)...", flush=True)
 
     out = []
     done = 0
     with ThreadPoolExecutor(max_workers=args.workers) as ex:
-        futs = {ex.submit(enrich_one, r, token): r for r in rows}
+        futs = {ex.submit(enrich_one, r, token, delay=args.delay): r for r in rows}
         for fut in as_completed(futs):
             try:
-                out.append(fut.result(timeout=15))
+                out.append(fut.result())
             except Exception as e:
                 r = futs[fut]
                 out.append({
@@ -210,8 +214,8 @@ def main():
                     "error": str(e)
                 })
             done += 1
-            if done % 100 == 0 or done == len(rows):
-                print(f"  {done}/{len(rows)}", flush=True)
+            if done % 10 == 0 or done == len(rows):
+                print(f"  {done}/{len(rows)} enriched", flush=True)
 
     def get_day_key(c):
         ts = to_float(c.get("latestSelfTxnTimestamp"))
@@ -225,13 +229,20 @@ def main():
         -to_float(r.get("latestSelfTxnTimestamp")),
         -to_float(r.get("payoutAmount"))
     ))
+    b_dates = agent.get_business_dates(timezone_str="Asia/Kolkata")
     data = {
         "generatedAt": datetime.datetime.now().strftime("%Y-%m-%d %H:%M"),
+        "reviewDate": b_dates["today_date"],
+        "productSaleDate": b_dates["yesterday_date"],
+        "reviewDateFormatted": b_dates["today_formatted"],
+        "productSaleDateFormatted": b_dates["yesterday_formatted"],
         "totalCreators": len(out),
         "counts": {
-            "selfTransaction": sum(1 for r in out if r["selfTransaction"]),
-            "adult": sum(1 for r in out if r["adultFlag"]),
-            "noLink": sum(1 for r in out if r["noLink"] is True),
+            "selfTransaction": sum(1 for r in out if r.get("selfTransaction")),
+            "adult": sum(1 for r in out if r.get("adultFlag")),
+            "noLink": sum(1 for r in out if r.get("noLink") is True),
+            "onHold": sum(1 for r in out if r.get("selfTransaction") or r.get("noLink") is True or r.get("adultFlag")),
+            "approved": sum(1 for r in out if not (r.get("selfTransaction") or r.get("noLink") is True or r.get("adultFlag"))),
         },
         "creators": out,
     }

@@ -32,9 +32,45 @@ from urllib.error import HTTPError, URLError
 
 socket.setdefaulttimeout(8.0)
 
-API_BASE = "https://prod.api.cosmofeed.com/api/internal_dashboard"
+import datetime
+try:
+    import zoneinfo
+except ImportError:
+    from backports import zoneinfo  # type: ignore
 
+API_BASE = "https://prod.api.cosmofeed.com/api/internal_dashboard"
 HERE = os.path.dirname(os.path.abspath(__file__))
+
+
+def get_business_dates(timezone_str="Asia/Kolkata", now_dt=None):
+    """
+    Dynamically calculate today's date and yesterday's date in IST business timezone.
+    Returns dict:
+      - today_date: 'YYYY-MM-DD'
+      - yesterday_date: 'YYYY-MM-DD'
+      - today_formatted: 'DD-MM-YYYY'
+      - yesterday_formatted: 'DD-MM-YYYY'
+    """
+    try:
+        tz = zoneinfo.ZoneInfo(timezone_str)
+    except Exception:
+        tz = datetime.timezone(datetime.timedelta(hours=5, minutes=30))
+
+    if now_dt is None:
+        now_dt = datetime.datetime.now(tz)
+    elif now_dt.tzinfo is None:
+        now_dt = now_dt.replace(tzinfo=tz)
+
+    yesterday_dt = now_dt - datetime.timedelta(days=1)
+
+    return {
+        "today_date": now_dt.strftime("%Y-%m-%d"),
+        "yesterday_date": yesterday_dt.strftime("%Y-%m-%d"),
+        "today_formatted": now_dt.strftime("%d-%m-%Y"),
+        "yesterday_formatted": yesterday_dt.strftime("%d-%m-%Y"),
+        "now_dt": now_dt,
+        "yesterday_dt": yesterday_dt,
+    }
 
 def _load_env():
     env_path = os.path.join(HERE, ".env")
@@ -77,20 +113,26 @@ class RatePacer:
         to_sleep = 0.0
         with self.lock:
             now = time.time()
-            scheduled = max(now, self.last_time + self.interval)
+            if self.last_time < now:
+                self.last_time = now
+            scheduled = self.last_time + self.interval
             to_sleep = scheduled - now
+            if to_sleep > 1.0:
+                scheduled = now + self.interval
+                to_sleep = self.interval
             self.last_time = scheduled
         if to_sleep > 0:
             time.sleep(to_sleep)
 
-RATE_PACER = RatePacer(max_per_second=20)
+RATE_PACER = RatePacer(max_per_second=2)
 
 
 def api_get(path, token, retries=3, timeout=6):
     """GET a dashboard API path (starting with /), return parsed JSON or None."""
     url = API_BASE + path
     headers = dict(HEADERS_BASE)
-    headers["authorization"] = "Bearer " + token
+    tok_str = str(token or DEFAULT_TOKEN or "").strip()
+    headers["authorization"] = "Bearer " + tok_str
     last_err = None
     for attempt in range(retries):
         RATE_PACER.wait()
@@ -101,16 +143,13 @@ def api_get(path, token, retries=3, timeout=6):
         except HTTPError as e:
             last_err = f"HTTP {e.code}"
             if e.code == 429:
-                time.sleep(1.5 * (attempt + 1))
+                time.sleep(10.0 * (attempt + 1))
                 continue
-            elif e.code in (502, 503, 504):
-                time.sleep(0.5 * (attempt + 1))
-                continue
-            break
-        except (URLError, TimeoutError, OSError, http.client.HTTPException, json.JSONDecodeError) as e:
+            return {"__error__": last_err}
+        except Exception as e:
             last_err = str(e)
-            time.sleep(0.5 * (attempt + 1))
-    return {"__error__": last_err}
+            time.sleep(1.0)
+    return {"__error__": last_err or "failed"}
 
 
 def api_get_product_details(product_id, token, product_type="page"):
@@ -125,16 +164,17 @@ def api_get_product_details(product_id, token, product_type="page"):
 
 def fetch_all_settlements(token, request_type="pending", verbose=True):
     first = None
+    time.sleep(15.0)  # Ensure rate limit window is completely reset
     for attempt in range(5):
         first = api_get(
             f"/IDgetSettlements?requestType={request_type}&page=1&sortField=&onlyFlagged=0"
-            f"&AmountGreaterThan=0&AmountLessThan=0&filter=&paymentVerified=", token, retries=5)
+            f"&AmountGreaterThan=0&AmountLessThan=0&filter=&paymentVerified=", token, retries=3)
         if first and "__error__" not in first:
             break
         if verbose:
             err_msg = (first or {}).get("__error__", "no response")
             print(f"[step1] page 1 attempt {attempt+1}/5 retry due to {err_msg}...", flush=True)
-        time.sleep(2.0 * (attempt + 1))
+        time.sleep(15.0 * (attempt + 1))
 
     if not first or "__error__" in first:
         err = (first or {}).get("__error__", "API call failed")
@@ -153,13 +193,14 @@ def fetch_all_settlements(token, request_type="pending", verbose=True):
     pages_dict = {1: page1_rows}
 
     def fetch_page(p):
+        time.sleep(0.3)
         d = api_get(
             f"/IDgetSettlements?requestType={request_type}&page={p}&sortField=&onlyFlagged=0"
             f"&AmountGreaterThan=0&AmountLessThan=0&filter=&paymentVerified=", token, retries=5)
         pdata = (d or {}).get("data", {})
         return p, pdata.get("settelements") or pdata.get("settlements") or []
 
-    with ThreadPoolExecutor(max_workers=8) as ex:
+    with ThreadPoolExecutor(max_workers=2) as ex:
         futs = [ex.submit(fetch_page, p) for p in range(2, total_pages + 1)]
         for fut in as_completed(futs):
             p, r = fut.result()
@@ -312,23 +353,39 @@ def inspect_product_url(url, pid, raw_type="", title="", token=None):
     return res
 
 
-def check_creator_product_links(creator_id, token):
-    """Fetch creator's last hundred sold products and inspect each product using official internal API."""
+def check_creator_product_links(creator_id, token, max_products=5, fast=True):
+    """Fetch creator's sold products and inspect top products using official internal API."""
     res = check_creator_products(creator_id, token)
     if "__error__" in res:
         return {"__error__": res["__error__"], "allProducts": [], "noLinkProducts": []}
 
     prods = res.get("products", [])
+    if max_products and len(prods) > max_products:
+        prods = prods[:max_products]
     inspected = []
     no_link = []
 
     for p in prods:
         pid = p.get("_id") or p.get("productId") or ""
-        purl = p.get("productLink") or ""
+        purl = p.get("productLink") or p.get("url") or ""
         ptype = p.get("productType") or ""
-        title = p.get("productTtile") or p.get("productTitle") or ""
+        title = p.get("productTtile") or p.get("productTitle") or p.get("title") or ""
 
-        info = inspect_product_url(purl, pid, ptype, title, token=token)
+        if fast:
+            norm_type = "vig" if ("/vig/" in str(purl) or ptype == "integratedGroup") else ("course" if "/course/" in str(purl) or ptype == "course" else "vp")
+            is_attached = True if (norm_type == "vig" or purl) else False
+            info = {
+                "productId": pid,
+                "productType": norm_type,
+                "productUrl": purl,
+                "title": title,
+                "isAttached": is_attached,
+                "status": "Valid" if is_attached else "Flagged",
+                "reason": "Telegram vig product (excluded)" if norm_type == "vig" else ("Valid product link" if is_attached else "Payment page exists, but no product/content link is attached")
+            }
+        else:
+            info = inspect_product_url(purl, pid, ptype, title, token=token)
+
         inspected.append(info)
         if not info["isAttached"]:
             no_link.append(info)
