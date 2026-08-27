@@ -1,6 +1,7 @@
 import os
 import json
 import datetime
+import re
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPORTS_DIR = os.path.join(HERE, "reports")
@@ -37,20 +38,43 @@ def generate_reports():
     def get_self_sort_key(c):
         if not c.get("selfTransaction"):
             return (0, 0, 0, 0)
-        dt_str = str(c.get("latestSelfTxnDate", ""))
-        ts = float(c.get("latestSelfTxnTimestamp", 0))
+
+        dt_str = str(c.get("latestSelfTxnDate") or "").strip()
+        day_key = 0
+        if dt_str:
+            m = re.search(r"(\d{1,2})\s+([A-Za-z]{3}),?\s+(\d{4})", dt_str)
+            if m:
+                day = int(m.group(1))
+                months = {"Jan": 1, "Feb": 2, "Mar": 3, "Apr": 4, "May": 5, "Jun": 6, "Jul": 7, "Aug": 8, "Sep": 9, "Oct": 10, "Nov": 11, "Dec": 12}
+                month = months.get(m.group(2))
+                year = int(m.group(3))
+                if day and month and year:
+                    day_key = year * 10000 + month * 100 + day
+
+        if not day_key:
+            ts = float(c.get("latestSelfTxnTimestamp", 0))
+            if ts > 0:
+                try:
+                    import zoneinfo
+                    tz = zoneinfo.ZoneInfo("Asia/Kolkata")
+                except Exception:
+                    tz = datetime.timezone(datetime.timedelta(hours=5, minutes=30))
+                dt = datetime.datetime.fromtimestamp(ts, tz=tz)
+                day_key = dt.year * 10000 + dt.month * 100 + dt.day
+
         max_amt = float(c.get("selfTxnMaxAmount", 0))
+        ts_val = float(c.get("latestSelfTxnTimestamp", 0))
         payout_amt = float(c.get("payoutAmount", 0))
+        return (day_key, max_amt, ts_val, payout_amt)
 
-        if rev_date in dt_str or "22 Aug" in dt_str:
-            day_prio = 3
-        elif sale_date in dt_str or "21 Aug" in dt_str:
-            day_prio = 2
-        else:
-            day_prio = 1
-        return (day_prio, max_amt, ts, payout_amt)
-
+    # Maintain strict 2-day window: 27 Aug, 26 Aug, 25 Aug (min day key = 20260825)
+    self_creators = [c for c in creators if c.get("selfTransaction") and get_self_sort_key(c)[0] >= 20260825]
     self_creators.sort(key=get_self_sort_key, reverse=True)
+
+    tele_creators = [c for c in creators if c.get('telegramIntegration') and c.get('telegramEligible')]
+    tele_sebi_yes = [c for c in tele_creators if c.get('sebiRegisteredYes') == 'Yes']
+    tele_sebi_no = [c for c in tele_creators if c.get('sebiRegisteredNo') == 'No']
+    tele_manual = [c for c in tele_creators if c.get('sebiReviewStatus') == 'Manual Review Required']
 
     # -------------------------------------------------------------
     # 1. GENERATE SLACK-FRIENDLY MARKDOWN REPORT
@@ -65,6 +89,10 @@ def generate_reports():
         f"• *Self-Transaction Flagged:* `{len(self_creators)}` creators",
         f"• *No Link / Missing Deliverable Flagged:* `{len(nolink_creators)}` creators",
         f"• *Adult Keyword Flagged:* `{data.get('counts',{}).get('adult',0)}` creators",
+        f"• *Telegram Integration (vig/ >= ₹1k):* `{len(tele_creators)}` settlements",
+        f"   ↳ *SEBI Registered (Yes):* `{len(tele_sebi_yes)}` verified creators",
+        f"   ↳ *SEBI Not Verified (No):* `{len(tele_sebi_no)}` creators",
+        f"   ↳ *Manual Review Required:* `{len(tele_manual)}` creators",
         "",
         "🔴 *TOP FLAGGED SELF-TRANSACTIONS (Date -> Amount High to Low):*"
     ]
@@ -106,6 +134,15 @@ def generate_reports():
                     break
             if nl_count >= 20:
                 break
+
+    if tele_manual:
+        slack_lines.append("\n🔵 *TELEGRAM INTEGRATION (vig/) — MANUAL SEBI REVIEW REQUIRED:*")
+        for idx, c in enumerate(tele_manual[:20], 1):
+            u = c.get('username')
+            cid = c.get('creatorId', '—')
+            p = c.get('payoutAmount', 0)
+            pid = c.get('telegramProductId', '—')
+            slack_lines.append(f"{idx}. *{u}* (`{cid}`) | Payout: *₹{p:,.2f}* | Prod: `{pid}` | ⚠️ SEBI Not Verified")
 
     slack_report_text = "\n".join(slack_lines)
     slack_out = os.path.join(REPORTS_DIR, "slack_report.txt")
@@ -153,6 +190,24 @@ def generate_reports():
     if not nolink_rows_html:
         nolink_rows_html = """<tr><td colspan="9" style="text-align:center;color:var(--muted)">No creators flagged for empty or missing deliverable content.</td></tr>"""
 
+    tele_rows_html = ""
+    sorted_tele = sorted(tele_creators, key=lambda c: -float(c.get('payoutAmount', 0)))
+    for idx, c in enumerate(sorted_tele, 1):
+        cid = c.get('creatorId', '—')
+        u = c.get('username', '—')
+        p = c.get('payoutAmount', 0)
+        pid = c.get('telegramProductId', '—')
+        purl = c.get('telegramProductLink', '')
+        sebi_yes = c.get('sebiRegisteredYes', '—')
+        sebi_no = c.get('sebiRegisteredNo', '—')
+        status = c.get('sebiVerificationStatus', '—')
+        rev = c.get('sebiReviewStatus', '—')
+        link_tag = f"<a href='{purl}' target=_blank>view</a>" if purl else "—"
+        tele_rows_html += f"""<tr><td>{idx}</td><td class=id>{cid}</td><td>{u}</td><td class=num>{p:,.0f}</td><td><code>{pid}</code></td><td>{link_tag}</td><td style="color:#059669;font-weight:bold">{sebi_yes}</td><td style="color:#e11d48;font-weight:bold">{sebi_no}</td><td>{status}</td><td>{rev}</td></tr>"""
+
+    if not tele_rows_html:
+        tele_rows_html = """<tr><td colspan="10" style="text-align:center;color:var(--muted)">No Telegram integration products found with payout ≥ &#8377;1,000.</td></tr>"""
+
     cap_rows_html = ""
     for idx, c in enumerate(cap_unverifiable_creators[:36], 1):
         cid = c.get('creatorId', '—')
@@ -181,36 +236,46 @@ def generate_reports():
   .kpis {{ display:flex; flex-wrap:wrap; gap:12px; margin:20px 0; }}
   .kpi {{ background:rgba(255,255,255,0.75); backdrop-filter:blur(16px); border:1px solid rgba(255,255,255,0.9); box-shadow:0 4px 20px rgba(0,0,0,0.03); border-radius:16px; padding:16px 20px; min-width:160px; flex:1; }}
   .kpi .v {{ font-size:26px; font-weight:800; color:#0f172a; }}
-  .kpi .l {{ color:var(--muted); font-size:11.5px; text-transform:uppercase; letter-spacing:.5px; font-weight:700; margin-top:4px; }}
-  .kpi.danger .v {{ color:var(--danger); }} .kpi.warn .v {{ color:var(--warn); }}
-  table {{ width:100%; border-collapse:collapse; font-size:13px; }}
-  .scroll {{ overflow-x:auto; background:rgba(255,255,255,0.75); backdrop-filter:blur(16px); border:1px solid rgba(226,232,240,0.8); border-radius:16px; box-shadow:0 4px 16px rgba(0,0,0,0.02); }}
-  th,td {{ text-align:left; padding:11px 14px; border-bottom:1px solid rgba(241,245,249,0.9); white-space:nowrap; }}
-  th {{ background:rgba(248,250,252,0.9); position:sticky; top:0; font-size:11.5px; text-transform:uppercase; letter-spacing:.4px; color:#475569; font-weight:700; }}
+  .kpi .l {{ font-size:12px; font-weight:600; color:var(--muted); text-transform:uppercase; letter-spacing:0.5px; margin-top:4px; }}
+  .kpi.danger .v {{ color:var(--danger); }}
+  .kpi.warn .v {{ color:var(--warn); }}
+  .kpi.ok .v {{ color:var(--ok); }}
+  .note {{ background:rgba(255,255,255,0.75); backdrop-filter:blur(16px); border-left:4px solid var(--warn); border-radius:14px; padding:14px 18px; margin:16px 0 24px; border-top:1px solid var(--line); border-right:1px solid var(--line); border-bottom:1px solid var(--line); }}
+  .note.danger {{ border-left-color:var(--danger); }}
+  .scroll {{ overflow-x:auto; background:rgba(255,255,255,0.75); backdrop-filter:blur(16px); border:1px solid var(--line); border-radius:16px; box-shadow:0 4px 20px rgba(0,0,0,0.02); margin-bottom:24px; }}
+  table {{ width:100%; border-collapse:collapse; text-align:left; font-size:13px; }}
+  th {{ background:rgba(241,245,249,0.8); padding:12px 14px; font-weight:700; color:var(--muted); text-transform:uppercase; font-size:11px; letter-spacing:0.5px; border-bottom:1px solid var(--line); }}
+  td {{ padding:12px 14px; border-bottom:1px solid rgba(241,245,249,0.8); }}
+  tr:hover td {{ background:rgba(248,250,252,0.8); }}
   td.num {{ text-align:right; font-variant-numeric:tabular-nums; font-weight:600; }}
-  td.id {{ font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:12px; color:#64748b; }}
-  tr:hover td {{ background:rgba(245,243,255,0.5); }}
+  td.id {{ font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:12px; color:var(--muted); }}
   a {{ color:var(--accent); text-decoration:none; font-weight:600; }}
   a:hover {{ text-decoration:underline; }}
-  .note {{ background:rgba(255,255,255,0.8); backdrop-filter:blur(16px); border-left:4px solid var(--warn); border-radius:12px; padding:14px 18px; margin:16px 0; font-size:13px; border-top:1px solid rgba(255,255,255,0.9); border-right:1px solid rgba(255,255,255,0.9); border-bottom:1px solid rgba(255,255,255,0.9); }}
-  .note.danger {{ border-left-color:var(--danger); }} .note.ok {{ border-left-color:var(--ok); }}
-  .finding {{ margin:14px 0; font-size:13.5px; line-height:1.6; }} .finding b {{ display:block; margin-bottom:2px; font-weight:700; color:#1e1b4b; }}
-  footer {{ margin-top:40px; color:var(--muted); font-size:12px; border-top:1px solid var(--line); padding-top:16px; }}
+  .finding {{ background:rgba(255,255,255,0.65); border:1px solid var(--line); border-radius:14px; padding:14px 18px; margin:12px 0; }}
 </style>
 </head>
 <body>
 
-<h1>Cosmofeed Daily Payout Audit</h1>
-<div class=sub>Report date <b>{rev_date}</b> (Reviewing yesterday's sales: <b>{sale_date}</b>) · {len(creators):,} pending settlements audited · generated by audit agent</div>
+<h1>Cosmofeed Payout Audit Report</h1>
+<div class=sub>Review Date: <b>{rev_date}</b> &middot; Product Sale Date: <b>{sale_date}</b> &middot; Generated: <b>{data.get('generatedAt', '—')}</b> &middot; <b>{len(creators):,}</b> pending settlements evaluated</div>
 
 <div class=kpis>
   <div class=kpi><div class=v>{len(self_creators)}</div><div class=l>Recent self-txn creators (2d)</div></div>
+  <div class="kpi" style="border-left:4px solid #2563eb"><div class=v>{len(tele_creators)}</div><div class=l>Telegram (vig/ ≥ &#8377;1k)</div></div>
+  <div class="kpi ok"><div class=v>{len(tele_sebi_yes)}</div><div class=l>SEBI Reg: YES</div></div>
+  <div class="kpi danger"><div class=v>{len(tele_sebi_no)}</div><div class=l>SEBI Reg: NO (Review)</div></div>
   <div class="kpi warn"><div class=v>{len(nolink_creators)}</div><div class=l>No-content creators</div></div>
   <div class="kpi danger"><div class=v>{len(both_creators)}</div><div class=l>In both lists (top risk)</div></div>
-  <div class="kpi warn"><div class=v>{len(cap_unverifiable_creators)}</div><div class=l>Unverifiable (buyer cap)</div></div>
-  <div class=kpi><div class=v>&#8377;{total_pending_nolink/1000:,.0f}k</div><div class=l>Pending across no-content</div></div>
-  <div class=kpi><div class=v>100%</div><div class=l>Product coverage</div></div>
 </div>
+
+<h2>Telegram Integration & SEBI Compliance (vig/ products ≥ &#8377;1,000)</h2>
+<div class=sub>Audit of all creators using Telegram integration (vig/productId) whose settlements are &#8377;1,000 or higher, verified against our SEBI-registered creator master list. Sorted from Highest to Lowest settlement amount.</div>
+<div class=scroll><table>
+  <thead><tr><th>#</th><th>Creator ID</th><th>Username</th><th>Pending (&#8377;)</th><th>Product ID</th><th>Link</th><th>SEBI Reg: Yes</th><th>SEBI Reg: No</th><th>SEBI Status</th><th>Review Status</th></tr></thead>
+  <tbody>
+    {tele_rows_html}
+  </tbody>
+</table></div>
 
 <div class="note danger">
   <b>Highest priority — {len(both_creators)} creator(s) flagged on BOTH checks</b> (a self-transaction in the last 2 days
@@ -274,7 +339,13 @@ def generate_reports():
     with open(html_out, 'w', encoding='utf-8') as f:
         f.write(html_content)
 
-    print(f"Generated {slack_out} and {html_out} successfully!", flush=True)
+    pdf_out = os.path.join(REPORTS_DIR, "Cosmofeed_Payout_Audit_Report.pdf")
+    try:
+        import generate_pdf
+        generate_pdf.generate_pdf_report(output_pdf_path=pdf_out)
+        print(f"Generated {slack_out}, {html_out}, and {pdf_out} successfully!", flush=True)
+    except Exception as e:
+        print(f"Generated {slack_out} and {html_out} (PDF notice: {e})", flush=True)
 
 if __name__ == '__main__':
     generate_reports()

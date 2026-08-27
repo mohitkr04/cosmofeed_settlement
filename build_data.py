@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Build data.json for the Payout Check dashboard.
 
@@ -230,6 +229,15 @@ def main():
         -to_float(r.get("payoutAmount"))
     ))
     b_dates = agent.get_business_dates(timezone_str="Asia/Kolkata")
+
+    # Telegram Integration + SEBI Verification Enhancement
+    try:
+        import telegram_sebi_verifier
+        out, tele_stats = telegram_sebi_verifier.verify_all_settlements(out)
+    except Exception as e:
+        print(f"Warning: Telegram SEBI verification failed: {e}")
+        tele_stats = {}
+
     data = {
         "generatedAt": datetime.datetime.now().strftime("%Y-%m-%d %H:%M"),
         "reviewDate": b_dates["today_date"],
@@ -243,7 +251,13 @@ def main():
             "noLink": sum(1 for r in out if r.get("noLink") is True),
             "onHold": sum(1 for r in out if r.get("selfTransaction") or r.get("noLink") is True or r.get("adultFlag")),
             "approved": sum(1 for r in out if not (r.get("selfTransaction") or r.get("noLink") is True or r.get("adultFlag"))),
+            "telegramCount": tele_stats.get("telegramCount", 0),
+            "telegramSebiYes": tele_stats.get("sebiYesCount", 0),
+            "telegramSebiNo": tele_stats.get("sebiNoCount", 0),
+            "telegramManualReview": tele_stats.get("manualReviewCount", 0),
+            "telegramEligible": tele_stats.get("eligibleCount", 0)
         },
+        "telegramSebiSummary": tele_stats,
         "creators": out,
     }
     reports_dir = os.path.join(HERE, "reports")
@@ -253,7 +267,10 @@ def main():
         json.dump(data, f, indent=2)
     print(f"\nWrote {out_path} | creators={len(out)} "
           f"self-txn={data['counts']['selfTransaction']} "
-          f"adult(heuristic)={data['counts']['adult']}", flush=True)
+          f"adult(heuristic)={data['counts']['adult']} "
+          f"telegram(>=1k)={data['counts']['telegramCount']} "
+          f"sebi_yes={data['counts']['telegramSebiYes']} "
+          f"sebi_no={data['counts']['telegramSebiNo']}", flush=True)
 
 
 if __name__ == "__main__":

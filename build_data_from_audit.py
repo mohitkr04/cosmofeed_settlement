@@ -130,10 +130,29 @@ def main():
         })
 
     def get_day_key(c):
+        if not c.get("selfTransaction"):
+            return 0
+        dt_str = str(c.get("latestSelfTxnDate") or "").strip()
+        if dt_str:
+            m = re.search(r"(\d{1,2})\s+([A-Za-z]{3}),?\s+(\d{4})", dt_str)
+            if m:
+                day = int(m.group(1))
+                months = {"Jan": 1, "Feb": 2, "Mar": 3, "Apr": 4, "May": 5, "Jun": 6, "Jul": 7, "Aug": 8, "Sep": 9, "Oct": 10, "Nov": 11, "Dec": 12}
+                month = months.get(m.group(2))
+                year = int(m.group(3))
+                if day and month and year:
+                    return year * 10000 + month * 100 + day
+
         ts = to_float(c.get("latestSelfTxnTimestamp"))
-        if not ts: return 0
-        dt = datetime.datetime.fromtimestamp(ts, tz=datetime.timezone.utc)
-        return dt.year * 10000 + dt.month * 100 + dt.day
+        if ts > 0:
+            try:
+                import zoneinfo
+                tz = zoneinfo.ZoneInfo("Asia/Kolkata")
+            except Exception:
+                tz = datetime.timezone(datetime.timedelta(hours=5, minutes=30))
+            dt = datetime.datetime.fromtimestamp(ts, tz=tz)
+            return dt.year * 10000 + dt.month * 100 + dt.day
+        return 0
 
     out.sort(key=lambda r: (
         -get_day_key(r),
@@ -142,14 +161,48 @@ def main():
         -to_float(r.get("payoutAmount"))
     ))
 
+    # Extract review date and sale date dynamically
+    audit_basename = os.path.basename(audit_json)
+    date_match = re.search(r"audit_(\d{4}-\d{2}-\d{2})\.json", audit_basename)
+    if date_match:
+        rev_date = date_match.group(1)
+        try:
+            rev_dt = datetime.datetime.strptime(rev_date, "%Y-%m-%d")
+            sale_date = (rev_dt - datetime.timedelta(days=1)).strftime("%Y-%m-%d")
+        except Exception:
+            sale_date = (datetime.date.today() - datetime.timedelta(days=1)).strftime("%Y-%m-%d")
+    else:
+        rev_date = datetime.date.today().strftime("%Y-%m-%d")
+        sale_date = (datetime.date.today() - datetime.timedelta(days=1)).strftime("%Y-%m-%d")
+
+    # -------------------------------------------------------------
+    # Telegram Integration & SEBI Verification Enhancement
+    # -------------------------------------------------------------
+    try:
+        import telegram_sebi_verifier
+        out, tele_stats = telegram_sebi_verifier.verify_all_settlements(out)
+    except Exception as e:
+        print(f"Warning: Telegram SEBI verification failed: {e}")
+        tele_stats = {}
+
     data = {
+        "reviewDate": rev_date,
+        "reviewDateFormatted": rev_date,
+        "productSaleDate": sale_date,
+        "productSaleDateFormatted": sale_date,
         "generatedAt": datetime.datetime.now().strftime("%Y-%m-%d %H:%M"),
         "totalCreators": len(out),
         "counts": {
-            "selfTransaction": sum(1 for r in out if r["selfTransaction"]),
-            "adult": sum(1 for r in out if r["adultFlag"]),
-            "noLink": sum(1 for r in out if r["noLink"] is True),
+            "selfTransaction": sum(1 for r in out if r.get("selfTransaction")),
+            "adult": sum(1 for r in out if r.get("adultFlag")),
+            "noLink": sum(1 for r in out if r.get("noLink") is True),
+            "telegramCount": tele_stats.get("telegramCount", 0),
+            "telegramSebiYes": tele_stats.get("sebiYesCount", 0),
+            "telegramSebiNo": tele_stats.get("sebiNoCount", 0),
+            "telegramManualReview": tele_stats.get("manualReviewCount", 0),
+            "telegramEligible": tele_stats.get("eligibleCount", 0)
         },
+        "telegramSebiSummary": tele_stats,
         "creators": out,
     }
 
@@ -160,6 +213,15 @@ def main():
     print(f"  Total Creators: {len(out)}")
     print(f"  Self-Transactions: {data['counts']['selfTransaction']}")
     print(f"  Adult Content (Heuristic): {data['counts']['adult']}")
+    print(f"  Telegram Settlements (>= 1k): {data['counts']['telegramCount']}")
+    print(f"  SEBI Verified (Yes): {data['counts']['telegramSebiYes']}")
+    print(f"  SEBI Not Verified (No / Manual Review): {data['counts']['telegramSebiNo']}")
+
+    try:
+        import generate_report
+        generate_report.generate_reports()
+    except Exception as e:
+        print(f"Warning: Failed to auto-generate HTML report: {e}")
 
 if __name__ == "__main__":
     main()

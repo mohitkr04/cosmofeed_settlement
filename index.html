@@ -3,19 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cosmofeed Daily Payout Audit Dashboard</title>
+<title>Cosmofeed Executive Intelligence — Daily Payout & SEBI Compliance</title>
 <!-- Tailwind CSS CDN -->
 <script src="https://cdn.tailwindcss.com"></script>
-<!-- Google Fonts: Inter -->
+<!-- Google Fonts: Inter & JetBrains Mono -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <script>
   tailwind.config = {
     theme: {
       extend: {
         fontFamily: {
           sans: ['"Inter"', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'sans-serif'],
+          mono: ['"JetBrains Mono"', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'monospace'],
+        },
+        colors: {
+          gemini: {
+            50: '#f5f3ff',
+            100: '#ede9fe',
+            500: '#8b5cf6',
+            600: '#7c3aed',
+            700: '#6d28d9',
+          }
         }
       }
     }
@@ -23,242 +33,361 @@
 </script>
 <style>
   :root {
-    --bg-glass: rgba(255, 255, 255, 0.75);
-    --border-glass: rgba(255, 255, 255, 0.85);
-    --shadow-glass: 0 8px 32px 0 rgba(31, 38, 135, 0.04);
-    --accent: #6d28d9;
-    --danger: #e11d48;
-    --warn: #d97706;
-    --ok: #059669;
+    --accent-primary: #6366f1;
+    --accent-glow: rgba(99, 102, 241, 0.15);
+    --surface-glass: rgba(255, 255, 255, 0.82);
+    --surface-border: rgba(255, 255, 255, 0.9);
   }
 
   body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: radial-gradient(ellipse at 10% 0%, rgba(168, 85, 247, 0.07) 0%, transparent 60%),
-                radial-gradient(ellipse at 90% 100%, rgba(99, 102, 241, 0.07) 0%, transparent 60%),
-                #f8fafc;
+    background: 
+      radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.08) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, rgba(217, 70, 239, 0.06) 0px, transparent 50%),
+      radial-gradient(at 50% 100%, rgba(14, 165, 233, 0.06) 0px, transparent 50%),
+      #f8fafc;
     min-height: 100vh;
     color: #0f172a;
   }
 
-  /* iOS White Glassmorphism Card Effect */
-  .ios-glass {
+  /* Futuristic Glassmorphism Panel */
+  .futuristic-card {
     background: rgba(255, 255, 255, 0.78);
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
-    border: 1px solid rgba(255, 255, 255, 0.85);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.04), inset 0 1px 1px 0 rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.88);
+    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(226, 232, 240, 0.5);
     border-radius: 20px;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
-  .ios-card {
-    background: rgba(255, 255, 255, 0.68);
+  /* Interactive KPI Card */
+  .kpi-card {
+    background: rgba(255, 255, 255, 0.72);
     backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.8);
-    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.02), inset 0 1px 1px 0 rgba(255, 255, 255, 0.8);
-    border-radius: 16px;
-    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 18px;
+    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.03);
+    transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    overflow: hidden;
   }
-  .ios-card:hover {
+  .kpi-card:hover {
     transform: translateY(-2px);
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 12px 32px -4px rgba(99, 102, 241, 0.1);
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 12px 30px -4px rgba(99, 102, 241, 0.12);
   }
+  .kpi-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; height: 3px;
+    background: transparent;
+    transition: background 0.25s ease;
+  }
+  .kpi-card.kpi-blue:hover::before { background: #3b82f6; }
+  .kpi-card.kpi-emerald:hover::before { background: #10b981; }
+  .kpi-card.kpi-rose:hover::before { background: #f43f5e; }
+  .kpi-card.kpi-amber:hover::before { background: #f59e0b; }
+  .kpi-card.kpi-purple:hover::before { background: #8b5cf6; }
 
-  .ios-tab {
-    background: rgba(255, 255, 255, 0.6);
+  /* Segmented Filter Pills */
+  .filter-tab {
+    background: rgba(255, 255, 255, 0.65);
     backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.8);
-    border-radius: 14px;
-    transition: all 0.2s ease;
-  }
-  .ios-tab:hover {
-    background: rgba(255, 255, 255, 0.95);
-    border-color: rgba(109, 40, 217, 0.3);
-    color: #6d28d9;
-  }
-  .ios-tab.active {
-    background: #ffffff;
-    border-color: #6d28d9;
-    color: #6d28d9;
-    box-shadow: 0 4px 14px rgba(109, 40, 217, 0.15);
-  }
-
-  .ios-input {
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(10px);
     border: 1px solid rgba(226, 232, 240, 0.8);
     border-radius: 14px;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .filter-tab:hover {
+    background: rgba(255, 255, 255, 0.95);
+    border-color: rgba(99, 102, 241, 0.4);
+    transform: translateY(-1px);
+  }
+  .filter-tab.active {
+    background: #ffffff;
+    border-color: #6366f1;
+    color: #4f46e5;
+    box-shadow: 0 4px 14px -1px rgba(99, 102, 241, 0.2);
+  }
+
+  /* Button Interactions & Elevations */
+  .btn-futuristic {
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+  }
+  .btn-futuristic:hover {
+    transform: translateY(-1.5px);
+  }
+  .btn-futuristic:active {
+    transform: scale(0.97);
+  }
+
+  /* Inputs & Dropdowns */
+  .modern-select, .modern-input {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(203, 213, 225, 0.8);
+    border-radius: 12px;
     transition: all 0.2s ease;
   }
-  .ios-input:focus {
+  .modern-select:focus, .modern-input:focus {
     background: #ffffff;
-    border-color: #6d28d9;
-    box-shadow: 0 0 0 4px rgba(109, 40, 217, 0.12);
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
     outline: none;
   }
 
-  .ios-badge {
-    box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.8);
+  /* Smooth Custom Scrollbar */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: rgba(241, 245, 249, 0.7); border-radius: 8px; }
+  ::-webkit-scrollbar-thumb { background: rgba(203, 213, 225, 0.9); border-radius: 8px; }
+  ::-webkit-scrollbar-thumb:hover { background: rgba(148, 163, 184, 0.9); }
+
+  /* Badges */
+  .status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 8px;
+    border-radius: 9999px;
+    font-size: 11px;
+    font-weight: 700;
+    box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.9);
   }
 
-  .note {
-    background: rgba(255, 255, 255, 0.75);
-    backdrop-filter: blur(16px);
-    border-left: 4px solid var(--warn);
-    border-radius: 14px;
-    padding: 14px 18px;
-    border-top: 1px solid rgba(255, 255, 255, 0.8);
-    border-right: 1px solid rgba(255, 255, 255, 0.8);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  /* Print Stylesheet for clean printing */
+  @media print {
+    header, #tabs, #toolbar, #cards, footer { display: none !important; }
+    body { background: white !important; padding: 0 !important; }
+    #tbl-container { box-shadow: none !important; border: 1px solid #ccc !important; }
   }
-  .note.danger { border-left-color: var(--danger); }
-  .note.ok { border-left-color: var(--ok); }
-  td.id { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; color: #64748b; }
-  td.num { text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; }
 </style>
 </head>
-<body class="min-h-screen selection:bg-purple-500 selection:text-white pb-16">
+<body class="selection:bg-indigo-500 selection:text-white pb-20">
 
-<!-- iOS Frosted Sticky Header -->
-<header class="sticky top-0 z-30 bg-white/70 backdrop-blur-2xl border-b border-white/80 shadow-[0_4px_20px_-2px_rgba(0,0,0,0.03)] px-6 py-4">
-  <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4">
-    <div class="flex items-center gap-3">
-      <div class="w-10 h-10 rounded-2xl bg-gradient-to-br from-purple-600 to-indigo-600 flex items-center justify-center text-white shadow-md shadow-purple-500/20">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+<!-- Sticky Futuristic Header -->
+<header class="sticky top-0 z-40 bg-white/75 backdrop-blur-2xl border-b border-white/80 shadow-[0_4px_25px_-4px_rgba(0,0,0,0.03)] px-6 py-3.5">
+  <div class="max-w-[1520px] mx-auto flex flex-wrap items-center justify-between gap-4">
+    
+    <!-- Branding & Live Audit Info -->
+    <div class="flex items-center gap-3.5">
+      <div class="w-10 h-10 rounded-2xl bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 flex items-center justify-center text-white shadow-md shadow-indigo-500/25">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
       </div>
       <div>
-        <h1 class="text-xl font-bold text-slate-900 tracking-tight flex items-center gap-2.5">
-          Cosmofeed Daily Payout Audit
-          <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-purple-50 text-purple-700 border border-purple-200/80 shadow-xs">T+1 Review Engine</span>
-        </h1>
-        <div class="text-xs text-slate-500 mt-0.5 flex flex-wrap items-center gap-2" id="genat">
-          <span>Report Date <b id="hdr-today">2026-08-22</b> (Reviewing Sales: <b id="hdr-yesterday">2026-08-21</b>)</span>
-          <span>·</span>
-          <span id="hdr-total">1,737 pending settlements audited</span>
+        <div class="flex items-center gap-2">
+          <h1 class="text-lg font-extrabold text-slate-900 tracking-tight">Cosmofeed Payout Audit & SEBI Compliance</h1>
+          <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-indigo-50 text-indigo-700 border border-indigo-200/80">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+            T+1 Release Gate
+          </span>
+        </div>
+        <div class="text-xs text-slate-500 mt-0.5 flex flex-wrap items-center gap-2">
+          <span>Audit Date: <b id="hdr-today" class="text-slate-700">2026-08-27</b></span>
+          <span>&middot;</span>
+          <span>Sales Reviewed: <b id="hdr-yesterday" class="text-slate-700">2026-08-26</b></span>
+          <span>&middot;</span>
+          <span id="hdr-total" class="font-medium text-slate-600">1,831 pending settlements audited</span>
         </div>
       </div>
     </div>
-    
-    <!-- Action Header Controls -->
-    <div class="flex items-center gap-2.5">
-      <button id="downloadHtmlBtn" class="px-4 py-2 rounded-xl bg-purple-700 hover:bg-purple-800 text-white text-xs font-semibold shadow-md shadow-purple-900/15 transition flex items-center gap-2">
-        <svg class="w-4 h-4 text-purple-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-        Download Executed HTML Report
+
+    <!-- Export & Report Action Buttons -->
+    <div class="flex flex-wrap items-center gap-2">
+      <!-- PDF Report Button -->
+      <button id="downloadPdfBtn" title="Generate and download Executive PDF Report" class="btn-futuristic px-3.5 py-2 rounded-xl bg-rose-600 hover:bg-rose-700 text-white text-xs font-semibold shadow-sm shadow-rose-900/15 flex items-center gap-1.5">
+        <svg class="w-3.5 h-3.5 text-rose-100" fill="currentColor" viewBox="0 0 24 24"><path d="M12 16l4-5h-3V4h-2v7H8l4 5zm9-9h-4v2h4v11H3V9h4V7H3c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2z"/></svg>
+        PDF Report
       </button>
 
-      <button id="exportBtn" class="px-3.5 py-2 rounded-xl bg-white/80 hover:bg-white text-slate-800 text-xs font-semibold border border-white/90 shadow-sm transition flex items-center gap-1.5">
-        <svg class="w-4 h-4 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-        Export CSV
+      <!-- HTML Report Button -->
+      <button id="downloadHtmlBtn" title="Download standalone executive HTML report" class="btn-futuristic px-3.5 py-2 rounded-xl bg-purple-600 hover:bg-purple-700 text-white text-xs font-semibold shadow-sm shadow-purple-900/15 flex items-center gap-1.5">
+        <svg class="w-3.5 h-3.5 text-purple-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+        HTML Report
+      </button>
+
+      <!-- 10-Day SEBI Excel Button -->
+      <button id="export10dExcelBtn" title="Download cumulative 10-day Telegram & SEBI Excel Tracker" class="btn-futuristic px-3.5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold shadow-sm shadow-emerald-900/15 flex items-center gap-1.5">
+        <svg class="w-3.5 h-3.5 text-emerald-100" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        10-Day SEBI Excel
+      </button>
+
+      <!-- 10-Day SEBI CSV Button -->
+      <button id="export10dCsvBtn" title="Download cumulative 10-day Telegram & SEBI CSV Report" class="btn-futuristic px-3.5 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold shadow-sm shadow-blue-900/15 flex items-center gap-1.5">
+        <svg class="w-3.5 h-3.5 text-blue-100" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        10-Day SEBI CSV
+      </button>
+
+      <!-- Export Filtered CSV Button -->
+      <button id="exportFilteredBtn" title="Export currently displayed rows as CSV" class="btn-futuristic px-3.5 py-2 rounded-xl bg-white hover:bg-slate-50 text-slate-700 text-xs font-semibold border border-slate-300 shadow-sm flex items-center gap-1.5">
+        <svg class="w-3.5 h-3.5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+        Export Filtered CSV
+      </button>
+
+      <!-- Slack Summary Button -->
+      <button id="slackModalBtn" title="View & copy Slack Markdown summary" class="btn-futuristic px-3.5 py-2 rounded-xl bg-[#4a154b] hover:bg-[#3b113c] text-white text-xs font-semibold shadow-sm flex items-center gap-1.5">
+        <svg class="w-3.5 h-3.5 text-pink-200" fill="currentColor" viewBox="0 0 24 24"><path d="M6 15a2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2h2v2zm1 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2v5a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-5zm2-7a2 2 0 0 1-2-2 2 2 0 0 1 2-2 2 2 0 0 1 2 2v2H9zm0 1a2 2 0 0 1 2 2 2 2 0 0 1-2 2H4a2 2 0 0 1-2-2 2 2 0 0 1 2-2h5zm7-2a2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2h-2V7zm-1 0a2 2 0 0 1-2 2 2 2 0 0 1-2-2V2a2 2 0 0 1 2-2 2 2 0 0 1 2 2v5zm-2 7a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2v-2h2zm0-1a2 2 0 0 1-2-2 2 2 0 0 1 2-2h5a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-5z"/></svg>
+        Slack Summary
       </button>
     </div>
+
   </div>
 </header>
 
 <!-- Main Container -->
-<main class="max-w-7xl mx-auto px-6 pt-6">
+<main class="max-w-[1520px] mx-auto px-6 pt-6">
 
-  <!-- iOS KPI Cards Grid -->
+  <!-- Executive KPI Cards Grid -->
   <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3.5 mb-6" id="cards">
-    <!-- Populated by JS -->
+    <!-- Rendered dynamically by render() -->
   </div>
 
-  <!-- Priority Alert Banner -->
-  <div class="note danger mb-6 shadow-sm hidden" id="risk-alert">
-    <div class="flex items-center gap-2 text-xs text-rose-900 font-semibold">
-      <svg class="w-5 h-5 text-rose-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg>
-      <span>CRITICAL AUDIT NOTICE: <b id="both-cnt">0</b> creator(s) flagged on BOTH self-transaction AND missing product link checks. Priority holds required!</span>
+  <!-- Priority Risk Alert Banner -->
+  <div class="futuristic-card bg-rose-50/80 border-rose-200/90 p-4 mb-6 hidden" id="risk-alert">
+    <div class="flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-xl bg-rose-500 text-white flex items-center justify-center flex-shrink-0 shadow-sm shadow-rose-500/30">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg>
+        </div>
+        <div>
+          <div class="text-xs font-bold text-rose-900">PRIORITY AUDIT HOLDS REQUIRED</div>
+          <div class="text-xs text-rose-700 mt-0.5">
+            <span id="alert-detail">Found creators with high-risk compliance violations. Manual review required prior to payout release.</span>
+          </div>
+        </div>
+      </div>
+      <button id="viewRiskBtn" class="px-3 py-1.5 rounded-lg bg-rose-600 hover:bg-rose-700 text-white text-xs font-semibold shadow-xs transition">
+        Filter Risk Items
+      </button>
     </div>
   </div>
 
-  <!-- iOS Frosted Filter Tabs -->
-  <div class="flex flex-wrap items-center gap-2 mb-6" id="tabs">
-    <button class="ios-tab active px-4 py-2.5 rounded-xl font-semibold text-xs text-slate-700 flex items-center gap-2" data-f="all">
-      All Pending Settlements
+  <!-- Segmented Navigation Tabs -->
+  <div class="flex flex-wrap items-center gap-2 mb-4" id="tabs">
+    <button class="filter-tab active px-4 py-2.5 font-semibold text-xs text-slate-700 flex items-center gap-2" data-f="all">
+      All Settlements
       <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-slate-200/80 text-slate-700" id="b-all">0</span>
     </button>
-    <button class="ios-tab px-4 py-2.5 rounded-xl font-semibold text-xs text-slate-700 flex items-center gap-2" data-f="self">
-      <span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span>
-      Self-Transactions (2d Window)
-      <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-rose-100/80 text-rose-700 border border-rose-200" id="b-self">0</span>
+    <button class="filter-tab px-4 py-2.5 font-semibold text-xs text-slate-700 flex items-center gap-2" data-f="telegram_sebi">
+      <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+      Telegram SEBI Review (₹1k+)
+      <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-blue-100 text-blue-800 border border-blue-200" id="b-telegram-sebi">0</span>
     </button>
-    <button class="ios-tab px-4 py-2.5 rounded-xl font-semibold text-xs text-slate-700 flex items-center gap-2" data-f="nolink">
-      <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
-      No Content / Missing Link
-      <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-amber-100/80 text-amber-800 border border-amber-200" id="b-nolink">0</span>
+    <button class="filter-tab px-4 py-2.5 font-semibold text-xs text-slate-700 flex items-center gap-2" data-f="self">
+      <span class="w-2 h-2 rounded-full bg-rose-500"></span>
+      Self-Transactions (2d)
+      <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-rose-100 text-rose-700 border border-rose-200" id="b-self">0</span>
     </button>
-    <button class="ios-tab px-4 py-2.5 rounded-xl font-semibold text-xs text-slate-700 flex items-center gap-2" data-f="both">
-      <span class="w-2.5 h-2.5 rounded-full bg-purple-600"></span>
-      Top Risk (Both Flagged)
-      <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-purple-100/80 text-purple-800 border border-purple-200" id="b-both">0</span>
+    <button class="filter-tab px-4 py-2.5 font-semibold text-xs text-slate-700 flex items-center gap-2" data-f="nolink">
+      <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+      Missing Deliverable
+      <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-amber-100 text-amber-800 border border-amber-200" id="b-nolink">0</span>
     </button>
-    <button class="ios-tab px-4 py-2.5 rounded-xl font-semibold text-xs text-slate-700 flex items-center gap-2" data-f="cap">
-      Unverifiable (100-Buyer Cap)
-      <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-slate-100/80 text-slate-600 border border-slate-200" id="b-cap">0</span>
+    <button class="filter-tab px-4 py-2.5 font-semibold text-xs text-slate-700 flex items-center gap-2" data-f="both">
+      <span class="w-2 h-2 rounded-full bg-purple-600"></span>
+      Top Risk (Both Lists)
+      <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-purple-100 text-purple-800 border border-purple-200" id="b-both">0</span>
     </button>
-    <button class="ios-tab px-4 py-2.5 rounded-xl font-semibold text-xs text-slate-700 flex items-center gap-2" data-f="approved">
-      Approved / Clean
-      <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-emerald-100/80 text-emerald-800 border border-emerald-200" id="b-approved">0</span>
+    <button class="filter-tab px-4 py-2.5 font-semibold text-xs text-slate-700 flex items-center gap-2" data-f="cap">
+      Unverifiable (100-Cap)
+      <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-slate-100 text-slate-600 border border-slate-200" id="b-cap">0</span>
     </button>
+    <button class="filter-tab px-4 py-2.5 font-semibold text-xs text-slate-700 flex items-center gap-2" data-f="approved">
+      Clean / Approved
+      <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800 border border-emerald-200" id="b-approved">0</span>
+    </button>
+  </div>
+
+  <!-- Intelligent Filter Toolbar -->
+  <div class="futuristic-card p-4 mb-6">
+    <div class="flex flex-wrap items-center justify-between gap-3">
+      
+      <!-- Filter Inputs Cluster -->
+      <div class="flex flex-wrap items-center gap-2.5 flex-1 min-w-[300px]">
+        <!-- Search -->
+        <div class="relative w-full sm:w-64">
+          <svg class="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          <input type="search" id="search" placeholder="Search Creator, ID, Phone, Reg No..." class="modern-input w-full pl-9 pr-8 py-2 text-xs text-slate-800 placeholder-slate-400">
+          <button id="clearSearchBtn" class="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 text-xs hidden">&times;</button>
+        </div>
+
+        <!-- Telegram Filter -->
+        <select id="telegramFilter" class="modern-select px-3 py-2 text-xs text-slate-700 font-medium">
+          <option value="">Telegram (All)</option>
+          <option value="yes">Telegram (vig/) Only</option>
+          <option value="no">Non-Telegram Only</option>
+        </select>
+
+        <!-- SEBI Master Status Filter -->
+        <select id="sebiMasterFilter" class="modern-select px-3 py-2 text-xs text-slate-700 font-medium">
+          <option value="">SEBI Registry (All)</option>
+          <option value="Yes">SEBI Registered: Yes Only</option>
+          <option value="No">SEBI Registered: No Only (Flagged)</option>
+        </select>
+
+        <!-- SEBI Verification Status Filter -->
+        <select id="sebiStatusFilter" class="modern-select px-3 py-2 text-xs text-slate-700 font-medium">
+          <option value="">All SEBI Statuses</option>
+          <option value="Verified">Verified</option>
+          <option value="Not Verified">Not Verified</option>
+          <option value="Manual Review Required">Manual Review Required</option>
+          <option value="Unable to Validate">Unable to Validate</option>
+        </select>
+
+        <!-- Amount Filter -->
+        <select id="amountFilter" class="modern-select px-3 py-2 text-xs text-slate-700 font-medium">
+          <option value="">All Payout Amounts</option>
+          <option value="1000">₹1,000+ Payout</option>
+          <option value="5000">₹5,000+ Payout</option>
+          <option value="10000">₹10,000+ Payout</option>
+          <option value="50000">₹50,000+ Payout</option>
+          <option value="100000">₹1,00,000+ Payout</option>
+        </select>
+
+        <!-- Onboarder Filter -->
+        <select id="onboardFilter" class="modern-select px-3 py-2 text-xs text-slate-700 font-medium">
+          <option value="">All Onboarders</option>
+        </select>
+
+        <!-- Self-Txn Window Filter -->
+        <select id="selfWindowFilter" class="modern-select px-3 py-2 text-xs text-slate-700 font-medium">
+          <option value="2day">Self-Txn: 2-Day Window (27, 26, 25 Aug)</option>
+          <option value="all">Self-Txn: All Lifetime (214)</option>
+        </select>
+
+        <!-- Reset All Filters Button -->
+        <button id="resetFiltersBtn" title="Reset all search queries and dropdown filters" class="px-3 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold border border-slate-300/80 transition flex items-center gap-1.5">
+          <svg class="w-3.5 h-3.5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+          Reset Filters
+        </button>
+      </div>
+
+      <!-- Live Row Counters & Active Badges -->
+      <div class="flex items-center gap-2 text-xs font-semibold text-slate-600">
+        <span id="rowcount" class="bg-slate-100 px-3 py-1.5 rounded-xl border border-slate-200">Showing 0 of 0</span>
+      </div>
+
+    </div>
+
+    <!-- Active Filter Tags Display -->
+    <div id="activeFilterTags" class="flex flex-wrap items-center gap-1.5 mt-3 pt-3 border-t border-slate-200/70 hidden text-xs">
+      <span class="text-slate-400 font-medium mr-1">Active filters:</span>
+      <div id="tagsList" class="flex flex-wrap items-center gap-1.5"></div>
+    </div>
   </div>
 
   <!-- Hint Banner -->
-  <div class="note mb-6 text-slate-600 text-xs leading-relaxed hidden shadow-sm" id="hint"></div>
+  <div class="futuristic-card p-4 mb-6 text-xs text-slate-600 leading-relaxed hidden shadow-xs" id="hint"></div>
 
-  <!-- iOS Toolbar -->
-  <div class="ios-glass rounded-2xl p-4 mb-6 flex flex-wrap items-center justify-between gap-3">
-    <div class="flex flex-wrap items-center gap-3 flex-1 min-w-[280px]">
-      <!-- Search Input -->
-      <div class="relative w-full sm:w-80">
-        <svg class="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-        <input type="search" id="search" placeholder="Search Creator ID, username, phone, date..." class="ios-input w-full pl-10 pr-4 py-2 rounded-xl text-xs text-slate-800 placeholder-slate-400">
-      </div>
-
-      <!-- Amount Filter -->
-      <select id="selfAmountFilter" class="ios-input px-3.5 py-2 rounded-xl text-xs text-slate-700 font-medium">
-        <option value="">All Self-Txn Amounts</option>
-        <option value="10000">₹10,000+ Self-Txn</option>
-        <option value="5000">₹5,000+ Self-Txn</option>
-        <option value="1000">₹1,000+ Self-Txn</option>
-        <option value="500">₹500+ Self-Txn</option>
-        <option value="100">₹100+ Self-Txn</option>
-      </select>
-
-      <!-- Onboarder Filter -->
-      <select id="onboardFilter" class="ios-input px-3.5 py-2 rounded-xl text-xs text-slate-700 font-medium">
-        <option value="">All Onboarders</option>
-      </select>
-    </div>
-
-    <div class="flex flex-wrap items-center gap-2">
-      <button id="slackModalBtn" class="px-3.5 py-2 rounded-xl bg-[#4a154b] hover:bg-[#3b113c] text-white text-xs font-semibold shadow-sm transition flex items-center gap-1.5">
-        <svg class="w-4 h-4 text-purple-200" fill="currentColor" viewBox="0 0 24 24"><path d="M6 15a2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2h2v2zm1 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2v5a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-5zm2-7a2 2 0 0 1-2-2 2 2 0 0 1 2-2 2 2 0 0 1 2 2v2H9zm0 1a2 2 0 0 1 2 2 2 2 0 0 1-2 2H4a2 2 0 0 1-2-2 2 2 0 0 1 2-2h5zm7-2a2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2h-2V7zm-1 0a2 2 0 0 1-2 2 2 2 0 0 1-2-2V2a2 2 0 0 1 2-2 2 2 0 0 1 2 2v5zm-2 7a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2v-2h2zm0-1a2 2 0 0 1-2-2 2 2 0 0 1 2-2h5a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-5z"/></svg>
-        Slack Summary
-      </button>
-
-      <span id="rowcount" class="text-xs font-semibold text-slate-500 ml-2"></span>
-    </div>
-  </div>
-
-  <!-- iOS Data Table Container -->
-  <div class="ios-glass rounded-2xl overflow-hidden shadow-sm">
+  <!-- Data Table Container -->
+  <div id="tbl-container" class="futuristic-card overflow-hidden">
     <div class="overflow-x-auto">
-      <table id="tbl" class="w-full text-left border-collapse min-w-[980px]">
+      <table id="tbl" class="w-full text-left border-collapse min-w-[1240px]">
         <thead>
-          <tr class="bg-slate-100/80 border-b border-slate-200/80 text-xs font-bold text-slate-600 uppercase tracking-wider select-none">
-            <th class="py-3.5 px-4">#</th>
-            <th class="py-3.5 px-4 cursor-pointer hover:text-purple-700 transition" data-k="creatorId">Creator ID</th>
-            <th class="py-3.5 px-4 cursor-pointer hover:text-purple-700 transition" data-k="username">Username</th>
-            <th class="py-3.5 px-4 text-right cursor-pointer hover:text-purple-700 transition" data-k="payoutAmount">Pending Payout (₹)</th>
-            <th class="py-3.5 px-4 text-right cursor-pointer hover:text-purple-700 transition" data-k="selfTxnMaxAmount">Max Self-Txn (₹)</th>
-            <th class="py-3.5 px-4 cursor-pointer hover:text-purple-700 transition" data-k="latestSelfTxnTimestamp">Latest Self-Txn Date</th>
-            <th class="py-3.5 px-4">Audit Status / Flags</th>
-            <th class="py-3.5 px-4 text-center">Action</th>
-          </tr>
+          <!-- Dynamically generated based on active tab -->
         </thead>
-        <tbody id="tbody" class="divide-y divide-slate-100/90 text-xs">
-          <!-- Populated by JS -->
+        <tbody id="tbody" class="divide-y divide-slate-100 text-xs">
+          <!-- Dynamically populated rows -->
         </tbody>
       </table>
     </div>
@@ -266,17 +395,17 @@
 
 </main>
 
-<!-- Creator Details Modal (View More) -->
-<div id="detailModal" class="fixed inset-0 z-50 bg-slate-900/40 backdrop-blur-md flex items-center justify-center hidden p-4">
-  <div class="ios-glass bg-white/95 max-w-3xl w-full p-6 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+<!-- Creator Details Modal -->
+<div id="detailModal" class="fixed inset-0 z-50 bg-slate-900/50 backdrop-blur-md flex items-center justify-center hidden p-4">
+  <div class="futuristic-card bg-white max-w-3xl w-full p-6 shadow-2xl relative max-h-[92vh] overflow-y-auto">
     <div class="flex items-center justify-between pb-4 border-b border-slate-200">
       <div>
-        <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2" id="dm-title">
-          Creator Full Profile & Self-Txn Audit
+        <h3 class="text-base font-extrabold text-slate-900 flex items-center gap-2" id="dm-title">
+          Creator Intelligence & Compliance Audit
         </h3>
-        <p class="text-xs text-slate-500 mt-0.5" id="dm-subtitle">Complete creator metadata and multiple payment breakdown</p>
+        <p class="text-xs text-slate-500 mt-0.5" id="dm-subtitle">Full metadata, Telegram deliverables & SEBI registration audit</p>
       </div>
-      <button id="closeDetailModal" class="text-slate-400 hover:text-slate-600 font-bold text-xl px-2">&times;</button>
+      <button id="closeDetailModal" class="w-8 h-8 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-500 hover:text-slate-700 flex items-center justify-center font-bold text-lg transition">&times;</button>
     </div>
     
     <div class="mt-4 space-y-4 text-xs" id="dm-body">
@@ -285,74 +414,182 @@
   </div>
 </div>
 
-<!-- Slack Modal -->
-<div id="slackModal" class="fixed inset-0 z-50 bg-slate-900/40 backdrop-blur-md flex items-center justify-center hidden p-4">
-  <div class="ios-glass bg-white/95 max-w-2xl w-full p-6 shadow-2xl relative">
+<!-- Slack Report Modal -->
+<div id="slackModal" class="fixed inset-0 z-50 bg-slate-900/50 backdrop-blur-md flex items-center justify-center hidden p-4">
+  <div class="futuristic-card bg-white max-w-2xl w-full p-6 shadow-2xl relative">
     <div class="flex items-center justify-between pb-4 border-b border-slate-200">
-      <h3 class="text-base font-bold text-slate-900 flex items-center gap-2">
-        <svg class="w-5 h-5 text-purple-600" fill="currentColor" viewBox="0 0 24 24"><path d="M6 15a2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2h2v2zm1 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2v5a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-5zm2-7a2 2 0 0 1-2-2 2 2 0 0 1 2-2 2 2 0 0 1 2 2v2H9zm0 1a2 2 0 0 1 2 2 2 2 0 0 1-2 2H4a2 2 0 0 1-2-2 2 2 0 0 1 2-2h5zm7-2a2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2h-2V7zm-1 0a2 2 0 0 1-2 2 2 2 0 0 1-2-2V2a2 2 0 0 1 2-2 2 2 0 0 1 2 2v5zm-2 7a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2v-2h2zm0-1a2 2 0 0 1-2-2 2 2 0 0 1 2-2h5a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-5z"/></svg>
-        Slack Executive Report Summary
-      </h3>
+      <div class="flex items-center gap-2">
+        <div class="w-7 h-7 rounded-lg bg-[#4a154b] text-white flex items-center justify-center">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M6 15a2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2h2v2zm1 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2v5a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-5zm2-7a2 2 0 0 1-2-2 2 2 0 0 1 2-2 2 2 0 0 1 2 2v2H9zm0 1a2 2 0 0 1 2 2 2 2 0 0 1-2 2H4a2 2 0 0 1-2-2 2 2 0 0 1 2-2h5zm7-2a2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2h-2V7zm-1 0a2 2 0 0 1-2 2 2 2 0 0 1-2-2V2a2 2 0 0 1 2-2 2 2 0 0 1 2 2v5zm-2 7a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2v-2h2zm0-1a2 2 0 0 1-2-2 2 2 0 0 1 2-2h5a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-5z"/></svg>
+        </div>
+        <h3 class="text-sm font-bold text-slate-900">Slack Executive Summary</h3>
+      </div>
       <button id="closeSlackModal" class="text-slate-400 hover:text-slate-600 font-bold text-lg">&times;</button>
     </div>
     <div class="mt-4">
-      <textarea id="slackText" readonly class="w-full h-64 font-mono text-xs p-3 bg-slate-900 text-purple-300 rounded-xl border border-slate-800 focus:outline-none select-all"></textarea>
+      <textarea id="slackText" readonly class="w-full h-64 font-mono text-xs p-3.5 bg-slate-950 text-purple-300 rounded-xl border border-slate-800 focus:outline-none select-all leading-relaxed"></textarea>
     </div>
     <div class="mt-4 flex items-center justify-end gap-3">
       <span id="copyToast" class="text-xs font-semibold text-emerald-600 hidden">Copied to Clipboard!</span>
       <button id="copySlackBtn" class="px-4 py-2 rounded-xl bg-purple-600 hover:bg-purple-700 text-white text-xs font-semibold shadow-sm transition">
-        Copy Slack Summary
+        Copy Slack Text
       </button>
     </div>
   </div>
 </div>
 
+<!-- Floating Notification Toast -->
+<div id="toast" class="fixed bottom-6 right-6 z-50 px-4 py-2.5 rounded-2xl bg-slate-900 text-white text-xs font-semibold shadow-xl border border-slate-700 flex items-center gap-2 transform translate-y-20 opacity-0 pointer-events-none transition-all duration-300">
+  <span id="toastIcon"></span>
+  <span id="toastMsg">Notification</span>
+</div>
+
 <!-- Footer -->
-<footer class="max-w-7xl mx-auto px-6 py-8 border-t border-slate-200/80 mt-12 text-xs text-slate-500 flex flex-wrap justify-between gap-4">
+<footer class="max-w-[1520px] mx-auto px-6 py-8 border-t border-slate-200/80 mt-12 text-xs text-slate-500 flex flex-wrap justify-between gap-4">
   <div>
-    <strong>Cosmofeed Payout Audit Rules:</strong> Self-Transaction verifies platform's native <code class="bg-slate-100 px-1.5 py-0.5 rounded text-slate-700 font-mono">selfPayment</code> flag (strict 2-day window). Product validation deep-inspects deliverables and handles Telegram <code class="bg-slate-100 px-1.5 py-0.5 rounded text-slate-700 font-mono">vig/</code> exceptions.
+    <strong>Audit Rules:</strong> Self-transaction flags platform native <code class="bg-slate-100 px-1 py-0.5 rounded font-mono text-slate-700">selfPayment</code> (strict 2-day window). Telegram integration inspects <code class="bg-slate-100 px-1 py-0.5 rounded font-mono text-slate-700">vig/{productId}</code> and verifies against the organization's verified SEBI master database.
   </div>
-  <div>Cosmofeed Executive Intelligence</div>
+  <div>Cosmofeed Executive Intelligence · T+1 Settlement Release Gate</div>
 </footer>
 
 <script>
 let DATA = null;
-let filter = "all";
+let currentFilter = "all";
+let sortKey = "payoutAmount";
+let sortOrder = "desc";
 
 const HINTS = {
-  all: "Displaying all pending payout settlement records audited for today's payout release.",
-  self: "Self-Payment Sequence: Today's Settlements → Yesterday's Settlements → 2-Day Allowed Window (Highest Self-Txn Amount → Lowest Amount). Only last 2 days considered.",
-  nolink: "Creators with digital download products that have no file, link, course, or deliverable content attached.",
-  both: "CRITICAL RISK: Creators flagged on BOTH self-transaction AND missing product link. Priority holds required!",
-  cap: "High-velocity creators whose 100 recent buyers span <2 days. Cannot rule out self-txns below the 100-buyer limit.",
-  approved: "Clean settlements meeting compliance and deliverable link verification rules."
+  all: "<b>All Settlements:</b> Displaying all pending payout settlements audited for today's payout release.",
+  telegram_sebi: "<b>Telegram SEBI Review:</b> Displaying all creators with payouts ≥ ₹1,000 using Telegram integration (<code>vig/productId</code>) cross-referenced against the organization's SEBI Master Registry. Sorted strictly from Highest to Lowest payout.",
+  self: "<b>Self-Transactions (2-Day Window):</b> Creators who bought their own products in the 2-day audit window. Sequence: <b>27 Aug</b> (Highest Self-Txn → Lowest) → <b>26 Aug</b> (Highest → Lowest) → <b>25 Aug</b> (Highest → Lowest) to strictly maintain the 2-day window rule.",
+  nolink: "<b>Missing Deliverable Content:</b> Downloadable products with no attached file, course, video, or content deliverable.",
+  both: "<b>CRITICAL RISK:</b> Creators flagged on BOTH self-transaction AND missing product content. Priority holds required!",
+  cap: "<b>100-Buyer Cap:</b> High-velocity creators whose 100 recent buyers span <2 days. Cannot rule out self-txns below the 100-buyer limit.",
+  approved: "<b>Approved / Clean:</b> Verified clean settlements meeting all deliverable and compliance checks."
 };
 
-function inr(n){ return (n||0).toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
+function inr(n) {
+  return (Number(n) || 0).toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+}
 
-function flagsHtml(r){
+function showToast(msg, isSuccess = true) {
+  const t = document.getElementById('toast');
+  const tMsg = document.getElementById('toastMsg');
+  const tIcon = document.getElementById('toastIcon');
+  tMsg.textContent = msg;
+  tIcon.innerHTML = isSuccess 
+    ? `<svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>`
+    : `<svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>`;
+  t.classList.remove('translate-y-20', 'opacity-0', 'pointer-events-none');
+  setTimeout(() => {
+    t.classList.add('translate-y-20', 'opacity-0', 'pointer-events-none');
+  }, 2800);
+}
+
+function sebiStatusBadge(status) {
+  if (status === "Verified") {
+    return `<span class="status-badge bg-emerald-100 text-emerald-800 border border-emerald-200">
+      <svg class="w-3 h-3 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+      Verified
+    </span>`;
+  } else if (status === "Not Verified") {
+    return `<span class="status-badge bg-rose-100 text-rose-800 border border-rose-200">
+      <svg class="w-3 h-3 text-rose-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/></svg>
+      Not Verified
+    </span>`;
+  } else if (status === "Manual Review Required") {
+    return `<span class="status-badge bg-amber-100 text-amber-800 border border-amber-200">
+      <svg class="w-3 h-3 text-amber-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg>
+      Manual Review
+    </span>`;
+  } else if (status === "Unable to Validate") {
+    return `<span class="status-badge bg-slate-100 text-slate-700 border border-slate-200">Unable to Validate</span>`;
+  }
+  return `<span class="text-slate-400 font-medium">—</span>`;
+}
+
+function flagsHtml(r) {
   let h = [];
-  if(r.selfTransaction && r.noLink) {
-    h.push(`<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold bg-purple-100 text-purple-800 border border-purple-200 ios-badge">TOP RISK (BOTH)</span>`);
+  if (r.selfTransaction && r.noLink) {
+    h.push(`<span class="status-badge bg-purple-100 text-purple-800 border border-purple-200">TOP RISK (BOTH)</span>`);
   } else {
-    if(r.selfTransaction) h.push(`<span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-bold bg-rose-100 text-rose-700 border border-rose-200 ios-badge">SELF ×${r.selfTxnCount||1} (₹${inr(r.selfTxnMaxAmount)})</span>`);
-    if(r.noLink===true) h.push(`<span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-bold bg-amber-100 text-amber-800 border border-amber-200 ios-badge">NO LINK</span>`);
-    if(r.buyersChecked >= 100 && !r.selfTransaction) h.push(`<span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-bold bg-slate-100 text-slate-700 border border-slate-200 ios-badge">100-CAP</span>`);
-    if(!h.length) h.push(`<span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800 border border-emerald-200 ios-badge">APPROVED</span>`);
+    if (r.selfTransaction) {
+      h.push(`<span class="status-badge bg-rose-100 text-rose-700 border border-rose-200">SELF ×${r.selfTxnCount||1} (₹${inr(r.selfTxnMaxAmount)})</span>`);
+    }
+    if (r.noLink === true) {
+      h.push(`<span class="status-badge bg-amber-100 text-amber-800 border border-amber-200">NO LINK</span>`);
+    }
+    if (r.telegramIntegration) {
+      if (r.sebiRegisteredYes === "Yes") {
+        h.push(`<span class="status-badge bg-blue-100 text-blue-800 border border-blue-200">TG · SEBI YES</span>`);
+      } else if (r.sebiRegisteredNo === "No") {
+        h.push(`<span class="status-badge bg-rose-100 text-rose-800 border border-rose-200">TG · SEBI NO</span>`);
+      }
+    }
+    if (r.buyersChecked >= 100 && !r.selfTransaction && !r.telegramIntegration) {
+      h.push(`<span class="status-badge bg-slate-100 text-slate-700 border border-slate-200">100-CAP</span>`);
+    }
+    if (!h.length) {
+      h.push(`<span class="status-badge bg-emerald-100 text-emerald-800 border border-emerald-200">APPROVED</span>`);
+    }
   }
   return h.join(" ");
 }
 
-function matchFilter(r){
-  if(filter==="self" && !r.selfTransaction) return false;
-  if(filter==="nolink" && !r.noLink) return false;
-  if(filter==="both" && !(r.selfTransaction && r.noLink)) return false;
-  if(filter==="cap" && !(r.buyersChecked >= 100 && !r.selfTransaction)) return false;
-  if(filter==="approved" && (r.selfTransaction || r.noLink)) return false;
+function matchFilter(r) {
+  // 1. Tab Level Filter
+  if (currentFilter === "self") {
+    if (!r.selfTransaction) return false;
+    const windowSel = document.getElementById('selfWindowFilter');
+    const windowMode = windowSel ? windowSel.value : '2day';
+    if (windowMode === '2day') {
+      const dk = getDayKey(r);
+      if (dk < 20260825) return false; // Strict 2-day window: 27, 26, 25 Aug only
+    }
+  }
+  if (currentFilter === "nolink" && !r.noLink) return false;
+  if (currentFilter === "both" && !(r.selfTransaction && r.noLink)) return false;
+  if (currentFilter === "cap" && !(r.buyersChecked >= 100 && !r.selfTransaction)) return false;
+  if (currentFilter === "approved" && (r.selfTransaction || r.noLink)) return false;
+  if (currentFilter === "telegram_sebi" && (!r.telegramEligible || !r.telegramIntegration)) return false;
 
-  const minSelfAmt = document.getElementById('selfAmountFilter') ? Number(document.getElementById('selfAmountFilter').value) : 0;
-  if(minSelfAmt > 0){
-    if(!r.selfTransaction || (Number(r.selfTxnMaxAmount)||0) < minSelfAmt) return false;
+  // 2. Dropdown Filter: Telegram
+  const teleVal = document.getElementById('telegramFilter').value;
+  if (teleVal === "yes" && !r.telegramIntegration) return false;
+  if (teleVal === "no" && r.telegramIntegration) return false;
+
+  // 3. Dropdown Filter: SEBI Master Registry
+  const sebiMasterVal = document.getElementById('sebiMasterFilter').value;
+  if (sebiMasterVal === "Yes" && r.sebiRegisteredYes !== "Yes") return false;
+  if (sebiMasterVal === "No" && r.sebiRegisteredNo !== "No") return false;
+
+  // 4. Dropdown Filter: SEBI Status
+  const statusVal = document.getElementById('sebiStatusFilter').value;
+  if (statusVal && r.sebiVerificationStatus !== statusVal) return false;
+
+  // 5. Dropdown Filter: Payout Amount
+  const minAmt = Number(document.getElementById('amountFilter').value) || 0;
+  if (minAmt > 0) {
+    const pAmt = Number(r.payoutAmount) || 0;
+    if (pAmt < minAmt) return false;
+  }
+
+  // 6. Dropdown Filter: Onboarder
+  const obVal = document.getElementById('onboardFilter').value;
+  if (obVal && (r.onboardedBy || '') !== obVal) return false;
+
+  // 7. Search Input
+  const q = document.getElementById('search').value.trim().toLowerCase();
+  if (q) {
+    const match = 
+      (r.username || '').toLowerCase().includes(q) ||
+      (r.creatorId || '').toLowerCase().includes(q) ||
+      (r.email || '').toLowerCase().includes(q) ||
+      (r.phone || '').toLowerCase().includes(q) ||
+      (r.telegramProductId || '').toLowerCase().includes(q) ||
+      (r.sebiRegistrationNumber || '').toLowerCase().includes(q) ||
+      (r.latestSelfTxnDate || '').toLowerCase().includes(q);
+    if (!match) return false;
   }
 
   return true;
@@ -360,12 +597,17 @@ function matchFilter(r){
 
 function getDayKey(r) {
   if (!r.selfTransaction) return 0;
-  
   const dtStr = String(r.latestSelfTxnDate || '').trim();
-  if (dtStr.includes('22 Aug, 2026') || dtStr.includes('22 Aug')) return 20260822;
-  if (dtStr.includes('21 Aug, 2026') || dtStr.includes('21 Aug')) return 20260821;
-  if (dtStr.includes('20 Aug, 2026') || dtStr.includes('20 Aug')) return 20260820;
-
+  if (dtStr) {
+    const months = { Jan: 1, Feb: 2, Mar: 3, Apr: 4, May: 5, Jun: 6, Jul: 7, Aug: 8, Sep: 9, Oct: 10, Nov: 11, Dec: 12 };
+    const m = dtStr.match(/(\d{1,2})\s+([A-Za-z]{3}),?\s+(\d{4})/);
+    if (m) {
+      const day = parseInt(m[1], 10);
+      const month = months[m[2]];
+      const year = parseInt(m[3], 10);
+      if (day && month && year) return year * 10000 + month * 100 + day;
+    }
+  }
   const ts = Number(r.latestSelfTxnTimestamp) || 0;
   if (ts > 0) {
     const d = new Date(ts * 1000);
@@ -374,56 +616,82 @@ function getDayKey(r) {
   return 0;
 }
 
-function rows(){
-  if(!DATA) return [];
-  const q = document.getElementById('search').value.trim().toLowerCase();
-  const ob = document.getElementById('onboardFilter').value;
-  let list = DATA.creators.filter(matchFilter);
-  if(ob) list = list.filter(r => (r.onboardedBy || '') === ob);
-  if(q) list = list.filter(r =>
-    (r.username||'').toLowerCase().includes(q) ||
-    (r.creatorId||'').toLowerCase().includes(q) ||
-    (r.email||'').toLowerCase().includes(q) ||
-    (r.phone||'').toLowerCase().includes(q) ||
-    (r.latestSelfTxnDate||'').toLowerCase().includes(q));
+function rows() {
+  if (!DATA) return [];
+  let list = (DATA.creators || []).filter(matchFilter);
 
-  list.sort((a,b)=>{
-    const dayA = getDayKey(a);
-    const dayB = getDayKey(b);
-    if (dayA !== dayB) return dayB - dayA;
+  // Sorting
+  list.sort((a, b) => {
+    let diff = 0;
+    if (currentFilter === "self" || sortKey === "selfTxnFlow") {
+      // 1. Primary Flow: Date descending (27 Aug -> 26 Aug -> 25 Aug)
+      const dayDiff = getDayKey(b) - getDayKey(a);
+      if (dayDiff !== 0) return dayDiff;
+      // 2. Secondary Flow: Highest Self-Txn Amount -> Lowest
+      const amtDiff = (Number(b.selfTxnMaxAmount) || 0) - (Number(a.selfTxnMaxAmount) || 0);
+      if (amtDiff !== 0) return amtDiff;
+      // 3. Tertiary: Latest timestamp -> Payout Amount
+      const tsDiff = (Number(b.latestSelfTxnTimestamp) || 0) - (Number(a.latestSelfTxnTimestamp) || 0);
+      if (tsDiff !== 0) return tsDiff;
+      return (Number(b.payoutAmount) || 0) - (Number(a.payoutAmount) || 0);
+    }
 
-    const selfAmtA = a.selfTransaction ? (Number(a.selfTxnMaxAmount) || 0) : 0;
-    const selfAmtB = b.selfTransaction ? (Number(b.selfTxnMaxAmount) || 0) : 0;
-    if (selfAmtA !== selfAmtB) return selfAmtB - selfAmtA;
+    if (sortKey === "payoutAmount") {
+      diff = (Number(b.payoutAmount) || 0) - (Number(a.payoutAmount) || 0);
+    } else if (sortKey === "selfTxnMaxAmount") {
+      diff = (Number(b.selfTxnMaxAmount) || 0) - (Number(a.selfTxnMaxAmount) || 0);
+    } else if (sortKey === "username") {
+      diff = String(a.username || '').localeCompare(String(b.username || ''));
+    } else if (sortKey === "creatorId") {
+      diff = String(a.creatorId || '').localeCompare(String(b.creatorId || ''));
+    } else if (sortKey === "date") {
+      diff = getDayKey(b) - getDayKey(a);
+    }
 
-    const timeA = Number(a.latestSelfTxnTimestamp) || 0;
-    const timeB = Number(b.latestSelfTxnTimestamp) || 0;
-    if (timeA !== timeB) return timeB - timeA;
+    // Secondary default sorts if values are equal
+    if (diff === 0) {
+      diff = (Number(b.payoutAmount) || 0) - (Number(a.payoutAmount) || 0);
+    }
 
-    const payoutA = Number(a.payoutAmount) || 0;
-    const payoutB = Number(b.payoutAmount) || 0;
-    return payoutB - payoutA;
+    return sortOrder === "asc" ? -diff : diff;
   });
 
   return list;
 }
 
-function openDetailModal(idx){
+function setSort(key) {
+  if (sortKey === key) {
+    sortOrder = sortOrder === "asc" ? "desc" : "asc";
+  } else {
+    sortKey = key;
+    sortOrder = "desc";
+  }
+  render();
+}
+
+function sortArrow(key) {
+  if (sortKey !== key) return `<span class="text-slate-300 ml-1 text-[10px]">↕</span>`;
+  return sortOrder === "asc" 
+    ? `<span class="text-indigo-600 ml-1 text-xs">▲</span>`
+    : `<span class="text-indigo-600 ml-1 text-xs">▼</span>`;
+}
+
+function openDetailModal(idx) {
   const list = rows();
   const r = list[idx];
-  if(!r) return;
+  if (!r) return;
 
   document.getElementById('dm-title').textContent = `${r.username || 'Creator Profile'} (${r.creatorId || '—'})`;
-  document.getElementById('dm-subtitle').textContent = `Full details, onboarder, contact info & multiple self-payment breakdown`;
+  document.getElementById('dm-subtitle').textContent = `Creator metadata, Telegram deliverable verification, and multiple self-txn audit`;
 
   const detailsList = r.selfTxnDetails || [];
   let selfTxnTableHtml = '';
-  if(detailsList.length > 0){
+  if (detailsList.length > 0) {
     selfTxnTableHtml = `
       <div class="mt-3">
         <h4 class="font-bold text-slate-800 mb-2 text-xs flex items-center justify-between">
           <span>Multiple Self-Payment Breakdown (${detailsList.length} txns)</span>
-          <span class="text-rose-600">Max Txn: ₹${inr(r.selfTxnMaxAmount)}</span>
+          <span class="text-rose-600 font-bold">Max Txn: ₹${inr(r.selfTxnMaxAmount)}</span>
         </h4>
         <div class="overflow-x-auto rounded-xl border border-slate-200">
           <table class="w-full text-left bg-slate-50/50">
@@ -453,209 +721,583 @@ function openDetailModal(idx){
         </div>
       </div>
     `;
-  } else {
-    selfTxnTableHtml = `<div class="p-3 rounded-xl bg-slate-100 text-slate-500 text-xs">No self-transactions flagged in the last 2 days.</div>`;
   }
 
   document.getElementById('dm-body').innerHTML = `
     <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
-      <div class="bg-slate-100/70 p-3 rounded-xl">
+      <div class="bg-slate-50 p-3 rounded-xl border border-slate-200/70">
         <div class="text-[10px] font-bold text-slate-400 uppercase">Creator ID</div>
         <div class="font-mono text-slate-800 font-bold select-all mt-0.5">${r.creatorId || '—'}</div>
       </div>
-      <div class="bg-slate-100/70 p-3 rounded-xl">
+      <div class="bg-slate-50 p-3 rounded-xl border border-slate-200/70">
         <div class="text-[10px] font-bold text-slate-400 uppercase">Username</div>
         <div class="text-slate-900 font-bold mt-0.5">${r.username || '—'}</div>
       </div>
-      <div class="bg-slate-100/70 p-3 rounded-xl">
+      <div class="bg-slate-50 p-3 rounded-xl border border-slate-200/70">
         <div class="text-[10px] font-bold text-slate-400 uppercase">Pending Payout</div>
-        <div class="text-purple-700 font-bold text-sm mt-0.5">₹${inr(r.payoutAmount)}</div>
+        <div class="text-indigo-700 font-extrabold text-sm mt-0.5">₹${inr(r.payoutAmount)}</div>
       </div>
-      <div class="bg-slate-100/70 p-3 rounded-xl">
+      <div class="bg-slate-50 p-3 rounded-xl border border-slate-200/70">
         <div class="text-[10px] font-bold text-slate-400 uppercase">Email Address</div>
         <div class="text-slate-800 font-medium select-all mt-0.5">${r.email || '—'}</div>
       </div>
-      <div class="bg-slate-100/70 p-3 rounded-xl">
+      <div class="bg-slate-50 p-3 rounded-xl border border-slate-200/70">
         <div class="text-[10px] font-bold text-slate-400 uppercase">Phone Number</div>
         <div class="text-slate-800 font-medium select-all mt-0.5">${r.phone || '—'}</div>
       </div>
-      <div class="bg-slate-100/70 p-3 rounded-xl">
+      <div class="bg-slate-50 p-3 rounded-xl border border-slate-200/70">
         <div class="text-[10px] font-bold text-slate-400 uppercase">Onboarded By</div>
         <div class="text-slate-800 font-bold mt-0.5">${r.onboardedBy || 'Self / Direct'}</div>
       </div>
-      <div class="bg-slate-100/70 p-3 rounded-xl">
-        <div class="text-[10px] font-bold text-slate-400 uppercase">Business Category</div>
-        <div class="text-slate-800 font-medium mt-0.5">${r.category || 'Digital Creator'}</div>
+      <div class="bg-slate-50 p-3 rounded-xl border border-slate-200/70">
+        <div class="text-[10px] font-bold text-slate-400 uppercase">Telegram vig/ Integration</div>
+        <div class="font-bold text-sm mt-0.5 ${r.telegramIntegration ? 'text-blue-600' : 'text-slate-500'}">
+          ${r.telegramIntegration ? 'YES (vig/)' : 'NO'}
+        </div>
       </div>
-      <div class="bg-slate-100/70 p-3 rounded-xl">
-        <div class="text-[10px] font-bold text-slate-400 uppercase">Flag Level</div>
-        <div class="text-slate-800 font-medium mt-0.5">${r.flagLevel !== undefined ? r.flagLevel : 'Level 0'}</div>
+      <div class="bg-slate-50 p-3 rounded-xl border border-slate-200/70">
+        <div class="text-[10px] font-bold text-slate-400 uppercase">SEBI Verification</div>
+        <div class="mt-0.5 flex items-center gap-1.5">
+          ${sebiStatusBadge(r.sebiVerificationStatus)}
+        </div>
       </div>
-      <div class="bg-slate-100/70 p-3 rounded-xl">
-        <div class="text-[10px] font-bold text-slate-400 uppercase">Audit Result</div>
-        <div class="mt-0.5">${flagsHtml(r)}</div>
+      <div class="bg-slate-50 p-3 rounded-xl border border-slate-200/70">
+        <div class="text-[10px] font-bold text-slate-400 uppercase">SEBI Regn No.</div>
+        <div class="font-mono text-slate-800 font-bold select-all mt-0.5">${r.sebiRegistrationNumber || 'N/A'}</div>
+      </div>
+      <div class="bg-slate-50 p-3 rounded-xl border border-slate-200/70 col-span-2 sm:col-span-3">
+        <div class="text-[10px] font-bold text-slate-400 uppercase">Telegram Product ID & Deliverable Link</div>
+        <div class="font-mono text-slate-800 text-xs mt-1 flex flex-wrap items-center gap-3">
+          <span>Product ID: <b>${r.telegramProductId || '—'}</b></span>
+          ${r.telegramProductLink ? `
+            <a href="${r.telegramProductLink}" target="_blank" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-blue-50 text-blue-700 hover:bg-blue-100 border border-blue-200 font-semibold transition">
+              <span>Open Link (${r.telegramProductLink})</span>
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            </a>
+          ` : '<span class="text-slate-400">—</span>'}
+        </div>
       </div>
     </div>
     ${selfTxnTableHtml}
-    <div class="flex items-center justify-end gap-2 pt-2 border-t border-slate-200">
-      <a href="https://superprofile.bio/${r.username || ''}" target="_blank" class="px-3 py-1.5 rounded-xl bg-purple-600 hover:bg-purple-700 text-white font-semibold text-xs shadow-sm transition">
-        Open Superprofile Bio Page
-      </a>
+    <div class="flex items-center justify-between pt-3 border-t border-slate-200">
+      <button onclick="copyCreatorJson(${idx})" class="px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-xs transition">
+        Copy Full JSON Record
+      </button>
+      <div class="flex items-center gap-2">
+        <a href="https://superprofile.bio/${r.username || ''}" target="_blank" class="px-3 py-1.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-xs shadow-sm transition flex items-center gap-1.5">
+          <span>Open Superprofile Page</span>
+          <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </a>
+      </div>
     </div>
   `;
 
   document.getElementById('detailModal').classList.remove('hidden');
 }
 
-function render(){
-  if(!DATA) return;
+function copyCreatorJson(idx) {
+  const list = rows();
+  const r = list[idx];
+  if (!r) return;
+  navigator.clipboard.writeText(JSON.stringify(r, null, 2));
+  showToast("Creator JSON copied to clipboard!");
+}
+
+function copyText(txt, label = "Item") {
+  navigator.clipboard.writeText(txt);
+  showToast(`${label} copied!`);
+}
+
+function updateActiveFilterTags() {
+  const tagsList = document.getElementById('tagsList');
+  const tagsContainer = document.getElementById('activeFilterTags');
+  const searchVal = document.getElementById('search').value.trim();
+  const teleVal = document.getElementById('telegramFilter').value;
+  const sebiMasterVal = document.getElementById('sebiMasterFilter').value;
+  const sebiStatusVal = document.getElementById('sebiStatusFilter').value;
+  const amtVal = document.getElementById('amountFilter').value;
+  const obVal = document.getElementById('onboardFilter').value;
+
+  const tags = [];
+  if (searchVal) tags.push({ label: `Search: "${searchVal}"`, clear: () => { document.getElementById('search').value = ''; } });
+  if (teleVal) tags.push({ label: `Telegram: ${teleVal === 'yes' ? 'vig/ Only' : 'Non-Telegram'}`, clear: () => { document.getElementById('telegramFilter').value = ''; } });
+  if (sebiMasterVal) tags.push({ label: `SEBI: ${sebiMasterVal === 'Yes' ? 'Registered: Yes' : 'Registered: No'}`, clear: () => { document.getElementById('sebiMasterFilter').value = ''; } });
+  if (sebiStatusVal) tags.push({ label: `Status: ${sebiStatusVal}`, clear: () => { document.getElementById('sebiStatusFilter').value = ''; } });
+  if (amtVal) tags.push({ label: `Min Payout: ₹${Number(amtVal).toLocaleString()}+`, clear: () => { document.getElementById('amountFilter').value = ''; } });
+  if (obVal) tags.push({ label: `Onboarder: ${obVal}`, clear: () => { document.getElementById('onboardFilter').value = ''; } });
+
+  if (tags.length === 0) {
+    tagsContainer.classList.add('hidden');
+    return;
+  }
+
+  tagsContainer.classList.remove('hidden');
+  tagsList.innerHTML = tags.map((t, idx) => `
+    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-indigo-50 text-indigo-700 border border-indigo-200 font-semibold text-[11px]">
+      ${t.label}
+      <button onclick="clearSingleFilter(${idx})" class="text-indigo-400 hover:text-indigo-800 font-bold ml-0.5">&times;</button>
+    </span>
+  `).join("");
+  window._activeTags = tags;
+}
+
+function clearSingleFilter(idx) {
+  if (window._activeTags && window._activeTags[idx]) {
+    window._activeTags[idx].clear();
+    render();
+  }
+}
+
+function resetAllFilters() {
+  document.getElementById('search').value = '';
+  document.getElementById('telegramFilter').value = '';
+  document.getElementById('sebiMasterFilter').value = '';
+  document.getElementById('sebiStatusFilter').value = '';
+  document.getElementById('amountFilter').value = '';
+  document.getElementById('onboardFilter').value = '';
+  if (document.getElementById('selfWindowFilter')) {
+    document.getElementById('selfWindowFilter').value = '2day';
+  }
+  sortKey = currentFilter === 'self' ? 'selfTxnFlow' : 'payoutAmount';
+  sortOrder = "desc";
+  render();
+  showToast("All filters reset");
+}
+
+function render() {
+  if (!DATA) return;
   const creators = DATA.creators || [];
+
   const selfCnt = creators.filter(c => c.selfTransaction).length;
+  const noLinkCnt = creators.filter(c => c.noLink).length;
+  const self2dCreators = creators.filter(c => c.selfTransaction && getDayKey(c) >= 20260825);
+  const self2dCnt = self2dCreators.length;
+  const selfTotalCnt = creators.filter(c => c.selfTransaction).length;
   const noLinkCnt = creators.filter(c => c.noLink).length;
   const bothCnt = creators.filter(c => c.selfTransaction && c.noLink).length;
   const capCnt = creators.filter(c => c.buyersChecked >= 100 && !c.selfTransaction).length;
   const approvedCnt = creators.filter(c => !c.selfTransaction && !c.noLink).length;
-  const noLinkPayout = creators.filter(c => c.noLink).reduce((acc,c) => acc + (c.payoutAmount||0), 0);
 
-  document.getElementById('hdr-today').textContent = DATA.reviewDateFormatted || DATA.reviewDate || '2026-08-22';
-  document.getElementById('hdr-yesterday').textContent = DATA.productSaleDateFormatted || DATA.productSaleDate || '2026-08-21';
+  const teleEligible = creators.filter(c => c.telegramEligible && c.telegramIntegration);
+  const teleCnt = teleEligible.length;
+  const teleSebiYes = teleEligible.filter(c => c.sebiRegisteredYes === "Yes").length;
+  const teleSebiNo = teleEligible.filter(c => c.sebiRegisteredNo === "No").length;
+  const teleManualReview = teleEligible.filter(c => c.sebiReviewStatus === "Manual Review Required").length;
+  const totalVolume = creators.reduce((acc, c) => acc + (Number(c.payoutAmount) || 0), 0);
+
+  // Update Header Badges
+  document.getElementById('hdr-today').textContent = DATA.reviewDateFormatted || DATA.reviewDate || '2026-08-27';
+  document.getElementById('hdr-yesterday').textContent = DATA.productSaleDateFormatted || DATA.productSaleDate || '2026-08-26';
   document.getElementById('hdr-total').textContent = `${creators.length.toLocaleString()} pending settlements audited`;
 
-  // Render iOS Executive Cards
+  // Render KPI Cards
   document.getElementById('cards').innerHTML = `
-    <div class="ios-card p-4">
-      <div class="text-2xl font-extrabold text-slate-900">${selfCnt}</div>
-      <div class="text-xs font-semibold text-slate-500 uppercase tracking-wider mt-1">Recent Self-Txn (2d)</div>
+    <div class="kpi-card p-4 kpi-blue">
+      <div class="text-2xl font-extrabold text-slate-900">₹${(totalVolume / 1000000).toFixed(2)}M</div>
+      <div class="text-[11px] font-bold text-slate-500 uppercase tracking-wider mt-1">Pending Volume</div>
     </div>
-    <div class="ios-card p-4">
-      <div class="text-2xl font-extrabold text-amber-600">${noLinkCnt}</div>
-      <div class="text-xs font-semibold text-slate-500 uppercase tracking-wider mt-1">No-Content Creators</div>
+    <div class="kpi-card p-4 kpi-blue">
+      <div class="text-2xl font-extrabold text-blue-600">${teleCnt}</div>
+      <div class="text-[11px] font-bold text-slate-500 uppercase tracking-wider mt-1">Telegram (≥ ₹1k)</div>
     </div>
-    <div class="ios-card p-4">
-      <div class="text-2xl font-extrabold text-rose-600">${bothCnt}</div>
-      <div class="text-xs font-semibold text-slate-500 uppercase tracking-wider mt-1">Top Risk (In Both Lists)</div>
+    <div class="kpi-card p-4 kpi-emerald">
+      <div class="text-2xl font-extrabold text-emerald-600">${teleSebiYes}</div>
+      <div class="text-[11px] font-bold text-slate-500 uppercase tracking-wider mt-1">SEBI Reg: YES</div>
     </div>
-    <div class="ios-card p-4">
-      <div class="text-2xl font-extrabold text-slate-700">${capCnt}</div>
-      <div class="text-xs font-semibold text-slate-500 uppercase tracking-wider mt-1">Unverifiable (100-Cap)</div>
+    <div class="kpi-card p-4 kpi-rose">
+      <div class="text-2xl font-extrabold text-rose-600">${teleSebiNo}</div>
+      <div class="text-[11px] font-bold text-slate-500 uppercase tracking-wider mt-1">SEBI Reg: NO</div>
     </div>
-    <div class="ios-card p-4">
-      <div class="text-2xl font-extrabold text-purple-700">₹${(noLinkPayout/1000).toFixed(0)}k</div>
-      <div class="text-xs font-semibold text-slate-500 uppercase tracking-wider mt-1">Pending Across Empty</div>
+    <div class="kpi-card p-4 kpi-amber">
+      <div class="text-2xl font-extrabold text-amber-600">${teleManualReview}</div>
+      <div class="text-[11px] font-bold text-slate-500 uppercase tracking-wider mt-1">Manual Review Req</div>
     </div>
-    <div class="ios-card p-4">
-      <div class="text-2xl font-extrabold text-emerald-600">100%</div>
-      <div class="text-xs font-semibold text-slate-500 uppercase tracking-wider mt-1">Product Coverage</div>
+    <div class="kpi-card p-4 kpi-rose">
+      <div class="text-2xl font-extrabold text-rose-500">${self2dCnt}</div>
+      <div class="text-[11px] font-bold text-slate-500 uppercase tracking-wider mt-1">Self-Txns (2d)</div>
     </div>
   `;
 
+  // Update Tab Badges
   document.getElementById('b-all').textContent = creators.length;
-  document.getElementById('b-self').textContent = selfCnt;
+  document.getElementById('b-telegram-sebi').textContent = teleCnt;
+  document.getElementById('b-self').textContent = self2dCnt;
   document.getElementById('b-nolink').textContent = noLinkCnt;
   document.getElementById('b-both').textContent = bothCnt;
   document.getElementById('b-cap').textContent = capCnt;
   document.getElementById('b-approved').textContent = approvedCnt;
 
-  if(bothCnt > 0) {
-    document.getElementById('both-cnt').textContent = bothCnt;
-    document.getElementById('risk-alert').classList.remove('hidden');
+  // Priority Risk Alert
+  const riskBanner = document.getElementById('risk-alert');
+  if (bothCnt > 0 || teleSebiNo > 0) {
+    let alertMsg = [];
+    if (bothCnt > 0) alertMsg.push(`<b>${bothCnt}</b> in both self-txn & missing-link lists`);
+    if (teleSebiNo > 0) alertMsg.push(`<b>${teleSebiNo}</b> Telegram creators NOT SEBI registered`);
+    document.getElementById('alert-detail').innerHTML = alertMsg.join(" · ") + ". Priority holds required before release.";
+    riskBanner.classList.remove('hidden');
   } else {
-    document.getElementById('risk-alert').classList.add('hidden');
+    riskBanner.classList.add('hidden');
   }
 
+  // Active filter tags & rowcount
+  updateActiveFilterTags();
   const list = rows();
-  document.getElementById('rowcount').textContent = `Showing ${list.length} of ${creators.length}`;
+  document.getElementById('rowcount').textContent = `Showing ${list.length.toLocaleString()} of ${creators.length.toLocaleString()}`;
 
-  const h = HINTS[filter] || '';
+  // Hint
   const hintEl = document.getElementById('hint');
-  if(h){ hintEl.innerHTML = h; hintEl.classList.remove('hidden'); }
-  else { hintEl.classList.add('hidden'); }
+  const hText = HINTS[currentFilter] || '';
+  if (hText) {
+    hintEl.innerHTML = hText;
+    hintEl.classList.remove('hidden');
+  } else {
+    hintEl.classList.add('hidden');
+  }
 
+  // Table Headers and Body
+  const thead = document.querySelector('#tbl thead');
   const tbody = document.getElementById('tbody');
-  tbody.innerHTML = list.map((r, i) => `
-    <tr class="hover:bg-purple-50/40 transition">
-      <td class="py-3 px-4 font-semibold text-slate-400">${i+1}</td>
-      <td class="py-3 px-4 id">${r.creatorId || r.settlementId || '—'}</td>
-      <td class="py-3 px-4 font-semibold text-slate-800">${r.username || '—'}</td>
-      <td class="py-3 px-4 num text-slate-900">₹${inr(r.payoutAmount)}</td>
-      <td class="py-3 px-4 num text-rose-600">₹${inr(r.selfTxnMaxAmount)}</td>
-      <td class="py-3 px-4 font-medium text-slate-600">${r.latestSelfTxnDate || '—'}</td>
-      <td class="py-3 px-4">${flagsHtml(r)}</td>
-      <td class="py-3 px-4 text-center">
-        <div class="flex items-center justify-center gap-1.5">
-          <button onclick="openDetailModal(${i})" class="px-2.5 py-1 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-semibold border border-slate-300 transition">
-            View Details
-          </button>
-          <a href="https://superprofile.bio/${r.username || ''}" target="_blank" class="px-2.5 py-1 rounded-xl bg-purple-50/80 hover:bg-purple-100 text-purple-700 text-xs font-semibold border border-purple-200/80 transition">
-            View Page
-          </a>
-        </div>
-      </td>
-    </tr>
-  `).join("");
+
+  if (currentFilter === "telegram_sebi") {
+    // Dedicated Table for Telegram SEBI Review
+    thead.innerHTML = `
+      <tr class="bg-slate-100/90 border-b border-slate-200 text-xs font-bold text-slate-700 uppercase tracking-wider select-none">
+        <th class="py-3 px-3.5 w-12">#</th>
+        <th class="py-3 px-3.5 text-right cursor-pointer hover:text-indigo-600 transition" onclick="setSort('payoutAmount')">
+          Settlement Amount (₹) ${sortArrow('payoutAmount')}
+        </th>
+        <th class="py-3 px-3.5 cursor-pointer hover:text-indigo-600 transition" onclick="setSort('username')">
+          Creator Name ${sortArrow('username')}
+        </th>
+        <th class="py-3 px-3.5 cursor-pointer hover:text-indigo-600 transition" onclick="setSort('creatorId')">
+          Creator ID ${sortArrow('creatorId')}
+        </th>
+        <th class="py-3 px-3.5">Product ID</th>
+        <th class="py-3 px-3.5">Product Deliverable</th>
+        <th class="py-3 px-3.5 text-center">Telegram</th>
+        <th class="py-3 px-3.5 text-center">SEBI Reg: Yes</th>
+        <th class="py-3 px-3.5 text-center">SEBI Reg: No</th>
+        <th class="py-3 px-3.5 text-center">SEBI Status</th>
+        <th class="py-3 px-3.5 text-center">Review Status</th>
+        <th class="py-3 px-3.5 text-center w-[140px]">Actions</th>
+      </tr>
+    `;
+
+    tbody.innerHTML = list.map((r, i) => `
+      <tr class="hover:bg-indigo-50/40 transition">
+        <td class="py-3 px-3.5 font-semibold text-slate-400">${i+1}</td>
+        <td class="py-3 px-3.5 text-right font-extrabold text-slate-900 font-mono text-[13px]">₹${inr(r.payoutAmount)}</td>
+        <td class="py-3 px-3.5 font-bold text-slate-900">${r.username || '—'}</td>
+        <td class="py-3 px-3.5">
+          <span class="font-mono text-[11px] text-slate-600 bg-slate-100 px-1.5 py-0.5 rounded cursor-pointer" onclick="copyText('${r.creatorId}','Creator ID')">${r.creatorId || '—'}</span>
+        </td>
+        <td class="py-3 px-3.5 font-mono text-[11px] text-slate-600">${r.telegramProductId || '—'}</td>
+        <td class="py-3 px-3.5">
+          ${r.telegramProductLink ? `
+            <a href="${r.telegramProductLink}" target="_blank" class="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg bg-blue-50 text-blue-700 hover:bg-blue-100 border border-blue-200 font-mono text-[11px] font-semibold transition">
+              <span>vig/${(r.telegramProductId || '').slice(0, 10)}..</span>
+              <svg class="w-2.5 h-2.5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            </a>
+          ` : '<span class="text-slate-400 font-mono">—</span>'}
+        </td>
+        <td class="py-3 px-3.5 text-center">
+          <span class="status-badge bg-blue-100 text-blue-800 border border-blue-200">YES</span>
+        </td>
+        <td class="py-3 px-3.5 text-center">
+          ${r.sebiRegisteredYes === 'Yes' 
+            ? `<span class="status-badge bg-emerald-100 text-emerald-800 border border-emerald-200">Yes</span>` 
+            : `<span class="text-slate-400 font-medium">—</span>`}
+        </td>
+        <td class="py-3 px-3.5 text-center">
+          ${r.sebiRegisteredNo === 'No' 
+            ? `<span class="status-badge bg-rose-100 text-rose-800 border border-rose-200 font-extrabold">No</span>` 
+            : `<span class="text-slate-400 font-medium">—</span>`}
+        </td>
+        <td class="py-3 px-3.5 text-center">${sebiStatusBadge(r.sebiVerificationStatus)}</td>
+        <td class="py-3 px-3.5 text-center">
+          ${r.sebiReviewStatus === 'Manual Review Required' 
+            ? `<span class="status-badge bg-amber-100 text-amber-800 border border-amber-200">Manual Review</span>` 
+            : `<span class="status-badge bg-slate-100 text-slate-700 border border-slate-200">Normal</span>`}
+        </td>
+        <td class="py-3 px-3.5 text-center w-[140px] whitespace-nowrap">
+          <div class="flex items-center justify-center gap-1.5">
+            <button onclick="openDetailModal(${i})" class="btn-futuristic px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 text-[11px] font-semibold border border-slate-300 transition">
+              Details
+            </button>
+            <a href="https://superprofile.bio/${r.username || ''}" target="_blank" class="btn-futuristic px-2.5 py-1 rounded-lg bg-indigo-50 hover:bg-indigo-100 text-indigo-700 text-[11px] font-semibold border border-indigo-200 transition">
+              Bio Page
+            </a>
+          </div>
+        </td>
+      </tr>
+    `).join("");
+
+  } else if (currentFilter === "self") {
+    // Dedicated Table for Self-Transactions: Sequence 27 Aug -> 26 Aug -> 25 Aug (Highest Amount -> Lowest)
+    thead.innerHTML = `
+      <tr class="bg-rose-50/80 border-b border-rose-200/90 text-xs font-bold text-slate-700 uppercase tracking-wider select-none">
+        <th class="py-3 px-4 w-12">#</th>
+        <th class="py-3 px-4 cursor-pointer hover:text-rose-700 transition" onclick="setSort('selfTxnFlow')">
+          Self-Txn Date & Time ${sortArrow('selfTxnFlow')}
+        </th>
+        <th class="py-3 px-4 text-right cursor-pointer hover:text-rose-700 transition" onclick="setSort('selfTxnMaxAmount')">
+          Max Self-Txn (₹) ${sortArrow('selfTxnMaxAmount')}
+        </th>
+        <th class="py-3 px-4 cursor-pointer hover:text-indigo-600 transition" onclick="setSort('username')">
+          Creator Name ${sortArrow('username')}
+        </th>
+        <th class="py-3 px-4 cursor-pointer hover:text-indigo-600 transition" onclick="setSort('creatorId')">
+          Creator ID ${sortArrow('creatorId')}
+        </th>
+        <th class="py-3 px-4 text-right cursor-pointer hover:text-indigo-600 transition" onclick="setSort('payoutAmount')">
+          Pending Payout (₹) ${sortArrow('payoutAmount')}
+        </th>
+        <th class="py-3 px-4 text-center">Txn Count</th>
+        <th class="py-3 px-4">Audit Flags</th>
+        <th class="py-3 px-4 text-center w-[140px]">Actions</th>
+      </tr>
+    `;
+
+    let lastDay = "";
+    let rowsHtml = [];
+    list.forEach((r, i) => {
+      const dtStr = String(r.latestSelfTxnDate || '');
+      const dayMatch = dtStr.match(/(\d{1,2}\s+[A-Za-z]{3},\s+\d{4})/);
+      const currentDayStr = dayMatch ? dayMatch[1] : (dtStr.split(';')[0] || 'Unknown Date');
+
+      if (currentDayStr !== lastDay) {
+        lastDay = currentDayStr;
+        const isToday = currentDayStr.includes('27 Aug');
+        const isYesterday = currentDayStr.includes('26 Aug');
+        const badgeLabel = isToday ? 'TODAY · HIGH PRIORITY RELEASE HOLD' : (isYesterday ? 'YESTERDAY' : '2-DAY WINDOW BUFFER');
+        const badgeColor = isToday ? 'bg-rose-100 text-rose-800 border-rose-300' : (isYesterday ? 'bg-amber-100 text-amber-800 border-amber-300' : 'bg-slate-100 text-slate-700 border-slate-300');
+        const dayCount = list.filter(item => (item.latestSelfTxnDate || '').includes(currentDayStr.slice(0, 6))).length;
+
+        rowsHtml.push(`
+          <tr class="bg-slate-100/90 border-y border-slate-200 select-none">
+            <td colspan="9" class="py-2.5 px-4 font-bold text-slate-800 text-xs">
+              <div class="flex items-center gap-2.5">
+                <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                <span>📅 Self-Transactions on <b>${currentDayStr}</b> (${dayCount} creators)</span>
+                <span class="px-2 py-0.5 rounded-full text-[10px] font-extrabold border ${badgeColor}">${badgeLabel}</span>
+              </div>
+            </td>
+          </tr>
+        `);
+      }
+
+      rowsHtml.push(`
+        <tr class="hover:bg-rose-50/40 transition">
+          <td class="py-3 px-4 font-semibold text-slate-400">${i+1}</td>
+          <td class="py-3 px-4 font-medium text-slate-700">${r.latestSelfTxnDate || '—'}</td>
+          <td class="py-3 px-4 text-right font-extrabold text-rose-600 font-mono text-[13px]">₹${inr(r.selfTxnMaxAmount)}</td>
+          <td class="py-3 px-4 font-bold text-slate-900">${r.username || '—'}</td>
+          <td class="py-3 px-4 font-mono text-[11px] text-slate-600">
+            <span class="bg-slate-100 px-1.5 py-0.5 rounded cursor-pointer" onclick="copyText('${r.creatorId || ''}','Creator ID')">${r.creatorId || '—'}</span>
+          </td>
+          <td class="py-3 px-4 text-right font-extrabold text-slate-900 font-mono">₹${inr(r.payoutAmount)}</td>
+          <td class="py-3 px-4 text-center font-bold text-slate-600">${r.selfTxnCount || 1}</td>
+          <td class="py-3 px-4">${flagsHtml(r)}</td>
+          <td class="py-3 px-4 text-center w-[140px] whitespace-nowrap">
+            <div class="flex items-center justify-center gap-1.5">
+              <button onclick="openDetailModal(${i})" class="btn-futuristic px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-semibold border border-slate-300 transition">
+                Details
+              </button>
+              <a href="https://superprofile.bio/${r.username || ''}" target="_blank" class="btn-futuristic px-2.5 py-1 rounded-lg bg-indigo-50 hover:bg-indigo-100 text-indigo-700 text-xs font-semibold border border-indigo-200 transition">
+                Bio Page
+              </a>
+            </div>
+          </td>
+        </tr>
+      `);
+    });
+
+    tbody.innerHTML = rowsHtml.join("");
+
+  } else {
+    // Standard Table Header for All / Self-Txns / Other tabs
+    thead.innerHTML = `
+      <tr class="bg-slate-100/90 border-b border-slate-200 text-xs font-bold text-slate-700 uppercase tracking-wider select-none">
+        <th class="py-3 px-4 w-12">#</th>
+        <th class="py-3 px-4 cursor-pointer hover:text-indigo-600 transition" onclick="setSort('creatorId')">
+          Creator ID ${sortArrow('creatorId')}
+        </th>
+        <th class="py-3 px-4 cursor-pointer hover:text-indigo-600 transition" onclick="setSort('username')">
+          Username ${sortArrow('username')}
+        </th>
+        <th class="py-3 px-4 text-right cursor-pointer hover:text-indigo-600 transition" onclick="setSort('payoutAmount')">
+          Pending Payout (₹) ${sortArrow('payoutAmount')}
+        </th>
+        <th class="py-3 px-4 text-right cursor-pointer hover:text-indigo-600 transition" onclick="setSort('selfTxnMaxAmount')">
+          Max Self-Txn (₹) ${sortArrow('selfTxnMaxAmount')}
+        </th>
+        <th class="py-3 px-4 cursor-pointer hover:text-indigo-600 transition" onclick="setSort('date')">
+          Latest Self-Txn Date ${sortArrow('date')}
+        </th>
+        <th class="py-3 px-4">Audit Status / Flags</th>
+        <th class="py-3 px-4 text-center w-[140px]">Actions</th>
+      </tr>
+    `;
+
+    tbody.innerHTML = list.map((r, i) => `
+      <tr class="hover:bg-purple-50/40 transition">
+        <td class="py-3 px-4 font-semibold text-slate-400">${i+1}</td>
+        <td class="py-3 px-4 font-mono text-[11px] text-slate-600">
+          <span class="bg-slate-100 px-1.5 py-0.5 rounded cursor-pointer" onclick="copyText('${r.creatorId || ''}','Creator ID')">${r.creatorId || r.settlementId || '—'}</span>
+        </td>
+        <td class="py-3 px-4 font-bold text-slate-800">${r.username || '—'}</td>
+        <td class="py-3 px-4 text-right font-extrabold text-slate-900 font-mono">₹${inr(r.payoutAmount)}</td>
+        <td class="py-3 px-4 text-right font-bold text-rose-600 font-mono">₹${inr(r.selfTxnMaxAmount)}</td>
+        <td class="py-3 px-4 font-medium text-slate-600">${r.latestSelfTxnDate || '—'}</td>
+        <td class="py-3 px-4">${flagsHtml(r)}</td>
+        <td class="py-3 px-4 text-center w-[140px] whitespace-nowrap">
+          <div class="flex items-center justify-center gap-1.5">
+            <button onclick="openDetailModal(${i})" class="btn-futuristic px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-semibold border border-slate-300 transition">
+              Details
+            </button>
+            <a href="https://superprofile.bio/${r.username || ''}" target="_blank" class="btn-futuristic px-2.5 py-1 rounded-lg bg-indigo-50 hover:bg-indigo-100 text-indigo-700 text-xs font-semibold border border-indigo-200 transition">
+              Bio Page
+            </a>
+          </div>
+        </td>
+      </tr>
+    `).join("");
+  }
 }
 
+// Initial Data Load
 fetch('/api/data').then(r => r.json()).then(d => {
   DATA = Array.isArray(d) ? { creators: d } : d;
-  const onboarders = [...new Set((DATA.creators||[]).map(c => c.onboardedBy).filter(Boolean))].sort();
+
+  // Populate Onboarders filter
+  const onboarders = [...new Set((DATA.creators || []).map(c => c.onboardedBy).filter(Boolean))].sort();
   const sel = document.getElementById('onboardFilter');
   onboarders.forEach(o => {
     const opt = document.createElement('option');
-    opt.value = o; opt.textContent = o;
+    opt.value = o;
+    opt.textContent = o;
     sel.appendChild(opt);
   });
+
   render();
 });
 
+// Event Listeners: Navigation Tabs
 document.getElementById('tabs').addEventListener('click', e => {
   const btn = e.target.closest('button[data-f]');
-  if(!btn) return;
+  if (!btn) return;
   document.querySelectorAll('#tabs button').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
-  filter = btn.dataset.f;
+  currentFilter = btn.dataset.f;
+
+  if (currentFilter === "self") {
+    sortKey = "selfTxnFlow";
+    sortOrder = "desc";
+    const winSel = document.getElementById('selfWindowFilter');
+    if (winSel) winSel.value = '2day';
+  } else if (currentFilter === "telegram_sebi" || currentFilter === "all") {
+    sortKey = "payoutAmount";
+    sortOrder = "desc";
+  }
+
   render();
 });
 
-document.getElementById('search').addEventListener('input', render);
-document.getElementById('selfAmountFilter').addEventListener('change', render);
-document.getElementById('onboardFilter').addEventListener('change', render);
+// Event Listeners: Filters
+document.getElementById('search').addEventListener('input', e => {
+  document.getElementById('clearSearchBtn').classList.toggle('hidden', !e.target.value);
+  render();
+});
+document.getElementById('clearSearchBtn').addEventListener('click', () => {
+  document.getElementById('search').value = '';
+  document.getElementById('clearSearchBtn').classList.add('hidden');
+  render();
+});
 
+document.getElementById('telegramFilter').addEventListener('change', render);
+document.getElementById('sebiMasterFilter').addEventListener('change', render);
+document.getElementById('sebiStatusFilter').addEventListener('change', render);
+document.getElementById('amountFilter').addEventListener('change', render);
+document.getElementById('onboardFilter').addEventListener('change', render);
+if (document.getElementById('selfWindowFilter')) {
+  document.getElementById('selfWindowFilter').addEventListener('change', render);
+}
+document.getElementById('resetFiltersBtn').addEventListener('click', resetAllFilters);
+
+document.getElementById('viewRiskBtn').addEventListener('click', () => {
+  document.querySelectorAll('#tabs button').forEach(b => b.classList.remove('active'));
+  const tgTab = document.querySelector('#tabs button[data-f="telegram_sebi"]');
+  if (tgTab) tgTab.classList.add('active');
+  currentFilter = "telegram_sebi";
+  document.getElementById('sebiMasterFilter').value = "No";
+  render();
+});
+
+// Close Modals
 document.getElementById('closeDetailModal').addEventListener('click', () => {
   document.getElementById('detailModal').classList.add('hidden');
 });
-
-// 100% WORKING DOWNLOAD EXECUTED HTML REPORT BUTTON
-document.getElementById('downloadHtmlBtn').addEventListener('click', () => {
-  fetch('/reports/payout_audit_report.html')
-    .then(res => res.text())
-    .then(htmlContent => {
-      const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8;' });
-      const url = window.URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = `Cosmofeed_Payout_Audit_Report_${new Date().toISOString().slice(0,10)}.html`;
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      window.URL.revokeObjectURL(url);
-    })
-    .catch(err => {
-      alert("Opening generated report...");
-      window.open('/reports/payout_audit_report.html', '_blank');
-    });
+document.getElementById('closeSlackModal').addEventListener('click', () => {
+  document.getElementById('slackModal').classList.add('hidden');
 });
 
-// 100% WORKING EXPORT CSV BUTTON
-document.getElementById('exportBtn').addEventListener('click', () => {
-  if(!DATA) return;
+// Keyboard shortcuts: Escape to close modals, '/' to search
+window.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    document.getElementById('detailModal').classList.add('hidden');
+    document.getElementById('slackModal').classList.add('hidden');
+  }
+  if (e.key === '/' && document.activeElement !== document.getElementById('search')) {
+    e.preventDefault();
+    document.getElementById('search').focus();
+  }
+});
+
+// 1. PDF DOWNLOAD
+document.getElementById('downloadPdfBtn').addEventListener('click', () => {
+  showToast("Generating Executive PDF Report...");
+  window.location.href = '/api/download-pdf';
+});
+
+// 2. HTML DOWNLOAD
+document.getElementById('downloadHtmlBtn').addEventListener('click', () => {
+  showToast("Downloading Executive HTML Report...");
+  window.location.href = '/download-report';
+});
+
+// 3. 10-DAY SEBI EXCEL DOWNLOAD
+document.getElementById('export10dExcelBtn').addEventListener('click', () => {
+  showToast("Downloading 10-Day SEBI Excel Report...");
+  window.location.href = '/api/telegram-sebi/download-excel';
+});
+
+// 4. 10-DAY SEBI CSV DOWNLOAD
+document.getElementById('export10dCsvBtn').addEventListener('click', () => {
+  showToast("Downloading 10-Day SEBI CSV Report...");
+  window.location.href = '/api/telegram-sebi/download-csv';
+});
+
+// 5. EXPORT FILTERED ROWS CSV (Exact currently visible table)
+document.getElementById('exportFilteredBtn').addEventListener('click', () => {
+  if (!DATA) return;
   const list = rows();
+  showToast(`Exporting ${list.length.toLocaleString()} filtered records...`);
+
   const csvHeaders = [
     "Creator ID",
     "Username",
     "Email",
     "Phone",
     "Payout Amount (INR)",
-    "Max Self-Txn Amount (INR)",
+    "Telegram Integration (vig/)",
+    "Telegram Product ID",
+    "Telegram Product Link",
+    "SEBI Registered: Yes",
+    "SEBI Registered: No",
+    "SEBI Verification Status",
+    "SEBI Registration Number",
+    "Review Status",
+    "Max Self-Txn (INR)",
     "Self-Txn Count",
     "Latest Self-Txn Date",
     "Self-Txn Flag (2d)",
@@ -663,7 +1305,7 @@ document.getElementById('exportBtn').addEventListener('click', () => {
     "Audit Status",
     "Onboarded By"
   ];
-  
+
   const csvRows = [csvHeaders];
   list.forEach(r => {
     let statusStr = "APPROVED";
@@ -678,6 +1320,14 @@ document.getElementById('exportBtn').addEventListener('click', () => {
       `"${r.email || ''}"`,
       `"${r.phone || ''}"`,
       r.payoutAmount || 0,
+      r.telegramIntegration ? "YES" : "NO",
+      `"${r.telegramProductId || ''}"`,
+      `"${r.telegramProductLink || ''}"`,
+      `"${r.sebiRegisteredYes || '—'}"`,
+      `"${r.sebiRegisteredNo || '—'}"`,
+      `"${r.sebiVerificationStatus || 'Not Applicable'}"`,
+      `"${r.sebiRegistrationNumber || 'N/A'}"`,
+      `"${r.sebiReviewStatus || 'Normal'}"`,
       r.selfTxnMaxAmount || 0,
       r.selfTxnCount || 0,
       `"${r.latestSelfTxnDate || ''}"`,
@@ -687,33 +1337,30 @@ document.getElementById('exportBtn').addEventListener('click', () => {
       `"${r.onboardedBy || ''}"`
     ]);
   });
-  
+
   const csvContent = csvRows.map(e => e.join(",")).join("\n");
   const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
   const url = window.URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.setAttribute('href', url);
-  a.setAttribute('download', `Cosmofeed_Payout_Audit_Report_${new Date().toISOString().slice(0,10)}.csv`);
+  const repDate = (DATA && (DATA.reviewDate || DATA.reviewDateFormatted)) || new Date().toISOString().slice(0, 10);
+  a.setAttribute('download', `Cosmofeed_Payout_Audit_Filtered_${currentFilter}_${repDate}.csv`);
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
   window.URL.revokeObjectURL(url);
 });
 
-// SLACK MODAL & COPY TO CLIPBOARD
+// SLACK MODAL
 const slackModal = document.getElementById('slackModal');
 document.getElementById('slackModalBtn').addEventListener('click', () => {
-  fetch('/reports/slack_report.txt')
+  fetch('/reports/slack_report.txt?t=' + Date.now())
     .then(r => r.text())
     .then(txt => {
       document.getElementById('slackText').value = txt;
       slackModal.classList.remove('hidden');
     })
     .catch(() => alert("Slack report text not found"));
-});
-
-document.getElementById('closeSlackModal').addEventListener('click', () => {
-  slackModal.classList.add('hidden');
 });
 
 document.getElementById('copySlackBtn').addEventListener('click', () => {
@@ -725,5 +1372,6 @@ document.getElementById('copySlackBtn').addEventListener('click', () => {
   setTimeout(() => toast.classList.add('hidden'), 2500);
 });
 </script>
+
 </body>
 </html>

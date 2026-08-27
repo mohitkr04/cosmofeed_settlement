@@ -19,6 +19,7 @@ To refresh the underlying data (re-run the self-transaction sweep):
 """
 import os
 import json
+import datetime
 import http.server
 import socketserver
 from urllib.parse import urlparse, parse_qs
@@ -101,19 +102,82 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             self.path = "/index.html"
             return super().do_GET()
         if parsed.path == "/download-report" or parsed.path == "/reports/download":
+            try:
+                import generate_report
+                generate_report.generate_reports()
+            except Exception as e:
+                pass
             fp = os.path.join(HERE, "reports", "payout_audit_report.html")
             if os.path.exists(fp):
                 with open(fp, "rb") as f:
                     content = f.read()
+                today_str = datetime.date.today().strftime("%Y-%m-%d")
                 self.send_response(200)
                 self.send_header("Content-Type", "text/html; charset=utf-8")
-                self.send_header("Content-Disposition", 'attachment; filename="Cosmofeed_Payout_Audit_Report_2026-08-22.html"')
+                self.send_header("Content-Disposition", f'attachment; filename="Cosmofeed_Payout_Audit_Report_{today_str}.html"')
                 self.send_header("Content-Length", str(len(content)))
                 self.end_headers()
                 self.wfile.write(content)
                 return
             else:
                 return self._json({"error": "payout_audit_report.html not found"}, 404)
+
+        if parsed.path == "/api/download-pdf" or parsed.path == "/download-pdf":
+            try:
+                import generate_pdf
+                pdf_path = os.path.join(HERE, "reports", "Cosmofeed_Payout_Audit_Report.pdf")
+                generate_pdf.generate_pdf_report(output_pdf_path=pdf_path)
+                if os.path.exists(pdf_path):
+                    with open(pdf_path, "rb") as f:
+                        content = f.read()
+                    today_str = datetime.date.today().strftime("%Y-%m-%d")
+                    self.send_response(200)
+                    self.send_header("Content-Type", "application/pdf")
+                    self.send_header("Content-Disposition", f'attachment; filename="Cosmofeed_Payout_Audit_Report_{today_str}.pdf"')
+                    self.send_header("Content-Length", str(len(content)))
+                    self.end_headers()
+                    self.wfile.write(content)
+                    return
+                else:
+                    return self._json({"error": "Failed to locate generated PDF"}, 404)
+            except Exception as e:
+                return self._json({"error": f"PDF generation error: {str(e)}"}, 500)
+
+        if parsed.path == "/api/telegram-sebi/download-excel":
+            fp = os.path.join(HERE, "reports", "telegram_sebi_10day_report.xlsx")
+            if os.path.exists(fp):
+                with open(fp, "rb") as f:
+                    content = f.read()
+                self.send_response(200)
+                self.send_header("Content-Type", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+                self.send_header("Content-Disposition", 'attachment; filename="Telegram_SEBI_10Day_Audit_Report.xlsx"')
+                self.send_header("Content-Length", str(len(content)))
+                self.end_headers()
+                self.wfile.write(content)
+                return
+            return self._json({"error": "telegram_sebi_10day_report.xlsx not found"}, 404)
+
+        if parsed.path == "/api/telegram-sebi/download-csv":
+            fp = os.path.join(HERE, "reports", "telegram_sebi_10day_report.csv")
+            if os.path.exists(fp):
+                with open(fp, "rb") as f:
+                    content = f.read()
+                self.send_response(200)
+                self.send_header("Content-Type", "text/csv; charset=utf-8")
+                self.send_header("Content-Disposition", 'attachment; filename="Telegram_SEBI_10Day_Audit_Report.csv"')
+                self.send_header("Content-Length", str(len(content)))
+                self.end_headers()
+                self.wfile.write(content)
+                return
+            return self._json({"error": "telegram_sebi_10day_report.csv not found"}, 404)
+
+        if parsed.path == "/api/telegram-sebi/records":
+            fp = os.path.join(HERE, "reports", "telegram_sebi_10day_records.json")
+            if os.path.exists(fp):
+                with open(fp, encoding="utf-8") as f:
+                    return self._json(json.load(f))
+            return self._json({})
+
         if parsed.path == "/api/data":
             fp = os.path.join(HERE, "reports", "data.json")
             if not os.path.exists(fp):
