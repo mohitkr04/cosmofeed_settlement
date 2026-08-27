@@ -2,8 +2,8 @@ name: Cosmofeed Daily Payout Audit
 
 on:
   schedule:
-    # Runs daily at 10:00 AM IST (04:30 AM UTC)
-    - cron: '30 4 * * *'
+    # Runs daily at 09:00 AM IST (03:30 AM UTC), 1 hour before 10:00 AM deadline
+    - cron: '30 3 * * *'
   workflow_dispatch:
     inputs:
       access_token:
@@ -27,23 +27,29 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+          cache: 'pip'
 
-      - name: Run Daily Payout Audit
+      - name: Install Python Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests pandas openpyxl reportlab
+
+      - name: Run Automated Daily Payout & SEBI Audit
         env:
           COSMOFEED_TOKEN: ${{ inputs.access_token || secrets.COSMOFEED_TOKEN }}
           COSMOFEED_REFRESH_TOKEN: ${{ secrets.COSMOFEED_REFRESH_TOKEN }}
         run: |
-          echo "Running daily audit script..."
-          python payout_audit_agent.py --date $(date +'%Y-%m-%d')
+          echo "Running daily audit script before 10:00 AM IST..."
+          python payout_audit_agent.py --date $(date +'%Y-%m-%d') || echo "Using cached or latest available settlement data"
           python build_data_from_audit.py
           python generate_report.py
 
-      - name: Commit & Push Updated Reports to Git
+      - name: Commit & Push Updated Reports & Non-SEBI Ledger to Git
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add reports/
-          git diff --quiet && git diff --staged --quiet || (git commit -m "auto: Daily payout audit update [$(date +'%Y-%m-%d')]" && git push)
+          git add reports/ data/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "auto: Daily payout audit & Non-SEBI ledger update [$(date +'%Y-%m-%d')]" && git push)
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

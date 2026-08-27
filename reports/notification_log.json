@@ -1,0 +1,12 @@
+{
+  "c1:p1:2026-08-23:missing link": {
+    "timestamp": "2026-08-24T10:40:05.460400",
+    "phone": "+919999999999",
+    "creatorId": "c1",
+    "productId": "p1",
+    "reviewDate": "2026-08-23",
+    "issue": "Missing Link",
+    "message": "Dear John,\n\nYour payout for the following product is currently on HOLD.\n\nProduct:\nEbook\n\nProduct Link:\nhttps://cosmofeed.com/vp/123\n\nReason:\nMissing Link\n\nRemarks:\nOn hold\n\nStatus:\nPayout On Hold\n\nAction Required:\nUpdate your product content link and ensure public page functionality.\n\nPlease resolve the mentioned issue and ensure that the same issue is not repeated in future submissions.\n\nRegards,\nCompliance / Support Team",
+    "status": "SENT"
+  }
+}

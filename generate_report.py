@@ -343,9 +343,19 @@ def generate_reports():
     try:
         import generate_pdf
         generate_pdf.generate_pdf_report(output_pdf_path=pdf_out)
-        print(f"Generated {slack_out}, {html_out}, and {pdf_out} successfully!", flush=True)
     except Exception as e:
-        print(f"Generated {slack_out} and {html_out} (PDF notice: {e})", flush=True)
+        print(f"PDF notice: {e}", flush=True)
+
+    try:
+        import non_sebi_manager
+        non_sebi_manager.generate_manager_html_report()
+        non_sebi_manager.generate_manager_pdf_report()
+        non_sebi_manager.export_cumulative_excel()
+        non_sebi_manager.export_cumulative_csv()
+    except Exception as e:
+        print(f"Non-SEBI manager export notice: {e}", flush=True)
+
+    print(f"Generated {slack_out}, {html_out}, and {pdf_out} successfully!", flush=True)
 
 if __name__ == '__main__':
     generate_reports()

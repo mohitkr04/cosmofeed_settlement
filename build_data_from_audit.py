@@ -217,6 +217,16 @@ def main():
     print(f"  SEBI Verified (Yes): {data['counts']['telegramSebiYes']}")
     print(f"  SEBI Not Verified (No / Manual Review): {data['counts']['telegramSebiNo']}")
 
+    # -------------------------------------------------------------
+    # 8. Update Non-SEBI Cumulative Ledger & Manager Reports (Until 5 Sep)
+    # -------------------------------------------------------------
+    try:
+        import non_sebi_manager
+        non_sebi_manager.record_daily_settlements(out, audit_date=rev_date)
+        print("Successfully updated Non-SEBI cumulative ledger and Manager submission reports!")
+    except Exception as e:
+        print(f"Warning: Failed to update Non-SEBI cumulative ledger: {e}")
+
     try:
         import generate_report
         generate_report.generate_reports()

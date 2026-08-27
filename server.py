@@ -178,6 +178,74 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                     return self._json(json.load(f))
             return self._json({})
 
+        if parsed.path == "/api/non-sebi/download-excel":
+            fp = os.path.join(HERE, "data", "non_sebi_creators_cumulative.xlsx")
+            if os.path.exists(fp):
+                with open(fp, "rb") as f:
+                    content = f.read()
+                self.send_response(200)
+                self.send_header("Content-Type", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+                self.send_header("Content-Disposition", 'attachment; filename="Cosmofeed_Non_SEBI_Cumulative_Ledger_Until_05Sep.xlsx"')
+                self.send_header("Content-Length", str(len(content)))
+                self.end_headers()
+                self.wfile.write(content)
+                return
+            return self._json({"error": "non_sebi_creators_cumulative.xlsx not found"}, 404)
+
+        if parsed.path == "/api/non-sebi/download-csv":
+            fp = os.path.join(HERE, "data", "non_sebi_creators_cumulative.csv")
+            if os.path.exists(fp):
+                with open(fp, "rb") as f:
+                    content = f.read()
+                self.send_response(200)
+                self.send_header("Content-Type", "text/csv; charset=utf-8")
+                self.send_header("Content-Disposition", 'attachment; filename="Cosmofeed_Non_SEBI_Cumulative_Ledger_Until_05Sep.csv"')
+                self.send_header("Content-Length", str(len(content)))
+                self.end_headers()
+                self.wfile.write(content)
+                return
+            return self._json({"error": "non_sebi_creators_cumulative.csv not found"}, 404)
+
+        if parsed.path == "/api/non-sebi/download-pdf":
+            fp = os.path.join(HERE, "reports", "Manager_Submission_Non_SEBI_Report.pdf")
+            if not os.path.exists(fp):
+                try:
+                    import non_sebi_manager
+                    non_sebi_manager.generate_manager_pdf_report()
+                except Exception:
+                    pass
+            if os.path.exists(fp):
+                with open(fp, "rb") as f:
+                    content = f.read()
+                self.send_response(200)
+                self.send_header("Content-Type", "application/pdf")
+                self.send_header("Content-Disposition", 'attachment; filename="Cosmofeed_Manager_Submission_Non_SEBI_Report_05Sep.pdf"')
+                self.send_header("Content-Length", str(len(content)))
+                self.end_headers()
+                self.wfile.write(content)
+                return
+            return self._json({"error": "Manager_Submission_Non_SEBI_Report.pdf not found"}, 404)
+
+        if parsed.path == "/api/non-sebi/manager-report":
+            fp = os.path.join(HERE, "reports", "Manager_Submission_Non_SEBI_Report.html")
+            if os.path.exists(fp):
+                with open(fp, "rb") as f:
+                    content = f.read()
+                self.send_response(200)
+                self.send_header("Content-Type", "text/html; charset=utf-8")
+                self.send_header("Content-Length", str(len(content)))
+                self.end_headers()
+                self.wfile.write(content)
+                return
+            return self._json({"error": "Manager_Submission_Non_SEBI_Report.html not found"}, 404)
+
+        if parsed.path == "/api/non-sebi/ledger":
+            fp = os.path.join(HERE, "data", "non_sebi_creators_ledger.json")
+            if os.path.exists(fp):
+                with open(fp, encoding="utf-8") as f:
+                    return self._json(json.load(f))
+            return self._json({"creators": {}})
+
         if parsed.path == "/api/data":
             fp = os.path.join(HERE, "reports", "data.json")
             if not os.path.exists(fp):

@@ -218,6 +218,12 @@
         10-Day SEBI CSV
       </button>
 
+      <!-- Manager Submission (5 Sep) Button -->
+      <button id="managerModalBtn" title="Manager Submission: Non-SEBI Cumulative Report (Until 5 Sep)" class="btn-futuristic px-3.5 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold shadow-sm flex items-center gap-1.5 border border-slate-700">
+        <svg class="w-3.5 h-3.5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        Manager Report (5 Sep)
+      </button>
+
       <!-- Export Filtered CSV Button -->
       <button id="exportFilteredBtn" title="Export currently displayed rows as CSV" class="btn-futuristic px-3.5 py-2 rounded-xl bg-white hover:bg-slate-50 text-slate-700 text-xs font-semibold border border-slate-300 shadow-sm flex items-center gap-1.5">
         <svg class="w-3.5 h-3.5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
@@ -434,6 +440,76 @@
       <button id="copySlackBtn" class="px-4 py-2 rounded-xl bg-purple-600 hover:bg-purple-700 text-white text-xs font-semibold shadow-sm transition">
         Copy Slack Text
       </button>
+    </div>
+  </div>
+</div>
+
+<!-- Manager Submission (5 Sep) Modal -->
+<div id="managerModal" class="fixed inset-0 z-50 bg-slate-900/50 backdrop-blur-md flex items-center justify-center hidden p-4">
+  <div class="futuristic-card bg-white max-w-xl w-full p-6 shadow-2xl relative">
+    <div class="flex items-center justify-between pb-4 border-b border-slate-200">
+      <div class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-xl bg-slate-900 text-amber-400 flex items-center justify-center shadow-sm">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        </div>
+        <div>
+          <h3 class="text-sm font-bold text-slate-900">Manager Submission: Non-SEBI Cumulative Report</h3>
+          <p class="text-[11px] text-slate-500">Audit tracking & non-SEBI creator store through 5 September 2026</p>
+        </div>
+      </div>
+      <button id="closeManagerModal" class="w-7 h-7 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-500 hover:text-slate-700 flex items-center justify-center font-bold text-base transition">&times;</button>
+    </div>
+
+    <div class="mt-4 space-y-3">
+      <div class="p-3 rounded-xl bg-amber-50 border border-amber-200 text-amber-900 text-xs">
+        <b>Audit Tracking Guarantee:</b> All creators using Telegram without SEBI registration are deduplicated by Creator ID into a permanent ledger up to <b>5 September 2026</b>.
+      </div>
+
+      <div class="grid grid-cols-1 gap-2.5 pt-1">
+        <a href="/api/non-sebi/download-excel" target="_blank" class="p-3 rounded-xl bg-slate-50 hover:bg-emerald-50 border border-slate-200 hover:border-emerald-300 transition flex items-center justify-between group">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center font-bold text-xs">XLS</div>
+            <div>
+              <div class="text-xs font-bold text-slate-900 group-hover:text-emerald-800">Deduplicated Master Excel (.xlsx)</div>
+              <div class="text-[11px] text-slate-500">Multi-sheet: Executive Summary, Master Registry, Daily Audit Logs</div>
+            </div>
+          </div>
+          <span class="text-xs font-bold text-emerald-600">Download &darr;</span>
+        </a>
+
+        <a href="/api/non-sebi/download-pdf" target="_blank" class="p-3 rounded-xl bg-slate-50 hover:bg-rose-50 border border-slate-200 hover:border-rose-300 transition flex items-center justify-between group">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-rose-600 text-white flex items-center justify-center font-bold text-xs">PDF</div>
+            <div>
+              <div class="text-xs font-bold text-slate-900 group-hover:text-rose-800">Formal Manager Submission PDF</div>
+              <div class="text-[11px] text-slate-500">Executive multi-page PDF with formal compliance sign-off block</div>
+            </div>
+          </div>
+          <span class="text-xs font-bold text-rose-600">Download &darr;</span>
+        </a>
+
+        <a href="/api/non-sebi/download-csv" target="_blank" class="p-3 rounded-xl bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 transition flex items-center justify-between group">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center font-bold text-xs">CSV</div>
+            <div>
+              <div class="text-xs font-bold text-slate-900 group-hover:text-blue-800">Deduplicated Master CSV (.csv)</div>
+              <div class="text-[11px] text-slate-500">Raw tabular dataset with all metrics & contact details</div>
+            </div>
+          </div>
+          <span class="text-xs font-bold text-blue-600">Download &darr;</span>
+        </a>
+
+        <a href="/api/non-sebi/manager-report" target="_blank" class="p-3 rounded-xl bg-slate-50 hover:bg-indigo-50 border border-slate-200 hover:border-indigo-300 transition flex items-center justify-between group">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-indigo-600 text-white flex items-center justify-center font-bold text-xs">HTML</div>
+            <div>
+              <div class="text-xs font-bold text-slate-900 group-hover:text-indigo-800">View Full Executive Report (HTML)</div>
+              <div class="text-[11px] text-slate-500">Opens standalone compliance dashboard in browser</div>
+            </div>
+          </div>
+          <span class="text-xs font-bold text-indigo-600">Open &rarr;</span>
+        </a>
+      </div>
     </div>
   </div>
 </div>
@@ -1163,22 +1239,35 @@ function render() {
   }
 }
 
-// Initial Data Load
-fetch('/api/data').then(r => r.json()).then(d => {
-  DATA = Array.isArray(d) ? { creators: d } : d;
+// Initial Data Load with static GitHub Pages fallback
+const isStatic = window.location.protocol === 'file:' || window.location.hostname.endsWith('github.io');
+const dataUrl = isStatic ? 'reports/data.json' : '/api/data';
 
-  // Populate Onboarders filter
-  const onboarders = [...new Set((DATA.creators || []).map(c => c.onboardedBy).filter(Boolean))].sort();
-  const sel = document.getElementById('onboardFilter');
-  onboarders.forEach(o => {
-    const opt = document.createElement('option');
-    opt.value = o;
-    opt.textContent = o;
-    sel.appendChild(opt);
+fetch(dataUrl)
+  .catch(() => fetch('reports/data.json'))
+  .then(r => {
+    if (!r.ok) return fetch('reports/data.json').then(res => res.json());
+    return r.json();
+  })
+  .then(d => {
+    DATA = Array.isArray(d) ? { creators: d } : d;
+
+    // Populate Onboarders filter
+    const onboarders = [...new Set((DATA.creators || []).map(c => c.onboardedBy).filter(Boolean))].sort();
+    const sel = document.getElementById('onboardFilter');
+    onboarders.forEach(o => {
+      const opt = document.createElement('option');
+      opt.value = o;
+      opt.textContent = o;
+      sel.appendChild(opt);
+    });
+
+    render();
+  })
+  .catch(err => {
+    console.error("Data load failed:", err);
+    showToast("Failed to load audit data", false);
   });
-
-  render();
-});
 
 // Event Listeners: Navigation Tabs
 document.getElementById('tabs').addEventListener('click', e => {
@@ -1231,6 +1320,14 @@ document.getElementById('viewRiskBtn').addEventListener('click', () => {
   render();
 });
 
+// Manager Modal Listeners
+document.getElementById('managerModalBtn').addEventListener('click', () => {
+  document.getElementById('managerModal').classList.remove('hidden');
+});
+document.getElementById('closeManagerModal').addEventListener('click', () => {
+  document.getElementById('managerModal').classList.add('hidden');
+});
+
 // Close Modals
 document.getElementById('closeDetailModal').addEventListener('click', () => {
   document.getElementById('detailModal').classList.add('hidden');
@@ -1244,6 +1341,7 @@ window.addEventListener('keydown', e => {
   if (e.key === 'Escape') {
     document.getElementById('detailModal').classList.add('hidden');
     document.getElementById('slackModal').classList.add('hidden');
+    document.getElementById('managerModal').classList.add('hidden');
   }
   if (e.key === '/' && document.activeElement !== document.getElementById('search')) {
     e.preventDefault();
@@ -1254,25 +1352,25 @@ window.addEventListener('keydown', e => {
 // 1. PDF DOWNLOAD
 document.getElementById('downloadPdfBtn').addEventListener('click', () => {
   showToast("Generating Executive PDF Report...");
-  window.location.href = '/api/download-pdf';
+  window.location.href = isStatic ? 'reports/Cosmofeed_Payout_Audit_Report.pdf' : '/api/download-pdf';
 });
 
 // 2. HTML DOWNLOAD
 document.getElementById('downloadHtmlBtn').addEventListener('click', () => {
   showToast("Downloading Executive HTML Report...");
-  window.location.href = '/download-report';
+  window.location.href = isStatic ? 'reports/payout_audit_report.html' : '/download-report';
 });
 
 // 3. 10-DAY SEBI EXCEL DOWNLOAD
 document.getElementById('export10dExcelBtn').addEventListener('click', () => {
   showToast("Downloading 10-Day SEBI Excel Report...");
-  window.location.href = '/api/telegram-sebi/download-excel';
+  window.location.href = isStatic ? 'reports/telegram_sebi_10day_report.xlsx' : '/api/telegram-sebi/download-excel';
 });
 
 // 4. 10-DAY SEBI CSV DOWNLOAD
 document.getElementById('export10dCsvBtn').addEventListener('click', () => {
   showToast("Downloading 10-Day SEBI CSV Report...");
-  window.location.href = '/api/telegram-sebi/download-csv';
+  window.location.href = isStatic ? 'reports/telegram_sebi_10day_report.csv' : '/api/telegram-sebi/download-csv';
 });
 
 // 5. EXPORT FILTERED ROWS CSV (Exact currently visible table)
