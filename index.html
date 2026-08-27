@@ -869,10 +869,8 @@ function render() {
   const creators = DATA.creators || [];
 
   const selfCnt = creators.filter(c => c.selfTransaction).length;
-  const noLinkCnt = creators.filter(c => c.noLink).length;
   const self2dCreators = creators.filter(c => c.selfTransaction && getDayKey(c) >= 20260825);
   const self2dCnt = self2dCreators.length;
-  const selfTotalCnt = creators.filter(c => c.selfTransaction).length;
   const noLinkCnt = creators.filter(c => c.noLink).length;
   const bothCnt = creators.filter(c => c.selfTransaction && c.noLink).length;
   const capCnt = creators.filter(c => c.buyersChecked >= 100 && !c.selfTransaction).length;
