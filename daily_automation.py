@@ -58,20 +58,20 @@ def run_pipeline(audit_date: str = None, push_git: bool = True) -> bool:
     log("=" * 70)
 
     # 1. Attempt live settlement scrape if token is available
-    token = os.environ.get("COSMOFEED_TOKEN")
-    if token:
-        log("Found COSMOFEED_TOKEN in environment. Attempting live settlement scrape...")
+    token = os.environ.get("COSMOFEED_TOKEN", "").strip()
+    if token and not token.startswith("<") and len(token) > 20:
+        log("Found valid COSMOFEED_TOKEN in environment. Attempting live settlement scrape...")
         try:
             cmd = [sys.executable, "payout_audit_agent.py", "--date", audit_date]
-            res = subprocess.run(cmd, capture_output=True, text=True, timeout=180)
+            res = subprocess.run(cmd, capture_output=True, text=True, timeout=20)
             if res.returncode == 0:
                 log("Live settlement scrape completed successfully.")
             else:
                 log(f"Scrape warning (code {res.returncode}): {res.stderr[:200]}")
         except Exception as e:
-            log(f"Live scrape skipped/failed: {e}")
+            log(f"Live scrape skipped/fallback: {e}")
     else:
-        log("No COSMOFEED_TOKEN set in environment. Utilizing stored audit batch data.")
+        log("No active COSMOFEED_TOKEN set. Utilizing latest stored audit batch data.")
 
     # 2. Run build_data_from_audit.py (SEBI verification & Non-SEBI ledger update)
     log("Running build_data_from_audit.py (SEBI verification & Non-SEBI ledger)...")
