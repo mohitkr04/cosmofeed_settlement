@@ -41,9 +41,7 @@ jobs:
           COSMOFEED_REFRESH_TOKEN: ${{ secrets.COSMOFEED_REFRESH_TOKEN }}
         run: |
           echo "Running daily audit script before 10:00 AM IST..."
-          python payout_audit_agent.py --date $(date +'%Y-%m-%d') || echo "Using cached or latest available settlement data"
-          python build_data_from_audit.py
-          python generate_report.py
+          python daily_automation.py --no-push
 
       - name: Commit & Push Updated Reports & Non-SEBI Ledger to Git
         run: |
