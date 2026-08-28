@@ -16,8 +16,8 @@
     "sebiRegistrationNumber": "INH000019099",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 98720.0,
-    "totalPayoutVolume": 843040.0,
-    "settlementCount": 23,
+    "totalPayoutVolume": 853563.0,
+    "settlementCount": 24,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -67,8 +67,8 @@
     "sebiRegistrationNumber": "INH000009782",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 569271.0,
-    "totalPayoutVolume": 3101735.0,
-    "settlementCount": 7,
+    "totalPayoutVolume": 3200163.0,
+    "settlementCount": 8,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -93,8 +93,8 @@
     "sebiRegistrationNumber": "INH000013518",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 94083.0,
-    "totalPayoutVolume": 378941.0,
-    "settlementCount": 7,
+    "totalPayoutVolume": 407207.0,
+    "settlementCount": 8,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -119,8 +119,8 @@
     "sebiRegistrationNumber": "INH000020217",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 75729.0,
-    "totalPayoutVolume": 358113.0,
-    "settlementCount": 7,
+    "totalPayoutVolume": 382308.0,
+    "settlementCount": 8,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -145,8 +145,8 @@
     "sebiRegistrationNumber": "INH000020411",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 62983.0,
-    "totalPayoutVolume": 241166.0,
-    "settlementCount": 7,
+    "totalPayoutVolume": 244346.0,
+    "settlementCount": 8,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -171,8 +171,8 @@
     "sebiRegistrationNumber": "INH000020156",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 53890.0,
-    "totalPayoutVolume": 352210.0,
-    "settlementCount": 7,
+    "totalPayoutVolume": 356129.0,
+    "settlementCount": 8,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -275,8 +275,8 @@
     "sebiRegistrationNumber": "INH000023250",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 33180.0,
-    "totalPayoutVolume": 202880.0,
-    "settlementCount": 7,
+    "totalPayoutVolume": 213620.0,
+    "settlementCount": 8,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -301,8 +301,8 @@
     "sebiRegistrationNumber": "INH000010849",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 28316.0,
-    "totalPayoutVolume": 71277.0,
-    "settlementCount": 7,
+    "totalPayoutVolume": 93246.0,
+    "settlementCount": 8,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -327,8 +327,8 @@
     "sebiRegistrationNumber": "INH000011954",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 26961.0,
-    "totalPayoutVolume": 122387.0,
-    "settlementCount": 7,
+    "totalPayoutVolume": 141045.0,
+    "settlementCount": 8,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -378,8 +378,8 @@
     "sebiRegistrationNumber": "INH000024578",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 21874.0,
-    "totalPayoutVolume": 144616.0,
-    "settlementCount": 7,
+    "totalPayoutVolume": 147562.0,
+    "settlementCount": 8,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -430,13 +430,14 @@
     "sebiRegistrationNumber": "INH000023472",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 13696.0,
-    "totalPayoutVolume": 27392.0,
-    "settlementCount": 2,
+    "totalPayoutVolume": 32273.0,
+    "settlementCount": 3,
     "datesSeen": [
-      "2026-08-27"
+      "2026-08-27",
+      "2026-08-28"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-08-27"
+    "lastSeen": "2026-08-28"
   },
   "67f8e11b996d5b0013b31dc8": {
     "creatorId": "67f8e11b996d5b0013b31dc8",
@@ -609,8 +610,8 @@
     "sebiRegistrationNumber": "INH000027098",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 19126.0,
-    "totalPayoutVolume": 108074.0,
-    "settlementCount": 7,
+    "totalPayoutVolume": 112683.0,
+    "settlementCount": 8,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -686,8 +687,8 @@
     "sebiRegistrationNumber": "INH000016445",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 7464.0,
-    "totalPayoutVolume": 45242.0,
-    "settlementCount": 7,
+    "totalPayoutVolume": 47026.0,
+    "settlementCount": 8,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -813,9 +814,9 @@
     "sebiVerificationStatus": "Verified",
     "sebiRegistrationNumber": "INH000016481",
     "reviewStatus": "Normal",
-    "highestPayoutAmount": 1917.0,
-    "totalPayoutVolume": 13419.0,
-    "settlementCount": 7,
+    "highestPayoutAmount": 7477.0,
+    "totalPayoutVolume": 20896.0,
+    "settlementCount": 8,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -839,9 +840,9 @@
     "sebiVerificationStatus": "Verified",
     "sebiRegistrationNumber": "INH000017125",
     "reviewStatus": "Normal",
-    "highestPayoutAmount": 2885.0,
-    "totalPayoutVolume": 14425.0,
-    "settlementCount": 5,
+    "highestPayoutAmount": 25641.0,
+    "totalPayoutVolume": 40066.0,
+    "settlementCount": 6,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -892,8 +893,8 @@
     "sebiRegistrationNumber": "INH000010690",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 84208.0,
-    "totalPayoutVolume": 421040.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 456883.0,
+    "settlementCount": 6,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -970,8 +971,8 @@
     "sebiRegistrationNumber": "INH000016995",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 13943.0,
-    "totalPayoutVolume": 69715.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 81008.0,
+    "settlementCount": 6,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -996,8 +997,8 @@
     "sebiRegistrationNumber": "INH000022835",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 9586.0,
-    "totalPayoutVolume": 47930.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 51765.0,
+    "settlementCount": 6,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -1125,9 +1126,9 @@
     "sebiVerificationStatus": "Verified",
     "sebiRegistrationNumber": "INH000017286",
     "reviewStatus": "Normal",
-    "highestPayoutAmount": 3403.0,
-    "totalPayoutVolume": 17015.0,
-    "settlementCount": 5,
+    "highestPayoutAmount": 3478.0,
+    "totalPayoutVolume": 20493.0,
+    "settlementCount": 6,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -1229,9 +1230,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 15271.0,
-    "totalPayoutVolume": 61084.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 23618.0,
+    "totalPayoutVolume": 84702.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -1333,9 +1334,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 7602.0,
-    "totalPayoutVolume": 30408.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 10316.0,
+    "totalPayoutVolume": 40724.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -1360,8 +1361,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 5597.0,
-    "totalPayoutVolume": 22388.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 26103.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -1412,8 +1413,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 90566.0,
-    "totalPayoutVolume": 362264.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 408887.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -1464,8 +1465,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 70990.0,
-    "totalPayoutVolume": 283960.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 296078.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -1672,8 +1673,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 48086.0,
-    "totalPayoutVolume": 192344.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 218548.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -1724,8 +1725,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 46976.0,
-    "totalPayoutVolume": 187904.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 234880.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -1775,9 +1776,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 43936.0,
-    "totalPayoutVolume": 175744.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 141311.0,
+    "totalPayoutVolume": 317055.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -1880,8 +1881,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 38584.0,
-    "totalPayoutVolume": 154336.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 190509.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -1932,8 +1933,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 36823.0,
-    "totalPayoutVolume": 147292.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 157537.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -1984,8 +1985,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 33063.0,
-    "totalPayoutVolume": 132252.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 140477.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -2010,8 +2011,8 @@
     "sebiRegistrationNumber": "INH000018869",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 32165.0,
-    "totalPayoutVolume": 128660.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 147048.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -2036,8 +2037,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 31903.0,
-    "totalPayoutVolume": 127612.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 143562.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -2270,8 +2271,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 26404.0,
-    "totalPayoutVolume": 105616.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 125411.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -2321,9 +2322,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 26080.0,
-    "totalPayoutVolume": 104320.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 51702.0,
+    "totalPayoutVolume": 156022.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -2347,9 +2348,9 @@
     "sebiVerificationStatus": "Verified",
     "sebiRegistrationNumber": "INH000019053",
     "reviewStatus": "Normal",
-    "highestPayoutAmount": 25635.0,
-    "totalPayoutVolume": 102540.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 393135.0,
+    "totalPayoutVolume": 495675.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -2400,8 +2401,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 25120.0,
-    "totalPayoutVolume": 100480.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 107506.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -2452,8 +2453,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 23048.0,
-    "totalPayoutVolume": 92192.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 95485.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -2478,8 +2479,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 22390.0,
-    "totalPayoutVolume": 89560.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 100068.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -2503,9 +2504,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 21925.0,
-    "totalPayoutVolume": 87700.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 28487.0,
+    "totalPayoutVolume": 116187.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -2582,8 +2583,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 19528.0,
-    "totalPayoutVolume": 78112.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 97640.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -2633,9 +2634,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 18751.0,
-    "totalPayoutVolume": 75004.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 19232.0,
+    "totalPayoutVolume": 94236.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -2738,8 +2739,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 17304.0,
-    "totalPayoutVolume": 69216.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 74521.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -2764,8 +2765,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 16409.0,
-    "totalPayoutVolume": 65636.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 73845.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -2790,8 +2791,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 16281.0,
-    "totalPayoutVolume": 65124.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 70388.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -2816,8 +2817,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 16107.0,
-    "totalPayoutVolume": 64428.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 69308.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -2868,8 +2869,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 15666.0,
-    "totalPayoutVolume": 62664.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 69538.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -2894,8 +2895,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 15525.0,
-    "totalPayoutVolume": 62100.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 65393.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -2946,8 +2947,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 14985.0,
-    "totalPayoutVolume": 59940.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 64833.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -2998,8 +2999,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 14553.0,
-    "totalPayoutVolume": 58212.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 67433.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -3102,8 +3103,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 14018.0,
-    "totalPayoutVolume": 56072.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 60586.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -3179,9 +3180,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 13496.0,
-    "totalPayoutVolume": 53984.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 19075.0,
+    "totalPayoutVolume": 73059.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -3232,8 +3233,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 13185.0,
-    "totalPayoutVolume": 52740.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 64311.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -3465,9 +3466,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 11650.0,
-    "totalPayoutVolume": 46600.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 14387.0,
+    "totalPayoutVolume": 60987.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -3517,9 +3518,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 11479.0,
-    "totalPayoutVolume": 45916.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 14604.0,
+    "totalPayoutVolume": 60520.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -3543,9 +3544,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 11179.0,
-    "totalPayoutVolume": 44716.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 21292.0,
+    "totalPayoutVolume": 66008.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -3570,8 +3571,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 10644.0,
-    "totalPayoutVolume": 42576.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 48371.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -3700,8 +3701,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 10066.0,
-    "totalPayoutVolume": 40264.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 43086.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -3778,8 +3779,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 9898.0,
-    "totalPayoutVolume": 39592.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 45350.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -3856,8 +3857,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 9680.0,
-    "totalPayoutVolume": 38720.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 48400.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -3959,9 +3960,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 9410.0,
-    "totalPayoutVolume": 37640.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 11763.0,
+    "totalPayoutVolume": 49403.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -4038,8 +4039,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 8847.0,
-    "totalPayoutVolume": 35388.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 39436.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -4116,8 +4117,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 8746.0,
-    "totalPayoutVolume": 34984.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 41828.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -4142,8 +4143,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 8679.0,
-    "totalPayoutVolume": 34716.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 37609.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -4272,8 +4273,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 8254.0,
-    "totalPayoutVolume": 33016.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 35412.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -4298,8 +4299,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 8230.0,
-    "totalPayoutVolume": 32920.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 35831.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -4350,8 +4351,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 8111.0,
-    "totalPayoutVolume": 32444.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 37586.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -4401,9 +4402,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 7808.0,
-    "totalPayoutVolume": 31232.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 27294.0,
+    "totalPayoutVolume": 58526.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -4428,8 +4429,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 7772.0,
-    "totalPayoutVolume": 31088.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 36748.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -4583,9 +4584,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 7258.0,
-    "totalPayoutVolume": 29032.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 12786.0,
+    "totalPayoutVolume": 41818.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -4661,9 +4662,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 6903.0,
-    "totalPayoutVolume": 27612.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 10620.0,
+    "totalPayoutVolume": 38232.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -4687,9 +4688,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 6859.0,
-    "totalPayoutVolume": 27436.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 6986.0,
+    "totalPayoutVolume": 34422.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -4765,9 +4766,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 6727.0,
-    "totalPayoutVolume": 26908.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 6891.0,
+    "totalPayoutVolume": 33799.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -4921,9 +4922,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 6532.0,
-    "totalPayoutVolume": 26128.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 7197.0,
+    "totalPayoutVolume": 33325.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -5026,8 +5027,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 6308.0,
-    "totalPayoutVolume": 25232.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 30527.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -5078,8 +5079,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 6169.0,
-    "totalPayoutVolume": 24676.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 29397.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -5182,8 +5183,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 5927.0,
-    "totalPayoutVolume": 23708.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 28648.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -5208,8 +5209,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 5891.0,
-    "totalPayoutVolume": 23564.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 28406.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -5233,9 +5234,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 5883.0,
-    "totalPayoutVolume": 23532.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 41270.0,
+    "totalPayoutVolume": 64802.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -5259,9 +5260,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 5858.0,
-    "totalPayoutVolume": 23432.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 14153.0,
+    "totalPayoutVolume": 37585.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -5337,9 +5338,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 5751.0,
-    "totalPayoutVolume": 23004.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 9203.0,
+    "totalPayoutVolume": 32207.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -5520,8 +5521,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 5174.0,
-    "totalPayoutVolume": 20696.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 23894.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -5884,8 +5885,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 4373.0,
-    "totalPayoutVolume": 17492.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 20613.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -5987,9 +5988,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 4227.0,
-    "totalPayoutVolume": 16908.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 5636.0,
+    "totalPayoutVolume": 22544.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -6065,9 +6066,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 3918.0,
-    "totalPayoutVolume": 15672.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 39193.0,
+    "totalPayoutVolume": 54865.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -6091,9 +6092,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 3904.0,
-    "totalPayoutVolume": 15616.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 9860.0,
+    "totalPayoutVolume": 25476.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -6195,9 +6196,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 3868.0,
-    "totalPayoutVolume": 15472.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 3927.0,
+    "totalPayoutVolume": 19399.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -6221,9 +6222,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 3857.0,
-    "totalPayoutVolume": 15428.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 5680.0,
+    "totalPayoutVolume": 21108.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -6429,9 +6430,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 3423.0,
-    "totalPayoutVolume": 13692.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 6357.0,
+    "totalPayoutVolume": 20049.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -6586,8 +6587,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 3321.0,
-    "totalPayoutVolume": 13284.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 16603.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -6664,8 +6665,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 3154.0,
-    "totalPayoutVolume": 12616.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 15399.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -6715,9 +6716,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 3104.0,
-    "totalPayoutVolume": 12416.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 3198.0,
+    "totalPayoutVolume": 15614.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -6793,9 +6794,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 2964.0,
-    "totalPayoutVolume": 11856.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 8399.0,
+    "totalPayoutVolume": 20255.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -6819,9 +6820,9 @@
     "sebiVerificationStatus": "Verified",
     "sebiRegistrationNumber": "INH000019017",
     "reviewStatus": "Normal",
-    "highestPayoutAmount": 2946.0,
-    "totalPayoutVolume": 11784.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 9403.0,
+    "totalPayoutVolume": 21187.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -6871,9 +6872,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 2928.0,
-    "totalPayoutVolume": 11712.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 13666.0,
+    "totalPayoutVolume": 25378.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -6924,8 +6925,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 2911.0,
-    "totalPayoutVolume": 11644.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 14555.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -7028,8 +7029,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 2857.0,
-    "totalPayoutVolume": 11428.0,
-    "settlementCount": 4,
+    "totalPayoutVolume": 13809.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -7235,9 +7236,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 2817.0,
-    "totalPayoutVolume": 11268.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 3101.0,
+    "totalPayoutVolume": 14369.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -7391,9 +7392,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 2602.0,
-    "totalPayoutVolume": 10408.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 10127.0,
+    "totalPayoutVolume": 20535.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -7495,9 +7496,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 2440.0,
-    "totalPayoutVolume": 9760.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 12156.0,
+    "totalPayoutVolume": 21916.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -7625,9 +7626,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 2305.0,
-    "totalPayoutVolume": 9220.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 8643.0,
+    "totalPayoutVolume": 17863.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -7989,9 +7990,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 1962.0,
-    "totalPayoutVolume": 7848.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 6568.0,
+    "totalPayoutVolume": 14416.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -8171,9 +8172,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 1916.0,
-    "totalPayoutVolume": 7664.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 4305.0,
+    "totalPayoutVolume": 11969.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -8327,9 +8328,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 1749.0,
-    "totalPayoutVolume": 6996.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 2427.0,
+    "totalPayoutVolume": 9423.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -8587,9 +8588,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 1462.0,
-    "totalPayoutVolume": 5848.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 3331.0,
+    "totalPayoutVolume": 9179.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -8769,9 +8770,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 1329.0,
-    "totalPayoutVolume": 5316.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 2666.0,
+    "totalPayoutVolume": 7982.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -8821,9 +8822,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 1304.0,
-    "totalPayoutVolume": 5216.0,
-    "settlementCount": 4,
+    "highestPayoutAmount": 4963.0,
+    "totalPayoutVolume": 10179.0,
+    "settlementCount": 5,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28"
@@ -9063,6 +9064,1506 @@
       "2026-08-28"
     ],
     "firstSeen": "2026-08-27",
+    "lastSeen": "2026-08-28"
+  },
+  "6a2a3b18739da100136db6f1": {
+    "creatorId": "6a2a3b18739da100136db6f1",
+    "creatorName": "mr-perfectofficial",
+    "username": "mr-perfectofficial",
+    "email": "mr.perfect.official018@gmail.com",
+    "phone": "9116087897",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "6a3a9b9ec4f6700013489927",
+    "telegramProductName": "ECONOMIC SURVEY+CURRENT AFFAIRS+INDIAN POLITY COMB",
+    "telegramProductLink": "https://superprofile.bio/vig/6a3a9b9ec4f6700013489927",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 1220.0,
+    "totalPayoutVolume": 1220.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "679cc008836dec0013a115a1": {
+    "creatorId": "679cc008836dec0013a115a1",
+    "creatorName": "udaymandal",
+    "username": "udaymandal",
+    "email": "hello.udaymandal@gmail.com",
+    "phone": "8930251352",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "679dfd77c7375300134bb498",
+    "telegramProductName": "UM Private Community",
+    "telegramProductLink": "https://superprofile.bio/vig/679dfd77c7375300134bb498",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 16245.0,
+    "totalPayoutVolume": 16245.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "634d5391849d61541ff6cd18": {
+    "creatorId": "634d5391849d61541ff6cd18",
+    "creatorName": "anandsahani",
+    "username": "anandsahani",
+    "email": "Skillguruji108@gmail.com",
+    "phone": "9934231158",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "634d8d999e6817546ee93344",
+    "telegramProductName": "SKILL GURUJI PRIME",
+    "telegramProductLink": "https://superprofile.bio/vig/634d8d999e6817546ee93344",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 4704.0,
+    "totalPayoutVolume": 4704.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "649330ea3b6d6900200fdb05": {
+    "creatorId": "649330ea3b6d6900200fdb05",
+    "creatorName": "fando",
+    "username": "fando",
+    "email": "shashihk0@gmail.com",
+    "phone": "9343949080",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "6a75c265ec92e40013e9f82e",
+    "telegramProductName": "BULL RUN INDEX PREMIUM",
+    "telegramProductLink": "https://superprofile.bio/vig/6a75c265ec92e40013e9f82e",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 16043.0,
+    "totalPayoutVolume": 16043.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "673b7c6178dc700013ad956d": {
+    "creatorId": "673b7c6178dc700013ad956d",
+    "creatorName": "rishabhdwivedi1",
+    "username": "rishabhdwivedi1",
+    "email": "lramannnnn@gmail.com",
+    "phone": "7340010950",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "6a7c4b067629420013552b20",
+    "telegramProductName": "Rishabh Concepts",
+    "telegramProductLink": "https://superprofile.bio/vig/6a7c4b067629420013552b20",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 8830.0,
+    "totalPayoutVolume": 8830.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "6682543e9f94b50014bd0d5f": {
+    "creatorId": "6682543e9f94b50014bd0d5f",
+    "creatorName": "charthubbb",
+    "username": "charthubbb",
+    "email": "pardeep5889@gmail.com",
+    "phone": "9468027406",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "6780c8071dd04400134cfa0b",
+    "telegramProductName": "Charthubbb Premium Club",
+    "telegramProductLink": "https://superprofile.bio/vig/6780c8071dd04400134cfa0b",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 8151.0,
+    "totalPayoutVolume": 8151.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "65925b23d9349b001e49b619": {
+    "creatorId": "65925b23d9349b001e49b619",
+    "creatorName": "swingtradingwithdeepp",
+    "username": "swingtradingwithdeepp",
+    "email": "Swingtradingwithdeep@gmail.com",
+    "phone": "7009569324",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "675d51d2abe64100134afc35",
+    "telegramProductName": "Stwd index+ Gold premuim group",
+    "telegramProductLink": "https://superprofile.bio/vig/675d51d2abe64100134afc35",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 43416.0,
+    "totalPayoutVolume": 43416.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "6384e99de7291200319784c0": {
+    "creatorId": "6384e99de7291200319784c0",
+    "creatorName": "traderlakshya1",
+    "username": "traderlakshya1",
+    "email": "bhedjeetsinghparihar@gmail.com",
+    "phone": "9412025083",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "68f36b1663e0410013ae9462",
+    "telegramProductName": "COPY MY TRADE ",
+    "telegramProductLink": "https://superprofile.bio/vig/68f36b1663e0410013ae9462",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 19716.0,
+    "totalPayoutVolume": 19716.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "678b9e61d92774001390674d": {
+    "creatorId": "678b9e61d92774001390674d",
+    "creatorName": "hirengabani23",
+    "username": "hirengabani23",
+    "email": "hirengabani23@gmail.com",
+    "phone": "9723128114",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "680b5a939478460013e2e2cf",
+    "telegramProductName": "Market Mastery with Hiren",
+    "telegramProductLink": "https://superprofile.bio/vig/680b5a939478460013e2e2cf",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 19651.0,
+    "totalPayoutVolume": 19651.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "65364004f28141001e752bd2": {
+    "creatorId": "65364004f28141001e752bd2",
+    "creatorName": "worldmosttraderr",
+    "username": "worldmosttraderr",
+    "email": "kpuniya45@gmail.com",
+    "phone": "9672816127",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "65841be07dbe32001e1e57ab",
+    "telegramProductName": "Premium Chanel",
+    "telegramProductLink": "https://superprofile.bio/vig/65841be07dbe32001e1e57ab",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 18146.0,
+    "totalPayoutVolume": 18146.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "6a6843cc298f960014a01d85": {
+    "creatorId": "6a6843cc298f960014a01d85",
+    "creatorName": "thetradeverse",
+    "username": "thetradeverse",
+    "email": "vramrakhiyani0@gmail.com",
+    "phone": "9574183683",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "6a0ece7c70f15e001301ec28",
+    "telegramProductName": "The Options Syndicate\u26a1\ufe0f",
+    "telegramProductLink": "https://superprofile.bio/vig/6a0ece7c70f15e001301ec28",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 17393.0,
+    "totalPayoutVolume": 17393.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "65ebfc1dfb9df60013976ba6": {
+    "creatorId": "65ebfc1dfb9df60013976ba6",
+    "creatorName": "calls",
+    "username": "calls",
+    "email": "Ptsprabhat653@gmail.com",
+    "phone": "9509099788",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "65ebffc7fb9df6001397b18c",
+    "telegramProductName": "Paid join",
+    "telegramProductLink": "https://superprofile.bio/vig/65ebffc7fb9df6001397b18c",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 16598.0,
+    "totalPayoutVolume": 16598.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "63c7cee4ed193700365233cd": {
+    "creatorId": "63c7cee4ed193700365233cd",
+    "creatorName": "tradingstarofficial",
+    "username": "tradingstarofficial",
+    "email": "helptradingstar@gmail.com",
+    "phone": "9288070016",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "6a01481246724b0013a2614c",
+    "telegramProductName": "TRADING STAR PREMIUM ",
+    "telegramProductLink": "https://superprofile.bio/vig/6a01481246724b0013a2614c",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 16531.0,
+    "totalPayoutVolume": 16531.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "65aa7654460ef2001d58c405": {
+    "creatorId": "65aa7654460ef2001d58c405",
+    "creatorName": "tot2x",
+    "username": "tot2x",
+    "email": "VICKIEBHALLA@GMAIL.COM",
+    "phone": "9888055030",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "69c915b340b24f001338c959",
+    "telegramProductName": "ToT Learnings Batch",
+    "telegramProductLink": "https://superprofile.bio/vig/69c915b340b24f001338c959",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 14667.0,
+    "totalPayoutVolume": 14667.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "667c078d8a21550013342f58": {
+    "creatorId": "667c078d8a21550013342f58",
+    "creatorName": "Piyush5796",
+    "username": "Piyush5796",
+    "email": "piyushkumarpmiisc2022@gmail.com",
+    "phone": "6202485259",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "684d5a341e8e5a0013e23f5e",
+    "telegramProductName": "Trading Room \ud83d\udea8",
+    "telegramProductLink": "https://superprofile.bio/vig/684d5a341e8e5a0013e23f5e",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 14114.0,
+    "totalPayoutVolume": 14114.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "698eecd3c90038001350b506": {
+    "creatorId": "698eecd3c90038001350b506",
+    "creatorName": "sn9",
+    "username": "sn9",
+    "email": "mindset250782@gmail.com",
+    "phone": "8997575740",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "688074fb6aec320013f76ff8",
+    "telegramProductName": "Stock Niti",
+    "telegramProductLink": "https://superprofile.bio/vig/688074fb6aec320013f76ff8",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 12204.0,
+    "totalPayoutVolume": 12204.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "64c187f9fe49f3001ef0c17f": {
+    "creatorId": "64c187f9fe49f3001ef0c17f",
+    "creatorName": "breakoutbharat",
+    "username": "breakoutbharat",
+    "email": "mr.bharat995@gmail.com",
+    "phone": "9518485057",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "68de5633e32be10013d2280f",
+    "telegramProductName": "COMODITY & OPTIONS (BB) ",
+    "telegramProductLink": "https://superprofile.bio/vig/68de5633e32be10013d2280f",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 11698.0,
+    "totalPayoutVolume": 11698.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "68a843962739f900133d79ee": {
+    "creatorId": "68a843962739f900133d79ee",
+    "creatorName": "FINANCIAL8421",
+    "username": "FINANCIAL8421",
+    "email": "sarthisfinancial@gmail.com",
+    "phone": "8910355749",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "68a849e3abd7d30013dab2b6",
+    "telegramProductName": "FINANCIALSARTHIS PREMIUM FNO INDEX AND STOCKS",
+    "telegramProductLink": "https://superprofile.bio/vig/68a849e3abd7d30013dab2b6",
+    "sebiRegisteredYes": "Yes",
+    "sebiRegisteredNo": "\u2014",
+    "sebiVerificationStatus": "Verified",
+    "sebiRegistrationNumber": "INH000017091",
+    "reviewStatus": "Normal",
+    "highestPayoutAmount": 11521.0,
+    "totalPayoutVolume": 11521.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "64cdf10a18e70c001e3b4622": {
+    "creatorId": "64cdf10a18e70c001e3b4622",
+    "creatorName": "market-plus",
+    "username": "market-plus",
+    "email": "sunilgokani2222@gmail.com",
+    "phone": "9724992222",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "6613f4bfd6ac80001afb4241",
+    "telegramProductName": "MARKET PLUS PREMIUM ",
+    "telegramProductLink": "https://superprofile.bio/vig/6613f4bfd6ac80001afb4241",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 11358.0,
+    "totalPayoutVolume": 11358.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "65df0d8863d72a0013f718d1": {
+    "creatorId": "65df0d8863d72a0013f718d1",
+    "creatorName": "thefinberg2427",
+    "username": "thefinberg2427",
+    "email": "madhubansal0987@gmail.com",
+    "phone": "9899561222",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "67334623160fd90013a1a966",
+    "telegramProductName": "Combo Mini",
+    "telegramProductLink": "https://superprofile.bio/vig/67334623160fd90013a1a966",
+    "sebiRegisteredYes": "Yes",
+    "sebiRegisteredNo": "\u2014",
+    "sebiVerificationStatus": "Verified",
+    "sebiRegistrationNumber": "INH000010672",
+    "reviewStatus": "Normal",
+    "highestPayoutAmount": 10573.0,
+    "totalPayoutVolume": 10573.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "670f725bcfaab800136536fc": {
+    "creatorId": "670f725bcfaab800136536fc",
+    "creatorName": "finance-institute",
+    "username": "finance-institute",
+    "email": "kumarichinki01@gmail.com",
+    "phone": "7290924967",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "6679607a36d2ec00135d55a5",
+    "telegramProductName": "Combo ",
+    "telegramProductLink": "https://superprofile.bio/vig/6679607a36d2ec00135d55a5",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 9970.0,
+    "totalPayoutVolume": 9970.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "644f511bb09d34001fdba603": {
+    "creatorId": "644f511bb09d34001fdba603",
+    "creatorName": "manju235",
+    "username": "manju235",
+    "email": "sapnakanwarr2004@gmail.com",
+    "phone": "7877492320",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "6a8a95f4a7524200139aa442",
+    "telegramProductName": "Index options",
+    "telegramProductLink": "https://superprofile.bio/vig/6a8a95f4a7524200139aa442",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 9608.0,
+    "totalPayoutVolume": 11138.0,
+    "settlementCount": 2,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "670df27f742ab00013bb26f3": {
+    "creatorId": "670df27f742ab00013bb26f3",
+    "creatorName": "shubhamtrading",
+    "username": "shubhamtrading",
+    "email": "smartyparas08@gmail.com",
+    "phone": "7999663524",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "67f4e416eac6e20013167ee0",
+    "telegramProductName": "SHUBHAM TRADING",
+    "telegramProductLink": "https://superprofile.bio/vig/67f4e416eac6e20013167ee0",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 9586.0,
+    "totalPayoutVolume": 9586.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "6655e6c31474ac00130b8d2c": {
+    "creatorId": "6655e6c31474ac00130b8d2c",
+    "creatorName": "stocksovet",
+    "username": "stocksovet",
+    "email": "stocksovetresearch@gmail.com",
+    "phone": "9970370070",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "68d62f0b8374370013c9fe9a",
+    "telegramProductName": "Swing Trading Group (STOCKSOVET- SEBI REGISTERED)",
+    "telegramProductLink": "https://superprofile.bio/vig/68d62f0b8374370013c9fe9a",
+    "sebiRegisteredYes": "Yes",
+    "sebiRegisteredNo": "\u2014",
+    "sebiVerificationStatus": "Verified",
+    "sebiRegistrationNumber": "INH000016366",
+    "reviewStatus": "Normal",
+    "highestPayoutAmount": 9213.0,
+    "totalPayoutVolume": 9213.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "66e9d48eaec7200013a6e690": {
+    "creatorId": "66e9d48eaec7200013a6e690",
+    "creatorName": "mystellarinnovarions",
+    "username": "mystellarinnovarions",
+    "email": "myigbitedminds@gmail.com",
+    "phone": "8950417601",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "682c6a116e5203001391eaeb",
+    "telegramProductName": "Brothers for Lifetime ",
+    "telegramProductLink": "https://superprofile.bio/vig/682c6a116e5203001391eaeb",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 8724.0,
+    "totalPayoutVolume": 8724.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "663b5927b1d7040013ca5884": {
+    "creatorId": "663b5927b1d7040013ca5884",
+    "creatorName": "tradingact",
+    "username": "tradingact",
+    "email": "pravardhanmannepalli7@gmail.com",
+    "phone": "8978864153",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "6652ce22c25b40001383b126",
+    "telegramProductName": "PREMIUM TRADINGACT OFFICIAL",
+    "telegramProductLink": "https://superprofile.bio/vig/6652ce22c25b40001383b126",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 7809.0,
+    "totalPayoutVolume": 7809.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "674ae2008b9ead00138c4dba": {
+    "creatorId": "674ae2008b9ead00138c4dba",
+    "creatorName": "smfdata",
+    "username": "smfdata",
+    "email": "vandusinghvijay@gmail.com",
+    "phone": "8299267657",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "696f315e9e1b7300131a3935",
+    "telegramProductName": "SMF DATA",
+    "telegramProductLink": "https://superprofile.bio/vig/696f315e9e1b7300131a3935",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 6752.0,
+    "totalPayoutVolume": 6752.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "66af260f98f2e50013c9b094": {
+    "creatorId": "66af260f98f2e50013c9b094",
+    "creatorName": "premium29",
+    "username": "premium29",
+    "email": "Rahulsaran763@gmail.com",
+    "phone": "9376352234",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "69072bdaae00150013d01079",
+    "telegramProductName": "Premium Group Equity ",
+    "telegramProductLink": "https://superprofile.bio/vig/69072bdaae00150013d01079",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 6704.0,
+    "totalPayoutVolume": 6704.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "6a6607150a242e0013ff0de8": {
+    "creatorId": "6a6607150a242e0013ff0de8",
+    "creatorName": "tradezillaalgo",
+    "username": "tradezillaalgo",
+    "email": "tanu2006.mau@gmail.com",
+    "phone": "8007869451",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "6a804264e3e35d0013bc1b11",
+    "telegramProductName": "Tradezilla profits",
+    "telegramProductLink": "https://superprofile.bio/vig/6a804264e3e35d0013bc1b11",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 6653.0,
+    "totalPayoutVolume": 6653.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "6a706f7f833cbc0013f492ff": {
+    "creatorId": "6a706f7f833cbc0013f492ff",
+    "creatorName": "up14trader",
+    "username": "up14trader",
+    "email": "vishal5882gupta@gmail.com",
+    "phone": "9958827936",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "6a71ae2b9b236b00138135f0",
+    "telegramProductName": "Trade With Me - UP14 Trader\ud83d\ude80\ud83d\udcc8",
+    "telegramProductLink": "https://superprofile.bio/vig/6a71ae2b9b236b00138135f0",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 6402.0,
+    "totalPayoutVolume": 6402.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "64c92e4048523e001e9bcae5": {
+    "creatorId": "64c92e4048523e001e9bcae5",
+    "creatorName": "stock-market-school",
+    "username": "stock-market-school",
+    "email": "girish.hanchate@gmail.com",
+    "phone": "8070432121",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "66bdca369696019439c450c3",
+    "telegramProductName": "SMS Option Premium Channel ",
+    "telegramProductLink": "https://superprofile.bio/vig/66bdca369696019439c450c3",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 6308.0,
+    "totalPayoutVolume": 6308.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "63dca2cc1bea38002cfb3221": {
+    "creatorId": "63dca2cc1bea38002cfb3221",
+    "creatorName": "equityforearning",
+    "username": "equityforearning",
+    "email": "equityforearning@gmail.com",
+    "phone": "7396962062",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "663b5821b5a80a00130d0dd2",
+    "telegramProductName": "EEE Equity Premium",
+    "telegramProductLink": "https://superprofile.bio/vig/663b5821b5a80a00130d0dd2",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 6270.0,
+    "totalPayoutVolume": 6270.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "6524ef62cb7ef5001e914ff4": {
+    "creatorId": "6524ef62cb7ef5001e914ff4",
+    "creatorName": "Ratan2128",
+    "username": "Ratan2128",
+    "email": "ratansiyol002@gmail.com",
+    "phone": "9116635172",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "69e08bf7cf447100130ff711",
+    "telegramProductName": "Equity intraday course\ud83d\udcca",
+    "telegramProductLink": "https://superprofile.bio/vig/69e08bf7cf447100130ff711",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 5642.0,
+    "totalPayoutVolume": 5642.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "691b32dfef1f1c0013cb196d": {
+    "creatorId": "691b32dfef1f1c0013cb196d",
+    "creatorName": "krishnamckenzie",
+    "username": "krishnamckenzie",
+    "email": "emergencemusic@gmail.com",
+    "phone": "8072053484",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "696f773e4386d6001250fdfe",
+    "telegramProductName": "Krishna McKenzie",
+    "telegramProductLink": "https://superprofile.bio/vig/696f773e4386d6001250fdfe",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 5533.0,
+    "totalPayoutVolume": 5533.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "6630cb412297f40013803174": {
+    "creatorId": "6630cb412297f40013803174",
+    "creatorName": "tradeprooo",
+    "username": "tradeprooo",
+    "email": "manikanth.sebi@gmail.com",
+    "phone": "9289178778",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "6630d8ef233325f1b6d018c5",
+    "telegramProductName": "Stock F&O Intraday + 2x Positional Premium",
+    "telegramProductLink": "https://superprofile.bio/vig/6630d8ef233325f1b6d018c5",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 5216.0,
+    "totalPayoutVolume": 5216.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "649eb5a092e0dc00208bdb3f": {
+    "creatorId": "649eb5a092e0dc00208bdb3f",
+    "creatorName": "niftyjackpot12",
+    "username": "niftyjackpot12",
+    "email": "Jeelshishangiya3398@gmail.com",
+    "phone": "8160416549",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "64a0206daad9d300200623cd",
+    "telegramProductName": "NIFTY JACKPOT PREMIUM",
+    "telegramProductLink": "https://superprofile.bio/vig/64a0206daad9d300200623cd",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 5100.0,
+    "totalPayoutVolume": 5100.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "64dddecce570b0001ed6706e": {
+    "creatorId": "64dddecce570b0001ed6706e",
+    "creatorName": "idealtrades",
+    "username": "idealtrades",
+    "email": "sharmaam695@gmail.com",
+    "phone": "7678193867",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "6a06bd87dc27930013a08469",
+    "telegramProductName": "IDEAL INSIGHTS",
+    "telegramProductLink": "https://superprofile.bio/vig/6a06bd87dc27930013a08469",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 5039.0,
+    "totalPayoutVolume": 5039.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "6772979573de230013e8b9dd": {
+    "creatorId": "6772979573de230013e8b9dd",
+    "creatorName": "astrologybyprianca",
+    "username": "astrologybyprianca",
+    "email": "patil.priyanka5@gmail.com",
+    "phone": "7738295851",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "678695943266f80013773e18",
+    "telegramProductName": "Astrology By Prianca",
+    "telegramProductLink": "https://superprofile.bio/vig/678695943266f80013773e18",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 4853.0,
+    "totalPayoutVolume": 4853.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "6445dc7c221d340020b0e828": {
+    "creatorId": "6445dc7c221d340020b0e828",
+    "creatorName": "stoxmeee",
+    "username": "stoxmeee",
+    "email": "ranveersiyol2003@gmail.com",
+    "phone": "8529196323",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "65ab922eb2fcd0001e3c14f9",
+    "telegramProductName": "Equity premium ",
+    "telegramProductLink": "https://superprofile.bio/vig/65ab922eb2fcd0001e3c14f9",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 4697.0,
+    "totalPayoutVolume": 4697.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "68037dbe74e41e0013a09d90": {
+    "creatorId": "68037dbe74e41e0013a09d90",
+    "creatorName": "niftywaka",
+    "username": "niftywaka",
+    "email": "navinravalsocial@gmail.com",
+    "phone": "8758021326",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "6a2ff8193d7d2c001326919c",
+    "telegramProductName": "MCX ( Crude & Natural Gas )",
+    "telegramProductLink": "https://superprofile.bio/vig/6a2ff8193d7d2c001326919c",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 4465.0,
+    "totalPayoutVolume": 4465.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "637a8fbf0a58eb0038127fba": {
+    "creatorId": "637a8fbf0a58eb0038127fba",
+    "creatorName": "getzepixai",
+    "username": "getzepixai",
+    "email": "zepix.falco@gmail.com",
+    "phone": "7878747212",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "6a7164db99878a0013e870fa",
+    "telegramProductName": "ZepixAi - One App with All AI",
+    "telegramProductLink": "https://superprofile.bio/vig/6a7164db99878a0013e870fa",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 4294.0,
+    "totalPayoutVolume": 4294.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "66f153fcbce5f30013159b4a": {
+    "creatorId": "66f153fcbce5f30013159b4a",
+    "creatorName": "investway",
+    "username": "investway",
+    "email": "harickstewart@gmail.com",
+    "phone": "9724245588",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "66f299f3ae4f5d00133fe9fc",
+    "telegramProductName": "INVESTMENT COMBO OFFER ",
+    "telegramProductLink": "https://superprofile.bio/vig/66f299f3ae4f5d00133fe9fc",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 3938.0,
+    "totalPayoutVolume": 3938.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "68dccb22e1910c00138b515f": {
+    "creatorId": "68dccb22e1910c00138b515f",
+    "creatorName": "badshaitrading",
+    "username": "badshaitrading",
+    "email": "badshaitrading@gmail.com",
+    "phone": "7076697666",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "68e12bede32be1001304d591",
+    "telegramProductName": "Badshai Trading -Crypto Mastermind: Follow My Trade",
+    "telegramProductLink": "https://superprofile.bio/vig/68e12bede32be1001304d591",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 3919.0,
+    "totalPayoutVolume": 3919.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "645b82c0d3d3c4002092b8d6": {
+    "creatorId": "645b82c0d3d3c4002092b8d6",
+    "creatorName": "niftybanknifty777",
+    "username": "niftybanknifty777",
+    "email": "devanshsharma999@gmail.com",
+    "phone": "7302521682",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "660e5fc79e824b0013c602ce",
+    "telegramProductName": "Om Trading (Paid Group)",
+    "telegramProductLink": "https://superprofile.bio/vig/660e5fc79e824b0013c602ce",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 3763.0,
+    "totalPayoutVolume": 3763.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "67113f1b17d5ab001325c3a7": {
+    "creatorId": "67113f1b17d5ab001325c3a7",
+    "creatorName": "anshika7566",
+    "username": "anshika7566",
+    "email": "suhani93991@gmail.com",
+    "phone": "9399158129",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "676154f99babf600134329a6",
+    "telegramProductName": "The Circle",
+    "telegramProductLink": "https://superprofile.bio/vig/676154f99babf600134329a6",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 3355.0,
+    "totalPayoutVolume": 3355.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "6a687488e5e89c0013c3ed1c": {
+    "creatorId": "6a687488e5e89c0013c3ed1c",
+    "creatorName": "star2693",
+    "username": "star2693",
+    "email": "dipalipatil601160@gmail.com",
+    "phone": "7567635030",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "6a688775e5b2de0013b53621",
+    "telegramProductName": "STAR STOCK",
+    "telegramProductLink": "https://superprofile.bio/vig/6a688775e5b2de0013b53621",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 3334.0,
+    "totalPayoutVolume": 3334.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "64759be6ab41f2001fa930a9": {
+    "creatorId": "64759be6ab41f2001fa930a9",
+    "creatorName": "msingh17",
+    "username": "msingh17",
+    "email": "nishu_kool17@yahoo.com",
+    "phone": "7493064834",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "64759f2e526648002079e864",
+    "telegramProductName": "TTD Index Option ",
+    "telegramProductLink": "https://superprofile.bio/vig/64759f2e526648002079e864",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 2946.0,
+    "totalPayoutVolume": 2946.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "6475a5ff52664800207a111f": {
+    "creatorId": "6475a5ff52664800207a111f",
+    "creatorName": "rjconsultancy",
+    "username": "rjconsultancy",
+    "email": "rampanchal860@gmail.com",
+    "phone": "9106616604",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "6475a666f68c8e0020343324",
+    "telegramProductName": "OPTION PREMIUM ",
+    "telegramProductLink": "https://superprofile.bio/vig/6475a666f68c8e0020343324",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 2946.0,
+    "totalPayoutVolume": 2946.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "674eeb8653258d0013c9a903": {
+    "creatorId": "674eeb8653258d0013c9a903",
+    "creatorName": "cryptobytradingideas",
+    "username": "cryptobytradingideas",
+    "email": "topgayush743@gmail.com",
+    "phone": "8853330426",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "6799c4259c78290013a9881d",
+    "telegramProductName": "Premium Crypto analysis group ",
+    "telegramProductLink": "https://superprofile.bio/vig/6799c4259c78290013a9881d",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 2945.0,
+    "totalPayoutVolume": 2945.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "6a1fc44c997af10013463341": {
+    "creatorId": "6a1fc44c997af10013463341",
+    "creatorName": "httpstmeequitytigerbh",
+    "username": "httpstmeequitytigerbh",
+    "email": "equitytigerbh@gmail.com",
+    "phone": "9225536379",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "6a267c24adb94f00130df22e",
+    "telegramProductName": "Equity Tiger - Chart Study Group",
+    "telegramProductLink": "https://superprofile.bio/vig/6a267c24adb94f00130df22e",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 2942.0,
+    "totalPayoutVolume": 2942.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "647d9398dd6b3d0020306128": {
+    "creatorId": "647d9398dd6b3d0020306128",
+    "creatorName": "kpinvestment",
+    "username": "kpinvestment",
+    "email": "help.kpinvestment@gmail.com",
+    "phone": "8160490424",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "64d6fa8fedf0ae001ee54c49",
+    "telegramProductName": "Option Learning - KPI",
+    "telegramProductLink": "https://superprofile.bio/vig/64d6fa8fedf0ae001ee54c49",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 2823.0,
+    "totalPayoutVolume": 2823.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "63d1296900efcd002c245c4d": {
+    "creatorId": "63d1296900efcd002c245c4d",
+    "creatorName": "uf",
+    "username": "uf",
+    "email": "quicktrendindicator@gmail.com",
+    "phone": "9741745344",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "6a1d0d0d66efb200138751ac",
+    "telegramProductName": "TradePractice_TradeLevel_Pro_Subscription",
+    "telegramProductLink": "https://superprofile.bio/vig/6a1d0d0d66efb200138751ac",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 2796.0,
+    "totalPayoutVolume": 2796.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "67a99498687e990013b10bd2": {
+    "creatorId": "67a99498687e990013b10bd2",
+    "creatorName": "aman1006",
+    "username": "aman1006",
+    "email": "amanvishnoi1006@gmail.com",
+    "phone": "8115321006",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "6a7fefb23b396a001310a990",
+    "telegramProductName": "prakash trading 50 % discount",
+    "telegramProductLink": "https://superprofile.bio/vig/6a7fefb23b396a001310a990",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 2767.0,
+    "totalPayoutVolume": 2767.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "6772d84a573cf00013c60e1b": {
+    "creatorId": "6772d84a573cf00013c60e1b",
+    "creatorName": "elliottmasti",
+    "username": "elliottmasti",
+    "email": "vijayvsawant1997@gmail.com",
+    "phone": "9766884324",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "68e1df61b49f660013fd34ab",
+    "telegramProductName": "Elliott Wave Analysis",
+    "telegramProductLink": "https://superprofile.bio/vig/68e1df61b49f660013fd34ab",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 2700.0,
+    "totalPayoutVolume": 2700.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "68c10b0bfe96b400137da7ed": {
+    "creatorId": "68c10b0bfe96b400137da7ed",
+    "creatorName": "tradewitharvind",
+    "username": "tradewitharvind",
+    "email": "dharmpalverma612@gmail.com",
+    "phone": "6375584399",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "68c11258fe96b400137e95cd",
+    "telegramProductName": "\ud835\udde3\ud835\uddff\ud835\uddf2\ud835\uddfa\ud835\uddf6\ud835\ude02\ud835\uddfa \ud835\uddd5\ud835\ude02\ud835\ude06\ud835\uddf2\ud835\uddff\ud835\ude00",
+    "telegramProductLink": "https://superprofile.bio/vig/68c11258fe96b400137e95cd",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 2699.0,
+    "totalPayoutVolume": 2699.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "65fd7074e04d92001271989a": {
+    "creatorId": "65fd7074e04d92001271989a",
+    "creatorName": "indexhub",
+    "username": "indexhub",
+    "email": "kajalbasodha1998@gmail.com",
+    "phone": "9913545157",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "647830094112cd001f144fd5",
+    "telegramProductName": "Paid Platinum\ud83d\udc8e",
+    "telegramProductLink": "https://superprofile.bio/vig/647830094112cd001f144fd5",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 2635.0,
+    "totalPayoutVolume": 2635.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "6386bcb126d3b5003c5dc980": {
+    "creatorId": "6386bcb126d3b5003c5dc980",
+    "creatorName": "bankniftypremiumgroups",
+    "username": "bankniftypremiumgroups",
+    "email": "vt3677264@gmail.com",
+    "phone": "9557597328",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "6a85ca0eac362100135c2de3",
+    "telegramProductName": "BANKNIFTYSURESHOT ",
+    "telegramProductLink": "https://superprofile.bio/vig/6a85ca0eac362100135c2de3",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 2520.0,
+    "totalPayoutVolume": 2520.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "69e5c5c289d40c0013682927": {
+    "creatorId": "69e5c5c289d40c0013682927",
+    "creatorName": "marketqueen",
+    "username": "marketqueen",
+    "email": "marketqueenradhika@gmail.com",
+    "phone": "9867372593",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "69e5dc35dd64680013e201ef",
+    "telegramProductName": "Premium VIP",
+    "telegramProductLink": "https://superprofile.bio/vig/69e5dc35dd64680013e201ef",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 2411.0,
+    "totalPayoutVolume": 2411.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "65aa05f67bb5b6001d8288ed": {
+    "creatorId": "65aa05f67bb5b6001d8288ed",
+    "creatorName": "professor2026",
+    "username": "professor2026",
+    "email": "jannat709676@gmail.com",
+    "phone": "8849699811",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "69ca617e3e3e170013e99a12",
+    "telegramProductName": "BB PREMIUM ",
+    "telegramProductLink": "https://superprofile.bio/vig/69ca617e3e3e170013e99a12",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 1940.0,
+    "totalPayoutVolume": 1940.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
+    "lastSeen": "2026-08-28"
+  },
+  "666e8a3cf52ecb0013f648c2": {
+    "creatorId": "666e8a3cf52ecb0013f648c2",
+    "creatorName": "pravinkhetan",
+    "username": "pravinkhetan",
+    "email": "pravinkhetan@iplaneducation.com",
+    "phone": "9999616222",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "N/A",
+    "telegramProductName": "Telegram Channel / Group",
+    "telegramProductLink": "N/A",
+    "sebiRegisteredYes": "Yes",
+    "sebiRegisteredNo": "\u2014",
+    "sebiVerificationStatus": "Verified",
+    "sebiRegistrationNumber": "INH000019521",
+    "reviewStatus": "Normal",
+    "highestPayoutAmount": 1057.0,
+    "totalPayoutVolume": 1057.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-08-28"
+    ],
+    "firstSeen": "2026-08-28",
     "lastSeen": "2026-08-28"
   }
 }
