@@ -1,6 +1,8 @@
 name: Cosmofeed Daily Payout Audit
 
 on:
+  push:
+    branches: [ main ]
   schedule:
     # Runs daily at 09:00 AM IST (03:30 AM UTC), 1 hour before 10:00 AM deadline
     - cron: '30 3 * * *'
