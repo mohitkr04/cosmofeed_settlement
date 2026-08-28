@@ -118,7 +118,8 @@ The interactive compliance dashboard can be accessed in multiple hosting environ
 
 | Mode / Host | Access URL | Features | Status |
 | :--- | :--- | :--- | :---: |
-| 🚀 **Live Public HTTPS** | **[https://aids-indicator-musical-responsibilities.trycloudflare.com](https://aids-indicator-musical-responsibilities.trycloudflare.com)** | Secured public Cloudflare tunnel. Accessible on any browser or mobile device worldwide. Full backend downloads active. | 🟢 **ACTIVE & LIVE** |
+| 🚀 **Live Public HTTPS Tunnel** | **[https://limitations-quoted-index-nyc.trycloudflare.com](https://limitations-quoted-index-nyc.trycloudflare.com)** | Secured public Cloudflare tunnel. Accessible on any browser or mobile device worldwide. Full backend downloads active. | 🟢 **ACTIVE & LIVE** |
+| 🌐 **24/7 Cloud Hosted (GitHub Pages)** | **[https://mohitkr04.github.io/cosmofeed_settlement/](https://mohitkr04.github.io/cosmofeed_settlement/)** | Permanent 24/7 global CDN hosted dashboard. Always up even when local laptop is offline. | 🟢 **ACTIVE & LIVE** |
 | 💻 **Local Server** | **[http://localhost:8000/](http://localhost:8000/)** | Fast local HTTP server on `server.py`. | 🟢 **ACTIVE & LIVE** |
 | 🐙 **GitHub Repository** | **[https://github.com/mohitkr04/cosmofeed_settlement](https://github.com/mohitkr04/cosmofeed_settlement)** | Code repository with automated CI/CD workflows and version history. | 🟢 **PUSHED & SYNCED** |
 
