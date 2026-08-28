@@ -22,6 +22,5 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Large raw intermediary dumps (ignore raw temp jsons, but track master data & reports)
-reports/audit_*.json
+# Large raw intermediary dumps
 reports/creator_products_cache.json

@@ -52,6 +52,22 @@ def parse_txn_date(d_str):
 def main():
     audit_files = [os.path.join(REPORTS_DIR, f) for f in os.listdir(REPORTS_DIR) if f.startswith("audit_") and f.endswith(".json")]
     if not audit_files:
+        fallback_data = os.path.join(REPORTS_DIR, "data.json")
+        if os.path.exists(fallback_data):
+            print(f"No raw audit_*.json found, using existing {fallback_data}")
+            import non_sebi_manager
+            with open(fallback_data, "r", encoding="utf-8") as f:
+                d = json.load(f)
+            creators = d.get("creators", [])
+            non_sebi_manager.record_daily_settlements(creators, audit_date=datetime.date.today().strftime("%Y-%m-%d"))
+            non_sebi_manager.export_cumulative_excel()
+            non_sebi_manager.export_cumulative_csv()
+            non_sebi_manager.generate_manager_html_report()
+            try:
+                non_sebi_manager.generate_manager_pdf_report()
+            except Exception:
+                pass
+            return
         print(f"Error: No audit_*.json files found in {REPORTS_DIR}!")
         return
 
