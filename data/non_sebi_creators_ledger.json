@@ -4,11 +4,12 @@
     "auditPeriodStart": "2026-08-27",
     "auditPeriodEnd": "2026-09-05",
     "targetSubmissionDate": "2026-09-05",
-    "lastUpdated": "2026-08-28 15:36:50",
-    "totalAuditRuns": 2,
+    "lastUpdated": "2026-08-29 10:21:56",
+    "totalAuditRuns": 3,
     "auditDates": [
       "2026-08-27",
-      "2026-08-28"
+      "2026-08-28",
+      "2026-08-29"
     ]
   },
   "creators": {
@@ -112,14 +113,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 23618.0,
-      "cumulativePayoutVolume": 38889.0,
+      "cumulativePayoutVolume": 62507.0,
       "maxDailyPayout": 23618.0,
       "settlementHistory": [
         {
@@ -130,6 +132,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 23618.0,
+          "telegramProductId": "6a59b780bf6f01001379f602",
+          "telegramProductLink": "https://superprofile.bio/vig/6a59b780bf6f01001379f602"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 23618.0,
           "telegramProductId": "6a59b780bf6f01001379f602",
           "telegramProductLink": "https://superprofile.bio/vig/6a59b780bf6f01001379f602"
@@ -277,14 +285,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 10316.0,
-      "cumulativePayoutVolume": 17918.0,
+      "cumulativePayoutVolume": 28234.0,
       "maxDailyPayout": 10316.0,
       "settlementHistory": [
         {
@@ -298,6 +307,12 @@
           "payoutAmount": 10316.0,
           "telegramProductId": "695551a4a87f600013b31540",
           "telegramProductLink": "https://superprofile.bio/vig/695551a4a87f600013b31540"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 10316.0,
+          "telegramProductId": "66a90af68409520013cae4dc",
+          "telegramProductLink": "https://superprofile.bio/vig/66a90af68409520013cae4dc"
         }
       ]
     },
@@ -323,14 +338,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 3715.0,
-      "cumulativePayoutVolume": 9312.0,
+      "cumulativePayoutVolume": 13027.0,
       "maxDailyPayout": 5597.0,
       "settlementHistory": [
         {
@@ -341,6 +357,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 3715.0,
+          "telegramProductId": "69ebc141f28b8500138e14f8",
+          "telegramProductLink": "https://superprofile.bio/vig/69ebc141f28b8500138e14f8"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 3715.0,
           "telegramProductId": "69ebc141f28b8500138e14f8",
           "telegramProductLink": "https://superprofile.bio/vig/69ebc141f28b8500138e14f8"
@@ -397,10 +419,12 @@
       "telegramProductId": "688457b13d0320001343fa29",
       "telegramProductLink": "https://superprofile.bio/vig/688457b13d0320001343fa29",
       "telegramProductIds": [
-        "688457b13d0320001343fa29"
+        "688457b13d0320001343fa29",
+        "6a83f7a23cd47600138d7a5a"
       ],
       "telegramProductLinks": [
-        "https://superprofile.bio/vig/688457b13d0320001343fa29"
+        "https://superprofile.bio/vig/688457b13d0320001343fa29",
+        "https://superprofile.bio/vig/6a83f7a23cd47600138d7a5a"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -408,14 +432,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 46623.0,
-      "cumulativePayoutVolume": 137189.0,
+      "cumulativePayoutVolume": 183812.0,
       "maxDailyPayout": 90566.0,
       "settlementHistory": [
         {
@@ -429,6 +454,12 @@
           "payoutAmount": 46623.0,
           "telegramProductId": "688457b13d0320001343fa29",
           "telegramProductLink": "https://superprofile.bio/vig/688457b13d0320001343fa29"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 46623.0,
+          "telegramProductId": "6a83f7a23cd47600138d7a5a",
+          "telegramProductLink": "https://superprofile.bio/vig/6a83f7a23cd47600138d7a5a"
         }
       ]
     },
@@ -493,14 +524,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 12118.0,
-      "cumulativePayoutVolume": 83108.0,
+      "cumulativePayoutVolume": 95226.0,
       "maxDailyPayout": 70990.0,
       "settlementHistory": [
         {
@@ -511,6 +543,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 12118.0,
+          "telegramProductId": "667b91e4fb75ca0013ebba39",
+          "telegramProductLink": "https://superprofile.bio/vig/667b91e4fb75ca0013ebba39"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 12118.0,
           "telegramProductId": "667b91e4fb75ca0013ebba39",
           "telegramProductLink": "https://superprofile.bio/vig/667b91e4fb75ca0013ebba39"
@@ -812,14 +850,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 26204.0,
-      "cumulativePayoutVolume": 74290.0,
+      "cumulativePayoutVolume": 100494.0,
       "maxDailyPayout": 48086.0,
       "settlementHistory": [
         {
@@ -830,6 +869,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 26204.0,
+          "telegramProductId": "6a652980cc4d980013456e2f",
+          "telegramProductLink": "https://superprofile.bio/vig/6a652980cc4d980013456e2f"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 26204.0,
           "telegramProductId": "6a652980cc4d980013456e2f",
           "telegramProductLink": "https://superprofile.bio/vig/6a652980cc4d980013456e2f"
@@ -897,14 +942,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 46976.0,
-      "cumulativePayoutVolume": 93952.0,
+      "cumulativePayoutVolume": 140928.0,
       "maxDailyPayout": 46976.0,
       "settlementHistory": [
         {
@@ -915,6 +961,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 46976.0,
+          "telegramProductId": "6a3e7980291f3d0013b550f9",
+          "telegramProductLink": "https://superprofile.bio/vig/6a3e7980291f3d0013b550f9"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 46976.0,
           "telegramProductId": "6a3e7980291f3d0013b550f9",
           "telegramProductLink": "https://superprofile.bio/vig/6a3e7980291f3d0013b550f9"
@@ -982,14 +1034,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 141311.0,
-      "cumulativePayoutVolume": 185247.0,
+      "cumulativePayoutVolume": 326558.0,
       "maxDailyPayout": 141311.0,
       "settlementHistory": [
         {
@@ -1000,6 +1053,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 141311.0,
+          "telegramProductId": "6865592c338056001322e55e",
+          "telegramProductLink": "https://superprofile.bio/vig/6865592c338056001322e55e"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 141311.0,
           "telegramProductId": "6865592c338056001322e55e",
           "telegramProductLink": "https://superprofile.bio/vig/6865592c338056001322e55e"
@@ -1145,14 +1204,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 36173.0,
-      "cumulativePayoutVolume": 74757.0,
+      "cumulativePayoutVolume": 110930.0,
       "maxDailyPayout": 38584.0,
       "settlementHistory": [
         {
@@ -1163,6 +1223,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 36173.0,
+          "telegramProductId": "62d958779656df7a57f42227",
+          "telegramProductLink": "https://superprofile.bio/vig/62d958779656df7a57f42227"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 36173.0,
           "telegramProductId": "62d958779656df7a57f42227",
           "telegramProductLink": "https://superprofile.bio/vig/62d958779656df7a57f42227"
@@ -1230,14 +1296,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 10245.0,
-      "cumulativePayoutVolume": 47068.0,
+      "cumulativePayoutVolume": 57313.0,
       "maxDailyPayout": 36823.0,
       "settlementHistory": [
         {
@@ -1248,6 +1315,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 10245.0,
+          "telegramProductId": "697aeb756fa9030013e878ea",
+          "telegramProductLink": "https://superprofile.bio/vig/697aeb756fa9030013e878ea"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 10245.0,
           "telegramProductId": "697aeb756fa9030013e878ea",
           "telegramProductLink": "https://superprofile.bio/vig/697aeb756fa9030013e878ea"
@@ -1304,10 +1377,12 @@
       "telegramProductId": "69fddc05e6c8340013b8734f",
       "telegramProductLink": "https://superprofile.bio/vig/69fddc05e6c8340013b8734f",
       "telegramProductIds": [
-        "69fddc05e6c8340013b8734f"
+        "69fddc05e6c8340013b8734f",
+        "6a4499dfd54c5d0013cb6bdb"
       ],
       "telegramProductLinks": [
-        "https://superprofile.bio/vig/69fddc05e6c8340013b8734f"
+        "https://superprofile.bio/vig/69fddc05e6c8340013b8734f",
+        "https://superprofile.bio/vig/6a4499dfd54c5d0013cb6bdb"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -1315,14 +1390,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 8225.0,
-      "cumulativePayoutVolume": 41288.0,
+      "cumulativePayoutVolume": 49513.0,
       "maxDailyPayout": 33063.0,
       "settlementHistory": [
         {
@@ -1336,6 +1412,12 @@
           "payoutAmount": 8225.0,
           "telegramProductId": "69fddc05e6c8340013b8734f",
           "telegramProductLink": "https://superprofile.bio/vig/69fddc05e6c8340013b8734f"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 8225.0,
+          "telegramProductId": "6a4499dfd54c5d0013cb6bdb",
+          "telegramProductLink": "https://superprofile.bio/vig/6a4499dfd54c5d0013cb6bdb"
         }
       ]
     },
@@ -1363,14 +1445,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 15950.0,
-      "cumulativePayoutVolume": 47853.0,
+      "cumulativePayoutVolume": 63803.0,
       "maxDailyPayout": 31903.0,
       "settlementHistory": [
         {
@@ -1381,6 +1464,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 15950.0,
+          "telegramProductId": "689ad183b8ec0600136a3748",
+          "telegramProductLink": "https://superprofile.bio/vig/689ad183b8ec0600136a3748"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 15950.0,
           "telegramProductId": "689ad183b8ec0600136a3748",
           "telegramProductLink": "https://superprofile.bio/vig/689ad183b8ec0600136a3748"
@@ -1721,14 +1810,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 19795.0,
-      "cumulativePayoutVolume": 46199.0,
+      "cumulativePayoutVolume": 65994.0,
       "maxDailyPayout": 26404.0,
       "settlementHistory": [
         {
@@ -1739,6 +1829,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 19795.0,
+          "telegramProductId": "6a4299ae37d5e50013f53603",
+          "telegramProductLink": "https://superprofile.bio/vig/6a4299ae37d5e50013f53603"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 19795.0,
           "telegramProductId": "6a4299ae37d5e50013f53603",
           "telegramProductLink": "https://superprofile.bio/vig/6a4299ae37d5e50013f53603"
@@ -1796,11 +1892,13 @@
       "telegramProductLink": "https://superprofile.bio/vig/6a214a43997af1001393efa8",
       "telegramProductIds": [
         "6a214a43997af1001393efa8",
-        "6a214563997af1001392bdda"
+        "6a214563997af1001392bdda",
+        "6a2144b2c8379e0013a89359"
       ],
       "telegramProductLinks": [
         "https://superprofile.bio/vig/6a214a43997af1001393efa8",
-        "https://superprofile.bio/vig/6a214563997af1001392bdda"
+        "https://superprofile.bio/vig/6a214563997af1001392bdda",
+        "https://superprofile.bio/vig/6a2144b2c8379e0013a89359"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -1808,14 +1906,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 51702.0,
-      "cumulativePayoutVolume": 77782.0,
+      "cumulativePayoutVolume": 129484.0,
       "maxDailyPayout": 51702.0,
       "settlementHistory": [
         {
@@ -1829,6 +1928,12 @@
           "payoutAmount": 51702.0,
           "telegramProductId": "6a214563997af1001392bdda",
           "telegramProductLink": "https://superprofile.bio/vig/6a214563997af1001392bdda"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 51702.0,
+          "telegramProductId": "6a2144b2c8379e0013a89359",
+          "telegramProductLink": "https://superprofile.bio/vig/6a2144b2c8379e0013a89359"
         }
       ]
     },
@@ -1895,14 +2000,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 7026.0,
-      "cumulativePayoutVolume": 32146.0,
+      "cumulativePayoutVolume": 39172.0,
       "maxDailyPayout": 25120.0,
       "settlementHistory": [
         {
@@ -1913,6 +2019,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 7026.0,
+          "telegramProductId": "6421a2d1443111002048c2f2",
+          "telegramProductLink": "https://superprofile.bio/vig/6421a2d1443111002048c2f2"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 7026.0,
           "telegramProductId": "6421a2d1443111002048c2f2",
           "telegramProductLink": "https://superprofile.bio/vig/6421a2d1443111002048c2f2"
@@ -1980,14 +2092,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 3293.0,
-      "cumulativePayoutVolume": 26341.0,
+      "cumulativePayoutVolume": 29634.0,
       "maxDailyPayout": 23048.0,
       "settlementHistory": [
         {
@@ -1998,6 +2111,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 3293.0,
+          "telegramProductId": "6713660fe1e13400139b83a7",
+          "telegramProductLink": "https://superprofile.bio/vig/6713660fe1e13400139b83a7"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 3293.0,
           "telegramProductId": "6713660fe1e13400139b83a7",
           "telegramProductLink": "https://superprofile.bio/vig/6713660fe1e13400139b83a7"
@@ -2026,14 +2145,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 10508.0,
-      "cumulativePayoutVolume": 32898.0,
+      "cumulativePayoutVolume": 43406.0,
       "maxDailyPayout": 22390.0,
       "settlementHistory": [
         {
@@ -2044,6 +2164,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 10508.0,
+          "telegramProductId": "6805f47a4a6afe00138a2858",
+          "telegramProductLink": "https://superprofile.bio/vig/6805f47a4a6afe00138a2858"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 10508.0,
           "telegramProductId": "6805f47a4a6afe00138a2858",
           "telegramProductLink": "https://superprofile.bio/vig/6805f47a4a6afe00138a2858"
@@ -2072,14 +2198,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 28487.0,
-      "cumulativePayoutVolume": 50412.0,
+      "cumulativePayoutVolume": 78899.0,
       "maxDailyPayout": 28487.0,
       "settlementHistory": [
         {
@@ -2090,6 +2217,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 28487.0,
+          "telegramProductId": "673c31ceb96a2600132060b0",
+          "telegramProductLink": "https://superprofile.bio/vig/673c31ceb96a2600132060b0"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 28487.0,
           "telegramProductId": "673c31ceb96a2600132060b0",
           "telegramProductLink": "https://superprofile.bio/vig/673c31ceb96a2600132060b0"
@@ -2198,14 +2331,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 19528.0,
-      "cumulativePayoutVolume": 39056.0,
+      "cumulativePayoutVolume": 58584.0,
       "maxDailyPayout": 19528.0,
       "settlementHistory": [
         {
@@ -2219,6 +2353,12 @@
           "payoutAmount": 19528.0,
           "telegramProductId": "67567b0b74eb65001374764d",
           "telegramProductLink": "https://superprofile.bio/vig/67567b0b74eb65001374764d"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 19528.0,
+          "telegramProductId": "68f3484592f5030013aa04cd",
+          "telegramProductLink": "https://superprofile.bio/vig/68f3484592f5030013aa04cd"
         }
       ]
     },
@@ -2283,14 +2423,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 19232.0,
-      "cumulativePayoutVolume": 37983.0,
+      "cumulativePayoutVolume": 57215.0,
       "maxDailyPayout": 19232.0,
       "settlementHistory": [
         {
@@ -2301,6 +2442,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 19232.0,
+          "telegramProductId": "6998149536c51700132c3f93",
+          "telegramProductLink": "https://superprofile.bio/vig/6998149536c51700132c3f93"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 19232.0,
           "telegramProductId": "6998149536c51700132c3f93",
           "telegramProductLink": "https://superprofile.bio/vig/6998149536c51700132c3f93"
@@ -2446,14 +2593,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 5305.0,
-      "cumulativePayoutVolume": 22609.0,
+      "cumulativePayoutVolume": 27914.0,
       "maxDailyPayout": 17304.0,
       "settlementHistory": [
         {
@@ -2464,6 +2612,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 5305.0,
+          "telegramProductId": "69d9f00a0737ef0013f9b72a",
+          "telegramProductLink": "https://superprofile.bio/vig/69d9f00a0737ef0013f9b72a"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 5305.0,
           "telegramProductId": "69d9f00a0737ef0013f9b72a",
           "telegramProductLink": "https://superprofile.bio/vig/69d9f00a0737ef0013f9b72a"
@@ -2492,14 +2646,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 8209.0,
-      "cumulativePayoutVolume": 24618.0,
+      "cumulativePayoutVolume": 32827.0,
       "maxDailyPayout": 16409.0,
       "settlementHistory": [
         {
@@ -2510,6 +2665,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 8209.0,
+          "telegramProductId": "6867c7f17e90670013e8259a",
+          "telegramProductLink": "https://superprofile.bio/vig/6867c7f17e90670013e8259a"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 8209.0,
           "telegramProductId": "6867c7f17e90670013e8259a",
           "telegramProductLink": "https://superprofile.bio/vig/6867c7f17e90670013e8259a"
@@ -2540,14 +2701,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 5264.0,
-      "cumulativePayoutVolume": 21545.0,
+      "cumulativePayoutVolume": 26809.0,
       "maxDailyPayout": 16281.0,
       "settlementHistory": [
         {
@@ -2561,6 +2723,12 @@
           "payoutAmount": 5264.0,
           "telegramProductId": "66f643d6bcd0770013ebb9c3",
           "telegramProductLink": "https://superprofile.bio/vig/66f643d6bcd0770013ebb9c3"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 5264.0,
+          "telegramProductId": "670f9bd1353c2d36d67cab25",
+          "telegramProductLink": "https://superprofile.bio/vig/670f9bd1353c2d36d67cab25"
         }
       ]
     },
@@ -2586,14 +2754,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 4880.0,
-      "cumulativePayoutVolume": 20987.0,
+      "cumulativePayoutVolume": 25867.0,
       "maxDailyPayout": 16107.0,
       "settlementHistory": [
         {
@@ -2604,6 +2773,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 4880.0,
+          "telegramProductId": "69ca197dd17bc80013e132d4",
+          "telegramProductLink": "https://superprofile.bio/vig/69ca197dd17bc80013e132d4"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 4880.0,
           "telegramProductId": "69ca197dd17bc80013e132d4",
           "telegramProductLink": "https://superprofile.bio/vig/69ca197dd17bc80013e132d4"
@@ -2675,14 +2850,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 6874.0,
-      "cumulativePayoutVolume": 22540.0,
+      "cumulativePayoutVolume": 29414.0,
       "maxDailyPayout": 15666.0,
       "settlementHistory": [
         {
@@ -2696,6 +2872,12 @@
           "payoutAmount": 6874.0,
           "telegramProductId": "653a075da1a5d7001ebf66b9",
           "telegramProductLink": "https://superprofile.bio/vig/653a075da1a5d7001ebf66b9"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 6874.0,
+          "telegramProductId": "653fa6b4423d4e001efd1d9f",
+          "telegramProductLink": "https://superprofile.bio/vig/653fa6b4423d4e001efd1d9f"
         }
       ]
     },
@@ -2721,14 +2903,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 3293.0,
-      "cumulativePayoutVolume": 18818.0,
+      "cumulativePayoutVolume": 22111.0,
       "maxDailyPayout": 15525.0,
       "settlementHistory": [
         {
@@ -2739,6 +2922,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 3293.0,
+          "telegramProductId": "6a40f6c6862e9f0013b76d08",
+          "telegramProductLink": "https://superprofile.bio/vig/6a40f6c6862e9f0013b76d08"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 3293.0,
           "telegramProductId": "6a40f6c6862e9f0013b76d08",
           "telegramProductLink": "https://superprofile.bio/vig/6a40f6c6862e9f0013b76d08"
@@ -2806,14 +2995,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 4893.0,
-      "cumulativePayoutVolume": 19878.0,
+      "cumulativePayoutVolume": 24771.0,
       "maxDailyPayout": 14985.0,
       "settlementHistory": [
         {
@@ -2824,6 +3014,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 4893.0,
+          "telegramProductId": "69d4f34598622b0013d6d30b",
+          "telegramProductLink": "https://superprofile.bio/vig/69d4f34598622b0013d6d30b"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 4893.0,
           "telegramProductId": "69d4f34598622b0013d6d30b",
           "telegramProductLink": "https://superprofile.bio/vig/69d4f34598622b0013d6d30b"
@@ -2880,10 +3076,12 @@
       "telegramProductId": "66045dc58fe788104551632f",
       "telegramProductLink": "https://superprofile.bio/vig/66045dc58fe788104551632f",
       "telegramProductIds": [
-        "66045dc58fe788104551632f"
+        "66045dc58fe788104551632f",
+        "69c7a727a76a1c001329d601"
       ],
       "telegramProductLinks": [
-        "https://superprofile.bio/vig/66045dc58fe788104551632f"
+        "https://superprofile.bio/vig/66045dc58fe788104551632f",
+        "https://superprofile.bio/vig/69c7a727a76a1c001329d601"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -2891,14 +3089,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 9221.0,
-      "cumulativePayoutVolume": 23774.0,
+      "cumulativePayoutVolume": 32995.0,
       "maxDailyPayout": 14553.0,
       "settlementHistory": [
         {
@@ -2912,6 +3111,12 @@
           "payoutAmount": 9221.0,
           "telegramProductId": "66045dc58fe788104551632f",
           "telegramProductLink": "https://superprofile.bio/vig/66045dc58fe788104551632f"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 9221.0,
+          "telegramProductId": "69c7a727a76a1c001329d601",
+          "telegramProductLink": "https://superprofile.bio/vig/69c7a727a76a1c001329d601"
         }
       ]
     },
@@ -3054,14 +3259,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 4514.0,
-      "cumulativePayoutVolume": 18532.0,
+      "cumulativePayoutVolume": 23046.0,
       "maxDailyPayout": 14018.0,
       "settlementHistory": [
         {
@@ -3072,6 +3278,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 4514.0,
+          "telegramProductId": "62e655ded7e7f51afd63fba2",
+          "telegramProductLink": "https://superprofile.bio/vig/62e655ded7e7f51afd63fba2"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 4514.0,
           "telegramProductId": "62e655ded7e7f51afd63fba2",
           "telegramProductLink": "https://superprofile.bio/vig/62e655ded7e7f51afd63fba2"
@@ -3180,14 +3392,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 19075.0,
-      "cumulativePayoutVolume": 32571.0,
+      "cumulativePayoutVolume": 51646.0,
       "maxDailyPayout": 19075.0,
       "settlementHistory": [
         {
@@ -3201,6 +3414,12 @@
           "payoutAmount": 19075.0,
           "telegramProductId": "66fe9a7f3099b20013d77463",
           "telegramProductLink": "https://superprofile.bio/vig/66fe9a7f3099b20013d77463"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 19075.0,
+          "telegramProductId": "66e92306211da6001323b660",
+          "telegramProductLink": "https://superprofile.bio/vig/66e92306211da6001323b660"
         }
       ]
     },
@@ -3267,14 +3486,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 11571.0,
-      "cumulativePayoutVolume": 24756.0,
+      "cumulativePayoutVolume": 36327.0,
       "maxDailyPayout": 13185.0,
       "settlementHistory": [
         {
@@ -3288,6 +3508,12 @@
           "payoutAmount": 11571.0,
           "telegramProductId": "6a5dd5e2336dff00131de67e",
           "telegramProductLink": "https://superprofile.bio/vig/6a5dd5e2336dff00131de67e"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 11571.0,
+          "telegramProductId": "6a66dadb0a242e00131d5d8b",
+          "telegramProductLink": "https://superprofile.bio/vig/6a66dadb0a242e00131d5d8b"
         }
       ]
     },
@@ -3627,14 +3853,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 14387.0,
-      "cumulativePayoutVolume": 26037.0,
+      "cumulativePayoutVolume": 40424.0,
       "maxDailyPayout": 14387.0,
       "settlementHistory": [
         {
@@ -3645,6 +3872,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 14387.0,
+          "telegramProductId": "69fae7ec16d67e0013756b76",
+          "telegramProductLink": "https://superprofile.bio/vig/69fae7ec16d67e0013756b76"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 14387.0,
           "telegramProductId": "69fae7ec16d67e0013756b76",
           "telegramProductLink": "https://superprofile.bio/vig/69fae7ec16d67e0013756b76"
@@ -3712,14 +3945,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 14604.0,
-      "cumulativePayoutVolume": 26083.0,
+      "cumulativePayoutVolume": 40687.0,
       "maxDailyPayout": 14604.0,
       "settlementHistory": [
         {
@@ -3730,6 +3964,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 14604.0,
+          "telegramProductId": "6a76f4a37590c2001315562c",
+          "telegramProductLink": "https://superprofile.bio/vig/6a76f4a37590c2001315562c"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 14604.0,
           "telegramProductId": "6a76f4a37590c2001315562c",
           "telegramProductLink": "https://superprofile.bio/vig/6a76f4a37590c2001315562c"
@@ -3760,14 +4000,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 21292.0,
-      "cumulativePayoutVolume": 32471.0,
+      "cumulativePayoutVolume": 53763.0,
       "maxDailyPayout": 21292.0,
       "settlementHistory": [
         {
@@ -3781,6 +4022,12 @@
           "payoutAmount": 21292.0,
           "telegramProductId": "68e0ed478037040013fa008b",
           "telegramProductLink": "https://superprofile.bio/vig/68e0ed478037040013fa008b"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 21292.0,
+          "telegramProductId": "68e0f1a08037040013fa6f66",
+          "telegramProductLink": "https://superprofile.bio/vig/68e0f1a08037040013fa6f66"
         }
       ]
     },
@@ -3806,14 +4053,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 5795.0,
-      "cumulativePayoutVolume": 16439.0,
+      "cumulativePayoutVolume": 22234.0,
       "maxDailyPayout": 10644.0,
       "settlementHistory": [
         {
@@ -3824,6 +4072,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 5795.0,
+          "telegramProductId": "6a4d2e220ea0e40013c9d59c",
+          "telegramProductLink": "https://superprofile.bio/vig/6a4d2e220ea0e40013c9d59c"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 5795.0,
           "telegramProductId": "6a4d2e220ea0e40013c9d59c",
           "telegramProductLink": "https://superprofile.bio/vig/6a4d2e220ea0e40013c9d59c"
@@ -4008,14 +4262,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 2822.0,
-      "cumulativePayoutVolume": 12888.0,
+      "cumulativePayoutVolume": 15710.0,
       "maxDailyPayout": 10066.0,
       "settlementHistory": [
         {
@@ -4026,6 +4281,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 2822.0,
+          "telegramProductId": "6a4d1430d0828f0013effc1d",
+          "telegramProductLink": "https://superprofile.bio/vig/6a4d1430d0828f0013effc1d"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 2822.0,
           "telegramProductId": "6a4d1430d0828f0013effc1d",
           "telegramProductLink": "https://superprofile.bio/vig/6a4d1430d0828f0013effc1d"
@@ -4054,14 +4315,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 2442.0,
-      "cumulativePayoutVolume": 12499.0,
+      "cumulativePayoutVolume": 14941.0,
       "maxDailyPayout": 10057.0,
       "settlementHistory": [
         {
@@ -4072,6 +4334,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 2442.0,
+          "telegramProductId": "6594509a02521d001db86770",
+          "telegramProductLink": "https://superprofile.bio/vig/6594509a02521d001db86770"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 2442.0,
           "telegramProductId": "6594509a02521d001db86770",
           "telegramProductLink": "https://superprofile.bio/vig/6594509a02521d001db86770"
@@ -4141,14 +4409,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 5758.0,
-      "cumulativePayoutVolume": 15656.0,
+      "cumulativePayoutVolume": 21414.0,
       "maxDailyPayout": 9898.0,
       "settlementHistory": [
         {
@@ -4159,6 +4428,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 5758.0,
+          "telegramProductId": "68ad6b266e7835001370d5a4",
+          "telegramProductLink": "https://superprofile.bio/vig/68ad6b266e7835001370d5a4"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 5758.0,
           "telegramProductId": "68ad6b266e7835001370d5a4",
           "telegramProductLink": "https://superprofile.bio/vig/68ad6b266e7835001370d5a4"
@@ -4265,14 +4540,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 9680.0,
-      "cumulativePayoutVolume": 19360.0,
+      "cumulativePayoutVolume": 29040.0,
       "maxDailyPayout": 9680.0,
       "settlementHistory": [
         {
@@ -4283,6 +4559,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 9680.0,
+          "telegramProductId": "6a685eaa2f5d7b001337d9a5",
+          "telegramProductLink": "https://superprofile.bio/vig/6a685eaa2f5d7b001337d9a5"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 9680.0,
           "telegramProductId": "6a685eaa2f5d7b001337d9a5",
           "telegramProductLink": "https://superprofile.bio/vig/6a685eaa2f5d7b001337d9a5"
@@ -4430,14 +4712,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 11763.0,
-      "cumulativePayoutVolume": 21173.0,
+      "cumulativePayoutVolume": 32936.0,
       "maxDailyPayout": 11763.0,
       "settlementHistory": [
         {
@@ -4451,6 +4734,12 @@
           "payoutAmount": 11763.0,
           "telegramProductId": "6a5f1ee917204a0013cfb600",
           "telegramProductLink": "https://superprofile.bio/vig/6a5f1ee917204a0013cfb600"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 11763.0,
+          "telegramProductId": "68c67381e4826a00139bb5cf",
+          "telegramProductLink": "https://superprofile.bio/vig/68c67381e4826a00139bb5cf"
         }
       ]
     },
@@ -4554,14 +4843,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 4048.0,
-      "cumulativePayoutVolume": 12895.0,
+      "cumulativePayoutVolume": 16943.0,
       "maxDailyPayout": 8847.0,
       "settlementHistory": [
         {
@@ -4572,6 +4862,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 4048.0,
+          "telegramProductId": "6933a91311b9460013934702",
+          "telegramProductLink": "https://superprofile.bio/vig/6933a91311b9460013934702"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 4048.0,
           "telegramProductId": "6933a91311b9460013934702",
           "telegramProductLink": "https://superprofile.bio/vig/6933a91311b9460013934702"
@@ -4678,14 +4974,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 6844.0,
-      "cumulativePayoutVolume": 15590.0,
+      "cumulativePayoutVolume": 22434.0,
       "maxDailyPayout": 8746.0,
       "settlementHistory": [
         {
@@ -4696,6 +4993,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 6844.0,
+          "telegramProductId": "6905e814429e060013ff74f2",
+          "telegramProductLink": "https://superprofile.bio/vig/6905e814429e060013ff74f2"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 6844.0,
           "telegramProductId": "6905e814429e060013ff74f2",
           "telegramProductLink": "https://superprofile.bio/vig/6905e814429e060013ff74f2"
@@ -4724,14 +5027,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 2893.0,
-      "cumulativePayoutVolume": 11572.0,
+      "cumulativePayoutVolume": 14465.0,
       "maxDailyPayout": 8679.0,
       "settlementHistory": [
         {
@@ -4742,6 +5046,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 2893.0,
+          "telegramProductId": "6a3bf5e1118f010013629fb4",
+          "telegramProductLink": "https://superprofile.bio/vig/6a3bf5e1118f010013629fb4"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 2893.0,
           "telegramProductId": "6a3bf5e1118f010013629fb4",
           "telegramProductLink": "https://superprofile.bio/vig/6a3bf5e1118f010013629fb4"
@@ -4976,14 +5286,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 2911.0,
-      "cumulativePayoutVolume": 11141.0,
+      "cumulativePayoutVolume": 14052.0,
       "maxDailyPayout": 8230.0,
       "settlementHistory": [
         {
@@ -4994,6 +5305,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 2911.0,
+          "telegramProductId": "69d0c6132e28390013f5afd1",
+          "telegramProductLink": "https://superprofile.bio/vig/69d0c6132e28390013f5afd1"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 2911.0,
           "telegramProductId": "69d0c6132e28390013f5afd1",
           "telegramProductLink": "https://superprofile.bio/vig/69d0c6132e28390013f5afd1"
@@ -5063,14 +5380,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 5142.0,
-      "cumulativePayoutVolume": 13253.0,
+      "cumulativePayoutVolume": 18395.0,
       "maxDailyPayout": 8111.0,
       "settlementHistory": [
         {
@@ -5081,6 +5399,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 5142.0,
+          "telegramProductId": "6475ebeba3c3a8002022934c",
+          "telegramProductLink": "https://superprofile.bio/vig/6475ebeba3c3a8002022934c"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 5142.0,
           "telegramProductId": "6475ebeba3c3a8002022934c",
           "telegramProductLink": "https://superprofile.bio/vig/6475ebeba3c3a8002022934c"
@@ -5148,14 +5472,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 27294.0,
-      "cumulativePayoutVolume": 35102.0,
+      "cumulativePayoutVolume": 62396.0,
       "maxDailyPayout": 27294.0,
       "settlementHistory": [
         {
@@ -5166,6 +5491,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 27294.0,
+          "telegramProductId": "66a158e9ba49c1001304e283",
+          "telegramProductLink": "https://superprofile.bio/vig/66a158e9ba49c1001304e283"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 27294.0,
           "telegramProductId": "66a158e9ba49c1001304e283",
           "telegramProductLink": "https://superprofile.bio/vig/66a158e9ba49c1001304e283"
@@ -5194,14 +5525,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 5660.0,
-      "cumulativePayoutVolume": 13432.0,
+      "cumulativePayoutVolume": 19092.0,
       "maxDailyPayout": 7772.0,
       "settlementHistory": [
         {
@@ -5212,6 +5544,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 5660.0,
+          "telegramProductId": "6944ec21d0013e00134d24e0",
+          "telegramProductLink": "https://superprofile.bio/vig/6944ec21d0013e00134d24e0"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 5660.0,
           "telegramProductId": "6944ec21d0013e00134d24e0",
           "telegramProductLink": "https://superprofile.bio/vig/6944ec21d0013e00134d24e0"
@@ -5396,14 +5734,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 12786.0,
-      "cumulativePayoutVolume": 20044.0,
+      "cumulativePayoutVolume": 32830.0,
       "maxDailyPayout": 12786.0,
       "settlementHistory": [
         {
@@ -5414,6 +5753,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 12786.0,
+          "telegramProductId": "6a87d76979d74e0013d98462",
+          "telegramProductLink": "https://superprofile.bio/vig/6a87d76979d74e0013d98462"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 12786.0,
           "telegramProductId": "6a87d76979d74e0013d98462",
           "telegramProductLink": "https://superprofile.bio/vig/6a87d76979d74e0013d98462"
@@ -5522,14 +5867,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 10620.0,
-      "cumulativePayoutVolume": 17523.0,
+      "cumulativePayoutVolume": 28143.0,
       "maxDailyPayout": 10620.0,
       "settlementHistory": [
         {
@@ -5540,6 +5886,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 10620.0,
+          "telegramProductId": "6813676171de4f001374228c",
+          "telegramProductLink": "https://superprofile.bio/vig/6813676171de4f001374228c"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 10620.0,
           "telegramProductId": "6813676171de4f001374228c",
           "telegramProductLink": "https://superprofile.bio/vig/6813676171de4f001374228c"
@@ -5570,14 +5922,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 6986.0,
-      "cumulativePayoutVolume": 13845.0,
+      "cumulativePayoutVolume": 20831.0,
       "maxDailyPayout": 6986.0,
       "settlementHistory": [
         {
@@ -5588,6 +5941,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 6986.0,
+          "telegramProductId": "656700711978d0001d1b82b5",
+          "telegramProductLink": "https://superprofile.bio/vig/656700711978d0001d1b82b5"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 6986.0,
           "telegramProductId": "656700711978d0001d1b82b5",
           "telegramProductLink": "https://superprofile.bio/vig/656700711978d0001d1b82b5"
@@ -5698,14 +6057,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 6891.0,
-      "cumulativePayoutVolume": 13618.0,
+      "cumulativePayoutVolume": 20509.0,
       "maxDailyPayout": 6891.0,
       "settlementHistory": [
         {
@@ -5719,6 +6079,12 @@
           "payoutAmount": 6891.0,
           "telegramProductId": "6614dafe10832100131f3850",
           "telegramProductLink": "https://superprofile.bio/vig/6614dafe10832100131f3850"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 6891.0,
+          "telegramProductId": "657044ac1784d13e5c4c5289",
+          "telegramProductLink": "https://superprofile.bio/vig/657044ac1784d13e5c4c5289"
         }
       ]
     },
@@ -5939,14 +6305,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 7197.0,
-      "cumulativePayoutVolume": 13729.0,
+      "cumulativePayoutVolume": 20926.0,
       "maxDailyPayout": 7197.0,
       "settlementHistory": [
         {
@@ -5957,6 +6324,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 7197.0,
+          "telegramProductId": "69522e0e2165d100120a4ddb",
+          "telegramProductLink": "https://superprofile.bio/vig/69522e0e2165d100120a4ddb"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 7197.0,
           "telegramProductId": "69522e0e2165d100120a4ddb",
           "telegramProductLink": "https://superprofile.bio/vig/69522e0e2165d100120a4ddb"
@@ -6091,10 +6464,12 @@
       "telegramProductId": "67a8c6045ee5520012250762",
       "telegramProductLink": "https://superprofile.bio/vig/67a8c6045ee5520012250762",
       "telegramProductIds": [
-        "67a8c6045ee5520012250762"
+        "67a8c6045ee5520012250762",
+        "67a8c65b5ee5520012250cca"
       ],
       "telegramProductLinks": [
-        "https://superprofile.bio/vig/67a8c6045ee5520012250762"
+        "https://superprofile.bio/vig/67a8c6045ee5520012250762",
+        "https://superprofile.bio/vig/67a8c65b5ee5520012250cca"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -6102,14 +6477,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 5295.0,
-      "cumulativePayoutVolume": 11603.0,
+      "cumulativePayoutVolume": 16898.0,
       "maxDailyPayout": 6308.0,
       "settlementHistory": [
         {
@@ -6123,6 +6499,12 @@
           "payoutAmount": 5295.0,
           "telegramProductId": "67a8c6045ee5520012250762",
           "telegramProductLink": "https://superprofile.bio/vig/67a8c6045ee5520012250762"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 5295.0,
+          "telegramProductId": "67a8c65b5ee5520012250cca",
+          "telegramProductLink": "https://superprofile.bio/vig/67a8c65b5ee5520012250cca"
         }
       ]
     },
@@ -6187,14 +6569,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 4721.0,
-      "cumulativePayoutVolume": 10890.0,
+      "cumulativePayoutVolume": 15611.0,
       "maxDailyPayout": 6169.0,
       "settlementHistory": [
         {
@@ -6205,6 +6588,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 4721.0,
+          "telegramProductId": "695f82e32f4a2a0013842d09",
+          "telegramProductLink": "https://superprofile.bio/vig/695f82e32f4a2a0013842d09"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 4721.0,
           "telegramProductId": "695f82e32f4a2a0013842d09",
           "telegramProductLink": "https://superprofile.bio/vig/695f82e32f4a2a0013842d09"
@@ -6352,14 +6741,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 4940.0,
-      "cumulativePayoutVolume": 10867.0,
+      "cumulativePayoutVolume": 15807.0,
       "maxDailyPayout": 5927.0,
       "settlementHistory": [
         {
@@ -6373,6 +6763,12 @@
           "payoutAmount": 4940.0,
           "telegramProductId": "679866bef0949e00130f4e6d",
           "telegramProductLink": "https://superprofile.bio/vig/679866bef0949e00130f4e6d"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 4940.0,
+          "telegramProductId": "69f9e4e9abc3bf00138986d8",
+          "telegramProductLink": "https://superprofile.bio/vig/69f9e4e9abc3bf00138986d8"
         }
       ]
     },
@@ -6398,14 +6794,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 4842.0,
-      "cumulativePayoutVolume": 10733.0,
+      "cumulativePayoutVolume": 15575.0,
       "maxDailyPayout": 5891.0,
       "settlementHistory": [
         {
@@ -6416,6 +6813,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 4842.0,
+          "telegramProductId": "66feba7d2a7c600013944424",
+          "telegramProductLink": "https://superprofile.bio/vig/66feba7d2a7c600013944424"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 4842.0,
           "telegramProductId": "66feba7d2a7c600013944424",
           "telegramProductLink": "https://superprofile.bio/vig/66feba7d2a7c600013944424"
@@ -6446,14 +6849,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 41270.0,
-      "cumulativePayoutVolume": 47153.0,
+      "cumulativePayoutVolume": 88423.0,
       "maxDailyPayout": 41270.0,
       "settlementHistory": [
         {
@@ -6464,6 +6868,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 41270.0,
+          "telegramProductId": "68edbd7fa5316700139126f0",
+          "telegramProductLink": "https://superprofile.bio/vig/68edbd7fa5316700139126f0"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 41270.0,
           "telegramProductId": "68edbd7fa5316700139126f0",
           "telegramProductLink": "https://superprofile.bio/vig/68edbd7fa5316700139126f0"
@@ -6492,14 +6902,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 14153.0,
-      "cumulativePayoutVolume": 20011.0,
+      "cumulativePayoutVolume": 34164.0,
       "maxDailyPayout": 14153.0,
       "settlementHistory": [
         {
@@ -6510,6 +6921,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 14153.0,
+          "telegramProductId": "67f4c99bc88fbf0013d43d05",
+          "telegramProductLink": "https://superprofile.bio/vig/67f4c99bc88fbf0013d43d05"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 14153.0,
           "telegramProductId": "67f4c99bc88fbf0013d43d05",
           "telegramProductLink": "https://superprofile.bio/vig/67f4c99bc88fbf0013d43d05"
@@ -6618,14 +7035,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 9203.0,
-      "cumulativePayoutVolume": 14954.0,
+      "cumulativePayoutVolume": 24157.0,
       "maxDailyPayout": 9203.0,
       "settlementHistory": [
         {
@@ -6636,6 +7054,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 9203.0,
+          "telegramProductId": "65a4cac76842e6001edeb93b",
+          "telegramProductLink": "https://superprofile.bio/vig/65a4cac76842e6001edeb93b"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 9203.0,
           "telegramProductId": "65a4cac76842e6001edeb93b",
           "telegramProductLink": "https://superprofile.bio/vig/65a4cac76842e6001edeb93b"
@@ -6902,14 +7326,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 3198.0,
-      "cumulativePayoutVolume": 8372.0,
+      "cumulativePayoutVolume": 11570.0,
       "maxDailyPayout": 5174.0,
       "settlementHistory": [
         {
@@ -6923,6 +7348,12 @@
           "payoutAmount": 3198.0,
           "telegramProductId": "6a30b7e53d7d2c00133d5944",
           "telegramProductLink": "https://superprofile.bio/vig/6a30b7e53d7d2c00133d5944"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 3198.0,
+          "telegramProductId": "6a56dab5b3218500137877a8",
+          "telegramProductLink": "https://superprofile.bio/vig/6a56dab5b3218500137877a8"
         }
       ]
     },
@@ -7457,14 +7888,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 3121.0,
-      "cumulativePayoutVolume": 7494.0,
+      "cumulativePayoutVolume": 10615.0,
       "maxDailyPayout": 4373.0,
       "settlementHistory": [
         {
@@ -7475,6 +7907,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 3121.0,
+          "telegramProductId": "68c1a49b967ca900138684ee",
+          "telegramProductLink": "https://superprofile.bio/vig/68c1a49b967ca900138684ee"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 3121.0,
           "telegramProductId": "68c1a49b967ca900138684ee",
           "telegramProductLink": "https://superprofile.bio/vig/68c1a49b967ca900138684ee"
@@ -7620,14 +8058,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 5636.0,
-      "cumulativePayoutVolume": 9863.0,
+      "cumulativePayoutVolume": 15499.0,
       "maxDailyPayout": 5636.0,
       "settlementHistory": [
         {
@@ -7638,6 +8077,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 5636.0,
+          "telegramProductId": "683f9c20f8156300136290a1",
+          "telegramProductLink": "https://superprofile.bio/vig/683f9c20f8156300136290a1"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 5636.0,
           "telegramProductId": "683f9c20f8156300136290a1",
           "telegramProductLink": "https://superprofile.bio/vig/683f9c20f8156300136290a1"
@@ -7734,11 +8179,13 @@
       "telegramProductLink": "https://superprofile.bio/vig/677cbb13838baf00137542b3",
       "telegramProductIds": [
         "677cbb13838baf00137542b3",
-        "692067cbe2d2af0014a8494c"
+        "692067cbe2d2af0014a8494c",
+        "677b7dceb8a1e4001338eb26"
       ],
       "telegramProductLinks": [
         "https://superprofile.bio/vig/677cbb13838baf00137542b3",
-        "https://superprofile.bio/vig/692067cbe2d2af0014a8494c"
+        "https://superprofile.bio/vig/692067cbe2d2af0014a8494c",
+        "https://superprofile.bio/vig/677b7dceb8a1e4001338eb26"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -7746,14 +8193,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 39193.0,
-      "cumulativePayoutVolume": 43111.0,
+      "cumulativePayoutVolume": 82304.0,
       "maxDailyPayout": 39193.0,
       "settlementHistory": [
         {
@@ -7767,6 +8215,12 @@
           "payoutAmount": 39193.0,
           "telegramProductId": "692067cbe2d2af0014a8494c",
           "telegramProductLink": "https://superprofile.bio/vig/692067cbe2d2af0014a8494c"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 39193.0,
+          "telegramProductId": "677b7dceb8a1e4001338eb26",
+          "telegramProductLink": "https://superprofile.bio/vig/677b7dceb8a1e4001338eb26"
         }
       ]
     },
@@ -7792,14 +8246,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 9860.0,
-      "cumulativePayoutVolume": 13764.0,
+      "cumulativePayoutVolume": 23624.0,
       "maxDailyPayout": 9860.0,
       "settlementHistory": [
         {
@@ -7810,6 +8265,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 9860.0,
+          "telegramProductId": "653e4d8c423d4e001eee170f",
+          "telegramProductLink": "https://superprofile.bio/vig/653e4d8c423d4e001eee170f"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 9860.0,
           "telegramProductId": "653e4d8c423d4e001eee170f",
           "telegramProductLink": "https://superprofile.bio/vig/653e4d8c423d4e001eee170f"
@@ -7957,14 +8418,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 3927.0,
-      "cumulativePayoutVolume": 7795.0,
+      "cumulativePayoutVolume": 11722.0,
       "maxDailyPayout": 3927.0,
       "settlementHistory": [
         {
@@ -7975,6 +8437,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 3927.0,
+          "telegramProductId": "63df8a77a72c6d002bd08715",
+          "telegramProductLink": "https://superprofile.bio/vig/63df8a77a72c6d002bd08715"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 3927.0,
           "telegramProductId": "63df8a77a72c6d002bd08715",
           "telegramProductLink": "https://superprofile.bio/vig/63df8a77a72c6d002bd08715"
@@ -8005,14 +8473,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 5680.0,
-      "cumulativePayoutVolume": 9537.0,
+      "cumulativePayoutVolume": 15217.0,
       "maxDailyPayout": 5680.0,
       "settlementHistory": [
         {
@@ -8023,6 +8492,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 5680.0,
+          "telegramProductId": "6353880b380a3820a8f78016",
+          "telegramProductLink": "https://superprofile.bio/vig/6353880b380a3820a8f78016"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 5680.0,
           "telegramProductId": "6353880b380a3820a8f78016",
           "telegramProductLink": "https://superprofile.bio/vig/6353880b380a3820a8f78016"
@@ -8324,14 +8799,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 6357.0,
-      "cumulativePayoutVolume": 9780.0,
+      "cumulativePayoutVolume": 16137.0,
       "maxDailyPayout": 6357.0,
       "settlementHistory": [
         {
@@ -8342,6 +8818,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 6357.0,
+          "telegramProductId": "66545cfea6e0ab0013685596",
+          "telegramProductLink": "https://superprofile.bio/vig/66545cfea6e0ab0013685596"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 6357.0,
           "telegramProductId": "66545cfea6e0ab0013685596",
           "telegramProductLink": "https://superprofile.bio/vig/66545cfea6e0ab0013685596"
@@ -8555,11 +9037,13 @@
       "telegramProductLink": "https://superprofile.bio/vig/69536288ff3d730013bd44d8",
       "telegramProductIds": [
         "69536288ff3d730013bd44d8",
-        "68bb2d30687ffc0013cdf5ca"
+        "68bb2d30687ffc0013cdf5ca",
+        "699af36c3da2010013de657b"
       ],
       "telegramProductLinks": [
         "https://superprofile.bio/vig/69536288ff3d730013bd44d8",
-        "https://superprofile.bio/vig/68bb2d30687ffc0013cdf5ca"
+        "https://superprofile.bio/vig/68bb2d30687ffc0013cdf5ca",
+        "https://superprofile.bio/vig/699af36c3da2010013de657b"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -8567,14 +9051,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 3319.0,
-      "cumulativePayoutVolume": 6640.0,
+      "cumulativePayoutVolume": 9959.0,
       "maxDailyPayout": 3321.0,
       "settlementHistory": [
         {
@@ -8588,6 +9073,12 @@
           "payoutAmount": 3319.0,
           "telegramProductId": "69536288ff3d730013bd44d8",
           "telegramProductLink": "https://superprofile.bio/vig/69536288ff3d730013bd44d8"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 3319.0,
+          "telegramProductId": "699af36c3da2010013de657b",
+          "telegramProductLink": "https://superprofile.bio/vig/699af36c3da2010013de657b"
         }
       ]
     },
@@ -8695,14 +9186,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 2783.0,
-      "cumulativePayoutVolume": 5937.0,
+      "cumulativePayoutVolume": 8720.0,
       "maxDailyPayout": 3154.0,
       "settlementHistory": [
         {
@@ -8713,6 +9205,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 2783.0,
+          "telegramProductId": "62add4a826c2bb2f1696422e",
+          "telegramProductLink": "https://superprofile.bio/vig/62add4a826c2bb2f1696422e"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 2783.0,
           "telegramProductId": "62add4a826c2bb2f1696422e",
           "telegramProductLink": "https://superprofile.bio/vig/62add4a826c2bb2f1696422e"
@@ -8770,11 +9268,13 @@
       "telegramProductLink": "https://superprofile.bio/vig/6a64283b146c040014edce5a",
       "telegramProductIds": [
         "6a64283b146c040014edce5a",
-        "6a24d318b5ebe90013a8ad53"
+        "6a24d318b5ebe90013a8ad53",
+        "6a2509c762d46700138faa93"
       ],
       "telegramProductLinks": [
         "https://superprofile.bio/vig/6a64283b146c040014edce5a",
-        "https://superprofile.bio/vig/6a24d318b5ebe90013a8ad53"
+        "https://superprofile.bio/vig/6a24d318b5ebe90013a8ad53",
+        "https://superprofile.bio/vig/6a2509c762d46700138faa93"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -8782,14 +9282,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 3198.0,
-      "cumulativePayoutVolume": 6302.0,
+      "cumulativePayoutVolume": 9500.0,
       "maxDailyPayout": 3198.0,
       "settlementHistory": [
         {
@@ -8803,6 +9304,12 @@
           "payoutAmount": 3198.0,
           "telegramProductId": "6a64283b146c040014edce5a",
           "telegramProductLink": "https://superprofile.bio/vig/6a64283b146c040014edce5a"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 3198.0,
+          "telegramProductId": "6a2509c762d46700138faa93",
+          "telegramProductLink": "https://superprofile.bio/vig/6a2509c762d46700138faa93"
         }
       ]
     },
@@ -8908,14 +9415,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 8399.0,
-      "cumulativePayoutVolume": 11363.0,
+      "cumulativePayoutVolume": 19762.0,
       "maxDailyPayout": 8399.0,
       "settlementHistory": [
         {
@@ -8926,6 +9434,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 8399.0,
+          "telegramProductId": "68109f4abb470b0013767013",
+          "telegramProductLink": "https://superprofile.bio/vig/68109f4abb470b0013767013"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 8399.0,
           "telegramProductId": "68109f4abb470b0013767013",
           "telegramProductLink": "https://superprofile.bio/vig/68109f4abb470b0013767013"
@@ -8993,14 +9507,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 13666.0,
-      "cumulativePayoutVolume": 16594.0,
+      "cumulativePayoutVolume": 30260.0,
       "maxDailyPayout": 13666.0,
       "settlementHistory": [
         {
@@ -9011,6 +9526,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 13666.0,
+          "telegramProductId": "69cf4f3b1a0160001352c965",
+          "telegramProductLink": "https://superprofile.bio/vig/69cf4f3b1a0160001352c965"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 13666.0,
           "telegramProductId": "69cf4f3b1a0160001352c965",
           "telegramProductLink": "https://superprofile.bio/vig/69cf4f3b1a0160001352c965"
@@ -9080,14 +9601,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 2911.0,
-      "cumulativePayoutVolume": 5822.0,
+      "cumulativePayoutVolume": 8733.0,
       "maxDailyPayout": 2911.0,
       "settlementHistory": [
         {
@@ -9098,6 +9620,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 2911.0,
+          "telegramProductId": "691310149e51bf001352876c",
+          "telegramProductLink": "https://superprofile.bio/vig/691310149e51bf001352876c"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 2911.0,
           "telegramProductId": "691310149e51bf001352876c",
           "telegramProductLink": "https://superprofile.bio/vig/691310149e51bf001352876c"
@@ -9243,14 +9771,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 2381.0,
-      "cumulativePayoutVolume": 5238.0,
+      "cumulativePayoutVolume": 7619.0,
       "maxDailyPayout": 2857.0,
       "settlementHistory": [
         {
@@ -9261,6 +9790,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 2381.0,
+          "telegramProductId": "6940427d7d6b440013a58699",
+          "telegramProductLink": "https://superprofile.bio/vig/6940427d7d6b440013a58699"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 2381.0,
           "telegramProductId": "6940427d7d6b440013a58699",
           "telegramProductLink": "https://superprofile.bio/vig/6940427d7d6b440013a58699"
@@ -9562,14 +10097,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 3101.0,
-      "cumulativePayoutVolume": 5918.0,
+      "cumulativePayoutVolume": 9019.0,
       "maxDailyPayout": 3101.0,
       "settlementHistory": [
         {
@@ -9580,6 +10116,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 3101.0,
+          "telegramProductId": "69af095a0f554f0013f5f799",
+          "telegramProductLink": "https://superprofile.bio/vig/69af095a0f554f0013f5f799"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 3101.0,
           "telegramProductId": "69af095a0f554f0013f5f799",
           "telegramProductLink": "https://superprofile.bio/vig/69af095a0f554f0013f5f799"
@@ -9636,10 +10178,12 @@
       "telegramProductId": "6a4c954f93df68001352d0ea",
       "telegramProductLink": "https://superprofile.bio/vig/6a4c954f93df68001352d0ea",
       "telegramProductIds": [
-        "6a4c954f93df68001352d0ea"
+        "6a4c954f93df68001352d0ea",
+        "6a7d878950a9b200129cd2c1"
       ],
       "telegramProductLinks": [
-        "https://superprofile.bio/vig/6a4c954f93df68001352d0ea"
+        "https://superprofile.bio/vig/6a4c954f93df68001352d0ea",
+        "https://superprofile.bio/vig/6a7d878950a9b200129cd2c1"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -9647,13 +10191,14 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-27",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-27"
+        "2026-08-27",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
-      "latestPayoutAmount": 2730.0,
-      "cumulativePayoutVolume": 2730.0,
+      "daysFlaggedCount": 2,
+      "latestPayoutAmount": 2530.0,
+      "cumulativePayoutVolume": 5260.0,
       "maxDailyPayout": 2730.0,
       "settlementHistory": [
         {
@@ -9661,6 +10206,12 @@
           "payoutAmount": 2730.0,
           "telegramProductId": "6a4c954f93df68001352d0ea",
           "telegramProductLink": "https://superprofile.bio/vig/6a4c954f93df68001352d0ea"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 2530.0,
+          "telegramProductId": "6a7d878950a9b200129cd2c1",
+          "telegramProductLink": "https://superprofile.bio/vig/6a7d878950a9b200129cd2c1"
         }
       ]
     },
@@ -9803,14 +10354,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 10127.0,
-      "cumulativePayoutVolume": 12729.0,
+      "cumulativePayoutVolume": 22856.0,
       "maxDailyPayout": 10127.0,
       "settlementHistory": [
         {
@@ -9821,6 +10373,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 10127.0,
+          "telegramProductId": "66c19b16cbdf9e0013cd7416",
+          "telegramProductLink": "https://superprofile.bio/vig/66c19b16cbdf9e0013cd7416"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 10127.0,
           "telegramProductId": "66c19b16cbdf9e0013cd7416",
           "telegramProductLink": "https://superprofile.bio/vig/66c19b16cbdf9e0013cd7416"
@@ -9968,14 +10526,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 12156.0,
-      "cumulativePayoutVolume": 14596.0,
+      "cumulativePayoutVolume": 26752.0,
       "maxDailyPayout": 12156.0,
       "settlementHistory": [
         {
@@ -9986,6 +10545,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 12156.0,
+          "telegramProductId": "69bd3b8cf1587c00137a9502",
+          "telegramProductLink": "https://superprofile.bio/vig/69bd3b8cf1587c00137a9502"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 12156.0,
           "telegramProductId": "69bd3b8cf1587c00137a9502",
           "telegramProductLink": "https://superprofile.bio/vig/69bd3b8cf1587c00137a9502"
@@ -10170,14 +10735,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 8643.0,
-      "cumulativePayoutVolume": 10948.0,
+      "cumulativePayoutVolume": 19591.0,
       "maxDailyPayout": 8643.0,
       "settlementHistory": [
         {
@@ -10188,6 +10754,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 8643.0,
+          "telegramProductId": "69e71347b2d24d00138f2ee3",
+          "telegramProductLink": "https://superprofile.bio/vig/69e71347b2d24d00138f2ee3"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 8643.0,
           "telegramProductId": "69e71347b2d24d00138f2ee3",
           "telegramProductLink": "https://superprofile.bio/vig/69e71347b2d24d00138f2ee3"
@@ -10723,14 +11295,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 6568.0,
-      "cumulativePayoutVolume": 8530.0,
+      "cumulativePayoutVolume": 15098.0,
       "maxDailyPayout": 6568.0,
       "settlementHistory": [
         {
@@ -10741,6 +11314,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 6568.0,
+          "telegramProductId": "69cf93a67efdb100133f8ede",
+          "telegramProductLink": "https://superprofile.bio/vig/69cf93a67efdb100133f8ede"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 6568.0,
           "telegramProductId": "69cf93a67efdb100133f8ede",
           "telegramProductLink": "https://superprofile.bio/vig/69cf93a67efdb100133f8ede"
@@ -11003,14 +11582,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 4305.0,
-      "cumulativePayoutVolume": 6221.0,
+      "cumulativePayoutVolume": 10526.0,
       "maxDailyPayout": 4305.0,
       "settlementHistory": [
         {
@@ -11021,6 +11601,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 4305.0,
+          "telegramProductId": "69c50507ed13090013f9af61",
+          "telegramProductLink": "https://superprofile.bio/vig/69c50507ed13090013f9af61"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 4305.0,
           "telegramProductId": "69c50507ed13090013f9af61",
           "telegramProductLink": "https://superprofile.bio/vig/69c50507ed13090013f9af61"
@@ -11244,14 +11830,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 2427.0,
-      "cumulativePayoutVolume": 4176.0,
+      "cumulativePayoutVolume": 6603.0,
       "maxDailyPayout": 2427.0,
       "settlementHistory": [
         {
@@ -11262,6 +11849,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 2427.0,
+          "telegramProductId": "68f3a1239e3ce90013e78440",
+          "telegramProductLink": "https://superprofile.bio/vig/68f3a1239e3ce90013e78440"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 2427.0,
           "telegramProductId": "68f3a1239e3ce90013e78440",
           "telegramProductLink": "https://superprofile.bio/vig/68f3a1239e3ce90013e78440"
@@ -11641,14 +12234,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 3331.0,
-      "cumulativePayoutVolume": 4793.0,
+      "cumulativePayoutVolume": 8124.0,
       "maxDailyPayout": 3331.0,
       "settlementHistory": [
         {
@@ -11659,6 +12253,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 3331.0,
+          "telegramProductId": "66fa8c944112770013f14620",
+          "telegramProductLink": "https://superprofile.bio/vig/66fa8c944112770013f14620"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 3331.0,
           "telegramProductId": "66fa8c944112770013f14620",
           "telegramProductLink": "https://superprofile.bio/vig/66fa8c944112770013f14620"
@@ -11930,14 +12530,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 2666.0,
-      "cumulativePayoutVolume": 3995.0,
+      "cumulativePayoutVolume": 6661.0,
       "maxDailyPayout": 2666.0,
       "settlementHistory": [
         {
@@ -11951,6 +12552,12 @@
           "payoutAmount": 2666.0,
           "telegramProductId": "6a816cae537d0d001340d1e8",
           "telegramProductLink": "https://superprofile.bio/vig/6a816cae537d0d001340d1e8"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 2666.0,
+          "telegramProductId": "6a805f593b396a0013260f70",
+          "telegramProductLink": "https://superprofile.bio/vig/6a805f593b396a0013260f70"
         }
       ]
     },
@@ -12015,14 +12622,15 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
         "2026-08-27",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 2,
+      "daysFlaggedCount": 3,
       "latestPayoutAmount": 4963.0,
-      "cumulativePayoutVolume": 6267.0,
+      "cumulativePayoutVolume": 11230.0,
       "maxDailyPayout": 4963.0,
       "settlementHistory": [
         {
@@ -12033,6 +12641,12 @@
         },
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 4963.0,
+          "telegramProductId": "689a66a8aca0a500134fb5f1",
+          "telegramProductLink": "https://superprofile.bio/vig/689a66a8aca0a500134fb5f1"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 4963.0,
           "telegramProductId": "689a66a8aca0a500134fb5f1",
           "telegramProductLink": "https://superprofile.bio/vig/689a66a8aca0a500134fb5f1"
@@ -12401,10 +13015,12 @@
       "telegramProductId": "6a3a9b9ec4f6700013489927",
       "telegramProductLink": "https://superprofile.bio/vig/6a3a9b9ec4f6700013489927",
       "telegramProductIds": [
-        "6a3a9b9ec4f6700013489927"
+        "6a3a9b9ec4f6700013489927",
+        "6a5ee28741258d001317f72b"
       ],
       "telegramProductLinks": [
-        "https://superprofile.bio/vig/6a3a9b9ec4f6700013489927"
+        "https://superprofile.bio/vig/6a3a9b9ec4f6700013489927",
+        "https://superprofile.bio/vig/6a5ee28741258d001317f72b"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -12412,13 +13028,14 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 1220.0,
-      "cumulativePayoutVolume": 1220.0,
+      "cumulativePayoutVolume": 2440.0,
       "maxDailyPayout": 1220.0,
       "settlementHistory": [
         {
@@ -12426,6 +13043,12 @@
           "payoutAmount": 1220.0,
           "telegramProductId": "6a3a9b9ec4f6700013489927",
           "telegramProductLink": "https://superprofile.bio/vig/6a3a9b9ec4f6700013489927"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 1220.0,
+          "telegramProductId": "6a5ee28741258d001317f72b",
+          "telegramProductLink": "https://superprofile.bio/vig/6a5ee28741258d001317f72b"
         }
       ]
     },
@@ -12451,17 +13074,24 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 16245.0,
-      "cumulativePayoutVolume": 16245.0,
+      "cumulativePayoutVolume": 32490.0,
       "maxDailyPayout": 16245.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 16245.0,
+          "telegramProductId": "679dfd77c7375300134bb498",
+          "telegramProductLink": "https://superprofile.bio/vig/679dfd77c7375300134bb498"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 16245.0,
           "telegramProductId": "679dfd77c7375300134bb498",
           "telegramProductLink": "https://superprofile.bio/vig/679dfd77c7375300134bb498"
@@ -12490,17 +13120,24 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 4704.0,
-      "cumulativePayoutVolume": 4704.0,
+      "cumulativePayoutVolume": 9408.0,
       "maxDailyPayout": 4704.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 4704.0,
+          "telegramProductId": "634d8d999e6817546ee93344",
+          "telegramProductLink": "https://superprofile.bio/vig/634d8d999e6817546ee93344"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 4704.0,
           "telegramProductId": "634d8d999e6817546ee93344",
           "telegramProductLink": "https://superprofile.bio/vig/634d8d999e6817546ee93344"
@@ -12531,17 +13168,24 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 16043.0,
-      "cumulativePayoutVolume": 16043.0,
+      "cumulativePayoutVolume": 32086.0,
       "maxDailyPayout": 16043.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 16043.0,
+          "telegramProductId": "6a75c265ec92e40013e9f82e",
+          "telegramProductLink": "https://superprofile.bio/vig/6a75c265ec92e40013e9f82e"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 16043.0,
           "telegramProductId": "6a75c265ec92e40013e9f82e",
           "telegramProductLink": "https://superprofile.bio/vig/6a75c265ec92e40013e9f82e"
@@ -12570,17 +13214,24 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 8830.0,
-      "cumulativePayoutVolume": 8830.0,
+      "cumulativePayoutVolume": 17660.0,
       "maxDailyPayout": 8830.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 8830.0,
+          "telegramProductId": "6a7c4b067629420013552b20",
+          "telegramProductLink": "https://superprofile.bio/vig/6a7c4b067629420013552b20"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 8830.0,
           "telegramProductId": "6a7c4b067629420013552b20",
           "telegramProductLink": "https://superprofile.bio/vig/6a7c4b067629420013552b20"
@@ -12598,10 +13249,12 @@
       "telegramProductId": "6780c8071dd04400134cfa0b",
       "telegramProductLink": "https://superprofile.bio/vig/6780c8071dd04400134cfa0b",
       "telegramProductIds": [
-        "6780c8071dd04400134cfa0b"
+        "6780c8071dd04400134cfa0b",
+        "6757ee1837dcf000134717e9"
       ],
       "telegramProductLinks": [
-        "https://superprofile.bio/vig/6780c8071dd04400134cfa0b"
+        "https://superprofile.bio/vig/6780c8071dd04400134cfa0b",
+        "https://superprofile.bio/vig/6757ee1837dcf000134717e9"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -12609,13 +13262,14 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 8151.0,
-      "cumulativePayoutVolume": 8151.0,
+      "cumulativePayoutVolume": 16302.0,
       "maxDailyPayout": 8151.0,
       "settlementHistory": [
         {
@@ -12623,6 +13277,12 @@
           "payoutAmount": 8151.0,
           "telegramProductId": "6780c8071dd04400134cfa0b",
           "telegramProductLink": "https://superprofile.bio/vig/6780c8071dd04400134cfa0b"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 8151.0,
+          "telegramProductId": "6757ee1837dcf000134717e9",
+          "telegramProductLink": "https://superprofile.bio/vig/6757ee1837dcf000134717e9"
         }
       ]
     },
@@ -12648,17 +13308,24 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 43416.0,
-      "cumulativePayoutVolume": 43416.0,
+      "cumulativePayoutVolume": 86832.0,
       "maxDailyPayout": 43416.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 43416.0,
+          "telegramProductId": "675d51d2abe64100134afc35",
+          "telegramProductLink": "https://superprofile.bio/vig/675d51d2abe64100134afc35"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 43416.0,
           "telegramProductId": "675d51d2abe64100134afc35",
           "telegramProductLink": "https://superprofile.bio/vig/675d51d2abe64100134afc35"
@@ -12687,17 +13354,24 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 19716.0,
-      "cumulativePayoutVolume": 19716.0,
+      "cumulativePayoutVolume": 39432.0,
       "maxDailyPayout": 19716.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 19716.0,
+          "telegramProductId": "68f36b1663e0410013ae9462",
+          "telegramProductLink": "https://superprofile.bio/vig/68f36b1663e0410013ae9462"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 19716.0,
           "telegramProductId": "68f36b1663e0410013ae9462",
           "telegramProductLink": "https://superprofile.bio/vig/68f36b1663e0410013ae9462"
@@ -12726,17 +13400,24 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 19651.0,
-      "cumulativePayoutVolume": 19651.0,
+      "cumulativePayoutVolume": 39302.0,
       "maxDailyPayout": 19651.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 19651.0,
+          "telegramProductId": "680b5a939478460013e2e2cf",
+          "telegramProductLink": "https://superprofile.bio/vig/680b5a939478460013e2e2cf"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 19651.0,
           "telegramProductId": "680b5a939478460013e2e2cf",
           "telegramProductLink": "https://superprofile.bio/vig/680b5a939478460013e2e2cf"
@@ -12767,17 +13448,24 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 18146.0,
-      "cumulativePayoutVolume": 18146.0,
+      "cumulativePayoutVolume": 36292.0,
       "maxDailyPayout": 18146.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 18146.0,
+          "telegramProductId": "65841be07dbe32001e1e57ab",
+          "telegramProductLink": "https://superprofile.bio/vig/65841be07dbe32001e1e57ab"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 18146.0,
           "telegramProductId": "65841be07dbe32001e1e57ab",
           "telegramProductLink": "https://superprofile.bio/vig/65841be07dbe32001e1e57ab"
@@ -12806,17 +13494,24 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 17393.0,
-      "cumulativePayoutVolume": 17393.0,
+      "cumulativePayoutVolume": 34786.0,
       "maxDailyPayout": 17393.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 17393.0,
+          "telegramProductId": "6a0ece7c70f15e001301ec28",
+          "telegramProductLink": "https://superprofile.bio/vig/6a0ece7c70f15e001301ec28"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 17393.0,
           "telegramProductId": "6a0ece7c70f15e001301ec28",
           "telegramProductLink": "https://superprofile.bio/vig/6a0ece7c70f15e001301ec28"
@@ -12845,17 +13540,24 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 16598.0,
-      "cumulativePayoutVolume": 16598.0,
+      "cumulativePayoutVolume": 33196.0,
       "maxDailyPayout": 16598.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 16598.0,
+          "telegramProductId": "65ebffc7fb9df6001397b18c",
+          "telegramProductLink": "https://superprofile.bio/vig/65ebffc7fb9df6001397b18c"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 16598.0,
           "telegramProductId": "65ebffc7fb9df6001397b18c",
           "telegramProductLink": "https://superprofile.bio/vig/65ebffc7fb9df6001397b18c"
@@ -12884,17 +13586,24 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 16531.0,
-      "cumulativePayoutVolume": 16531.0,
+      "cumulativePayoutVolume": 33062.0,
       "maxDailyPayout": 16531.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 16531.0,
+          "telegramProductId": "6a01481246724b0013a2614c",
+          "telegramProductLink": "https://superprofile.bio/vig/6a01481246724b0013a2614c"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 16531.0,
           "telegramProductId": "6a01481246724b0013a2614c",
           "telegramProductLink": "https://superprofile.bio/vig/6a01481246724b0013a2614c"
@@ -12925,13 +13634,14 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 14667.0,
-      "cumulativePayoutVolume": 14667.0,
+      "cumulativePayoutVolume": 29334.0,
       "maxDailyPayout": 14667.0,
       "settlementHistory": [
         {
@@ -12939,6 +13649,12 @@
           "payoutAmount": 14667.0,
           "telegramProductId": "69c915b340b24f001338c959",
           "telegramProductLink": "https://superprofile.bio/vig/69c915b340b24f001338c959"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 14667.0,
+          "telegramProductId": "69cf60bc1a0160001356382e",
+          "telegramProductLink": "https://superprofile.bio/vig/69cf60bc1a0160001356382e"
         }
       ]
     },
@@ -12964,17 +13680,24 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 14114.0,
-      "cumulativePayoutVolume": 14114.0,
+      "cumulativePayoutVolume": 28228.0,
       "maxDailyPayout": 14114.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 14114.0,
+          "telegramProductId": "684d5a341e8e5a0013e23f5e",
+          "telegramProductLink": "https://superprofile.bio/vig/684d5a341e8e5a0013e23f5e"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 14114.0,
           "telegramProductId": "684d5a341e8e5a0013e23f5e",
           "telegramProductLink": "https://superprofile.bio/vig/684d5a341e8e5a0013e23f5e"
@@ -13003,17 +13726,24 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 12204.0,
-      "cumulativePayoutVolume": 12204.0,
+      "cumulativePayoutVolume": 24408.0,
       "maxDailyPayout": 12204.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 12204.0,
+          "telegramProductId": "688074fb6aec320013f76ff8",
+          "telegramProductLink": "https://superprofile.bio/vig/688074fb6aec320013f76ff8"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 12204.0,
           "telegramProductId": "688074fb6aec320013f76ff8",
           "telegramProductLink": "https://superprofile.bio/vig/688074fb6aec320013f76ff8"
@@ -13044,17 +13774,24 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 11698.0,
-      "cumulativePayoutVolume": 11698.0,
+      "cumulativePayoutVolume": 23396.0,
       "maxDailyPayout": 11698.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 11698.0,
+          "telegramProductId": "68de5633e32be10013d2280f",
+          "telegramProductLink": "https://superprofile.bio/vig/68de5633e32be10013d2280f"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 11698.0,
           "telegramProductId": "68de5633e32be10013d2280f",
           "telegramProductLink": "https://superprofile.bio/vig/68de5633e32be10013d2280f"
@@ -13083,17 +13820,24 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 11358.0,
-      "cumulativePayoutVolume": 11358.0,
+      "cumulativePayoutVolume": 22716.0,
       "maxDailyPayout": 11358.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 11358.0,
+          "telegramProductId": "6613f4bfd6ac80001afb4241",
+          "telegramProductLink": "https://superprofile.bio/vig/6613f4bfd6ac80001afb4241"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 11358.0,
           "telegramProductId": "6613f4bfd6ac80001afb4241",
           "telegramProductLink": "https://superprofile.bio/vig/6613f4bfd6ac80001afb4241"
@@ -13111,10 +13855,12 @@
       "telegramProductId": "6679607a36d2ec00135d55a5",
       "telegramProductLink": "https://superprofile.bio/vig/6679607a36d2ec00135d55a5",
       "telegramProductIds": [
-        "6679607a36d2ec00135d55a5"
+        "6679607a36d2ec00135d55a5",
+        "67a33958a7465a00122a8a68"
       ],
       "telegramProductLinks": [
-        "https://superprofile.bio/vig/6679607a36d2ec00135d55a5"
+        "https://superprofile.bio/vig/6679607a36d2ec00135d55a5",
+        "https://superprofile.bio/vig/67a33958a7465a00122a8a68"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -13122,13 +13868,14 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 9970.0,
-      "cumulativePayoutVolume": 9970.0,
+      "cumulativePayoutVolume": 19940.0,
       "maxDailyPayout": 9970.0,
       "settlementHistory": [
         {
@@ -13136,6 +13883,12 @@
           "payoutAmount": 9970.0,
           "telegramProductId": "6679607a36d2ec00135d55a5",
           "telegramProductLink": "https://superprofile.bio/vig/6679607a36d2ec00135d55a5"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 9970.0,
+          "telegramProductId": "67a33958a7465a00122a8a68",
+          "telegramProductLink": "https://superprofile.bio/vig/67a33958a7465a00122a8a68"
         }
       ]
     },
@@ -13150,10 +13903,12 @@
       "telegramProductId": "6a8a95f4a7524200139aa442",
       "telegramProductLink": "https://superprofile.bio/vig/6a8a95f4a7524200139aa442",
       "telegramProductIds": [
-        "6a8a95f4a7524200139aa442"
+        "6a8a95f4a7524200139aa442",
+        "6a887a1347d8100013f8b797"
       ],
       "telegramProductLinks": [
-        "https://superprofile.bio/vig/6a8a95f4a7524200139aa442"
+        "https://superprofile.bio/vig/6a8a95f4a7524200139aa442",
+        "https://superprofile.bio/vig/6a887a1347d8100013f8b797"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -13161,13 +13916,14 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 1530.0,
-      "cumulativePayoutVolume": 9608.0,
+      "cumulativePayoutVolume": 19216.0,
       "maxDailyPayout": 9608.0,
       "settlementHistory": [
         {
@@ -13175,6 +13931,12 @@
           "payoutAmount": 9608.0,
           "telegramProductId": "6a8a95f4a7524200139aa442",
           "telegramProductLink": "https://superprofile.bio/vig/6a8a95f4a7524200139aa442"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 9608.0,
+          "telegramProductId": "6a887a1347d8100013f8b797",
+          "telegramProductLink": "https://superprofile.bio/vig/6a887a1347d8100013f8b797"
         }
       ]
     },
@@ -13200,17 +13962,24 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 9586.0,
-      "cumulativePayoutVolume": 9586.0,
+      "cumulativePayoutVolume": 19172.0,
       "maxDailyPayout": 9586.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 9586.0,
+          "telegramProductId": "67f4e416eac6e20013167ee0",
+          "telegramProductLink": "https://superprofile.bio/vig/67f4e416eac6e20013167ee0"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 9586.0,
           "telegramProductId": "67f4e416eac6e20013167ee0",
           "telegramProductLink": "https://superprofile.bio/vig/67f4e416eac6e20013167ee0"
@@ -13241,17 +14010,24 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 8724.0,
-      "cumulativePayoutVolume": 8724.0,
+      "cumulativePayoutVolume": 17448.0,
       "maxDailyPayout": 8724.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 8724.0,
+          "telegramProductId": "682c6a116e5203001391eaeb",
+          "telegramProductLink": "https://superprofile.bio/vig/682c6a116e5203001391eaeb"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 8724.0,
           "telegramProductId": "682c6a116e5203001391eaeb",
           "telegramProductLink": "https://superprofile.bio/vig/682c6a116e5203001391eaeb"
@@ -13280,17 +14056,24 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 7809.0,
-      "cumulativePayoutVolume": 7809.0,
+      "cumulativePayoutVolume": 15618.0,
       "maxDailyPayout": 7809.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 7809.0,
+          "telegramProductId": "6652ce22c25b40001383b126",
+          "telegramProductLink": "https://superprofile.bio/vig/6652ce22c25b40001383b126"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 7809.0,
           "telegramProductId": "6652ce22c25b40001383b126",
           "telegramProductLink": "https://superprofile.bio/vig/6652ce22c25b40001383b126"
@@ -13319,17 +14102,24 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 6752.0,
-      "cumulativePayoutVolume": 6752.0,
+      "cumulativePayoutVolume": 13504.0,
       "maxDailyPayout": 6752.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 6752.0,
+          "telegramProductId": "696f315e9e1b7300131a3935",
+          "telegramProductLink": "https://superprofile.bio/vig/696f315e9e1b7300131a3935"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 6752.0,
           "telegramProductId": "696f315e9e1b7300131a3935",
           "telegramProductLink": "https://superprofile.bio/vig/696f315e9e1b7300131a3935"
@@ -13347,10 +14137,12 @@
       "telegramProductId": "69072bdaae00150013d01079",
       "telegramProductLink": "https://superprofile.bio/vig/69072bdaae00150013d01079",
       "telegramProductIds": [
-        "69072bdaae00150013d01079"
+        "69072bdaae00150013d01079",
+        "670262be1232fa0013ec087b"
       ],
       "telegramProductLinks": [
-        "https://superprofile.bio/vig/69072bdaae00150013d01079"
+        "https://superprofile.bio/vig/69072bdaae00150013d01079",
+        "https://superprofile.bio/vig/670262be1232fa0013ec087b"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -13358,13 +14150,14 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 6704.0,
-      "cumulativePayoutVolume": 6704.0,
+      "cumulativePayoutVolume": 13408.0,
       "maxDailyPayout": 6704.0,
       "settlementHistory": [
         {
@@ -13372,6 +14165,12 @@
           "payoutAmount": 6704.0,
           "telegramProductId": "69072bdaae00150013d01079",
           "telegramProductLink": "https://superprofile.bio/vig/69072bdaae00150013d01079"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 6704.0,
+          "telegramProductId": "670262be1232fa0013ec087b",
+          "telegramProductLink": "https://superprofile.bio/vig/670262be1232fa0013ec087b"
         }
       ]
     },
@@ -13399,17 +14198,24 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 6653.0,
-      "cumulativePayoutVolume": 6653.0,
+      "cumulativePayoutVolume": 13306.0,
       "maxDailyPayout": 6653.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 6653.0,
+          "telegramProductId": "6a804264e3e35d0013bc1b11",
+          "telegramProductLink": "https://superprofile.bio/vig/6a804264e3e35d0013bc1b11"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 6653.0,
           "telegramProductId": "6a804264e3e35d0013bc1b11",
           "telegramProductLink": "https://superprofile.bio/vig/6a804264e3e35d0013bc1b11"
@@ -13438,17 +14244,24 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 6402.0,
-      "cumulativePayoutVolume": 6402.0,
+      "cumulativePayoutVolume": 12804.0,
       "maxDailyPayout": 6402.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 6402.0,
+          "telegramProductId": "6a71ae2b9b236b00138135f0",
+          "telegramProductLink": "https://superprofile.bio/vig/6a71ae2b9b236b00138135f0"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 6402.0,
           "telegramProductId": "6a71ae2b9b236b00138135f0",
           "telegramProductLink": "https://superprofile.bio/vig/6a71ae2b9b236b00138135f0"
@@ -13477,17 +14290,24 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 6308.0,
-      "cumulativePayoutVolume": 6308.0,
+      "cumulativePayoutVolume": 12616.0,
       "maxDailyPayout": 6308.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 6308.0,
+          "telegramProductId": "66bdca369696019439c450c3",
+          "telegramProductLink": "https://superprofile.bio/vig/66bdca369696019439c450c3"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 6308.0,
           "telegramProductId": "66bdca369696019439c450c3",
           "telegramProductLink": "https://superprofile.bio/vig/66bdca369696019439c450c3"
@@ -13518,13 +14338,14 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 6270.0,
-      "cumulativePayoutVolume": 6270.0,
+      "cumulativePayoutVolume": 12540.0,
       "maxDailyPayout": 6270.0,
       "settlementHistory": [
         {
@@ -13532,6 +14353,12 @@
           "payoutAmount": 6270.0,
           "telegramProductId": "663b5821b5a80a00130d0dd2",
           "telegramProductLink": "https://superprofile.bio/vig/663b5821b5a80a00130d0dd2"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 6270.0,
+          "telegramProductId": "66dc6648be6a360014e3ecb8",
+          "telegramProductLink": "https://superprofile.bio/vig/66dc6648be6a360014e3ecb8"
         }
       ]
     },
@@ -13559,13 +14386,14 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 5642.0,
-      "cumulativePayoutVolume": 5642.0,
+      "cumulativePayoutVolume": 11284.0,
       "maxDailyPayout": 5642.0,
       "settlementHistory": [
         {
@@ -13573,6 +14401,12 @@
           "payoutAmount": 5642.0,
           "telegramProductId": "69e08bf7cf447100130ff711",
           "telegramProductLink": "https://superprofile.bio/vig/69e08bf7cf447100130ff711"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 5642.0,
+          "telegramProductId": "68bb102336262a0013e87744",
+          "telegramProductLink": "https://superprofile.bio/vig/68bb102336262a0013e87744"
         }
       ]
     },
@@ -13598,17 +14432,24 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 5533.0,
-      "cumulativePayoutVolume": 5533.0,
+      "cumulativePayoutVolume": 11066.0,
       "maxDailyPayout": 5533.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 5533.0,
+          "telegramProductId": "696f773e4386d6001250fdfe",
+          "telegramProductLink": "https://superprofile.bio/vig/696f773e4386d6001250fdfe"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 5533.0,
           "telegramProductId": "696f773e4386d6001250fdfe",
           "telegramProductLink": "https://superprofile.bio/vig/696f773e4386d6001250fdfe"
@@ -13627,11 +14468,13 @@
       "telegramProductLink": "https://superprofile.bio/vig/6630d8ef233325f1b6d018c5",
       "telegramProductIds": [
         "6630d8ef233325f1b6d018c5",
-        "6895e8efc637ad00134b271d"
+        "6895e8efc637ad00134b271d",
+        "6630d941233325f1b6d018c6"
       ],
       "telegramProductLinks": [
         "https://superprofile.bio/vig/6630d8ef233325f1b6d018c5",
-        "https://superprofile.bio/vig/6895e8efc637ad00134b271d"
+        "https://superprofile.bio/vig/6895e8efc637ad00134b271d",
+        "https://superprofile.bio/vig/6630d941233325f1b6d018c6"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -13639,13 +14482,14 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 5216.0,
-      "cumulativePayoutVolume": 5216.0,
+      "cumulativePayoutVolume": 10432.0,
       "maxDailyPayout": 5216.0,
       "settlementHistory": [
         {
@@ -13653,6 +14497,12 @@
           "payoutAmount": 5216.0,
           "telegramProductId": "6630d8ef233325f1b6d018c5",
           "telegramProductLink": "https://superprofile.bio/vig/6630d8ef233325f1b6d018c5"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 5216.0,
+          "telegramProductId": "6630d941233325f1b6d018c6",
+          "telegramProductLink": "https://superprofile.bio/vig/6630d941233325f1b6d018c6"
         }
       ]
     },
@@ -13678,17 +14528,24 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 5100.0,
-      "cumulativePayoutVolume": 5100.0,
+      "cumulativePayoutVolume": 10200.0,
       "maxDailyPayout": 5100.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 5100.0,
+          "telegramProductId": "64a0206daad9d300200623cd",
+          "telegramProductLink": "https://superprofile.bio/vig/64a0206daad9d300200623cd"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 5100.0,
           "telegramProductId": "64a0206daad9d300200623cd",
           "telegramProductLink": "https://superprofile.bio/vig/64a0206daad9d300200623cd"
@@ -13717,17 +14574,24 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 5039.0,
-      "cumulativePayoutVolume": 5039.0,
+      "cumulativePayoutVolume": 10078.0,
       "maxDailyPayout": 5039.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 5039.0,
+          "telegramProductId": "6a06bd87dc27930013a08469",
+          "telegramProductLink": "https://superprofile.bio/vig/6a06bd87dc27930013a08469"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 5039.0,
           "telegramProductId": "6a06bd87dc27930013a08469",
           "telegramProductLink": "https://superprofile.bio/vig/6a06bd87dc27930013a08469"
@@ -13756,17 +14620,24 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 4853.0,
-      "cumulativePayoutVolume": 4853.0,
+      "cumulativePayoutVolume": 9706.0,
       "maxDailyPayout": 4853.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 4853.0,
+          "telegramProductId": "678695943266f80013773e18",
+          "telegramProductLink": "https://superprofile.bio/vig/678695943266f80013773e18"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 4853.0,
           "telegramProductId": "678695943266f80013773e18",
           "telegramProductLink": "https://superprofile.bio/vig/678695943266f80013773e18"
@@ -13797,13 +14668,14 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 4697.0,
-      "cumulativePayoutVolume": 4697.0,
+      "cumulativePayoutVolume": 9394.0,
       "maxDailyPayout": 4697.0,
       "settlementHistory": [
         {
@@ -13811,6 +14683,12 @@
           "payoutAmount": 4697.0,
           "telegramProductId": "65ab922eb2fcd0001e3c14f9",
           "telegramProductLink": "https://superprofile.bio/vig/65ab922eb2fcd0001e3c14f9"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 4697.0,
+          "telegramProductId": "6475f8a6a3c3a8002022d34b",
+          "telegramProductLink": "https://superprofile.bio/vig/6475f8a6a3c3a8002022d34b"
         }
       ]
     },
@@ -13825,10 +14703,12 @@
       "telegramProductId": "6a2ff8193d7d2c001326919c",
       "telegramProductLink": "https://superprofile.bio/vig/6a2ff8193d7d2c001326919c",
       "telegramProductIds": [
-        "6a2ff8193d7d2c001326919c"
+        "6a2ff8193d7d2c001326919c",
+        "68037ef123ccf00013fefbc7"
       ],
       "telegramProductLinks": [
-        "https://superprofile.bio/vig/6a2ff8193d7d2c001326919c"
+        "https://superprofile.bio/vig/6a2ff8193d7d2c001326919c",
+        "https://superprofile.bio/vig/68037ef123ccf00013fefbc7"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -13836,13 +14716,14 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 4465.0,
-      "cumulativePayoutVolume": 4465.0,
+      "cumulativePayoutVolume": 8930.0,
       "maxDailyPayout": 4465.0,
       "settlementHistory": [
         {
@@ -13850,6 +14731,12 @@
           "payoutAmount": 4465.0,
           "telegramProductId": "6a2ff8193d7d2c001326919c",
           "telegramProductLink": "https://superprofile.bio/vig/6a2ff8193d7d2c001326919c"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 4465.0,
+          "telegramProductId": "68037ef123ccf00013fefbc7",
+          "telegramProductLink": "https://superprofile.bio/vig/68037ef123ccf00013fefbc7"
         }
       ]
     },
@@ -13864,10 +14751,12 @@
       "telegramProductId": "6a7164db99878a0013e870fa",
       "telegramProductLink": "https://superprofile.bio/vig/6a7164db99878a0013e870fa",
       "telegramProductIds": [
-        "6a7164db99878a0013e870fa"
+        "6a7164db99878a0013e870fa",
+        "6a5ce2158411290013cb4aa6"
       ],
       "telegramProductLinks": [
-        "https://superprofile.bio/vig/6a7164db99878a0013e870fa"
+        "https://superprofile.bio/vig/6a7164db99878a0013e870fa",
+        "https://superprofile.bio/vig/6a5ce2158411290013cb4aa6"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -13875,13 +14764,14 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 4294.0,
-      "cumulativePayoutVolume": 4294.0,
+      "cumulativePayoutVolume": 8588.0,
       "maxDailyPayout": 4294.0,
       "settlementHistory": [
         {
@@ -13889,6 +14779,12 @@
           "payoutAmount": 4294.0,
           "telegramProductId": "6a7164db99878a0013e870fa",
           "telegramProductLink": "https://superprofile.bio/vig/6a7164db99878a0013e870fa"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 4294.0,
+          "telegramProductId": "6a5ce2158411290013cb4aa6",
+          "telegramProductLink": "https://superprofile.bio/vig/6a5ce2158411290013cb4aa6"
         }
       ]
     },
@@ -13904,11 +14800,13 @@
       "telegramProductLink": "https://superprofile.bio/vig/66f299f3ae4f5d00133fe9fc",
       "telegramProductIds": [
         "66f299f3ae4f5d00133fe9fc",
-        "686bd372742de600131dfab9"
+        "686bd372742de600131dfab9",
+        "67066f60900ecb001483b78c"
       ],
       "telegramProductLinks": [
         "https://superprofile.bio/vig/66f299f3ae4f5d00133fe9fc",
-        "https://superprofile.bio/vig/686bd372742de600131dfab9"
+        "https://superprofile.bio/vig/686bd372742de600131dfab9",
+        "https://superprofile.bio/vig/67066f60900ecb001483b78c"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -13916,13 +14814,14 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 3938.0,
-      "cumulativePayoutVolume": 3938.0,
+      "cumulativePayoutVolume": 7876.0,
       "maxDailyPayout": 3938.0,
       "settlementHistory": [
         {
@@ -13930,6 +14829,12 @@
           "payoutAmount": 3938.0,
           "telegramProductId": "66f299f3ae4f5d00133fe9fc",
           "telegramProductLink": "https://superprofile.bio/vig/66f299f3ae4f5d00133fe9fc"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 3938.0,
+          "telegramProductId": "67066f60900ecb001483b78c",
+          "telegramProductLink": "https://superprofile.bio/vig/67066f60900ecb001483b78c"
         }
       ]
     },
@@ -13955,17 +14860,24 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 3919.0,
-      "cumulativePayoutVolume": 3919.0,
+      "cumulativePayoutVolume": 7838.0,
       "maxDailyPayout": 3919.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 3919.0,
+          "telegramProductId": "68e12bede32be1001304d591",
+          "telegramProductLink": "https://superprofile.bio/vig/68e12bede32be1001304d591"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 3919.0,
           "telegramProductId": "68e12bede32be1001304d591",
           "telegramProductLink": "https://superprofile.bio/vig/68e12bede32be1001304d591"
@@ -13994,17 +14906,24 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 3763.0,
-      "cumulativePayoutVolume": 3763.0,
+      "cumulativePayoutVolume": 7526.0,
       "maxDailyPayout": 3763.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 3763.0,
+          "telegramProductId": "660e5fc79e824b0013c602ce",
+          "telegramProductLink": "https://superprofile.bio/vig/660e5fc79e824b0013c602ce"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 3763.0,
           "telegramProductId": "660e5fc79e824b0013c602ce",
           "telegramProductLink": "https://superprofile.bio/vig/660e5fc79e824b0013c602ce"
@@ -14033,17 +14952,24 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 3355.0,
-      "cumulativePayoutVolume": 3355.0,
+      "cumulativePayoutVolume": 6710.0,
       "maxDailyPayout": 3355.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 3355.0,
+          "telegramProductId": "676154f99babf600134329a6",
+          "telegramProductLink": "https://superprofile.bio/vig/676154f99babf600134329a6"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 3355.0,
           "telegramProductId": "676154f99babf600134329a6",
           "telegramProductLink": "https://superprofile.bio/vig/676154f99babf600134329a6"
@@ -14062,11 +14988,13 @@
       "telegramProductLink": "https://superprofile.bio/vig/6a688775e5b2de0013b53621",
       "telegramProductIds": [
         "6a688775e5b2de0013b53621",
-        "6a68876c8d035c0013923072"
+        "6a68876c8d035c0013923072",
+        "6a688768eea28a0013597168"
       ],
       "telegramProductLinks": [
         "https://superprofile.bio/vig/6a688775e5b2de0013b53621",
-        "https://superprofile.bio/vig/6a68876c8d035c0013923072"
+        "https://superprofile.bio/vig/6a68876c8d035c0013923072",
+        "https://superprofile.bio/vig/6a688768eea28a0013597168"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -14074,13 +15002,14 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 3334.0,
-      "cumulativePayoutVolume": 3334.0,
+      "cumulativePayoutVolume": 6668.0,
       "maxDailyPayout": 3334.0,
       "settlementHistory": [
         {
@@ -14088,6 +15017,12 @@
           "payoutAmount": 3334.0,
           "telegramProductId": "6a688775e5b2de0013b53621",
           "telegramProductLink": "https://superprofile.bio/vig/6a688775e5b2de0013b53621"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 3334.0,
+          "telegramProductId": "6a688768eea28a0013597168",
+          "telegramProductLink": "https://superprofile.bio/vig/6a688768eea28a0013597168"
         }
       ]
     },
@@ -14102,10 +15037,12 @@
       "telegramProductId": "64759f2e526648002079e864",
       "telegramProductLink": "https://superprofile.bio/vig/64759f2e526648002079e864",
       "telegramProductIds": [
-        "64759f2e526648002079e864"
+        "64759f2e526648002079e864",
+        "69ba74516bc32b00130035d6"
       ],
       "telegramProductLinks": [
-        "https://superprofile.bio/vig/64759f2e526648002079e864"
+        "https://superprofile.bio/vig/64759f2e526648002079e864",
+        "https://superprofile.bio/vig/69ba74516bc32b00130035d6"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -14113,13 +15050,14 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 2946.0,
-      "cumulativePayoutVolume": 2946.0,
+      "cumulativePayoutVolume": 5892.0,
       "maxDailyPayout": 2946.0,
       "settlementHistory": [
         {
@@ -14127,6 +15065,12 @@
           "payoutAmount": 2946.0,
           "telegramProductId": "64759f2e526648002079e864",
           "telegramProductLink": "https://superprofile.bio/vig/64759f2e526648002079e864"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 2946.0,
+          "telegramProductId": "69ba74516bc32b00130035d6",
+          "telegramProductLink": "https://superprofile.bio/vig/69ba74516bc32b00130035d6"
         }
       ]
     },
@@ -14154,13 +15098,14 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 2946.0,
-      "cumulativePayoutVolume": 2946.0,
+      "cumulativePayoutVolume": 5892.0,
       "maxDailyPayout": 2946.0,
       "settlementHistory": [
         {
@@ -14168,6 +15113,12 @@
           "payoutAmount": 2946.0,
           "telegramProductId": "6475a666f68c8e0020343324",
           "telegramProductLink": "https://superprofile.bio/vig/6475a666f68c8e0020343324"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 2946.0,
+          "telegramProductId": "65315426da54f97e560ca586",
+          "telegramProductLink": "https://superprofile.bio/vig/65315426da54f97e560ca586"
         }
       ]
     },
@@ -14195,17 +15146,24 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 2945.0,
-      "cumulativePayoutVolume": 2945.0,
+      "cumulativePayoutVolume": 5890.0,
       "maxDailyPayout": 2945.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 2945.0,
+          "telegramProductId": "6799c4259c78290013a9881d",
+          "telegramProductLink": "https://superprofile.bio/vig/6799c4259c78290013a9881d"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 2945.0,
           "telegramProductId": "6799c4259c78290013a9881d",
           "telegramProductLink": "https://superprofile.bio/vig/6799c4259c78290013a9881d"
@@ -14234,17 +15192,24 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 2942.0,
-      "cumulativePayoutVolume": 2942.0,
+      "cumulativePayoutVolume": 5884.0,
       "maxDailyPayout": 2942.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 2942.0,
+          "telegramProductId": "6a267c24adb94f00130df22e",
+          "telegramProductLink": "https://superprofile.bio/vig/6a267c24adb94f00130df22e"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 2942.0,
           "telegramProductId": "6a267c24adb94f00130df22e",
           "telegramProductLink": "https://superprofile.bio/vig/6a267c24adb94f00130df22e"
@@ -14273,17 +15238,24 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 2823.0,
-      "cumulativePayoutVolume": 2823.0,
+      "cumulativePayoutVolume": 5646.0,
       "maxDailyPayout": 2823.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 2823.0,
+          "telegramProductId": "64d6fa8fedf0ae001ee54c49",
+          "telegramProductLink": "https://superprofile.bio/vig/64d6fa8fedf0ae001ee54c49"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 2823.0,
           "telegramProductId": "64d6fa8fedf0ae001ee54c49",
           "telegramProductLink": "https://superprofile.bio/vig/64d6fa8fedf0ae001ee54c49"
@@ -14312,17 +15284,24 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 2796.0,
-      "cumulativePayoutVolume": 2796.0,
+      "cumulativePayoutVolume": 5592.0,
       "maxDailyPayout": 2796.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 2796.0,
+          "telegramProductId": "6a1d0d0d66efb200138751ac",
+          "telegramProductLink": "https://superprofile.bio/vig/6a1d0d0d66efb200138751ac"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 2796.0,
           "telegramProductId": "6a1d0d0d66efb200138751ac",
           "telegramProductLink": "https://superprofile.bio/vig/6a1d0d0d66efb200138751ac"
@@ -14341,11 +15320,13 @@
       "telegramProductLink": "https://superprofile.bio/vig/6a7fefb23b396a001310a990",
       "telegramProductIds": [
         "6a7fefb23b396a001310a990",
-        "695b6788e78a8e0013482667"
+        "695b6788e78a8e0013482667",
+        "66dab8e6dfa0440013c88a89"
       ],
       "telegramProductLinks": [
         "https://superprofile.bio/vig/6a7fefb23b396a001310a990",
-        "https://superprofile.bio/vig/695b6788e78a8e0013482667"
+        "https://superprofile.bio/vig/695b6788e78a8e0013482667",
+        "https://superprofile.bio/vig/66dab8e6dfa0440013c88a89"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -14353,13 +15334,14 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 2767.0,
-      "cumulativePayoutVolume": 2767.0,
+      "cumulativePayoutVolume": 5534.0,
       "maxDailyPayout": 2767.0,
       "settlementHistory": [
         {
@@ -14367,6 +15349,12 @@
           "payoutAmount": 2767.0,
           "telegramProductId": "6a7fefb23b396a001310a990",
           "telegramProductLink": "https://superprofile.bio/vig/6a7fefb23b396a001310a990"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 2767.0,
+          "telegramProductId": "66dab8e6dfa0440013c88a89",
+          "telegramProductLink": "https://superprofile.bio/vig/66dab8e6dfa0440013c88a89"
         }
       ]
     },
@@ -14382,11 +15370,13 @@
       "telegramProductLink": "https://superprofile.bio/vig/68e1df61b49f660013fd34ab",
       "telegramProductIds": [
         "68e1df61b49f660013fd34ab",
-        "69af81eb0f554f0013040a57"
+        "69af81eb0f554f0013040a57",
+        "69f1aa36808e890013cacb09"
       ],
       "telegramProductLinks": [
         "https://superprofile.bio/vig/68e1df61b49f660013fd34ab",
-        "https://superprofile.bio/vig/69af81eb0f554f0013040a57"
+        "https://superprofile.bio/vig/69af81eb0f554f0013040a57",
+        "https://superprofile.bio/vig/69f1aa36808e890013cacb09"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -14394,13 +15384,14 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 2700.0,
-      "cumulativePayoutVolume": 2700.0,
+      "cumulativePayoutVolume": 5400.0,
       "maxDailyPayout": 2700.0,
       "settlementHistory": [
         {
@@ -14408,6 +15399,12 @@
           "payoutAmount": 2700.0,
           "telegramProductId": "68e1df61b49f660013fd34ab",
           "telegramProductLink": "https://superprofile.bio/vig/68e1df61b49f660013fd34ab"
+        },
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 2700.0,
+          "telegramProductId": "69f1aa36808e890013cacb09",
+          "telegramProductLink": "https://superprofile.bio/vig/69f1aa36808e890013cacb09"
         }
       ]
     },
@@ -14433,17 +15430,24 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 2699.0,
-      "cumulativePayoutVolume": 2699.0,
+      "cumulativePayoutVolume": 5398.0,
       "maxDailyPayout": 2699.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 2699.0,
+          "telegramProductId": "68c11258fe96b400137e95cd",
+          "telegramProductLink": "https://superprofile.bio/vig/68c11258fe96b400137e95cd"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 2699.0,
           "telegramProductId": "68c11258fe96b400137e95cd",
           "telegramProductLink": "https://superprofile.bio/vig/68c11258fe96b400137e95cd"
@@ -14472,17 +15476,24 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 2635.0,
-      "cumulativePayoutVolume": 2635.0,
+      "cumulativePayoutVolume": 5270.0,
       "maxDailyPayout": 2635.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 2635.0,
+          "telegramProductId": "647830094112cd001f144fd5",
+          "telegramProductLink": "https://superprofile.bio/vig/647830094112cd001f144fd5"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 2635.0,
           "telegramProductId": "647830094112cd001f144fd5",
           "telegramProductLink": "https://superprofile.bio/vig/647830094112cd001f144fd5"
@@ -14511,17 +15522,24 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 2520.0,
-      "cumulativePayoutVolume": 2520.0,
+      "cumulativePayoutVolume": 5040.0,
       "maxDailyPayout": 2520.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 2520.0,
+          "telegramProductId": "6a85ca0eac362100135c2de3",
+          "telegramProductLink": "https://superprofile.bio/vig/6a85ca0eac362100135c2de3"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 2520.0,
           "telegramProductId": "6a85ca0eac362100135c2de3",
           "telegramProductLink": "https://superprofile.bio/vig/6a85ca0eac362100135c2de3"
@@ -14628,17 +15646,24 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-28",
-      "lastSeenDate": "2026-08-28",
+      "lastSeenDate": "2026-08-29",
       "datesObserved": [
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-29"
       ],
-      "daysFlaggedCount": 1,
+      "daysFlaggedCount": 2,
       "latestPayoutAmount": 87339.0,
-      "cumulativePayoutVolume": 87339.0,
+      "cumulativePayoutVolume": 174678.0,
       "maxDailyPayout": 87339.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-28",
+          "payoutAmount": 87339.0,
+          "telegramProductId": "649c358021ff91002bd79e9f",
+          "telegramProductLink": "https://superprofile.bio/vig/649c358021ff91002bd79e9f"
+        },
+        {
+          "auditDate": "2026-08-29",
           "payoutAmount": 87339.0,
           "telegramProductId": "649c358021ff91002bd79e9f",
           "telegramProductLink": "https://superprofile.bio/vig/649c358021ff91002bd79e9f"
@@ -14720,6 +15745,45 @@
           "payoutAmount": 2250.0,
           "telegramProductId": "69d79e92063b150013da4bc7",
           "telegramProductLink": "https://superprofile.bio/vig/69d79e92063b150013da4bc7"
+        }
+      ]
+    },
+    "665e11941fa95b00139155d6": {
+      "creatorId": "665e11941fa95b00139155d6",
+      "username": "breakoutsignals1",
+      "creatorName": "breakoutsignals1",
+      "email": "ingeniousgcm5@gmail.com",
+      "phone": "8668376331",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "66c6259d2daa8f0013342767",
+      "telegramProductLink": "https://superprofile.bio/vig/66c6259d2daa8f0013342767",
+      "telegramProductIds": [
+        "66c6259d2daa8f0013342767"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/66c6259d2daa8f0013342767"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-29",
+      "lastSeenDate": "2026-08-29",
+      "datesObserved": [
+        "2026-08-29"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 1953.0,
+      "cumulativePayoutVolume": 1953.0,
+      "maxDailyPayout": 1953.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-29",
+          "payoutAmount": 1953.0,
+          "telegramProductId": "66c6259d2daa8f0013342767",
+          "telegramProductLink": "https://superprofile.bio/vig/66c6259d2daa8f0013342767"
         }
       ]
     }
@@ -15178,6 +16242,155 @@
         "68d817c7606b190013de1235",
         "66310a2d8235ac00139e18a0",
         "6867fda9d6f2420013da1953",
+        "644f511bb09d34001fdba603"
+      ]
+    },
+    "2026-08-29": {
+      "auditDate": "2026-08-29",
+      "flaggedCount": 142,
+      "totalDayVolume": 1602911.0,
+      "creatorIds": [
+        "6a2a3b18739da100136db6f1",
+        "679cc008836dec0013a115a1",
+        "634d5391849d61541ff6cd18",
+        "649330ea3b6d6900200fdb05",
+        "673b7c6178dc700013ad956d",
+        "6a54b9ee478445001378e580",
+        "6682543e9f94b50014bd0d5f",
+        "65645dfe77f97f00dff1712b",
+        "663dd24d61f04800142f8ce8",
+        "6a85a273ac3621001354cbf3",
+        "641074ebef82f6001fb616b9",
+        "6a1fc6e3997af1001346cebc",
+        "63e0416509bf7d00326f6ef9",
+        "6370d12220af49002ce4b102",
+        "65925b23d9349b001e49b619",
+        "65684423d7de9b001e28daa2",
+        "6508441f6757d4001edc1cea",
+        "62d954abba10293040ccce13",
+        "670428175f4c600013ce6176",
+        "68eb6aab887005001328a799",
+        "69d8da6b611a100013264b23",
+        "63523e0eb32e743e3a8ee56b",
+        "628ed1af4e4a6543a601d1ab",
+        "6384e99de7291200319784c0",
+        "678b9e61d92774001390674d",
+        "65fbcb2c928e8f0012928061",
+        "686213a26baad500137e5ae3",
+        "66e901a7945e660013e865b8",
+        "65364004f28141001e752bd2",
+        "6a6843cc298f960014a01d85",
+        "65ebfc1dfb9df60013976ba6",
+        "63c7cee4ed193700365233cd",
+        "6903094d47fdf40013e5a517",
+        "65aa7654460ef2001d58c405",
+        "67e1a6a720f70200135afe0a",
+        "6861859e611efd0013dc2d7c",
+        "636504cb207719003705c089",
+        "667c078d8a21550013342f58",
+        "64cce79662f090001e0c0f85",
+        "63e79efafb1d710033a11eab",
+        "698eecd3c90038001350b506",
+        "65ae7ab14009dd001dce5f32",
+        "68f0653948c02b001307f329",
+        "68c028c79760310013afe186",
+        "64c187f9fe49f3001ef0c17f",
+        "6a5daef8336dff00131581e1",
+        "64cdf10a18e70c001e3b4622",
+        "61ad9a66de18c31fc55326dd",
+        "6805ef1fc4530b00138986db",
+        "6a1d7ae12f3971001304d6f9",
+        "647aaeb0bc5c8a0020c70e63",
+        "670f725bcfaab800136536fc",
+        "6489d203d28234002a3b5e54",
+        "63561f67ef716500374497bf",
+        "644f511bb09d34001fdba603",
+        "670df27f742ab00013bb26f3",
+        "69be3238b2f3ae0013f126bd",
+        "65b5bc2daa6275001da0c01d",
+        "66e9d48eaec7200013a6e690",
+        "670c81e8a3771f00130ca0ec",
+        "656c8ebdd7a7e3001e19fff0",
+        "61fbeabbd53ac975893897ae",
+        "66b2f81c8817a0001359b448",
+        "663b5927b1d7040013ca5884",
+        "695227b072594f0013d75520",
+        "6412d15a2546a4002019af30",
+        "63fb291aa9d0f4001fb12fd3",
+        "64ac146aa698af0020798bce",
+        "62c8635584e4cb17f206459d",
+        "6700b5b72a57240013df898e",
+        "674ae2008b9ead00138c4dba",
+        "66af260f98f2e50013c9b094",
+        "6a6607150a242e0013ff0de8",
+        "64ae40435d44200021d38180",
+        "6a706f7f833cbc0013f492ff",
+        "665459ddb0ccbd0013a77dff",
+        "64c92e4048523e001e9bcae5",
+        "63dca2cc1bea38002cfb3221",
+        "64c5fbb495dc1d001e2dcd04",
+        "6530eec68825d8001e5d2c1d",
+        "633c3183c0fe3f7289d3195d",
+        "687a07838aeacf0013a9f58c",
+        "6524ef62cb7ef5001e914ff4",
+        "683edf61e821d500130020f4",
+        "691b32dfef1f1c0013cb196d",
+        "69967d407ad9570013a2d499",
+        "67a6163b2add040013b0ce0f",
+        "650c2113980ed9001ea88656",
+        "6630cb412297f40013803174",
+        "63ad25d5e0023900370deae4",
+        "649eb5a092e0dc00208bdb3f",
+        "64dddecce570b0001ed6706e",
+        "664f08d3c2ede400130aeded",
+        "6411ac9a255671001f4b83f0",
+        "663089a8dbef200012ff3270",
+        "69c8d48a8d096100146b4c9f",
+        "6772979573de230013e8b9dd",
+        "6391d53d8e6bc3002c0f7105",
+        "675e31175425f1001307acc7",
+        "6445dc7c221d340020b0e828",
+        "62484f155bedcb1774bd626f",
+        "68037dbe74e41e0013a09d90",
+        "642b8701766534001ff836cf",
+        "637a8fbf0a58eb0038127fba",
+        "662f4af96d60c800135f73d3",
+        "66f153fcbce5f30013159b4a",
+        "63df7eab1e316700312d08ea",
+        "68dccb22e1910c00138b515f",
+        "645b82c0d3d3c4002092b8d6",
+        "67113f1b17d5ab001325c3a7",
+        "6a687488e5e89c0013c3ed1c",
+        "68d0ef89287cca00135ec1d6",
+        "687a06ae1f7e7c0013f19663",
+        "6a40efdcb275650013d95046",
+        "653f4444977f95001f2a5a20",
+        "66ee729bd79b93001398cff0",
+        "6a1c066a2f39710013bf75e9",
+        "62fded2fc251165bd614c60b",
+        "62c838b96177d8196d7b091a",
+        "64759be6ab41f2001fa930a9",
+        "6475a5ff52664800207a111f",
+        "674eeb8653258d0013c9a903",
+        "6a1fc44c997af10013463341",
+        "680cbbd5828a580013dd5a2d",
+        "6491985c06872c001f30ab6e",
+        "6a2c4c44c6fdeb001326b789",
+        "647d9398dd6b3d0020306128",
+        "68a6949d7552c60013b5e3b1",
+        "63d1296900efcd002c245c4d",
+        "62b09b5bc9bd4e4d0c4f29d9",
+        "67a99498687e990013b10bd2",
+        "6772d84a573cf00013c60e1b",
+        "68c10b0bfe96b400137da7ed",
+        "6a801c20fe7cb80013708271",
+        "65fd7074e04d92001271989a",
+        "6800c3e7ace39a0013cc546a",
+        "6386bcb126d3b5003c5dc980",
+        "64c7e110671a83001de0239f",
+        "644bf3523e20660020c9b69d",
+        "692903da8cb9910013785157",
+        "665e11941fa95b00139155d6",
         "644f511bb09d34001fdba603"
       ]
     }

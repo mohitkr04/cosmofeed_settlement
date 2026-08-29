@@ -1,6 +1,6 @@
 🚨 *COSMOFEED PAYOUT RISK AUDIT REPORT (T+1 Product Review)*
-📅 *Review Date:* `2026-08-28` | *Product Sale Date:* `2026-08-27`
-🕒 *Generated:* `2026-08-28 15:36` | *Total Audited:* `1,659` creators
+📅 *Review Date:* `2026-08-29` | *Product Sale Date:* `2026-08-28`
+🕒 *Generated:* `2026-08-29 10:21` | *Total Audited:* `1,659` creators
 ──────────────────────────────────
 📊 *SUMMARY METRICS:*
 • *Total Pending Payout:* ₹7,236,119.00
@@ -15,23 +15,23 @@
 🔴 *TOP FLAGGED SELF-TRANSACTIONS (Date -> Amount High to Low):*
 
 🔵 *TELEGRAM INTEGRATION (vig/) — MANUAL SEBI REVIEW REQUIRED:*
-1. *mr-perfectofficial* (`6a2a3b18739da100136db6f1`) | Payout: *₹1,220.00* | Prod: `6a3a9b9ec4f6700013489927` | ⚠️ SEBI Not Verified
+1. *mr-perfectofficial* (`6a2a3b18739da100136db6f1`) | Payout: *₹1,220.00* | Prod: `6a5ee28741258d001317f72b` | ⚠️ SEBI Not Verified
 2. *udaymandal* (`679cc008836dec0013a115a1`) | Payout: *₹16,245.00* | Prod: `679dfd77c7375300134bb498` | ⚠️ SEBI Not Verified
 3. *anandsahani* (`634d5391849d61541ff6cd18`) | Payout: *₹4,704.00* | Prod: `634d8d999e6817546ee93344` | ⚠️ SEBI Not Verified
-4. *fando* (`649330ea3b6d6900200fdb05`) | Payout: *₹16,043.00* | Prod: `68da766ae5d1d00013cfb6d7` | ⚠️ SEBI Not Verified
+4. *fando* (`649330ea3b6d6900200fdb05`) | Payout: *₹16,043.00* | Prod: `6a75c265ec92e40013e9f82e` | ⚠️ SEBI Not Verified
 5. *rishabhdwivedi1* (`673b7c6178dc700013ad956d`) | Payout: *₹8,830.00* | Prod: `6a7c4b067629420013552b20` | ⚠️ SEBI Not Verified
 6. *himanshi09* (`6a54b9ee478445001378e580`) | Payout: *₹23,618.00* | Prod: `6a59b780bf6f01001379f602` | ⚠️ SEBI Not Verified
-7. *charthubbb* (`6682543e9f94b50014bd0d5f`) | Payout: *₹8,151.00* | Prod: `6780c8071dd04400134cfa0b` | ⚠️ SEBI Not Verified
+7. *charthubbb* (`6682543e9f94b50014bd0d5f`) | Payout: *₹8,151.00* | Prod: `6757ee1837dcf000134717e9` | ⚠️ SEBI Not Verified
 8. *stockstraders* (`65645dfe77f97f00dff1712b`) | Payout: *₹10,316.00* | Prod: `66a90af68409520013cae4dc` | ⚠️ SEBI Not Verified
 9. *ikhushii-rajput* (`663dd24d61f04800142f8ce8`) | Payout: *₹3,715.00* | Prod: `69ebc141f28b8500138e14f8` | ⚠️ SEBI Not Verified
 10. *ketan6618* (`6a85a273ac3621001354cbf3`) | Payout: *₹141,311.00* | Prod: `6865592c338056001322e55e` | ⚠️ SEBI Not Verified
 11. *careerintrading* (`641074ebef82f6001fb616b9`) | Payout: *₹87,339.00* | Prod: `649c358021ff91002bd79e9f` | ⚠️ SEBI Not Verified
-12. *chartspro* (`6a1fc6e3997af1001346cebc`) | Payout: *₹51,702.00* | Prod: `6a214563997af1001392bdda` | ⚠️ SEBI Not Verified
+12. *chartspro* (`6a1fc6e3997af1001346cebc`) | Payout: *₹51,702.00* | Prod: `6a2144b2c8379e0013a89359` | ⚠️ SEBI Not Verified
 13. *lws* (`63e0416509bf7d00326f6ef9`) | Payout: *₹46,976.00* | Prod: `6a3e7980291f3d0013b550f9` | ⚠️ SEBI Not Verified
-14. *rohaninvestor* (`6370d12220af49002ce4b102`) | Payout: *₹46,623.00* | Prod: `688457b13d0320001343fa29` | ⚠️ SEBI Not Verified
+14. *rohaninvestor* (`6370d12220af49002ce4b102`) | Payout: *₹46,623.00* | Prod: `6a83f7a23cd47600138d7a5a` | ⚠️ SEBI Not Verified
 15. *swingtradingwithdeepp* (`65925b23d9349b001e49b619`) | Payout: *₹43,416.00* | Prod: `675d51d2abe64100134afc35` | ⚠️ SEBI Not Verified
-16. *Sudheep8531* (`65684423d7de9b001e28daa2`) | Payout: *₹41,270.00* | Prod: `65684a37d7de9b001e293ba3` | ⚠️ SEBI Not Verified
-17. *algoxpert* (`6508441f6757d4001edc1cea`) | Payout: *₹39,193.00* | Prod: `692067cbe2d2af0014a8494c` | ⚠️ SEBI Not Verified
+16. *Sudheep8531* (`65684423d7de9b001e28daa2`) | Payout: *₹41,270.00* | Prod: `68edbd7fa5316700139126f0` | ⚠️ SEBI Not Verified
+17. *algoxpert* (`6508441f6757d4001edc1cea`) | Payout: *₹39,193.00* | Prod: `677b7dceb8a1e4001338eb26` | ⚠️ SEBI Not Verified
 18. *lalitkishoresharma* (`62d954abba10293040ccce13`) | Payout: *₹36,173.00* | Prod: `62d958779656df7a57f42227` | ⚠️ SEBI Not Verified
 19. *devendrakrrish* (`670428175f4c600013ce6176`) | Payout: *₹28,487.00* | Prod: `673c31ceb96a2600132060b0` | ⚠️ SEBI Not Verified
 20. *Rohit8210* (`68eb6aab887005001328a799`) | Payout: *₹27,294.00* | Prod: `66a158e9ba49c1001304e283` | ⚠️ SEBI Not Verified
