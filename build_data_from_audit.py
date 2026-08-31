@@ -71,7 +71,11 @@ def main():
         print(f"Error: No audit_*.json files found in {REPORTS_DIR}!")
         return
 
-    audit_json = sorted(audit_files, key=os.path.getmtime, reverse=True)[0]
+    dated_audit_files = [f for f in audit_files if re.search(r"audit_\d{4}-\d{2}-\d{2}\.json", os.path.basename(f))]
+    if dated_audit_files:
+        audit_json = sorted(dated_audit_files, key=lambda p: re.search(r"audit_(\d{4}-\d{2}-\d{2})\.json", os.path.basename(p)).group(1), reverse=True)[0]
+    else:
+        audit_json = sorted(audit_files, key=os.path.getmtime, reverse=True)[0]
 
     with open(audit_json, "r", encoding="utf-8") as f:
         audit_data = json.load(f)
