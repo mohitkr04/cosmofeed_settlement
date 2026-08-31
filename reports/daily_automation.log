@@ -156,3 +156,20 @@ hint
 [2026-08-31 05:13:39] ======================================================================
 [2026-08-31 05:13:39] DAILY AUDIT PIPELINE COMPLETED SUCCESSFULLY BEFORE 10:00 AM!
 [2026-08-31 05:13:39] ======================================================================
+[2026-08-31 10:01:32] ======================================================================
+[2026-08-31 10:01:32] STARTING COSMOFEED DAILY PAYOUT & COMPLIANCE PIPELINE FOR 2026-08-31
+[2026-08-31 10:01:32] Target Manager Submission Deadline: 2026-09-05
+[2026-08-31 10:01:32] ======================================================================
+[2026-08-31 10:01:32] Found valid COSMOFEED_TOKEN in environment. Initiating LIVE settlement scrape from Cosmofeed API...
+[2026-08-31 10:06:32] Live scrape skipped/fallback: Command '['/opt/hostedtoolcache/Python/3.11.16/x64/bin/python', 'payout_audit_agent.py', '--date', '2026-08-31', '--workers', '16']' timed out after 300 seconds
+[2026-08-31 10:06:32] Running build_data_from_audit.py (SEBI verification & Non-SEBI ledger)...
+[2026-08-31 10:07:04] Data building and Non-SEBI ledger upsert finished.
+[2026-08-31 10:07:04] Non-SEBI Cumulative Ledger Status:
+[2026-08-31 10:07:04]   Total Unique Creators: 438
+[2026-08-31 10:07:04]   Cumulative Volume Held: INR 8,127,358.00
+[2026-08-31 10:07:04]   Excel Generated: True
+[2026-08-31 10:07:04]   Manager PDF Generated: True
+[2026-08-31 10:07:04]   Payout PDF Generated: True
+[2026-08-31 10:07:04] ======================================================================
+[2026-08-31 10:07:04] DAILY AUDIT PIPELINE COMPLETED SUCCESSFULLY BEFORE 10:00 AM!
+[2026-08-31 10:07:04] ======================================================================
