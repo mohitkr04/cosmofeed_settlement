@@ -324,13 +324,15 @@ def generate_pdf_report(json_data_path: str = None, output_pdf_path: str = None)
         max_amt = float(c.get("selfTxnMaxAmount") or 0)
         return (day_key, max_amt)
 
-    # Filter to 2-day window (27, 26, 25 Aug 2026)
-    self_2d_creators = [c for c in self_creators if get_self_sort_tuple(c)[0] >= 20260825]
+    # Filter to 2-day rolling window dynamically based on top 3 distinct days present
+    distinct_self_days = sorted(list(set(get_self_sort_tuple(c)[0] for c in self_creators if get_self_sort_tuple(c)[0] > 0)), reverse=True)
+    top_3_days = set(distinct_self_days[:3])
+    self_2d_creators = [c for c in self_creators if (not top_3_days or get_self_sort_tuple(c)[0] in top_3_days)]
     sorted_self = sorted(self_2d_creators, key=get_self_sort_tuple, reverse=True)
 
-    elements.append(Paragraph(f"2 · Flagged Self-Transactions ({len(sorted_self)} creators in 2-day window: 27, 26, 25 Aug)", h2_style))
+    elements.append(Paragraph(f"2 · Flagged Self-Transactions ({len(sorted_self)} creators in 2-day rolling window)", h2_style))
     elements.append(Paragraph(
-        "Creators with verified native <code>selfPayment</code> flag in the last 2 days. Sequence: 27 Aug (Highest Self-Txn &rarr; Lowest) &rarr; 26 Aug (Highest &rarr; Lowest) &rarr; 25 Aug (Highest &rarr; Lowest).",
+        "Creators with verified native <code>selfPayment</code> flag in the rolling 2-day audit window, sorted strictly by Date descending &rarr; Highest Self-Transaction Amount to Lowest.",
         subtitle_style
     ))
     elements.append(Spacer(1, 6))

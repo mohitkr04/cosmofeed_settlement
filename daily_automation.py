@@ -77,7 +77,7 @@ def run_pipeline(audit_date: str = None, push_git: bool = True) -> bool:
     log("Running build_data_from_audit.py (SEBI verification & Non-SEBI ledger)...")
     try:
         import build_data_from_audit
-        build_data_from_audit.main()
+        build_data_from_audit.main(audit_date=audit_date)
         log("Data building and Non-SEBI ledger upsert finished.")
     except Exception as e:
         log(f"ERROR running build_data_from_audit: {e}")

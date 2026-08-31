@@ -67,8 +67,10 @@ def generate_reports():
         payout_amt = float(c.get("payoutAmount", 0))
         return (day_key, max_amt, ts_val, payout_amt)
 
-    # Maintain strict 2-day window: 27 Aug, 26 Aug, 25 Aug (min day key = 20260825)
-    self_creators = [c for c in creators if c.get("selfTransaction") and get_self_sort_key(c)[0] >= 20260825]
+    # Maintain strict 2-day window dynamically based on top 3 distinct days present
+    distinct_self_days = sorted(list(set(get_self_sort_key(c)[0] for c in creators if c.get("selfTransaction") and get_self_sort_key(c)[0] > 0)), reverse=True)
+    top_3_days = set(distinct_self_days[:3])
+    self_creators = [c for c in creators if c.get("selfTransaction") and (not top_3_days or get_self_sort_key(c)[0] in top_3_days)]
     self_creators.sort(key=get_self_sort_key, reverse=True)
 
     tele_creators = [c for c in creators if c.get('telegramIntegration') and c.get('telegramEligible')]

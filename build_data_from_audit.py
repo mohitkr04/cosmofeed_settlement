@@ -49,7 +49,9 @@ def parse_txn_date(d_str):
             pass
     return 0.0
 
-def main():
+def main(audit_date=None):
+    if not audit_date:
+        audit_date = datetime.date.today().strftime("%Y-%m-%d")
     audit_files = [os.path.join(REPORTS_DIR, f) for f in os.listdir(REPORTS_DIR) if f.startswith("audit_") and f.endswith(".json")]
     if not audit_files:
         fallback_data = os.path.join(REPORTS_DIR, "data.json")
@@ -181,18 +183,12 @@ def main():
         -to_float(r.get("payoutAmount"))
     ))
 
-    # Extract review date and sale date dynamically
-    audit_basename = os.path.basename(audit_json)
-    date_match = re.search(r"audit_(\d{4}-\d{2}-\d{2})\.json", audit_basename)
-    if date_match:
-        rev_date = date_match.group(1)
-        try:
-            rev_dt = datetime.datetime.strptime(rev_date, "%Y-%m-%d")
-            sale_date = (rev_dt - datetime.timedelta(days=1)).strftime("%Y-%m-%d")
-        except Exception:
-            sale_date = (datetime.date.today() - datetime.timedelta(days=1)).strftime("%Y-%m-%d")
-    else:
-        rev_date = datetime.date.today().strftime("%Y-%m-%d")
+    # Dynamic review date and sale date
+    rev_date = audit_date or datetime.date.today().strftime("%Y-%m-%d")
+    try:
+        rev_dt = datetime.datetime.strptime(rev_date, "%Y-%m-%d")
+        sale_date = (rev_dt - datetime.timedelta(days=1)).strftime("%Y-%m-%d")
+    except Exception:
         sale_date = (datetime.date.today() - datetime.timedelta(days=1)).strftime("%Y-%m-%d")
 
     # -------------------------------------------------------------

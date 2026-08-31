@@ -619,8 +619,9 @@ function matchFilter(r) {
     const windowSel = document.getElementById('selfWindowFilter');
     const windowMode = windowSel ? windowSel.value : '2day';
     if (windowMode === '2day') {
+      const top3 = getTopSelfTxnDays(DATA.creators || []);
       const dk = getDayKey(r);
-      if (dk < 20260825) return false; // Strict 2-day window: 27, 26, 25 Aug only
+      if (top3.length > 0 && !top3.includes(dk) && dk < top3[top3.length - 1]) return false;
     }
   }
   if (currentFilter === "nolink" && !r.noLink) return false;
@@ -669,6 +670,12 @@ function matchFilter(r) {
   }
 
   return true;
+}
+
+function getTopSelfTxnDays(creators) {
+  const allSelf = (creators || []).filter(c => c.selfTransaction);
+  const distinctKeys = [...new Set(allSelf.map(getDayKey))].filter(k => k > 0).sort((a, b) => b - a);
+  return distinctKeys.slice(0, 3);
 }
 
 function getDayKey(r) {
@@ -944,8 +951,8 @@ function render() {
   if (!DATA) return;
   const creators = DATA.creators || [];
 
-  const selfCnt = creators.filter(c => c.selfTransaction).length;
-  const self2dCreators = creators.filter(c => c.selfTransaction && getDayKey(c) >= 20260825);
+  const top3SelfDays = getTopSelfTxnDays(creators);
+  const self2dCreators = creators.filter(c => c.selfTransaction && (top3SelfDays.length === 0 || top3SelfDays.includes(getDayKey(c)) || getDayKey(c) >= top3SelfDays[top3SelfDays.length - 1]));
   const self2dCnt = self2dCreators.length;
   const noLinkCnt = creators.filter(c => c.noLink).length;
   const bothCnt = creators.filter(c => c.selfTransaction && c.noLink).length;
@@ -960,8 +967,8 @@ function render() {
   const totalVolume = creators.reduce((acc, c) => acc + (Number(c.payoutAmount) || 0), 0);
 
   // Update Header Badges
-  document.getElementById('hdr-today').textContent = DATA.reviewDateFormatted || DATA.reviewDate || '2026-08-27';
-  document.getElementById('hdr-yesterday').textContent = DATA.productSaleDateFormatted || DATA.productSaleDate || '2026-08-26';
+  document.getElementById('hdr-today').textContent = DATA.reviewDateFormatted || DATA.reviewDate || '2026-08-31';
+  document.getElementById('hdr-yesterday').textContent = DATA.productSaleDateFormatted || DATA.productSaleDate || '2026-08-30';
   document.getElementById('hdr-total').textContent = `${creators.length.toLocaleString()} pending settlements audited`;
 
   // Render KPI Cards
@@ -1141,10 +1148,23 @@ function render() {
 
       if (currentDayStr !== lastDay) {
         lastDay = currentDayStr;
-        const isToday = currentDayStr.includes('27 Aug');
-        const isYesterday = currentDayStr.includes('26 Aug');
-        const badgeLabel = isToday ? 'TODAY · HIGH PRIORITY RELEASE HOLD' : (isYesterday ? 'YESTERDAY' : '2-DAY WINDOW BUFFER');
-        const badgeColor = isToday ? 'bg-rose-100 text-rose-800 border-rose-300' : (isYesterday ? 'bg-amber-100 text-amber-800 border-amber-300' : 'bg-slate-100 text-slate-700 border-slate-300');
+        const currentDk = getDayKey(r);
+        const top3 = getTopSelfTxnDays(DATA.creators || []);
+        let badgeLabel = "2-DAY WINDOW BUFFER";
+        let badgeColor = "bg-slate-100 text-slate-700 border-slate-300";
+        if (top3.length > 0 && currentDk === top3[0]) {
+          badgeLabel = "LATEST AUDIT · HIGH PRIORITY RELEASE HOLD";
+          badgeColor = "bg-rose-100 text-rose-800 border-rose-300";
+        } else if (top3.length > 1 && currentDk === top3[1]) {
+          badgeLabel = "YESTERDAY";
+          badgeColor = "bg-amber-100 text-amber-800 border-amber-300";
+        } else if (top3.length > 2 && currentDk === top3[2]) {
+          badgeLabel = "2-DAY WINDOW BUFFER";
+          badgeColor = "bg-slate-100 text-slate-700 border-slate-300";
+        } else {
+          badgeLabel = "HISTORICAL AUDIT";
+          badgeColor = "bg-slate-100 text-slate-600 border-slate-200";
+        }
         const dayCount = list.filter(item => (item.latestSelfTxnDate || '').includes(currentDayStr.slice(0, 6))).length;
 
         rowsHtml.push(`
