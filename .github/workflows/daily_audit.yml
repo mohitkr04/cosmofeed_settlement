@@ -44,11 +44,12 @@ jobs:
           python daily_automation.py --no-push
 
       - name: Commit & Push Updated Reports & Non-SEBI Ledger to Git
+        continue-on-error: true
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add reports/ data/
-          git diff --quiet && git diff --staged --quiet || (git commit -m "auto: Daily payout audit & Non-SEBI ledger update [$(date +'%Y-%m-%d')] [skip ci]" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "auto: Daily payout audit & Non-SEBI ledger update [$(date +'%Y-%m-%d')] [skip ci]" && (git pull --rebase origin main || true) && git push origin main || true)
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
