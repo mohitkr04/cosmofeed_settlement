@@ -48,10 +48,10 @@
 
 🔵 *TELEGRAM INTEGRATION (vig/) — MANUAL SEBI REVIEW REQUIRED:*
 1. *zerotoherosite* (`635ca7e3716584002d51c158`) | Payout: *₹3,762.00* | Prod: `66ac77c16b5e9d00121364f1` | ⚠️ SEBI Not Verified
-2. *profitmillionaire* (`6443c3c058544c002035fae3`) | Payout: *₹10,431.00* | Prod: `6a58249222d9b50013a45019` | ⚠️ SEBI Not Verified
+2. *profitmillionaire* (`6443c3c058544c002035fae3`) | Payout: *₹10,431.00* | Prod: `67d5163f9c0c2dccc8199a43` | ⚠️ SEBI Not Verified
 3. *himanshi09* (`6a54b9ee478445001378e580`) | Payout: *₹15,271.00* | Prod: `6a59b780bf6f01001379f602` | ⚠️ SEBI Not Verified
 4. *tradewithme47* (`6a55d3282f10800012ed9ab0`) | Payout: *₹13,071.00* | Prod: `6a55e41d11707e0013fb8c68` | ⚠️ SEBI Not Verified
-5. *smtgroup* (`64af58ec07df72001f236bc1`) | Payout: *₹6,796.00* | Prod: `67623373aad4840014b2f2e8` | ⚠️ SEBI Not Verified
+5. *smtgroup* (`64af58ec07df72001f236bc1`) | Payout: *₹6,796.00* | Prod: `672e132ce7bd95001300f34c` | ⚠️ SEBI Not Verified
 6. *likithprasadbn6343* (`677a802db8a1e400132a1a88`) | Payout: *₹7,520.00* | Prod: `6a2ef7b6e7feae001338a244` | ⚠️ SEBI Not Verified
 7. *stockstraders* (`65645dfe77f97f00dff1712b`) | Payout: *₹7,602.00* | Prod: `66a90af68409520013cae4dc` | ⚠️ SEBI Not Verified
 8. *ikhushii-rajput* (`663dd24d61f04800142f8ce8`) | Payout: *₹5,597.00* | Prod: `69ebc141f28b8500138e14f8` | ⚠️ SEBI Not Verified
