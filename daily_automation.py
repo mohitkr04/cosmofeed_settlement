@@ -48,6 +48,21 @@ def log(msg: str) -> None:
         pass
 
 
+def _load_env():
+    env_path = os.path.join(HERE, ".env")
+    if os.path.exists(env_path):
+        with open(env_path, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#") and "=" in line:
+                    k, v = line.split("=", 1)
+                    k, v = k.strip(), v.strip().strip('"').strip("'")
+                    if k and k not in os.environ:
+                        os.environ[k] = v
+
+_load_env()
+
+
 def run_pipeline(audit_date: str = None, push_git: bool = True) -> bool:
     if not audit_date:
         audit_date = datetime.date.today().strftime("%Y-%m-%d")
@@ -58,16 +73,17 @@ def run_pipeline(audit_date: str = None, push_git: bool = True) -> bool:
     log("=" * 70)
 
     # 1. Attempt live settlement scrape if token is available
+    _load_env()
     token = os.environ.get("COSMOFEED_TOKEN", "").strip()
     if token and not token.startswith("<") and len(token) > 20:
-        log("Found valid COSMOFEED_TOKEN in environment. Attempting live settlement scrape...")
+        log("Found valid COSMOFEED_TOKEN in environment. Initiating LIVE settlement scrape from Cosmofeed API...")
         try:
-            cmd = [sys.executable, "payout_audit_agent.py", "--date", audit_date]
-            res = subprocess.run(cmd, capture_output=True, text=True, timeout=20)
+            cmd = [sys.executable, "payout_audit_agent.py", "--date", audit_date, "--workers", "16"]
+            res = subprocess.run(cmd, capture_output=True, text=True, timeout=300)
             if res.returncode == 0:
                 log("Live settlement scrape completed successfully.")
             else:
-                log(f"Scrape warning (code {res.returncode}): {res.stderr[:200]}")
+                log(f"Scrape warning (code {res.returncode}): {res.stderr[:300]}")
         except Exception as e:
             log(f"Live scrape skipped/fallback: {e}")
     else:

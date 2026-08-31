@@ -124,7 +124,7 @@ class RatePacer:
         if to_sleep > 0:
             time.sleep(to_sleep)
 
-RATE_PACER = RatePacer(max_per_second=2)
+RATE_PACER = RatePacer(max_per_second=25)
 
 
 def api_get(path, token, retries=3, timeout=6):
@@ -193,14 +193,14 @@ def fetch_all_settlements(token, request_type="pending", verbose=True):
     pages_dict = {1: page1_rows}
 
     def fetch_page(p):
-        time.sleep(0.3)
+        time.sleep(0.02)
         d = api_get(
             f"/IDgetSettlements?requestType={request_type}&page={p}&sortField=&onlyFlagged=0"
             f"&AmountGreaterThan=0&AmountLessThan=0&filter=&paymentVerified=", token, retries=5)
         pdata = (d or {}).get("data", {})
         return p, pdata.get("settelements") or pdata.get("settlements") or []
 
-    with ThreadPoolExecutor(max_workers=2) as ex:
+    with ThreadPoolExecutor(max_workers=8) as ex:
         futs = [ex.submit(fetch_page, p) for p in range(2, total_pages + 1)]
         for fut in as_completed(futs):
             p, r = fut.result()
@@ -492,7 +492,7 @@ def main():
     os.makedirs(reports_dir, exist_ok=True)
     ap.add_argument("--out", default=reports_dir)
     ap.add_argument("--limit", type=int, default=0, help="limit creators (0=all)")
-    ap.add_argument("--workers", type=int, default=4)
+    ap.add_argument("--workers", type=int, default=16)
     ap.add_argument("--date", default="", help="report date label (YYYY-MM-DD)")
     args = ap.parse_args()
 
@@ -533,6 +533,11 @@ def main():
 
     out_json = os.path.join(args.out, f"audit_{date_label}.json")
     with open(out_json, "w", encoding="utf-8") as f:
+        json.dump({"report": report, "allResults": results}, f, indent=2)
+
+    # Also write canonical audit_run.json
+    run_json = os.path.join(args.out, "audit_run.json")
+    with open(run_json, "w", encoding="utf-8") as f:
         json.dump({"report": report, "allResults": results}, f, indent=2)
 
     # Human-readable summary

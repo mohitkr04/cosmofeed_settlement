@@ -357,8 +357,8 @@
 
         <!-- Self-Txn Window Filter -->
         <select id="selfWindowFilter" class="modern-select px-3 py-2 text-xs text-slate-700 font-medium">
-          <option value="2day">Self-Txn: 2-Day Window (27, 26, 25 Aug)</option>
-          <option value="all">Self-Txn: All Lifetime (214)</option>
+          <option value="2day">Self-Txn: 2-Day Rolling Window</option>
+          <option value="all">Self-Txn: All Lifetime History</option>
         </select>
 
         <!-- Reset All Filters Button -->
@@ -537,7 +537,7 @@ let sortOrder = "desc";
 const HINTS = {
   all: "<b>All Settlements:</b> Displaying all pending payout settlements audited for today's payout release.",
   telegram_sebi: "<b>Telegram SEBI Review:</b> Displaying all creators with payouts ≥ ₹1,000 using Telegram integration (<code>vig/productId</code>) cross-referenced against the organization's SEBI Master Registry. Sorted strictly from Highest to Lowest payout.",
-  self: "<b>Self-Transactions (2-Day Window):</b> Creators who bought their own products in the 2-day audit window. Sequence: <b>27 Aug</b> (Highest Self-Txn → Lowest) → <b>26 Aug</b> (Highest → Lowest) → <b>25 Aug</b> (Highest → Lowest) to strictly maintain the 2-day window rule.",
+  self: "<b>Self-Transactions (2-Day Window):</b> Creators who bought their own products in the 2-day audit window. Sequenced strictly by Date descending (Highest Self-Txn → Lowest within each day) to strictly maintain the 2-day window rule.",
   nolink: "<b>Missing Deliverable Content:</b> Downloadable products with no attached file, course, video, or content deliverable.",
   both: "<b>CRITICAL RISK:</b> Creators flagged on BOTH self-transaction AND missing product content. Priority holds required!",
   cap: "<b>100-Buyer Cap:</b> High-velocity creators whose 100 recent buyers span <2 days. Cannot rule out self-txns below the 100-buyer limit.",
@@ -998,6 +998,13 @@ function render() {
       <div class="text-[11px] font-bold text-slate-500 uppercase tracking-wider mt-1">Self-Txns (2d)</div>
     </div>
   `;
+
+  // Update Dropdown options with dynamic counts
+  const swFilter = document.getElementById('selfWindowFilter');
+  if (swFilter && swFilter.options.length >= 2) {
+    swFilter.options[0].text = `Self-Txn: 2-Day Rolling Window (${self2dCnt})`;
+    swFilter.options[1].text = `Self-Txn: All Lifetime (${selfCnt})`;
+  }
 
   // Update Tab Badges
   document.getElementById('b-all').textContent = creators.length;

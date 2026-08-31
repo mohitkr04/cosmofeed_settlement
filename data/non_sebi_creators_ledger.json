@@ -4,7 +4,7 @@
     "auditPeriodStart": "2026-08-27",
     "auditPeriodEnd": "2026-09-05",
     "targetSubmissionDate": "2026-09-05",
-    "lastUpdated": "2026-08-31 04:55:36",
+    "lastUpdated": "2026-08-31 10:36:53",
     "totalAuditRuns": 2,
     "auditDates": [
       "2026-08-27",
@@ -40,9 +40,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 3762.0,
+      "latestPayoutAmount": 7525.0,
       "cumulativePayoutVolume": 7524.0,
-      "maxDailyPayout": 3762.0,
+      "maxDailyPayout": 7525.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -88,9 +88,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 10431.0,
+      "latestPayoutAmount": 14555.0,
       "cumulativePayoutVolume": 20862.0,
-      "maxDailyPayout": 10431.0,
+      "maxDailyPayout": 14555.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -134,9 +134,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 15271.0,
+      "latestPayoutAmount": 34280.0,
       "cumulativePayoutVolume": 38889.0,
-      "maxDailyPayout": 23618.0,
+      "maxDailyPayout": 34280.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -228,9 +228,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 6796.0,
+      "latestPayoutAmount": 24373.0,
       "cumulativePayoutVolume": 13592.0,
-      "maxDailyPayout": 6796.0,
+      "maxDailyPayout": 24373.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -368,7 +368,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 5597.0,
+      "latestPayoutAmount": 4705.0,
       "cumulativePayoutVolume": 9312.0,
       "maxDailyPayout": 5597.0,
       "settlementHistory": [
@@ -466,7 +466,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 90566.0,
+      "latestPayoutAmount": 66585.0,
       "cumulativePayoutVolume": 137189.0,
       "maxDailyPayout": 90566.0,
       "settlementHistory": [
@@ -558,7 +558,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 70990.0,
+      "latestPayoutAmount": 59234.0,
       "cumulativePayoutVolume": 83108.0,
       "maxDailyPayout": 70990.0,
       "settlementHistory": [
@@ -606,7 +606,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 69541.0,
+      "latestPayoutAmount": 20380.0,
       "cumulativePayoutVolume": 139082.0,
       "maxDailyPayout": 69541.0,
       "settlementHistory": [
@@ -702,7 +702,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 65193.0,
+      "latestPayoutAmount": 4677.0,
       "cumulativePayoutVolume": 130386.0,
       "maxDailyPayout": 65193.0,
       "settlementHistory": [
@@ -748,7 +748,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 64401.0,
+      "latestPayoutAmount": 3162.0,
       "cumulativePayoutVolume": 128802.0,
       "maxDailyPayout": 64401.0,
       "settlementHistory": [
@@ -886,7 +886,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 53653.0,
+      "latestPayoutAmount": 47970.0,
       "cumulativePayoutVolume": 107306.0,
       "maxDailyPayout": 53653.0,
       "settlementHistory": [
@@ -978,7 +978,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 47876.0,
+      "latestPayoutAmount": 7843.0,
       "cumulativePayoutVolume": 49121.0,
       "maxDailyPayout": 47876.0,
       "settlementHistory": [
@@ -1070,7 +1070,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 46318.0,
+      "latestPayoutAmount": 38330.0,
       "cumulativePayoutVolume": 92636.0,
       "maxDailyPayout": 46318.0,
       "settlementHistory": [
@@ -1162,7 +1162,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 42364.0,
+      "latestPayoutAmount": 17956.0,
       "cumulativePayoutVolume": 84728.0,
       "maxDailyPayout": 42364.0,
       "settlementHistory": [
@@ -1210,7 +1210,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 40719.0,
+      "latestPayoutAmount": 21384.0,
       "cumulativePayoutVolume": 81438.0,
       "maxDailyPayout": 40719.0,
       "settlementHistory": [
@@ -1262,7 +1262,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 39334.0,
+      "latestPayoutAmount": 3576.0,
       "cumulativePayoutVolume": 78668.0,
       "maxDailyPayout": 39334.0,
       "settlementHistory": [
@@ -1502,7 +1502,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 33063.0,
+      "latestPayoutAmount": 6581.0,
       "cumulativePayoutVolume": 41288.0,
       "maxDailyPayout": 33063.0,
       "settlementHistory": [
@@ -1550,9 +1550,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 31903.0,
+      "latestPayoutAmount": 69504.0,
       "cumulativePayoutVolume": 47853.0,
-      "maxDailyPayout": 31903.0,
+      "maxDailyPayout": 69504.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -1644,7 +1644,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 29237.0,
+      "latestPayoutAmount": 4793.0,
       "cumulativePayoutVolume": 58474.0,
       "maxDailyPayout": 29237.0,
       "settlementHistory": [
@@ -1690,9 +1690,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 28241.0,
+      "latestPayoutAmount": 29586.0,
       "cumulativePayoutVolume": 56482.0,
-      "maxDailyPayout": 28241.0,
+      "maxDailyPayout": 29586.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -1736,7 +1736,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 28162.0,
+      "latestPayoutAmount": 8325.0,
       "cumulativePayoutVolume": 56324.0,
       "maxDailyPayout": 28162.0,
       "settlementHistory": [
@@ -1970,7 +1970,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 26404.0,
+      "latestPayoutAmount": 15556.0,
       "cumulativePayoutVolume": 46199.0,
       "maxDailyPayout": 26404.0,
       "settlementHistory": [
@@ -2070,9 +2070,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 26080.0,
+      "latestPayoutAmount": 88046.0,
       "cumulativePayoutVolume": 77782.0,
-      "maxDailyPayout": 51702.0,
+      "maxDailyPayout": 88046.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -2166,7 +2166,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 25120.0,
+      "latestPayoutAmount": 15067.0,
       "cumulativePayoutVolume": 32146.0,
       "maxDailyPayout": 25120.0,
       "settlementHistory": [
@@ -2304,9 +2304,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 22390.0,
+      "latestPayoutAmount": 35577.0,
       "cumulativePayoutVolume": 32898.0,
-      "maxDailyPayout": 22390.0,
+      "maxDailyPayout": 35577.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -2350,7 +2350,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 21925.0,
+      "latestPayoutAmount": 14735.0,
       "cumulativePayoutVolume": 50412.0,
       "maxDailyPayout": 28487.0,
       "settlementHistory": [
@@ -2448,7 +2448,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 20958.0,
+      "latestPayoutAmount": 3905.0,
       "cumulativePayoutVolume": 41916.0,
       "maxDailyPayout": 20958.0,
       "settlementHistory": [
@@ -2590,9 +2590,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 18751.0,
+      "latestPayoutAmount": 21772.0,
       "cumulativePayoutVolume": 37983.0,
-      "maxDailyPayout": 19232.0,
+      "maxDailyPayout": 21772.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -2732,7 +2732,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 17484.0,
+      "latestPayoutAmount": 4881.0,
       "cumulativePayoutVolume": 34968.0,
       "maxDailyPayout": 17484.0,
       "settlementHistory": [
@@ -2780,7 +2780,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 17304.0,
+      "latestPayoutAmount": 5016.0,
       "cumulativePayoutVolume": 22609.0,
       "maxDailyPayout": 17304.0,
       "settlementHistory": [
@@ -2826,7 +2826,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 16409.0,
+      "latestPayoutAmount": 6612.0,
       "cumulativePayoutVolume": 24618.0,
       "maxDailyPayout": 16409.0,
       "settlementHistory": [
@@ -2876,7 +2876,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 16281.0,
+      "latestPayoutAmount": 2632.0,
       "cumulativePayoutVolume": 21545.0,
       "maxDailyPayout": 16281.0,
       "settlementHistory": [
@@ -2924,7 +2924,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 16107.0,
+      "latestPayoutAmount": 6345.0,
       "cumulativePayoutVolume": 20987.0,
       "maxDailyPayout": 16107.0,
       "settlementHistory": [
@@ -2972,9 +2972,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 15997.0,
+      "latestPayoutAmount": 37585.0,
       "cumulativePayoutVolume": 31994.0,
-      "maxDailyPayout": 15997.0,
+      "maxDailyPayout": 37585.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -3026,9 +3026,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 15666.0,
+      "latestPayoutAmount": 17594.0,
       "cumulativePayoutVolume": 22540.0,
-      "maxDailyPayout": 15666.0,
+      "maxDailyPayout": 17594.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -3072,7 +3072,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 15525.0,
+      "latestPayoutAmount": 2822.0,
       "cumulativePayoutVolume": 18818.0,
       "maxDailyPayout": 15525.0,
       "settlementHistory": [
@@ -3122,7 +3122,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 15119.0,
+      "latestPayoutAmount": 3829.0,
       "cumulativePayoutVolume": 17088.0,
       "maxDailyPayout": 15119.0,
       "settlementHistory": [
@@ -3168,9 +3168,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 14985.0,
+      "latestPayoutAmount": 24466.0,
       "cumulativePayoutVolume": 19878.0,
-      "maxDailyPayout": 14985.0,
+      "maxDailyPayout": 24466.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -3262,9 +3262,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 14553.0,
+      "latestPayoutAmount": 68460.0,
       "cumulativePayoutVolume": 23774.0,
-      "maxDailyPayout": 14553.0,
+      "maxDailyPayout": 68460.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -3402,7 +3402,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 14149.0,
+      "latestPayoutAmount": 4822.0,
       "cumulativePayoutVolume": 28298.0,
       "maxDailyPayout": 14149.0,
       "settlementHistory": [
@@ -3448,7 +3448,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 14018.0,
+      "latestPayoutAmount": 4938.0,
       "cumulativePayoutVolume": 18532.0,
       "maxDailyPayout": 14018.0,
       "settlementHistory": [
@@ -3544,7 +3544,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 13645.0,
+      "latestPayoutAmount": 10351.0,
       "cumulativePayoutVolume": 27290.0,
       "maxDailyPayout": 13645.0,
       "settlementHistory": [
@@ -3592,7 +3592,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 13496.0,
+      "latestPayoutAmount": 14575.0,
       "cumulativePayoutVolume": 32571.0,
       "maxDailyPayout": 19075.0,
       "settlementHistory": [
@@ -3688,9 +3688,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 13185.0,
+      "latestPayoutAmount": 16096.0,
       "cumulativePayoutVolume": 24756.0,
-      "maxDailyPayout": 13185.0,
+      "maxDailyPayout": 16096.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -3786,7 +3786,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 12946.0,
+      "latestPayoutAmount": 3300.0,
       "cumulativePayoutVolume": 25892.0,
       "maxDailyPayout": 12946.0,
       "settlementHistory": [
@@ -3834,7 +3834,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 12513.0,
+      "latestPayoutAmount": 5821.0,
       "cumulativePayoutVolume": 25026.0,
       "maxDailyPayout": 12513.0,
       "settlementHistory": [
@@ -4066,7 +4066,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 11717.0,
+      "latestPayoutAmount": 3906.0,
       "cumulativePayoutVolume": 23434.0,
       "maxDailyPayout": 11717.0,
       "settlementHistory": [
@@ -4116,7 +4116,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 11650.0,
+      "latestPayoutAmount": 3121.0,
       "cumulativePayoutVolume": 26037.0,
       "maxDailyPayout": 14387.0,
       "settlementHistory": [
@@ -4162,7 +4162,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 11598.0,
+      "latestPayoutAmount": 1964.0,
       "cumulativePayoutVolume": 23196.0,
       "maxDailyPayout": 11598.0,
       "settlementHistory": [
@@ -4208,9 +4208,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 11479.0,
+      "latestPayoutAmount": 24829.0,
       "cumulativePayoutVolume": 26083.0,
-      "maxDailyPayout": 14604.0,
+      "maxDailyPayout": 24829.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -4302,9 +4302,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 10644.0,
+      "latestPayoutAmount": 21717.0,
       "cumulativePayoutVolume": 16439.0,
-      "maxDailyPayout": 10644.0,
+      "maxDailyPayout": 21717.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -4542,7 +4542,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 10066.0,
+      "latestPayoutAmount": 2822.0,
       "cumulativePayoutVolume": 12888.0,
       "maxDailyPayout": 10066.0,
       "settlementHistory": [
@@ -4588,7 +4588,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 10057.0,
+      "latestPayoutAmount": 2691.0,
       "cumulativePayoutVolume": 12499.0,
       "maxDailyPayout": 10057.0,
       "settlementHistory": [
@@ -4634,7 +4634,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 9973.0,
+      "latestPayoutAmount": 1221.0,
       "cumulativePayoutVolume": 19946.0,
       "maxDailyPayout": 9973.0,
       "settlementHistory": [
@@ -4682,7 +4682,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 9898.0,
+      "latestPayoutAmount": 5895.0,
       "cumulativePayoutVolume": 15656.0,
       "maxDailyPayout": 9898.0,
       "settlementHistory": [
@@ -4820,9 +4820,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 9680.0,
+      "latestPayoutAmount": 19502.0,
       "cumulativePayoutVolume": 19360.0,
-      "maxDailyPayout": 9680.0,
+      "maxDailyPayout": 19502.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -4912,9 +4912,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 9524.0,
+      "latestPayoutAmount": 28689.0,
       "cumulativePayoutVolume": 19048.0,
-      "maxDailyPayout": 9524.0,
+      "maxDailyPayout": 28689.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -4958,7 +4958,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 9470.0,
+      "latestPayoutAmount": 3157.0,
       "cumulativePayoutVolume": 11727.0,
       "maxDailyPayout": 9470.0,
       "settlementHistory": [
@@ -5008,7 +5008,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 9410.0,
+      "latestPayoutAmount": 4705.0,
       "cumulativePayoutVolume": 21173.0,
       "maxDailyPayout": 11763.0,
       "settlementHistory": [
@@ -5302,7 +5302,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 8746.0,
+      "latestPayoutAmount": 1594.0,
       "cumulativePayoutVolume": 15590.0,
       "maxDailyPayout": 8746.0,
       "settlementHistory": [
@@ -5394,7 +5394,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 8653.0,
+      "latestPayoutAmount": 2446.0,
       "cumulativePayoutVolume": 17306.0,
       "maxDailyPayout": 8653.0,
       "settlementHistory": [
@@ -5630,9 +5630,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 8230.0,
+      "latestPayoutAmount": 16170.0,
       "cumulativePayoutVolume": 11141.0,
-      "maxDailyPayout": 8230.0,
+      "maxDailyPayout": 16170.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -5724,9 +5724,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 8111.0,
+      "latestPayoutAmount": 9616.0,
       "cumulativePayoutVolume": 13253.0,
-      "maxDailyPayout": 8111.0,
+      "maxDailyPayout": 9616.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -5818,7 +5818,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 7808.0,
+      "latestPayoutAmount": 3905.0,
       "cumulativePayoutVolume": 35102.0,
       "maxDailyPayout": 27294.0,
       "settlementHistory": [
@@ -5910,7 +5910,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 7618.0,
+      "latestPayoutAmount": 5920.0,
       "cumulativePayoutVolume": 15236.0,
       "maxDailyPayout": 7618.0,
       "settlementHistory": [
@@ -6002,9 +6002,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 7556.0,
+      "latestPayoutAmount": 18891.0,
       "cumulativePayoutVolume": 15112.0,
-      "maxDailyPayout": 7556.0,
+      "maxDailyPayout": 18891.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -6094,7 +6094,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 7258.0,
+      "latestPayoutAmount": 3722.0,
       "cumulativePayoutVolume": 20044.0,
       "maxDailyPayout": 12786.0,
       "settlementHistory": [
@@ -6140,7 +6140,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 7074.0,
+      "latestPayoutAmount": 1552.0,
       "cumulativePayoutVolume": 14148.0,
       "maxDailyPayout": 7074.0,
       "settlementHistory": [
@@ -6186,7 +6186,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 6963.0,
+      "latestPayoutAmount": 1414.0,
       "cumulativePayoutVolume": 13926.0,
       "maxDailyPayout": 6963.0,
       "settlementHistory": [
@@ -6234,7 +6234,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 6903.0,
+      "latestPayoutAmount": 6266.0,
       "cumulativePayoutVolume": 17523.0,
       "maxDailyPayout": 10620.0,
       "settlementHistory": [
@@ -6286,9 +6286,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 6859.0,
+      "latestPayoutAmount": 9121.0,
       "cumulativePayoutVolume": 13845.0,
-      "maxDailyPayout": 6986.0,
+      "maxDailyPayout": 9121.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -6332,9 +6332,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 6843.0,
+      "latestPayoutAmount": 9503.0,
       "cumulativePayoutVolume": 13686.0,
-      "maxDailyPayout": 6843.0,
+      "maxDailyPayout": 9503.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -6380,7 +6380,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 6771.0,
+      "latestPayoutAmount": 4881.0,
       "cumulativePayoutVolume": 13542.0,
       "maxDailyPayout": 6771.0,
       "settlementHistory": [
@@ -6478,7 +6478,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 6684.0,
+      "latestPayoutAmount": 2893.0,
       "cumulativePayoutVolume": 13368.0,
       "maxDailyPayout": 6684.0,
       "settlementHistory": [
@@ -6572,9 +6572,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 6662.0,
+      "latestPayoutAmount": 8572.0,
       "cumulativePayoutVolume": 13324.0,
-      "maxDailyPayout": 6662.0,
+      "maxDailyPayout": 8572.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -6712,7 +6712,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 6532.0,
+      "latestPayoutAmount": 4651.0,
       "cumulativePayoutVolume": 13729.0,
       "maxDailyPayout": 7197.0,
       "settlementHistory": [
@@ -6806,7 +6806,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 6469.0,
+      "latestPayoutAmount": 5955.0,
       "cumulativePayoutVolume": 12938.0,
       "maxDailyPayout": 6469.0,
       "settlementHistory": [
@@ -6904,7 +6904,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 6308.0,
+      "latestPayoutAmount": 1916.0,
       "cumulativePayoutVolume": 11603.0,
       "maxDailyPayout": 6308.0,
       "settlementHistory": [
@@ -6996,9 +6996,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 6169.0,
+      "latestPayoutAmount": 10989.0,
       "cumulativePayoutVolume": 10890.0,
-      "maxDailyPayout": 6169.0,
+      "maxDailyPayout": 10989.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -7090,9 +7090,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 6022.0,
+      "latestPayoutAmount": 36417.0,
       "cumulativePayoutVolume": 8375.0,
-      "maxDailyPayout": 6022.0,
+      "maxDailyPayout": 36417.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -7136,7 +7136,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 6014.0,
+      "latestPayoutAmount": 2300.0,
       "cumulativePayoutVolume": 7372.0,
       "maxDailyPayout": 6014.0,
       "settlementHistory": [
@@ -7230,7 +7230,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 5891.0,
+      "latestPayoutAmount": 1976.0,
       "cumulativePayoutVolume": 10733.0,
       "maxDailyPayout": 5891.0,
       "settlementHistory": [
@@ -7282,7 +7282,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 5883.0,
+      "latestPayoutAmount": 5769.0,
       "cumulativePayoutVolume": 47153.0,
       "maxDailyPayout": 41270.0,
       "settlementHistory": [
@@ -7328,7 +7328,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 5858.0,
+      "latestPayoutAmount": 7808.0,
       "cumulativePayoutVolume": 20011.0,
       "maxDailyPayout": 14153.0,
       "settlementHistory": [
@@ -7420,7 +7420,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 5834.0,
+      "latestPayoutAmount": 1882.0,
       "cumulativePayoutVolume": 11668.0,
       "maxDailyPayout": 5834.0,
       "settlementHistory": [
@@ -7470,7 +7470,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 5751.0,
+      "latestPayoutAmount": 1938.0,
       "cumulativePayoutVolume": 14954.0,
       "maxDailyPayout": 9203.0,
       "settlementHistory": [
@@ -7608,9 +7608,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 5399.0,
+      "latestPayoutAmount": 14399.0,
       "cumulativePayoutVolume": 10798.0,
-      "maxDailyPayout": 5399.0,
+      "maxDailyPayout": 14399.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -7992,7 +7992,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 4853.0,
+      "latestPayoutAmount": 4367.0,
       "cumulativePayoutVolume": 9706.0,
       "maxDailyPayout": 4853.0,
       "settlementHistory": [
@@ -8324,7 +8324,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 4703.0,
+      "latestPayoutAmount": 1976.0,
       "cumulativePayoutVolume": 9406.0,
       "maxDailyPayout": 4703.0,
       "settlementHistory": [
@@ -8464,7 +8464,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 4373.0,
+      "latestPayoutAmount": 1756.0,
       "cumulativePayoutVolume": 7494.0,
       "maxDailyPayout": 4373.0,
       "settlementHistory": [
@@ -8510,9 +8510,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 4357.0,
+      "latestPayoutAmount": 4411.0,
       "cumulativePayoutVolume": 8714.0,
-      "maxDailyPayout": 4357.0,
+      "maxDailyPayout": 4411.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -8556,9 +8556,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 4313.0,
+      "latestPayoutAmount": 11715.0,
       "cumulativePayoutVolume": 8626.0,
-      "maxDailyPayout": 4313.0,
+      "maxDailyPayout": 11715.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -8602,9 +8602,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 4286.0,
+      "latestPayoutAmount": 4762.0,
       "cumulativePayoutVolume": 6191.0,
-      "maxDailyPayout": 4286.0,
+      "maxDailyPayout": 4762.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -8648,7 +8648,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 4227.0,
+      "latestPayoutAmount": 5636.0,
       "cumulativePayoutVolume": 9863.0,
       "maxDailyPayout": 5636.0,
       "settlementHistory": [
@@ -8836,7 +8836,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 3904.0,
+      "latestPayoutAmount": 6568.0,
       "cumulativePayoutVolume": 13764.0,
       "maxDailyPayout": 9860.0,
       "settlementHistory": [
@@ -9356,7 +9356,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 3513.0,
+      "latestPayoutAmount": 2342.0,
       "cumulativePayoutVolume": 5270.0,
       "maxDailyPayout": 3513.0,
       "settlementHistory": [
@@ -9734,9 +9734,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 3321.0,
+      "latestPayoutAmount": 5420.0,
       "cumulativePayoutVolume": 6640.0,
-      "maxDailyPayout": 3321.0,
+      "maxDailyPayout": 5420.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -9878,9 +9878,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 3154.0,
+      "latestPayoutAmount": 10306.0,
       "cumulativePayoutVolume": 5937.0,
-      "maxDailyPayout": 3154.0,
+      "maxDailyPayout": 10306.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -9978,9 +9978,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 3104.0,
+      "latestPayoutAmount": 4329.0,
       "cumulativePayoutVolume": 6302.0,
-      "maxDailyPayout": 3198.0,
+      "maxDailyPayout": 4329.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -10070,9 +10070,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 3045.0,
+      "latestPayoutAmount": 6017.0,
       "cumulativePayoutVolume": 6090.0,
-      "maxDailyPayout": 3045.0,
+      "maxDailyPayout": 6017.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -10120,7 +10120,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 2964.0,
+      "latestPayoutAmount": 2420.0,
       "cumulativePayoutVolume": 11363.0,
       "maxDailyPayout": 8399.0,
       "settlementHistory": [
@@ -10214,7 +10214,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 2928.0,
+      "latestPayoutAmount": 3905.0,
       "cumulativePayoutVolume": 16594.0,
       "maxDailyPayout": 13666.0,
       "settlementHistory": [
@@ -10860,7 +10860,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 2817.0,
+      "latestPayoutAmount": 2791.0,
       "cumulativePayoutVolume": 5918.0,
       "maxDailyPayout": 3101.0,
       "settlementHistory": [
@@ -10958,7 +10958,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 2730.0,
+      "latestPayoutAmount": 2163.0,
       "cumulativePayoutVolume": 5260.0,
       "maxDailyPayout": 2730.0,
       "settlementHistory": [
@@ -11004,7 +11004,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 2717.0,
+      "latestPayoutAmount": 1902.0,
       "cumulativePayoutVolume": 5434.0,
       "maxDailyPayout": 2717.0,
       "settlementHistory": [
@@ -11188,9 +11188,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 2530.0,
+      "latestPayoutAmount": 3745.0,
       "cumulativePayoutVolume": 5060.0,
-      "maxDailyPayout": 2530.0,
+      "maxDailyPayout": 3745.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -11280,9 +11280,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 2440.0,
+      "latestPayoutAmount": 8750.0,
       "cumulativePayoutVolume": 4880.0,
-      "maxDailyPayout": 2440.0,
+      "maxDailyPayout": 8750.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -11374,7 +11374,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 2425.0,
+      "latestPayoutAmount": 1529.0,
       "cumulativePayoutVolume": 4850.0,
       "maxDailyPayout": 2425.0,
       "settlementHistory": [
@@ -11558,7 +11558,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 2305.0,
+      "latestPayoutAmount": 2412.0,
       "cumulativePayoutVolume": 10948.0,
       "maxDailyPayout": 8643.0,
       "settlementHistory": [
@@ -11650,9 +11650,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 2256.0,
+      "latestPayoutAmount": 3525.0,
       "cumulativePayoutVolume": 4512.0,
-      "maxDailyPayout": 2256.0,
+      "maxDailyPayout": 3525.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -11880,9 +11880,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 2116.0,
+      "latestPayoutAmount": 4233.0,
       "cumulativePayoutVolume": 4232.0,
-      "maxDailyPayout": 2116.0,
+      "maxDailyPayout": 4233.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -12018,9 +12018,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 1979.0,
+      "latestPayoutAmount": 4773.0,
       "cumulativePayoutVolume": 3066.0,
-      "maxDailyPayout": 1979.0,
+      "maxDailyPayout": 4773.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -12248,9 +12248,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 1953.0,
+      "latestPayoutAmount": 13860.0,
       "cumulativePayoutVolume": 3906.0,
-      "maxDailyPayout": 1953.0,
+      "maxDailyPayout": 13860.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -12294,9 +12294,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 1953.0,
+      "latestPayoutAmount": 3906.0,
       "cumulativePayoutVolume": 3906.0,
-      "maxDailyPayout": 1953.0,
+      "maxDailyPayout": 3906.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -12478,9 +12478,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 1932.0,
+      "latestPayoutAmount": 2224.0,
       "cumulativePayoutVolume": 3864.0,
-      "maxDailyPayout": 1932.0,
+      "maxDailyPayout": 2224.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -12524,9 +12524,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 1916.0,
+      "latestPayoutAmount": 8084.0,
       "cumulativePayoutVolume": 6221.0,
-      "maxDailyPayout": 4305.0,
+      "maxDailyPayout": 8084.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -12616,9 +12616,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 1881.0,
+      "latestPayoutAmount": 2818.0,
       "cumulativePayoutVolume": 3762.0,
-      "maxDailyPayout": 1881.0,
+      "maxDailyPayout": 2818.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -12754,7 +12754,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 1832.0,
+      "latestPayoutAmount": 1060.0,
       "cumulativePayoutVolume": 3664.0,
       "maxDailyPayout": 1832.0,
       "settlementHistory": [
@@ -13260,9 +13260,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 1462.0,
+      "latestPayoutAmount": 10555.0,
       "cumulativePayoutVolume": 4793.0,
-      "maxDailyPayout": 3331.0,
+      "maxDailyPayout": 10555.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -13306,9 +13306,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 1457.0,
+      "latestPayoutAmount": 2305.0,
       "cumulativePayoutVolume": 2527.0,
-      "maxDailyPayout": 1457.0,
+      "maxDailyPayout": 2305.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -13352,9 +13352,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 1428.0,
+      "latestPayoutAmount": 1714.0,
       "cumulativePayoutVolume": 2856.0,
-      "maxDailyPayout": 1428.0,
+      "maxDailyPayout": 1714.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -13536,9 +13536,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 1409.0,
+      "latestPayoutAmount": 2631.0,
       "cumulativePayoutVolume": 3757.0,
-      "maxDailyPayout": 2348.0,
+      "maxDailyPayout": 2631.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -13722,9 +13722,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 1261.0,
+      "latestPayoutAmount": 3201.0,
       "cumulativePayoutVolume": 2410.0,
-      "maxDailyPayout": 1261.0,
+      "maxDailyPayout": 3201.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -13814,9 +13814,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 1158.0,
+      "latestPayoutAmount": 5981.0,
       "cumulativePayoutVolume": 2316.0,
-      "maxDailyPayout": 1158.0,
+      "maxDailyPayout": 5981.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -13906,9 +13906,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 2,
-      "latestPayoutAmount": 1080.0,
+      "latestPayoutAmount": 1319.0,
       "cumulativePayoutVolume": 2160.0,
-      "maxDailyPayout": 1080.0,
+      "maxDailyPayout": 1319.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-27",
@@ -14137,7 +14137,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 1,
-      "latestPayoutAmount": 1220.0,
+      "latestPayoutAmount": 1172.0,
       "cumulativePayoutVolume": 1220.0,
       "maxDailyPayout": 1220.0,
       "settlementHistory": [
@@ -14176,7 +14176,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 1,
-      "latestPayoutAmount": 16245.0,
+      "latestPayoutAmount": 4922.0,
       "cumulativePayoutVolume": 16245.0,
       "maxDailyPayout": 16245.0,
       "settlementHistory": [
@@ -14254,7 +14254,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 1,
-      "latestPayoutAmount": 16043.0,
+      "latestPayoutAmount": 4763.0,
       "cumulativePayoutVolume": 16043.0,
       "maxDailyPayout": 16043.0,
       "settlementHistory": [
@@ -14371,7 +14371,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 1,
-      "latestPayoutAmount": 43416.0,
+      "latestPayoutAmount": 1698.0,
       "cumulativePayoutVolume": 43416.0,
       "maxDailyPayout": 43416.0,
       "settlementHistory": [
@@ -14449,7 +14449,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 1,
-      "latestPayoutAmount": 19651.0,
+      "latestPayoutAmount": 7860.0,
       "cumulativePayoutVolume": 19651.0,
       "maxDailyPayout": 19651.0,
       "settlementHistory": [
@@ -14488,7 +14488,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 1,
-      "latestPayoutAmount": 18146.0,
+      "latestPayoutAmount": 4025.0,
       "cumulativePayoutVolume": 18146.0,
       "maxDailyPayout": 18146.0,
       "settlementHistory": [
@@ -14529,7 +14529,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 1,
-      "latestPayoutAmount": 17393.0,
+      "latestPayoutAmount": 15407.0,
       "cumulativePayoutVolume": 17393.0,
       "maxDailyPayout": 17393.0,
       "settlementHistory": [
@@ -14648,7 +14648,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 1,
-      "latestPayoutAmount": 14667.0,
+      "latestPayoutAmount": 4984.0,
       "cumulativePayoutVolume": 14667.0,
       "maxDailyPayout": 14667.0,
       "settlementHistory": [
@@ -14847,7 +14847,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 1,
-      "latestPayoutAmount": 9970.0,
+      "latestPayoutAmount": 3929.0,
       "cumulativePayoutVolume": 9970.0,
       "maxDailyPayout": 9970.0,
       "settlementHistory": [
@@ -15046,9 +15046,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 1,
-      "latestPayoutAmount": 6752.0,
+      "latestPayoutAmount": 26042.0,
       "cumulativePayoutVolume": 6752.0,
-      "maxDailyPayout": 6752.0,
+      "maxDailyPayout": 26042.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-31",
@@ -15126,7 +15126,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 1,
-      "latestPayoutAmount": 6653.0,
+      "latestPayoutAmount": 4752.0,
       "cumulativePayoutVolume": 6653.0,
       "maxDailyPayout": 6653.0,
       "settlementHistory": [
@@ -15479,9 +15479,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 1,
-      "latestPayoutAmount": 4853.0,
+      "latestPayoutAmount": 23893.0,
       "cumulativePayoutVolume": 4853.0,
-      "maxDailyPayout": 4853.0,
+      "maxDailyPayout": 23893.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-31",
@@ -15518,9 +15518,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 1,
-      "latestPayoutAmount": 4697.0,
+      "latestPayoutAmount": 6900.0,
       "cumulativePayoutVolume": 4697.0,
-      "maxDailyPayout": 4697.0,
+      "maxDailyPayout": 6900.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-31",
@@ -15680,9 +15680,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 1,
-      "latestPayoutAmount": 3919.0,
+      "latestPayoutAmount": 3921.0,
       "cumulativePayoutVolume": 3919.0,
-      "maxDailyPayout": 3919.0,
+      "maxDailyPayout": 3921.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-31",
@@ -15838,9 +15838,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 1,
-      "latestPayoutAmount": 2946.0,
+      "latestPayoutAmount": 5893.0,
       "cumulativePayoutVolume": 2946.0,
-      "maxDailyPayout": 2946.0,
+      "maxDailyPayout": 5893.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-31",
@@ -15918,7 +15918,7 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 1,
-      "latestPayoutAmount": 2945.0,
+      "latestPayoutAmount": 1964.0,
       "cumulativePayoutVolume": 2945.0,
       "maxDailyPayout": 2945.0,
       "settlementHistory": [
@@ -15957,9 +15957,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 1,
-      "latestPayoutAmount": 2942.0,
+      "latestPayoutAmount": 3322.0,
       "cumulativePayoutVolume": 2942.0,
-      "maxDailyPayout": 2942.0,
+      "maxDailyPayout": 3322.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-31",
@@ -16191,9 +16191,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 1,
-      "latestPayoutAmount": 2635.0,
+      "latestPayoutAmount": 4880.0,
       "cumulativePayoutVolume": 2635.0,
-      "maxDailyPayout": 2635.0,
+      "maxDailyPayout": 4880.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-31",
@@ -16854,9 +16854,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 1,
-      "latestPayoutAmount": 1788.0,
+      "latestPayoutAmount": 2164.0,
       "cumulativePayoutVolume": 1788.0,
-      "maxDailyPayout": 1788.0,
+      "maxDailyPayout": 2164.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-31",
@@ -17127,9 +17127,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 1,
-      "latestPayoutAmount": 1446.0,
+      "latestPayoutAmount": 2096.0,
       "cumulativePayoutVolume": 1446.0,
-      "maxDailyPayout": 1446.0,
+      "maxDailyPayout": 2096.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-31",
@@ -17244,9 +17244,9 @@
         "2026-08-31"
       ],
       "daysFlaggedCount": 1,
-      "latestPayoutAmount": 1171.0,
+      "latestPayoutAmount": 3416.0,
       "cumulativePayoutVolume": 1171.0,
-      "maxDailyPayout": 1171.0,
+      "maxDailyPayout": 3416.0,
       "settlementHistory": [
         {
           "auditDate": "2026-08-31",
@@ -17416,6 +17416,2112 @@
           "payoutAmount": 14790.0,
           "telegramProductId": "649c358021ff91002bd79e9f",
           "telegramProductLink": "https://superprofile.bio/vig/649c358021ff91002bd79e9f"
+        }
+      ]
+    },
+    "69b3c1dd02fef30013b6cf7d": {
+      "creatorId": "69b3c1dd02fef30013b6cf7d",
+      "username": "gravitasedge",
+      "creatorName": "gravitasedge",
+      "email": "gravitasedgeconsultant@gmail.com",
+      "phone": "9999774266",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "69f5c5a44741f60013d5059c",
+      "telegramProductLink": "https://superprofile.bio/vig/69f5c5a44741f60013d5059c",
+      "telegramProductIds": [
+        "69f5c5a44741f60013d5059c"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/69f5c5a44741f60013d5059c"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 1799.0,
+      "cumulativePayoutVolume": 1799.0,
+      "maxDailyPayout": 1799.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 1799.0,
+          "telegramProductId": "69f5c5a44741f60013d5059c",
+          "telegramProductLink": "https://superprofile.bio/vig/69f5c5a44741f60013d5059c"
+        }
+      ]
+    },
+    "68b03fb7687f420013c3f18b": {
+      "creatorId": "68b03fb7687f420013c3f18b",
+      "username": "sy01",
+      "creatorName": "sy01",
+      "email": "saurabhydv856@gmail.com",
+      "phone": "6398689318",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "6734586c512491001324475c",
+      "telegramProductLink": "https://superprofile.bio/vig/6734586c512491001324475c",
+      "telegramProductIds": [
+        "6734586c512491001324475c"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/6734586c512491001324475c"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 1646.0,
+      "cumulativePayoutVolume": 1646.0,
+      "maxDailyPayout": 1646.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 1646.0,
+          "telegramProductId": "6734586c512491001324475c",
+          "telegramProductLink": "https://superprofile.bio/vig/6734586c512491001324475c"
+        }
+      ]
+    },
+    "65f92f6ac022090013a05e2f": {
+      "creatorId": "65f92f6ac022090013a05e2f",
+      "username": "brokerntreder09",
+      "creatorName": "brokerntreder09",
+      "email": "moaakilsandhi786@gmail.com",
+      "phone": "9316693141",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "69786236017be60013a65fc2",
+      "telegramProductLink": "https://superprofile.bio/vig/69786236017be60013a65fc2",
+      "telegramProductIds": [
+        "69786236017be60013a65fc2"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/69786236017be60013a65fc2"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 8748.0,
+      "cumulativePayoutVolume": 8748.0,
+      "maxDailyPayout": 8748.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 8748.0,
+          "telegramProductId": "69786236017be60013a65fc2",
+          "telegramProductLink": "https://superprofile.bio/vig/69786236017be60013a65fc2"
+        }
+      ]
+    },
+    "67ead40be4d2770013acc9f6": {
+      "creatorId": "67ead40be4d2770013acc9f6",
+      "username": "drmayankgoyal",
+      "creatorName": "drmayankgoyal",
+      "email": "goyalmayank261261@gmail.com",
+      "phone": "7082178836",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "6a91317ef772ef00136780d2",
+      "telegramProductLink": "https://superprofile.bio/vig/6a91317ef772ef00136780d2",
+      "telegramProductIds": [
+        "6a91317ef772ef00136780d2"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/6a91317ef772ef00136780d2"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 36693.0,
+      "cumulativePayoutVolume": 36693.0,
+      "maxDailyPayout": 36693.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 36693.0,
+          "telegramProductId": "6a91317ef772ef00136780d2",
+          "telegramProductLink": "https://superprofile.bio/vig/6a91317ef772ef00136780d2"
+        }
+      ]
+    },
+    "64b0ea441e6e1b002a2b2802": {
+      "creatorId": "64b0ea441e6e1b002a2b2802",
+      "username": "alfaearning",
+      "creatorName": "alfaearning",
+      "email": "tcmall9987@gmail.com",
+      "phone": "7668471271",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "66596deaeec07b001310d2df",
+      "telegramProductLink": "https://superprofile.bio/vig/66596deaeec07b001310d2df",
+      "telegramProductIds": [
+        "66596deaeec07b001310d2df"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/66596deaeec07b001310d2df"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 14646.0,
+      "cumulativePayoutVolume": 14646.0,
+      "maxDailyPayout": 14646.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 14646.0,
+          "telegramProductId": "66596deaeec07b001310d2df",
+          "telegramProductLink": "https://superprofile.bio/vig/66596deaeec07b001310d2df"
+        }
+      ]
+    },
+    "675ab45e058432001308f3bd": {
+      "creatorId": "675ab45e058432001308f3bd",
+      "username": "tradingsky",
+      "creatorName": "tradingsky",
+      "email": "support@tradingsky.in",
+      "phone": "8287436828",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "69fc37eb1b03b900133f0a74",
+      "telegramProductLink": "https://superprofile.bio/vig/69fc37eb1b03b900133f0a74",
+      "telegramProductIds": [
+        "69fc37eb1b03b900133f0a74"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/69fc37eb1b03b900133f0a74"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 48318.0,
+      "cumulativePayoutVolume": 48318.0,
+      "maxDailyPayout": 48318.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 48318.0,
+          "telegramProductId": "69fc37eb1b03b900133f0a74",
+          "telegramProductLink": "https://superprofile.bio/vig/69fc37eb1b03b900133f0a74"
+        }
+      ]
+    },
+    "6537e3b6539ccb001fb2c0e3": {
+      "creatorId": "6537e3b6539ccb001fb2c0e3",
+      "username": "badshahb",
+      "creatorName": "badshahb",
+      "email": "wismindia01@gmail.com",
+      "phone": "7240047792",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "65389610fde848001d63f478",
+      "telegramProductLink": "https://superprofile.bio/vig/65389610fde848001d63f478",
+      "telegramProductIds": [
+        "65389610fde848001d63f478"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/65389610fde848001d63f478"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 45975.0,
+      "cumulativePayoutVolume": 45975.0,
+      "maxDailyPayout": 45975.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 45975.0,
+          "telegramProductId": "65389610fde848001d63f478",
+          "telegramProductLink": "https://superprofile.bio/vig/65389610fde848001d63f478"
+        }
+      ]
+    },
+    "65d0bb030524d90012989f5b": {
+      "creatorId": "65d0bb030524d90012989f5b",
+      "username": "stockmarket89",
+      "creatorName": "stockmarket89",
+      "email": "Shyamkalani95@gmail.com",
+      "phone": "8955931195",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "6485e8894454f1002a688918",
+      "telegramProductLink": "https://superprofile.bio/vig/6485e8894454f1002a688918",
+      "telegramProductIds": [
+        "6485e8894454f1002a688918"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/6485e8894454f1002a688918"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 34616.0,
+      "cumulativePayoutVolume": 34616.0,
+      "maxDailyPayout": 34616.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 34616.0,
+          "telegramProductId": "6485e8894454f1002a688918",
+          "telegramProductLink": "https://superprofile.bio/vig/6485e8894454f1002a688918"
+        }
+      ]
+    },
+    "68d8cdc597a50f0013a48905": {
+      "creatorId": "68d8cdc597a50f0013a48905",
+      "username": "chartist-edge",
+      "creatorName": "chartist-edge",
+      "email": "businesskthapa@gmail.com",
+      "phone": "8812938434",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "690da6f85a8bb100147b4054",
+      "telegramProductLink": "https://superprofile.bio/vig/690da6f85a8bb100147b4054",
+      "telegramProductIds": [
+        "690da6f85a8bb100147b4054"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/690da6f85a8bb100147b4054"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 27571.0,
+      "cumulativePayoutVolume": 27571.0,
+      "maxDailyPayout": 27571.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 27571.0,
+          "telegramProductId": "690da6f85a8bb100147b4054",
+          "telegramProductLink": "https://superprofile.bio/vig/690da6f85a8bb100147b4054"
+        }
+      ]
+    },
+    "6792105c1ca4f90013d8d22a": {
+      "creatorId": "6792105c1ca4f90013d8d22a",
+      "username": "admin14",
+      "creatorName": "admin14",
+      "email": "datadazzle@zuperone.com",
+      "phone": "6361783958",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "67933373930de200137d8bc3",
+      "telegramProductLink": "https://superprofile.bio/vig/67933373930de200137d8bc3",
+      "telegramProductIds": [
+        "67933373930de200137d8bc3"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/67933373930de200137d8bc3"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 24410.0,
+      "cumulativePayoutVolume": 24410.0,
+      "maxDailyPayout": 24410.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 24410.0,
+          "telegramProductId": "67933373930de200137d8bc3",
+          "telegramProductLink": "https://superprofile.bio/vig/67933373930de200137d8bc3"
+        }
+      ]
+    },
+    "683166b711fc5b00132764e9": {
+      "creatorId": "683166b711fc5b00132764e9",
+      "username": "thoughtsmagictrading",
+      "creatorName": "thoughtsmagictrading",
+      "email": "yashjaiswal774@gmail.com",
+      "phone": "8668659955",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "69380eebc9813a00136cc767",
+      "telegramProductLink": "https://superprofile.bio/vig/69380eebc9813a00136cc767",
+      "telegramProductIds": [
+        "69380eebc9813a00136cc767"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/69380eebc9813a00136cc767"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 22765.0,
+      "cumulativePayoutVolume": 22765.0,
+      "maxDailyPayout": 22765.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 22765.0,
+          "telegramProductId": "69380eebc9813a00136cc767",
+          "telegramProductLink": "https://superprofile.bio/vig/69380eebc9813a00136cc767"
+        }
+      ]
+    },
+    "62c6764efbc19b0f3303c7ba": {
+      "creatorId": "62c6764efbc19b0f3303c7ba",
+      "username": "smartselva",
+      "creatorName": "smartselva",
+      "email": "selvaprathee97@gmail.com",
+      "phone": "7032967488",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "68807d7e4ae69800132a07f0",
+      "telegramProductLink": "https://superprofile.bio/vig/68807d7e4ae69800132a07f0",
+      "telegramProductIds": [
+        "68807d7e4ae69800132a07f0"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/68807d7e4ae69800132a07f0"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 22693.0,
+      "cumulativePayoutVolume": 22693.0,
+      "maxDailyPayout": 22693.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 22693.0,
+          "telegramProductId": "68807d7e4ae69800132a07f0",
+          "telegramProductLink": "https://superprofile.bio/vig/68807d7e4ae69800132a07f0"
+        }
+      ]
+    },
+    "693ff14b339ef300132c00dd": {
+      "creatorId": "693ff14b339ef300132c00dd",
+      "username": "themanifestationqueen",
+      "creatorName": "themanifestationqueen",
+      "email": "mannuthapa2381@gmail.com",
+      "phone": "9068457199",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "69fda9af23cc6f00135df515",
+      "telegramProductLink": "https://superprofile.bio/vig/69fda9af23cc6f00135df515",
+      "telegramProductIds": [
+        "69fda9af23cc6f00135df515"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/69fda9af23cc6f00135df515"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 18820.0,
+      "cumulativePayoutVolume": 18820.0,
+      "maxDailyPayout": 18820.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 18820.0,
+          "telegramProductId": "69fda9af23cc6f00135df515",
+          "telegramProductLink": "https://superprofile.bio/vig/69fda9af23cc6f00135df515"
+        }
+      ]
+    },
+    "6499240f445db0002a4ba9a2": {
+      "creatorId": "6499240f445db0002a4ba9a2",
+      "username": "artoftrading555",
+      "creatorName": "artoftrading555",
+      "email": "dhavalpatel30071985@gmail.com",
+      "phone": "9428683291",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "64992d40081c83002a9fb444",
+      "telegramProductLink": "https://superprofile.bio/vig/64992d40081c83002a9fb444",
+      "telegramProductIds": [
+        "64992d40081c83002a9fb444"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/64992d40081c83002a9fb444"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 17977.0,
+      "cumulativePayoutVolume": 17977.0,
+      "maxDailyPayout": 17977.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 17977.0,
+          "telegramProductId": "64992d40081c83002a9fb444",
+          "telegramProductLink": "https://superprofile.bio/vig/64992d40081c83002a9fb444"
+        }
+      ]
+    },
+    "679f17a7c73753001357f0ec": {
+      "creatorId": "679f17a7c73753001357f0ec",
+      "username": "udaymndal",
+      "creatorName": "udaymndal",
+      "email": "connect.udaymandal@gmail.com",
+      "phone": "8298627893",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "68a2d79bf9d81e0013d0448a",
+      "telegramProductLink": "https://superprofile.bio/vig/68a2d79bf9d81e0013d0448a",
+      "telegramProductIds": [
+        "68a2d79bf9d81e0013d0448a"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/68a2d79bf9d81e0013d0448a"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 17780.0,
+      "cumulativePayoutVolume": 17780.0,
+      "maxDailyPayout": 17780.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 17780.0,
+          "telegramProductId": "68a2d79bf9d81e0013d0448a",
+          "telegramProductLink": "https://superprofile.bio/vig/68a2d79bf9d81e0013d0448a"
+        }
+      ]
+    },
+    "698189f53f39ba0013cf92c0": {
+      "creatorId": "698189f53f39ba0013cf92c0",
+      "username": "easyinvest",
+      "creatorName": "easyinvest",
+      "email": "bharatishah1503@gmail.com",
+      "phone": "9699623137",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "6985964e0e60910013ae921d",
+      "telegramProductLink": "https://superprofile.bio/vig/6985964e0e60910013ae921d",
+      "telegramProductIds": [
+        "6985964e0e60910013ae921d"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/6985964e0e60910013ae921d"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 15753.0,
+      "cumulativePayoutVolume": 15753.0,
+      "maxDailyPayout": 15753.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 15753.0,
+          "telegramProductId": "6985964e0e60910013ae921d",
+          "telegramProductLink": "https://superprofile.bio/vig/6985964e0e60910013ae921d"
+        }
+      ]
+    },
+    "64d2675c94b053001d508b71": {
+      "creatorId": "64d2675c94b053001d508b71",
+      "username": "stocktrade007",
+      "creatorName": "stocktrade007",
+      "email": "tradewithme4999@gmail.com",
+      "phone": "8380029432",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "6708475d1f46ee001371cb20",
+      "telegramProductLink": "https://superprofile.bio/vig/6708475d1f46ee001371cb20",
+      "telegramProductIds": [
+        "6708475d1f46ee001371cb20"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/6708475d1f46ee001371cb20"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 14114.0,
+      "cumulativePayoutVolume": 14114.0,
+      "maxDailyPayout": 14114.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 14114.0,
+          "telegramProductId": "6708475d1f46ee001371cb20",
+          "telegramProductLink": "https://superprofile.bio/vig/6708475d1f46ee001371cb20"
+        }
+      ]
+    },
+    "65bf5df4336354001e2c6349": {
+      "creatorId": "65bf5df4336354001e2c6349",
+      "username": "deltainfinity",
+      "creatorName": "deltainfinity",
+      "email": "shraun4321@gmail.com",
+      "phone": "8509733127",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "6a1ca54b2337e300139c39f6",
+      "telegramProductLink": "https://superprofile.bio/vig/6a1ca54b2337e300139c39f6",
+      "telegramProductIds": [
+        "6a1ca54b2337e300139c39f6"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/6a1ca54b2337e300139c39f6"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 14111.0,
+      "cumulativePayoutVolume": 14111.0,
+      "maxDailyPayout": 14111.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 14111.0,
+          "telegramProductId": "6a1ca54b2337e300139c39f6",
+          "telegramProductLink": "https://superprofile.bio/vig/6a1ca54b2337e300139c39f6"
+        }
+      ]
+    },
+    "640d10371bcf9e0020296ad8": {
+      "creatorId": "640d10371bcf9e0020296ad8",
+      "username": "stockscannerin",
+      "creatorName": "stockscannerin",
+      "email": "iamrajesh2du@gmail.com",
+      "phone": "7717760693",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "66544e6da5123900130b90ad",
+      "telegramProductLink": "https://superprofile.bio/vig/66544e6da5123900130b90ad",
+      "telegramProductIds": [
+        "66544e6da5123900130b90ad"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/66544e6da5123900130b90ad"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 13768.0,
+      "cumulativePayoutVolume": 13768.0,
+      "maxDailyPayout": 13768.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 13768.0,
+          "telegramProductId": "66544e6da5123900130b90ad",
+          "telegramProductLink": "https://superprofile.bio/vig/66544e6da5123900130b90ad"
+        }
+      ]
+    },
+    "68b54171910f380013e6ec7d": {
+      "creatorId": "68b54171910f380013e6ec7d",
+      "username": "Grow6446",
+      "creatorName": "Grow6446",
+      "email": "growx0002@gmail.com",
+      "phone": "7077098118",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "68e78c8f8bda650013091361",
+      "telegramProductLink": "https://superprofile.bio/vig/68e78c8f8bda650013091361",
+      "telegramProductIds": [
+        "68e78c8f8bda650013091361"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/68e78c8f8bda650013091361"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 10804.0,
+      "cumulativePayoutVolume": 10804.0,
+      "maxDailyPayout": 10804.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 10804.0,
+          "telegramProductId": "68e78c8f8bda650013091361",
+          "telegramProductLink": "https://superprofile.bio/vig/68e78c8f8bda650013091361"
+        }
+      ]
+    },
+    "63098a19ab5f30156adbd12b": {
+      "creatorId": "63098a19ab5f30156adbd12b",
+      "username": "ankitjain1",
+      "creatorName": "ankitjain1",
+      "email": "ankitjain9590@gmail.com",
+      "phone": "7004488186",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "69ef37d0844a2100138b0bd0",
+      "telegramProductLink": "https://superprofile.bio/vig/69ef37d0844a2100138b0bd0",
+      "telegramProductIds": [
+        "69ef37d0844a2100138b0bd0"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/69ef37d0844a2100138b0bd0"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 9898.0,
+      "cumulativePayoutVolume": 9898.0,
+      "maxDailyPayout": 9898.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 9898.0,
+          "telegramProductId": "69ef37d0844a2100138b0bd0",
+          "telegramProductLink": "https://superprofile.bio/vig/69ef37d0844a2100138b0bd0"
+        }
+      ]
+    },
+    "64cc9ae0500648001d42e01c": {
+      "creatorId": "64cc9ae0500648001d42e01c",
+      "username": "stoxup",
+      "creatorName": "stoxup",
+      "email": "dinesh060799@gmail.com",
+      "phone": "7568442454",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "68d11c79211346001339d1fc",
+      "telegramProductLink": "https://superprofile.bio/vig/68d11c79211346001339d1fc",
+      "telegramProductIds": [
+        "68d11c79211346001339d1fc"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/68d11c79211346001339d1fc"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 9047.0,
+      "cumulativePayoutVolume": 9047.0,
+      "maxDailyPayout": 9047.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 9047.0,
+          "telegramProductId": "68d11c79211346001339d1fc",
+          "telegramProductLink": "https://superprofile.bio/vig/68d11c79211346001339d1fc"
+        }
+      ]
+    },
+    "6a0739870374d70013f4a6da": {
+      "creatorId": "6a0739870374d70013f4a6da",
+      "username": "algoxofficial",
+      "creatorName": "algoxofficial",
+      "email": "sayhelloplux@gmail.com",
+      "phone": "8529451480",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "6a40b76b8552d90013a86043",
+      "telegramProductLink": "https://superprofile.bio/vig/6a40b76b8552d90013a86043",
+      "telegramProductIds": [
+        "6a40b76b8552d90013a86043"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/6a40b76b8552d90013a86043"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 6554.0,
+      "cumulativePayoutVolume": 6554.0,
+      "maxDailyPayout": 6554.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 6554.0,
+          "telegramProductId": "6a40b76b8552d90013a86043",
+          "telegramProductLink": "https://superprofile.bio/vig/6a40b76b8552d90013a86043"
+        }
+      ]
+    },
+    "62c3cb33b1e08041dcff0860": {
+      "creatorId": "62c3cb33b1e08041dcff0860",
+      "username": "robotradehub",
+      "creatorName": "robotradehub",
+      "email": "devdj.sidana@gmail.com",
+      "phone": "9876112334",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "682dbea97f92d2001340e1bf",
+      "telegramProductLink": "https://superprofile.bio/vig/682dbea97f92d2001340e1bf",
+      "telegramProductIds": [
+        "682dbea97f92d2001340e1bf"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/682dbea97f92d2001340e1bf"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 6103.0,
+      "cumulativePayoutVolume": 6103.0,
+      "maxDailyPayout": 6103.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 6103.0,
+          "telegramProductId": "682dbea97f92d2001340e1bf",
+          "telegramProductLink": "https://superprofile.bio/vig/682dbea97f92d2001340e1bf"
+        }
+      ]
+    },
+    "62fd0aaed7f1067b018a5ebf": {
+      "creatorId": "62fd0aaed7f1067b018a5ebf",
+      "username": "hareem1",
+      "creatorName": "hareem1",
+      "email": "justowais8@gmail.com",
+      "phone": "9797189866",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "62fd101cda86187f12419fa8",
+      "telegramProductLink": "https://superprofile.bio/vig/62fd101cda86187f12419fa8",
+      "telegramProductIds": [
+        "62fd101cda86187f12419fa8"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/62fd101cda86187f12419fa8"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 5839.0,
+      "cumulativePayoutVolume": 5839.0,
+      "maxDailyPayout": 5839.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 5839.0,
+          "telegramProductId": "62fd101cda86187f12419fa8",
+          "telegramProductLink": "https://superprofile.bio/vig/62fd101cda86187f12419fa8"
+        }
+      ]
+    },
+    "67332673160fd900139f7de9": {
+      "creatorId": "67332673160fd900139f7de9",
+      "username": "drguptamd",
+      "creatorName": "drguptamd",
+      "email": "dr.rajat95gupta@gmail.com",
+      "phone": "8894577818",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "67f8cb86a5f4410013979220",
+      "telegramProductLink": "https://superprofile.bio/vig/67f8cb86a5f4410013979220",
+      "telegramProductIds": [
+        "67f8cb86a5f4410013979220"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/67f8cb86a5f4410013979220"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 5808.0,
+      "cumulativePayoutVolume": 5808.0,
+      "maxDailyPayout": 5808.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 5808.0,
+          "telegramProductId": "67f8cb86a5f4410013979220",
+          "telegramProductLink": "https://superprofile.bio/vig/67f8cb86a5f4410013979220"
+        }
+      ]
+    },
+    "64da12fda7fdb0001ef2db5c": {
+      "creatorId": "64da12fda7fdb0001ef2db5c",
+      "username": "trade4wealth",
+      "creatorName": "trade4wealth",
+      "email": "amar.mandekar1981@gmail.com",
+      "phone": "9820049039",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "674166801e664800136007bf",
+      "telegramProductLink": "https://superprofile.bio/vig/674166801e664800136007bf",
+      "telegramProductIds": [
+        "674166801e664800136007bf"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/674166801e664800136007bf"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 5805.0,
+      "cumulativePayoutVolume": 5805.0,
+      "maxDailyPayout": 5805.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 5805.0,
+          "telegramProductId": "674166801e664800136007bf",
+          "telegramProductLink": "https://superprofile.bio/vig/674166801e664800136007bf"
+        }
+      ]
+    },
+    "69a0993ea5de7e00140e28e4": {
+      "creatorId": "69a0993ea5de7e00140e28e4",
+      "username": "STOCK5904",
+      "creatorName": "STOCK5904",
+      "email": "demonscrimspvt.ltd@gmail.com",
+      "phone": "9516992339",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "69a0a70b9471170013a5e1c3",
+      "telegramProductLink": "https://superprofile.bio/vig/69a0a70b9471170013a5e1c3",
+      "telegramProductIds": [
+        "69a0a70b9471170013a5e1c3"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/69a0a70b9471170013a5e1c3"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 5757.0,
+      "cumulativePayoutVolume": 5757.0,
+      "maxDailyPayout": 5757.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 5757.0,
+          "telegramProductId": "69a0a70b9471170013a5e1c3",
+          "telegramProductLink": "https://superprofile.bio/vig/69a0a70b9471170013a5e1c3"
+        }
+      ]
+    },
+    "62c5bb24f712d10f2dd7bc09": {
+      "creatorId": "62c5bb24f712d10f2dd7bc09",
+      "username": "elliottbabaacademy",
+      "creatorName": "elliottbabaacademy",
+      "email": "Adarshrai82@gmail.com",
+      "phone": "8707812455",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "65b158ed3b1a56001d47377e",
+      "telegramProductLink": "https://superprofile.bio/vig/65b158ed3b1a56001d47377e",
+      "telegramProductIds": [
+        "65b158ed3b1a56001d47377e"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/65b158ed3b1a56001d47377e"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 5304.0,
+      "cumulativePayoutVolume": 5304.0,
+      "maxDailyPayout": 5304.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 5304.0,
+          "telegramProductId": "65b158ed3b1a56001d47377e",
+          "telegramProductLink": "https://superprofile.bio/vig/65b158ed3b1a56001d47377e"
+        }
+      ]
+    },
+    "6281a2ae26a96d4e9fb62dc0": {
+      "creatorId": "6281a2ae26a96d4e9fb62dc0",
+      "username": "mentorshipprogram",
+      "creatorName": "mentorshipprogram",
+      "email": "ps5246099@gmail.com",
+      "phone": "7027030840",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "6354ba9bad4b81003332f1c0",
+      "telegramProductLink": "https://superprofile.bio/vig/6354ba9bad4b81003332f1c0",
+      "telegramProductIds": [
+        "6354ba9bad4b81003332f1c0"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/6354ba9bad4b81003332f1c0"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 5144.0,
+      "cumulativePayoutVolume": 5144.0,
+      "maxDailyPayout": 5144.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 5144.0,
+          "telegramProductId": "6354ba9bad4b81003332f1c0",
+          "telegramProductLink": "https://superprofile.bio/vig/6354ba9bad4b81003332f1c0"
+        }
+      ]
+    },
+    "67a43fcd140f6800136e7f9b": {
+      "creatorId": "67a43fcd140f6800136e7f9b",
+      "username": "bullsstrategy23",
+      "creatorName": "bullsstrategy23",
+      "email": "bullsstrategyadvisorypvt@gmail.com",
+      "phone": "8511116948",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "67a4905316f27700131e9ddd",
+      "telegramProductLink": "https://superprofile.bio/vig/67a4905316f27700131e9ddd",
+      "telegramProductIds": [
+        "67a4905316f27700131e9ddd"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/67a4905316f27700131e9ddd"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 4953.0,
+      "cumulativePayoutVolume": 4953.0,
+      "maxDailyPayout": 4953.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 4953.0,
+          "telegramProductId": "67a4905316f27700131e9ddd",
+          "telegramProductLink": "https://superprofile.bio/vig/67a4905316f27700131e9ddd"
+        }
+      ]
+    },
+    "677934d39aeb4b0013816267": {
+      "creatorId": "677934d39aeb4b0013816267",
+      "username": "cosmofeedsuper",
+      "creatorName": "cosmofeedsuper",
+      "email": "rhushimane.ca@gmail.com",
+      "phone": "8928549145",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "6901f529874dda0013d7e8f9",
+      "telegramProductLink": "https://superprofile.bio/vig/6901f529874dda0013d7e8f9",
+      "telegramProductIds": [
+        "6901f529874dda0013d7e8f9"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/6901f529874dda0013d7e8f9"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 4793.0,
+      "cumulativePayoutVolume": 4793.0,
+      "maxDailyPayout": 4793.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 4793.0,
+          "telegramProductId": "6901f529874dda0013d7e8f9",
+          "telegramProductLink": "https://superprofile.bio/vig/6901f529874dda0013d7e8f9"
+        }
+      ]
+    },
+    "6184db07e7713d065649d3e1": {
+      "creatorId": "6184db07e7713d065649d3e1",
+      "username": "jayneshkasliwal",
+      "creatorName": "jayneshkasliwal",
+      "email": "jayneshkasliwal1@gmail.com",
+      "phone": "7674007938",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "683c0af42f436800130fedf0",
+      "telegramProductLink": "https://superprofile.bio/vig/683c0af42f436800130fedf0",
+      "telegramProductIds": [
+        "683c0af42f436800130fedf0"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/683c0af42f436800130fedf0"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 3858.0,
+      "cumulativePayoutVolume": 3858.0,
+      "maxDailyPayout": 3858.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 3858.0,
+          "telegramProductId": "683c0af42f436800130fedf0",
+          "telegramProductLink": "https://superprofile.bio/vig/683c0af42f436800130fedf0"
+        }
+      ]
+    },
+    "67cc33d5f2990900135f1213": {
+      "creatorId": "67cc33d5f2990900135f1213",
+      "username": "tradevixofficial123",
+      "creatorName": "tradevixofficial123",
+      "email": "tradewithsandeep8@gmail.com",
+      "phone": "6367327619",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "67cc69c2f926d700136ec846",
+      "telegramProductLink": "https://superprofile.bio/vig/67cc69c2f926d700136ec846",
+      "telegramProductIds": [
+        "67cc69c2f926d700136ec846"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/67cc69c2f926d700136ec846"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 3717.0,
+      "cumulativePayoutVolume": 3717.0,
+      "maxDailyPayout": 3717.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 3717.0,
+          "telegramProductId": "67cc69c2f926d700136ec846",
+          "telegramProductLink": "https://superprofile.bio/vig/67cc69c2f926d700136ec846"
+        }
+      ]
+    },
+    "6541dfbbc8b47a001ec7f9ae": {
+      "creatorId": "6541dfbbc8b47a001ec7f9ae",
+      "username": "imock101",
+      "creatorName": "imock101",
+      "email": "mrmchandsamota@gmail.com",
+      "phone": "8505065646",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "69eccd685fe24c0013aef1e2",
+      "telegramProductLink": "https://superprofile.bio/vig/69eccd685fe24c0013aef1e2",
+      "telegramProductIds": [
+        "69eccd685fe24c0013aef1e2"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/69eccd685fe24c0013aef1e2"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 3597.0,
+      "cumulativePayoutVolume": 3597.0,
+      "maxDailyPayout": 3597.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 3597.0,
+          "telegramProductId": "69eccd685fe24c0013aef1e2",
+          "telegramProductLink": "https://superprofile.bio/vig/69eccd685fe24c0013aef1e2"
+        }
+      ]
+    },
+    "68fc64086d7f7b00132e8664": {
+      "creatorId": "68fc64086d7f7b00132e8664",
+      "username": "bulishbe",
+      "creatorName": "bulishbe",
+      "email": "shivamsomani360@gmail.com",
+      "phone": "7413942083",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "670500b24509b400132cb385",
+      "telegramProductLink": "https://superprofile.bio/vig/670500b24509b400132cb385",
+      "telegramProductIds": [
+        "670500b24509b400132cb385"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/670500b24509b400132cb385"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 2946.0,
+      "cumulativePayoutVolume": 2946.0,
+      "maxDailyPayout": 2946.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 2946.0,
+          "telegramProductId": "670500b24509b400132cb385",
+          "telegramProductLink": "https://superprofile.bio/vig/670500b24509b400132cb385"
+        }
+      ]
+    },
+    "698c21f698c8af001374cda7": {
+      "creatorId": "698c21f698c8af001374cda7",
+      "username": "advanceastrovastu",
+      "creatorName": "advanceastrovastu",
+      "email": "graceenergy108@gmail.com",
+      "phone": "9409334468",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "698ca3b8648fed0013499cae",
+      "telegramProductLink": "https://superprofile.bio/vig/698ca3b8648fed0013499cae",
+      "telegramProductIds": [
+        "698ca3b8648fed0013499cae"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/698ca3b8648fed0013499cae"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 2941.0,
+      "cumulativePayoutVolume": 2941.0,
+      "maxDailyPayout": 2941.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 2941.0,
+          "telegramProductId": "698ca3b8648fed0013499cae",
+          "telegramProductLink": "https://superprofile.bio/vig/698ca3b8648fed0013499cae"
+        }
+      ]
+    },
+    "6a8352777b63ce00137c8364": {
+      "creatorId": "6a8352777b63ce00137c8364",
+      "username": "bootcampadsfusionacademy",
+      "creatorName": "bootcampadsfusionacademy",
+      "email": "hakeemkp111@gmail.com",
+      "phone": "7356250713",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "6a8463b0d51eef001369a03c",
+      "telegramProductLink": "https://superprofile.bio/vig/6a8463b0d51eef001369a03c",
+      "telegramProductIds": [
+        "6a8463b0d51eef001369a03c"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/6a8463b0d51eef001369a03c"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 2538.0,
+      "cumulativePayoutVolume": 2538.0,
+      "maxDailyPayout": 2538.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 2538.0,
+          "telegramProductId": "6a8463b0d51eef001369a03c",
+          "telegramProductLink": "https://superprofile.bio/vig/6a8463b0d51eef001369a03c"
+        }
+      ]
+    },
+    "6a8fb6f61559b900134d4ae8": {
+      "creatorId": "6a8fb6f61559b900134d4ae8",
+      "username": "Banknifty9888",
+      "creatorName": "Banknifty9888",
+      "email": "studyking736@gmail.com",
+      "phone": "8092600241",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "697aeb756fa9030013e878ea",
+      "telegramProductLink": "https://superprofile.bio/vig/697aeb756fa9030013e878ea",
+      "telegramProductIds": [
+        "697aeb756fa9030013e878ea"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/697aeb756fa9030013e878ea"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 2456.0,
+      "cumulativePayoutVolume": 2456.0,
+      "maxDailyPayout": 2456.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 2456.0,
+          "telegramProductId": "697aeb756fa9030013e878ea",
+          "telegramProductLink": "https://superprofile.bio/vig/697aeb756fa9030013e878ea"
+        }
+      ]
+    },
+    "64a936996a2973002b10c7f6": {
+      "creatorId": "64a936996a2973002b10c7f6",
+      "username": "tmg",
+      "creatorName": "tmg",
+      "email": "rohanfriends29@gmail.com",
+      "phone": "6350084025",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "64f420086fadd99da766809d",
+      "telegramProductLink": "https://superprofile.bio/vig/64f420086fadd99da766809d",
+      "telegramProductIds": [
+        "64f420086fadd99da766809d"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/64f420086fadd99da766809d"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 2456.0,
+      "cumulativePayoutVolume": 2456.0,
+      "maxDailyPayout": 2456.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 2456.0,
+          "telegramProductId": "64f420086fadd99da766809d",
+          "telegramProductLink": "https://superprofile.bio/vig/64f420086fadd99da766809d"
+        }
+      ]
+    },
+    "624f0396ccc9ef0fa78281b0": {
+      "creatorId": "624f0396ccc9ef0fa78281b0",
+      "username": "Darshuj10",
+      "creatorName": "Darshuj10",
+      "email": "Dinuj10@gmail.com",
+      "phone": "9892492682",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "6a66cd860a242e00131b0ba2",
+      "telegramProductLink": "https://superprofile.bio/vig/6a66cd860a242e00131b0ba2",
+      "telegramProductIds": [
+        "6a66cd860a242e00131b0ba2"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/6a66cd860a242e00131b0ba2"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 1953.0,
+      "cumulativePayoutVolume": 1953.0,
+      "maxDailyPayout": 1953.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 1953.0,
+          "telegramProductId": "6a66cd860a242e00131b0ba2",
+          "telegramProductLink": "https://superprofile.bio/vig/6a66cd860a242e00131b0ba2"
+        }
+      ]
+    },
+    "64c6157754ab34001df12933": {
+      "creatorId": "64c6157754ab34001df12933",
+      "username": "bnf99",
+      "creatorName": "bnf99",
+      "email": "bharatsolanki274@gmail.com",
+      "phone": "8806065014",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "6496a0bc704f390020451603",
+      "telegramProductLink": "https://superprofile.bio/vig/6496a0bc704f390020451603",
+      "telegramProductIds": [
+        "6496a0bc704f390020451603"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/6496a0bc704f390020451603"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 1953.0,
+      "cumulativePayoutVolume": 1953.0,
+      "maxDailyPayout": 1953.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 1953.0,
+          "telegramProductId": "6496a0bc704f390020451603",
+          "telegramProductLink": "https://superprofile.bio/vig/6496a0bc704f390020451603"
+        }
+      ]
+    },
+    "6a5760fea8ccdb0013ad3bb2": {
+      "creatorId": "6a5760fea8ccdb0013ad3bb2",
+      "username": "zerotoherotrader",
+      "creatorName": "zerotoherotrader",
+      "email": "zerotoherotrading143@gmail.com",
+      "phone": "9672056704",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "6a59cf931f909b0013365dfc",
+      "telegramProductLink": "https://superprofile.bio/vig/6a59cf931f909b0013365dfc",
+      "telegramProductIds": [
+        "6a59cf931f909b0013365dfc"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/6a59cf931f909b0013365dfc"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 1939.0,
+      "cumulativePayoutVolume": 1939.0,
+      "maxDailyPayout": 1939.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 1939.0,
+          "telegramProductId": "6a59cf931f909b0013365dfc",
+          "telegramProductLink": "https://superprofile.bio/vig/6a59cf931f909b0013365dfc"
+        }
+      ]
+    },
+    "682368f50efed700131d7266": {
+      "creatorId": "682368f50efed700131d7266",
+      "username": "tezimandi",
+      "creatorName": "tezimandi",
+      "email": "tezimandibhaibhai@gmail.com",
+      "phone": "9883118215",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "689dc7cba17ac90013e4012c",
+      "telegramProductLink": "https://superprofile.bio/vig/689dc7cba17ac90013e4012c",
+      "telegramProductIds": [
+        "689dc7cba17ac90013e4012c"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/689dc7cba17ac90013e4012c"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 1882.0,
+      "cumulativePayoutVolume": 1882.0,
+      "maxDailyPayout": 1882.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 1882.0,
+          "telegramProductId": "689dc7cba17ac90013e4012c",
+          "telegramProductLink": "https://superprofile.bio/vig/689dc7cba17ac90013e4012c"
+        }
+      ]
+    },
+    "64d0b757596d8a001d266a41": {
+      "creatorId": "64d0b757596d8a001d266a41",
+      "username": "kkstockbtacademy",
+      "creatorName": "kkstockbtacademy",
+      "email": "prasunb34@gmail.com",
+      "phone": "8348726471",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "6a91e241282ef200131da755",
+      "telegramProductLink": "https://superprofile.bio/vig/6a91e241282ef200131da755",
+      "telegramProductIds": [
+        "6a91e241282ef200131da755"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/6a91e241282ef200131da755"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 1881.0,
+      "cumulativePayoutVolume": 1881.0,
+      "maxDailyPayout": 1881.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 1881.0,
+          "telegramProductId": "6a91e241282ef200131da755",
+          "telegramProductLink": "https://superprofile.bio/vig/6a91e241282ef200131da755"
+        }
+      ]
+    },
+    "6a0489783a48f8001349af38": {
+      "creatorId": "6a0489783a48f8001349af38",
+      "username": "traderharneet",
+      "creatorName": "traderharneet",
+      "email": "coolhoney1988@gmail.com",
+      "phone": "7838700608",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "6a3e5b90c5eee700135eeea8",
+      "telegramProductLink": "https://superprofile.bio/vig/6a3e5b90c5eee700135eeea8",
+      "telegramProductIds": [
+        "6a3e5b90c5eee700135eeea8"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/6a3e5b90c5eee700135eeea8"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 1810.0,
+      "cumulativePayoutVolume": 1810.0,
+      "maxDailyPayout": 1810.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 1810.0,
+          "telegramProductId": "6a3e5b90c5eee700135eeea8",
+          "telegramProductLink": "https://superprofile.bio/vig/6a3e5b90c5eee700135eeea8"
+        }
+      ]
+    },
+    "6566ea4ad82412001dc91499": {
+      "creatorId": "6566ea4ad82412001dc91499",
+      "username": "optionsbyharsh",
+      "creatorName": "optionsbyharsh",
+      "email": "harshsingh14715@gmail.com",
+      "phone": "7739669912",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "6a916c5c282ef20013089915",
+      "telegramProductLink": "https://superprofile.bio/vig/6a916c5c282ef20013089915",
+      "telegramProductIds": [
+        "6a916c5c282ef20013089915"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/6a916c5c282ef20013089915"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 1800.0,
+      "cumulativePayoutVolume": 1800.0,
+      "maxDailyPayout": 1800.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 1800.0,
+          "telegramProductId": "6a916c5c282ef20013089915",
+          "telegramProductLink": "https://superprofile.bio/vig/6a916c5c282ef20013089915"
+        }
+      ]
+    },
+    "67d8ab4ac6a55500139551a0": {
+      "creatorId": "67d8ab4ac6a55500139551a0",
+      "username": "nextdoorresident",
+      "creatorName": "nextdoorresident",
+      "email": "ndrnotes@gmail.com",
+      "phone": "8851624762",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "67e3de134e9b1c001301b140",
+      "telegramProductLink": "https://superprofile.bio/vig/67e3de134e9b1c001301b140",
+      "telegramProductIds": [
+        "67e3de134e9b1c001301b140"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/67e3de134e9b1c001301b140"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 1659.0,
+      "cumulativePayoutVolume": 1659.0,
+      "maxDailyPayout": 1659.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 1659.0,
+          "telegramProductId": "67e3de134e9b1c001301b140",
+          "telegramProductLink": "https://superprofile.bio/vig/67e3de134e9b1c001301b140"
+        }
+      ]
+    },
+    "62dd3018f83d933bcd5bd23c": {
+      "creatorId": "62dd3018f83d933bcd5bd23c",
+      "username": "bullbearpremium",
+      "creatorName": "bullbearpremium",
+      "email": "pradip.gund9@gmail.com",
+      "phone": "9503876571",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "68e7cafb27f3a100139ee425",
+      "telegramProductLink": "https://superprofile.bio/vig/68e7cafb27f3a100139ee425",
+      "telegramProductIds": [
+        "68e7cafb27f3a100139ee425"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/68e7cafb27f3a100139ee425"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 1620.0,
+      "cumulativePayoutVolume": 1620.0,
+      "maxDailyPayout": 1620.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 1620.0,
+          "telegramProductId": "68e7cafb27f3a100139ee425",
+          "telegramProductLink": "https://superprofile.bio/vig/68e7cafb27f3a100139ee425"
+        }
+      ]
+    },
+    "67783e8e9b28020013239bcb": {
+      "creatorId": "67783e8e9b28020013239bcb",
+      "username": "therankerss",
+      "creatorName": "therankerss",
+      "email": "kumanikhil54@gmail.com",
+      "phone": "9142451230",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "6779192938e13e00133b7cc4",
+      "telegramProductLink": "https://superprofile.bio/vig/6779192938e13e00133b7cc4",
+      "telegramProductIds": [
+        "6779192938e13e00133b7cc4"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/6779192938e13e00133b7cc4"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 1547.0,
+      "cumulativePayoutVolume": 1547.0,
+      "maxDailyPayout": 1547.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 1547.0,
+          "telegramProductId": "6779192938e13e00133b7cc4",
+          "telegramProductLink": "https://superprofile.bio/vig/6779192938e13e00133b7cc4"
+        }
+      ]
+    },
+    "66dfde423f7d89001324eb00": {
+      "creatorId": "66dfde423f7d89001324eb00",
+      "username": "raj4predict",
+      "creatorName": "raj4predict",
+      "email": "raj4predict@gmail.com",
+      "phone": "8005726206",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "68b7029fd08c8e0013da9b34",
+      "telegramProductLink": "https://superprofile.bio/vig/68b7029fd08c8e0013da9b34",
+      "telegramProductIds": [
+        "68b7029fd08c8e0013da9b34"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/68b7029fd08c8e0013da9b34"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 1469.0,
+      "cumulativePayoutVolume": 1469.0,
+      "maxDailyPayout": 1469.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 1469.0,
+          "telegramProductId": "68b7029fd08c8e0013da9b34",
+          "telegramProductLink": "https://superprofile.bio/vig/68b7029fd08c8e0013da9b34"
+        }
+      ]
+    },
+    "69157f06e3a0e3001373be01": {
+      "creatorId": "69157f06e3a0e3001373be01",
+      "username": "ayushmarda",
+      "creatorName": "ayushmarda",
+      "email": "ayushmarda000@gmail.com",
+      "phone": "8007790099",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "692e8f7a0454370012d339a1",
+      "telegramProductLink": "https://superprofile.bio/vig/692e8f7a0454370012d339a1",
+      "telegramProductIds": [
+        "692e8f7a0454370012d339a1"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/692e8f7a0454370012d339a1"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 1259.0,
+      "cumulativePayoutVolume": 1259.0,
+      "maxDailyPayout": 1259.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 1259.0,
+          "telegramProductId": "692e8f7a0454370012d339a1",
+          "telegramProductLink": "https://superprofile.bio/vig/692e8f7a0454370012d339a1"
+        }
+      ]
+    },
+    "67933de51dcd31001388e565": {
+      "creatorId": "67933de51dcd31001388e565",
+      "username": "asuraxs",
+      "creatorName": "asuraxs",
+      "email": "l3150akhan@gmail.com",
+      "phone": "8958504836",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "68ce2d8badc9cb0013079773",
+      "telegramProductLink": "https://superprofile.bio/vig/68ce2d8badc9cb0013079773",
+      "telegramProductIds": [
+        "68ce2d8badc9cb0013079773"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/68ce2d8badc9cb0013079773"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 1133.0,
+      "cumulativePayoutVolume": 1133.0,
+      "maxDailyPayout": 1133.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 1133.0,
+          "telegramProductId": "68ce2d8badc9cb0013079773",
+          "telegramProductLink": "https://superprofile.bio/vig/68ce2d8badc9cb0013079773"
+        }
+      ]
+    },
+    "67320d5e64284700131f6b38": {
+      "creatorId": "67320d5e64284700131f6b38",
+      "username": "upanishadinvestdemy",
+      "creatorName": "upanishadinvestdemy",
+      "email": "upanishadinvestdemy@gmail.com",
+      "phone": "7977141565",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "6a43c4cd82cf3600134a08f9",
+      "telegramProductLink": "https://superprofile.bio/vig/6a43c4cd82cf3600134a08f9",
+      "telegramProductIds": [
+        "6a43c4cd82cf3600134a08f9"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/6a43c4cd82cf3600134a08f9"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 1118.0,
+      "cumulativePayoutVolume": 1118.0,
+      "maxDailyPayout": 1118.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 1118.0,
+          "telegramProductId": "6a43c4cd82cf3600134a08f9",
+          "telegramProductLink": "https://superprofile.bio/vig/6a43c4cd82cf3600134a08f9"
         }
       ]
     }
@@ -17634,212 +19740,228 @@
     },
     "2026-08-31": {
       "auditDate": "2026-08-31",
-      "flaggedCount": 203,
-      "totalDayVolume": 3389553.0,
+      "flaggedCount": 219,
+      "totalDayVolume": 2156119.0,
       "creatorIds": [
-        "635ca7e3716584002d51c158",
-        "6443c3c058544c002035fae3",
-        "6a54b9ee478445001378e580",
-        "6a55d3282f10800012ed9ab0",
-        "64af58ec07df72001f236bc1",
-        "677a802db8a1e400132a1a88",
-        "65645dfe77f97f00dff1712b",
-        "663dd24d61f04800142f8ce8",
-        "6435176dc89b300020dab646",
-        "6370d12220af49002ce4b102",
-        "66713c14317e380014ebf21e",
-        "68f0653948c02b001307f329",
-        "656ee0b105c31b001d36aa9e",
-        "687798f207fcf800136c42c1",
-        "65014fed031b76001e9091f6",
-        "6a25a603b47b140013644f6f",
-        "69fdbcc0a3cd3d00130ac89b",
-        "62b9a085bfba080a0feea73d",
-        "69d8cfb3611a100013247306",
-        "69d8da6b611a100013264b23",
-        "69fb5881e97f6d0013b67e8f",
-        "63e0416509bf7d00326f6ef9",
-        "64dc447e45d4f2001edeaaa9",
-        "6a85a273ac3621001354cbf3",
-        "6980240033ca570014188880",
-        "679deb4d0e0c630013e518c7",
-        "6a3763eb4cf49e00127df57c",
-        "62d954abba10293040ccce13",
-        "674f1538a042cd0013656dba",
-        "6a1d7ae12f3971001304d6f9",
-        "64cbcd3b93d7e4001d11fdb6",
-        "61fbeabbd53ac975893897ae",
-        "6903094d47fdf40013e5a517",
-        "64846602074f940020401bb7",
-        "63735919afd464002db7003c",
-        "632db5dcf8c4e06d198629fa",
-        "6718ef2cc3ab9800132644dd",
-        "65bf8c50336354001e3003a3",
-        "645b0c64d9f87d002053c510",
-        "63d2ad6d1c1c63003272d21a",
-        "66a498181f30df00135dcc9c",
-        "628ed1af4e4a6543a601d1ab",
-        "65f40b7084681c00130db00f",
-        "6a1fc6e3997af1001346cebc",
-        "63c0f9c90679410033edf92d",
-        "6412d15a2546a4002019af30",
-        "6a8d600b4fd9fb00136c64be",
-        "653f4444977f95001f2a5a20",
-        "6805ef1fc4530b00138986db",
-        "670428175f4c600013ce6176",
-        "66842a747c9daa001273da10",
-        "667da0645d2c340013656ad7",
-        "65fbcb2c928e8f0012928061",
-        "67ebdc71331c1f00140ad53d",
-        "686213a26baad500137e5ae3",
-        "634ab0040e0d2d0c77ce8d01",
-        "66d46d26d1de2200130aa397",
-        "64e72fbf78136a001ea47a90",
-        "69967d407ad9570013a2d499",
-        "66b2f81c8817a0001359b448",
-        "650c2113980ed9001ea88656",
-        "69c8d48a8d096100146b4c9f",
         "654fc2cfce9bcc001e36a2cc",
-        "62c8635584e4cb17f206459d",
-        "6a40efdcb275650013d95046",
-        "6799ba66ece5b90013e713fc",
-        "663089a8dbef200012ff3270",
-        "642e454e0c95a50020cda938",
-        "641074ebef82f6001fb616b9",
+        "6772979573de230013e8b9dd",
+        "635ca7e3716584002d51c158",
+        "69b3c1dd02fef30013b6cf7d",
+        "6a2a3b18739da100136db6f1",
+        "679cc008836dec0013a115a1",
+        "649330ea3b6d6900200fdb05",
+        "6443c3c058544c002035fae3",
+        "68b03fb7687f420013c3f18b",
+        "6a54b9ee478445001378e580",
+        "64af58ec07df72001f236bc1",
+        "65f92f6ac022090013a05e2f",
+        "67ead40be4d2770013acc9f6",
+        "64b0ea441e6e1b002a2b2802",
+        "663dd24d61f04800142f8ce8",
+        "6a1fc6e3997af1001346cebc",
+        "6903094d47fdf40013e5a517",
         "69be3238b2f3ae0013f126bd",
-        "68132601762e3100137b966e",
-        "62c3cf7cfbc19b0f33fd8bf7",
-        "6658323e77e3a2001367aafb",
-        "62484f155bedcb1774bd626f",
-        "65d814e8b3c15300126617eb",
-        "68bd4d38b667e40013327248",
-        "66e901a7945e660013e865b8",
-        "6a853ec2b3a9ed0013732f21",
-        "6a5daef8336dff00131581e1",
-        "6a0c06019fc5040013e15958",
-        "69b008b3a1f59e00135ec2ea",
-        "62a3ab28f9c42f1a4444f2fd",
-        "64bb165840c1fd0020968d09",
-        "68d153ca102bc30013eccc3d",
-        "6476ea3f49dc68002014b8ed",
-        "65c3663e3dcad5001eb93f97",
-        "696f2ce321ba720013d5fbd2",
-        "6861859e611efd0013dc2d7c",
-        "6a4770db86ff0b0013184b24",
-        "67e1a6a720f70200135afe0a",
-        "63523e0eb32e743e3a8ee56b",
-        "64c5fbb495dc1d001e2dcd04",
-        "66a24e60a8114b00121211ca",
-        "659d3231b66d03001e6f1cd6",
-        "654b83340d26f1001e060048",
-        "6295d1f5b0ba13766b9f49a2",
-        "68a6949d7552c60013b5e3b1",
-        "64c7e110671a83001de0239f",
-        "6a197f48f2ddeb0013cd989f",
-        "6530eec68825d8001e5d2c1d",
-        "667ea64c49e2db00137a7828",
-        "66cca74d36af210013ada343",
-        "63561f67ef716500374497bf",
-        "6683bf077ffa2d001368dd84",
-        "6a65b93e298f96001433c7fc",
-        "647afc6cbc5c8a0020c85fa7",
-        "68c028c79760310013afe186",
-        "64beb1746ce36300201a38eb",
-        "68b529eb62e463001387a51c",
-        "662f4af96d60c800135f73d3",
-        "66536b9aca30a0001337eb70",
-        "67e00efe1dcab8001307adec",
-        "6700b5b72a57240013df898e",
-        "6a2c4c44c6fdeb001326b789",
-        "6a36eb00b23c500013db7b0c",
-        "67cde0d9f2990900137441e6",
-        "688317eedfa617001351288b",
-        "648d294f6becf40020f34b85",
-        "6522e59ceac7ab001e93072c",
-        "6491985c06872c001f30ab6e",
-        "682b01ebf6370e0013a4a4b5",
-        "63ad25d5e0023900370deae4",
-        "66eecfcebce5f30013f7e375",
-        "68eb6aab887005001328a799",
-        "687a07838aeacf0013a9f58c",
-        "63a59851d8bb83002c6bb657",
-        "629f4ee8b583721ed9a17e2a",
-        "678b5b9141c7cf00132b6b4f",
-        "6537b227539ccb001fb01744",
-        "63e79efafb1d710033a11eab",
-        "67974ec5d4d95b00146607d1",
-        "6820dd031afe190013b02381",
-        "61ad9a66de18c31fc55326dd",
-        "63fb291aa9d0f4001fb12fd3",
-        "6a02c476d9ec6e0013ad810e",
-        "63e26d93f93d78002c8d30bb",
-        "64ac146aa698af0020798bce",
-        "68f097f508edc40013780862",
-        "66f81c26d7d2010013e71400",
-        "64a520adc6f02f00209d9697",
-        "64b0fcd06794f2002a008a24",
-        "69db9ad996ac6e00131cbb2b",
-        "695227b072594f0013d75520",
-        "659d87354540b4001dc9c97a",
-        "64be3d24125ac80020ca44c7",
-        "6368993ad14cf500377cf057",
-        "67a6163b2add040013b0ce0f",
-        "65951378bbebcf001d4651a6",
-        "675e31175425f1001307acc7",
-        "6a27eb1c70bfd600133e21ab",
+        "6370d12220af49002ce4b102",
+        "68f0653948c02b001307f329",
+        "675ab45e058432001308f3bd",
+        "69d8cfb3611a100013247306",
+        "6537e3b6539ccb001fb2c0e3",
+        "64dc447e45d4f2001edeaaa9",
         "6a00785db37f2a00125fe4fc",
-        "6713c62afde99a001346c50c",
-        "6411ac9a255671001f4b83f0",
-        "6391d53d8e6bc3002c0f7105",
-        "65684423d7de9b001e28daa2",
-        "636504cb207719003705c089",
-        "6784b631154f750013a08f96",
-        "679e7bcbadc11c0013e22586",
-        "65b5bc2daa6275001da0c01d",
-        "648f53edccfdc8002aff354d",
-        "6608191083739e00129a492c",
+        "6805ef1fc4530b00138986db",
+        "65d0bb030524d90012989f5b",
+        "632db5dcf8c4e06d198629fa",
+        "6a65b93e298f96001433c7fc",
+        "68d8cdc597a50f0013a48905",
+        "674ae2008b9ead00138c4dba",
+        "67e1a6a720f70200135afe0a",
+        "663089a8dbef200012ff3270",
+        "6792105c1ca4f90013d8d22a",
+        "683166b711fc5b00132764e9",
+        "62c6764efbc19b0f3303c7ba",
+        "686213a26baad500137e5ae3",
+        "64c5fbb495dc1d001e2dcd04",
+        "679deb4d0e0c630013e518c7",
+        "656ee0b105c31b001d36aa9e",
+        "63561f67ef716500374497bf",
+        "678b5b9141c7cf00132b6b4f",
+        "693ff14b339ef300132c00dd",
+        "6499240f445db0002a4ba9a2",
+        "6980240033ca570014188880",
+        "679f17a7c73753001357f0ec",
+        "62c8635584e4cb17f206459d",
+        "6491985c06872c001f30ab6e",
+        "6a5daef8336dff00131581e1",
+        "698189f53f39ba0013cf92c0",
+        "628ed1af4e4a6543a601d1ab",
+        "6a6843cc298f960014a01d85",
+        "6412d15a2546a4002019af30",
+        "670428175f4c600013ce6176",
+        "66e901a7945e660013e865b8",
         "6221dc353114d914e374c0ee",
-        "65237580a4e730001df28da0",
-        "6635dc52ff54e00013f1e1a9",
-        "641d5f230b2bd4001f31f7e2",
-        "66ee729bd79b93001398cff0",
-        "686cef6b09eb2c00131be425",
-        "6474cf7ef2fde40020e45748",
-        "69b39a0489520f0013d83fae",
-        "64ab6b8673ab82002b92ef6a",
-        "652966b0de6af5001d3dda25",
-        "654f049b0ce920001de81c27",
-        "6341436409ba3e175f098a89",
-        "6486a10e1fef5e002b45f76c",
-        "63aa7c7705865c002b1551f3",
-        "69c024131e4a31001362ea2c",
-        "6479fda68f1411002042115e",
-        "6708183b3a97c6001355987d",
-        "665d5dcb6344720013cb4e40",
-        "62fded2fc251165bd614c60b",
-        "62e2324735c9e35b636f78f4",
+        "64d2675c94b053001d508b71",
+        "65bf5df4336354001e2c6349",
+        "628dee579a6375439f68bb26",
+        "640d10371bcf9e0020296ad8",
         "66c2d22415fac30013d27869",
-        "66706294ffe48100138b663d",
-        "683edf61e821d500130020f4",
-        "698960d575efa100133dc34a",
-        "6a2036382888a500137bb912",
-        "6508441f6757d4001edc1cea",
+        "675e31175425f1001307acc7",
+        "68b54171910f380013e6ec7d",
+        "68d0ef89287cca00135ec1d6",
+        "68bd4d38b667e40013327248",
+        "62b09b5bc9bd4e4d0c4f29d9",
+        "63098a19ab5f30156adbd12b",
+        "63ad25d5e0023900370deae4",
+        "6a02c476d9ec6e0013ad810e",
+        "63fb291aa9d0f4001fb12fd3",
+        "64cc9ae0500648001d42e01c",
+        "67ab2827eaa9b90012c25f45",
+        "67cde0d9f2990900137441e6",
+        "64a520adc6f02f00209d9697",
+        "6718ef2cc3ab9800132644dd",
+        "642b8701766534001ff836cf",
+        "678b9e61d92774001390674d",
+        "69fb5881e97f6d0013b67e8f",
+        "636504cb207719003705c089",
+        "6445dc7c221d340020b0e828",
+        "66b2f81c8817a0001359b448",
+        "61fbeabbd53ac975893897ae",
         "6489d203d28234002a3b5e54",
-        "68b8146651190f0013db1745",
-        "67a5b6121602340013351a38",
-        "6480c98e39dbf20020244410",
-        "63df7eab1e316700312d08ea",
-        "633c3183c0fe3f7289d3195d",
-        "65c07da823d6a606da382bcd",
-        "69b3b706e20c1200133509e0",
-        "67dbce41426eda001393489d",
-        "665459ddb0ccbd0013a77dff",
-        "62d051bc0178fa29153b140b",
-        "671606de12c5b20013a1fa05",
-        "6a58b4e5f1dbde0013d96125",
+        "6a0739870374d70013f4a6da",
+        "69c8d48a8d096100146b4c9f",
+        "61ad9a66de18c31fc55326dd",
+        "62c3cb33b1e08041dcff0860",
+        "643df652b5d3700020b53424",
+        "69d8e18075a32f001382a054",
+        "64be3d24125ac80020ca44c7",
+        "63a59851d8bb83002c6bb657",
+        "6530eec68825d8001e5d2c1d",
+        "64759be6ab41f2001fa930a9",
+        "62fd0aaed7f1067b018a5ebf",
+        "62a3ab28f9c42f1a4444f2fd",
+        "67332673160fd900139f7de9",
+        "64da12fda7fdb0001ef2db5c",
+        "65684423d7de9b001e28daa2",
+        "69a0993ea5de7e00140e28e4",
+        "6524ef62cb7ef5001e914ff4",
+        "683edf61e821d500130020f4",
         "687a06ae1f7e7c0013f19663",
-        "65ffa211fa2238001223beda",
-        "62c838b96177d8196d7b091a"
+        "62c5bb24f712d10f2dd7bc09",
+        "6281a2ae26a96d4e9fb62dc0",
+        "69967d407ad9570013a2d499",
+        "65aa7654460ef2001d58c405",
+        "67a43fcd140f6800136e7f9b",
+        "62484f155bedcb1774bd626f",
+        "63e26d93f93d78002c8d30bb",
+        "64e72fbf78136a001ea47a90",
+        "65fd7074e04d92001271989a",
+        "652966b0de6af5001d3dda25",
+        "6658323e77e3a2001367aafb",
+        "63735919afd464002db7003c",
+        "677934d39aeb4b0013816267",
+        "67f011fe828388001343c7a1",
+        "66706294ffe48100138b663d",
+        "6a6607150a242e0013ff0de8",
+        "68c028c79760310013afe186",
+        "65014fed031b76001e9091f6",
+        "695227b072594f0013d75520",
+        "62e2324735c9e35b636f78f4",
+        "64ab6b8673ab82002b92ef6a",
+        "6a1c066a2f39710013bf75e9",
+        "6a53897d6a98bd00149d8cb1",
+        "65364004f28141001e752bd2",
+        "670f725bcfaab800136536fc",
+        "68dccb22e1910c00138b515f",
+        "65473a7f3fad8004611cb71e",
+        "696f2ce321ba720013d5fbd2",
+        "68eb6aab887005001328a799",
+        "64cce79662f090001e0c0f85",
+        "667da0645d2c340013656ad7",
+        "6184db07e7713d065649d3e1",
+        "6799ba66ece5b90013e713fc",
+        "63ad899b2b044c0037cb650c",
+        "63e79efafb1d710033a11eab",
+        "67cc33d5f2990900135f1213",
+        "6541dfbbc8b47a001ec7f9ae",
+        "6a3763eb4cf49e00127df57c",
+        "66b0a52105f9600013e59686",
+        "67c697963f85b10013f450f5",
+        "67113f1b17d5ab001325c3a7",
+        "6a58b4e5f1dbde0013d96125",
+        "6a1fc44c997af10013463341",
+        "69b008b3a1f59e00135ec2ea",
+        "6862347467feb80013f6f503",
+        "6a25a603b47b140013644f6f",
+        "647afc6cbc5c8a0020c85fa7",
+        "6861859e611efd0013dc2d7c",
+        "68fc64086d7f7b00132e8664",
+        "698c21f698c8af001374cda7",
+        "68f097f508edc40013780862",
+        "63ecb2741780b3002b057c62",
+        "6a40efdcb275650013d95046",
+        "68a6949d7552c60013b5e3b1",
+        "69b6f9270a70680013a79bde",
+        "6a07df7c7c5fcd00133a6e3b",
+        "62c838b96177d8196d7b091a",
+        "67a99498687e990013b10bd2",
+        "64c7e110671a83001de0239f",
+        "650c2113980ed9001ea88656",
+        "66310a2d8235ac00139e18a0",
+        "6a8352777b63ce00137c8364",
+        "6386bcb126d3b5003c5dc980",
+        "6a4209c8be7a1200137b6dfc",
+        "6a8fb6f61559b900134d4ae8",
+        "64a936996a2973002b10c7f6",
+        "6a36eb00b23c500013db7b0c",
+        "656c8ebdd7a7e3001e19fff0",
+        "670c81e8a3771f00130ca0ec",
+        "67dbce41426eda001393489d",
+        "67c94e21f8f7120014c00900",
+        "6713c62afde99a001346c50c",
+        "6867fda9d6f2420013da1953",
+        "64bf7c27e98788001f3fa09d",
+        "6809ca85abae950013a27d80",
+        "6800c3e7ace39a0013cc546a",
+        "6329c62b5a5d614df43dd7ab",
+        "68496d1b267f07001316fae2",
+        "6479fda68f1411002042115e",
+        "6391d53d8e6bc3002c0f7105",
+        "6a4770db86ff0b0013184b24",
+        "674eeb8653258d0013c9a903",
+        "67ce52c5f926d700138260e7",
+        "624f0396ccc9ef0fa78281b0",
+        "64c6157754ab34001df12933",
+        "6a5760fea8ccdb0013ad3bb2",
+        "65b5bc2daa6275001da0c01d",
+        "67a6163b2add040013b0ce0f",
+        "6545f8d94b4aeb001f659e30",
+        "679e7bcbadc11c0013e22586",
+        "682368f50efed700131d7266",
+        "64d0b757596d8a001d266a41",
+        "6981d41125307400137323ec",
+        "6a0489783a48f8001349af38",
+        "6566ea4ad82412001dc91499",
+        "62fded2fc251165bd614c60b",
+        "644bf3523e20660020c9b69d",
+        "69e89b0ed9ffde0013e31879",
+        "65925b23d9349b001e49b619",
+        "67d8ab4ac6a55500139551a0",
+        "62dd3018f83d933bcd5bd23c",
+        "6700b5b72a57240013df898e",
+        "67974ec5d4d95b00146607d1",
+        "67783e8e9b28020013239bcb",
+        "6325d0f3770ec476f4cfc1f7",
+        "66dfde423f7d89001324eb00",
+        "66926a105d82bc0013c1229c",
+        "6820dd031afe190013b02381",
+        "6986dbd1350e1a0014cdbba8",
+        "695fc2d673169a001320fcf5",
+        "617fab8b6ffe000d0e7868a2",
+        "69157f06e3a0e3001373be01",
+        "6a197f48f2ddeb0013cd989f",
+        "67933de51dcd31001388e565",
+        "67320d5e64284700131f6b38",
+        "627ca99791125d5ba8a34b41",
+        "64e5ae617f68ef001ea74131"
       ]
     }
   }
