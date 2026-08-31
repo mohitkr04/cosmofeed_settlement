@@ -4,7 +4,7 @@
     "auditPeriodStart": "2026-08-27",
     "auditPeriodEnd": "2026-09-05",
     "targetSubmissionDate": "2026-09-05",
-    "lastUpdated": "2026-08-31 10:08:30",
+    "lastUpdated": "2026-08-31 04:40:14",
     "totalAuditRuns": 2,
     "auditDates": [
       "2026-08-27",
@@ -3292,11 +3292,13 @@
       "telegramProductLink": "https://superprofile.bio/vig/6a66dadb0a242e00131d5d8b",
       "telegramProductIds": [
         "6a66dadb0a242e00131d5d8b",
-        "6a5dd5e2336dff00131de67e"
+        "6a5dd5e2336dff00131de67e",
+        "6a945586ef569f001235b6d2"
       ],
       "telegramProductLinks": [
         "https://superprofile.bio/vig/6a66dadb0a242e00131d5d8b",
-        "https://superprofile.bio/vig/6a5dd5e2336dff00131de67e"
+        "https://superprofile.bio/vig/6a5dd5e2336dff00131de67e",
+        "https://superprofile.bio/vig/6a945586ef569f001235b6d2"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -5626,12 +5628,14 @@
       "telegramProductIds": [
         "656707678ece7ebbf08ad4bb",
         "656700711978d0001d1b82b5",
-        "65670053d7de9b001e1b819f"
+        "65670053d7de9b001e1b819f",
+        "65670017c86416001d87fa16"
       ],
       "telegramProductLinks": [
         "https://superprofile.bio/vig/656707678ece7ebbf08ad4bb",
         "https://superprofile.bio/vig/656700711978d0001d1b82b5",
-        "https://superprofile.bio/vig/65670053d7de9b001e1b819f"
+        "https://superprofile.bio/vig/65670053d7de9b001e1b819f",
+        "https://superprofile.bio/vig/65670017c86416001d87fa16"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -6521,11 +6525,13 @@
       "telegramProductLink": "https://superprofile.bio/vig/65684a37d7de9b001e293ba3",
       "telegramProductIds": [
         "65684a37d7de9b001e293ba3",
-        "68edbd7fa5316700139126f0"
+        "68edbd7fa5316700139126f0",
+        "69f03f2b95c1260013f546b2"
       ],
       "telegramProductLinks": [
         "https://superprofile.bio/vig/65684a37d7de9b001e293ba3",
-        "https://superprofile.bio/vig/68edbd7fa5316700139126f0"
+        "https://superprofile.bio/vig/68edbd7fa5316700139126f0",
+        "https://superprofile.bio/vig/69f03f2b95c1260013f546b2"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -8687,12 +8693,14 @@
       "telegramProductIds": [
         "69536288ff3d730013bd44d8",
         "68bb2d30687ffc0013cdf5ca",
-        "699af36c3da2010013de657b"
+        "699af36c3da2010013de657b",
+        "699af5ddda0df20013000ae3"
       ],
       "telegramProductLinks": [
         "https://superprofile.bio/vig/69536288ff3d730013bd44d8",
         "https://superprofile.bio/vig/68bb2d30687ffc0013cdf5ca",
-        "https://superprofile.bio/vig/699af36c3da2010013de657b"
+        "https://superprofile.bio/vig/699af36c3da2010013de657b",
+        "https://superprofile.bio/vig/699af5ddda0df20013000ae3"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -8905,13 +8913,15 @@
         "6a64283b146c040014edce5a",
         "6a24d318b5ebe90013a8ad53",
         "6a2509c762d46700138faa93",
-        "6a524273b1289500137768dc"
+        "6a524273b1289500137768dc",
+        "6a3ff444c8210b0013176964"
       ],
       "telegramProductLinks": [
         "https://superprofile.bio/vig/6a64283b146c040014edce5a",
         "https://superprofile.bio/vig/6a24d318b5ebe90013a8ad53",
         "https://superprofile.bio/vig/6a2509c762d46700138faa93",
-        "https://superprofile.bio/vig/6a524273b1289500137768dc"
+        "https://superprofile.bio/vig/6a524273b1289500137768dc",
+        "https://superprofile.bio/vig/6a3ff444c8210b0013176964"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -9033,11 +9043,13 @@
       "telegramProductLink": "https://superprofile.bio/vig/67a388719ae0d200131d79c1",
       "telegramProductIds": [
         "67a388719ae0d200131d79c1",
-        "68109f4abb470b0013767013"
+        "68109f4abb470b0013767013",
+        "6811a99b7d1a0f00139539fe"
       ],
       "telegramProductLinks": [
         "https://superprofile.bio/vig/67a388719ae0d200131d79c1",
-        "https://superprofile.bio/vig/68109f4abb470b0013767013"
+        "https://superprofile.bio/vig/68109f4abb470b0013767013",
+        "https://superprofile.bio/vig/6811a99b7d1a0f00139539fe"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -9784,12 +9796,14 @@
       "telegramProductIds": [
         "6a4c954f93df68001352d0ea",
         "6a7d878950a9b200129cd2c1",
-        "6a4eea3f039e5900132009e5"
+        "6a4eea3f039e5900132009e5",
+        "6a50a67ba49cd70013a3d51b"
       ],
       "telegramProductLinks": [
         "https://superprofile.bio/vig/6a4c954f93df68001352d0ea",
         "https://superprofile.bio/vig/6a7d878950a9b200129cd2c1",
-        "https://superprofile.bio/vig/6a4eea3f039e5900132009e5"
+        "https://superprofile.bio/vig/6a4eea3f039e5900132009e5",
+        "https://superprofile.bio/vig/6a50a67ba49cd70013a3d51b"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -12656,10 +12670,12 @@
       "telegramProductId": "6a7d364eb62576001374f10c",
       "telegramProductLink": "https://superprofile.bio/vig/6a7d364eb62576001374f10c",
       "telegramProductIds": [
-        "6a7d364eb62576001374f10c"
+        "6a7d364eb62576001374f10c",
+        "6a7d308516d4ef001311c0e0"
       ],
       "telegramProductLinks": [
-        "https://superprofile.bio/vig/6a7d364eb62576001374f10c"
+        "https://superprofile.bio/vig/6a7d364eb62576001374f10c",
+        "https://superprofile.bio/vig/6a7d308516d4ef001311c0e0"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -13046,10 +13062,12 @@
       "telegramProductId": "6a7d4c4b7a273200136aa8e5",
       "telegramProductLink": "https://superprofile.bio/vig/6a7d4c4b7a273200136aa8e5",
       "telegramProductIds": [
-        "6a7d4c4b7a273200136aa8e5"
+        "6a7d4c4b7a273200136aa8e5",
+        "6947d1a8a08e56001373ca0e"
       ],
       "telegramProductLinks": [
-        "https://superprofile.bio/vig/6a7d4c4b7a273200136aa8e5"
+        "https://superprofile.bio/vig/6a7d4c4b7a273200136aa8e5",
+        "https://superprofile.bio/vig/6947d1a8a08e56001373ca0e"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -13163,10 +13181,12 @@
       "telegramProductId": "69cf60bc1a0160001356382e",
       "telegramProductLink": "https://superprofile.bio/vig/69cf60bc1a0160001356382e",
       "telegramProductIds": [
-        "69cf60bc1a0160001356382e"
+        "69cf60bc1a0160001356382e",
+        "69c915b340b24f001338c959"
       ],
       "telegramProductLinks": [
-        "https://superprofile.bio/vig/69cf60bc1a0160001356382e"
+        "https://superprofile.bio/vig/69cf60bc1a0160001356382e",
+        "https://superprofile.bio/vig/69c915b340b24f001338c959"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -13280,10 +13300,12 @@
       "telegramProductId": "68de5633e32be10013d2280f",
       "telegramProductLink": "https://superprofile.bio/vig/68de5633e32be10013d2280f",
       "telegramProductIds": [
-        "68de5633e32be10013d2280f"
+        "68de5633e32be10013d2280f",
+        "6a698a91a6cf3f001368f1ac"
       ],
       "telegramProductLinks": [
-        "https://superprofile.bio/vig/68de5633e32be10013d2280f"
+        "https://superprofile.bio/vig/68de5633e32be10013d2280f",
+        "https://superprofile.bio/vig/6a698a91a6cf3f001368f1ac"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -13358,10 +13380,12 @@
       "telegramProductId": "6679607a36d2ec00135d55a5",
       "telegramProductLink": "https://superprofile.bio/vig/6679607a36d2ec00135d55a5",
       "telegramProductIds": [
-        "6679607a36d2ec00135d55a5"
+        "6679607a36d2ec00135d55a5",
+        "67a33958a7465a00122a8a68"
       ],
       "telegramProductLinks": [
-        "https://superprofile.bio/vig/6679607a36d2ec00135d55a5"
+        "https://superprofile.bio/vig/6679607a36d2ec00135d55a5",
+        "https://superprofile.bio/vig/67a33958a7465a00122a8a68"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -13397,10 +13421,12 @@
       "telegramProductId": "6a887a1347d8100013f8b797",
       "telegramProductLink": "https://superprofile.bio/vig/6a887a1347d8100013f8b797",
       "telegramProductIds": [
-        "6a887a1347d8100013f8b797"
+        "6a887a1347d8100013f8b797",
+        "6a8a95f4a7524200139aa442"
       ],
       "telegramProductLinks": [
-        "https://superprofile.bio/vig/6a887a1347d8100013f8b797"
+        "https://superprofile.bio/vig/6a887a1347d8100013f8b797",
+        "https://superprofile.bio/vig/6a8a95f4a7524200139aa442"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -13475,10 +13501,12 @@
       "telegramProductId": "682c6a116e5203001391eaeb",
       "telegramProductLink": "https://superprofile.bio/vig/682c6a116e5203001391eaeb",
       "telegramProductIds": [
-        "682c6a116e5203001391eaeb"
+        "682c6a116e5203001391eaeb",
+        "66fc0d3336cd7800138c832c"
       ],
       "telegramProductLinks": [
-        "https://superprofile.bio/vig/682c6a116e5203001391eaeb"
+        "https://superprofile.bio/vig/682c6a116e5203001391eaeb",
+        "https://superprofile.bio/vig/66fc0d3336cd7800138c832c"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -13592,10 +13620,12 @@
       "telegramProductId": "670262be1232fa0013ec087b",
       "telegramProductLink": "https://superprofile.bio/vig/670262be1232fa0013ec087b",
       "telegramProductIds": [
-        "670262be1232fa0013ec087b"
+        "670262be1232fa0013ec087b",
+        "69072bdaae00150013d01079"
       ],
       "telegramProductLinks": [
-        "https://superprofile.bio/vig/670262be1232fa0013ec087b"
+        "https://superprofile.bio/vig/670262be1232fa0013ec087b",
+        "https://superprofile.bio/vig/69072bdaae00150013d01079"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -13787,10 +13817,12 @@
       "telegramProductId": "68bb102336262a0013e87744",
       "telegramProductLink": "https://superprofile.bio/vig/68bb102336262a0013e87744",
       "telegramProductIds": [
-        "68bb102336262a0013e87744"
+        "68bb102336262a0013e87744",
+        "69e08bf7cf447100130ff711"
       ],
       "telegramProductLinks": [
-        "https://superprofile.bio/vig/68bb102336262a0013e87744"
+        "https://superprofile.bio/vig/68bb102336262a0013e87744",
+        "https://superprofile.bio/vig/69e08bf7cf447100130ff711"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -14060,10 +14092,12 @@
       "telegramProductId": "6a2ff8193d7d2c001326919c",
       "telegramProductLink": "https://superprofile.bio/vig/6a2ff8193d7d2c001326919c",
       "telegramProductIds": [
-        "6a2ff8193d7d2c001326919c"
+        "6a2ff8193d7d2c001326919c",
+        "68037ef123ccf00013fefbc7"
       ],
       "telegramProductLinks": [
-        "https://superprofile.bio/vig/6a2ff8193d7d2c001326919c"
+        "https://superprofile.bio/vig/6a2ff8193d7d2c001326919c",
+        "https://superprofile.bio/vig/68037ef123ccf00013fefbc7"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -14099,10 +14133,12 @@
       "telegramProductId": "6a5ce2158411290013cb4aa6",
       "telegramProductLink": "https://superprofile.bio/vig/6a5ce2158411290013cb4aa6",
       "telegramProductIds": [
-        "6a5ce2158411290013cb4aa6"
+        "6a5ce2158411290013cb4aa6",
+        "6a7164db99878a0013e870fa"
       ],
       "telegramProductLinks": [
-        "https://superprofile.bio/vig/6a5ce2158411290013cb4aa6"
+        "https://superprofile.bio/vig/6a5ce2158411290013cb4aa6",
+        "https://superprofile.bio/vig/6a7164db99878a0013e870fa"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -14138,10 +14174,12 @@
       "telegramProductId": "66f26b26befc8e0013688a1f",
       "telegramProductLink": "https://superprofile.bio/vig/66f26b26befc8e0013688a1f",
       "telegramProductIds": [
-        "66f26b26befc8e0013688a1f"
+        "66f26b26befc8e0013688a1f",
+        "66f299a6ae4f5d00133fe590"
       ],
       "telegramProductLinks": [
-        "https://superprofile.bio/vig/66f26b26befc8e0013688a1f"
+        "https://superprofile.bio/vig/66f26b26befc8e0013688a1f",
+        "https://superprofile.bio/vig/66f299a6ae4f5d00133fe590"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -14333,10 +14371,12 @@
       "telegramProductId": "64759f2e526648002079e864",
       "telegramProductLink": "https://superprofile.bio/vig/64759f2e526648002079e864",
       "telegramProductIds": [
-        "64759f2e526648002079e864"
+        "64759f2e526648002079e864",
+        "6475a018526648002079ed68"
       ],
       "telegramProductLinks": [
-        "https://superprofile.bio/vig/64759f2e526648002079e864"
+        "https://superprofile.bio/vig/64759f2e526648002079e864",
+        "https://superprofile.bio/vig/6475a018526648002079ed68"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -14372,10 +14412,12 @@
       "telegramProductId": "6603ea024f4b1b9a68ee569c",
       "telegramProductLink": "https://superprofile.bio/vig/6603ea024f4b1b9a68ee569c",
       "telegramProductIds": [
-        "6603ea024f4b1b9a68ee569c"
+        "6603ea024f4b1b9a68ee569c",
+        "6475a666f68c8e0020343324"
       ],
       "telegramProductLinks": [
-        "https://superprofile.bio/vig/6603ea024f4b1b9a68ee569c"
+        "https://superprofile.bio/vig/6603ea024f4b1b9a68ee569c",
+        "https://superprofile.bio/vig/6475a666f68c8e0020343324"
       ],
       "sebiVerificationStatus": "Not Verified",
       "sebiRegisteredYes": "—",
@@ -15881,6 +15923,45 @@
           "telegramProductLink": "https://superprofile.bio/vig/674304608358d800139decda"
         }
       ]
+    },
+    "641074ebef82f6001fb616b9": {
+      "creatorId": "641074ebef82f6001fb616b9",
+      "username": "careerintrading",
+      "creatorName": "careerintrading",
+      "email": "tusharjain100@gmail.com",
+      "phone": "7224950865",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "649c358021ff91002bd79e9f",
+      "telegramProductLink": "https://superprofile.bio/vig/649c358021ff91002bd79e9f",
+      "telegramProductIds": [
+        "649c358021ff91002bd79e9f"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/649c358021ff91002bd79e9f"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-08-31",
+      "lastSeenDate": "2026-08-31",
+      "datesObserved": [
+        "2026-08-31"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 87339.0,
+      "cumulativePayoutVolume": 87339.0,
+      "maxDailyPayout": 87339.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-08-31",
+          "payoutAmount": 87339.0,
+          "telegramProductId": "649c358021ff91002bd79e9f",
+          "telegramProductLink": "https://superprofile.bio/vig/649c358021ff91002bd79e9f"
+        }
+      ]
     }
   },
   "dailySnapshots": {
@@ -16193,8 +16274,8 @@
     },
     "2026-08-31": {
       "auditDate": "2026-08-31",
-      "flaggedCount": 201,
-      "totalDayVolume": 1618571.0,
+      "flaggedCount": 141,
+      "totalDayVolume": 1597632.0,
       "creatorIds": [
         "6a2a3b18739da100136db6f1",
         "679cc008836dec0013a115a1",
@@ -16206,6 +16287,7 @@
         "65645dfe77f97f00dff1712b",
         "663dd24d61f04800142f8ce8",
         "6a85a273ac3621001354cbf3",
+        "641074ebef82f6001fb616b9",
         "6a1fc6e3997af1001346cebc",
         "63e0416509bf7d00326f6ef9",
         "6370d12220af49002ce4b102",
@@ -16287,7 +16369,6 @@
         "63ad25d5e0023900370deae4",
         "649eb5a092e0dc00208bdb3f",
         "64dddecce570b0001ed6706e",
-        "664f08d3c2ede400130aeded",
         "6411ac9a255671001f4b83f0",
         "663089a8dbef200012ff3270",
         "69c8d48a8d096100146b4c9f",
@@ -16332,71 +16413,11 @@
         "65fd7074e04d92001271989a",
         "6800c3e7ace39a0013cc546a",
         "6386bcb126d3b5003c5dc980",
-        "64c7e110671a83001de0239f",
-        "6497453f99a69e001f23154b",
-        "644bf3523e20660020c9b69d",
-        "69e5c5c289d40c0013682927",
         "6522e59ceac7ab001e93072c",
         "692903da8cb9910013785157",
         "6a00785db37f2a00125fe4fc",
-        "68d817c7606b190013de1235",
-        "66310a2d8235ac00139e18a0",
-        "67d837e1b44d25001392f4dc",
-        "647afc6cbc5c8a0020c85fa7",
-        "6867fda9d6f2420013da1953",
-        "6480c98e39dbf20020244410",
-        "6550fb1348d70d0a6565e5d3",
-        "688b56333cf8720013772d86",
-        "6884164df8357800133419ba",
-        "6a53897d6a98bd00149d8cb1",
-        "636c3a1fac6bc6003dbb97c3",
-        "6799ba66ece5b90013e713fc",
-        "68d153ca102bc30013eccc3d",
-        "67ce52c5f926d700138260e7",
-        "665e11941fa95b00139155d6",
-        "67fdc8680a272d0013949011",
-        "6a547a7c98b0560013013abd",
-        "65aa05f67bb5b6001d8288ed",
-        "69b8ed4559ad710013c35429",
-        "65c8c3e0e0e11f001e86446f",
-        "6455b18510c8ef0021bfb87e",
-        "66706294ffe48100138b663d",
-        "64c7f6aa009c3c001e206fa4",
-        "6809ca85abae950013a27d80",
-        "656776a2d7de9b001e22044a",
-        "6475a085f68c8e0020340ef5",
         "67dbce41426eda001393489d",
-        "69a7e81242b689001318c2c7",
-        "6693e8299527ae0013ffcb9e",
-        "69fb20dbfae26e0013229a6c",
-        "646373ce6cbb8200207efe77",
-        "63398a142e52d546d6af08e9",
-        "6341436409ba3e175f098a89",
-        "644f511bb09d34001fdba603",
-        "674d9c005cee1800131c0b80",
-        "671606de12c5b20013a1fa05",
-        "66926a105d82bc0013c1229c",
-        "68496d1b267f07001316fae2",
-        "6708183b3a97c6001355987d",
-        "67cde0d9f2990900137441e6",
-        "63ecb2741780b3002b057c62",
-        "65132965f4d0b1001eba9b70",
-        "6713c62afde99a001346c50c",
-        "62d1310e0178fa29153d1f09",
-        "66a24e60a8114b00121211ca",
-        "69fb5881e97f6d0013b67e8f",
-        "6520f7847a624b001e93bb99",
-        "647632b25fce500020877642",
-        "642e454e0c95a50020cda938",
-        "67c697963f85b10013f450f5",
-        "653aa2aed87cd0001e6f4b77",
-        "6862347467feb80013f6f503",
-        "65ec0e3a8760a10013f1f989",
-        "67f011fe828388001343c7a1",
-        "675325243cd5c300136686ad",
-        "695fc2d673169a001320fcf5",
-        "64db9841857b64001ebb5534",
-        "67c94e21f8f7120014c00900"
+        "644f511bb09d34001fdba603"
       ]
     }
   }
