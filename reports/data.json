@@ -307,12 +307,12 @@
           "buyerPhone": "9060000169",
           "IP": "103.159.35.92",
           "date": "23 Aug, 2026; 11:10 PM",
-          "timestamp": 1787506800.0,
+          "timestamp": 1787526600.0,
           "productId": "6a70894e32642000135e9085"
         }
       ],
       "latestSelfTxnDate": "23 Aug, 2026; 11:10 PM",
-      "latestSelfTxnTimestamp": 1787506800.0,
+      "latestSelfTxnTimestamp": 1787526600.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -343,19 +343,19 @@
       "category": "Digital Marketing & Marketing",
       "subCategory": null,
       "flagLevel": null,
-      "displayName": "abhayaex",
+      "displayName": "theworkhubb",
       "selfTransaction": true,
       "selfTxnCount": 1,
-      "selfTxnMaxAmount": 1.49,
+      "selfTxnMaxAmount": 1.0,
       "selfTxnDetails": [
         {
-          "amount": 1.49,
-          "buyerEmail": "abhayyadv143@gmail.com",
-          "buyerPhone": "7067279359",
-          "IP": "157.36.14.118",
-          "date": "23 Aug, 2026; 05:08 AM",
-          "timestamp": 1787441880.0,
-          "productId": "6a8a2b599ac5d90013f2f1ad"
+          "amount": 1.0,
+          "buyerEmail": "amanalx000@gmail.com",
+          "buyerPhone": "6102347996",
+          "IP": "223.188.12.3",
+          "date": "23 Aug, 2026; 11:56 PM",
+          "timestamp": 1787529360.0,
+          "productId": "6a06f1e07c5fcd0013149903"
         }
       ],
       "latestSelfTxnDate": "23 Aug, 2026; 05:08 AM",
@@ -370,8 +370,11 @@
       "noLinkProducts": [],
       "noLinkReason": "",
       "error": "",
+      "telegramEligible": true,
       "telegramIntegration": false,
-      "telegramEligible": false,
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Digital Product",
       "sebiRegisteredYes": "\u2014",
       "sebiRegisteredNo": "\u2014",
       "sebiVerificationStatus": "Not Applicable",
@@ -510,7 +513,7 @@
           "buyerPhone": "8474812785",
           "IP": "117.99.210.68",
           "date": "22 Aug, 2026; 10:00 PM",
-          "timestamp": 1787416200.0,
+          "timestamp": 1787436000.0,
           "productId": "6a89bdb19ac5d90013e235d5"
         }
       ],
@@ -754,7 +757,7 @@
           "buyerPhone": "9518386781",
           "IP": "152.58.6.206",
           "date": "22 Aug, 2026; 11:22 AM",
-          "timestamp": 1787377920.0,
+          "timestamp": 1787397720.0,
           "productId": "6a89317150d9dd0013018e32"
         },
         {
@@ -763,12 +766,12 @@
           "buyerPhone": "9518386781",
           "IP": "152.58.6.210",
           "date": "22 Aug, 2026; 10:51 AM",
-          "timestamp": 1787376060.0,
+          "timestamp": 1787395860.0,
           "productId": "6a89317150d9dd0013018e32"
         }
       ],
       "latestSelfTxnDate": "22 Aug, 2026; 11:22 AM",
-      "latestSelfTxnTimestamp": 1787377920.0,
+      "latestSelfTxnTimestamp": 1787397720.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -810,7 +813,7 @@
           "buyerPhone": "8209721572",
           "IP": "157.48.226.74",
           "date": "22 Aug, 2026; 12:53 PM",
-          "timestamp": 1787383380.0,
+          "timestamp": 1787403180.0,
           "productId": "6a89485312f47d001388cbaf"
         }
       ],
@@ -905,22 +908,22 @@
       "payoutAmount": 734.0,
       "onboardedBy": "",
       "status": "pendingSettlement",
-      "category": "Entertainment & Media",
+      "category": "Digital Marketing & Marketing",
       "subCategory": null,
       "flagLevel": null,
-      "displayName": "muleshkumar",
+      "displayName": "rawesis",
       "selfTransaction": true,
       "selfTxnCount": 7,
       "selfTxnMaxAmount": 299.0,
       "selfTxnDetails": [
         {
-          "amount": 99.0,
-          "buyerEmail": "officialmulesh01@gmail.com",
-          "buyerPhone": "7400840401",
-          "IP": "106.214.3.142",
-          "date": "21 Aug, 2026; 03:01 PM",
-          "timestamp": 1787304660.0,
-          "productId": "6a7b1a00542b250014653d3a"
+          "amount": 1.0,
+          "buyerEmail": "pramshukumar9078@gmail.com",
+          "buyerPhone": "9103040358",
+          "IP": "157.49.4.141",
+          "date": "22 Aug, 2026; 03:48 PM",
+          "timestamp": 1787413680.0,
+          "productId": "6a3eb294291f3d0013c2131b"
         },
         {
           "amount": 299.0,
@@ -1020,7 +1023,7 @@
           "buyerPhone": "6345678965",
           "IP": "223.185.12.11",
           "date": "21 Aug, 2026; 12:42 PM",
-          "timestamp": 1787296320.0,
+          "timestamp": 1787316120.0,
           "productId": "6a853fc2ac5bc200128dbba5"
         },
         {
@@ -1029,7 +1032,7 @@
           "buyerPhone": "6345678965",
           "IP": "49.36.245.84",
           "date": "19 Aug, 2026; 04:35 PM",
-          "timestamp": 1787137500.0,
+          "timestamp": 1787157300.0,
           "productId": "6a853fc2ac5bc200128dbba5"
         },
         {
@@ -1038,7 +1041,7 @@
           "buyerPhone": "6345678965",
           "IP": "49.36.245.84",
           "date": "19 Aug, 2026; 11:08 AM",
-          "timestamp": 1787117880.0,
+          "timestamp": 1787137680.0,
           "productId": "6a853fc2ac5bc200128dbba5"
         }
       ],
@@ -1964,12 +1967,12 @@
           "buyerPhone": "7808298523",
           "IP": "152.59.161.194",
           "date": "20 Aug, 2026; 07:56 PM",
-          "timestamp": 1787235960.0,
+          "timestamp": 1787255760.0,
           "productId": "6a6deb2c0aed7d0014ef8971"
         }
       ],
       "latestSelfTxnDate": "20 Aug, 2026; 07:56 PM",
-      "latestSelfTxnTimestamp": 1787235960.0,
+      "latestSelfTxnTimestamp": 1787255760.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -2011,12 +2014,12 @@
           "buyerPhone": "6395191129",
           "IP": "223.233.73.102",
           "date": "20 Aug, 2026; 02:32 PM",
-          "timestamp": 1787216520.0,
+          "timestamp": 1787236320.0,
           "productId": "6a358d39f2ac8e00122ee800"
         }
       ],
       "latestSelfTxnDate": "20 Aug, 2026; 02:32 PM",
-      "latestSelfTxnTimestamp": 1787216520.0,
+      "latestSelfTxnTimestamp": 1787236320.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -2511,7 +2514,7 @@
           "buyerPhone": "7796417721",
           "IP": "27.97.181.143",
           "date": "19 Aug, 2026; 11:36 AM",
-          "timestamp": 1787119560.0,
+          "timestamp": 1787139360.0,
           "productId": "6a78d47e2fb8500013e94337"
         },
         {
@@ -2520,7 +2523,7 @@
           "buyerPhone": "7796417721",
           "IP": "152.56.15.247",
           "date": "10 Aug, 2026; 01:35 AM",
-          "timestamp": 1786305900.0,
+          "timestamp": 1786325700.0,
           "productId": "6a78d97e7590c200136ec97f"
         }
       ],
@@ -2994,25 +2997,25 @@
       "displayName": "madhavkiarmy",
       "selfTransaction": true,
       "selfTxnCount": 2,
-      "selfTxnMaxAmount": 199.0,
+      "selfTxnMaxAmount": 151.0,
       "selfTxnDetails": [
         {
           "amount": 99.0,
-          "buyerEmail": "guptapranav351@gmail.com",
-          "buyerPhone": "9311493433",
-          "IP": "103.157.10.72",
-          "date": "18 Aug, 2026; 12:54 PM",
-          "timestamp": 1787037840.0,
-          "productId": "6a840708fb1cde0013f03652"
+          "buyerEmail": "vaibhavgajbhe777@gmail.com",
+          "buyerPhone": "7262959765",
+          "IP": "157.33.216.210",
+          "date": "19 Aug, 2026; 10:53 PM",
+          "timestamp": 1787179980.0,
+          "productId": "6a848d38233e470013818883"
         },
         {
-          "amount": 199.0,
-          "buyerEmail": "guptapranav351@gmail.com",
-          "buyerPhone": "9311493433",
-          "IP": "103.69.14.77",
-          "date": "14 Jan, 2026; 03:06 PM",
-          "timestamp": 1768383360.0,
-          "productId": "696737c7f825a700134d2311"
+          "amount": 151.0,
+          "buyerEmail": "vaibhavgajbhe777@gmail.com",
+          "buyerPhone": "7262959765",
+          "IP": "157.32.129.124",
+          "date": "01 Aug, 2026; 03:12 PM",
+          "timestamp": 1785597120.0,
+          "productId": "6a5c4b36336dff0013d9c6b9"
         }
       ],
       "latestSelfTxnDate": "18 Aug, 2026; 12:54 PM",
@@ -3103,7 +3106,7 @@
       "payoutAmount": 74.0,
       "onboardedBy": "",
       "status": "pendingSettlement",
-      "category": "Finance & Trading",
+      "category": "Coaching (Business, Parenting, Relationship etc)",
       "subCategory": null,
       "flagLevel": null,
       "displayName": "prashant5106",
@@ -3339,16 +3342,16 @@
       "displayName": "millionaire77",
       "selfTransaction": true,
       "selfTxnCount": 1,
-      "selfTxnMaxAmount": 249.0,
+      "selfTxnMaxAmount": 99.0,
       "selfTxnDetails": [
         {
-          "amount": 249.0,
-          "buyerEmail": "bibekchhetri490@gmail.com",
-          "buyerPhone": "9749373608",
-          "IP": "223.185.35.206",
-          "date": "17 Aug, 2026; 05:41 PM",
-          "timestamp": 1786968660.0,
-          "productId": "6a63ad00146c040014de6deb"
+          "amount": 99.0,
+          "buyerEmail": "growithanimesh@gmail.com",
+          "buyerPhone": "7970446498",
+          "IP": "122.161.65.174",
+          "date": "19 Aug, 2026; 05:33 PM",
+          "timestamp": 1787160780.0,
+          "productId": "6a856ed4ac362100134b4969"
         }
       ],
       "latestSelfTxnDate": "17 Aug, 2026; 05:41 PM",
@@ -3397,7 +3400,7 @@
           "buyerPhone": "9004950699",
           "IP": "114.79.186.194",
           "date": "17 Aug, 2026; 09:53 PM",
-          "timestamp": 1786983780.0,
+          "timestamp": 1787003580.0,
           "productId": "6a81cb50fe7cb80013b7f041"
         }
       ],
@@ -3444,7 +3447,7 @@
           "buyerPhone": "8827458663",
           "IP": "77.111.245.14",
           "date": "17 Aug, 2026; 11:51 AM",
-          "timestamp": 1786947660.0,
+          "timestamp": 1786967460.0,
           "productId": "6a3362a49ad2dd0013ad54cb"
         },
         {
@@ -3453,12 +3456,12 @@
           "buyerPhone": "8827458663",
           "IP": "77.111.244.53",
           "date": "17 Aug, 2026; 11:25 AM",
-          "timestamp": 1786946100.0,
+          "timestamp": 1786965900.0,
           "productId": "6a3362a49ad2dd0013ad54cb"
         }
       ],
       "latestSelfTxnDate": "17 Aug, 2026; 11:51 AM",
-      "latestSelfTxnTimestamp": 1786947660.0,
+      "latestSelfTxnTimestamp": 1786967460.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -3500,7 +3503,7 @@
           "buyerPhone": "9023286530",
           "IP": "152.59.52.149",
           "date": "17 Aug, 2026; 12:26 AM",
-          "timestamp": 1786906560.0,
+          "timestamp": 1786926360.0,
           "productId": "6a81f3614329a100130de7a9"
         }
       ],
@@ -4014,7 +4017,7 @@
           "buyerPhone": "7028250948",
           "IP": "152.59.7.225",
           "date": "16 Aug, 2026; 08:52 PM",
-          "timestamp": 1786893720.0,
+          "timestamp": 1786913520.0,
           "productId": "6a781c8b62ca790013af6140"
         }
       ],
@@ -4108,7 +4111,7 @@
           "buyerPhone": "8278879075",
           "IP": "223.181.16.105",
           "date": "16 Aug, 2026; 01:16 PM",
-          "timestamp": 1786866360.0,
+          "timestamp": 1786886160.0,
           "productId": "6a7cc9acb62576001368611d"
         }
       ],
@@ -4155,12 +4158,12 @@
           "buyerPhone": "8489891737",
           "IP": "59.182.164.70",
           "date": "15 Aug, 2026; 05:27 PM",
-          "timestamp": 1786795020.0,
+          "timestamp": 1786814820.0,
           "productId": "6a6c50233e84300013a174b9"
         }
       ],
       "latestSelfTxnDate": "15 Aug, 2026; 05:27 PM",
-      "latestSelfTxnTimestamp": 1786795020.0,
+      "latestSelfTxnTimestamp": 1786814820.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -4205,7 +4208,7 @@
           "buyerPhone": "7018067937",
           "IP": "152.58.108.49",
           "date": "15 Aug, 2026; 08:34 PM",
-          "timestamp": 1786806240.0,
+          "timestamp": 1786826040.0,
           "productId": "6a7c8606b1788000135f6d8d"
         },
         {
@@ -4214,7 +4217,7 @@
           "buyerPhone": "7018067937",
           "IP": "152.58.108.213",
           "date": "12 Aug, 2026; 08:40 PM",
-          "timestamp": 1786547400.0,
+          "timestamp": 1786567200.0,
           "productId": "6a7c8606b1788000135f6d8d"
         },
         {
@@ -4223,7 +4226,7 @@
           "buyerPhone": "7018067937",
           "IP": "152.56.71.220",
           "date": "25 Jul, 2026; 10:51 AM",
-          "timestamp": 1784956860.0,
+          "timestamp": 1784976660.0,
           "productId": "6a636377b8a45d00133cb738"
         }
       ],
@@ -4432,12 +4435,12 @@
           "buyerPhone": "9310322868",
           "IP": "182.77.75.85",
           "date": "13 Aug, 2026; 01:55 PM",
-          "timestamp": 1786609500.0,
+          "timestamp": 1786629300.0,
           "productId": "6a7afc74f810f400131993a2"
         }
       ],
       "latestSelfTxnDate": "13 Aug, 2026; 01:55 PM",
-      "latestSelfTxnTimestamp": 1786609500.0,
+      "latestSelfTxnTimestamp": 1786629300.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -4479,7 +4482,7 @@
           "buyerPhone": "9780196458",
           "IP": "169.149.225.104",
           "date": "13 Aug, 2026; 08:46 PM",
-          "timestamp": 1786634160.0,
+          "timestamp": 1786653960.0,
           "productId": "6a7dda71da748700143ac90f"
         },
         {
@@ -4488,7 +4491,7 @@
           "buyerPhone": "9780196458",
           "IP": "223.178.210.62",
           "date": "06 Jun, 2026; 01:31 PM",
-          "timestamp": 1780732860.0,
+          "timestamp": 1780752660.0,
           "productId": "6a23725513468400138f1981"
         },
         {
@@ -4497,7 +4500,7 @@
           "buyerPhone": "9780196458",
           "IP": "223.178.211.175",
           "date": "13 May, 2026; 08:32 AM",
-          "timestamp": 1778641320.0,
+          "timestamp": 1778661120.0,
           "productId": "6a03dfc90ff21f00133f7e9c"
         }
       ],
@@ -4544,12 +4547,12 @@
           "buyerPhone": "9512668978",
           "IP": "152.58.63.87",
           "date": "13 Aug, 2026; 03:40 PM",
-          "timestamp": 1786615800.0,
+          "timestamp": 1786635600.0,
           "productId": "68c4292b4dfd86001330bacf"
         }
       ],
       "latestSelfTxnDate": "13 Aug, 2026; 03:40 PM",
-      "latestSelfTxnTimestamp": 1786615800.0,
+      "latestSelfTxnTimestamp": 1786635600.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -4646,7 +4649,7 @@
           "buyerPhone": "9175406382",
           "IP": "122.167.113.86",
           "date": "12 Aug, 2026; 02:33 AM",
-          "timestamp": 1786482180.0,
+          "timestamp": 1786501980.0,
           "productId": "6a79615a2fb8500013fbb600"
         }
       ],
@@ -4749,12 +4752,214 @@
           "buyerPhone": "8607785806",
           "IP": "49.43.130.53",
           "date": "12 Aug, 2026; 03:44 PM",
-          "timestamp": 1786529640.0,
+          "timestamp": 1786549440.0,
           "productId": "6a411d68b275650013e31522"
         }
       ],
       "latestSelfTxnDate": "12 Aug, 2026; 03:44 PM",
-      "latestSelfTxnTimestamp": 1786529640.0,
+      "latestSelfTxnTimestamp": 1786549440.0,
+      "buyersChecked": 100,
+      "productTitles": [],
+      "productsCount": 0,
+      "adultFlag": false,
+      "adultReason": "",
+      "noLink": false,
+      "noLinkCount": 0,
+      "noLinkProducts": [],
+      "noLinkReason": "",
+      "error": "",
+      "telegramIntegration": false,
+      "telegramEligible": false,
+      "sebiRegisteredYes": "\u2014",
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
+    },
+    {
+      "settlementId": "6a8b4392753c527b03cb2dc9",
+      "creatorId": "634d5391849d61541ff6cd18",
+      "username": "anandsahani",
+      "email": "Skillguruji108@gmail.com",
+      "phone": "9934231158",
+      "payoutAmount": 4704.0,
+      "onboardedBy": "",
+      "status": "pendingSettlement",
+      "category": "Digital Marketing & Marketing",
+      "subCategory": null,
+      "flagLevel": null,
+      "displayName": "anandsahani",
+      "selfTransaction": true,
+      "selfTxnCount": 1,
+      "selfTxnMaxAmount": 11.0,
+      "selfTxnDetails": [
+        {
+          "amount": 11.0,
+          "buyerEmail": "Skillguruji108@gmail.com",
+          "buyerPhone": "9934231158",
+          "IP": "117.195.215.210",
+          "date": "12 Aug, 2026; 11:31 PM",
+          "timestamp": 1786577460.0,
+          "productId": "6a464b33f8085a0013fa2256"
+        }
+      ],
+      "latestSelfTxnDate": "12 Aug, 2026; 11:31 PM",
+      "latestSelfTxnTimestamp": 1786577460.0,
+      "buyersChecked": 37,
+      "productTitles": [],
+      "productsCount": 0,
+      "adultFlag": false,
+      "adultReason": "",
+      "noLink": false,
+      "noLinkCount": 0,
+      "noLinkProducts": [],
+      "noLinkReason": "",
+      "error": "",
+      "telegramEligible": true,
+      "telegramIntegration": true,
+      "telegramProductId": "634d8d999e6817546ee93344",
+      "telegramProductLink": "https://superprofile.bio/vig/634d8d999e6817546ee93344",
+      "telegramProductName": "SKILL GURUJI PRIME",
+      "sebiMatchType": "None",
+      "sebiRegisteredYes": "\u2014",
+      "sebiRegisteredNo": "No",
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegistrationNumber": "N/A",
+      "sebiReviewStatus": "Manual Review Required",
+      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+    },
+    {
+      "settlementId": "6a8b4365753c527b03caffea",
+      "creatorId": "696b561b469b4600134c42fa",
+      "username": "prishad7654",
+      "email": "pree3911@gmail.com",
+      "phone": "6354859642",
+      "payoutAmount": 140.0,
+      "onboardedBy": "",
+      "status": "pendingSettlement",
+      "category": "Digital Marketing & Marketing",
+      "subCategory": null,
+      "flagLevel": null,
+      "displayName": "prishad7654",
+      "selfTransaction": true,
+      "selfTxnCount": 1,
+      "selfTxnMaxAmount": 399.0,
+      "selfTxnDetails": [
+        {
+          "amount": 399.0,
+          "buyerEmail": "pree3911@gmail.com",
+          "buyerPhone": "6354859642",
+          "IP": "47.11.113.44",
+          "date": "11 Aug, 2026; 06:04 PM",
+          "timestamp": 1786471440.0,
+          "productId": "6a75c28c9c1dba001327c518"
+        }
+      ],
+      "latestSelfTxnDate": "11 Aug, 2026; 06:04 PM",
+      "latestSelfTxnTimestamp": 1786471440.0,
+      "buyersChecked": 20,
+      "productTitles": [],
+      "productsCount": 0,
+      "adultFlag": false,
+      "adultReason": "",
+      "noLink": false,
+      "noLinkCount": 0,
+      "noLinkProducts": [],
+      "noLinkReason": "",
+      "error": "",
+      "telegramIntegration": false,
+      "telegramEligible": false,
+      "sebiRegisteredYes": "\u2014",
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
+    },
+    {
+      "settlementId": "6a8b4375753c527b03cb1265",
+      "creatorId": "64c10e82985f36002a91518a",
+      "username": "investwithsoumyadeep",
+      "email": "soumyadeepsp@gmail.com",
+      "phone": "7042006372",
+      "payoutAmount": 225.0,
+      "onboardedBy": "",
+      "status": "pendingSettlement",
+      "category": "Education",
+      "subCategory": null,
+      "flagLevel": null,
+      "displayName": "investwithsoumyadeep",
+      "selfTransaction": true,
+      "selfTxnCount": 2,
+      "selfTxnMaxAmount": 250.0,
+      "selfTxnDetails": [
+        {
+          "amount": 250.0,
+          "buyerEmail": "soumyadeepsp@gmail.com",
+          "buyerPhone": "7042006372",
+          "IP": null,
+          "date": "11 Aug, 2026; 02:14 AM",
+          "timestamp": 1786414440.0,
+          "productId": "66ffe626e0ec7e0013a396d5"
+        },
+        {
+          "amount": 250.0,
+          "buyerEmail": "soumyadeepsp@gmail.com",
+          "buyerPhone": "7042006372",
+          "IP": "106.222.202.98",
+          "date": "12 Jul, 2026; 10:16 PM",
+          "timestamp": 1783894560.0,
+          "productId": "66ffe626e0ec7e0013a396d5"
+        }
+      ],
+      "latestSelfTxnDate": "11 Aug, 2026; 02:14 AM",
+      "latestSelfTxnTimestamp": 1786414440.0,
+      "buyersChecked": 100,
+      "productTitles": [],
+      "productsCount": 0,
+      "adultFlag": false,
+      "adultReason": "",
+      "noLink": false,
+      "noLinkCount": 0,
+      "noLinkProducts": [],
+      "noLinkReason": "",
+      "error": "",
+      "telegramIntegration": false,
+      "telegramEligible": false,
+      "sebiRegisteredYes": "\u2014",
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
+    },
+    {
+      "settlementId": "6a8b435e753c527b03caf5a1",
+      "creatorId": "6a2fee5dfaf44800138ae5b8",
+      "username": "impixcreation",
+      "email": "impixcreation@gmail.com",
+      "phone": "8866406318",
+      "payoutAmount": 7053.0,
+      "onboardedBy": "",
+      "status": "pendingSettlement",
+      "category": "Education",
+      "subCategory": null,
+      "flagLevel": null,
+      "displayName": "impixcreation",
+      "selfTransaction": true,
+      "selfTxnCount": 1,
+      "selfTxnMaxAmount": 197.0,
+      "selfTxnDetails": [
+        {
+          "amount": 197.0,
+          "buyerEmail": "impixcreation@gmail.com",
+          "buyerPhone": "8866406318",
+          "IP": "172.225.137.225",
+          "date": "11 Aug, 2026; 10:15 PM",
+          "timestamp": 1786486500.0,
+          "productId": "6a5e208648ce250013c77a26"
+        }
+      ],
+      "latestSelfTxnDate": "11 Aug, 2026; 10:15 PM",
+      "latestSelfTxnTimestamp": 1786486500.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -5001,12 +5206,12 @@
           "buyerPhone": "8873239932",
           "IP": "106.222.248.18",
           "date": "11 Aug, 2026; 07:53 PM",
-          "timestamp": 1786458180.0,
+          "timestamp": 1786477980.0,
           "productId": "6a70c27a9e13ea0013bbf648"
         }
       ],
       "latestSelfTxnDate": "11 Aug, 2026; 07:53 PM",
-      "latestSelfTxnTimestamp": 1786458180.0,
+      "latestSelfTxnTimestamp": 1786477980.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -5051,7 +5256,7 @@
           "buyerPhone": "9609957204",
           "IP": "114.29.225.212",
           "date": "11 Aug, 2026; 03:38 AM",
-          "timestamp": 1786399680.0,
+          "timestamp": 1786419480.0,
           "productId": "6777b3bc9b2802001318cade"
         },
         {
@@ -5060,7 +5265,7 @@
           "buyerPhone": "9609957204",
           "IP": "43.251.179.214",
           "date": "30 May, 2025; 11:25 AM",
-          "timestamp": 1748584500.0,
+          "timestamp": 1748604300.0,
           "productId": "683939f75e4895001356f519"
         },
         {
@@ -5069,7 +5274,7 @@
           "buyerPhone": "9609957204",
           "IP": "43.251.179.214",
           "date": "04 Jan, 2025; 08:31 PM",
-          "timestamp": 1736002860.0,
+          "timestamp": 1736022660.0,
           "productId": "6777b3bc9b2802001318cade"
         },
         {
@@ -5078,7 +5283,7 @@
           "buyerPhone": "9609957204",
           "IP": "43.251.179.214",
           "date": "04 Jan, 2025; 03:11 PM",
-          "timestamp": 1735983660.0,
+          "timestamp": 1736003460.0,
           "productId": "6777b3bc9b2802001318cade"
         },
         {
@@ -5087,7 +5292,7 @@
           "buyerPhone": "9609957204",
           "IP": "43.251.179.192",
           "date": "26 Jan, 2024; 09:11 AM",
-          "timestamp": 1706240460.0,
+          "timestamp": 1706260260.0,
           "productId": "65b286496f098d001e349e76"
         },
         {
@@ -5096,7 +5301,7 @@
           "buyerPhone": "9609957204",
           "IP": "43.251.179.167",
           "date": "21 Jan, 2024; 12:39 PM",
-          "timestamp": 1705820940.0,
+          "timestamp": 1705840740.0,
           "productId": "65acaebe4009dd001db71e50"
         },
         {
@@ -5105,12 +5310,12 @@
           "buyerPhone": "9609957204",
           "IP": "43.251.179.192",
           "date": "21 Jan, 2024; 12:32 PM",
-          "timestamp": 1705820520.0,
+          "timestamp": 1705840320.0,
           "productId": "65acaebe4009dd001db71e50"
         }
       ],
       "latestSelfTxnDate": "11 Aug, 2026; 03:38 AM",
-      "latestSelfTxnTimestamp": 1786399680.0,
+      "latestSelfTxnTimestamp": 1786419480.0,
       "buyersChecked": 36,
       "productTitles": [],
       "productsCount": 0,
@@ -5152,7 +5357,7 @@
           "buyerPhone": "7302732213",
           "IP": "58.84.62.173",
           "date": "11 Aug, 2026; 04:11 PM",
-          "timestamp": 1786444860.0,
+          "timestamp": 1786464660.0,
           "productId": "6a7af8b6542b2500145eeb2d"
         }
       ],
@@ -5983,109 +6188,28 @@
       "category": "Retail and Ecommerce - Services",
       "subCategory": null,
       "flagLevel": null,
-      "displayName": "tilindia",
+      "displayName": "Besthostservice",
       "selfTransaction": true,
-      "selfTxnCount": 11,
-      "selfTxnMaxAmount": 50.0,
+      "selfTxnCount": 2,
+      "selfTxnMaxAmount": 660.0,
       "selfTxnDetails": [
         {
-          "amount": 1.0,
-          "buyerEmail": "bharatbhushankikta@gmail.com",
-          "buyerPhone": "7807194238",
-          "IP": "59.183.187.78",
-          "date": "06 Aug, 2026; 04:39 PM",
-          "timestamp": 1786014540.0,
-          "productId": "6a746881c090b70012d78511"
+          "amount": 660.0,
+          "buyerEmail": "hoststrip2@gmail.com",
+          "buyerPhone": "9988672976",
+          "IP": "82.153.10.121",
+          "date": "10 Aug, 2026; 07:44 PM",
+          "timestamp": 1786391040.0,
+          "productId": "64306ae4974eca0021f3f96e"
         },
         {
-          "amount": 1.0,
-          "buyerEmail": "bharatbhushankikta@gmail.com",
-          "buyerPhone": "7807194238",
-          "IP": "223.184.204.77",
-          "date": "29 Jan, 2026; 12:48 PM",
-          "timestamp": 1769671080.0,
-          "productId": "69710b70ce6b0c00134b184e"
-        },
-        {
-          "amount": 1.0,
-          "buyerEmail": "bharatbhushankikta@gmail.com",
-          "buyerPhone": "7807194238",
-          "IP": "117.237.13.8",
-          "date": "22 Jan, 2026; 10:00 PM",
-          "timestamp": 1769099400.0,
-          "productId": "69710b70ce6b0c00134b184e"
-        },
-        {
-          "amount": 1.0,
-          "buyerEmail": "bharatbhushankikta@gmail.com",
-          "buyerPhone": "7807194238",
-          "IP": "223.228.190.97",
-          "date": "21 Jan, 2026; 11:08 PM",
-          "timestamp": 1769017080.0,
-          "productId": "69710b70ce6b0c00134b184e"
-        },
-        {
-          "amount": 1.0,
-          "buyerEmail": "bharatbhushankikta@gmail.com",
-          "buyerPhone": "7807194238",
-          "IP": "110.224.64.63",
-          "date": "05 Feb, 2025; 09:56 PM",
-          "timestamp": 1738772760.0,
-          "productId": "678b999aa468120014292fec"
-        },
-        {
-          "amount": 1.0,
-          "buyerEmail": "bharatbhushankikta@gmail.com",
-          "buyerPhone": "7807194238",
-          "IP": "223.187.107.146",
-          "date": "21 Jan, 2025; 11:04 PM",
-          "timestamp": 1737480840.0,
-          "productId": "678b999aa468120014292fec"
-        },
-        {
-          "amount": 10.0,
-          "buyerEmail": "bharatbhushankikta@gmail.com",
-          "buyerPhone": "7807194238",
-          "IP": "106.192.197.201",
-          "date": "09 Feb, 2024; 11:43 PM",
-          "timestamp": 1707502380.0,
-          "productId": "65c65d81df68c4001ea4edaa"
-        },
-        {
-          "amount": 50.0,
-          "buyerEmail": "bharatbhushankikta@gmail.com",
-          "buyerPhone": "7807194238",
-          "IP": "106.192.197.201",
-          "date": "09 Feb, 2024; 11:40 PM",
-          "timestamp": 1707502200.0,
-          "productId": "65c65d81df68c4001ea4edaa"
-        },
-        {
-          "amount": 1.0,
-          "buyerEmail": "bharatbhushankikta@gmail.com",
-          "buyerPhone": "7807194238",
-          "IP": "106.192.197.201",
-          "date": "09 Feb, 2024; 11:31 PM",
-          "timestamp": 1707501660.0,
-          "productId": "65c65d81df68c4001ea4edaa"
-        },
-        {
-          "amount": 1.0,
-          "buyerEmail": "bharatbhushankikta@gmail.com",
-          "buyerPhone": "7807194238",
-          "IP": "106.192.197.201",
-          "date": "09 Feb, 2024; 11:24 PM",
-          "timestamp": 1707501240.0,
-          "productId": "65c65d81df68c4001ea4edaa"
-        },
-        {
-          "amount": 1.0,
-          "buyerEmail": "bharatbhushankikta@gmail.com",
-          "buyerPhone": "7807194238",
-          "IP": "106.192.197.201",
-          "date": "09 Feb, 2024; 11:18 PM",
-          "timestamp": 1707500880.0,
-          "productId": "65c65d81df68c4001ea4edaa"
+          "amount": 640.0,
+          "buyerEmail": "hoststrip2@gmail.com",
+          "buyerPhone": "9988672976",
+          "IP": "31.6.33.148",
+          "date": "06 Apr, 2024; 05:44 PM",
+          "timestamp": 1712425440.0,
+          "productId": "64306ae4974eca0021f3f96e"
         }
       ],
       "latestSelfTxnDate": "06 Aug, 2026; 04:39 PM",
@@ -6178,7 +6302,7 @@
           "buyerPhone": "6367981452",
           "IP": "157.48.80.11",
           "date": "05 Aug, 2026; 04:47 PM",
-          "timestamp": 1785928620.0,
+          "timestamp": 1785948420.0,
           "productId": "6a6c5bac5aada6001367e0ed"
         }
       ],
@@ -6272,7 +6396,7 @@
           "buyerPhone": "9717444623",
           "IP": "122.161.67.182",
           "date": "03 Aug, 2026; 05:44 PM",
-          "timestamp": 1785759240.0,
+          "timestamp": 1785779040.0,
           "productId": "6a707520f01d7b00142042d5"
         },
         {
@@ -6281,7 +6405,7 @@
           "buyerPhone": "9717444623",
           "IP": "122.161.68.217",
           "date": "03 Oct, 2024; 04:32 PM",
-          "timestamp": 1727953320.0,
+          "timestamp": 1727973120.0,
           "productId": "66fa91452a3657001372a8ad"
         }
       ],
@@ -6328,7 +6452,7 @@
           "buyerPhone": "9717444623",
           "IP": "122.161.67.182",
           "date": "03 Aug, 2026; 05:44 PM",
-          "timestamp": 1785759240.0,
+          "timestamp": 1785779040.0,
           "productId": "6a707520f01d7b00142042d5"
         },
         {
@@ -6337,7 +6461,7 @@
           "buyerPhone": "9717444623",
           "IP": "122.161.68.217",
           "date": "03 Oct, 2024; 04:32 PM",
-          "timestamp": 1727953320.0,
+          "timestamp": 1727973120.0,
           "productId": "66fa91452a3657001372a8ad"
         }
       ],
@@ -6384,7 +6508,7 @@
           "buyerPhone": "9717444623",
           "IP": "122.161.67.182",
           "date": "03 Aug, 2026; 05:44 PM",
-          "timestamp": 1785759240.0,
+          "timestamp": 1785779040.0,
           "productId": "6a707520f01d7b00142042d5"
         },
         {
@@ -6393,12 +6517,68 @@
           "buyerPhone": "9717444623",
           "IP": "122.161.68.217",
           "date": "03 Oct, 2024; 04:32 PM",
-          "timestamp": 1727953320.0,
+          "timestamp": 1727973120.0,
           "productId": "66fa91452a3657001372a8ad"
         }
       ],
       "latestSelfTxnDate": "03 Aug, 2026; 05:44 PM",
-      "latestSelfTxnTimestamp": 1785759240.0,
+      "latestSelfTxnTimestamp": 1785779040.0,
+      "buyersChecked": 100,
+      "productTitles": [],
+      "productsCount": 0,
+      "adultFlag": false,
+      "adultReason": "",
+      "noLink": false,
+      "noLinkCount": 0,
+      "noLinkProducts": [],
+      "noLinkReason": "",
+      "error": "",
+      "telegramIntegration": false,
+      "telegramEligible": false,
+      "sebiRegisteredYes": "\u2014",
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
+    },
+    {
+      "settlementId": "6a7b71c17867fb6016df685a",
+      "creatorId": "661e3fa5dc11c80012ab41e4",
+      "username": "abdigimedia",
+      "email": "abankitbansal9717@gmail.com",
+      "phone": "9717444623",
+      "payoutAmount": 187.0,
+      "onboardedBy": "",
+      "status": "pendingSettlement",
+      "category": "Retail and Ecommerce - Services",
+      "subCategory": null,
+      "flagLevel": null,
+      "displayName": "abdigimedia",
+      "selfTransaction": true,
+      "selfTxnCount": 2,
+      "selfTxnMaxAmount": 499.0,
+      "selfTxnDetails": [
+        {
+          "amount": 199.0,
+          "buyerEmail": "abankitbansal9717@gmail.com",
+          "buyerPhone": "9717444623",
+          "IP": "122.161.67.182",
+          "date": "03 Aug, 2026; 05:44 PM",
+          "timestamp": 1785779040.0,
+          "productId": "6a707520f01d7b00142042d5"
+        },
+        {
+          "amount": 499.0,
+          "buyerEmail": "abankitbansal9717@gmail.com",
+          "buyerPhone": "9717444623",
+          "IP": "122.161.68.217",
+          "date": "03 Oct, 2024; 04:32 PM",
+          "timestamp": 1727973120.0,
+          "productId": "66fa91452a3657001372a8ad"
+        }
+      ],
+      "latestSelfTxnDate": "03 Aug, 2026; 05:44 PM",
+      "latestSelfTxnTimestamp": 1785779040.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -6496,7 +6676,7 @@
           "buyerPhone": "9717444623",
           "IP": "122.161.67.182",
           "date": "03 Aug, 2026; 05:44 PM",
-          "timestamp": 1785759240.0,
+          "timestamp": 1785779040.0,
           "productId": "6a707520f01d7b00142042d5"
         },
         {
@@ -6505,12 +6685,12 @@
           "buyerPhone": "9717444623",
           "IP": "122.161.68.217",
           "date": "03 Oct, 2024; 04:32 PM",
-          "timestamp": 1727953320.0,
+          "timestamp": 1727973120.0,
           "productId": "66fa91452a3657001372a8ad"
         }
       ],
       "latestSelfTxnDate": "03 Aug, 2026; 05:44 PM",
-      "latestSelfTxnTimestamp": 1785759240.0,
+      "latestSelfTxnTimestamp": 1785779040.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -6748,12 +6928,12 @@
           "buyerPhone": "8580845820",
           "IP": "49.43.141.107",
           "date": "01 Aug, 2026; 11:59 AM",
-          "timestamp": 1785565740.0,
+          "timestamp": 1785585540.0,
           "productId": "69bf46e2f1587c0013c3982b"
         }
       ],
       "latestSelfTxnDate": "01 Aug, 2026; 11:59 AM",
-      "latestSelfTxnTimestamp": 1785565740.0,
+      "latestSelfTxnTimestamp": 1785585540.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -6798,12 +6978,12 @@
           "buyerPhone": "8591411080",
           "IP": "36.255.88.180",
           "date": "01 Aug, 2026; 08:39 PM",
-          "timestamp": 1785596940.0,
+          "timestamp": 1785616740.0,
           "productId": "6a6e01280aed7d0014f3c3c8"
         }
       ],
       "latestSelfTxnDate": "01 Aug, 2026; 08:39 PM",
-      "latestSelfTxnTimestamp": 1785596940.0,
+      "latestSelfTxnTimestamp": 1785616740.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -6845,7 +7025,7 @@
           "buyerPhone": "8078221026",
           "IP": "117.211.112.57",
           "date": "31 Jul, 2026; 09:30 PM",
-          "timestamp": 1785513600.0,
+          "timestamp": 1785533400.0,
           "productId": "6a5e3e00a7e4b80013ffe22e"
         },
         {
@@ -6854,7 +7034,7 @@
           "buyerPhone": "8078221026",
           "IP": "59.94.7.52",
           "date": "13 Mar, 2026; 07:32 PM",
-          "timestamp": 1773410520.0,
+          "timestamp": 1773430320.0,
           "productId": "69ad25991447c2001374ecca"
         }
       ],
@@ -6901,12 +7081,12 @@
           "buyerPhone": "8972098961",
           "IP": "45.64.239.193",
           "date": "31 Jul, 2026; 04:08 PM",
-          "timestamp": 1785494280.0,
+          "timestamp": 1785514080.0,
           "productId": "6a6213f4b3bfec00143df9af"
         }
       ],
       "latestSelfTxnDate": "31 Jul, 2026; 04:08 PM",
-      "latestSelfTxnTimestamp": 1785494280.0,
+      "latestSelfTxnTimestamp": 1785514080.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -6948,12 +7128,12 @@
           "buyerPhone": "9664611227",
           "IP": "5.152.6.169",
           "date": "29 Jul, 2026; 12:20 AM",
-          "timestamp": 1785264600.0,
+          "timestamp": 1785284400.0,
           "productId": "6a68e28d8d035c0013a3d0c4"
         }
       ],
       "latestSelfTxnDate": "29 Jul, 2026; 12:20 AM",
-      "latestSelfTxnTimestamp": 1785264600.0,
+      "latestSelfTxnTimestamp": 1785284400.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -7269,7 +7449,7 @@
           "buyerPhone": "8639293216",
           "IP": "49.204.214.112",
           "date": "26 Jul, 2026; 08:56 AM",
-          "timestamp": 1785036360.0,
+          "timestamp": 1785056160.0,
           "productId": "6a650156127837001389bfd1"
         },
         {
@@ -7278,7 +7458,7 @@
           "buyerPhone": "8639293216",
           "IP": "49.204.214.112",
           "date": "21 Jul, 2026; 07:56 PM",
-          "timestamp": 1784643960.0,
+          "timestamp": 1784663760.0,
           "productId": "6a5b9a7c336dff0013c0a94d"
         }
       ],
@@ -7419,7 +7599,7 @@
           "buyerPhone": "9392847778",
           "IP": "152.58.169.17",
           "date": "24 Jul, 2026; 02:57 AM",
-          "timestamp": 1784842020.0,
+          "timestamp": 1784861820.0,
           "productId": "6a627a021327150013d1179e"
         },
         {
@@ -7428,7 +7608,7 @@
           "buyerPhone": "9392847778",
           "IP": "14.139.196.182",
           "date": "24 Jul, 2026; 02:56 AM",
-          "timestamp": 1784841960.0,
+          "timestamp": 1784861760.0,
           "productId": "6a627a021327150013d1179e"
         }
       ],
@@ -7475,12 +7655,12 @@
           "buyerPhone": "8709029272",
           "IP": "157.48.197.233",
           "date": "23 Jul, 2026; 03:05 PM",
-          "timestamp": 1784799300.0,
+          "timestamp": 1784819100.0,
           "productId": "6a20f0d8cf4ce30013a54124"
         }
       ],
       "latestSelfTxnDate": "23 Jul, 2026; 03:05 PM",
-      "latestSelfTxnTimestamp": 1784799300.0,
+      "latestSelfTxnTimestamp": 1784819100.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -7619,7 +7799,7 @@
           "buyerPhone": "7771009006",
           "IP": "106.222.218.230",
           "date": "20 Jul, 2026; 09:04 AM",
-          "timestamp": 1784518440.0,
+          "timestamp": 1784538240.0,
           "productId": "6a507692fa41ca0014f1bef5"
         },
         {
@@ -7628,7 +7808,7 @@
           "buyerPhone": "7771009006",
           "IP": "152.58.59.42",
           "date": "14 Nov, 2024; 04:00 PM",
-          "timestamp": 1731580200.0,
+          "timestamp": 1731600000.0,
           "productId": "67359f6c9e586e0013768de7"
         },
         {
@@ -7637,7 +7817,7 @@
           "buyerPhone": "7771009006",
           "IP": "117.212.137.220",
           "date": "14 Nov, 2024; 03:36 PM",
-          "timestamp": 1731578760.0,
+          "timestamp": 1731598560.0,
           "productId": "67359f6c9e586e0013768de7"
         },
         {
@@ -7646,7 +7826,7 @@
           "buyerPhone": "7771009006",
           "IP": "117.212.137.220",
           "date": "14 Nov, 2024; 03:34 PM",
-          "timestamp": 1731578640.0,
+          "timestamp": 1731598440.0,
           "productId": "67359f6c9e586e0013768de7"
         },
         {
@@ -7655,7 +7835,7 @@
           "buyerPhone": "7771009006",
           "IP": "117.212.137.220",
           "date": "14 Nov, 2024; 03:31 PM",
-          "timestamp": 1731578460.0,
+          "timestamp": 1731598260.0,
           "productId": "67359f6c9e586e0013768de7"
         },
         {
@@ -7664,7 +7844,7 @@
           "buyerPhone": "7771009006",
           "IP": "152.58.59.42",
           "date": "14 Nov, 2024; 03:21 PM",
-          "timestamp": 1731577860.0,
+          "timestamp": 1731597660.0,
           "productId": "67359f6c9e586e0013768de7"
         },
         {
@@ -7673,7 +7853,7 @@
           "buyerPhone": "7771009006",
           "IP": "152.58.59.42",
           "date": "14 Nov, 2024; 03:11 PM",
-          "timestamp": 1731577260.0,
+          "timestamp": 1731597060.0,
           "productId": "67359f6c9e586e0013768de7"
         }
       ],
@@ -7720,7 +7900,7 @@
           "buyerPhone": "6302575826",
           "IP": "205.254.169.182",
           "date": "20 Jul, 2026; 08:10 PM",
-          "timestamp": 1784558400.0,
+          "timestamp": 1784578200.0,
           "productId": "6a586fc4279e82001383e671"
         }
       ],
@@ -7844,7 +8024,7 @@
           "buyerPhone": "6375733270",
           "IP": "171.49.219.157",
           "date": "17 Jul, 2026; 12:24 PM",
-          "timestamp": 1784271240.0,
+          "timestamp": 1784291040.0,
           "productId": "6a59b780bf6f01001379f602"
         }
       ],
@@ -7896,7 +8076,7 @@
           "buyerPhone": "9174411742",
           "IP": "27.97.102.49",
           "date": "15 Jul, 2026; 08:21 AM",
-          "timestamp": 1784083860.0,
+          "timestamp": 1784103660.0,
           "productId": "6a4d1461f528340013f2600e"
         },
         {
@@ -7905,7 +8085,7 @@
           "buyerPhone": "9174411742",
           "IP": "27.97.103.116",
           "date": "15 Jul, 2026; 08:12 AM",
-          "timestamp": 1784083320.0,
+          "timestamp": 1784103120.0,
           "productId": "6a4d1461f528340013f2600e"
         }
       ],
@@ -8046,7 +8226,7 @@
           "buyerPhone": "9982832783",
           "IP": "157.48.103.104",
           "date": "14 Jul, 2026; 12:43 AM",
-          "timestamp": 1783969980.0,
+          "timestamp": 1783989780.0,
           "productId": "6a552dbc7885100013b64dbb"
         }
       ],
@@ -8193,7 +8373,7 @@
           "buyerPhone": "7498111845",
           "IP": "103.120.251.94",
           "date": "10 Jul, 2026; 09:05 AM",
-          "timestamp": 1783654500.0,
+          "timestamp": 1783674300.0,
           "productId": "6a4cb648156ef30013eaa61b"
         }
       ],
@@ -8240,12 +8420,12 @@
           "buyerPhone": "9096970095",
           "IP": "103.178.135.44",
           "date": "10 Jul, 2026; 10:55 PM",
-          "timestamp": 1783704300.0,
+          "timestamp": 1783724100.0,
           "productId": "6a4f81619cb875001426d9c6"
         }
       ],
       "latestSelfTxnDate": "10 Jul, 2026; 10:55 PM",
-      "latestSelfTxnTimestamp": 1783704300.0,
+      "latestSelfTxnTimestamp": 1783724100.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -8291,12 +8471,12 @@
           "buyerPhone": "7979902750",
           "IP": "47.31.67.20",
           "date": "10 Jul, 2026; 11:00 PM",
-          "timestamp": 1783704600.0,
+          "timestamp": 1783724400.0,
           "productId": "6a43e3a4736a390013a7d220"
         }
       ],
       "latestSelfTxnDate": "10 Jul, 2026; 11:00 PM",
-      "latestSelfTxnTimestamp": 1783704600.0,
+      "latestSelfTxnTimestamp": 1783724400.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -8600,7 +8780,7 @@
           "buyerPhone": "8424884455",
           "IP": "45.119.30.188",
           "date": "27 Jun, 2026; 04:41 PM",
-          "timestamp": 1782558660.0,
+          "timestamp": 1782578460.0,
           "productId": "6a3fa99691680e0013a9b866"
         }
       ],
@@ -8932,7 +9112,7 @@
           "buyerPhone": "9899021750",
           "IP": "49.36.191.59",
           "date": "16 Jun, 2026; 02:06 PM",
-          "timestamp": 1781598960.0,
+          "timestamp": 1781618760.0,
           "productId": "69565c240fe98c0013995f2c"
         },
         {
@@ -8941,12 +9121,12 @@
           "buyerPhone": "9899021750",
           "IP": "49.36.191.59",
           "date": "11 May, 2026; 01:49 AM",
-          "timestamp": 1778444340.0,
+          "timestamp": 1778464140.0,
           "productId": "69565c240fe98c0013995f2c"
         }
       ],
       "latestSelfTxnDate": "16 Jun, 2026; 02:06 PM",
-      "latestSelfTxnTimestamp": 1781598960.0,
+      "latestSelfTxnTimestamp": 1781618760.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -9093,12 +9273,12 @@
           "buyerPhone": "9511390674",
           "IP": "223.184.135.47",
           "date": "05 Jun, 2026; 01:05 PM",
-          "timestamp": 1780644900.0,
+          "timestamp": 1780664700.0,
           "productId": "66a90af68409520013cae4dc"
         }
       ],
       "latestSelfTxnDate": "05 Jun, 2026; 01:05 PM",
-      "latestSelfTxnTimestamp": 1780644900.0,
+      "latestSelfTxnTimestamp": 1780664700.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -9192,7 +9372,7 @@
           "buyerPhone": "9562324163",
           "IP": "111.92.125.93",
           "date": "01 Jun, 2026; 02:31 PM",
-          "timestamp": 1780304460.0,
+          "timestamp": 1780324260.0,
           "productId": "6a156b0dd82ea20013263bf1"
         },
         {
@@ -9201,7 +9381,7 @@
           "buyerPhone": "9562324163",
           "IP": "202.83.40.39",
           "date": "06 May, 2026; 12:46 PM",
-          "timestamp": 1778051760.0,
+          "timestamp": 1778071560.0,
           "productId": "69de0ed4f5f2ba00130fb99e"
         },
         {
@@ -9210,7 +9390,7 @@
           "buyerPhone": "9562324163",
           "IP": "111.92.115.3",
           "date": "02 May, 2026; 09:49 AM",
-          "timestamp": 1777695540.0,
+          "timestamp": 1777715340.0,
           "productId": "69de0ed4f5f2ba00130fb99e"
         },
         {
@@ -9219,7 +9399,7 @@
           "buyerPhone": "9562324163",
           "IP": "111.92.68.87",
           "date": "01 May, 2026; 02:47 PM",
-          "timestamp": 1777627020.0,
+          "timestamp": 1777646820.0,
           "productId": "69de0ed4f5f2ba00130fb99e"
         },
         {
@@ -9228,7 +9408,7 @@
           "buyerPhone": "9562324163",
           "IP": "111.92.68.87",
           "date": "01 May, 2026; 09:44 AM",
-          "timestamp": 1777608840.0,
+          "timestamp": 1777628640.0,
           "productId": "69de0ed4f5f2ba00130fb99e"
         },
         {
@@ -9237,7 +9417,7 @@
           "buyerPhone": "9562324163",
           "IP": "111.92.68.87",
           "date": "01 May, 2026; 09:38 AM",
-          "timestamp": 1777608480.0,
+          "timestamp": 1777628280.0,
           "productId": "69de0ed4f5f2ba00130fb99e"
         }
       ],
@@ -9329,19 +9509,28 @@
       "category": "Digital Marketing & Marketing",
       "subCategory": null,
       "flagLevel": null,
-      "displayName": "Raj8605",
+      "displayName": "rahul025",
       "selfTransaction": true,
-      "selfTxnCount": 1,
-      "selfTxnMaxAmount": 49.0,
+      "selfTxnCount": 2,
+      "selfTxnMaxAmount": 29.0,
       "selfTxnDetails": [
         {
-          "amount": 49.0,
-          "buyerEmail": "kiacarens759@gmail.com",
-          "buyerPhone": "9626578079",
-          "IP": "157.51.70.58",
-          "date": "21 May, 2026; 07:41 AM",
-          "timestamp": 1779329460.0,
-          "productId": "69f803a5106b120013700e15"
+          "amount": 5.0,
+          "buyerEmail": "hr4710351@gmail.com",
+          "buyerPhone": "7858808704",
+          "IP": "182.70.179.52",
+          "date": "13 May, 2026; 10:54 PM",
+          "timestamp": 1778712840.0,
+          "productId": "6a0422089c43f10013e800ee"
+        },
+        {
+          "amount": 29.0,
+          "buyerEmail": "hr4710351@gmail.com",
+          "buyerPhone": "7858808704",
+          "IP": "223.185.63.177",
+          "date": "12 May, 2026; 07:56 AM",
+          "timestamp": 1778572560.0,
+          "productId": "6a0206c47dad4f0013191f28"
         }
       ],
       "latestSelfTxnDate": "21 May, 2026; 07:41 AM",
@@ -9670,12 +9859,12 @@
           "buyerPhone": "8800113536",
           "IP": "122.168.1.131",
           "date": "29 Apr, 2026; 04:43 PM",
-          "timestamp": 1777461180.0,
+          "timestamp": 1777480980.0,
           "productId": "6888d09b3cfbf80013873908"
         }
       ],
       "latestSelfTxnDate": "29 Apr, 2026; 04:43 PM",
-      "latestSelfTxnTimestamp": 1777461180.0,
+      "latestSelfTxnTimestamp": 1777480980.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -10015,7 +10204,7 @@
           "buyerPhone": "7889820615",
           "IP": "106.215.196.190",
           "date": "19 Mar, 2026; 07:32 PM",
-          "timestamp": 1773928920.0,
+          "timestamp": 1773948720.0,
           "productId": "690113b6c4ed840013f46f1e"
         },
         {
@@ -10024,7 +10213,7 @@
           "buyerPhone": "7889820615",
           "IP": "106.215.199.167",
           "date": "30 Oct, 2025; 08:19 PM",
-          "timestamp": 1761835740.0,
+          "timestamp": 1761855540.0,
           "productId": "690113b6c4ed840013f46f1e"
         },
         {
@@ -10033,7 +10222,7 @@
           "buyerPhone": "7889820615",
           "IP": "152.58.85.154",
           "date": "29 Nov, 2024; 11:53 PM",
-          "timestamp": 1732904580.0,
+          "timestamp": 1732924380.0,
           "productId": "674412324529db001310a97f"
         }
       ],
@@ -10183,7 +10372,7 @@
           "buyerPhone": "8080651508",
           "IP": "27.59.100.52",
           "date": "03 Mar, 2026; 06:34 PM",
-          "timestamp": 1772543040.0,
+          "timestamp": 1772562840.0,
           "productId": "69a2b606ccc9e6001327811b"
         },
         {
@@ -10192,7 +10381,7 @@
           "buyerPhone": "8080651508",
           "IP": "27.59.100.52",
           "date": "03 Mar, 2026; 06:32 PM",
-          "timestamp": 1772542920.0,
+          "timestamp": 1772562720.0,
           "productId": "69a5948197696a0013fdc5ed"
         },
         {
@@ -10201,7 +10390,7 @@
           "buyerPhone": "8080651508",
           "IP": "117.99.241.119",
           "date": "03 Mar, 2026; 06:28 PM",
-          "timestamp": 1772542680.0,
+          "timestamp": 1772562480.0,
           "productId": "69a2b606ccc9e6001327811b"
         }
       ],
@@ -10295,7 +10484,7 @@
           "buyerPhone": "8603113313",
           "IP": "106.192.97.218",
           "date": "21 Feb, 2026; 09:13 PM",
-          "timestamp": 1771688580.0,
+          "timestamp": 1771708380.0,
           "productId": "698a11b890f4cf0013effeb2"
         },
         {
@@ -10304,7 +10493,7 @@
           "buyerPhone": "8603113313",
           "IP": "117.99.49.33",
           "date": "26 Nov, 2025; 11:10 PM",
-          "timestamp": 1764178800.0,
+          "timestamp": 1764198600.0,
           "productId": "6927337ceb75c20012d3dce0"
         }
       ],
@@ -10351,7 +10540,7 @@
           "buyerPhone": "8541996151",
           "IP": "106.192.103.186",
           "date": "11 Feb, 2026; 06:53 PM",
-          "timestamp": 1770816180.0,
+          "timestamp": 1770835980.0,
           "productId": "698c7d3648938b001351048f"
         }
       ],
@@ -10492,7 +10681,7 @@
           "buyerPhone": "6283319706",
           "IP": "49.156.116.119",
           "date": "07 Dec, 2025; 08:39 PM",
-          "timestamp": 1765120140.0,
+          "timestamp": 1765139940.0,
           "productId": "693464959a758f0012ee0b24"
         },
         {
@@ -10501,7 +10690,7 @@
           "buyerPhone": "6283319706",
           "IP": "49.156.116.55",
           "date": "21 Sep, 2025; 08:18 PM",
-          "timestamp": 1758466080.0,
+          "timestamp": 1758485880.0,
           "productId": "68b858db71c289001399d6ec"
         }
       ],
@@ -10551,7 +10740,7 @@
           "buyerPhone": "7507156422",
           "IP": "49.206.134.184",
           "date": "16 Oct, 2025; 06:17 PM",
-          "timestamp": 1760618820.0,
+          "timestamp": 1760638620.0,
           "productId": "68f0c74c08edc400137dbff4"
         }
       ],
@@ -10598,7 +10787,7 @@
           "buyerPhone": "9026865687",
           "IP": "152.59.120.136",
           "date": "04 Oct, 2025; 10:12 AM",
-          "timestamp": 1759552920.0,
+          "timestamp": 1759572720.0,
           "productId": "68df76daff14880013eb0c8d"
         }
       ],
@@ -10739,12 +10928,12 @@
           "buyerPhone": "7506732983",
           "IP": "157.119.202.146",
           "date": "15 Aug, 2025; 12:56 AM",
-          "timestamp": 1755199560.0,
+          "timestamp": 1755219360.0,
           "productId": "689e32a8aec6ca00139eaf63"
         }
       ],
       "latestSelfTxnDate": "15 Aug, 2025; 12:56 AM",
-      "latestSelfTxnTimestamp": 1755199560.0,
+      "latestSelfTxnTimestamp": 1755219360.0,
       "buyersChecked": 14,
       "productTitles": [],
       "productsCount": 0,
@@ -10786,12 +10975,12 @@
           "buyerPhone": "7506732983",
           "IP": "157.119.202.146",
           "date": "15 Aug, 2025; 12:56 AM",
-          "timestamp": 1755199560.0,
+          "timestamp": 1755219360.0,
           "productId": "689e32a8aec6ca00139eaf63"
         }
       ],
       "latestSelfTxnDate": "15 Aug, 2025; 12:56 AM",
-      "latestSelfTxnTimestamp": 1755199560.0,
+      "latestSelfTxnTimestamp": 1755219360.0,
       "buyersChecked": 14,
       "productTitles": [],
       "productsCount": 0,
@@ -11196,22 +11385,22 @@
       "payoutAmount": 1166.0,
       "onboardedBy": "",
       "status": "pendingSettlement",
-      "category": "Education",
+      "category": "Entertainment & Media",
       "subCategory": null,
       "flagLevel": null,
-      "displayName": "digital99storein",
+      "displayName": "vaibhavkulkarnifilm",
       "selfTransaction": true,
       "selfTxnCount": 1,
-      "selfTxnMaxAmount": 29.9,
+      "selfTxnMaxAmount": 10.0,
       "selfTxnDetails": [
         {
-          "amount": 29.9,
-          "buyerEmail": "rohitprasharofficial@gmail.com",
-          "buyerPhone": "8252587182",
-          "IP": "103.83.149.22",
-          "date": "20 Nov, 2024; 01:41 PM",
-          "timestamp": 1732090260.0,
-          "productId": "66bb8bc58818de0013f7475c"
+          "amount": 10.0,
+          "buyerEmail": "vaibhavkulkarnifilms@gmail.com",
+          "buyerPhone": "9021957064",
+          "IP": "116.75.177.80",
+          "date": "04 Jul, 2025; 03:06 PM",
+          "timestamp": 1751641560.0,
+          "productId": "65733b205b4946001e3bfe1f"
         }
       ],
       "latestSelfTxnDate": "20 Nov, 2024; 01:41 PM",
@@ -11357,7 +11546,7 @@
           "buyerPhone": "6360468946",
           "IP": "49.37.162.240",
           "date": "12 Jun, 2024; 08:04 PM",
-          "timestamp": 1718202840.0,
+          "timestamp": 1718222640.0,
           "productId": "6667205f65fdc20013cee4ff"
         },
         {
@@ -11366,7 +11555,7 @@
           "buyerPhone": "6360468946",
           "IP": "49.37.162.240",
           "date": "12 Jun, 2024; 08:01 PM",
-          "timestamp": 1718202660.0,
+          "timestamp": 1718222460.0,
           "productId": "6667205f65fdc20013cee4ff"
         },
         {
@@ -11375,7 +11564,7 @@
           "buyerPhone": "6360468946",
           "IP": "49.43.241.150",
           "date": "31 Dec, 2023; 02:48 PM",
-          "timestamp": 1704014280.0,
+          "timestamp": 1704034080.0,
           "productId": "65912f7ed9349b001e3bb766"
         },
         {
@@ -11384,7 +11573,7 @@
           "buyerPhone": "6360468946",
           "IP": "49.43.241.150",
           "date": "31 Dec, 2023; 11:27 AM",
-          "timestamp": 1704002220.0,
+          "timestamp": 1704022020.0,
           "productId": "6590341c823c8b001e0d100c"
         },
         {
@@ -11393,7 +11582,7 @@
           "buyerPhone": "6360468946",
           "IP": "49.43.241.150",
           "date": "31 Dec, 2023; 11:22 AM",
-          "timestamp": 1704001920.0,
+          "timestamp": 1704021720.0,
           "productId": "6590341c823c8b001e0d100c"
         },
         {
@@ -11402,7 +11591,7 @@
           "buyerPhone": "6360468946",
           "IP": "49.43.242.5",
           "date": "30 Dec, 2023; 08:42 PM",
-          "timestamp": 1703949120.0,
+          "timestamp": 1703968920.0,
           "productId": "658fe954177387001df827bc"
         },
         {
@@ -11411,7 +11600,7 @@
           "buyerPhone": "6360468946",
           "IP": "49.43.242.5",
           "date": "30 Dec, 2023; 08:41 PM",
-          "timestamp": 1703949060.0,
+          "timestamp": 1703968860.0,
           "productId": "658fe954177387001df827bc"
         },
         {
@@ -11420,7 +11609,7 @@
           "buyerPhone": "6360468946",
           "IP": "49.43.242.5",
           "date": "30 Dec, 2023; 08:19 PM",
-          "timestamp": 1703947740.0,
+          "timestamp": 1703967540.0,
           "productId": "658fe954177387001df827bc"
         },
         {
@@ -11429,7 +11618,7 @@
           "buyerPhone": "6360468946",
           "IP": "49.43.242.5",
           "date": "30 Dec, 2023; 08:14 PM",
-          "timestamp": 1703947440.0,
+          "timestamp": 1703967240.0,
           "productId": "658fe954177387001df827bc"
         },
         {
@@ -11438,7 +11627,7 @@
           "buyerPhone": "6360468946",
           "IP": "49.43.242.5",
           "date": "30 Dec, 2023; 07:39 PM",
-          "timestamp": 1703945340.0,
+          "timestamp": 1703965140.0,
           "productId": "658fe954177387001df827bc"
         },
         {
@@ -11447,7 +11636,7 @@
           "buyerPhone": "6360468946",
           "IP": "49.43.242.5",
           "date": "30 Dec, 2023; 07:37 PM",
-          "timestamp": 1703945220.0,
+          "timestamp": 1703965020.0,
           "productId": "658fe954177387001df827bc"
         }
       ],
@@ -11494,7 +11683,7 @@
           "buyerPhone": "9266867307",
           "IP": "157.42.203.98",
           "date": "29 May, 2024; 02:47 AM",
-          "timestamp": 1716931020.0,
+          "timestamp": 1716950820.0,
           "productId": "6645e27a0f5bbe0013f51f55"
         }
       ],
@@ -11546,7 +11735,7 @@
           "buyerPhone": "6900598954",
           "IP": "223.176.8.2",
           "date": "11 Mar, 2024; 04:02 AM",
-          "timestamp": 1710109920.0,
+          "timestamp": 1710129720.0,
           "productId": "65d04c7e084fe90012518e4a"
         },
         {
@@ -11555,7 +11744,7 @@
           "buyerPhone": "6900598954",
           "IP": "49.37.107.140",
           "date": "15 Jun, 2023; 02:56 PM",
-          "timestamp": 1686821160.0,
+          "timestamp": 1686840960.0,
           "productId": "648ad90620f71f002bdc6197"
         }
       ],
@@ -11649,12 +11838,12 @@
           "buyerPhone": "7892736878",
           "IP": "49.37.242.113",
           "date": "13 Feb, 2024; 07:35 PM",
-          "timestamp": 1707833100.0,
+          "timestamp": 1707852900.0,
           "productId": "65cb70ebeadcff001e9d329a"
         }
       ],
       "latestSelfTxnDate": "13 Feb, 2024; 07:35 PM",
-      "latestSelfTxnTimestamp": 1707833100.0,
+      "latestSelfTxnTimestamp": 1707852900.0,
       "buyersChecked": 25,
       "productTitles": [],
       "productsCount": 0,
@@ -11696,12 +11885,12 @@
           "buyerPhone": "7892736878",
           "IP": "49.37.242.113",
           "date": "13 Feb, 2024; 07:35 PM",
-          "timestamp": 1707833100.0,
+          "timestamp": 1707852900.0,
           "productId": "65cb70ebeadcff001e9d329a"
         }
       ],
       "latestSelfTxnDate": "13 Feb, 2024; 07:35 PM",
-      "latestSelfTxnTimestamp": 1707833100.0,
+      "latestSelfTxnTimestamp": 1707852900.0,
       "buyersChecked": 25,
       "productTitles": [],
       "productsCount": 0,
@@ -11743,12 +11932,12 @@
           "buyerPhone": "7892736878",
           "IP": "49.37.242.113",
           "date": "13 Feb, 2024; 07:35 PM",
-          "timestamp": 1707833100.0,
+          "timestamp": 1707852900.0,
           "productId": "65cb70ebeadcff001e9d329a"
         }
       ],
       "latestSelfTxnDate": "13 Feb, 2024; 07:35 PM",
-      "latestSelfTxnTimestamp": 1707833100.0,
+      "latestSelfTxnTimestamp": 1707852900.0,
       "buyersChecked": 25,
       "productTitles": [],
       "productsCount": 0,
@@ -11790,7 +11979,7 @@
           "buyerPhone": "7873280770",
           "IP": "223.231.200.199",
           "date": "18 Jan, 2024; 04:09 PM",
-          "timestamp": 1705574340.0,
+          "timestamp": 1705594140.0,
           "productId": "65886ac1e32b8f001dabfb28"
         },
         {
@@ -11799,7 +11988,7 @@
           "buyerPhone": "7873280770",
           "IP": "103.199.200.224",
           "date": "04 Nov, 2023; 08:41 AM",
-          "timestamp": 1699067460.0,
+          "timestamp": 1699087260.0,
           "productId": "6545b4b378fd2c0481ad4c83"
         }
       ],
@@ -11846,12 +12035,12 @@
           "buyerPhone": "9855567095",
           "IP": "117.199.208.195",
           "date": "10 Dec, 2023; 01:35 AM",
-          "timestamp": 1702152300.0,
+          "timestamp": 1702172100.0,
           "productId": "65721046f4c01a001d93b649"
         }
       ],
       "latestSelfTxnDate": "10 Dec, 2023; 01:35 AM",
-      "latestSelfTxnTimestamp": 1702152300.0,
+      "latestSelfTxnTimestamp": 1702172100.0,
       "buyersChecked": 1,
       "productTitles": [],
       "productsCount": 0,
@@ -12091,7 +12280,7 @@
           "buyerPhone": "8239505550",
           "IP": "49.43.181.222",
           "date": "26 Jun, 2023; 08:45 AM",
-          "timestamp": 1687749300.0,
+          "timestamp": 1687769100.0,
           "productId": "6499028a35fc0f002c54b3c7"
         }
       ],
@@ -12470,17 +12659,36 @@
       "payoutAmount": 98428.0,
       "onboardedBy": "",
       "status": "pendingSettlement",
-      "category": "BFSI/Fintech",
+      "category": "Education",
       "subCategory": null,
       "flagLevel": null,
-      "displayName": "smtstockmarkettoday",
-      "selfTransaction": false,
-      "selfTxnCount": 0,
-      "selfTxnMaxAmount": 0.0,
-      "selfTxnDetails": [],
-      "latestSelfTxnDate": "",
-      "latestSelfTxnTimestamp": 0.0,
-      "buyersChecked": 100,
+      "displayName": "adycruise",
+      "selfTransaction": true,
+      "selfTxnCount": 2,
+      "selfTxnMaxAmount": 10.0,
+      "selfTxnDetails": [
+        {
+          "amount": 10.0,
+          "buyerEmail": "skillsup.adycruise@gmail.com",
+          "buyerPhone": "8827266327",
+          "IP": "1.187.219.71",
+          "date": "24 May, 2023; 01:08 AM",
+          "timestamp": 1684890480.0,
+          "productId": "646d0b03fb541f001f46e557"
+        },
+        {
+          "amount": 2.0,
+          "buyerEmail": "skillsup.adycruise@gmail.com",
+          "buyerPhone": "8827266327",
+          "IP": "1.187.219.71",
+          "date": "24 May, 2023; 12:34 AM",
+          "timestamp": 1684888440.0,
+          "productId": "646d0b03fb541f001f46e557"
+        }
+      ],
+      "latestSelfTxnDate": "24 May, 2023; 01:08 AM",
+      "latestSelfTxnTimestamp": 1684890480.0,
+      "buyersChecked": 54,
       "productTitles": [],
       "productsCount": 0,
       "adultFlag": false,
@@ -12671,7 +12879,7 @@
       "payoutAmount": 62549.0,
       "onboardedBy": "",
       "status": "pendingSettlement",
-      "category": "Finance & Trading",
+      "category": "BFSI/Fintech",
       "subCategory": null,
       "flagLevel": null,
       "displayName": "netadottrading",
@@ -26627,9 +26835,9 @@
       "error": "",
       "telegramEligible": true,
       "telegramIntegration": true,
-      "telegramProductId": "69846ed1e9ec160013884bdb",
-      "telegramProductLink": "https://superprofile.bio/vig/69846ed1e9ec160013884bdb",
-      "telegramProductName": "INDEX OPTIONS",
+      "telegramProductId": "69846f9a59f9720012b10bcc",
+      "telegramProductLink": "https://superprofile.bio/vig/69846f9a59f9720012b10bcc",
+      "telegramProductName": "COMBO LINK",
       "sebiMatchType": "Primary Creator ID",
       "sebiRegisteredYes": "Yes",
       "sebiRegisteredNo": "\u2014",
@@ -26994,9 +27202,9 @@
       "error": "",
       "telegramEligible": true,
       "telegramIntegration": true,
-      "telegramProductId": "69536288ff3d730013bd44d8",
-      "telegramProductLink": "https://superprofile.bio/vig/69536288ff3d730013bd44d8",
-      "telegramProductName": "MagzineX Pass - Premium Indian & International Magzines ",
+      "telegramProductId": "699af36c3da2010013de657b",
+      "telegramProductLink": "https://superprofile.bio/vig/699af36c3da2010013de657b",
+      "telegramProductName": "All in One Pass : All English Hindi ePaper (Paid Group)",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
       "sebiRegisteredNo": "No",
@@ -27242,9 +27450,9 @@
       "error": "",
       "telegramEligible": true,
       "telegramIntegration": true,
-      "telegramProductId": "6a64283b146c040014edce5a",
-      "telegramProductLink": "https://superprofile.bio/vig/6a64283b146c040014edce5a",
-      "telegramProductName": "\u0928\u093f\u0930\u094d\u092e\u093e\u0923 Batch Railway General Science Foundation Course 2026(Live+VOD)",
+      "telegramProductId": "6a524273b1289500137768dc",
+      "telegramProductLink": "https://superprofile.bio/vig/6a524273b1289500137768dc",
+      "telegramProductName": "RRB JE 2025 Express Batch - Civil",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
       "sebiRegisteredNo": "No",
@@ -32178,7 +32386,7 @@
       "payoutAmount": 2100.0,
       "onboardedBy": "",
       "status": "pendingSettlement",
-      "category": "Not Classified above",
+      "category": "Travel & Hospitality",
       "subCategory": null,
       "flagLevel": null,
       "displayName": "pisignals",
@@ -32980,7 +33188,7 @@
       "payoutAmount": 1969.0,
       "onboardedBy": "",
       "status": "pendingSettlement",
-      "category": "Education",
+      "category": "Not Classified above",
       "subCategory": null,
       "flagLevel": null,
       "displayName": "stockshubofficial",
@@ -33007,11 +33215,10 @@
       "telegramProductName": "StocksHub Plus+ : Sensex",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a8b4362753c527b03cafadf",
@@ -33062,7 +33269,7 @@
       "payoutAmount": 1968.0,
       "onboardedBy": "",
       "status": "pendingSettlement",
-      "category": "Education",
+      "category": "Medical/Doctor",
       "subCategory": null,
       "flagLevel": null,
       "displayName": "swealthlearning",
@@ -33089,11 +33296,10 @@
       "telegramProductName": "S COURSE ",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a8b433c753c527b03cab39f",
@@ -35824,7 +36030,7 @@
       "category": "Education",
       "subCategory": null,
       "flagLevel": null,
-      "displayName": "iasoriented",
+      "displayName": "easycharts",
       "selfTransaction": false,
       "selfTxnCount": 0,
       "selfTxnMaxAmount": 0.0,
@@ -35871,7 +36077,7 @@
       "selfTxnDetails": [],
       "latestSelfTxnDate": "",
       "latestSelfTxnTimestamp": 0.0,
-      "buyersChecked": 100,
+      "buyersChecked": 11,
       "productTitles": [],
       "productsCount": 0,
       "adultFlag": false,
@@ -35901,7 +36107,7 @@
       "payoutAmount": 1623.0,
       "onboardedBy": "",
       "status": "pendingSettlement",
-      "category": "Education",
+      "category": "Beauty & Personal Care",
       "subCategory": null,
       "flagLevel": null,
       "displayName": "Ronin4642",
@@ -35911,7 +36117,7 @@
       "selfTxnDetails": [],
       "latestSelfTxnDate": "",
       "latestSelfTxnTimestamp": 0.0,
-      "buyersChecked": 100,
+      "buyersChecked": 25,
       "productTitles": [],
       "productsCount": 0,
       "adultFlag": false,
@@ -35941,7 +36147,7 @@
       "payoutAmount": 1620.0,
       "onboardedBy": "",
       "status": "pendingSettlement",
-      "category": "Education",
+      "category": "Medical/Doctor",
       "subCategory": null,
       "flagLevel": null,
       "displayName": "BullmanGann",
@@ -37165,7 +37371,7 @@
       "selfTxnDetails": [],
       "latestSelfTxnDate": "",
       "latestSelfTxnTimestamp": 0.0,
-      "buyersChecked": 100,
+      "buyersChecked": 55,
       "productTitles": [],
       "productsCount": 0,
       "adultFlag": false,
@@ -38649,10 +38855,10 @@
       "payoutAmount": 1304.0,
       "onboardedBy": "",
       "status": "pendingSettlement",
-      "category": "Digital Marketing & Marketing",
+      "category": "Education",
       "subCategory": null,
       "flagLevel": null,
-      "displayName": "samerdas8194",
+      "displayName": "goatdynamic",
       "selfTransaction": false,
       "selfTxnCount": 0,
       "selfTxnMaxAmount": 0.0,
@@ -40752,7 +40958,7 @@
       "category": "Digital Marketing & Marketing",
       "subCategory": null,
       "flagLevel": null,
-      "displayName": "shivamshiva",
+      "displayName": "swatantar0470",
       "selfTransaction": false,
       "selfTxnCount": 0,
       "selfTxnMaxAmount": 0.0,
@@ -40770,17 +40976,15 @@
       "noLinkReason": "",
       "error": "",
       "telegramEligible": true,
-      "telegramIntegration": true,
-      "telegramProductId": "6961fea2c0dd9a00126d58b1",
-      "telegramProductLink": "https://superprofile.bio/vig/6961fea2c0dd9a00126d58b1",
-      "telegramProductName": "Premium Group",
-      "sebiMatchType": "None",
+      "telegramIntegration": false,
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Digital Product",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a8b4356753c527b03cae945",
@@ -40913,7 +41117,7 @@
       "payoutAmount": 1077.0,
       "onboardedBy": "",
       "status": "pendingSettlement",
-      "category": "Education",
+      "category": "Professional Services",
       "subCategory": null,
       "flagLevel": null,
       "displayName": "shivprasadmaury",
@@ -41441,8 +41645,11 @@
       "noLinkProducts": [],
       "noLinkReason": "",
       "error": "",
+      "telegramEligible": true,
       "telegramIntegration": false,
-      "telegramEligible": false,
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Digital Product",
       "sebiRegisteredYes": "\u2014",
       "sebiRegisteredNo": "\u2014",
       "sebiVerificationStatus": "Not Applicable",
