@@ -81,3 +81,20 @@ error: failed to push some refs to 'https://github.com/mohitkr04/cosmofeed_settl
 [2026-08-31 10:17:23]   Manager PDF Generated: True
 [2026-08-31 10:17:23]   Payout PDF Generated: True
 [2026-08-31 10:17:23] Checking git synchronization...
+[2026-08-31 04:47:54] ======================================================================
+[2026-08-31 04:47:54] STARTING COSMOFEED DAILY PAYOUT & COMPLIANCE PIPELINE FOR 2026-08-31
+[2026-08-31 04:47:54] Target Manager Submission Deadline: 2026-09-05
+[2026-08-31 04:47:54] ======================================================================
+[2026-08-31 04:47:54] Found valid COSMOFEED_TOKEN in environment. Attempting live settlement scrape...
+[2026-08-31 04:48:14] Live scrape skipped/fallback: Command '['/opt/hostedtoolcache/Python/3.11.16/x64/bin/python', 'payout_audit_agent.py', '--date', '2026-08-31']' timed out after 20 seconds
+[2026-08-31 04:48:14] Running build_data_from_audit.py (SEBI verification & Non-SEBI ledger)...
+[2026-08-31 04:48:57] Data building and Non-SEBI ledger upsert finished.
+[2026-08-31 04:48:57] Non-SEBI Cumulative Ledger Status:
+[2026-08-31 04:48:57]   Total Unique Creators: 384
+[2026-08-31 04:48:57]   Cumulative Volume Held: INR 5,317,843.00
+[2026-08-31 04:48:57]   Excel Generated: True
+[2026-08-31 04:48:57]   Manager PDF Generated: True
+[2026-08-31 04:48:57]   Payout PDF Generated: True
+[2026-08-31 04:48:57] ======================================================================
+[2026-08-31 04:48:57] DAILY AUDIT PIPELINE COMPLETED SUCCESSFULLY BEFORE 10:00 AM!
+[2026-08-31 04:48:57] ======================================================================
