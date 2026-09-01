@@ -951,6 +951,7 @@ function render() {
   if (!DATA) return;
   const creators = DATA.creators || [];
 
+  const selfCnt = creators.filter(c => c.selfTransaction).length;
   const top3SelfDays = getTopSelfTxnDays(creators);
   const self2dCreators = creators.filter(c => c.selfTransaction && (top3SelfDays.length === 0 || top3SelfDays.includes(getDayKey(c)) || getDayKey(c) >= top3SelfDays[top3SelfDays.length - 1]));
   const self2dCnt = self2dCreators.length;
@@ -967,8 +968,8 @@ function render() {
   const totalVolume = creators.reduce((acc, c) => acc + (Number(c.payoutAmount) || 0), 0);
 
   // Update Header Badges
-  document.getElementById('hdr-today').textContent = DATA.reviewDateFormatted || DATA.reviewDate || '2026-08-31';
-  document.getElementById('hdr-yesterday').textContent = DATA.productSaleDateFormatted || DATA.productSaleDate || '2026-08-30';
+  document.getElementById('hdr-today').textContent = DATA.reviewDateFormatted || DATA.reviewDate || '2026-09-01';
+  document.getElementById('hdr-yesterday').textContent = DATA.productSaleDateFormatted || DATA.productSaleDate || '2026-08-31';
   document.getElementById('hdr-total').textContent = `${creators.length.toLocaleString()} pending settlements audited`;
 
   // Render KPI Cards
