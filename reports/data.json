@@ -219,7 +219,7 @@
           "buyerPhone": "7796417721",
           "IP": "27.97.183.4",
           "date": "31 Aug, 2026; 12:24 AM",
-          "timestamp": 1788116040.0,
+          "timestamp": 1788135840.0,
           "productId": "6a78d47e2fb8500013e94337"
         },
         {
@@ -228,7 +228,7 @@
           "buyerPhone": "7796417721",
           "IP": "27.97.181.143",
           "date": "19 Aug, 2026; 11:36 AM",
-          "timestamp": 1787119560.0,
+          "timestamp": 1787139360.0,
           "productId": "6a78d47e2fb8500013e94337"
         },
         {
@@ -237,7 +237,7 @@
           "buyerPhone": "7796417721",
           "IP": "152.56.15.247",
           "date": "10 Aug, 2026; 01:35 AM",
-          "timestamp": 1786305900.0,
+          "timestamp": 1786325700.0,
           "productId": "6a78d97e7590c200136ec97f"
         }
       ],
@@ -710,11 +710,10 @@
       "telegramProductName": "PLAN - A (99rs/-)",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cfb112e17cb3117ccfe9",
@@ -1278,7 +1277,7 @@
           "buyerPhone": "9158631179",
           "IP": "106.215.181.95",
           "date": "30 Aug, 2026; 08:03 PM",
-          "timestamp": 1788100380.0,
+          "timestamp": 1788120180.0,
           "productId": "6a91b3d0417b3d00120f7169"
         },
         {
@@ -1287,7 +1286,7 @@
           "buyerPhone": "9158631179",
           "IP": "106.215.181.95",
           "date": "30 Aug, 2026; 02:02 PM",
-          "timestamp": 1788078720.0,
+          "timestamp": 1788098520.0,
           "productId": "6a91b3d0417b3d00120f7169"
         },
         {
@@ -1296,7 +1295,7 @@
           "buyerPhone": "9158631179",
           "IP": "106.215.178.162",
           "date": "28 Aug, 2026; 11:02 PM",
-          "timestamp": 1787938320.0,
+          "timestamp": 1787958120.0,
           "productId": "6a91b3d0417b3d00120f7169"
         },
         {
@@ -1305,7 +1304,7 @@
           "buyerPhone": "9158631179",
           "IP": "106.215.178.162",
           "date": "28 Aug, 2026; 04:45 PM",
-          "timestamp": 1787915700.0,
+          "timestamp": 1787935500.0,
           "productId": "6a8dcea394d45000135f5d8a"
         }
       ],
@@ -1355,7 +1354,7 @@
           "buyerPhone": "9776874790",
           "IP": "152.58.173.175",
           "date": "30 Aug, 2026; 08:50 PM",
-          "timestamp": 1788103200.0,
+          "timestamp": 1788123000.0,
           "productId": "6a92fe7ef917720013755908"
         },
         {
@@ -1364,7 +1363,7 @@
           "buyerPhone": "9776874790",
           "IP": "152.58.172.50",
           "date": "26 Aug, 2026; 11:29 AM",
-          "timestamp": 1787723940.0,
+          "timestamp": 1787743740.0,
           "productId": "6a8be0789ac5d90013381caa"
         }
       ],
@@ -1411,7 +1410,7 @@
           "buyerPhone": "8769016066",
           "IP": "223.185.234.219",
           "date": "30 Aug, 2026; 11:17 AM",
-          "timestamp": 1788068820.0,
+          "timestamp": 1788088620.0,
           "productId": "6a9306def59ed60013384edd"
         }
       ],
@@ -1458,7 +1457,7 @@
           "buyerPhone": "7749933355",
           "IP": "106.208.245.248",
           "date": "30 Aug, 2026; 06:41 AM",
-          "timestamp": 1788052260.0,
+          "timestamp": 1788072060.0,
           "productId": "6a910ff3405d520013bb8fce"
         },
         {
@@ -1467,7 +1466,7 @@
           "buyerPhone": "7749933355",
           "IP": "106.216.74.249",
           "date": "28 Aug, 2026; 05:51 PM",
-          "timestamp": 1787919660.0,
+          "timestamp": 1787939460.0,
           "productId": "6a910ff3405d520013bb8fce"
         },
         {
@@ -1476,7 +1475,7 @@
           "buyerPhone": "7749933355",
           "IP": "106.216.74.249",
           "date": "28 Aug, 2026; 04:44 PM",
-          "timestamp": 1787915640.0,
+          "timestamp": 1787935440.0,
           "productId": "6a910ff3405d520013bb8fce"
         },
         {
@@ -1485,7 +1484,7 @@
           "buyerPhone": "7749933355",
           "IP": "106.208.245.233",
           "date": "06 Aug, 2026; 04:34 PM",
-          "timestamp": 1786014240.0,
+          "timestamp": 1786034040.0,
           "productId": "6a74565d5e1abf00139b0411"
         }
       ],
@@ -1532,12 +1531,12 @@
           "buyerPhone": "8054135393",
           "IP": "223.188.94.62",
           "date": "30 Aug, 2026; 01:01 AM",
-          "timestamp": 1788031860.0,
+          "timestamp": 1788051660.0,
           "productId": "6a829b2cee59f700137ced81"
         }
       ],
       "latestSelfTxnDate": "30 Aug, 2026; 01:01 AM",
-      "latestSelfTxnTimestamp": 1788031860.0,
+      "latestSelfTxnTimestamp": 1788051660.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -1579,7 +1578,7 @@
           "buyerPhone": "8892338402",
           "IP": "152.57.112.70",
           "date": "30 Aug, 2026; 03:44 PM",
-          "timestamp": 1788084840.0,
+          "timestamp": 1788104640.0,
           "productId": "669f8edf9293a40013549a79"
         },
         {
@@ -1588,7 +1587,7 @@
           "buyerPhone": "8892338402",
           "IP": "152.57.102.236",
           "date": "02 Apr, 2026; 04:19 PM",
-          "timestamp": 1775126940.0,
+          "timestamp": 1775146740.0,
           "productId": "669f8edf9293a40013549a79"
         },
         {
@@ -1597,12 +1596,12 @@
           "buyerPhone": "8892338402",
           "IP": "152.58.243.49",
           "date": "15 Jan, 2025; 01:51 PM",
-          "timestamp": 1736929260.0,
+          "timestamp": 1736949060.0,
           "productId": "66d9f9216ef79f00130d84fa"
         }
       ],
       "latestSelfTxnDate": "30 Aug, 2026; 03:44 PM",
-      "latestSelfTxnTimestamp": 1788084840.0,
+      "latestSelfTxnTimestamp": 1788104640.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -1644,7 +1643,7 @@
           "buyerPhone": "9852734357",
           "IP": "47.31.94.135",
           "date": "30 Aug, 2026; 04:51 AM",
-          "timestamp": 1788045660.0,
+          "timestamp": 1788065460.0,
           "productId": "6a936829f65d170012c0671a"
         }
       ],
@@ -1794,7 +1793,7 @@
           "buyerPhone": "8921765161",
           "IP": "157.51.211.249",
           "date": "30 Aug, 2026; 03:06 PM",
-          "timestamp": 1788082560.0,
+          "timestamp": 1788102360.0,
           "productId": "6a92f9a7153f1c0013052162"
         }
       ],
@@ -1888,12 +1887,12 @@
           "buyerPhone": "8106236118",
           "IP": "157.50.247.213",
           "date": "30 Aug, 2026; 09:53 AM",
-          "timestamp": 1788063780.0,
+          "timestamp": 1788083580.0,
           "productId": "6a590fb9d8f3b100138fa7a4"
         }
       ],
       "latestSelfTxnDate": "30 Aug, 2026; 09:53 AM",
-      "latestSelfTxnTimestamp": 1788063780.0,
+      "latestSelfTxnTimestamp": 1788083580.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -1938,12 +1937,12 @@
           "buyerPhone": "7738295851",
           "IP": "37.203.152.122",
           "date": "29 Aug, 2026; 10:55 PM",
-          "timestamp": 1788024300.0,
+          "timestamp": 1788044100.0,
           "productId": "6a931171f917720013790c89"
         }
       ],
       "latestSelfTxnDate": "29 Aug, 2026; 10:55 PM",
-      "latestSelfTxnTimestamp": 1788024300.0,
+      "latestSelfTxnTimestamp": 1788044100.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -1955,17 +1954,15 @@
       "noLinkReason": "",
       "error": "",
       "telegramEligible": true,
-      "telegramIntegration": true,
-      "telegramProductId": "678695943266f80013773e18",
-      "telegramProductLink": "https://superprofile.bio/vig/678695943266f80013773e18",
-      "telegramProductName": "Astrology By Prianca",
-      "sebiMatchType": "None",
+      "telegramIntegration": false,
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Digital Product",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cfa612e17cb3117cc4b3",
@@ -1990,7 +1987,7 @@
           "buyerPhone": "8949076053",
           "IP": "152.59.75.193",
           "date": "29 Aug, 2026; 10:23 PM",
-          "timestamp": 1788022380.0,
+          "timestamp": 1788042180.0,
           "productId": "6a7f23895f0ef70013a44d80"
         }
       ],
@@ -2037,12 +2034,12 @@
           "buyerPhone": "9699852399",
           "IP": "103.181.55.225",
           "date": "29 Aug, 2026; 11:49 AM",
-          "timestamp": 1787984340.0,
+          "timestamp": 1788004140.0,
           "productId": "69d280e2318b6400139109aa"
         }
       ],
       "latestSelfTxnDate": "29 Aug, 2026; 11:49 AM",
-      "latestSelfTxnTimestamp": 1787984340.0,
+      "latestSelfTxnTimestamp": 1788004140.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -2242,7 +2239,7 @@
           "buyerPhone": "7028415550",
           "IP": "152.58.16.156",
           "date": "29 Aug, 2026; 02:08 PM",
-          "timestamp": 1787992680.0,
+          "timestamp": 1788012480.0,
           "productId": "6a91d113282ef200131a4ff3"
         }
       ],
@@ -2289,12 +2286,12 @@
           "buyerPhone": "9652373754",
           "IP": "183.87.179.187",
           "date": "29 Aug, 2026; 10:17 PM",
-          "timestamp": 1788022020.0,
+          "timestamp": 1788041820.0,
           "productId": "6a6979e0a148130013df473b"
         }
       ],
       "latestSelfTxnDate": "29 Aug, 2026; 10:17 PM",
-      "latestSelfTxnTimestamp": 1788022020.0,
+      "latestSelfTxnTimestamp": 1788041820.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -2442,7 +2439,7 @@
           "buyerPhone": "9667123677",
           "IP": "122.161.53.176",
           "date": "28 Aug, 2026; 10:01 AM",
-          "timestamp": 1787891460.0,
+          "timestamp": 1787911260.0,
           "productId": "6a90d7da15489700138f3cdf"
         },
         {
@@ -2451,7 +2448,7 @@
           "buyerPhone": "9667123677",
           "IP": "106.192.205.217",
           "date": "26 Aug, 2026; 11:11 AM",
-          "timestamp": 1787722860.0,
+          "timestamp": 1787742660.0,
           "productId": "6a8e5217e4f3b80013b45ba2"
         },
         {
@@ -2460,12 +2457,12 @@
           "buyerPhone": "9667123677",
           "IP": "106.192.205.217",
           "date": "26 Aug, 2026; 10:26 AM",
-          "timestamp": 1787720160.0,
+          "timestamp": 1787739960.0,
           "productId": "6a8e5217e4f3b80013b45ba2"
         }
       ],
       "latestSelfTxnDate": "28 Aug, 2026; 10:01 AM",
-      "latestSelfTxnTimestamp": 1787891460.0,
+      "latestSelfTxnTimestamp": 1787911260.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -2507,12 +2504,12 @@
           "buyerPhone": "7066331246",
           "IP": "152.56.8.91",
           "date": "28 Aug, 2026; 05:12 PM",
-          "timestamp": 1787917320.0,
+          "timestamp": 1787937120.0,
           "productId": "6a9171bca21fbd001328ec3d"
         }
       ],
       "latestSelfTxnDate": "28 Aug, 2026; 05:12 PM",
-      "latestSelfTxnTimestamp": 1787917320.0,
+      "latestSelfTxnTimestamp": 1787937120.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -2554,7 +2551,7 @@
           "buyerPhone": "9504730786",
           "IP": "47.30.250.202",
           "date": "28 Aug, 2026; 01:00 AM",
-          "timestamp": 1787859000.0,
+          "timestamp": 1787878800.0,
           "productId": "6a908196417b3d0012e2657b"
         }
       ],
@@ -2604,7 +2601,7 @@
           "buyerPhone": "8542870718",
           "IP": "171.76.203.245",
           "date": "28 Aug, 2026; 01:02 PM",
-          "timestamp": 1787902320.0,
+          "timestamp": 1787922120.0,
           "productId": "6a905fcb94d8730013b3fe92"
         },
         {
@@ -2613,7 +2610,7 @@
           "buyerPhone": "8542870718",
           "IP": "171.76.203.245",
           "date": "28 Aug, 2026; 09:58 AM",
-          "timestamp": 1787891280.0,
+          "timestamp": 1787911080.0,
           "productId": "6a905fcb94d8730013b3fe92"
         }
       ],
@@ -2663,7 +2660,7 @@
           "buyerPhone": "904078765",
           "IP": "49.37.112.201",
           "date": "28 Aug, 2026; 02:11 AM",
-          "timestamp": 1787863260.0,
+          "timestamp": 1787883060.0,
           "productId": "6a8ec9c9e96fe60013fa5e7f"
         },
         {
@@ -2672,7 +2669,7 @@
           "buyerPhone": "904078765",
           "IP": "49.37.112.186",
           "date": "26 Aug, 2026; 09:52 PM",
-          "timestamp": 1787761320.0,
+          "timestamp": 1787781120.0,
           "productId": "6a8ec9c9e96fe60013fa5e7f"
         },
         {
@@ -2681,7 +2678,7 @@
           "buyerPhone": "904078765",
           "IP": "49.37.112.71",
           "date": "25 Aug, 2026; 06:57 PM",
-          "timestamp": 1787664420.0,
+          "timestamp": 1787684220.0,
           "productId": "695001f2475741001311f062"
         },
         {
@@ -2690,7 +2687,7 @@
           "buyerPhone": "904078765",
           "IP": "223.184.200.31",
           "date": "30 Apr, 2026; 05:12 PM",
-          "timestamp": 1777549320.0,
+          "timestamp": 1777569120.0,
           "productId": "69f3369cd9494c0014548509"
         },
         {
@@ -2699,12 +2696,12 @@
           "buyerPhone": "904078765",
           "IP": "49.37.114.187",
           "date": "06 Apr, 2026; 09:13 PM",
-          "timestamp": 1775490180.0,
+          "timestamp": 1775509980.0,
           "productId": "68d8fd7b9b0a250013288ac7"
         }
       ],
       "latestSelfTxnDate": "28 Aug, 2026; 02:11 AM",
-      "latestSelfTxnTimestamp": 1787863260.0,
+      "latestSelfTxnTimestamp": 1787883060.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -3002,7 +2999,7 @@
           "buyerPhone": "9238809319",
           "IP": "152.59.31.212",
           "date": "26 Aug, 2026; 09:48 AM",
-          "timestamp": 1787717880.0,
+          "timestamp": 1787737680.0,
           "productId": "6a8e5f163215800013fc995a"
         }
       ],
@@ -3049,7 +3046,7 @@
           "buyerPhone": "8544173703",
           "IP": "106.77.156.5",
           "date": "26 Aug, 2026; 08:38 PM",
-          "timestamp": 1787756880.0,
+          "timestamp": 1787776680.0,
           "productId": "6a8eb21cd6142e0013dfddf9"
         }
       ],
@@ -3096,12 +3093,12 @@
           "buyerPhone": "8008050989",
           "IP": "124.123.128.113",
           "date": "26 Aug, 2026; 11:11 AM",
-          "timestamp": 1787722860.0,
+          "timestamp": 1787742660.0,
           "productId": "6a6ae6609e78c60013bcfdc1"
         }
       ],
       "latestSelfTxnDate": "26 Aug, 2026; 11:11 AM",
-      "latestSelfTxnTimestamp": 1787722860.0,
+      "latestSelfTxnTimestamp": 1787742660.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -3193,12 +3190,12 @@
           "buyerPhone": "8778228633",
           "IP": "49.37.216.80",
           "date": "25 Aug, 2026; 10:06 PM",
-          "timestamp": 1787675760.0,
+          "timestamp": 1787695560.0,
           "productId": "6a6a44a81ecb5400133cccb8"
         }
       ],
       "latestSelfTxnDate": "25 Aug, 2026; 10:06 PM",
-      "latestSelfTxnTimestamp": 1787675760.0,
+      "latestSelfTxnTimestamp": 1787695560.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -3243,12 +3240,12 @@
           "buyerPhone": "9352324621",
           "IP": "47.15.75.194",
           "date": "25 Aug, 2026; 07:26 PM",
-          "timestamp": 1787666160.0,
+          "timestamp": 1787685960.0,
           "productId": "6a74b5049212510013d616f0"
         }
       ],
       "latestSelfTxnDate": "25 Aug, 2026; 07:26 PM",
-      "latestSelfTxnTimestamp": 1787666160.0,
+      "latestSelfTxnTimestamp": 1787685960.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -3293,7 +3290,7 @@
           "buyerPhone": "8853112606",
           "IP": "49.36.235.48",
           "date": "25 Aug, 2026; 08:15 PM",
-          "timestamp": 1787669100.0,
+          "timestamp": 1787688900.0,
           "productId": "6a10a78d9ce96d0013cf743b"
         }
       ],
@@ -3387,12 +3384,12 @@
           "buyerPhone": "919990292373",
           "IP": "106.221.60.74",
           "date": "24 Aug, 2026; 08:18 PM",
-          "timestamp": 1787582880.0,
+          "timestamp": 1787602680.0,
           "productId": "6a8aa8259ac5d90013083713"
         }
       ],
       "latestSelfTxnDate": "24 Aug, 2026; 08:18 PM",
-      "latestSelfTxnTimestamp": 1787582880.0,
+      "latestSelfTxnTimestamp": 1787602680.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -3434,7 +3431,7 @@
           "buyerPhone": "9557950139",
           "IP": "223.188.20.254",
           "date": "24 Aug, 2026; 02:28 PM",
-          "timestamp": 1787561880.0,
+          "timestamp": 1787581680.0,
           "productId": "6a802d45f9222a0013a0d279"
         }
       ],
@@ -3531,7 +3528,7 @@
           "buyerPhone": "9772279375",
           "IP": "157.48.210.93",
           "date": "24 Aug, 2026; 10:43 PM",
-          "timestamp": 1787591580.0,
+          "timestamp": 1787611380.0,
           "productId": "6a8c7b00f648e600136ecd6f"
         }
       ],
@@ -3578,7 +3575,7 @@
           "buyerPhone": "7566160185",
           "IP": "122.179.90.153",
           "date": "24 Aug, 2026; 02:29 PM",
-          "timestamp": 1787561940.0,
+          "timestamp": 1787581740.0,
           "productId": "6a8c01bc93ab3b0013b4f9fe"
         },
         {
@@ -3587,7 +3584,7 @@
           "buyerPhone": "7566160185",
           "IP": "122.179.88.198",
           "date": "20 Aug, 2026; 05:47 PM",
-          "timestamp": 1787228220.0,
+          "timestamp": 1787248020.0,
           "productId": "6791ee68d42a7b00136e95b1"
         },
         {
@@ -3596,12 +3593,12 @@
           "buyerPhone": "7566160185",
           "IP": "122.179.88.198",
           "date": "17 Aug, 2026; 06:28 PM",
-          "timestamp": 1786971480.0,
+          "timestamp": 1786991280.0,
           "productId": "6a83057ad27f2800137218c4"
         }
       ],
       "latestSelfTxnDate": "24 Aug, 2026; 02:29 PM",
-      "latestSelfTxnTimestamp": 1787561940.0,
+      "latestSelfTxnTimestamp": 1787581740.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -4055,12 +4052,12 @@
           "buyerPhone": "6371910342",
           "IP": "45.114.49.21",
           "date": "22 Aug, 2026; 11:11 AM",
-          "timestamp": 1787377260.0,
+          "timestamp": 1787397060.0,
           "productId": "6a1cd5cb2337e300139f7d9c"
         }
       ],
       "latestSelfTxnDate": "22 Aug, 2026; 11:11 AM",
-      "latestSelfTxnTimestamp": 1787377260.0,
+      "latestSelfTxnTimestamp": 1787397060.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -4157,7 +4154,7 @@
           "buyerPhone": "9518386781",
           "IP": "152.58.6.206",
           "date": "22 Aug, 2026; 11:22 AM",
-          "timestamp": 1787377920.0,
+          "timestamp": 1787397720.0,
           "productId": "6a89317150d9dd0013018e32"
         },
         {
@@ -4166,12 +4163,12 @@
           "buyerPhone": "9518386781",
           "IP": "152.58.6.210",
           "date": "22 Aug, 2026; 10:51 AM",
-          "timestamp": 1787376060.0,
+          "timestamp": 1787395860.0,
           "productId": "6a89317150d9dd0013018e32"
         }
       ],
       "latestSelfTxnDate": "22 Aug, 2026; 11:22 AM",
-      "latestSelfTxnTimestamp": 1787377920.0,
+      "latestSelfTxnTimestamp": 1787397720.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -4213,7 +4210,7 @@
           "buyerPhone": "8209721572",
           "IP": "157.48.226.74",
           "date": "22 Aug, 2026; 12:53 PM",
-          "timestamp": 1787383380.0,
+          "timestamp": 1787403180.0,
           "productId": "6a89485312f47d001388cbaf"
         }
       ],
@@ -4260,7 +4257,7 @@
           "buyerPhone": "9103040358",
           "IP": "157.49.4.141",
           "date": "22 Aug, 2026; 03:48 PM",
-          "timestamp": 1787393880.0,
+          "timestamp": 1787413680.0,
           "productId": "6a3eb294291f3d0013c2131b"
         },
         {
@@ -4269,12 +4266,12 @@
           "buyerPhone": "9103040358",
           "IP": "157.49.27.143",
           "date": "22 Aug, 2026; 01:05 PM",
-          "timestamp": 1787384100.0,
+          "timestamp": 1787403900.0,
           "productId": "6a3eb294291f3d0013c2131b"
         }
       ],
       "latestSelfTxnDate": "22 Aug, 2026; 03:48 PM",
-      "latestSelfTxnTimestamp": 1787393880.0,
+      "latestSelfTxnTimestamp": 1787413680.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -4316,7 +4313,7 @@
           "buyerPhone": "9307787772",
           "IP": "106.213.80.91",
           "date": "21 Aug, 2026; 11:07 AM",
-          "timestamp": 1787290620.0,
+          "timestamp": 1787310420.0,
           "productId": "6a69fea78d035c0013ce537c"
         }
       ],
@@ -4363,7 +4360,7 @@
           "buyerPhone": "8526547982",
           "IP": "110.224.167.176",
           "date": "21 Aug, 2026; 03:54 PM",
-          "timestamp": 1787307840.0,
+          "timestamp": 1787327640.0,
           "productId": "6a8824713caf61001354c9f8"
         },
         {
@@ -4372,7 +4369,7 @@
           "buyerPhone": "8526547982",
           "IP": "152.58.56.62",
           "date": "01 Aug, 2026; 12:27 PM",
-          "timestamp": 1785567420.0,
+          "timestamp": 1785587220.0,
           "productId": "6a6d9740c508400013fc21eb"
         }
       ],
@@ -4419,12 +4416,12 @@
           "buyerPhone": "7982876780",
           "IP": "106.219.165.85",
           "date": "21 Aug, 2026; 12:26 PM",
-          "timestamp": 1787295360.0,
+          "timestamp": 1787315160.0,
           "productId": "6a87f64c38a7f70013ec8692"
         }
       ],
       "latestSelfTxnDate": "21 Aug, 2026; 12:26 PM",
-      "latestSelfTxnTimestamp": 1787295360.0,
+      "latestSelfTxnTimestamp": 1787315160.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -4466,12 +4463,12 @@
           "buyerPhone": "8875164646",
           "IP": "223.188.52.32",
           "date": "20 Aug, 2026; 10:00 AM",
-          "timestamp": 1787200200.0,
+          "timestamp": 1787220000.0,
           "productId": "66ac77c16b5e9d00121364f1"
         }
       ],
       "latestSelfTxnDate": "20 Aug, 2026; 10:00 AM",
-      "latestSelfTxnTimestamp": 1787200200.0,
+      "latestSelfTxnTimestamp": 1787220000.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -4483,17 +4480,15 @@
       "noLinkReason": "",
       "error": "",
       "telegramEligible": true,
-      "telegramIntegration": true,
-      "telegramProductId": "66ac77c16b5e9d00121364f1",
-      "telegramProductLink": "https://superprofile.bio/vig/66ac77c16b5e9d00121364f1",
-      "telegramProductName": "ZERO TO HERO  VIP PREMIUM ",
-      "sebiMatchType": "None",
+      "telegramIntegration": false,
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Digital Product",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf8212e17cb3117c9c88",
@@ -4635,12 +4630,12 @@
           "buyerPhone": "8300820943",
           "IP": "157.51.60.74",
           "date": "19 Aug, 2026; 09:53 AM",
-          "timestamp": 1787113380.0,
+          "timestamp": 1787133180.0,
           "productId": "6a7ebdf5017f2700129ce3d1"
         }
       ],
       "latestSelfTxnDate": "19 Aug, 2026; 09:53 AM",
-      "latestSelfTxnTimestamp": 1787113380.0,
+      "latestSelfTxnTimestamp": 1787133180.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -4682,12 +4677,12 @@
           "buyerPhone": "8979851836",
           "IP": "106.205.173.64",
           "date": "19 Aug, 2026; 06:03 PM",
-          "timestamp": 1787142780.0,
+          "timestamp": 1787162580.0,
           "productId": "69f31e244a8bd20013cf0255"
         }
       ],
       "latestSelfTxnDate": "19 Aug, 2026; 06:03 PM",
-      "latestSelfTxnTimestamp": 1787142780.0,
+      "latestSelfTxnTimestamp": 1787162580.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -4729,12 +4724,12 @@
           "buyerPhone": "7781094267",
           "IP": "103.27.51.182",
           "date": "19 Aug, 2026; 04:30 PM",
-          "timestamp": 1787137200.0,
+          "timestamp": 1787157000.0,
           "productId": "699033f15806b70013556c5c"
         }
       ],
       "latestSelfTxnDate": "19 Aug, 2026; 04:30 PM",
-      "latestSelfTxnTimestamp": 1787137200.0,
+      "latestSelfTxnTimestamp": 1787157000.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -4779,7 +4774,7 @@
           "buyerPhone": "7974705171",
           "IP": "152.56.167.83",
           "date": "19 Aug, 2026; 12:06 PM",
-          "timestamp": 1787121360.0,
+          "timestamp": 1787141160.0,
           "productId": "6a848b71233e4700138126bc"
         }
       ],
@@ -4826,7 +4821,7 @@
           "buyerPhone": "9311493433",
           "IP": "103.157.10.72",
           "date": "18 Aug, 2026; 12:54 PM",
-          "timestamp": 1787037840.0,
+          "timestamp": 1787057640.0,
           "productId": "6a840708fb1cde0013f03652"
         }
       ],
@@ -4876,7 +4871,7 @@
           "buyerPhone": "8085654423",
           "IP": "106.214.3.198",
           "date": "18 Aug, 2026; 09:06 PM",
-          "timestamp": 1787067360.0,
+          "timestamp": 1787087160.0,
           "productId": "64a1443dc58fcc00206d0fca"
         },
         {
@@ -4885,7 +4880,7 @@
           "buyerPhone": "8085654423",
           "IP": "106.76.94.12",
           "date": "16 Aug, 2026; 01:00 AM",
-          "timestamp": 1786822200.0,
+          "timestamp": 1786842000.0,
           "productId": "64a1443dc58fcc00206d0fca"
         },
         {
@@ -4894,7 +4889,7 @@
           "buyerPhone": "8085654423",
           "IP": "157.34.104.108",
           "date": "16 Jul, 2023; 10:28 PM",
-          "timestamp": 1689526680.0,
+          "timestamp": 1689546480.0,
           "productId": "64a1443dc58fcc00206d0fca"
         }
       ],
@@ -4941,12 +4936,12 @@
           "buyerPhone": "7626002965",
           "IP": "223.178.209.196",
           "date": "18 Aug, 2026; 05:24 PM",
-          "timestamp": 1787054040.0,
+          "timestamp": 1787073840.0,
           "productId": "6a8319fcc852ad0013e578c6"
         }
       ],
       "latestSelfTxnDate": "18 Aug, 2026; 05:24 PM",
-      "latestSelfTxnTimestamp": 1787054040.0,
+      "latestSelfTxnTimestamp": 1787073840.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -5091,7 +5086,7 @@
           "buyerPhone": "9116087897",
           "IP": "223.184.247.21",
           "date": "18 Aug, 2026; 11:54 AM",
-          "timestamp": 1787034240.0,
+          "timestamp": 1787054040.0,
           "productId": "6a7d364eb62576001374f10c"
         },
         {
@@ -5100,12 +5095,12 @@
           "buyerPhone": "9116087897",
           "IP": "117.201.112.208",
           "date": "01 Aug, 2026; 03:44 PM",
-          "timestamp": 1785579240.0,
+          "timestamp": 1785599040.0,
           "productId": "6a6dc2fe33211a0013219fdc"
         }
       ],
       "latestSelfTxnDate": "18 Aug, 2026; 11:54 AM",
-      "latestSelfTxnTimestamp": 1787034240.0,
+      "latestSelfTxnTimestamp": 1787054040.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -5259,12 +5254,12 @@
           "buyerPhone": "9749373608",
           "IP": "223.185.35.206",
           "date": "17 Aug, 2026; 05:41 PM",
-          "timestamp": 1786968660.0,
+          "timestamp": 1786988460.0,
           "productId": "6a63ad00146c040014de6deb"
         }
       ],
       "latestSelfTxnDate": "17 Aug, 2026; 05:41 PM",
-      "latestSelfTxnTimestamp": 1786968660.0,
+      "latestSelfTxnTimestamp": 1786988460.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -5309,7 +5304,7 @@
           "buyerPhone": "9564646566",
           "IP": "106.205.160.158",
           "date": "17 Aug, 2026; 09:24 PM",
-          "timestamp": 1786982040.0,
+          "timestamp": 1787001840.0,
           "productId": "6a520284c5ea330013b42928"
         },
         {
@@ -5318,12 +5313,12 @@
           "buyerPhone": "9564646566",
           "IP": "106.205.166.239",
           "date": "10 Aug, 2026; 10:10 PM",
-          "timestamp": 1786380000.0,
+          "timestamp": 1786399800.0,
           "productId": "6a520284c5ea330013b42928"
         }
       ],
       "latestSelfTxnDate": "17 Aug, 2026; 09:24 PM",
-      "latestSelfTxnTimestamp": 1786982040.0,
+      "latestSelfTxnTimestamp": 1787001840.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -5365,7 +5360,7 @@
           "buyerPhone": "7207543675",
           "IP": "122.177.243.201",
           "date": "17 Aug, 2026; 03:24 PM",
-          "timestamp": 1786960440.0,
+          "timestamp": 1786980240.0,
           "productId": "6a82c9787b63ce001360f16e"
         },
         {
@@ -5374,7 +5369,7 @@
           "buyerPhone": "7207543675",
           "IP": "122.177.243.201",
           "date": "17 Aug, 2026; 02:24 PM",
-          "timestamp": 1786956840.0,
+          "timestamp": 1786976640.0,
           "productId": "6a82c9787b63ce001360f16e"
         }
       ],
@@ -5421,7 +5416,7 @@
           "buyerPhone": "9023286530",
           "IP": "152.59.52.149",
           "date": "17 Aug, 2026; 12:26 AM",
-          "timestamp": 1786906560.0,
+          "timestamp": 1786926360.0,
           "productId": "6a81f3614329a100130de7a9"
         }
       ],
@@ -5468,7 +5463,7 @@
           "buyerPhone": "7010926835",
           "IP": "122.164.83.97",
           "date": "17 Aug, 2026; 07:08 AM",
-          "timestamp": 1786930680.0,
+          "timestamp": 1786950480.0,
           "productId": "6a81ca41d001ed0013bdb336"
         },
         {
@@ -5477,7 +5472,7 @@
           "buyerPhone": "7010926835",
           "IP": "122.164.81.41",
           "date": "09 Aug, 2026; 06:43 PM",
-          "timestamp": 1786281180.0,
+          "timestamp": 1786300980.0,
           "productId": "6a70bc886747280013affc3b"
         },
         {
@@ -5486,7 +5481,7 @@
           "buyerPhone": "7010926835",
           "IP": "122.164.81.41",
           "date": "09 Aug, 2026; 06:33 PM",
-          "timestamp": 1786280580.0,
+          "timestamp": 1786300380.0,
           "productId": "6a70bc886747280013affc3b"
         }
       ],
@@ -5796,12 +5791,12 @@
           "buyerPhone": "8278879075",
           "IP": "223.181.16.105",
           "date": "16 Aug, 2026; 01:16 PM",
-          "timestamp": 1786866360.0,
+          "timestamp": 1786886160.0,
           "productId": "6a7cc9acb62576001368611d"
         }
       ],
       "latestSelfTxnDate": "16 Aug, 2026; 01:16 PM",
-      "latestSelfTxnTimestamp": 1786866360.0,
+      "latestSelfTxnTimestamp": 1786886160.0,
       "buyersChecked": 59,
       "productTitles": [],
       "productsCount": 0,
@@ -5890,12 +5885,12 @@
           "buyerPhone": "8489891737",
           "IP": "59.182.164.70",
           "date": "15 Aug, 2026; 05:27 PM",
-          "timestamp": 1786795020.0,
+          "timestamp": 1786814820.0,
           "productId": "6a6c50233e84300013a174b9"
         }
       ],
       "latestSelfTxnDate": "15 Aug, 2026; 05:27 PM",
-      "latestSelfTxnTimestamp": 1786795020.0,
+      "latestSelfTxnTimestamp": 1786814820.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -5940,7 +5935,7 @@
           "buyerPhone": "8209917460",
           "IP": "49.43.182.118",
           "date": "15 Aug, 2026; 06:08 PM",
-          "timestamp": 1786797480.0,
+          "timestamp": 1786817280.0,
           "productId": "6a743fbd7eaa3900137cdd84"
         }
       ],
@@ -6297,12 +6292,12 @@
           "buyerPhone": "8171722107",
           "IP": "157.49.122.255",
           "date": "13 Aug, 2026; 09:56 PM",
-          "timestamp": 1786638360.0,
+          "timestamp": 1786658160.0,
           "productId": "6a7de62ada748700143d1f71"
         }
       ],
       "latestSelfTxnDate": "13 Aug, 2026; 09:56 PM",
-      "latestSelfTxnTimestamp": 1786638360.0,
+      "latestSelfTxnTimestamp": 1786658160.0,
       "buyersChecked": 44,
       "productTitles": [],
       "productsCount": 0,
@@ -6409,12 +6404,12 @@
           "buyerPhone": "9512668978",
           "IP": "152.58.63.87",
           "date": "13 Aug, 2026; 03:40 PM",
-          "timestamp": 1786615800.0,
+          "timestamp": 1786635600.0,
           "productId": "68c4292b4dfd86001330bacf"
         }
       ],
       "latestSelfTxnDate": "13 Aug, 2026; 03:40 PM",
-      "latestSelfTxnTimestamp": 1786615800.0,
+      "latestSelfTxnTimestamp": 1786635600.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -6456,12 +6451,12 @@
           "buyerPhone": "8930251352",
           "IP": "223.181.24.223",
           "date": "12 Aug, 2026; 11:04 AM",
-          "timestamp": 1786512840.0,
+          "timestamp": 1786532640.0,
           "productId": "67cca8d1f926d70013719c30"
         }
       ],
       "latestSelfTxnDate": "12 Aug, 2026; 11:04 AM",
-      "latestSelfTxnTimestamp": 1786512840.0,
+      "latestSelfTxnTimestamp": 1786532640.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -6473,17 +6468,15 @@
       "noLinkReason": "",
       "error": "",
       "telegramEligible": true,
-      "telegramIntegration": true,
-      "telegramProductId": "679dfd77c7375300134bb498",
-      "telegramProductLink": "https://superprofile.bio/vig/679dfd77c7375300134bb498",
-      "telegramProductName": "UM Private Community",
-      "sebiMatchType": "None",
+      "telegramIntegration": false,
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Digital Product",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cfad12e17cb3117ccbf1",
@@ -6508,7 +6501,7 @@
           "buyerPhone": "7007737114",
           "IP": "172.225.201.8",
           "date": "12 Aug, 2026; 04:44 PM",
-          "timestamp": 1786533240.0,
+          "timestamp": 1786553040.0,
           "productId": "6a79adad44ab530013fc0471"
         },
         {
@@ -6517,12 +6510,12 @@
           "buyerPhone": "7007737114",
           "IP": "139.180.214.150",
           "date": "10 Aug, 2026; 06:03 PM",
-          "timestamp": 1786365180.0,
+          "timestamp": 1786384980.0,
           "productId": "6a79adad44ab530013fc0471"
         }
       ],
       "latestSelfTxnDate": "12 Aug, 2026; 04:44 PM",
-      "latestSelfTxnTimestamp": 1786533240.0,
+      "latestSelfTxnTimestamp": 1786553040.0,
       "buyersChecked": 17,
       "productTitles": [],
       "productsCount": 0,
@@ -6672,7 +6665,7 @@
           "buyerPhone": "9609957204",
           "IP": "114.29.225.212",
           "date": "11 Aug, 2026; 03:38 AM",
-          "timestamp": 1786399680.0,
+          "timestamp": 1786419480.0,
           "productId": "6777b3bc9b2802001318cade"
         },
         {
@@ -6681,7 +6674,7 @@
           "buyerPhone": "9609957204",
           "IP": "43.251.179.214",
           "date": "30 May, 2025; 11:25 AM",
-          "timestamp": 1748584500.0,
+          "timestamp": 1748604300.0,
           "productId": "683939f75e4895001356f519"
         },
         {
@@ -6690,7 +6683,7 @@
           "buyerPhone": "9609957204",
           "IP": "43.251.179.214",
           "date": "04 Jan, 2025; 08:31 PM",
-          "timestamp": 1736002860.0,
+          "timestamp": 1736022660.0,
           "productId": "6777b3bc9b2802001318cade"
         },
         {
@@ -6699,7 +6692,7 @@
           "buyerPhone": "9609957204",
           "IP": "43.251.179.214",
           "date": "04 Jan, 2025; 03:11 PM",
-          "timestamp": 1735983660.0,
+          "timestamp": 1736003460.0,
           "productId": "6777b3bc9b2802001318cade"
         },
         {
@@ -6708,7 +6701,7 @@
           "buyerPhone": "9609957204",
           "IP": "43.251.179.192",
           "date": "26 Jan, 2024; 09:11 AM",
-          "timestamp": 1706240460.0,
+          "timestamp": 1706260260.0,
           "productId": "65b286496f098d001e349e76"
         },
         {
@@ -6717,7 +6710,7 @@
           "buyerPhone": "9609957204",
           "IP": "43.251.179.167",
           "date": "21 Jan, 2024; 12:39 PM",
-          "timestamp": 1705820940.0,
+          "timestamp": 1705840740.0,
           "productId": "65acaebe4009dd001db71e50"
         },
         {
@@ -6726,12 +6719,12 @@
           "buyerPhone": "9609957204",
           "IP": "43.251.179.192",
           "date": "21 Jan, 2024; 12:32 PM",
-          "timestamp": 1705820520.0,
+          "timestamp": 1705840320.0,
           "productId": "65acaebe4009dd001db71e50"
         }
       ],
       "latestSelfTxnDate": "11 Aug, 2026; 03:38 AM",
-      "latestSelfTxnTimestamp": 1786399680.0,
+      "latestSelfTxnTimestamp": 1786419480.0,
       "buyersChecked": 36,
       "productTitles": [],
       "productsCount": 0,
@@ -6773,7 +6766,7 @@
           "buyerPhone": "8789603462",
           "IP": "152.58.17.173",
           "date": "11 Aug, 2026; 08:14 PM",
-          "timestamp": 1786459440.0,
+          "timestamp": 1786479240.0,
           "productId": "6a7b2ea7b038ca00138024bc"
         },
         {
@@ -6782,7 +6775,7 @@
           "buyerPhone": "8789603462",
           "IP": "152.58.17.173",
           "date": "11 Aug, 2026; 06:21 PM",
-          "timestamp": 1786452660.0,
+          "timestamp": 1786472460.0,
           "productId": "6a02b58ad9ec6e0013a9d2ed"
         },
         {
@@ -6791,7 +6784,7 @@
           "buyerPhone": "8789603462",
           "IP": "152.58.17.173",
           "date": "11 Aug, 2026; 06:10 PM",
-          "timestamp": 1786452000.0,
+          "timestamp": 1786471800.0,
           "productId": "6a02b58ad9ec6e0013a9d2ed"
         }
       ],
@@ -6809,9 +6802,9 @@
       "error": "",
       "telegramEligible": true,
       "telegramIntegration": true,
-      "telegramProductId": "6950fc032eb2dc0013b1c99c",
-      "telegramProductLink": "https://superprofile.bio/vig/6950fc032eb2dc0013b1c99c",
-      "telegramProductName": "SEBI RA Apurva Annavi | Stock Advisory",
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Telegram Channel / Group",
       "sebiMatchType": "Primary Creator ID",
       "sebiRegisteredYes": "Yes",
       "sebiRegisteredNo": "\u2014",
@@ -6842,7 +6835,7 @@
           "buyerPhone": "7302732213",
           "IP": "58.84.62.173",
           "date": "11 Aug, 2026; 04:11 PM",
-          "timestamp": 1786444860.0,
+          "timestamp": 1786464660.0,
           "productId": "6a7af8b6542b2500145eeb2d"
         }
       ],
@@ -6889,7 +6882,7 @@
           "buyerPhone": "9330880144",
           "IP": "103.240.97.151",
           "date": "11 Aug, 2026; 01:41 AM",
-          "timestamp": 1786392660.0,
+          "timestamp": 1786412460.0,
           "productId": "6a7a2043a4f757001379f2b6"
         },
         {
@@ -6898,7 +6891,7 @@
           "buyerPhone": "9330880144",
           "IP": "103.240.97.173",
           "date": "04 Jun, 2026; 01:34 PM",
-          "timestamp": 1780560240.0,
+          "timestamp": 1780580040.0,
           "productId": "69f51753a8c2c600133cc6c2"
         },
         {
@@ -6907,7 +6900,7 @@
           "buyerPhone": "9330880144",
           "IP": "103.240.97.173",
           "date": "03 Jun, 2026; 05:20 PM",
-          "timestamp": 1780487400.0,
+          "timestamp": 1780507200.0,
           "productId": "69f51753a8c2c600133cc6c2"
         },
         {
@@ -6916,7 +6909,7 @@
           "buyerPhone": "9330880144",
           "IP": "103.240.97.173",
           "date": "03 Jun, 2026; 05:10 PM",
-          "timestamp": 1780486800.0,
+          "timestamp": 1780506600.0,
           "productId": "69f51753a8c2c600133cc6c2"
         },
         {
@@ -6925,7 +6918,7 @@
           "buyerPhone": "9330880144",
           "IP": "115.187.53.104",
           "date": "07 May, 2026; 11:29 PM",
-          "timestamp": 1778176740.0,
+          "timestamp": 1778196540.0,
           "productId": "69f51753a8c2c600133cc6c2"
         }
       ],
@@ -6972,7 +6965,7 @@
           "buyerPhone": "9988672976",
           "IP": "82.153.10.121",
           "date": "10 Aug, 2026; 07:44 PM",
-          "timestamp": 1786371240.0,
+          "timestamp": 1786391040.0,
           "productId": "64306ae4974eca0021f3f96e"
         },
         {
@@ -6981,12 +6974,12 @@
           "buyerPhone": "9988672976",
           "IP": "31.6.33.148",
           "date": "06 Apr, 2024; 05:44 PM",
-          "timestamp": 1712405640.0,
+          "timestamp": 1712425440.0,
           "productId": "64306ae4974eca0021f3f96e"
         }
       ],
       "latestSelfTxnDate": "10 Aug, 2026; 07:44 PM",
-      "latestSelfTxnTimestamp": 1786371240.0,
+      "latestSelfTxnTimestamp": 1786391040.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -7031,7 +7024,7 @@
           "buyerPhone": "9649172463",
           "IP": "106.219.68.125",
           "date": "09 Aug, 2026; 06:16 PM",
-          "timestamp": 1786279560.0,
+          "timestamp": 1786299360.0,
           "productId": "6a69a7f6a6cf3f00136e0f4b"
         }
       ],
@@ -7081,12 +7074,12 @@
           "buyerPhone": "7219815278",
           "IP": "106.192.130.111",
           "date": "09 Aug, 2026; 09:53 AM",
-          "timestamp": 1786249380.0,
+          "timestamp": 1786269180.0,
           "productId": "68f5163c7b5673001370a866"
         }
       ],
       "latestSelfTxnDate": "09 Aug, 2026; 09:53 AM",
-      "latestSelfTxnTimestamp": 1786249380.0,
+      "latestSelfTxnTimestamp": 1786269180.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -7747,12 +7740,12 @@
           "buyerPhone": "9567617784",
           "IP": "43.229.91.215",
           "date": "08 Aug, 2026; 12:48 PM",
-          "timestamp": 1786173480.0,
+          "timestamp": 1786193280.0,
           "productId": "682462cee507a500137e470d"
         }
       ],
       "latestSelfTxnDate": "08 Aug, 2026; 12:48 PM",
-      "latestSelfTxnTimestamp": 1786173480.0,
+      "latestSelfTxnTimestamp": 1786193280.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -7797,7 +7790,7 @@
           "buyerPhone": "8750916925",
           "IP": "103.50.150.211",
           "date": "08 Aug, 2026; 08:42 AM",
-          "timestamp": 1786158720.0,
+          "timestamp": 1786178520.0,
           "productId": "6a740284e855fc00137285b2"
         },
         {
@@ -7806,12 +7799,12 @@
           "buyerPhone": "8750916925",
           "IP": "103.50.150.198",
           "date": "06 Aug, 2026; 08:45 PM",
-          "timestamp": 1786029300.0,
+          "timestamp": 1786049100.0,
           "productId": "6a72be6299878a0013243199"
         }
       ],
       "latestSelfTxnDate": "08 Aug, 2026; 08:42 AM",
-      "latestSelfTxnTimestamp": 1786158720.0,
+      "latestSelfTxnTimestamp": 1786178520.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -7900,7 +7893,7 @@
           "buyerPhone": "7696439690",
           "IP": "112.79.17.1",
           "date": "07 Aug, 2026; 09:39 PM",
-          "timestamp": 1786118940.0,
+          "timestamp": 1786138740.0,
           "productId": "6a6e0d296e42b800130365c5"
         },
         {
@@ -7909,7 +7902,7 @@
           "buyerPhone": "7696439690",
           "IP": "114.31.136.116",
           "date": "03 Aug, 2026; 01:25 PM",
-          "timestamp": 1785743700.0,
+          "timestamp": 1785763500.0,
           "productId": "6a7048979e13ea0013a3f51e"
         },
         {
@@ -7918,7 +7911,7 @@
           "buyerPhone": "7696439690",
           "IP": "49.156.99.38",
           "date": "14 Mar, 2024; 09:13 AM",
-          "timestamp": 1710387780.0,
+          "timestamp": 1710407580.0,
           "productId": "65f151f585ebcb0019d0b3b6"
         }
       ],
@@ -7965,7 +7958,7 @@
           "buyerPhone": "9343949080",
           "IP": "106.192.232.140",
           "date": "07 Aug, 2026; 05:47 PM",
-          "timestamp": 1786105020.0,
+          "timestamp": 1786124820.0,
           "productId": "6a75c265ec92e40013e9f82e"
         },
         {
@@ -7974,12 +7967,12 @@
           "buyerPhone": "9343949080",
           "IP": "106.192.232.140",
           "date": "07 Aug, 2026; 05:44 PM",
-          "timestamp": 1786104840.0,
+          "timestamp": 1786124640.0,
           "productId": "6a75c265ec92e40013e9f82e"
         }
       ],
       "latestSelfTxnDate": "07 Aug, 2026; 05:47 PM",
-      "latestSelfTxnTimestamp": 1786105020.0,
+      "latestSelfTxnTimestamp": 1786124820.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -7991,17 +7984,15 @@
       "noLinkReason": "",
       "error": "",
       "telegramEligible": true,
-      "telegramIntegration": true,
-      "telegramProductId": "68da766ae5d1d00013cfb6d7",
-      "telegramProductLink": "https://superprofile.bio/vig/68da766ae5d1d00013cfb6d7",
-      "telegramProductName": "PRO TRADES ",
-      "sebiMatchType": "None",
+      "telegramIntegration": false,
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Digital Product",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cfab12e17cb3117cc9a8",
@@ -8026,7 +8017,7 @@
           "buyerPhone": "9313588198",
           "IP": "152.59.1.164",
           "date": "06 Aug, 2026; 09:01 PM",
-          "timestamp": 1786030260.0,
+          "timestamp": 1786050060.0,
           "productId": "6a7434bfe855fc00137cffdf"
         }
       ],
@@ -8170,7 +8161,7 @@
           "buyerPhone": "6367981452",
           "IP": "157.48.80.11",
           "date": "05 Aug, 2026; 04:47 PM",
-          "timestamp": 1785928620.0,
+          "timestamp": 1785948420.0,
           "productId": "6a6c5bac5aada6001367e0ed"
         }
       ],
@@ -8217,7 +8208,7 @@
           "buyerPhone": "7994348616",
           "IP": "223.188.115.41",
           "date": "04 Aug, 2026; 09:02 PM",
-          "timestamp": 1785857520.0,
+          "timestamp": 1785877320.0,
           "productId": "6a6a0b668d035c0013d0a2a7"
         },
         {
@@ -8226,7 +8217,7 @@
           "buyerPhone": "7994348616",
           "IP": "223.188.102.15",
           "date": "02 Aug, 2026; 08:42 AM",
-          "timestamp": 1785640320.0,
+          "timestamp": 1785660120.0,
           "productId": "6a6a0b668d035c0013d0a2a7"
         }
       ],
@@ -8273,7 +8264,7 @@
           "buyerPhone": "9717444623",
           "IP": "122.161.67.182",
           "date": "03 Aug, 2026; 05:44 PM",
-          "timestamp": 1785759240.0,
+          "timestamp": 1785779040.0,
           "productId": "6a707520f01d7b00142042d5"
         },
         {
@@ -8282,12 +8273,12 @@
           "buyerPhone": "9717444623",
           "IP": "122.161.68.217",
           "date": "03 Oct, 2024; 04:32 PM",
-          "timestamp": 1727953320.0,
+          "timestamp": 1727973120.0,
           "productId": "66fa91452a3657001372a8ad"
         }
       ],
       "latestSelfTxnDate": "03 Aug, 2026; 05:44 PM",
-      "latestSelfTxnTimestamp": 1785759240.0,
+      "latestSelfTxnTimestamp": 1785779040.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -8385,7 +8376,7 @@
           "buyerPhone": "9717444623",
           "IP": "122.161.67.182",
           "date": "03 Aug, 2026; 05:44 PM",
-          "timestamp": 1785759240.0,
+          "timestamp": 1785779040.0,
           "productId": "6a707520f01d7b00142042d5"
         },
         {
@@ -8394,12 +8385,12 @@
           "buyerPhone": "9717444623",
           "IP": "122.161.68.217",
           "date": "03 Oct, 2024; 04:32 PM",
-          "timestamp": 1727953320.0,
+          "timestamp": 1727973120.0,
           "productId": "66fa91452a3657001372a8ad"
         }
       ],
       "latestSelfTxnDate": "03 Aug, 2026; 05:44 PM",
-      "latestSelfTxnTimestamp": 1785759240.0,
+      "latestSelfTxnTimestamp": 1785779040.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -8441,7 +8432,7 @@
           "buyerPhone": "9717444623",
           "IP": "122.161.67.182",
           "date": "03 Aug, 2026; 05:44 PM",
-          "timestamp": 1785759240.0,
+          "timestamp": 1785779040.0,
           "productId": "6a707520f01d7b00142042d5"
         },
         {
@@ -8450,12 +8441,12 @@
           "buyerPhone": "9717444623",
           "IP": "122.161.68.217",
           "date": "03 Oct, 2024; 04:32 PM",
-          "timestamp": 1727953320.0,
+          "timestamp": 1727973120.0,
           "productId": "66fa91452a3657001372a8ad"
         }
       ],
       "latestSelfTxnDate": "03 Aug, 2026; 05:44 PM",
-      "latestSelfTxnTimestamp": 1785759240.0,
+      "latestSelfTxnTimestamp": 1785779040.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -8497,7 +8488,7 @@
           "buyerPhone": "9717444623",
           "IP": "122.161.67.182",
           "date": "03 Aug, 2026; 05:44 PM",
-          "timestamp": 1785759240.0,
+          "timestamp": 1785779040.0,
           "productId": "6a707520f01d7b00142042d5"
         },
         {
@@ -8506,12 +8497,12 @@
           "buyerPhone": "9717444623",
           "IP": "122.161.68.217",
           "date": "03 Oct, 2024; 04:32 PM",
-          "timestamp": 1727953320.0,
+          "timestamp": 1727973120.0,
           "productId": "66fa91452a3657001372a8ad"
         }
       ],
       "latestSelfTxnDate": "03 Aug, 2026; 05:44 PM",
-      "latestSelfTxnTimestamp": 1785759240.0,
+      "latestSelfTxnTimestamp": 1785779040.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -8553,7 +8544,7 @@
           "buyerPhone": "9717444623",
           "IP": "122.161.67.182",
           "date": "03 Aug, 2026; 05:44 PM",
-          "timestamp": 1785759240.0,
+          "timestamp": 1785779040.0,
           "productId": "6a707520f01d7b00142042d5"
         },
         {
@@ -8562,12 +8553,12 @@
           "buyerPhone": "9717444623",
           "IP": "122.161.68.217",
           "date": "03 Oct, 2024; 04:32 PM",
-          "timestamp": 1727953320.0,
+          "timestamp": 1727973120.0,
           "productId": "66fa91452a3657001372a8ad"
         }
       ],
       "latestSelfTxnDate": "03 Aug, 2026; 05:44 PM",
-      "latestSelfTxnTimestamp": 1785759240.0,
+      "latestSelfTxnTimestamp": 1785779040.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -8665,7 +8656,7 @@
           "buyerPhone": "9898978759",
           "IP": "47.15.110.123",
           "date": "03 Aug, 2026; 06:08 AM",
-          "timestamp": 1785717480.0,
+          "timestamp": 1785737280.0,
           "productId": "6a6fe2a29e13ea001390efdb"
         }
       ],
@@ -8809,7 +8800,7 @@
           "buyerPhone": "9894533184",
           "IP": "152.57.197.181",
           "date": "30 Jul, 2026; 08:31 AM",
-          "timestamp": 1785380460.0,
+          "timestamp": 1785400260.0,
           "productId": "6a67927c20c64a0013584dcf"
         },
         {
@@ -8818,12 +8809,12 @@
           "buyerPhone": "9894533184",
           "IP": "157.51.102.201",
           "date": "10 Apr, 2026; 11:17 PM",
-          "timestamp": 1775843220.0,
+          "timestamp": 1775863020.0,
           "productId": "69d934965273140013d0f9ca"
         }
       ],
       "latestSelfTxnDate": "30 Jul, 2026; 08:31 AM",
-      "latestSelfTxnTimestamp": 1785380460.0,
+      "latestSelfTxnTimestamp": 1785400260.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -9441,12 +9432,12 @@
           "buyerPhone": "8001154789",
           "IP": "27.60.190.236",
           "date": "28 Jul, 2026; 09:48 AM",
-          "timestamp": 1785212280.0,
+          "timestamp": 1785232080.0,
           "productId": "6a66ed5a8d035c00134d4794"
         }
       ],
       "latestSelfTxnDate": "28 Jul, 2026; 09:48 AM",
-      "latestSelfTxnTimestamp": 1785212280.0,
+      "latestSelfTxnTimestamp": 1785232080.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -9488,7 +9479,7 @@
           "buyerPhone": "6283606441",
           "IP": "152.58.79.23",
           "date": "27 Jul, 2026; 09:02 AM",
-          "timestamp": 1785123120.0,
+          "timestamp": 1785142920.0,
           "productId": "6a6188dfc079340013e05290"
         }
       ],
@@ -9535,12 +9526,12 @@
           "buyerPhone": "8446865866",
           "IP": "152.59.57.94",
           "date": "26 Jul, 2026; 10:49 AM",
-          "timestamp": 1785043140.0,
+          "timestamp": 1785062940.0,
           "productId": "6a58249222d9b50013a45019"
         }
       ],
       "latestSelfTxnDate": "26 Jul, 2026; 10:49 AM",
-      "latestSelfTxnTimestamp": 1785043140.0,
+      "latestSelfTxnTimestamp": 1785062940.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -9552,17 +9543,15 @@
       "noLinkReason": "",
       "error": "",
       "telegramEligible": true,
-      "telegramIntegration": true,
-      "telegramProductId": "6a58249222d9b50013a45019",
-      "telegramProductLink": "https://superprofile.bio/vig/6a58249222d9b50013a45019",
-      "telegramProductName": "Millionaire Algo - INDICATORS",
-      "sebiMatchType": "None",
+      "telegramIntegration": false,
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Digital Product",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf9c12e17cb3117cbac0",
@@ -9587,7 +9576,7 @@
           "buyerPhone": "9962739159",
           "IP": "122.171.22.213",
           "date": "24 Jul, 2026; 03:33 PM",
-          "timestamp": 1784887380.0,
+          "timestamp": 1784907180.0,
           "productId": "6a58ded9a9efdc0012e4e3c5"
         }
       ],
@@ -9731,7 +9720,7 @@
           "buyerPhone": "9146418611",
           "IP": "202.141.51.153",
           "date": "23 Jul, 2026; 04:25 PM",
-          "timestamp": 1784804100.0,
+          "timestamp": 1784823900.0,
           "productId": "6a61e4a5b29cff00130d8cc3"
         }
       ],
@@ -9889,7 +9878,7 @@
           "buyerPhone": "7771009006",
           "IP": "106.222.218.230",
           "date": "20 Jul, 2026; 09:04 AM",
-          "timestamp": 1784518440.0,
+          "timestamp": 1784538240.0,
           "productId": "6a507692fa41ca0014f1bef5"
         },
         {
@@ -9898,7 +9887,7 @@
           "buyerPhone": "7771009006",
           "IP": "152.58.59.42",
           "date": "14 Nov, 2024; 04:00 PM",
-          "timestamp": 1731580200.0,
+          "timestamp": 1731600000.0,
           "productId": "67359f6c9e586e0013768de7"
         },
         {
@@ -9907,7 +9896,7 @@
           "buyerPhone": "7771009006",
           "IP": "117.212.137.220",
           "date": "14 Nov, 2024; 03:36 PM",
-          "timestamp": 1731578760.0,
+          "timestamp": 1731598560.0,
           "productId": "67359f6c9e586e0013768de7"
         },
         {
@@ -9916,7 +9905,7 @@
           "buyerPhone": "7771009006",
           "IP": "117.212.137.220",
           "date": "14 Nov, 2024; 03:34 PM",
-          "timestamp": 1731578640.0,
+          "timestamp": 1731598440.0,
           "productId": "67359f6c9e586e0013768de7"
         },
         {
@@ -9925,7 +9914,7 @@
           "buyerPhone": "7771009006",
           "IP": "117.212.137.220",
           "date": "14 Nov, 2024; 03:31 PM",
-          "timestamp": 1731578460.0,
+          "timestamp": 1731598260.0,
           "productId": "67359f6c9e586e0013768de7"
         },
         {
@@ -9934,7 +9923,7 @@
           "buyerPhone": "7771009006",
           "IP": "152.58.59.42",
           "date": "14 Nov, 2024; 03:21 PM",
-          "timestamp": 1731577860.0,
+          "timestamp": 1731597660.0,
           "productId": "67359f6c9e586e0013768de7"
         },
         {
@@ -9943,7 +9932,7 @@
           "buyerPhone": "7771009006",
           "IP": "152.58.59.42",
           "date": "14 Nov, 2024; 03:11 PM",
-          "timestamp": 1731577260.0,
+          "timestamp": 1731597060.0,
           "productId": "67359f6c9e586e0013768de7"
         }
       ],
@@ -10046,12 +10035,12 @@
           "buyerPhone": "8076653390",
           "IP": "203.145.57.13",
           "date": "18 Jul, 2026; 02:14 PM",
-          "timestamp": 1784364240.0,
+          "timestamp": 1784384040.0,
           "productId": "6a5b3c8af7e31a001468107d"
         }
       ],
       "latestSelfTxnDate": "18 Jul, 2026; 02:14 PM",
-      "latestSelfTxnTimestamp": 1784364240.0,
+      "latestSelfTxnTimestamp": 1784384040.0,
       "buyersChecked": 25,
       "productTitles": [],
       "productsCount": 0,
@@ -10360,12 +10349,12 @@
           "buyerPhone": "9877735582",
           "IP": "152.59.83.98",
           "date": "03 Jul, 2026; 01:08 AM",
-          "timestamp": 1783021080.0,
+          "timestamp": 1783040880.0,
           "productId": "6a1afe8d2f6f9d001310a371"
         }
       ],
       "latestSelfTxnDate": "03 Jul, 2026; 01:08 AM",
-      "latestSelfTxnTimestamp": 1783021080.0,
+      "latestSelfTxnTimestamp": 1783040880.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -10622,7 +10611,7 @@
           "buyerPhone": "7793063564",
           "IP": "49.36.179.132",
           "date": "24 Jun, 2026; 09:52 PM",
-          "timestamp": 1782318120.0,
+          "timestamp": 1782337920.0,
           "productId": "6a3bc38d319b770013ae81d8"
         }
       ],
@@ -10669,7 +10658,7 @@
           "buyerPhone": "9130888913",
           "IP": "103.187.249.156",
           "date": "17 Jun, 2026; 05:01 PM",
-          "timestamp": 1781695860.0,
+          "timestamp": 1781715660.0,
           "productId": "6a0862ddfaffd3001393842f"
         },
         {
@@ -10678,7 +10667,7 @@
           "buyerPhone": "9130888913",
           "IP": "223.185.42.154",
           "date": "06 Jun, 2026; 10:54 PM",
-          "timestamp": 1780766640.0,
+          "timestamp": 1780786440.0,
           "productId": "6a06d24840585c001247e0fe"
         }
       ],
@@ -10725,12 +10714,12 @@
           "buyerPhone": "8569923952",
           "IP": "47.15.70.253",
           "date": "16 Jun, 2026; 10:50 AM",
-          "timestamp": 1781587200.0,
+          "timestamp": 1781607000.0,
           "productId": "672e132ce7bd95001300f34c"
         }
       ],
       "latestSelfTxnDate": "16 Jun, 2026; 10:50 AM",
-      "latestSelfTxnTimestamp": 1781587200.0,
+      "latestSelfTxnTimestamp": 1781607000.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -10742,17 +10731,15 @@
       "noLinkReason": "",
       "error": "",
       "telegramEligible": true,
-      "telegramIntegration": true,
-      "telegramProductId": "67623373aad4840014b2f2e8",
-      "telegramProductLink": "https://superprofile.bio/vig/67623373aad4840014b2f2e8",
-      "telegramProductName": "Learning Swing Trade Premium",
-      "sebiMatchType": "None",
+      "telegramIntegration": false,
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Digital Product",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cfab12e17cb3117cc903",
@@ -10876,7 +10863,7 @@
           "buyerPhone": "9316693141",
           "IP": "152.58.36.136",
           "date": "06 Jun, 2026; 04:07 PM",
-          "timestamp": 1780742220.0,
+          "timestamp": 1780762020.0,
           "productId": "6a239bdbaab41000138983c5"
         },
         {
@@ -10885,7 +10872,7 @@
           "buyerPhone": "9316693141",
           "IP": "152.58.36.5",
           "date": "30 Jan, 2026; 03:36 PM",
-          "timestamp": 1769767560.0,
+          "timestamp": 1769787360.0,
           "productId": "69786236017be60013a65fc2"
         }
       ],
@@ -10902,17 +10889,15 @@
       "noLinkReason": "",
       "error": "",
       "telegramEligible": true,
-      "telegramIntegration": true,
-      "telegramProductId": "69786236017be60013a65fc2",
-      "telegramProductLink": "https://superprofile.bio/vig/69786236017be60013a65fc2",
-      "telegramProductName": "AK PRIMIYUM GROUP",
-      "sebiMatchType": "None",
+      "telegramIntegration": false,
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Digital Product",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cfb312e17cb3117cd1de",
@@ -11002,7 +10987,7 @@
           "buyerPhone": "9176299332",
           "IP": "157.48.27.2",
           "date": "26 May, 2026; 12:03 PM",
-          "timestamp": 1779777180.0,
+          "timestamp": 1779796980.0,
           "productId": "6a0ee2b4c0361800137e9085"
         },
         {
@@ -11011,7 +10996,7 @@
           "buyerPhone": "9176299332",
           "IP": "157.48.27.2",
           "date": "22 May, 2026; 02:23 PM",
-          "timestamp": 1779439980.0,
+          "timestamp": 1779459780.0,
           "productId": "6a0eed089a276600133dae43"
         },
         {
@@ -11020,7 +11005,7 @@
           "buyerPhone": "9176299332",
           "IP": "157.48.27.2",
           "date": "22 May, 2026; 02:19 PM",
-          "timestamp": 1779439740.0,
+          "timestamp": 1779459540.0,
           "productId": "6a0ee2b4c0361800137e9085"
         },
         {
@@ -11029,12 +11014,12 @@
           "buyerPhone": "9176299332",
           "IP": "157.48.20.240",
           "date": "21 May, 2026; 04:42 PM",
-          "timestamp": 1779361920.0,
+          "timestamp": 1779381720.0,
           "productId": "6a0ee2b4c0361800137e9085"
         }
       ],
       "latestSelfTxnDate": "26 May, 2026; 12:03 PM",
-      "latestSelfTxnTimestamp": 1779777180.0,
+      "latestSelfTxnTimestamp": 1779796980.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -11279,7 +11264,7 @@
           "buyerPhone": "9370412791",
           "IP": "152.59.58.179",
           "date": "08 May, 2026; 08:23 AM",
-          "timestamp": 1778208780.0,
+          "timestamp": 1778228580.0,
           "productId": "69fd42c21b03b900136ad577"
         },
         {
@@ -11288,7 +11273,7 @@
           "buyerPhone": "9370412791",
           "IP": "103.181.23.57",
           "date": "31 Jan, 2026; 09:12 PM",
-          "timestamp": 1769874120.0,
+          "timestamp": 1769893920.0,
           "productId": "697e060826330b0013dc4aa9"
         }
       ],
@@ -11382,7 +11367,7 @@
           "buyerPhone": "7082178836",
           "IP": "103.93.112.234",
           "date": "07 Apr, 2026; 01:51 PM",
-          "timestamp": 1775550060.0,
+          "timestamp": 1775569860.0,
           "productId": "69d4ba32764b2a0013c000d2"
         }
       ],
@@ -11399,17 +11384,15 @@
       "noLinkReason": "",
       "error": "",
       "telegramEligible": true,
-      "telegramIntegration": true,
-      "telegramProductId": "6a91317ef772ef00136780d2",
-      "telegramProductLink": "https://superprofile.bio/vig/6a91317ef772ef00136780d2",
-      "telegramProductName": "TARGET OCT FMGE",
-      "sebiMatchType": "None",
+      "telegramIntegration": false,
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Digital Product",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf9812e17cb3117cb5d0",
@@ -11704,7 +11687,7 @@
           "buyerPhone": "7889820615",
           "IP": "106.215.196.190",
           "date": "19 Mar, 2026; 07:32 PM",
-          "timestamp": 1773928920.0,
+          "timestamp": 1773948720.0,
           "productId": "690113b6c4ed840013f46f1e"
         },
         {
@@ -11713,7 +11696,7 @@
           "buyerPhone": "7889820615",
           "IP": "106.215.199.167",
           "date": "30 Oct, 2025; 08:19 PM",
-          "timestamp": 1761835740.0,
+          "timestamp": 1761855540.0,
           "productId": "690113b6c4ed840013f46f1e"
         },
         {
@@ -11722,12 +11705,12 @@
           "buyerPhone": "7889820615",
           "IP": "152.58.85.154",
           "date": "29 Nov, 2024; 11:53 PM",
-          "timestamp": 1732904580.0,
+          "timestamp": 1732924380.0,
           "productId": "674412324529db001310a97f"
         }
       ],
       "latestSelfTxnDate": "19 Mar, 2026; 07:32 PM",
-      "latestSelfTxnTimestamp": 1773928920.0,
+      "latestSelfTxnTimestamp": 1773948720.0,
       "buyersChecked": 84,
       "productTitles": [],
       "productsCount": 0,
@@ -11769,7 +11752,7 @@
           "buyerPhone": "9892529024",
           "IP": "223.181.61.58",
           "date": "16 Mar, 2026; 04:50 PM",
-          "timestamp": 1773660000.0,
+          "timestamp": 1773679800.0,
           "productId": "69a7dd11ce8bdc00122d5c25"
         }
       ],
@@ -11819,7 +11802,7 @@
           "buyerPhone": "8080651508",
           "IP": "27.59.100.52",
           "date": "03 Mar, 2026; 06:34 PM",
-          "timestamp": 1772543040.0,
+          "timestamp": 1772562840.0,
           "productId": "69a2b606ccc9e6001327811b"
         },
         {
@@ -11828,7 +11811,7 @@
           "buyerPhone": "8080651508",
           "IP": "27.59.100.52",
           "date": "03 Mar, 2026; 06:32 PM",
-          "timestamp": 1772542920.0,
+          "timestamp": 1772562720.0,
           "productId": "69a5948197696a0013fdc5ed"
         },
         {
@@ -11837,7 +11820,7 @@
           "buyerPhone": "8080651508",
           "IP": "117.99.241.119",
           "date": "03 Mar, 2026; 06:28 PM",
-          "timestamp": 1772542680.0,
+          "timestamp": 1772562480.0,
           "productId": "69a2b606ccc9e6001327811b"
         }
       ],
@@ -12072,7 +12055,7 @@
           "buyerPhone": "6283319706",
           "IP": "49.156.116.119",
           "date": "07 Dec, 2025; 08:39 PM",
-          "timestamp": 1765120140.0,
+          "timestamp": 1765139940.0,
           "productId": "693464959a758f0012ee0b24"
         }
       ],
@@ -12122,7 +12105,7 @@
           "buyerPhone": "9097799433",
           "IP": "157.42.223.149",
           "date": "08 Oct, 2025; 01:57 PM",
-          "timestamp": 1759912020.0,
+          "timestamp": 1759931820.0,
           "productId": "68e61a3dc61a7600130e8733"
         },
         {
@@ -12131,7 +12114,7 @@
           "buyerPhone": "9097799433",
           "IP": "157.35.55.48",
           "date": "24 Sep, 2025; 01:44 PM",
-          "timestamp": 1758701640.0,
+          "timestamp": 1758721440.0,
           "productId": "68d3a63504ea1f00136106f2"
         }
       ],
@@ -12281,7 +12264,7 @@
           "buyerPhone": "9005358477",
           "IP": "146.196.34.81",
           "date": "16 Aug, 2025; 04:31 PM",
-          "timestamp": 1755342060.0,
+          "timestamp": 1755361860.0,
           "productId": "68a060e910b4280013248806"
         }
       ],
@@ -12331,12 +12314,12 @@
           "buyerPhone": "7506732983",
           "IP": "157.119.202.146",
           "date": "15 Aug, 2025; 12:56 AM",
-          "timestamp": 1755199560.0,
+          "timestamp": 1755219360.0,
           "productId": "689e32a8aec6ca00139eaf63"
         }
       ],
       "latestSelfTxnDate": "15 Aug, 2025; 12:56 AM",
-      "latestSelfTxnTimestamp": 1755199560.0,
+      "latestSelfTxnTimestamp": 1755219360.0,
       "buyersChecked": 14,
       "productTitles": [],
       "productsCount": 0,
@@ -12425,7 +12408,7 @@
           "buyerPhone": "9155266475",
           "IP": "117.99.224.18",
           "date": "20 Jun, 2025; 11:08 PM",
-          "timestamp": 1750441080.0,
+          "timestamp": 1750460880.0,
           "productId": "6855129d4f035500135ad3a2"
         }
       ],
@@ -12696,7 +12679,7 @@
           "buyerPhone": "8252587182",
           "IP": "103.83.149.22",
           "date": "20 Nov, 2024; 01:41 PM",
-          "timestamp": 1732090260.0,
+          "timestamp": 1732110060.0,
           "productId": "66bb8bc58818de0013f7475c"
         }
       ],
@@ -12743,7 +12726,7 @@
           "buyerPhone": "5855888555",
           "IP": "49.37.162.240",
           "date": "12 Jun, 2024; 08:04 PM",
-          "timestamp": 1718202840.0,
+          "timestamp": 1718222640.0,
           "productId": "6667205f65fdc20013cee4ff"
         },
         {
@@ -12752,7 +12735,7 @@
           "buyerPhone": "5855888555",
           "IP": "49.37.162.240",
           "date": "12 Jun, 2024; 08:01 PM",
-          "timestamp": 1718202660.0,
+          "timestamp": 1718222460.0,
           "productId": "6667205f65fdc20013cee4ff"
         },
         {
@@ -12761,7 +12744,7 @@
           "buyerPhone": "5855888555",
           "IP": "49.43.241.150",
           "date": "31 Dec, 2023; 02:48 PM",
-          "timestamp": 1704014280.0,
+          "timestamp": 1704034080.0,
           "productId": "65912f7ed9349b001e3bb766"
         },
         {
@@ -12770,7 +12753,7 @@
           "buyerPhone": "5855888555",
           "IP": "49.43.241.150",
           "date": "31 Dec, 2023; 11:27 AM",
-          "timestamp": 1704002220.0,
+          "timestamp": 1704022020.0,
           "productId": "6590341c823c8b001e0d100c"
         },
         {
@@ -12779,7 +12762,7 @@
           "buyerPhone": "5855888555",
           "IP": "49.43.241.150",
           "date": "31 Dec, 2023; 11:22 AM",
-          "timestamp": 1704001920.0,
+          "timestamp": 1704021720.0,
           "productId": "6590341c823c8b001e0d100c"
         },
         {
@@ -12788,7 +12771,7 @@
           "buyerPhone": "5855888555",
           "IP": "49.43.242.5",
           "date": "30 Dec, 2023; 08:42 PM",
-          "timestamp": 1703949120.0,
+          "timestamp": 1703968920.0,
           "productId": "658fe954177387001df827bc"
         },
         {
@@ -12797,7 +12780,7 @@
           "buyerPhone": "5855888555",
           "IP": "49.43.242.5",
           "date": "30 Dec, 2023; 08:41 PM",
-          "timestamp": 1703949060.0,
+          "timestamp": 1703968860.0,
           "productId": "658fe954177387001df827bc"
         },
         {
@@ -12806,7 +12789,7 @@
           "buyerPhone": "5855888555",
           "IP": "49.43.242.5",
           "date": "30 Dec, 2023; 08:19 PM",
-          "timestamp": 1703947740.0,
+          "timestamp": 1703967540.0,
           "productId": "658fe954177387001df827bc"
         },
         {
@@ -12815,7 +12798,7 @@
           "buyerPhone": "5855888555",
           "IP": "49.43.242.5",
           "date": "30 Dec, 2023; 08:14 PM",
-          "timestamp": 1703947440.0,
+          "timestamp": 1703967240.0,
           "productId": "658fe954177387001df827bc"
         },
         {
@@ -12824,7 +12807,7 @@
           "buyerPhone": "5855888555",
           "IP": "49.43.242.5",
           "date": "30 Dec, 2023; 07:39 PM",
-          "timestamp": 1703945340.0,
+          "timestamp": 1703965140.0,
           "productId": "658fe954177387001df827bc"
         },
         {
@@ -12833,7 +12816,7 @@
           "buyerPhone": "5855888555",
           "IP": "49.43.242.5",
           "date": "30 Dec, 2023; 07:37 PM",
-          "timestamp": 1703945220.0,
+          "timestamp": 1703965020.0,
           "productId": "658fe954177387001df827bc"
         }
       ],
@@ -12880,7 +12863,7 @@
           "buyerPhone": "7093251324",
           "IP": "103.253.174.164",
           "date": "23 Apr, 2024; 03:37 PM",
-          "timestamp": 1713866820.0,
+          "timestamp": 1713886620.0,
           "productId": "657a99c7f76523001d9d8b53"
         },
         {
@@ -12889,7 +12872,7 @@
           "buyerPhone": "7093251324",
           "IP": "117.98.4.33",
           "date": "18 Dec, 2023; 06:24 PM",
-          "timestamp": 1702904040.0,
+          "timestamp": 1702923840.0,
           "productId": "657ae3fb884d45001e23000a"
         },
         {
@@ -12898,7 +12881,7 @@
           "buyerPhone": "7093251324",
           "IP": "27.63.207.124",
           "date": "14 Dec, 2023; 02:29 PM",
-          "timestamp": 1702544340.0,
+          "timestamp": 1702564140.0,
           "productId": "657a99c7f76523001d9d8b58"
         },
         {
@@ -12907,7 +12890,7 @@
           "buyerPhone": "7093251324",
           "IP": "27.63.207.124",
           "date": "14 Dec, 2023; 01:07 PM",
-          "timestamp": 1702539420.0,
+          "timestamp": 1702559220.0,
           "productId": "657a99c7f76523001d9d8b53"
         },
         {
@@ -12916,7 +12899,7 @@
           "buyerPhone": "7093251324",
           "IP": "182.69.179.69",
           "date": "02 Dec, 2023; 01:58 PM",
-          "timestamp": 1701505680.0,
+          "timestamp": 1701525480.0,
           "productId": "6376454fc6fd62002c09ec4f"
         },
         {
@@ -12925,7 +12908,7 @@
           "buyerPhone": "7093251324",
           "IP": "45.115.79.128",
           "date": "15 Apr, 2023; 10:14 AM",
-          "timestamp": 1681533840.0,
+          "timestamp": 1681553640.0,
           "productId": "642d6f78f40f7a0020c310e1"
         },
         {
@@ -12934,7 +12917,7 @@
           "buyerPhone": "7093251324",
           "IP": "150.129.236.209",
           "date": "15 Mar, 2023; 12:13 PM",
-          "timestamp": 1678862580.0,
+          "timestamp": 1678882380.0,
           "productId": "641166e48c3a9a001f2623f2"
         },
         {
@@ -12943,7 +12926,7 @@
           "buyerPhone": "7093251324",
           "IP": "150.129.236.209",
           "date": "15 Mar, 2023; 12:08 PM",
-          "timestamp": 1678862280.0,
+          "timestamp": 1678882080.0,
           "productId": "641166e48c3a9a001f2623f2"
         },
         {
@@ -12952,7 +12935,7 @@
           "buyerPhone": "7093251324",
           "IP": "150.242.86.0",
           "date": "21 Feb, 2023; 12:49 PM",
-          "timestamp": 1676963940.0,
+          "timestamp": 1676983740.0,
           "productId": "63f4705c004570001f17523f"
         },
         {
@@ -12961,7 +12944,7 @@
           "buyerPhone": "7093251324",
           "IP": "::ffff:172.17.0.7",
           "date": "17 Nov, 2022; 08:35 PM",
-          "timestamp": 1668697500.0,
+          "timestamp": 1668717300.0,
           "productId": "6376454fc6fd62002c09ec4f"
         },
         {
@@ -12970,7 +12953,7 @@
           "buyerPhone": "7093251324",
           "IP": "::ffff:172.17.0.11",
           "date": "17 Nov, 2022; 08:29 PM",
-          "timestamp": 1668697140.0,
+          "timestamp": 1668716940.0,
           "productId": "6376454fc6fd62002c09ec4f"
         },
         {
@@ -12979,7 +12962,7 @@
           "buyerPhone": "7093251324",
           "IP": "::ffff:172.17.0.7",
           "date": "17 Nov, 2022; 08:13 PM",
-          "timestamp": 1668696180.0,
+          "timestamp": 1668715980.0,
           "productId": "6376454fc6fd62002c09ec4f"
         },
         {
@@ -12988,12 +12971,12 @@
           "buyerPhone": "7093251324",
           "IP": "::ffff:172.17.0.6",
           "date": "17 Nov, 2022; 08:09 PM",
-          "timestamp": 1668695940.0,
+          "timestamp": 1668715740.0,
           "productId": "6376454fc6fd62002c09ec4f"
         }
       ],
       "latestSelfTxnDate": "23 Apr, 2024; 03:37 PM",
-      "latestSelfTxnTimestamp": 1713866820.0,
+      "latestSelfTxnTimestamp": 1713886620.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -13082,7 +13065,7 @@
           "buyerPhone": "6900598954",
           "IP": "223.176.8.2",
           "date": "11 Mar, 2024; 04:02 AM",
-          "timestamp": 1710109920.0,
+          "timestamp": 1710129720.0,
           "productId": "65d04c7e084fe90012518e4a"
         },
         {
@@ -13091,7 +13074,7 @@
           "buyerPhone": "6900598954",
           "IP": "49.37.107.140",
           "date": "15 Jun, 2023; 02:56 PM",
-          "timestamp": 1686821160.0,
+          "timestamp": 1686840960.0,
           "productId": "648ad90620f71f002bdc6197"
         }
       ],
@@ -13138,7 +13121,7 @@
           "buyerPhone": "8446370050",
           "IP": "152.59.8.148",
           "date": "19 Feb, 2024; 09:18 PM",
-          "timestamp": 1708357680.0,
+          "timestamp": 1708377480.0,
           "productId": "65d0b39e0524d9001297f9e0"
         }
       ],
@@ -13185,12 +13168,12 @@
           "buyerPhone": "7892736878",
           "IP": "49.37.242.113",
           "date": "13 Feb, 2024; 07:35 PM",
-          "timestamp": 1707833100.0,
+          "timestamp": 1707852900.0,
           "productId": "65cb70ebeadcff001e9d329a"
         }
       ],
       "latestSelfTxnDate": "13 Feb, 2024; 07:35 PM",
-      "latestSelfTxnTimestamp": 1707833100.0,
+      "latestSelfTxnTimestamp": 1707852900.0,
       "buyersChecked": 25,
       "productTitles": [],
       "productsCount": 0,
@@ -13232,12 +13215,12 @@
           "buyerPhone": "7892736878",
           "IP": "49.37.242.113",
           "date": "13 Feb, 2024; 07:35 PM",
-          "timestamp": 1707833100.0,
+          "timestamp": 1707852900.0,
           "productId": "65cb70ebeadcff001e9d329a"
         }
       ],
       "latestSelfTxnDate": "13 Feb, 2024; 07:35 PM",
-      "latestSelfTxnTimestamp": 1707833100.0,
+      "latestSelfTxnTimestamp": 1707852900.0,
       "buyersChecked": 25,
       "productTitles": [],
       "productsCount": 0,
@@ -13326,7 +13309,7 @@
           "buyerPhone": "8826061493",
           "IP": "103.105.236.30",
           "date": "26 Jan, 2024; 06:22 AM",
-          "timestamp": 1706230320.0,
+          "timestamp": 1706250120.0,
           "productId": "65b300b01632ef001e2d0acf"
         },
         {
@@ -13335,7 +13318,7 @@
           "buyerPhone": "8826061493",
           "IP": "103.105.236.30",
           "date": "26 Jan, 2024; 06:19 AM",
-          "timestamp": 1706230140.0,
+          "timestamp": 1706249940.0,
           "productId": "65b2ec59e15d72001e763758"
         },
         {
@@ -13344,12 +13327,12 @@
           "buyerPhone": "8826061493",
           "IP": "103.105.236.238",
           "date": "11 Aug, 2023; 04:14 AM",
-          "timestamp": 1691707440.0,
+          "timestamp": 1691727240.0,
           "productId": "64d42b8a2b62e2001d6962c8"
         }
       ],
       "latestSelfTxnDate": "26 Jan, 2024; 06:22 AM",
-      "latestSelfTxnTimestamp": 1706230320.0,
+      "latestSelfTxnTimestamp": 1706250120.0,
       "buyersChecked": 31,
       "productTitles": [],
       "productsCount": 0,
@@ -13438,12 +13421,12 @@
           "buyerPhone": "7873280770",
           "IP": "223.231.200.199",
           "date": "18 Jan, 2024; 04:09 PM",
-          "timestamp": 1705574340.0,
+          "timestamp": 1705594140.0,
           "productId": "65886ac1e32b8f001dabfb28"
         }
       ],
       "latestSelfTxnDate": "18 Jan, 2024; 04:09 PM",
-      "latestSelfTxnTimestamp": 1705574340.0,
+      "latestSelfTxnTimestamp": 1705594140.0,
       "buyersChecked": 100,
       "productTitles": [],
       "productsCount": 0,
@@ -13485,12 +13468,12 @@
           "buyerPhone": "9855567095",
           "IP": "117.199.208.195",
           "date": "10 Dec, 2023; 01:35 AM",
-          "timestamp": 1702152300.0,
+          "timestamp": 1702172100.0,
           "productId": "65721046f4c01a001d93b649"
         }
       ],
       "latestSelfTxnDate": "10 Dec, 2023; 01:35 AM",
-      "latestSelfTxnTimestamp": 1702152300.0,
+      "latestSelfTxnTimestamp": 1702172100.0,
       "buyersChecked": 1,
       "productTitles": [],
       "productsCount": 0,
@@ -13532,7 +13515,7 @@
           "buyerPhone": "7726811599",
           "IP": "106.205.195.211",
           "date": "01 Dec, 2023; 01:52 PM",
-          "timestamp": 1701418920.0,
+          "timestamp": 1701438720.0,
           "productId": "656988bb893a74001e5fd467"
         }
       ],
@@ -13626,7 +13609,7 @@
           "buyerPhone": "9113812408",
           "IP": "182.69.179.145",
           "date": "18 Mar, 2023; 01:41 PM",
-          "timestamp": 1679127060.0,
+          "timestamp": 1679146860.0,
           "productId": "64157166d0659500207fee1f"
         },
         {
@@ -13635,12 +13618,12 @@
           "buyerPhone": "9113812408",
           "IP": "::ffff:172.17.0.6",
           "date": "20 Dec, 2022; 04:29 PM",
-          "timestamp": 1671533940.0,
+          "timestamp": 1671553740.0,
           "productId": "63a179a743f4ca002b9f0a90"
         }
       ],
       "latestSelfTxnDate": "18 Mar, 2023; 01:41 PM",
-      "latestSelfTxnTimestamp": 1679127060.0,
+      "latestSelfTxnTimestamp": 1679146860.0,
       "buyersChecked": 49,
       "productTitles": [],
       "productsCount": 0,
@@ -13690,9 +13673,9 @@
       "error": "",
       "telegramEligible": true,
       "telegramIntegration": true,
-      "telegramProductId": "64a2b98a2eaff10021550a62",
-      "telegramProductLink": "https://superprofile.bio/vig/64a2b98a2eaff10021550a62",
-      "telegramProductName": "SMT\u2122\ufe0fEQUITY CHANNEL",
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Telegram Channel / Group",
       "sebiMatchType": "Primary Creator ID",
       "sebiRegisteredYes": "Yes",
       "sebiRegisteredNo": "\u2014",
@@ -13853,9 +13836,9 @@
       "error": "",
       "telegramEligible": true,
       "telegramIntegration": true,
-      "telegramProductId": "68dba9e96eef7600135fd5fe",
-      "telegramProductLink": "https://superprofile.bio/vig/68dba9e96eef7600135fd5fe",
-      "telegramProductName": "Fno Pulse",
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Telegram Channel / Group",
       "sebiMatchType": "Primary Creator ID",
       "sebiRegisteredYes": "Yes",
       "sebiRegisteredNo": "\u2014",
@@ -13894,9 +13877,9 @@
       "error": "",
       "telegramEligible": true,
       "telegramIntegration": true,
-      "telegramProductId": "67a5ad27f9f2fd0013a17bfd",
-      "telegramProductLink": "https://superprofile.bio/vig/67a5ad27f9f2fd0013a17bfd",
-      "telegramProductName": "Stock Index 2",
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Telegram Channel / Group",
       "sebiMatchType": "Primary Creator ID",
       "sebiRegisteredYes": "Yes",
       "sebiRegisteredNo": "\u2014",
@@ -13940,11 +13923,10 @@
       "telegramProductName": "Profinserv LTC",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf7612e17cb3117c8da3",
@@ -14104,11 +14086,10 @@
       "telegramProductName": "StocksHub Plus+ : Sensex",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf8b12e17cb3117ca72d",
@@ -14261,17 +14242,15 @@
       "noLinkReason": "",
       "error": "",
       "telegramEligible": true,
-      "telegramIntegration": true,
-      "telegramProductId": "67933373930de200137d8bc3",
-      "telegramProductLink": "https://superprofile.bio/vig/67933373930de200137d8bc3",
-      "telegramProductName": "Prime_Channel",
-      "sebiMatchType": "None",
+      "telegramIntegration": false,
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Digital Product",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf6b12e17cb3117c7ddb",
@@ -15326,9 +15305,9 @@
       "error": "",
       "telegramEligible": true,
       "telegramIntegration": true,
-      "telegramProductId": "68df777dff14880013eb1d72",
-      "telegramProductLink": "https://superprofile.bio/vig/68df777dff14880013eb1d72",
-      "telegramProductName": "ROY RESEARCH ANALYST PREMIUM (SEBI REGISTER) INDEX OPTION",
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Telegram Channel / Group",
       "sebiMatchType": "Primary Creator ID",
       "sebiRegisteredYes": "Yes",
       "sebiRegisteredNo": "\u2014",
@@ -17789,17 +17768,15 @@
       "noLinkReason": "",
       "error": "",
       "telegramEligible": true,
-      "telegramIntegration": true,
-      "telegramProductId": "69380eebc9813a00136cc767",
-      "telegramProductLink": "https://superprofile.bio/vig/69380eebc9813a00136cc767",
-      "telegramProductName": "January 2026 - Global FCC",
-      "sebiMatchType": "None",
+      "telegramIntegration": false,
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Digital Product",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf5f12e17cb3117c6c46",
@@ -17998,11 +17975,10 @@
       "telegramProductName": "SN Community",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf9412e17cb3117cb104",
@@ -18490,11 +18466,10 @@
       "telegramProductName": "A&A Trading blog (Private Community)",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf7f12e17cb3117c9894",
@@ -19271,11 +19246,10 @@
       "telegramProductName": "Mcx premium ",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a932c6c12e17cb3117bcb55",
@@ -19313,11 +19287,10 @@
       "telegramProductName": "Surya X Trade",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf5912e17cb3117c6169",
@@ -19349,17 +19322,15 @@
       "noLinkReason": "",
       "error": "",
       "telegramEligible": true,
-      "telegramIntegration": true,
-      "telegramProductId": "6984f394797e090013c86e06",
-      "telegramProductLink": "https://superprofile.bio/vig/6984f394797e090013c86e06",
-      "telegramProductName": "DT Traders Community",
-      "sebiMatchType": "None",
+      "telegramIntegration": false,
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Digital Product",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf7d12e17cb3117c9674",
@@ -19397,11 +19368,10 @@
       "telegramProductName": "@Rmehtasir JACKPOT",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf5812e17cb3117c5e24",
@@ -20549,17 +20519,15 @@
       "noLinkReason": "",
       "error": "",
       "telegramEligible": true,
-      "telegramIntegration": true,
-      "telegramProductId": "680b5a939478460013e2e2cf",
-      "telegramProductLink": "https://superprofile.bio/vig/680b5a939478460013e2e2cf",
-      "telegramProductName": "Market Mastery with Hiren",
-      "sebiMatchType": "None",
+      "telegramIntegration": false,
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Digital Product",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf9a12e17cb3117cb801",
@@ -20962,11 +20930,10 @@
       "telegramProductName": "MCX PREMIUM GROUP",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf9612e17cb3117cb37f",
@@ -24688,17 +24655,15 @@
       "noLinkReason": "",
       "error": "",
       "telegramEligible": true,
-      "telegramIntegration": true,
-      "telegramProductId": "67f4c99bc88fbf0013d43d05",
-      "telegramProductLink": "https://superprofile.bio/vig/67f4c99bc88fbf0013d43d05",
-      "telegramProductName": "HERO ZERO STUDY GROUP",
-      "sebiMatchType": "None",
+      "telegramIntegration": false,
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Digital Product",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf9912e17cb3117cb715",
@@ -26827,11 +26792,10 @@
       "telegramProductName": "Tradingspell Pvt Community",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf5c12e17cb3117c661f",
@@ -26949,11 +26913,10 @@
       "telegramProductName": "Ruthless Equity Trades Premium ",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf7b12e17cb3117c943b",
@@ -26991,11 +26954,10 @@
       "telegramProductName": "nifty report 3.0.0",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf5012e17cb3117c4d56",
@@ -27515,17 +27477,15 @@
       "noLinkReason": "",
       "error": "",
       "telegramEligible": true,
-      "telegramIntegration": true,
-      "telegramProductId": "67f8cb86a5f4410013979220",
-      "telegramProductLink": "https://superprofile.bio/vig/67f8cb86a5f4410013979220",
-      "telegramProductName": "Recalls and MCQ Practice : AMCbyDrGupta",
-      "sebiMatchType": "None",
+      "telegramIntegration": false,
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Digital Product",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cfa912e17cb3117cc71d",
@@ -27563,11 +27523,10 @@
       "telegramProductName": "MCX (COMMODITY) PAID",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf5312e17cb3117c535a",
@@ -27645,11 +27604,10 @@
       "telegramProductName": "Prakash trading 1 month",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf6a12e17cb3117c7b76",
@@ -27767,11 +27725,10 @@
       "telegramProductName": "Nifty 50 Dominator",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf9312e17cb3117cb004",
@@ -29270,17 +29227,15 @@
       "noLinkReason": "",
       "error": "",
       "telegramEligible": true,
-      "telegramIntegration": true,
-      "telegramProductId": "69d7025ab02d380013a314eb",
-      "telegramProductLink": "https://superprofile.bio/vig/69d7025ab02d380013a314eb",
-      "telegramProductName": "SHIVI CODE y1437 | Railway Prime Batch (2026-27)",
-      "sebiMatchType": "None",
+      "telegramIntegration": false,
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Digital Product",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf5a12e17cb3117c6242",
@@ -29919,11 +29874,10 @@
       "telegramProductName": "TRADE PREMIUM",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cfb512e17cb3117cd43f",
@@ -30205,17 +30159,15 @@
       "noLinkReason": "",
       "error": "",
       "telegramEligible": true,
-      "telegramIntegration": true,
-      "telegramProductId": "68c67381e4826a00139bb5cf",
-      "telegramProductLink": "https://superprofile.bio/vig/68c67381e4826a00139bb5cf",
-      "telegramProductName": "VIP GROUP \ud83d\ude0d\ud83d\ude0d\u2764\ufe0f",
-      "sebiMatchType": "None",
+      "telegramIntegration": false,
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Digital Product",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cfab12e17cb3117cc97c",
@@ -30460,11 +30412,10 @@
       "telegramProductName": "NiL INDEX OPTION",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf8512e17cb3117c9f83",
@@ -32629,11 +32580,10 @@
       "telegramProductName": "Elliott wave with CBkhasiya",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf8a12e17cb3117ca6f0",
@@ -32711,11 +32661,10 @@
       "telegramProductName": "Equity Prime [Stock aaj or kal",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf9412e17cb3117cb15d",
@@ -33633,17 +33582,15 @@
       "noLinkReason": "",
       "error": "",
       "telegramEligible": true,
-      "telegramIntegration": true,
-      "telegramProductId": "6a64283b146c040014edce5a",
-      "telegramProductLink": "https://superprofile.bio/vig/6a64283b146c040014edce5a",
-      "telegramProductName": "\u0928\u093f\u0930\u094d\u092e\u093e\u0923 Batch Railway General Science Foundation Course 2026(Live+VOD)",
-      "sebiMatchType": "None",
+      "telegramIntegration": false,
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Digital Product",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf5b12e17cb3117c64f3",
@@ -33802,11 +33749,10 @@
       "telegramProductName": "Option premium ",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cfa212e17cb3117cc0e8",
@@ -33919,17 +33865,15 @@
       "noLinkReason": "",
       "error": "",
       "telegramEligible": true,
-      "telegramIntegration": true,
-      "telegramProductId": "668b4f3db5c64700139c7370",
-      "telegramProductLink": "https://superprofile.bio/vig/668b4f3db5c64700139c7370",
-      "telegramProductName": "LEARNING GROUP ",
-      "sebiMatchType": "None",
+      "telegramIntegration": false,
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Digital Product",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf7d12e17cb3117c96e8",
@@ -34579,11 +34523,10 @@
       "telegramProductName": "Jackpot stock options ",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf6c12e17cb3117c7eb9",
@@ -34701,11 +34644,10 @@
       "telegramProductName": "\u092e\u0930\u093e\u0920\u0940 \u091f\u094d\u0930\u0947\u0921\u093f\u0902\u0917 \u0938\u093e\u092e\u094d\u0930\u093e\u091c\u094d\u092f (VIP)",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cfaa12e17cb3117cc864",
@@ -34743,11 +34685,10 @@
       "telegramProductName": "CRYPTO PRANJAL \ud83c\uddee\ud83c\uddf3",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf6412e17cb3117c73c0",
@@ -34785,11 +34726,10 @@
       "telegramProductName": "BigCat Premium Swing Club",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf8912e17cb3117ca4a8",
@@ -35109,11 +35049,10 @@
       "telegramProductName": "A VIP group",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf5012e17cb3117c4c19",
@@ -35885,11 +35824,10 @@
       "telegramProductName": "Premium_Group",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf8312e17cb3117c9d64",
@@ -35927,11 +35865,10 @@
       "telegramProductName": "Commodity ",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf8912e17cb3117ca59b",
@@ -36283,17 +36220,15 @@
       "noLinkReason": "",
       "error": "",
       "telegramEligible": true,
-      "telegramIntegration": true,
-      "telegramProductId": "6846ae66a06c750013c2d1f9",
-      "telegramProductLink": "https://superprofile.bio/vig/6846ae66a06c750013c2d1f9",
-      "telegramProductName": "VCP Learning Group",
-      "sebiMatchType": "None",
+      "telegramIntegration": false,
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Digital Product",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf4e12e17cb3117c493f",
@@ -36331,11 +36266,10 @@
       "telegramProductName": "Stock Scanner Premium Learning Group | SMC \ud83d\udc51",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf8b12e17cb3117ca7c4",
@@ -37017,17 +36951,15 @@
       "noLinkReason": "",
       "error": "",
       "telegramEligible": true,
-      "telegramIntegration": true,
-      "telegramProductId": "670500b24509b400132cb385",
-      "telegramProductLink": "https://superprofile.bio/vig/670500b24509b400132cb385",
-      "telegramProductName": "PREMIUM GROUP \ud83d\udcb9",
-      "sebiMatchType": "None",
+      "telegramIntegration": false,
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Digital Product",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf7b12e17cb3117c942d",
@@ -37229,11 +37161,10 @@
       "telegramProductName": "Trade With Professor ",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf8c12e17cb3117ca918",
@@ -37271,11 +37202,10 @@
       "telegramProductName": "RAJ PREMIUM INTRADAY",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf8312e17cb3117c9d3b",
@@ -37767,11 +37697,10 @@
       "telegramProductName": "All in one premium ",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf8912e17cb3117ca545",
@@ -37809,11 +37738,10 @@
       "telegramProductName": "Premium Chanel",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf8112e17cb3117c9a90",
@@ -38581,17 +38509,15 @@
       "noLinkReason": "",
       "error": "",
       "telegramEligible": true,
-      "telegramIntegration": true,
-      "telegramProductId": "6a27e0171d5c8e0013a28ee2",
-      "telegramProductLink": "https://superprofile.bio/vig/6a27e0171d5c8e0013a28ee2",
-      "telegramProductName": "TRADE ANK!T ( Membership)\ud83e\uddd0",
-      "sebiMatchType": "None",
+      "telegramIntegration": false,
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Digital Product",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cfa512e17cb3117cc3ba",
@@ -38989,11 +38915,10 @@
       "telegramProductName": "Wealth Creator Premium \ud83d\udcb5\ud83d\udcb0",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf6512e17cb3117c7423",
@@ -39432,11 +39357,10 @@
       "telegramProductName": "Education purpose ",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf8312e17cb3117c9e05",
@@ -39790,17 +39714,15 @@
       "noLinkReason": "",
       "error": "",
       "telegramEligible": true,
-      "telegramIntegration": true,
-      "telegramProductId": "64f420086fadd99da766809d",
-      "telegramProductLink": "https://superprofile.bio/vig/64f420086fadd99da766809d",
-      "telegramProductName": "MG PREMIUM",
-      "sebiMatchType": "None",
+      "telegramIntegration": false,
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Digital Product",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf7e12e17cb3117c97ca",
@@ -39964,11 +39886,10 @@
       "telegramProductName": "Options Sellers Pro Community",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a947dd0c352b6989486eae3",
@@ -40086,11 +40007,10 @@
       "telegramProductName": "The Value Club ",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf5f12e17cb3117c6c0d",
@@ -40374,11 +40294,10 @@
       "telegramProductName": "LEARN WITH HIMANSHU ",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf9612e17cb3117cb3c7",
@@ -41067,11 +40986,10 @@
       "telegramProductName": "SPECIAL GROUP ( swing trades)",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf7612e17cb3117c8ddb",
@@ -41109,11 +41027,10 @@
       "telegramProductName": "Swing & Momentum Trading",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf9c12e17cb3117cbade",
@@ -41307,17 +41224,15 @@
       "noLinkReason": "",
       "error": "",
       "telegramEligible": true,
-      "telegramIntegration": true,
-      "telegramProductId": "69d79e92063b150013da4bc7",
-      "telegramProductLink": "https://superprofile.bio/vig/69d79e92063b150013da4bc7",
-      "telegramProductName": "STA SUPERSTARS",
-      "sebiMatchType": "None",
+      "telegramIntegration": false,
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Digital Product",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf7012e17cb3117c8527",
@@ -41475,11 +41390,10 @@
       "telegramProductName": "IPO Community",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf4512e17cb3117c3d4a",
@@ -42405,11 +42319,10 @@
       "telegramProductName": "STOCK VIEW",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cfa712e17cb3117cc5eb",
@@ -43009,17 +42922,15 @@
       "noLinkReason": "",
       "error": "",
       "telegramEligible": true,
-      "telegramIntegration": true,
-      "telegramProductId": "6a4c954f93df68001352d0ea",
-      "telegramProductLink": "https://superprofile.bio/vig/6a4c954f93df68001352d0ea",
-      "telegramProductName": "UPP \u0916\u093e\u0915\u0940 Again batch 2026",
-      "sebiMatchType": "None",
+      "telegramIntegration": false,
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Digital Product",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cfb212e17cb3117cd094",
@@ -43221,11 +43132,10 @@
       "telegramProductName": "TON (The Only Nifty)",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf7112e17cb3117c870b",
@@ -43263,11 +43173,10 @@
       "telegramProductName": "Social Connection",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cfb112e17cb3117cd01d",
@@ -43591,11 +43500,10 @@
       "telegramProductName": "BEST PREMIUM GROUP",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf8b12e17cb3117ca712",
@@ -43633,11 +43541,10 @@
       "telegramProductName": "FORUM",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cfa712e17cb3117cc5de",
@@ -43875,17 +43782,15 @@
       "noLinkReason": "",
       "error": "",
       "telegramEligible": true,
-      "telegramIntegration": true,
-      "telegramProductId": "67a8c6045ee5520012250762",
-      "telegramProductLink": "https://superprofile.bio/vig/67a8c6045ee5520012250762",
-      "telegramProductName": "HNI CHANNEL 1",
-      "sebiMatchType": "None",
+      "telegramIntegration": false,
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Digital Product",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf9f12e17cb3117cbdf7",
@@ -44375,17 +44280,15 @@
       "noLinkReason": "",
       "error": "",
       "telegramEligible": true,
-      "telegramIntegration": true,
-      "telegramProductId": "66d6f2a06e56ec001373f81c",
-      "telegramProductLink": "https://superprofile.bio/vig/66d6f2a06e56ec001373f81c",
-      "telegramProductName": "Paid Group (All In One)",
-      "sebiMatchType": "None",
+      "telegramIntegration": false,
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Digital Product",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf9912e17cb3117cb731",
@@ -44423,11 +44326,10 @@
       "telegramProductName": "GROW-MORE PLUS \u232c",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf5512e17cb3117c591c",
@@ -44505,11 +44407,10 @@
       "telegramProductName": "Level 2 traders",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf8112e17cb3117c9ba4",
@@ -44711,11 +44612,10 @@
       "telegramProductName": "ISO PREMIUM",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cfb412e17cb3117cd289",
@@ -44911,17 +44811,15 @@
       "noLinkReason": "",
       "error": "",
       "telegramEligible": true,
-      "telegramIntegration": true,
-      "telegramProductId": "6981d57e21e30200125961df",
-      "telegramProductLink": "https://superprofile.bio/vig/6981d57e21e30200125961df",
-      "telegramProductName": "ZERO TO HERO PREMIUM GROUP ",
-      "sebiMatchType": "None",
+      "telegramIntegration": false,
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Digital Product",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf9412e17cb3117cb135",
@@ -46411,17 +46309,15 @@
       "noLinkReason": "",
       "error": "",
       "telegramEligible": true,
-      "telegramIntegration": true,
-      "telegramProductId": "68a590a3342f1300132334fa",
-      "telegramProductLink": "https://superprofile.bio/vig/68a590a3342f1300132334fa",
-      "telegramProductName": "\ud83c\uddec \ud83c\uddf4 \ud83c\uddf1 \ud83c\udde9 \ud835\uddf2\ud835\uddee\ud835\uddf4\ud835\uddf9\ud835\uddf2\ud835\ude00 \ud835\ude00\ud835\uddfa",
-      "sebiMatchType": "None",
+      "telegramIntegration": false,
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Digital Product",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cfa412e17cb3117cc29b",
@@ -46541,11 +46437,10 @@
       "telegramProductName": "STOCK PREMIUM \ud83d\udcb8",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf8212e17cb3117c9c15",
@@ -46577,17 +46472,15 @@
       "noLinkReason": "",
       "error": "",
       "telegramEligible": true,
-      "telegramIntegration": true,
-      "telegramProductId": "6a787fec62ca790013c3fe57",
-      "telegramProductLink": "https://superprofile.bio/vig/6a787fec62ca790013c3fe57",
-      "telegramProductName": "Risky Traders Vip Channel",
-      "sebiMatchType": "None",
+      "telegramIntegration": false,
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Digital Product",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf6a12e17cb3117c7bef",
@@ -47225,11 +47118,10 @@
       "telegramProductName": "BANKNIFTYSURESHOT ",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf7112e17cb3117c863c",
@@ -48357,11 +48249,10 @@
       "telegramProductName": "Trade with Deepak Premium",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a932c8e12e17cb3117bf028",
@@ -48561,11 +48452,10 @@
       "telegramProductName": "Princu Sahani\u2019s Premium",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a874f2912fa1e4dab27396d",
@@ -48964,17 +48854,15 @@
       "noLinkReason": "",
       "error": "",
       "telegramEligible": true,
-      "telegramIntegration": true,
-      "telegramProductId": "69a90448ce8bdc00125c31a5",
-      "telegramProductLink": "https://superprofile.bio/vig/69a90448ce8bdc00125c31a5",
-      "telegramProductName": "RankBoost 2 - JEE 2026 Personal Mentorship",
-      "sebiMatchType": "None",
+      "telegramIntegration": false,
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Digital Product",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cfb112e17cb3117cd046",
@@ -49746,11 +49634,10 @@
       "telegramProductName": "UPSSSC PET EXAM product\u2014 1",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf7212e17cb3117c8863",
@@ -49984,17 +49871,15 @@
       "noLinkReason": "",
       "error": "",
       "telegramEligible": true,
-      "telegramIntegration": true,
-      "telegramProductId": "642560ad3b5510001f5c75de",
-      "telegramProductLink": "https://superprofile.bio/vig/642560ad3b5510001f5c75de",
-      "telegramProductName": "Short Term Premium Group ",
-      "sebiMatchType": "None",
+      "telegramIntegration": false,
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Digital Product",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cfa112e17cb3117cbfb9",
@@ -50588,17 +50473,15 @@
       "noLinkReason": "",
       "error": "",
       "telegramEligible": true,
-      "telegramIntegration": true,
-      "telegramProductId": "692e8f7a0454370012d339a1",
-      "telegramProductLink": "https://superprofile.bio/vig/692e8f7a0454370012d339a1",
-      "telegramProductName": "Mentorship Program & Deep Market Insights ",
-      "sebiMatchType": "None",
+      "telegramIntegration": false,
+      "telegramProductId": "",
+      "telegramProductLink": "",
+      "telegramProductName": "Digital Product",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cfab12e17cb3117cc8ce",
@@ -50716,11 +50599,10 @@
       "telegramProductName": "Malayalam Audio Replies \ud83e\udd23",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf8e12e17cb3117cab30",
@@ -53382,11 +53264,10 @@
       "telegramProductName": "Freshershunt Pro",
       "sebiMatchType": "None",
       "sebiRegisteredYes": "\u2014",
-      "sebiRegisteredNo": "No",
-      "sebiVerificationStatus": "Not Verified",
-      "sebiRegistrationNumber": "N/A",
-      "sebiReviewStatus": "Manual Review Required",
-      "sebiReviewReason": "Creator uses Telegram integration (vig/) product with payout >= \u20b91,000 but is NOT found in the verified SEBI-registered list."
+      "sebiRegisteredNo": "\u2014",
+      "sebiVerificationStatus": "Not Applicable",
+      "sebiReviewStatus": "Normal",
+      "sebiRegistrationNumber": "N/A"
     },
     {
       "settlementId": "6a95cf6d12e17cb3117c80bf",
