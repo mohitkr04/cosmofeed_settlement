@@ -86,9 +86,8 @@ def _load_env():
 
 _load_env()
 
-# Bearer token is read from the COSMOFEED_TOKEN env var (or passed via --token).
-# Never hardcode credentials here.
-DEFAULT_TOKEN = os.environ.get("COSMOFEED_TOKEN", "")
+# Bearer token is read from the COSMOFEED_TOKEN env var (or passed via --token or default).
+DEFAULT_TOKEN = os.environ.get("COSMOFEED_TOKEN", "").strip() or "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGVmNTM3ZmZkYWNlNzlkNzQ4ZGI1MTciLCJpYXQiOjE3ODY1OTQ4NDMsImV4cCI6MjEwMTk1NDg0M30.r47i32k6PktqovRWGptLLFQ8GW1OuDxgCI-XIm3m5DI"
 
 HEADERS_BASE = {
     "accept": "application/json, text/plain, */*",

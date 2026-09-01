@@ -20,6 +20,8 @@ To refresh the underlying data (re-run the self-transaction sweep):
 import os
 import json
 import datetime
+import time
+import threading
 import http.server
 import socketserver
 from urllib.parse import urlparse, parse_qs
@@ -246,14 +248,35 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                     return self._json(json.load(f))
             return self._json({"creators": {}})
 
+        if parsed.path == "/api/trigger-audit":
+            today_str = get_today_ist_date()
+            started = trigger_autonomous_audit(audit_date=today_str, force=True)
+            return self._json({"status": "started" if started else "already_running", "auditDate": today_str})
+
+        if parsed.path == "/api/audit-status":
+            today_str = get_today_ist_date()
+            audit_exists = os.path.exists(os.path.join(HERE, "reports", f"audit_{today_str}.json"))
+            return self._json({
+                "isRunning": _is_audit_running,
+                "lastRunDate": _last_audit_run_date,
+                "todayDate": today_str,
+                "todayAuditExists": audit_exists
+            })
+
         if parsed.path == "/api/data":
+            # Auto-check if today's audit should be refreshed in background
+            maybe_trigger_daily_audit()
             fp = os.path.join(HERE, "reports", "data.json")
             if not os.path.exists(fp):
                 fp = os.path.join(HERE, "data.json")
             if not os.path.exists(fp):
-                return self._json({"error": "data.json not found — run build_data.py"}, 404)
+                return self._json({"error": "data.json not found — initializing audit..."}, 404)
             with open(fp, encoding="utf-8") as f:
                 return self._json(json.load(f))
+
+        if parsed.path == "/" or parsed.path == "/index.html":
+            maybe_trigger_daily_audit()
+
         if parsed.path == "/api/nolink":
             q = parse_qs(parsed.query)
             username = (q.get("username") or [""])[0]
@@ -264,26 +287,127 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         pass  # quiet
 
 
+_is_audit_running = False
+_audit_lock = threading.Lock()
+_last_audit_run_date = None
+
+
+def get_today_ist_date():
+    """Returns today's date in Asia/Kolkata timezone (YYYY-MM-DD)."""
+    try:
+        import zoneinfo
+        tz = zoneinfo.ZoneInfo("Asia/Kolkata")
+        now = datetime.datetime.now(tz)
+    except Exception:
+        tz = datetime.timezone(datetime.timedelta(hours=5, minutes=30))
+        now = datetime.datetime.now(tz)
+    return now.strftime("%Y-%m-%d")
+
+
+def trigger_autonomous_audit(audit_date=None, force=False):
+    """Triggers the full daily settlement audit and git synchronization in a background thread."""
+    global _is_audit_running, _last_audit_run_date
+    if not audit_date:
+        audit_date = get_today_ist_date()
+
+    with _audit_lock:
+        if _is_audit_running:
+            return False
+        _is_audit_running = True
+
+    def _worker():
+        global _is_audit_running, _last_audit_run_date
+        print(f"\n[AUTONOMOUS ENGINE] Starting automated daily settlement audit for {audit_date}...")
+        try:
+            import daily_automation
+            success = daily_automation.run_pipeline(audit_date=audit_date, push_git=True)
+            if success:
+                _last_audit_run_date = audit_date
+                print(f"[AUTONOMOUS ENGINE] Daily audit and multi-link synchronization completed successfully for {audit_date}!")
+            else:
+                print(f"[AUTONOMOUS ENGINE] Daily audit completed with warnings for {audit_date}.")
+        except Exception as e:
+            print(f"[AUTONOMOUS ENGINE] Error executing autonomous daily audit: {e}")
+        finally:
+            with _audit_lock:
+                _is_audit_running = False
+
+    t = threading.Thread(target=_worker, daemon=True)
+    t.start()
+    return True
+
+
+def maybe_trigger_daily_audit():
+    """Checks if today's audit has not run yet today and triggers it automatically."""
+    today_str = get_today_ist_date()
+    audit_file = os.path.join(HERE, "reports", f"audit_{today_str}.json")
+    if not os.path.exists(audit_file) and not _is_audit_running:
+        trigger_autonomous_audit(audit_date=today_str, force=False)
+
+
+def autonomous_daily_scheduler_loop():
+    """
+    24/7 Background Scheduler Loop:
+    Checks time every 60 seconds.
+    Automatically executes the live settlement audit daily before 10:00 AM IST.
+    """
+    print("[AUTONOMOUS SCHEDULER] 24/7 Daily Compliance Scheduler active (Target: Auto-Audit before 10:00 AM IST daily).")
+    
+    # Run check at startup
+    time.sleep(2)
+    maybe_trigger_daily_audit()
+
+    while True:
+        try:
+            time.sleep(60)
+            today_str = get_today_ist_date()
+            audit_file = os.path.join(HERE, "reports", f"audit_{today_str}.json")
+
+            try:
+                import zoneinfo
+                tz = zoneinfo.ZoneInfo("Asia/Kolkata")
+                now = datetime.datetime.now(tz)
+            except Exception:
+                tz = datetime.timezone(datetime.timedelta(hours=5, minutes=30))
+                now = datetime.datetime.now(tz)
+
+            hour = now.hour
+            minute = now.minute
+
+            # If today's audit has not run yet and time is between 08:00 AM and 09:59 AM IST:
+            if not os.path.exists(audit_file) and hour in [8, 9] and not _is_audit_running:
+                print(f"[AUTONOMOUS SCHEDULER] Triggering scheduled morning audit at {now.strftime('%H:%M:%S IST')} for {today_str}...")
+                trigger_autonomous_audit(audit_date=today_str, force=True)
+
+        except Exception as e:
+            print(f"[AUTONOMOUS SCHEDULER] Loop warning: {e}")
+
+
 if __name__ == "__main__":
     os.chdir(HERE)
     socketserver.TCPServer.allow_reuse_address = True
 
-    # Automatically open http://localhost:8000 in browser
-    import threading
-    import time
-    import webbrowser
+    # Start 24/7 autonomous daily scheduler thread
+    scheduler_thread = threading.Thread(target=autonomous_daily_scheduler_loop, daemon=True)
+    scheduler_thread.start()
 
+    # Automatically open http://localhost:8000 in browser
     def open_browser():
         time.sleep(0.8)
-        webbrowser.open(f"http://localhost:{PORT}")
+        try:
+            webbrowser.open(f"http://localhost:{PORT}")
+        except Exception:
+            pass
 
     threading.Thread(target=open_browser, daemon=True).start()
 
     with socketserver.ThreadingTCPServer(("127.0.0.1", PORT), Handler) as httpd:
-        print(f"\n  Cosmofeed Payout Audit Dashboard running at: http://localhost:{PORT}\n")
-        print("  Automatically opening dashboard in your web browser...\n")
-        print("  Press Ctrl+C to stop.\n")
+        print(f"\n  ==================================================================")
+        print(f"  Cosmofeed Daily Payout & SEBI Compliance Autonomous Server")
+        print(f"  Localhost Dashboard: http://localhost:{PORT}")
+        print(f"  Auto-Pilot Scheduler: Active (Runs daily before 10:00 AM IST)")
+        print(f"  ==================================================================\n")
         try:
             httpd.serve_forever()
         except KeyboardInterrupt:
-            print("\n  Stopped.")
+            print("\n  Server stopped.")
