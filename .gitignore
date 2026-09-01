@@ -15,12 +15,3 @@ env/
 scratch/
 *.log
 !reports/daily_automation.log
-
-# Operating System & IDE
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
-
-# Large raw intermediary dumps
-reports/creator_products_cache.json
