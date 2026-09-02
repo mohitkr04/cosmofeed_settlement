@@ -45,8 +45,8 @@
     "sebiRegistrationNumber": "INH000024064",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 106106.0,
-    "totalPayoutVolume": 568052.0,
-    "settlementCount": 9,
+    "totalPayoutVolume": 712388.0,
+    "settlementCount": 11,
     "datesSeen": [
       "2026-08-27",
       "2026-08-31",
@@ -726,8 +726,8 @@
     "sebiRegistrationNumber": "INH000010645",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 4882.0,
-    "totalPayoutVolume": 40514.0,
-    "settlementCount": 9,
+    "totalPayoutVolume": 50276.0,
+    "settlementCount": 11,
     "datesSeen": [
       "2026-08-27",
       "2026-08-31",
@@ -1001,8 +1001,8 @@
     "sebiRegistrationNumber": "INH000014845",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 38046.0,
-    "totalPayoutVolume": 552038.0,
-    "settlementCount": 17,
+    "totalPayoutVolume": 628130.0,
+    "settlementCount": 19,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -1168,8 +1168,8 @@
     "sebiRegistrationNumber": "INH000017277",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 3942.0,
-    "totalPayoutVolume": 64605.0,
-    "settlementCount": 17,
+    "totalPayoutVolume": 72489.0,
+    "settlementCount": 19,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -1505,8 +1505,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 296003.0,
-    "totalPayoutVolume": 3136320.0,
-    "settlementCount": 15,
+    "totalPayoutVolume": 3206836.0,
+    "settlementCount": 17,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -1562,8 +1562,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 74332.0,
-    "totalPayoutVolume": 781195.0,
-    "settlementCount": 15,
+    "totalPayoutVolume": 796345.0,
+    "settlementCount": 17,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -1706,8 +1706,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 64401.0,
-    "totalPayoutVolume": 598581.0,
-    "settlementCount": 15,
+    "totalPayoutVolume": 604905.0,
+    "settlementCount": 17,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -1878,8 +1878,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 93953.0,
-    "totalPayoutVolume": 986501.0,
-    "settlementCount": 16,
+    "totalPayoutVolume": 1174407.0,
+    "settlementCount": 18,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -1906,8 +1906,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 80739.0,
-    "totalPayoutVolume": 858887.0,
-    "settlementCount": 15,
+    "totalPayoutVolume": 1020365.0,
+    "settlementCount": 17,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -1934,8 +1934,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 141311.0,
-    "totalPayoutVolume": 1040686.0,
-    "settlementCount": 16,
+    "totalPayoutVolume": 1224692.0,
+    "settlementCount": 18,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -1962,8 +1962,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 42364.0,
-    "totalPayoutVolume": 548927.0,
-    "settlementCount": 15,
+    "totalPayoutVolume": 608805.0,
+    "settlementCount": 17,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -2077,8 +2077,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 37610.0,
-    "totalPayoutVolume": 442410.0,
-    "settlementCount": 15,
+    "totalPayoutVolume": 468934.0,
+    "settlementCount": 17,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -2420,8 +2420,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 39173.0,
-    "totalPayoutVolume": 467785.0,
-    "settlementCount": 15,
+    "totalPayoutVolume": 546131.0,
+    "settlementCount": 17,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -2991,8 +2991,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 17304.0,
-    "totalPayoutVolume": 182937.0,
-    "settlementCount": 16,
+    "totalPayoutVolume": 189689.0,
+    "settlementCount": 18,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -3161,8 +3161,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 15525.0,
-    "totalPayoutVolume": 195230.0,
-    "settlementCount": 16,
+    "totalPayoutVolume": 214986.0,
+    "settlementCount": 18,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -3419,8 +3419,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 13912.0,
-    "totalPayoutVolume": 165360.0,
-    "settlementCount": 15,
+    "totalPayoutVolume": 175856.0,
+    "settlementCount": 17,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -3819,8 +3819,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 11598.0,
-    "totalPayoutVolume": 115926.0,
-    "settlementCount": 15,
+    "totalPayoutVolume": 119758.0,
+    "settlementCount": 17,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -3963,8 +3963,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 19404.0,
-    "totalPayoutVolume": 201340.0,
-    "settlementCount": 15,
+    "totalPayoutVolume": 240148.0,
+    "settlementCount": 17,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -4078,8 +4078,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 10057.0,
-    "totalPayoutVolume": 109316.0,
-    "settlementCount": 16,
+    "totalPayoutVolume": 114784.0,
+    "settlementCount": 18,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -4106,8 +4106,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 9973.0,
-    "totalPayoutVolume": 100388.0,
-    "settlementCount": 15,
+    "totalPayoutVolume": 104152.0,
+    "settlementCount": 17,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -4246,8 +4246,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 9881.0,
-    "totalPayoutVolume": 145265.0,
-    "settlementCount": 15,
+    "totalPayoutVolume": 165027.0,
+    "settlementCount": 17,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -4474,8 +4474,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 9646.0,
-    "totalPayoutVolume": 136000.0,
-    "settlementCount": 15,
+    "totalPayoutVolume": 155292.0,
+    "settlementCount": 17,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -5158,8 +5158,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 9503.0,
-    "totalPayoutVolume": 105305.0,
-    "settlementCount": 15,
+    "totalPayoutVolume": 118991.0,
+    "settlementCount": 17,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -5492,8 +5492,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 6308.0,
-    "totalPayoutVolume": 73683.0,
-    "settlementCount": 16,
+    "totalPayoutVolume": 77563.0,
+    "settlementCount": 18,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -5974,8 +5974,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 5216.0,
-    "totalPayoutVolume": 77770.0,
-    "settlementCount": 15,
+    "totalPayoutVolume": 88014.0,
+    "settlementCount": 17,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -6197,8 +6197,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 4822.0,
-    "totalPayoutVolume": 72330.0,
-    "settlementCount": 15,
+    "totalPayoutVolume": 81974.0,
+    "settlementCount": 17,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -6252,8 +6252,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 19173.0,
-    "totalPayoutVolume": 143795.0,
-    "settlementCount": 15,
+    "totalPayoutVolume": 182141.0,
+    "settlementCount": 17,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -6419,8 +6419,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 4373.0,
-    "totalPayoutVolume": 52934.0,
-    "settlementCount": 16,
+    "totalPayoutVolume": 56414.0,
+    "settlementCount": 18,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -6703,8 +6703,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 3878.0,
-    "totalPayoutVolume": 48475.0,
-    "settlementCount": 15,
+    "totalPayoutVolume": 52353.0,
+    "settlementCount": 17,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -6872,8 +6872,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 3764.0,
-    "totalPayoutVolume": 52695.0,
-    "settlementCount": 15,
+    "totalPayoutVolume": 58717.0,
+    "settlementCount": 17,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -6929,8 +6929,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 11284.0,
-    "totalPayoutVolume": 89387.0,
-    "settlementCount": 14,
+    "totalPayoutVolume": 111955.0,
+    "settlementCount": 16,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -7241,8 +7241,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 3154.0,
-    "totalPayoutVolume": 43171.0,
-    "settlementCount": 14,
+    "totalPayoutVolume": 49085.0,
+    "settlementCount": 16,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -7638,8 +7638,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 2865.0,
-    "totalPayoutVolume": 37245.0,
-    "settlementCount": 13,
+    "totalPayoutVolume": 42975.0,
+    "settlementCount": 15,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -7920,8 +7920,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 2744.0,
-    "totalPayoutVolume": 28057.0,
-    "settlementCount": 13,
+    "totalPayoutVolume": 30499.0,
+    "settlementCount": 15,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -8120,8 +8120,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 3736.0,
-    "totalPayoutVolume": 41099.0,
-    "settlementCount": 14,
+    "totalPayoutVolume": 48571.0,
+    "settlementCount": 16,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -8373,8 +8373,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 3525.0,
-    "totalPayoutVolume": 28623.0,
-    "settlementCount": 14,
+    "totalPayoutVolume": 31443.0,
+    "settlementCount": 16,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -8629,8 +8629,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 8893.0,
-    "totalPayoutVolume": 60265.0,
-    "settlementCount": 13,
+    "totalPayoutVolume": 78051.0,
+    "settlementCount": 15,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -8657,8 +8657,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1972.0,
-    "totalPayoutVolume": 22861.0,
-    "settlementCount": 13,
+    "totalPayoutVolume": 25695.0,
+    "settlementCount": 15,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -8685,8 +8685,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 3732.0,
-    "totalPayoutVolume": 34372.0,
-    "settlementCount": 13,
+    "totalPayoutVolume": 41836.0,
+    "settlementCount": 15,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -8829,8 +8829,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1940.0,
-    "totalPayoutVolume": 25045.0,
-    "settlementCount": 13,
+    "totalPayoutVolume": 28855.0,
+    "settlementCount": 15,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -8857,8 +8857,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 4845.0,
-    "totalPayoutVolume": 41667.0,
-    "settlementCount": 14,
+    "totalPayoutVolume": 51357.0,
+    "settlementCount": 16,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -8914,8 +8914,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 8084.0,
-    "totalPayoutVolume": 37297.0,
-    "settlementCount": 15,
+    "totalPayoutVolume": 41129.0,
+    "settlementCount": 17,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -8942,8 +8942,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1887.0,
-    "totalPayoutVolume": 21386.0,
-    "settlementCount": 13,
+    "totalPayoutVolume": 23902.0,
+    "settlementCount": 15,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -9028,8 +9028,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1878.0,
-    "totalPayoutVolume": 20059.0,
-    "settlementCount": 13,
+    "totalPayoutVolume": 22073.0,
+    "settlementCount": 15,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -9502,8 +9502,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1411.0,
-    "totalPayoutVolume": 18343.0,
-    "settlementCount": 13,
+    "totalPayoutVolume": 21165.0,
+    "settlementCount": 15,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -9588,8 +9588,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1316.0,
-    "totalPayoutVolume": 18424.0,
-    "settlementCount": 14,
+    "totalPayoutVolume": 21056.0,
+    "settlementCount": 16,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -9755,8 +9755,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 5389.0,
-    "totalPayoutVolume": 37984.0,
-    "settlementCount": 15,
+    "totalPayoutVolume": 48762.0,
+    "settlementCount": 17,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -9946,8 +9946,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 4704.0,
-    "totalPayoutVolume": 32928.0,
-    "settlementCount": 7,
+    "totalPayoutVolume": 42336.0,
+    "settlementCount": 9,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01"
@@ -10128,8 +10128,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 18146.0,
-    "totalPayoutVolume": 54692.0,
-    "settlementCount": 8,
+    "totalPayoutVolume": 60442.0,
+    "settlementCount": 10,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01"
@@ -10311,8 +10311,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 11698.0,
-    "totalPayoutVolume": 71031.0,
-    "settlementCount": 7,
+    "totalPayoutVolume": 90085.0,
+    "settlementCount": 9,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01"
@@ -10337,8 +10337,8 @@
     "sebiRegistrationNumber": "INH000017091",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 106625.0,
-    "totalPayoutVolume": 680074.0,
-    "settlementCount": 9,
+    "totalPayoutVolume": 893324.0,
+    "settlementCount": 11,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01"
@@ -10389,8 +10389,8 @@
     "sebiRegistrationNumber": "INH000010672",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 18578.0,
-    "totalPayoutVolume": 180050.0,
-    "settlementCount": 14,
+    "totalPayoutVolume": 233018.0,
+    "settlementCount": 18,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01"
@@ -10542,8 +10542,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 7809.0,
-    "totalPayoutVolume": 35143.0,
-    "settlementCount": 7,
+    "totalPayoutVolume": 42953.0,
+    "settlementCount": 9,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01"
@@ -10620,8 +10620,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 6653.0,
-    "totalPayoutVolume": 41818.0,
-    "settlementCount": 8,
+    "totalPayoutVolume": 51322.0,
+    "settlementCount": 10,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01"
@@ -10801,8 +10801,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 5846.0,
-    "totalPayoutVolume": 39430.0,
-    "settlementCount": 7,
+    "totalPayoutVolume": 51122.0,
+    "settlementCount": 9,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01"
@@ -10984,8 +10984,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 3921.0,
-    "totalPayoutVolume": 31044.0,
-    "settlementCount": 8,
+    "totalPayoutVolume": 38758.0,
+    "settlementCount": 10,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01"
@@ -11239,8 +11239,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 9099.0,
-    "totalPayoutVolume": 85816.0,
-    "settlementCount": 13,
+    "totalPayoutVolume": 116822.0,
+    "settlementCount": 17,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01"
@@ -11394,8 +11394,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 4822.0,
-    "totalPayoutVolume": 26521.0,
-    "settlementCount": 6,
+    "totalPayoutVolume": 36165.0,
+    "settlementCount": 8,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01"
@@ -11474,8 +11474,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 2250.0,
-    "totalPayoutVolume": 15750.0,
-    "settlementCount": 7,
+    "totalPayoutVolume": 20250.0,
+    "settlementCount": 9,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01"
@@ -11681,8 +11681,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 2425.0,
-    "totalPayoutVolume": 14065.0,
-    "settlementCount": 6,
+    "totalPayoutVolume": 18915.0,
+    "settlementCount": 8,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01"
@@ -11912,8 +11912,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 2892.0,
-    "totalPayoutVolume": 17352.0,
-    "settlementCount": 7,
+    "totalPayoutVolume": 23136.0,
+    "settlementCount": 9,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01"
@@ -12094,8 +12094,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1080.0,
-    "totalPayoutVolume": 6480.0,
-    "settlementCount": 6,
+    "totalPayoutVolume": 8640.0,
+    "settlementCount": 8,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01"
@@ -12120,8 +12120,8 @@
     "sebiRegistrationNumber": "INH000019521",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 6226.0,
-    "totalPayoutVolume": 39470.0,
-    "settlementCount": 8,
+    "totalPayoutVolume": 51922.0,
+    "settlementCount": 10,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01"
@@ -12432,8 +12432,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 102168.0,
-    "totalPayoutVolume": 535250.0,
-    "settlementCount": 6,
+    "totalPayoutVolume": 739586.0,
+    "settlementCount": 8,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01"
@@ -12560,8 +12560,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 17780.0,
-    "totalPayoutVolume": 61880.0,
-    "settlementCount": 6,
+    "totalPayoutVolume": 79520.0,
+    "settlementCount": 8,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01"
@@ -12638,8 +12638,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 14111.0,
-    "totalPayoutVolume": 35281.0,
-    "settlementCount": 6,
+    "totalPayoutVolume": 43749.0,
+    "settlementCount": 8,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01"
@@ -12664,8 +12664,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 13768.0,
-    "totalPayoutVolume": 29513.0,
-    "settlementCount": 6,
+    "totalPayoutVolume": 35811.0,
+    "settlementCount": 8,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01"
@@ -13006,8 +13006,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 4869.0,
-    "totalPayoutVolume": 29138.0,
-    "settlementCount": 6,
+    "totalPayoutVolume": 38876.0,
+    "settlementCount": 8,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01"
@@ -13420,8 +13420,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1854.0,
-    "totalPayoutVolume": 10929.0,
-    "settlementCount": 6,
+    "totalPayoutVolume": 14637.0,
+    "settlementCount": 8,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01"
@@ -13525,8 +13525,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1259.0,
-    "totalPayoutVolume": 7554.0,
-    "settlementCount": 6,
+    "totalPayoutVolume": 10072.0,
+    "settlementCount": 8,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01"
@@ -13551,8 +13551,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1536.0,
-    "totalPayoutVolume": 8813.0,
-    "settlementCount": 6,
+    "totalPayoutVolume": 11885.0,
+    "settlementCount": 8,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01"
@@ -13681,8 +13681,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 21379.0,
-    "totalPayoutVolume": 106895.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 149653.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -13706,8 +13706,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 3774.0,
-    "totalPayoutVolume": 18870.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 26418.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -13731,8 +13731,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1239.0,
-    "totalPayoutVolume": 6195.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 8673.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -13756,8 +13756,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1669.0,
-    "totalPayoutVolume": 8345.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 11683.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -13781,8 +13781,8 @@
     "sebiRegistrationNumber": "INH000021058",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 53631.0,
-    "totalPayoutVolume": 321786.0,
-    "settlementCount": 6,
+    "totalPayoutVolume": 429048.0,
+    "settlementCount": 8,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -13832,8 +13832,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 31499.0,
-    "totalPayoutVolume": 157495.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 220493.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -13935,8 +13935,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 21220.0,
-    "totalPayoutVolume": 106100.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 148540.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -14038,8 +14038,8 @@
     "sebiRegistrationNumber": "INH000020554",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 15316.0,
-    "totalPayoutVolume": 91896.0,
-    "settlementCount": 6,
+    "totalPayoutVolume": 122528.0,
+    "settlementCount": 8,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -14063,8 +14063,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 14468.0,
-    "totalPayoutVolume": 72340.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 101276.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -14244,8 +14244,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 9793.0,
-    "totalPayoutVolume": 48965.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 68551.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -14269,8 +14269,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 9762.0,
-    "totalPayoutVolume": 48810.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 68334.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -14294,8 +14294,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 9045.0,
-    "totalPayoutVolume": 45225.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 63315.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -14345,8 +14345,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 8098.0,
-    "totalPayoutVolume": 40490.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 56686.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -14448,8 +14448,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 6835.0,
-    "totalPayoutVolume": 34175.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 47845.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -14473,8 +14473,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 6750.0,
-    "totalPayoutVolume": 33750.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 47250.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -14498,8 +14498,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 6500.0,
-    "totalPayoutVolume": 32500.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 45500.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -14523,8 +14523,8 @@
     "sebiRegistrationNumber": "INH000016074",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 6286.0,
-    "totalPayoutVolume": 37716.0,
-    "settlementCount": 6,
+    "totalPayoutVolume": 50288.0,
+    "settlementCount": 8,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -14652,8 +14652,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 5399.0,
-    "totalPayoutVolume": 26995.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 37793.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -14677,8 +14677,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 5396.0,
-    "totalPayoutVolume": 26980.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 37772.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -14754,8 +14754,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 5045.0,
-    "totalPayoutVolume": 25225.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 35315.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -14779,8 +14779,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 4882.0,
-    "totalPayoutVolume": 24410.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 34174.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -14830,8 +14830,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 4798.0,
-    "totalPayoutVolume": 23990.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 33586.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -14855,8 +14855,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 4733.0,
-    "totalPayoutVolume": 23665.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 33131.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -14880,8 +14880,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 4636.0,
-    "totalPayoutVolume": 23180.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 32452.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -14931,8 +14931,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 3806.0,
-    "totalPayoutVolume": 19030.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 26642.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -15008,8 +15008,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 3416.0,
-    "totalPayoutVolume": 17080.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 23912.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -15033,8 +15033,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 3398.0,
-    "totalPayoutVolume": 16990.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 23786.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -15084,8 +15084,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 3326.0,
-    "totalPayoutVolume": 16630.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 23282.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -15109,8 +15109,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 3315.0,
-    "totalPayoutVolume": 16575.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 23205.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -15134,8 +15134,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 3011.0,
-    "totalPayoutVolume": 15055.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 21077.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -15159,8 +15159,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 2957.0,
-    "totalPayoutVolume": 14785.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 20699.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -15184,8 +15184,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 2907.0,
-    "totalPayoutVolume": 14535.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 20349.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -15209,8 +15209,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 2893.0,
-    "totalPayoutVolume": 14465.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 20251.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -15260,8 +15260,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 2880.0,
-    "totalPayoutVolume": 14400.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 20160.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -15285,8 +15285,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 2875.0,
-    "totalPayoutVolume": 14375.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 20125.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -15310,8 +15310,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 2857.0,
-    "totalPayoutVolume": 14285.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 19999.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -15335,8 +15335,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 2823.0,
-    "totalPayoutVolume": 14115.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 19761.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -15360,8 +15360,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 2822.0,
-    "totalPayoutVolume": 14110.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 19754.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -15385,8 +15385,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 2822.0,
-    "totalPayoutVolume": 14110.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 19754.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -15410,8 +15410,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 2822.0,
-    "totalPayoutVolume": 14110.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 19754.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -15513,8 +15513,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 2425.0,
-    "totalPayoutVolume": 12125.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 16975.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -15564,8 +15564,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 2364.0,
-    "totalPayoutVolume": 11820.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 16548.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -15615,8 +15615,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 2352.0,
-    "totalPayoutVolume": 11760.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 16464.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -15666,8 +15666,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 2266.0,
-    "totalPayoutVolume": 11330.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 15862.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -15691,8 +15691,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 2241.0,
-    "totalPayoutVolume": 11205.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 15687.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -15716,8 +15716,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 2238.0,
-    "totalPayoutVolume": 11190.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 15666.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -15741,8 +15741,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 2001.0,
-    "totalPayoutVolume": 10005.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 14007.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -15766,8 +15766,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1977.0,
-    "totalPayoutVolume": 9885.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 13839.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -15791,8 +15791,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1977.0,
-    "totalPayoutVolume": 9885.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 13839.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -15842,8 +15842,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1976.0,
-    "totalPayoutVolume": 9880.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 13832.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -15893,8 +15893,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1953.0,
-    "totalPayoutVolume": 9765.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 13671.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -15944,8 +15944,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1927.0,
-    "totalPayoutVolume": 9635.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 13489.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -15969,8 +15969,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1926.0,
-    "totalPayoutVolume": 9630.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 13482.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -15994,8 +15994,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1916.0,
-    "totalPayoutVolume": 9580.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 13412.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -16045,8 +16045,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1904.0,
-    "totalPayoutVolume": 9520.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 13328.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -16070,8 +16070,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1899.0,
-    "totalPayoutVolume": 9495.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 13293.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -16121,8 +16121,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1881.0,
-    "totalPayoutVolume": 9405.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 13167.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -16198,8 +16198,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1854.0,
-    "totalPayoutVolume": 9270.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 12978.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -16223,8 +16223,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1799.0,
-    "totalPayoutVolume": 8995.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 12593.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -16300,8 +16300,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1757.0,
-    "totalPayoutVolume": 8785.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 12299.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -16325,8 +16325,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1744.0,
-    "totalPayoutVolume": 8720.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 12208.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -16350,8 +16350,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1739.0,
-    "totalPayoutVolume": 8695.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 12173.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -16375,8 +16375,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1715.0,
-    "totalPayoutVolume": 8575.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 12005.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -16400,8 +16400,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1572.0,
-    "totalPayoutVolume": 7860.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 11004.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -16425,8 +16425,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1515.0,
-    "totalPayoutVolume": 7575.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 10605.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -16528,8 +16528,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1411.0,
-    "totalPayoutVolume": 7055.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 9877.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -16553,8 +16553,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1394.0,
-    "totalPayoutVolume": 6970.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 9758.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -16578,8 +16578,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1349.0,
-    "totalPayoutVolume": 6745.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 9443.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -16655,8 +16655,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1251.0,
-    "totalPayoutVolume": 6255.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 8757.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -16706,8 +16706,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1080.0,
-    "totalPayoutVolume": 5400.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 7560.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -16731,8 +16731,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1078.0,
-    "totalPayoutVolume": 5390.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 7546.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
@@ -16756,8 +16756,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1067.0,
-    "totalPayoutVolume": 5335.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 7469.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-09-01"
     ],
