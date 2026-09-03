@@ -625,9 +625,9 @@ function matchFilter(r) {
     }
   }
   if (currentFilter === "nolink" && !r.noLink) return false;
-  if (currentFilter === "both" && !(r.selfTransaction && r.noLink)) return false;
-  if (currentFilter === "cap" && !(r.buyersChecked >= 100 && !r.selfTransaction)) return false;
-  if (currentFilter === "approved" && (r.selfTransaction || r.noLink)) return false;
+  if (currentFilter === "both" && !(r.topRiskBoth || (r.selfTransaction && r.noLink && r.inSelf2DayWindow !== false))) return false;
+  if (currentFilter === "cap" && !(r.unverifiableCap || (r.buyersChecked >= 100 && !r.selfTransaction && r.buyerWindow))) return false;
+  if (currentFilter === "approved" && (r.selfTransaction || r.noLink || (r.telegramIntegration && r.sebiRegisteredNo === 'No'))) return false;
   if (currentFilter === "telegram_sebi" && (!r.telegramEligible || !r.telegramIntegration)) return false;
 
   // 2. Dropdown Filter: Telegram
@@ -861,6 +861,37 @@ function openDetailModal(idx) {
         </div>
       </div>
     </div>
+    ${r.topRiskBoth ? `
+      <div class="mt-3 p-3 bg-purple-50 rounded-xl border border-purple-300 flex items-center justify-between">
+        <div class="flex items-center gap-2 text-purple-950 font-bold text-xs">
+          <span class="w-2.5 h-2.5 rounded-full bg-purple-600 animate-pulse"></span>
+          CRITICAL DUAL VIOLATION: Creator has BOTH a recent Self-Payment AND an Empty Deliverable Product!
+        </div>
+        <span class="px-2.5 py-0.5 rounded-full text-[10px] font-extrabold bg-purple-200 text-purple-900 border border-purple-300">PRIORITY HOLD</span>
+      </div>
+    ` : ''}
+    ${r.noLink ? `
+      <div class="mt-3 p-3.5 bg-amber-50/90 rounded-xl border border-amber-300 shadow-sm">
+        <div class="flex items-center justify-between mb-1.5">
+          <span class="text-xs font-bold text-amber-900 flex items-center gap-1.5">
+            <svg class="w-4 h-4 text-amber-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg>
+            Empty Product Deliverable Detected (${r.noLinkCount || 1} product(s))
+          </span>
+          <span class="text-[10px] font-extrabold text-amber-800 bg-amber-200 px-2 py-0.5 rounded-full border border-amber-300">NO CONTENT ATTACHED</span>
+        </div>
+        <div class="text-[12px] text-slate-800 font-medium mb-1">
+          <b>Flagged Product:</b> ${r.exampleTitle || (r.noLinkProducts && r.noLinkProducts[0] && r.noLinkProducts[0].title) || 'Digital Download Product'}
+        </div>
+        <div class="flex flex-wrap items-center gap-4 text-[11px] text-slate-600 mt-1">
+          <span>Description Chars: <b>${r.descChars || (r.noLinkProducts && r.noLinkProducts[0] && r.noLinkProducts[0].descChars) || 0}</b></span>
+          <span>Images: <b>${r.imgs || (r.noLinkProducts && r.noLinkProducts[0] && r.noLinkProducts[0].imgs) || 1}</b></span>
+          <a href="${r.productUrl || (r.noLinkProducts && r.noLinkProducts[0] && r.noLinkProducts[0].productUrl) || ('https://superprofile.bio/vp/' + r.creatorId)}" target="_blank" class="text-indigo-600 font-bold hover:underline inline-flex items-center gap-1">
+            <span>View Flagged Product Page</span>
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+          </a>
+        </div>
+      </div>
+    ` : ''}
     ${selfTxnTableHtml}
     <div class="flex items-center justify-between pt-3 border-t border-slate-200">
       <button onclick="copyCreatorJson(${idx})" class="px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-xs transition">
@@ -947,6 +978,13 @@ function resetAllFilters() {
   showToast("All filters reset");
 }
 
+function rInSelf2DayWindow(c, top3Days) {
+  if (!c.selfTransaction) return false;
+  if (c.inSelf2DayWindow !== undefined) return c.inSelf2DayWindow;
+  const dk = getDayKey(c);
+  return top3Days.length === 0 || top3Days.includes(dk) || dk >= top3Days[top3Days.length - 1];
+}
+
 function render() {
   if (!DATA) return;
   const creators = DATA.creators || [];
@@ -956,9 +994,9 @@ function render() {
   const self2dCreators = creators.filter(c => c.selfTransaction && (top3SelfDays.length === 0 || top3SelfDays.includes(getDayKey(c)) || getDayKey(c) >= top3SelfDays[top3SelfDays.length - 1]));
   const self2dCnt = self2dCreators.length;
   const noLinkCnt = creators.filter(c => c.noLink).length;
-  const bothCnt = creators.filter(c => c.selfTransaction && c.noLink).length;
-  const capCnt = creators.filter(c => c.buyersChecked >= 100 && !c.selfTransaction).length;
-  const approvedCnt = creators.filter(c => !c.selfTransaction && !c.noLink).length;
+  const bothCnt = creators.filter(c => c.topRiskBoth || (c.selfTransaction && c.noLink && rInSelf2DayWindow(c, top3SelfDays))).length;
+  const capCnt = creators.filter(c => c.unverifiableCap || (c.buyersChecked >= 100 && !c.selfTransaction && c.buyerWindow)).length;
+  const approvedCnt = creators.filter(c => !c.selfTransaction && !c.noLink && !(c.telegramIntegration && c.sebiRegisteredNo === 'No')).length;
 
   const teleEligible = creators.filter(c => c.telegramEligible && c.telegramIntegration);
   const teleCnt = teleEligible.length;
@@ -1215,6 +1253,171 @@ function render() {
     });
 
     tbody.innerHTML = rowsHtml.join("");
+
+  } else if (currentFilter === "nolink") {
+    // Dedicated Table for Missing Deliverables
+    thead.innerHTML = `
+      <tr class="bg-amber-50/80 border-b border-amber-200/90 text-xs font-bold text-slate-700 uppercase tracking-wider select-none">
+        <th class="py-3 px-4 w-12">#</th>
+        <th class="py-3 px-4 cursor-pointer hover:text-indigo-600 transition" onclick="setSort('creatorId')">
+          Creator ID ${sortArrow('creatorId')}
+        </th>
+        <th class="py-3 px-4 cursor-pointer hover:text-indigo-600 transition" onclick="setSort('username')">
+          Username ${sortArrow('username')}
+        </th>
+        <th class="py-3 px-4 text-right cursor-pointer hover:text-indigo-600 transition" onclick="setSort('payoutAmount')">
+          Pending Payout (₹) ${sortArrow('payoutAmount')}
+        </th>
+        <th class="py-3 px-4 text-center">Empty Products</th>
+        <th class="py-3 px-4">Example Flagged Product Title</th>
+        <th class="py-3 px-4 text-right">Desc Chars</th>
+        <th class="py-3 px-4 text-center">Imgs</th>
+        <th class="py-3 px-4 text-center">Product Link</th>
+        <th class="py-3 px-4 text-center w-[140px]">Actions</th>
+      </tr>
+    `;
+
+    tbody.innerHTML = list.map((r, i) => {
+      const pTitle = r.exampleTitle || (r.noLinkProducts && r.noLinkProducts[0] && r.noLinkProducts[0].title) || 'Digital Download Product';
+      const dChars = r.descChars !== undefined ? r.descChars : (r.noLinkProducts && r.noLinkProducts[0] && r.noLinkProducts[0].descChars) || 0;
+      const imgsCount = r.imgs !== undefined ? r.imgs : (r.noLinkProducts && r.noLinkProducts[0] && r.noLinkProducts[0].imgs) || 1;
+      const pUrl = r.productUrl || (r.noLinkProducts && r.noLinkProducts[0] && r.noLinkProducts[0].productUrl) || ('https://superprofile.bio/vp/' + (r.productId || r.creatorId));
+      const hasRecentSelf = (r.selfTransaction && rInSelf2DayWindow(r, getTopSelfTxnDays(DATA.creators || [])));
+
+      return `
+        <tr class="hover:bg-amber-50/40 transition">
+          <td class="py-3 px-4 font-semibold text-slate-400">${i+1}</td>
+          <td class="py-3 px-4 font-mono text-[11px] text-slate-600">
+            <span class="bg-slate-100 px-1.5 py-0.5 rounded cursor-pointer" onclick="copyText('${r.creatorId || ''}','Creator ID')">${r.creatorId || '—'}</span>
+          </td>
+          <td class="py-3 px-4 font-bold text-slate-800">
+            ${r.username || '—'}
+            ${hasRecentSelf ? '<span class="ml-1 text-[10px] text-purple-700 font-extrabold bg-purple-100 px-1.5 py-0.5 rounded border border-purple-200">⚠️ also recent self-txn</span>' : ''}
+          </td>
+          <td class="py-3 px-4 text-right font-extrabold text-slate-900 font-mono">₹${inr(r.payoutAmount)}</td>
+          <td class="py-3 px-4 text-center font-bold text-amber-700">${r.noLinkCount || 1}</td>
+          <td class="py-3 px-4 text-slate-700 font-medium text-xs max-w-[280px] truncate" title="${pTitle}">${pTitle}</td>
+          <td class="py-3 px-4 text-right font-mono text-xs text-slate-500">${dChars}</td>
+          <td class="py-3 px-4 text-center font-mono text-xs text-slate-500">${imgsCount}</td>
+          <td class="py-3 px-4 text-center">
+            <a href="${pUrl}" target="_blank" class="inline-flex items-center gap-1 text-xs font-bold text-indigo-600 hover:text-indigo-800 underline">
+              view &rarr;
+            </a>
+          </td>
+          <td class="py-3 px-4 text-center w-[140px] whitespace-nowrap">
+            <div class="flex items-center justify-center gap-1.5">
+              <button onclick="openDetailModal(${i})" class="btn-futuristic px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-semibold border border-slate-300 transition">
+                Details
+              </button>
+              <a href="https://superprofile.bio/${r.username || ''}" target="_blank" class="btn-futuristic px-2.5 py-1 rounded-lg bg-indigo-50 hover:bg-indigo-100 text-indigo-700 text-xs font-semibold border border-indigo-200 transition">
+                Bio Page
+              </a>
+            </div>
+          </td>
+        </tr>
+      `;
+    }).join("");
+
+  } else if (currentFilter === "both") {
+    // Dedicated Table for Top Risk (Both Lists)
+    thead.innerHTML = `
+      <tr class="bg-purple-50 border-b border-purple-200 text-xs font-bold text-purple-900 uppercase tracking-wider select-none">
+        <th class="py-3 px-4 w-12">#</th>
+        <th class="py-3 px-4">Creator ID</th>
+        <th class="py-3 px-4">Username</th>
+        <th class="py-3 px-4 text-right">Pending Payout (₹)</th>
+        <th class="py-3 px-4">Why Flagged (Dual Violation)</th>
+        <th class="py-3 px-4">Recent Self-Txn Details</th>
+        <th class="py-3 px-4">Empty Product Deliverable</th>
+        <th class="py-3 px-4 text-center">Compliance Gate</th>
+        <th class="py-3 px-4 text-center w-[140px]">Actions</th>
+      </tr>
+    `;
+
+    tbody.innerHTML = list.map((r, i) => {
+      const pTitle = r.exampleTitle || (r.noLinkProducts && r.noLinkProducts[0] && r.noLinkProducts[0].title) || 'Digital Download';
+      const pUrl = r.productUrl || (r.noLinkProducts && r.noLinkProducts[0] && r.noLinkProducts[0].productUrl) || ('https://superprofile.bio/vp/' + (r.productId || r.creatorId));
+
+      return `
+        <tr class="hover:bg-purple-50/60 transition bg-purple-50/20">
+          <td class="py-3 px-4 font-bold text-purple-400">${i+1}</td>
+          <td class="py-3 px-4 font-mono text-[11px] text-slate-700 font-bold">
+            <span class="bg-purple-100/70 px-1.5 py-0.5 rounded cursor-pointer" onclick="copyText('${r.creatorId || ''}','Creator ID')">${r.creatorId || '—'}</span>
+          </td>
+          <td class="py-3 px-4 font-extrabold text-slate-900">${r.username || '—'}</td>
+          <td class="py-3 px-4 text-right font-black text-rose-600 font-mono text-sm">₹${inr(r.payoutAmount)}</td>
+          <td class="py-3 px-4 font-bold text-purple-800 text-xs">
+            ${r.whyFlagged || `${r.selfTxnCount || 1} recent self-txn · ${r.noLinkCount || 1} empty product(s)`}
+          </td>
+          <td class="py-3 px-4 text-xs font-medium text-slate-700">
+            <div>${r.latestSelfTxnDate || '—'}</div>
+            <div class="font-bold text-rose-600">₹${inr(r.selfTxnMaxAmount)} (×${r.selfTxnCount||1})</div>
+          </td>
+          <td class="py-3 px-4 text-xs">
+            <div class="font-semibold text-slate-900 max-w-[220px] truncate" title="${pTitle}">${pTitle}</div>
+            <a href="${pUrl}" target="_blank" class="text-[11px] text-indigo-600 hover:underline font-bold">
+              Inspect Product &rarr;
+            </a>
+          </td>
+          <td class="py-3 px-4 text-center">
+            <span class="status-badge bg-rose-100 text-rose-800 border border-rose-300 font-black">CRITICAL HOLD</span>
+          </td>
+          <td class="py-3 px-4 text-center w-[140px] whitespace-nowrap">
+            <div class="flex items-center justify-center gap-1.5">
+              <button onclick="openDetailModal(${i})" class="btn-futuristic px-2.5 py-1 rounded-lg bg-purple-100 hover:bg-purple-200 text-purple-900 text-xs font-bold border border-purple-300 transition">
+                Details
+              </button>
+              <a href="https://superprofile.bio/${r.username || ''}" target="_blank" class="btn-futuristic px-2.5 py-1 rounded-lg bg-indigo-50 hover:bg-indigo-100 text-indigo-700 text-xs font-semibold border border-indigo-200 transition">
+                Bio Page
+              </a>
+            </div>
+          </td>
+        </tr>
+      `;
+    }).join("");
+
+  } else if (currentFilter === "cap") {
+    // Dedicated Table for 100-Buyer Cap Unverifiable
+    thead.innerHTML = `
+      <tr class="bg-slate-100 border-b border-slate-200 text-xs font-bold text-slate-700 uppercase tracking-wider select-none">
+        <th class="py-3 px-4 w-12">#</th>
+        <th class="py-3 px-4">Creator ID</th>
+        <th class="py-3 px-4">Username</th>
+        <th class="py-3 px-4 text-right cursor-pointer hover:text-indigo-600 transition" onclick="setSort('payoutAmount')">
+          Pending Payout (₹) ${sortArrow('payoutAmount')}
+        </th>
+        <th class="py-3 px-4 text-center">Visible Window</th>
+        <th class="py-3 px-4 text-center">Buyers Audited</th>
+        <th class="py-3 px-4">Audit Limitation / Status</th>
+        <th class="py-3 px-4 text-center w-[140px]">Actions</th>
+      </tr>
+    `;
+
+    tbody.innerHTML = list.map((r, i) => `
+      <tr class="hover:bg-slate-50 transition">
+        <td class="py-3 px-4 font-semibold text-slate-400">${i+1}</td>
+        <td class="py-3 px-4 font-mono text-[11px] text-slate-600">
+          <span class="bg-slate-100 px-1.5 py-0.5 rounded cursor-pointer" onclick="copyText('${r.creatorId || ''}','Creator ID')">${r.creatorId || '—'}</span>
+        </td>
+        <td class="py-3 px-4 font-bold text-slate-800">${r.username || '—'}</td>
+        <td class="py-3 px-4 text-right font-extrabold text-slate-900 font-mono">₹${inr(r.payoutAmount)}</td>
+        <td class="py-3 px-4 text-center font-bold text-amber-700 font-mono">${r.buyerWindow || '1d'}</td>
+        <td class="py-3 px-4 text-center font-bold text-slate-700 font-mono">100</td>
+        <td class="py-3 px-4 text-xs text-slate-600">
+          High-velocity seller: 100 buyers span &lt; 2 days. Self-payment below cap cannot be ruled out.
+        </td>
+        <td class="py-3 px-4 text-center w-[140px] whitespace-nowrap">
+          <div class="flex items-center justify-center gap-1.5">
+            <button onclick="openDetailModal(${i})" class="btn-futuristic px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-semibold border border-slate-300 transition">
+              Details
+            </button>
+            <a href="https://superprofile.bio/${r.username || ''}" target="_blank" class="btn-futuristic px-2.5 py-1 rounded-lg bg-indigo-50 hover:bg-indigo-100 text-indigo-700 text-xs font-semibold border border-indigo-200 transition">
+              Bio Page
+            </a>
+          </div>
+        </td>
+      </tr>
+    `).join("");
 
   } else {
     // Standard Table Header for All / Self-Txns / Other tabs

@@ -1,11 +1,11 @@
 🚨 *COSMOFEED PAYOUT RISK AUDIT REPORT (T+1 Product Review)*
 📅 *Review Date:* `2026-09-03` | *Product Sale Date:* `2026-09-02`
-🕒 *Generated:* `2026-09-03 10:51` | *Total Audited:* `2,024` creators
+🕒 *Generated:* `2026-09-03 16:06` | *Total Audited:* `2,024` creators
 ──────────────────────────────────
 📊 *SUMMARY METRICS:*
 • *Total Pending Payout:* ₹10,369,173.00
 • *Self-Transaction Flagged:* `34` creators
-• *No Link / Missing Deliverable Flagged:* `0` creators
+• *No Link / Missing Deliverable Flagged:* `116` creators
 • *Adult Keyword Flagged:* `0` creators
 • *Telegram Integration (vig/ >= ₹1k):* `380` settlements
    ↳ *SEBI Registered (Yes):* `39` verified creators
@@ -51,6 +51,28 @@
 30. *mylifeyindia* (`6a451a7cc04b820013e667b7`) — Self-Txn: *₹4.95* (03:55 PM) | Payout: *₹559.00*
 
 _... and 4 more creators flagged in full report._
+
+🟡 *TOP FLAGGED NO-LINK PRODUCTS (Payment page exists, but no product/content link attached):*
+1. *indianewjobs* (`653f014f977f95001f26b494`) | Prod: `6a8ae5cc37b0d200125f3a97` (—) | URL: https://superprofile.bio/vp/6a8ae5cc37b0d200125f3a97 | ⚠️ No Link Attached
+2. *withprashantpawar* (`696af3a80efb9b0013134b07`) | Prod: `69e67b4cbe28590013e529a8` (—) | URL: https://superprofile.bio/vp/69e67b4cbe28590013e529a8 | ⚠️ No Link Attached
+3. *Mastercent1* (`64d11c56376289001e0bbe6a`) | Prod: `64d32f41b49711001ee61a5e` (—) | URL: https://superprofile.bio/vp/64d32f41b49711001ee61a5e | ⚠️ No Link Attached
+4. *meandmath* (`64e2e6dc20a6ff001e87b130`) | Prod: `6a8e5217e4f3b80013b45ba2` (—) | URL: https://superprofile.bio/vp/6a8e5217e4f3b80013b45ba2 | ⚠️ No Link Attached
+5. *investmindscape* (`68997ec604f9310013299dc3`) | Prod: `69da84819e7952001373fa92` (—) | URL: https://superprofile.bio/vp/69da84819e7952001373fa92 | ⚠️ No Link Attached
+6. *styledcloset* (`67a3296b9ae0d200131532a5`) | Prod: `6a98126769da9c0013ce3b39` (—) | URL: https://superprofile.bio/vp/6a98126769da9c0013ce3b39 | ⚠️ No Link Attached
+7. *skillsdemy* (`64956b48b0f9b80027333f7d`) | Prod: `69b965410b1cd100133b3dbb` (—) | URL: https://superprofile.bio/vp/69b965410b1cd100133b3dbb | ⚠️ No Link Attached
+8. *otg* (`66605cdafd424b0013f86ba2`) | Prod: `6a5dc43c336dff00131a18e1` (—) | URL: https://superprofile.bio/vp/6a5dc43c336dff00131a18e1 | ⚠️ No Link Attached
+9. *abdigimedia* (`661e3fa5dc11c80012ab41e4`) | Prod: `6641dbe80f408300136a9f8f` (—) | URL: https://superprofile.bio/vp/6641dbe80f408300136a9f8f | ⚠️ No Link Attached
+10. *Kuldeep5543* (`6a60ad754857f30013c7ab72`) | Prod: `6a65a1cf12783700139e1ce3` (—) | URL: https://superprofile.bio/vp/6a65a1cf12783700139e1ce3 | ⚠️ No Link Attached
+11. *velkart* (`64ae7fc478944e0020850fb4`) | Prod: `6a632f9712783700133664fb` (—) | URL: https://superprofile.bio/vp/6a632f9712783700133664fb | ⚠️ No Link Attached
+12. *aspirantsstudycampus* (`6569a69b6349ea001da9cc80`) | Prod: `65bf1a1ad5ea93001f2435d1` (—) | URL: https://superprofile.bio/vp/65bf1a1ad5ea93001f2435d1 | ⚠️ No Link Attached
+13. *samratkhatwe* (`64d5d53a0fd19f001e95c6c8`) | Prod: `6a0c53bb1f32e300145cb59d` (—) | URL: https://superprofile.bio/vp/6a0c53bb1f32e300145cb59d | ⚠️ No Link Attached
+14. *raags* (`61fd7262f1c77f0fdfa3ea7b`) | Prod: `668c0fe492493a00139c0fae` (—) | URL: https://superprofile.bio/vp/668c0fe492493a00139c0fae | ⚠️ No Link Attached
+15. *ddeducationin* (`64cfc259e74c7f001ea1659e`) | Prod: `68a078a9e6826a0013c55934` (—) | URL: https://superprofile.bio/vp/68a078a9e6826a0013c55934 | ⚠️ No Link Attached
+16. *inoshi* (`6447b3b487e8c00021393e62`) | Prod: `6450f38e0b8ffc0020ad0e94` (—) | URL: https://superprofile.bio/vp/6450f38e0b8ffc0020ad0e94 | ⚠️ No Link Attached
+17. *tushtg* (`63567035af10da003ed83242`) | Prod: `6667205f65fdc20013cee4ff` (—) | URL: https://superprofile.bio/vp/6667205f65fdc20013cee4ff | ⚠️ No Link Attached
+18. *CBSEWALLAH* (`64663c6f61b5a3002077db0a`) | Prod: `652e4153acc51c001ef49ecf` (—) | URL: https://superprofile.bio/vp/652e4153acc51c001ef49ecf | ⚠️ No Link Attached
+19. *vijaipanthail* (`622ef8c7730aec1f0ffbc090`) | Prod: `668d008992493a0013a6340e` (—) | URL: https://superprofile.bio/vp/668d008992493a0013a6340e | ⚠️ No Link Attached
+20. *mrrshubh* (`62aec47fd8c43b3c885d81e3`) | Prod: `65d04c7e084fe90012518e4a` (—) | URL: https://superprofile.bio/vp/65d04c7e084fe90012518e4a | ⚠️ No Link Attached
 
 🔵 *TELEGRAM INTEGRATION (vig/) — MANUAL SEBI REVIEW REQUIRED:*
 1. *chaudhary29* (`64bf7c27e98788001f3fa09d`) | Payout: *₹2,863.00* | Prod: `6620be84ec6aa900121eccc4` | ⚠️ SEBI Not Verified

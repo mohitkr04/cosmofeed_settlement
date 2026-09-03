@@ -121,7 +121,7 @@ def run_pipeline(audit_date: str = None, push_git: bool = True) -> bool:
     if push_git:
         log("Checking git synchronization...")
         try:
-            subprocess.run(["git", "add", "reports/", "data/", "index.html"], check=False)
+            subprocess.run(["git", "add", "-A"], check=False)
             commit_msg = f"auto: Daily payout audit & Non-SEBI ledger update [{audit_date}]"
             c_res = subprocess.run(["git", "commit", "-m", commit_msg], capture_output=True, text=True)
             if "nothing to commit" not in c_res.stdout:

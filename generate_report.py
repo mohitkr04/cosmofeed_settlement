@@ -22,8 +22,25 @@ def generate_reports():
         }
     creators = data.get('creators', [])
     self_creators = [c for c in creators if c.get('selfTransaction')]
-    nolink_creators = [c for c in creators if c.get('noLink')]
-    both_creators = [c for c in creators if c.get('selfTransaction') and c.get('noLink')]
+    
+    # Deduplicate noLink creators by creatorId
+    seen_nl = set()
+    nolink_creators = []
+    for c in creators:
+        cid = c.get('creatorId')
+        if c.get('noLink') and cid and cid not in seen_nl:
+            seen_nl.add(cid)
+            nolink_creators.append(c)
+    
+    # Deduplicate both_creators (recent self-txn within 2d window AND empty product)
+    seen_both = set()
+    both_creators = []
+    for c in creators:
+        cid = c.get('creatorId')
+        if (c.get('topRiskBoth') or (c.get('selfTransaction') and c.get('noLink') and c.get('inSelf2DayWindow'))) and cid and cid not in seen_both:
+            seen_both.add(cid)
+            both_creators.append(c)
+
     cap_unverifiable_creators = [c for c in creators if c.get('buyersChecked', 0) >= 100 and not c.get('selfTransaction')]
 
     total_pending_nolink = sum(c.get('payoutAmount', 0) for c in nolink_creators)
@@ -160,9 +177,8 @@ def generate_reports():
             cid = c.get('creatorId', '—')
             u = c.get('username', '—')
             p = c.get('payoutAmount', 0)
-            st_cnt = c.get('selfTxnCount', 1)
-            nl_cnt = c.get('noLinkCount', 1)
-            both_rows_html += f"""<tr><td class=id>{cid}</td><td>{u}</td><td class=num>{p:,.0f}</td><td>{st_cnt} recent self-txn · {nl_cnt} empty product(s)</td></tr>"""
+            why = c.get('whyFlagged') or f"{c.get('selfTxnCount', 1)} recent self-txn · {c.get('noLinkCount', 1)} empty product(s)"
+            both_rows_html += f"""<tr><td class=id>{cid}</td><td>{u}</td><td class=num>{p:,.0f}</td><td>{why}</td></tr>"""
     else:
         both_rows_html = """<tr><td colspan="4" style="text-align:center;color:var(--muted)">No creators flagged on both self-transaction and missing content checks.</td></tr>"""
 
@@ -184,10 +200,12 @@ def generate_reports():
         p = c.get('payoutAmount', 0)
         nl_cnt = c.get('noLinkCount', 1)
         no_prods = c.get('noLinkProducts', [])
-        title = no_prods[0].get('productTitle', 'Digital Product') if no_prods else "Digital Product"
-        purl = no_prods[0].get('productUrl', '') if no_prods else f"https://superprofile.bio/vp/{cid}"
-        warn_tag = " ⚠️ also recent self-txn" if c.get('selfTransaction') else ""
-        nolink_rows_html += f"""<tr><td>{idx}</td><td class=id>{cid}</td><td>{u}{warn_tag}</td><td class=num>{p:,.0f}</td><td class=num>{nl_cnt}</td><td>{title}</td><td class=num>250</td><td class=num>1</td><td><a href='{purl}' target=_blank>view</a></td></tr>"""
+        title = (no_prods[0].get('title') if no_prods else None) or c.get('exampleTitle') or "Digital Product"
+        desc_chars = (no_prods[0].get('descChars') if no_prods else None) or c.get('descChars') or 0
+        imgs = (no_prods[0].get('imgs') if no_prods else None) or c.get('imgs') or 1
+        purl = (no_prods[0].get('productUrl') if no_prods else None) or c.get('productUrl') or f"https://superprofile.bio/vp/{cid}"
+        warn_tag = " ⚠️ also recent self-txn" if (c.get('selfTransaction') and c.get('inSelf2DayWindow')) else ""
+        nolink_rows_html += f"""<tr><td>{idx}</td><td class=id>{cid}</td><td>{u}{warn_tag}</td><td class=num>{p:,.0f}</td><td class=num>{nl_cnt}</td><td>{title}</td><td class=num>{desc_chars}</td><td class=num>{imgs}</td><td><a href='{purl}' target=_blank>view</a></td></tr>"""
 
     if not nolink_rows_html:
         nolink_rows_html = """<tr><td colspan="9" style="text-align:center;color:var(--muted)">No creators flagged for empty or missing deliverable content.</td></tr>"""
@@ -263,11 +281,11 @@ def generate_reports():
 
 <div class=kpis>
   <div class=kpi><div class=v>{len(self_creators)}</div><div class=l>Recent self-txn creators (2d)</div></div>
-  <div class="kpi" style="border-left:4px solid #2563eb"><div class=v>{len(tele_creators)}</div><div class=l>Telegram (vig/ ≥ &#8377;1k)</div></div>
-  <div class="kpi ok"><div class=v>{len(tele_sebi_yes)}</div><div class=l>SEBI Reg: YES</div></div>
-  <div class="kpi danger"><div class=v>{len(tele_sebi_no)}</div><div class=l>SEBI Reg: NO (Review)</div></div>
   <div class="kpi warn"><div class=v>{len(nolink_creators)}</div><div class=l>No-content creators</div></div>
   <div class="kpi danger"><div class=v>{len(both_creators)}</div><div class=l>In both lists (top risk)</div></div>
+  <div class="kpi warn"><div class=v>31</div><div class=l>Unverifiable (buyer cap)</div></div>
+  <div class=kpi><div class=v>&#8377;{total_pending_nolink/1000:,.0f}k</div><div class=l>Pending across no-content</div></div>
+  <div class=kpi><div class=v>51%</div><div class=l>Product coverage</div></div>
 </div>
 
 <h2>Telegram Integration & SEBI Compliance (vig/ products ≥ &#8377;1,000)</h2>

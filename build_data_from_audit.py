@@ -201,6 +201,17 @@ def main(audit_date=None):
         print(f"Warning: Telegram SEBI verification failed: {e}")
         tele_stats = {}
 
+    # -------------------------------------------------------------
+    # Product Content & Deliverable Verification (Requirement #2)
+    # -------------------------------------------------------------
+    try:
+        import product_review_scanner
+        out, prod_stats = product_review_scanner.scan_and_enrich_creators(out, audit_date=rev_date)
+        print(f"Product Review Complete: {prod_stats.get('noContentCount', 0)} no-content creators, {prod_stats.get('bothCount', 0)} in both lists (top risk)")
+    except Exception as e:
+        print(f"Warning: Product review scanning failed: {e}")
+        prod_stats = {}
+
     data = {
         "reviewDate": rev_date,
         "reviewDateFormatted": rev_date,
@@ -210,8 +221,11 @@ def main(audit_date=None):
         "totalCreators": len(out),
         "counts": {
             "selfTransaction": sum(1 for r in out if r.get("selfTransaction")),
+            "selfTransaction2d": sum(1 for r in out if r.get("selfTransaction") and r.get("inSelf2DayWindow")),
             "adult": sum(1 for r in out if r.get("adultFlag")),
             "noLink": sum(1 for r in out if r.get("noLink") is True),
+            "topRiskBoth": sum(1 for r in out if r.get("topRiskBoth") is True),
+            "unverifiableCap": sum(1 for r in out if r.get("unverifiableCap") is True),
             "telegramCount": tele_stats.get("telegramCount", 0),
             "telegramSebiYes": tele_stats.get("sebiYesCount", 0),
             "telegramSebiNo": tele_stats.get("sebiNoCount", 0),
@@ -219,6 +233,7 @@ def main(audit_date=None):
             "telegramEligible": tele_stats.get("eligibleCount", 0)
         },
         "telegramSebiSummary": tele_stats,
+        "productReviewSummary": prod_stats,
         "creators": out,
     }
 
@@ -227,7 +242,10 @@ def main(audit_date=None):
 
     print(f"Successfully generated data.json!")
     print(f"  Total Creators: {len(out)}")
-    print(f"  Self-Transactions: {data['counts']['selfTransaction']}")
+    print(f"  Self-Transactions: {data['counts']['selfTransaction']} (2-Day Window: {data['counts']['selfTransaction2d']})")
+    print(f"  Missing Deliverable (No-Content): {data['counts']['noLink']}")
+    print(f"  In Both Lists (Top Risk): {data['counts']['topRiskBoth']}")
+    print(f"  Unverifiable (100-Cap): {data['counts']['unverifiableCap']}")
     print(f"  Adult Content (Heuristic): {data['counts']['adult']}")
     print(f"  Telegram Settlements (>= 1k): {data['counts']['telegramCount']}")
     print(f"  SEBI Verified (Yes): {data['counts']['telegramSebiYes']}")
