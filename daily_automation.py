@@ -120,19 +120,20 @@ def run_pipeline(audit_date: str = None, push_git: bool = True) -> bool:
     # 4. Git commit and push if enabled
     if push_git:
         log("Checking git synchronization...")
-        try:
             subprocess.run(["git", "add", "reports/", "data/", "index.html"], check=False)
             commit_msg = f"auto: Daily payout audit & Non-SEBI ledger update [{audit_date}]"
             c_res = subprocess.run(["git", "commit", "-m", commit_msg], capture_output=True, text=True)
             if "nothing to commit" not in c_res.stdout:
                 log(f"Committed changes: {commit_msg}")
-                p_res = subprocess.run(["git", "push", "origin", "main"], capture_output=True, text=True, timeout=60)
-                if p_res.returncode == 0:
-                    log("Successfully pushed daily updates to GitHub main branch!")
-                else:
-                    log(f"Git push notice: {p_res.stderr[:200]}")
+            
+            # Always pull latest remote commits before pushing to prevent non-fast-forward rejection
+            subprocess.run(["git", "pull", "origin", "main", "--no-edit", "-X", "ours"], capture_output=True, text=True, timeout=60)
+            
+            p_res = subprocess.run(["git", "push", "origin", "main"], capture_output=True, text=True, timeout=60)
+            if p_res.returncode == 0:
+                log("Successfully pushed daily updates to GitHub main branch!")
             else:
-                log("Git reports and data are already up-to-date with latest commit.")
+                log(f"Git push notice: {p_res.stderr[:200]}")
         except Exception as e:
             log(f"Git synchronization note: {e}")
 
