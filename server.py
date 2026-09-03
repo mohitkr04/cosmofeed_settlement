@@ -374,8 +374,11 @@ def autonomous_daily_scheduler_loop():
             hour = now.hour
             minute = now.minute
 
-            # If today's audit has not run yet and time is between 08:00 AM and 09:59 AM IST:
-            if not os.path.exists(audit_file) and hour in [8, 9] and not _is_audit_running:
+            # If today's audit has not run yet:
+            if not os.path.exists(audit_file) and not _is_audit_running:
+                print(f"[AUTONOMOUS SCHEDULER] Today's audit ({today_str}) is missing! Running automated audit immediately...")
+                trigger_autonomous_audit(audit_date=today_str, force=True)
+            elif hour in [8, 9] and minute in [0, 30] and not _is_audit_running and _last_audit_run_date != today_str:
                 print(f"[AUTONOMOUS SCHEDULER] Triggering scheduled morning audit at {now.strftime('%H:%M:%S IST')} for {today_str}...")
                 trigger_autonomous_audit(audit_date=today_str, force=True)
 
