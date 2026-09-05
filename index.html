@@ -8,25 +8,26 @@
 <link rel="shortcut icon" href="favicon.ico">
 <!-- Tailwind CSS CDN -->
 <script src="https://cdn.tailwindcss.com"></script>
-<!-- Google Fonts: Inter & JetBrains Mono -->
+<!-- Google Fonts: Poppins (Strict Sans & Poppins Design) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <script>
   tailwind.config = {
     theme: {
       extend: {
         fontFamily: {
-          sans: ['"Inter"', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'sans-serif'],
-          mono: ['"JetBrains Mono"', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'monospace'],
+          sans: ['"Poppins"', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'sans-serif'],
+          poppins: ['"Poppins"', 'sans-serif'],
+          mono: ['"Poppins"', 'ui-monospace', 'monospace'],
         },
         colors: {
-          gemini: {
-            50: '#f5f3ff',
-            100: '#ede9fe',
-            500: '#8b5cf6',
-            600: '#7c3aed',
-            700: '#6d28d9',
+          brand: {
+            50: '#f0f7ff',
+            100: '#e0effe',
+            500: '#0066ff',
+            600: '#0052cc',
+            700: '#003d99',
           }
         }
       }
@@ -35,49 +36,81 @@
 </script>
 <style>
   :root {
-    --accent-primary: #6366f1;
-    --accent-glow: rgba(99, 102, 241, 0.15);
-    --surface-glass: rgba(255, 255, 255, 0.82);
-    --surface-border: rgba(255, 255, 255, 0.9);
+    --accent-blue: #0066ff;
+    --accent-blue-hover: #0052cc;
+    --surface-glass: rgba(255, 255, 255, 0.72);
+    --surface-border: rgba(255, 255, 255, 0.88);
+  }
+
+  * {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   }
 
   body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     background: 
-      radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.08) 0px, transparent 50%),
-      radial-gradient(at 100% 0%, rgba(217, 70, 239, 0.06) 0px, transparent 50%),
-      radial-gradient(at 50% 100%, rgba(14, 165, 233, 0.06) 0px, transparent 50%),
+      radial-gradient(at 10% 10%, rgba(0, 102, 255, 0.035) 0px, transparent 40%),
+      radial-gradient(at 90% 15%, rgba(147, 51, 234, 0.025) 0px, transparent 40%),
+      radial-gradient(at 50% 90%, rgba(14, 165, 233, 0.03) 0px, transparent 50%),
       #f8fafc;
     min-height: 100vh;
     color: #0f172a;
+    -webkit-font-smoothing: antialiased;
   }
 
-  /* Futuristic Glassmorphism Panel */
-  .futuristic-card {
+  /* Liquid Glass Floating App Bar (iOS 26 / Superprofile Aesthetics) */
+  .liquid-appbar {
     background: rgba(255, 255, 255, 0.78);
-    backdrop-filter: blur(20px) saturate(180%);
-    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    backdrop-filter: blur(32px) saturate(200%);
+    -webkit-backdrop-filter: blur(32px) saturate(200%);
+    border: 1px solid rgba(255, 255, 255, 0.92);
+    box-shadow: 
+      0 14px 40px -6px rgba(15, 23, 42, 0.06),
+      0 4px 12px -2px rgba(15, 23, 42, 0.03),
+      inset 0 1px 1.5px 0 rgba(255, 255, 255, 1);
+    border-radius: 28px;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  /* Liquid Glass Cards & Panels */
+  .futuristic-card, .liquid-glass {
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(28px) saturate(190%);
+    -webkit-backdrop-filter: blur(28px) saturate(190%);
     border: 1px solid rgba(255, 255, 255, 0.88);
-    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(226, 232, 240, 0.5);
-    border-radius: 20px;
+    box-shadow: 
+      0 10px 30px -5px rgba(15, 23, 42, 0.04),
+      0 2px 8px -2px rgba(15, 23, 42, 0.02),
+      inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.95);
+    border-radius: 24px;
     transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
-  /* Interactive KPI Card */
+  /* Interactive Liquid KPI Card */
   .kpi-card {
     background: rgba(255, 255, 255, 0.72);
-    backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.9);
-    border-radius: 18px;
-    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.03);
+    backdrop-filter: blur(28px) saturate(190%);
+    -webkit-backdrop-filter: blur(28px) saturate(190%);
+    border: 1px solid rgba(255, 255, 255, 0.88);
+    border-radius: 22px;
+    box-shadow: 
+      0 8px 25px -4px rgba(15, 23, 42, 0.04),
+      0 2px 6px -1px rgba(15, 23, 42, 0.02),
+      inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.95);
     transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
     position: relative;
     overflow: hidden;
+    user-select: none;
   }
   .kpi-card:hover {
-    transform: translateY(-2px);
-    background: rgba(255, 255, 255, 0.92);
-    box-shadow: 0 12px 30px -4px rgba(99, 102, 241, 0.12);
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.88);
+    box-shadow: 
+      0 16px 36px -6px rgba(0, 102, 255, 0.1),
+      0 4px 12px -2px rgba(15, 23, 42, 0.03),
+      inset 0 1px 2px 0 rgba(255, 255, 255, 1);
+  }
+  .kpi-card:active {
+    transform: scale(0.97);
   }
   .kpi-card::before {
     content: '';
@@ -86,64 +119,123 @@
     background: transparent;
     transition: background 0.25s ease;
   }
-  .kpi-card.kpi-blue:hover::before { background: #3b82f6; }
+  .kpi-card.kpi-blue:hover::before { background: #0066ff; }
   .kpi-card.kpi-emerald:hover::before { background: #10b981; }
   .kpi-card.kpi-rose:hover::before { background: #f43f5e; }
   .kpi-card.kpi-amber:hover::before { background: #f59e0b; }
   .kpi-card.kpi-purple:hover::before { background: #8b5cf6; }
 
-  /* Segmented Filter Pills */
+  /* Segmented Liquid Glass Navigation Tabs */
   .filter-tab {
-    background: rgba(255, 255, 255, 0.65);
-    backdrop-filter: blur(12px);
-    border: 1px solid rgba(226, 232, 240, 0.8);
+    background: transparent;
     border-radius: 14px;
+    font-weight: 600;
+    color: #64748b;
+    border: 1px solid transparent;
     transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    user-select: none;
   }
   .filter-tab:hover {
-    background: rgba(255, 255, 255, 0.95);
-    border-color: rgba(99, 102, 241, 0.4);
+    background: rgba(255, 255, 255, 0.6);
+    color: #0f172a;
     transform: translateY(-1px);
+  }
+  .filter-tab:active {
+    transform: scale(0.96);
   }
   .filter-tab.active {
     background: #ffffff;
-    border-color: #6366f1;
-    color: #4f46e5;
-    box-shadow: 0 4px 14px -1px rgba(99, 102, 241, 0.2);
+    color: #0066ff;
+    border-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 14px -1px rgba(0, 102, 255, 0.14), 0 2px 6px -1px rgba(15, 23, 42, 0.04);
   }
 
-  /* Button Interactions & Elevations */
-  .btn-futuristic {
+  /* Responsive Tap Button Physics */
+  .tap-btn, .btn-futuristic {
     transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
     position: relative;
+    user-select: none;
   }
-  .btn-futuristic:hover {
+  .tap-btn:hover, .btn-futuristic:hover {
     transform: translateY(-1.5px);
   }
-  .btn-futuristic:active {
-    transform: scale(0.97);
+  .tap-btn:active, .btn-futuristic:active {
+    transform: scale(0.955);
   }
 
-  /* Inputs & Dropdowns */
+  /* Minimal Liquid Glass Buttons */
+  .btn-glass {
+    background: rgba(255, 255, 255, 0.78);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(226, 232, 240, 0.85);
+    color: #334155;
+    font-weight: 600;
+    box-shadow: 0 2px 6px -1px rgba(15, 23, 42, 0.04), inset 0 1px 1px rgba(255, 255, 255, 0.9);
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    user-select: none;
+  }
+  .btn-glass:hover {
+    background: #ffffff;
+    border-color: rgba(0, 102, 255, 0.3);
+    color: #0066ff;
+    box-shadow: 0 6px 18px -2px rgba(0, 102, 255, 0.1), inset 0 1px 1px rgba(255, 255, 255, 1);
+    transform: translateY(-1.5px);
+  }
+  .btn-glass:active {
+    transform: scale(0.955);
+  }
+
+  .btn-glass-primary {
+    background: linear-gradient(135deg, #0066ff 0%, #0052cc 100%);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 14px -1px rgba(0, 102, 255, 0.3), inset 0 1px 1px rgba(255, 255, 255, 0.4);
+    font-weight: 600;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    user-select: none;
+  }
+  .btn-glass-primary:hover {
+    background: linear-gradient(135deg, #0077ff 0%, #005ce6 100%);
+    box-shadow: 0 8px 22px -2px rgba(0, 102, 255, 0.42), inset 0 1px 1px rgba(255, 255, 255, 0.5);
+    transform: translateY(-1.5px);
+  }
+  .btn-glass-primary:active {
+    transform: scale(0.955);
+  }
+
+  /* Liquid Inputs & Dropdowns */
   .modern-select, .modern-input {
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(12px);
-    border: 1px solid rgba(203, 213, 225, 0.8);
-    border-radius: 12px;
-    transition: all 0.2s ease;
+    background: rgba(255, 255, 255, 0.82);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(226, 232, 240, 0.85);
+    border-radius: 14px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.02);
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   }
   .modern-select:focus, .modern-input:focus {
     background: #ffffff;
-    border-color: #6366f1;
-    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+    border-color: #0066ff;
+    box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.14);
     outline: none;
   }
 
-  /* Smooth Custom Scrollbar */
-  ::-webkit-scrollbar { width: 6px; height: 6px; }
-  ::-webkit-scrollbar-track { background: rgba(241, 245, 249, 0.7); border-radius: 8px; }
-  ::-webkit-scrollbar-thumb { background: rgba(203, 213, 225, 0.9); border-radius: 8px; }
-  ::-webkit-scrollbar-thumb:hover { background: rgba(148, 163, 184, 0.9); }
+  /* Table Liquid Aesthetics */
+  #tbl thead th {
+    background: rgba(248, 250, 252, 0.92);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(226, 232, 240, 0.9);
+    letter-spacing: 0.02em;
+    user-select: none;
+  }
+  #tbl tbody tr {
+    transition: background 0.15s ease, transform 0.15s ease;
+  }
+  #tbl tbody tr:hover {
+    background: rgba(241, 245, 249, 0.7);
+  }
 
   /* Badges */
   .status-badge {
@@ -153,11 +245,17 @@
     padding: 3px 8px;
     border-radius: 9999px;
     font-size: 11px;
-    font-weight: 700;
+    font-weight: 600;
     box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.9);
   }
 
-  /* Print Stylesheet for clean printing */
+  /* Smooth Custom Scrollbar */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: rgba(241, 245, 249, 0.6); border-radius: 8px; }
+  ::-webkit-scrollbar-thumb { background: rgba(203, 213, 225, 0.8); border-radius: 8px; }
+  ::-webkit-scrollbar-thumb:hover { background: rgba(148, 163, 184, 0.9); }
+
+  /* Print Stylesheet */
   @media print {
     header, #tabs, #toolbar, #cards, footer { display: none !important; }
     body { background: white !important; padding: 0 !important; }
@@ -165,89 +263,91 @@
   }
 </style>
 </head>
-<body class="selection:bg-indigo-500 selection:text-white pb-20">
+<body class="selection:bg-blue-600 selection:text-white pb-20">
 
-<!-- Sticky Futuristic Header -->
-<header class="sticky top-0 z-40 bg-white/75 backdrop-blur-2xl border-b border-white/80 shadow-[0_4px_25px_-4px_rgba(0,0,0,0.03)] px-6 py-3.5">
-  <div class="max-w-[1520px] mx-auto flex flex-wrap items-center justify-between gap-4">
+<!-- Floating Liquid Glass App Bar (iOS 26 / Superprofile Aesthetics) -->
+<header class="sticky top-3 z-40 max-w-[1520px] mx-auto px-4 sm:px-6">
+  <div class="liquid-appbar px-5 py-3.5 flex flex-col xl:flex-row items-center justify-between gap-4">
     
-    <!-- Branding & Live Audit Info -->
-    <div class="flex items-center gap-3.5">
-      <div class="w-10 h-10 rounded-2xl bg-white p-1 border border-slate-200/80 shadow-md shadow-indigo-500/10 flex items-center justify-center overflow-hidden flex-shrink-0">
+    <!-- Left: Official Logo + Title + Status Badges -->
+    <div class="flex items-center gap-3.5 flex-shrink-0">
+      <div class="w-11 h-11 rounded-2xl bg-white/90 p-1.5 border border-white/90 shadow-sm shadow-indigo-500/10 flex items-center justify-center overflow-hidden flex-shrink-0">
         <img src="assets/logo.png" alt="cosmofeed_payout" class="w-full h-full object-contain">
       </div>
       <div>
         <div class="flex items-center gap-2 flex-wrap">
-          <h1 class="text-lg font-extrabold text-slate-900 tracking-tight font-mono">cosmofeed_payout</h1>
-          <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-indigo-50 text-indigo-700 border border-indigo-200/80">
+          <h1 class="text-lg font-bold text-slate-900 tracking-tight">cosmofeed_payout</h1>
+          <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-slate-100/90 text-slate-700 border border-slate-200/80">
             <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
             T+1 Release Gate
           </span>
-          <span id="cloud-autopilot-badge" class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80 shadow-xs" title="100% Zero-Machine, Zero-Human Cloud Autonomy via GitHub Actions. Runs automatically before 8 AM IST & every 2 hrs without any computer turned on.">
+          <span id="cloud-autopilot-badge" class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-blue-50/90 text-blue-700 border border-blue-200/70 shadow-xs" title="100% Zero-Machine, Zero-Human Cloud Autonomy via GitHub Actions. Runs automatically before 8 AM IST & every 2 hrs without any computer turned on.">
             <span class="relative flex h-2 w-2">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
             </span>
             100% Cloud Autonomous
-          </span>
-        </div>
-        <div class="text-xs text-slate-500 mt-0.5 flex flex-wrap items-center gap-2">
-          <span>Audit Date: <b id="hdr-today" class="text-slate-700">2026-09-05</b></span>
-          <span>&middot;</span>
-          <span>Sales Reviewed: <b id="hdr-yesterday" class="text-slate-700">2026-09-04</b></span>
-          <span>&middot;</span>
-          <span id="hdr-total" class="font-medium text-slate-600">1,980 pending settlements audited</span>
-          <span>&middot;</span>
-          <span id="hdr-sync" class="text-emerald-700 font-medium flex items-center gap-1">
-            <svg class="w-3 h-3 text-emerald-600 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
-            <span id="hdr-last-sync">Auto-Synced</span>
           </span>
         </div>
       </div>
     </div>
 
-    <!-- Export & Report Action Buttons -->
-    <div class="flex flex-wrap items-center gap-2">
+    <!-- Center: Well-Organized Centered Meta Indicators -->
+    <div class="flex items-center justify-center gap-2 sm:gap-3 text-xs text-slate-600 bg-white/60 backdrop-blur-md px-4 py-2 rounded-full border border-white/80 shadow-xs flex-wrap mx-auto">
+      <span>Audit: <b id="hdr-today" class="text-slate-800 font-semibold">2026-09-05</b></span>
+      <span class="text-slate-300">•</span>
+      <span>Sales: <b id="hdr-yesterday" class="text-slate-800 font-semibold">2026-09-04</b></span>
+      <span class="text-slate-300">•</span>
+      <span id="hdr-total" class="font-medium text-slate-700">1,987 pending audited</span>
+      <span class="text-slate-300">•</span>
+      <span id="hdr-sync" class="text-emerald-700 font-medium flex items-center gap-1">
+        <svg class="w-3.5 h-3.5 text-emerald-600 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+        <span id="hdr-last-sync">Auto-Synced</span>
+      </span>
+    </div>
+
+    <!-- Right: Minimal, Clean, Glass Action Buttons -->
+    <div class="flex flex-wrap items-center gap-2 flex-shrink-0">
       <!-- PDF Report Button -->
-      <button id="downloadPdfBtn" title="Generate and download Executive PDF Report" class="btn-futuristic px-3.5 py-2 rounded-xl bg-rose-600 hover:bg-rose-700 text-white text-xs font-semibold shadow-sm shadow-rose-900/15 flex items-center gap-1.5">
-        <svg class="w-3.5 h-3.5 text-rose-100" fill="currentColor" viewBox="0 0 24 24"><path d="M12 16l4-5h-3V4h-2v7H8l4 5zm9-9h-4v2h4v11H3V9h4V7H3c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2z"/></svg>
-        PDF Report
+      <button id="downloadPdfBtn" title="Generate and download Executive PDF Report" class="btn-glass px-3.5 py-2 rounded-xl text-xs flex items-center gap-1.5 tap-btn">
+        <svg class="w-3.5 h-3.5 text-rose-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 16l4-5h-3V4h-2v7H8l4 5zm9-9h-4v2h4v11H3V9h4V7H3c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2z"/></svg>
+        <span>PDF Report</span>
       </button>
 
       <!-- HTML Report Button -->
-      <button id="downloadHtmlBtn" title="Download standalone executive HTML report" class="btn-futuristic px-3.5 py-2 rounded-xl bg-purple-600 hover:bg-purple-700 text-white text-xs font-semibold shadow-sm shadow-purple-900/15 flex items-center gap-1.5">
-        <svg class="w-3.5 h-3.5 text-purple-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
-        HTML Report
+      <button id="downloadHtmlBtn" title="Download standalone executive HTML report" class="btn-glass px-3.5 py-2 rounded-xl text-xs flex items-center gap-1.5 tap-btn">
+        <svg class="w-3.5 h-3.5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+        <span>HTML Report</span>
       </button>
 
       <!-- 10-Day SEBI Excel Button -->
-      <button id="export10dExcelBtn" title="Download cumulative 10-day Telegram & SEBI Excel Tracker" class="btn-futuristic px-3.5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold shadow-sm shadow-emerald-900/15 flex items-center gap-1.5">
-        <svg class="w-3.5 h-3.5 text-emerald-100" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-        10-Day SEBI Excel
+      <button id="export10dExcelBtn" title="Download cumulative 10-day Telegram & SEBI Excel Tracker" class="btn-glass px-3.5 py-2 rounded-xl text-xs flex items-center gap-1.5 tap-btn">
+        <svg class="w-3.5 h-3.5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <span>10-Day Excel</span>
       </button>
 
       <!-- 10-Day SEBI CSV Button -->
-      <button id="export10dCsvBtn" title="Download cumulative 10-day Telegram & SEBI CSV Report" class="btn-futuristic px-3.5 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold shadow-sm shadow-blue-900/15 flex items-center gap-1.5">
-        <svg class="w-3.5 h-3.5 text-blue-100" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-        10-Day SEBI CSV
+      <button id="export10dCsvBtn" title="Download cumulative 10-day Telegram & SEBI CSV Report" class="btn-glass px-3.5 py-2 rounded-xl text-xs flex items-center gap-1.5 tap-btn">
+        <svg class="w-3.5 h-3.5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <span>10-Day CSV</span>
       </button>
 
       <!-- Manager Submission (5 Sep) Button -->
-      <button id="managerModalBtn" title="Manager Submission: Non-SEBI Cumulative Report (Until 5 Sep)" class="btn-futuristic px-3.5 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold shadow-sm flex items-center gap-1.5 border border-slate-700">
-        <svg class="w-3.5 h-3.5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-        Manager Report (5 Sep)
+      <button id="managerModalBtn" title="Manager Submission: Non-SEBI Cumulative Report (Until 5 Sep)" class="btn-glass-primary px-3.5 py-2 rounded-xl text-xs flex items-center gap-1.5 tap-btn">
+        <svg class="w-3.5 h-3.5 text-amber-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <span>Manager Report</span>
       </button>
 
       <!-- Export Filtered CSV Button -->
-      <button id="exportFilteredBtn" title="Export currently displayed rows as CSV" class="btn-futuristic px-3.5 py-2 rounded-xl bg-white hover:bg-slate-50 text-slate-700 text-xs font-semibold border border-slate-300 shadow-sm flex items-center gap-1.5">
+      <button id="exportFilteredBtn" title="Export currently displayed rows as CSV" class="btn-glass px-3.5 py-2 rounded-xl text-xs flex items-center gap-1.5 tap-btn">
         <svg class="w-3.5 h-3.5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-        Export Filtered CSV
+        <span>Export CSV</span>
       </button>
 
       <!-- Slack Summary Button -->
-      <button id="slackModalBtn" title="View & copy Slack Markdown summary" class="btn-futuristic px-3.5 py-2 rounded-xl bg-[#4a154b] hover:bg-[#3b113c] text-white text-xs font-semibold shadow-sm flex items-center gap-1.5">
-        <svg class="w-3.5 h-3.5 text-pink-200" fill="currentColor" viewBox="0 0 24 24"><path d="M6 15a2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2h2v2zm1 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2v5a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-5zm2-7a2 2 0 0 1-2-2 2 2 0 0 1 2-2 2 2 0 0 1 2 2v2H9zm0 1a2 2 0 0 1 2 2 2 2 0 0 1-2 2H4a2 2 0 0 1-2-2 2 2 0 0 1 2-2h5zm7-2a2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2h-2V7zm-1 0a2 2 0 0 1-2 2 2 2 0 0 1-2-2V2a2 2 0 0 1 2-2 2 2 0 0 1 2 2v5zm-2 7a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2v-2h2zm0-1a2 2 0 0 1-2-2 2 2 0 0 1 2-2h5a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-5z"/></svg>
-        Slack Summary
+      <button id="slackModalBtn" title="View & copy Slack Markdown summary" class="btn-glass px-3.5 py-2 rounded-xl text-xs flex items-center gap-1.5 tap-btn">
+        <svg class="w-3.5 h-3.5 text-slate-600" fill="currentColor" viewBox="0 0 24 24"><path d="M6 15a2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2h2v2zm1 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2v5a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-5zm2-7a2 2 0 0 1-2-2 2 2 0 0 1 2-2 2 2 0 0 1 2 2v2H9zm0 1a2 2 0 0 1 2 2 2 2 0 0 1-2 2H4a2 2 0 0 1-2-2 2 2 0 0 1 2-2h5zm7-2a2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2h-2V7zm-1 0a2 2 0 0 1-2 2 2 2 0 0 1-2-2V2a2 2 0 0 1 2-2 2 2 0 0 1 2 2v5zm-2 7a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2v-2h2zm0-1a2 2 0 0 1-2-2 2 2 0 0 1 2-2h5a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-5z"/></svg>
+        <span>Slack</span>
       </button>
     </div>
 
@@ -263,10 +363,10 @@
   </div>
 
   <!-- Priority Risk Alert Banner -->
-  <div class="futuristic-card bg-rose-50/80 border-rose-200/90 p-4 mb-6 hidden" id="risk-alert">
+  <div class="liquid-glass bg-rose-50/70 border-rose-200/80 p-4 mb-6 hidden rounded-2xl" id="risk-alert">
     <div class="flex items-center justify-between gap-4">
       <div class="flex items-center gap-3">
-        <div class="w-8 h-8 rounded-xl bg-rose-500 text-white flex items-center justify-center flex-shrink-0 shadow-sm shadow-rose-500/30">
+        <div class="w-8 h-8 rounded-xl bg-rose-500 text-white flex items-center justify-center flex-shrink-0 shadow-sm shadow-rose-500/25">
           <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg>
         </div>
         <div>
@@ -276,50 +376,50 @@
           </div>
         </div>
       </div>
-      <button id="viewRiskBtn" class="px-3 py-1.5 rounded-lg bg-rose-600 hover:bg-rose-700 text-white text-xs font-semibold shadow-xs transition">
+      <button id="viewRiskBtn" class="px-3.5 py-1.5 rounded-xl bg-rose-600 hover:bg-rose-700 text-white text-xs font-semibold shadow-xs tap-btn transition">
         Filter Risk Items
       </button>
     </div>
   </div>
 
-  <!-- Segmented Navigation Tabs -->
-  <div class="flex flex-wrap items-center gap-2 mb-4" id="tabs">
-    <button class="filter-tab active px-4 py-2.5 font-semibold text-xs text-slate-700 flex items-center gap-2" data-f="all">
+  <!-- Segmented Liquid Glass Navigation Tabs -->
+  <div class="liquid-glass p-1.5 mb-5 flex flex-wrap items-center gap-1.5 rounded-2xl" id="tabs">
+    <button class="filter-tab active px-4 py-2 font-semibold text-xs text-slate-700 flex items-center gap-2 tap-btn" data-f="all">
       All Settlements
-      <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-slate-200/80 text-slate-700" id="b-all">0</span>
+      <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-slate-100 text-slate-700" id="b-all">0</span>
     </button>
-    <button class="filter-tab px-4 py-2.5 font-semibold text-xs text-slate-700 flex items-center gap-2" data-f="telegram_sebi">
+    <button class="filter-tab px-4 py-2 font-semibold text-xs text-slate-700 flex items-center gap-2 tap-btn" data-f="telegram_sebi">
       <span class="w-2 h-2 rounded-full bg-blue-600"></span>
-      Telegram SEBI Review (₹1k+)
-      <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-blue-100 text-blue-800 border border-blue-200" id="b-telegram-sebi">0</span>
+      Telegram SEBI (₹1k+)
+      <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200/80" id="b-telegram-sebi">0</span>
     </button>
-    <button class="filter-tab px-4 py-2.5 font-semibold text-xs text-slate-700 flex items-center gap-2" data-f="self">
+    <button class="filter-tab px-4 py-2 font-semibold text-xs text-slate-700 flex items-center gap-2 tap-btn" data-f="self">
       <span class="w-2 h-2 rounded-full bg-rose-500"></span>
       Self-Transactions (2d)
-      <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-rose-100 text-rose-700 border border-rose-200" id="b-self">0</span>
+      <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-rose-50 text-rose-700 border border-rose-200/80" id="b-self">0</span>
     </button>
-    <button class="filter-tab px-4 py-2.5 font-semibold text-xs text-slate-700 flex items-center gap-2" data-f="nolink">
+    <button class="filter-tab px-4 py-2 font-semibold text-xs text-slate-700 flex items-center gap-2 tap-btn" data-f="nolink">
       <span class="w-2 h-2 rounded-full bg-amber-500"></span>
       Missing Deliverable
-      <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-amber-100 text-amber-800 border border-amber-200" id="b-nolink">0</span>
+      <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-amber-50 text-amber-800 border border-amber-200/80" id="b-nolink">0</span>
     </button>
-    <button class="filter-tab px-4 py-2.5 font-semibold text-xs text-slate-700 flex items-center gap-2" data-f="both">
+    <button class="filter-tab px-4 py-2 font-semibold text-xs text-slate-700 flex items-center gap-2 tap-btn" data-f="both">
       <span class="w-2 h-2 rounded-full bg-purple-600"></span>
       Top Risk (Both Lists)
-      <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-purple-100 text-purple-800 border border-purple-200" id="b-both">0</span>
+      <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-purple-50 text-purple-700 border border-purple-200/80" id="b-both">0</span>
     </button>
-    <button class="filter-tab px-4 py-2.5 font-semibold text-xs text-slate-700 flex items-center gap-2" data-f="cap">
+    <button class="filter-tab px-4 py-2 font-semibold text-xs text-slate-700 flex items-center gap-2 tap-btn" data-f="cap">
       Unverifiable (100-Cap)
-      <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-slate-100 text-slate-600 border border-slate-200" id="b-cap">0</span>
+      <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-slate-100 text-slate-600 border border-slate-200/80" id="b-cap">0</span>
     </button>
-    <button class="filter-tab px-4 py-2.5 font-semibold text-xs text-slate-700 flex items-center gap-2" data-f="approved">
+    <button class="filter-tab px-4 py-2 font-semibold text-xs text-slate-700 flex items-center gap-2 tap-btn" data-f="approved">
       Clean / Approved
-      <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800 border border-emerald-200" id="b-approved">0</span>
+      <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80" id="b-approved">0</span>
     </button>
   </div>
 
-  <!-- Intelligent Filter Toolbar -->
-  <div class="futuristic-card p-4 mb-6">
+  <!-- Intelligent Liquid Glass Filter Toolbar -->
+  <div class="liquid-glass p-4 mb-6 rounded-2xl">
     <div class="flex flex-wrap items-center justify-between gap-3">
       
       <!-- Filter Inputs Cluster -->
@@ -327,26 +427,26 @@
         <!-- Search -->
         <div class="relative w-full sm:w-64">
           <svg class="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-          <input type="search" id="search" placeholder="Search Creator, ID, Phone, Reg No..." class="modern-input w-full pl-9 pr-8 py-2 text-xs text-slate-800 placeholder-slate-400">
+          <input type="search" id="search" placeholder="Search Creator, ID, Phone, Reg No..." class="modern-input w-full pl-9 pr-8 py-2 text-xs text-slate-800 placeholder-slate-400 font-medium">
           <button id="clearSearchBtn" class="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 text-xs hidden">&times;</button>
         </div>
 
         <!-- Telegram Filter -->
-        <select id="telegramFilter" class="modern-select px-3 py-2 text-xs text-slate-700 font-medium">
+        <select id="telegramFilter" class="modern-select px-3 py-2 text-xs text-slate-700 font-medium cursor-pointer">
           <option value="">Telegram (All)</option>
           <option value="yes">Telegram (vig/) Only</option>
           <option value="no">Non-Telegram Only</option>
         </select>
 
         <!-- SEBI Master Status Filter -->
-        <select id="sebiMasterFilter" class="modern-select px-3 py-2 text-xs text-slate-700 font-medium">
+        <select id="sebiMasterFilter" class="modern-select px-3 py-2 text-xs text-slate-700 font-medium cursor-pointer">
           <option value="">SEBI Registry (All)</option>
           <option value="Yes">SEBI Registered: Yes Only</option>
           <option value="No">SEBI Registered: No Only (Flagged)</option>
         </select>
 
         <!-- SEBI Verification Status Filter -->
-        <select id="sebiStatusFilter" class="modern-select px-3 py-2 text-xs text-slate-700 font-medium">
+        <select id="sebiStatusFilter" class="modern-select px-3 py-2 text-xs text-slate-700 font-medium cursor-pointer">
           <option value="">All SEBI Statuses</option>
           <option value="Verified">Verified</option>
           <option value="Not Verified">Not Verified</option>
@@ -355,7 +455,7 @@
         </select>
 
         <!-- Amount Filter -->
-        <select id="amountFilter" class="modern-select px-3 py-2 text-xs text-slate-700 font-medium">
+        <select id="amountFilter" class="modern-select px-3 py-2 text-xs text-slate-700 font-medium cursor-pointer">
           <option value="">All Payout Amounts</option>
           <option value="1000">₹1,000+ Payout</option>
           <option value="5000">₹5,000+ Payout</option>
@@ -365,26 +465,26 @@
         </select>
 
         <!-- Onboarder Filter -->
-        <select id="onboardFilter" class="modern-select px-3 py-2 text-xs text-slate-700 font-medium">
+        <select id="onboardFilter" class="modern-select px-3 py-2 text-xs text-slate-700 font-medium cursor-pointer">
           <option value="">All Onboarders</option>
         </select>
 
         <!-- Self-Txn Window Filter -->
-        <select id="selfWindowFilter" class="modern-select px-3 py-2 text-xs text-slate-700 font-medium">
+        <select id="selfWindowFilter" class="modern-select px-3 py-2 text-xs text-slate-700 font-medium cursor-pointer">
           <option value="2day">Self-Txn: 2-Day Rolling Window</option>
           <option value="all">Self-Txn: All Lifetime History</option>
         </select>
 
         <!-- Reset All Filters Button -->
-        <button id="resetFiltersBtn" title="Reset all search queries and dropdown filters" class="px-3 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold border border-slate-300/80 transition flex items-center gap-1.5">
+        <button id="resetFiltersBtn" title="Reset all search queries and dropdown filters" class="btn-glass px-3.5 py-2 rounded-xl text-xs flex items-center gap-1.5 tap-btn">
           <svg class="w-3.5 h-3.5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
-          Reset Filters
+          <span>Reset</span>
         </button>
       </div>
 
       <!-- Live Row Counters & Active Badges -->
       <div class="flex items-center gap-2 text-xs font-semibold text-slate-600">
-        <span id="rowcount" class="bg-slate-100 px-3 py-1.5 rounded-xl border border-slate-200">Showing 0 of 0</span>
+        <span id="rowcount" class="bg-white/70 px-3 py-1.5 rounded-xl border border-white/80 shadow-xs">Showing 0 of 0</span>
       </div>
 
     </div>
@@ -397,16 +497,16 @@
   </div>
 
   <!-- Hint Banner -->
-  <div class="futuristic-card p-4 mb-6 text-xs text-slate-600 leading-relaxed hidden shadow-xs" id="hint"></div>
+  <div class="liquid-glass p-4 mb-6 text-xs text-slate-600 leading-relaxed hidden shadow-xs rounded-2xl" id="hint"></div>
 
-  <!-- Data Table Container -->
-  <div id="tbl-container" class="futuristic-card overflow-hidden">
+  <!-- Data Table Container (Liquid Glass Squircles) -->
+  <div id="tbl-container" class="liquid-glass overflow-hidden rounded-3xl border border-white/80">
     <div class="overflow-x-auto">
       <table id="tbl" class="w-full text-left border-collapse min-w-[1240px]">
         <thead>
           <!-- Dynamically generated based on active tab -->
         </thead>
-        <tbody id="tbody" class="divide-y divide-slate-100 text-xs">
+        <tbody id="tbody" class="divide-y divide-slate-100/80 text-xs font-medium">
           <!-- Dynamically populated rows -->
         </tbody>
       </table>
@@ -416,16 +516,16 @@
 </main>
 
 <!-- Creator Details Modal -->
-<div id="detailModal" class="fixed inset-0 z-50 bg-slate-900/50 backdrop-blur-md flex items-center justify-center hidden p-4">
-  <div class="futuristic-card bg-white max-w-3xl w-full p-6 shadow-2xl relative max-h-[92vh] overflow-y-auto">
-    <div class="flex items-center justify-between pb-4 border-b border-slate-200">
+<div id="detailModal" class="fixed inset-0 z-50 bg-slate-900/40 backdrop-blur-xl flex items-center justify-center hidden p-4">
+  <div class="liquid-glass bg-white/95 max-w-3xl w-full p-6 shadow-2xl relative max-h-[92vh] overflow-y-auto rounded-3xl border border-white/90">
+    <div class="flex items-center justify-between pb-4 border-b border-slate-200/80">
       <div>
-        <h3 class="text-base font-extrabold text-slate-900 flex items-center gap-2" id="dm-title">
+        <h3 class="text-base font-bold text-slate-900 flex items-center gap-2" id="dm-title">
           Creator Intelligence & Compliance Audit
         </h3>
         <p class="text-xs text-slate-500 mt-0.5" id="dm-subtitle">Full metadata, Telegram deliverables & SEBI registration audit</p>
       </div>
-      <button id="closeDetailModal" class="w-8 h-8 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-500 hover:text-slate-700 flex items-center justify-center font-bold text-lg transition">&times;</button>
+      <button id="closeDetailModal" class="w-8 h-8 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-500 hover:text-slate-700 flex items-center justify-center font-bold text-lg transition tap-btn">&times;</button>
     </div>
     
     <div class="mt-4 space-y-4 text-xs" id="dm-body">
@@ -435,23 +535,23 @@
 </div>
 
 <!-- Slack Report Modal -->
-<div id="slackModal" class="fixed inset-0 z-50 bg-slate-900/50 backdrop-blur-md flex items-center justify-center hidden p-4">
-  <div class="futuristic-card bg-white max-w-2xl w-full p-6 shadow-2xl relative">
-    <div class="flex items-center justify-between pb-4 border-b border-slate-200">
-      <div class="flex items-center gap-2">
-        <div class="w-7 h-7 rounded-lg bg-[#4a154b] text-white flex items-center justify-center">
+<div id="slackModal" class="fixed inset-0 z-50 bg-slate-900/40 backdrop-blur-xl flex items-center justify-center hidden p-4">
+  <div class="liquid-glass bg-white/95 max-w-2xl w-full p-6 shadow-2xl relative rounded-3xl border border-white/90">
+    <div class="flex items-center justify-between pb-4 border-b border-slate-200/80">
+      <div class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-xl bg-[#4a154b] text-white flex items-center justify-center shadow-sm">
           <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M6 15a2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2h2v2zm1 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2v5a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-5zm2-7a2 2 0 0 1-2-2 2 2 0 0 1 2-2 2 2 0 0 1 2 2v2H9zm0 1a2 2 0 0 1 2 2 2 2 0 0 1-2 2H4a2 2 0 0 1-2-2 2 2 0 0 1 2-2h5zm7-2a2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2h-2V7zm-1 0a2 2 0 0 1-2 2 2 2 0 0 1-2-2V2a2 2 0 0 1 2-2 2 2 0 0 1 2 2v5zm-2 7a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2v-2h2zm0-1a2 2 0 0 1-2-2 2 2 0 0 1 2-2h5a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-5z"/></svg>
         </div>
         <h3 class="text-sm font-bold text-slate-900">Slack Executive Summary</h3>
       </div>
-      <button id="closeSlackModal" class="text-slate-400 hover:text-slate-600 font-bold text-lg">&times;</button>
+      <button id="closeSlackModal" class="w-7 h-7 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-500 hover:text-slate-700 flex items-center justify-center font-bold text-base transition tap-btn">&times;</button>
     </div>
     <div class="mt-4">
-      <textarea id="slackText" readonly class="w-full h-64 font-mono text-xs p-3.5 bg-slate-950 text-purple-300 rounded-xl border border-slate-800 focus:outline-none select-all leading-relaxed"></textarea>
+      <textarea id="slackText" readonly class="w-full h-64 font-mono text-xs p-3.5 bg-slate-950 text-purple-200 rounded-2xl border border-slate-800 focus:outline-none select-all leading-relaxed"></textarea>
     </div>
     <div class="mt-4 flex items-center justify-end gap-3">
       <span id="copyToast" class="text-xs font-semibold text-emerald-600 hidden">Copied to Clipboard!</span>
-      <button id="copySlackBtn" class="px-4 py-2 rounded-xl bg-purple-600 hover:bg-purple-700 text-white text-xs font-semibold shadow-sm transition">
+      <button id="copySlackBtn" class="btn-glass-primary px-4 py-2 rounded-xl text-xs flex items-center gap-1.5 tap-btn">
         Copy Slack Text
       </button>
     </div>
@@ -459,9 +559,9 @@
 </div>
 
 <!-- Manager Submission (5 Sep) Modal -->
-<div id="managerModal" class="fixed inset-0 z-50 bg-slate-900/50 backdrop-blur-md flex items-center justify-center hidden p-4">
-  <div class="futuristic-card bg-white max-w-xl w-full p-6 shadow-2xl relative">
-    <div class="flex items-center justify-between pb-4 border-b border-slate-200">
+<div id="managerModal" class="fixed inset-0 z-50 bg-slate-900/40 backdrop-blur-xl flex items-center justify-center hidden p-4">
+  <div class="liquid-glass bg-white/95 max-w-xl w-full p-6 shadow-2xl relative rounded-3xl border border-white/90">
+    <div class="flex items-center justify-between pb-4 border-b border-slate-200/80">
       <div class="flex items-center gap-2.5">
         <div class="w-8 h-8 rounded-xl bg-slate-900 text-amber-400 flex items-center justify-center shadow-sm">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
@@ -471,57 +571,57 @@
           <p class="text-[11px] text-slate-500">Audit tracking & non-SEBI creator store through 5 September 2026</p>
         </div>
       </div>
-      <button id="closeManagerModal" class="w-7 h-7 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-500 hover:text-slate-700 flex items-center justify-center font-bold text-base transition">&times;</button>
+      <button id="closeManagerModal" class="w-7 h-7 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-500 hover:text-slate-700 flex items-center justify-center font-bold text-base transition tap-btn">&times;</button>
     </div>
 
     <div class="mt-4 space-y-3">
-      <div class="p-3 rounded-xl bg-amber-50 border border-amber-200 text-amber-900 text-xs">
+      <div class="p-3.5 rounded-2xl bg-amber-50/90 border border-amber-200/80 text-amber-900 text-xs font-medium">
         <b>Audit Tracking Guarantee:</b> All creators using Telegram without SEBI registration are deduplicated by Creator ID into a permanent ledger up to <b>5 September 2026</b>.
       </div>
 
       <div class="grid grid-cols-1 gap-2.5 pt-1">
-        <a href="/api/non-sebi/download-excel" target="_blank" class="p-3 rounded-xl bg-slate-50 hover:bg-emerald-50 border border-slate-200 hover:border-emerald-300 transition flex items-center justify-between group">
+        <a href="/api/non-sebi/download-excel" target="_blank" class="p-3 rounded-2xl bg-white/80 hover:bg-emerald-50/80 border border-slate-200/80 hover:border-emerald-300 transition-all flex items-center justify-between group tap-btn shadow-xs">
           <div class="flex items-center gap-3">
-            <div class="w-8 h-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center font-bold text-xs">XLS</div>
+            <div class="w-8 h-8 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-bold text-xs shadow-xs">XLS</div>
             <div>
               <div class="text-xs font-bold text-slate-900 group-hover:text-emerald-800">Deduplicated Master Excel (.xlsx)</div>
               <div class="text-[11px] text-slate-500">Multi-sheet: Executive Summary, Master Registry, Daily Audit Logs</div>
             </div>
           </div>
-          <span class="text-xs font-bold text-emerald-600">Download &darr;</span>
+          <span class="text-xs font-bold text-emerald-600 group-hover:translate-x-0.5 transition-transform">Download &darr;</span>
         </a>
 
-        <a href="/api/non-sebi/download-pdf" target="_blank" class="p-3 rounded-xl bg-slate-50 hover:bg-rose-50 border border-slate-200 hover:border-rose-300 transition flex items-center justify-between group">
+        <a href="/api/non-sebi/download-pdf" target="_blank" class="p-3 rounded-2xl bg-white/80 hover:bg-rose-50/80 border border-slate-200/80 hover:border-rose-300 transition-all flex items-center justify-between group tap-btn shadow-xs">
           <div class="flex items-center gap-3">
-            <div class="w-8 h-8 rounded-lg bg-rose-600 text-white flex items-center justify-center font-bold text-xs">PDF</div>
+            <div class="w-8 h-8 rounded-xl bg-rose-600 text-white flex items-center justify-center font-bold text-xs shadow-xs">PDF</div>
             <div>
               <div class="text-xs font-bold text-slate-900 group-hover:text-rose-800">Formal Manager Submission PDF</div>
               <div class="text-[11px] text-slate-500">Executive multi-page PDF with formal compliance sign-off block</div>
             </div>
           </div>
-          <span class="text-xs font-bold text-rose-600">Download &darr;</span>
+          <span class="text-xs font-bold text-rose-600 group-hover:translate-x-0.5 transition-transform">Download &darr;</span>
         </a>
 
-        <a href="/api/non-sebi/download-csv" target="_blank" class="p-3 rounded-xl bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 transition flex items-center justify-between group">
+        <a href="/api/non-sebi/download-csv" target="_blank" class="p-3 rounded-2xl bg-white/80 hover:bg-blue-50/80 border border-slate-200/80 hover:border-blue-300 transition-all flex items-center justify-between group tap-btn shadow-xs">
           <div class="flex items-center gap-3">
-            <div class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center font-bold text-xs">CSV</div>
+            <div class="w-8 h-8 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold text-xs shadow-xs">CSV</div>
             <div>
               <div class="text-xs font-bold text-slate-900 group-hover:text-blue-800">Deduplicated Master CSV (.csv)</div>
               <div class="text-[11px] text-slate-500">Raw tabular dataset with all metrics & contact details</div>
             </div>
           </div>
-          <span class="text-xs font-bold text-blue-600">Download &darr;</span>
+          <span class="text-xs font-bold text-blue-600 group-hover:translate-x-0.5 transition-transform">Download &darr;</span>
         </a>
 
-        <a href="/api/non-sebi/manager-report" target="_blank" class="p-3 rounded-xl bg-slate-50 hover:bg-indigo-50 border border-slate-200 hover:border-indigo-300 transition flex items-center justify-between group">
+        <a href="/api/non-sebi/manager-report" target="_blank" class="p-3 rounded-2xl bg-white/80 hover:bg-blue-50/80 border border-slate-200/80 hover:border-blue-300 transition-all flex items-center justify-between group tap-btn shadow-xs">
           <div class="flex items-center gap-3">
-            <div class="w-8 h-8 rounded-lg bg-indigo-600 text-white flex items-center justify-center font-bold text-xs">HTML</div>
+            <div class="w-8 h-8 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold text-xs shadow-xs">HTML</div>
             <div>
-              <div class="text-xs font-bold text-slate-900 group-hover:text-indigo-800">View Full Executive Report (HTML)</div>
+              <div class="text-xs font-bold text-slate-900 group-hover:text-blue-800">View Full Executive Report (HTML)</div>
               <div class="text-[11px] text-slate-500">Opens standalone compliance dashboard in browser</div>
             </div>
           </div>
-          <span class="text-xs font-bold text-indigo-600">Open &rarr;</span>
+          <span class="text-xs font-bold text-blue-600 group-hover:translate-x-0.5 transition-transform">Open &rarr;</span>
         </a>
       </div>
     </div>
