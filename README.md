@@ -1,4 +1,4 @@
-# 🛡️ Cosmofeed Executive Intelligence — Daily Payout Audit & SEBI Compliance
+# <img src="assets/logo.png" width="36" height="36" align="center" style="vertical-align: middle; margin-right: 8px;"> cosmofeed_payout
 
 > **Enterprise Compliance Engine, Deduplicated Creator Ledger, and Executive Intelligence Dashboard**  
 > Built for monitoring Cosmofeed creator payouts, isolating unauthorized Telegram advisory (`vig/{productId}`), verifying against the official SEBI Master Registry, enforcing a strict 2-day self-transaction rolling window, and maintaining a cumulative non-SEBI creator ledger until **5 September 2026**.
