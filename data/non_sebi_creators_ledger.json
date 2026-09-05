@@ -4,7 +4,7 @@
     "auditPeriodStart": "2026-08-27",
     "auditPeriodEnd": "2026-09-05",
     "targetSubmissionDate": "2026-09-05",
-    "lastUpdated": "2026-09-05 06:02:17",
+    "lastUpdated": "2026-09-05 06:21:04",
     "totalAuditRuns": 7,
     "auditDates": [
       "2026-08-27",
@@ -40262,6 +40262,162 @@
           "telegramProductLink": "https://superprofile.bio/vig/64a8db7aee58cc002a13fe63"
         }
       ]
+    },
+    "668e7c221cc9f2001339ee99": {
+      "creatorId": "668e7c221cc9f2001339ee99",
+      "username": "ankit171991",
+      "creatorName": "ankit171991",
+      "email": "guptaankit984@gmail.com",
+      "phone": "8824288095",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "668d25a88099cd00132a8d58",
+      "telegramProductLink": "https://superprofile.bio/vig/668d25a88099cd00132a8d58",
+      "telegramProductIds": [
+        "668d25a88099cd00132a8d58"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/668d25a88099cd00132a8d58"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-09-05",
+      "lastSeenDate": "2026-09-05",
+      "datesObserved": [
+        "2026-09-05"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 71204.0,
+      "cumulativePayoutVolume": 71204.0,
+      "maxDailyPayout": 71204.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-09-05",
+          "payoutAmount": 71204.0,
+          "telegramProductId": "668d25a88099cd00132a8d58",
+          "telegramProductLink": "https://superprofile.bio/vig/668d25a88099cd00132a8d58"
+        }
+      ]
+    },
+    "64cc03e3836e48001ec44b6d": {
+      "creatorId": "64cc03e3836e48001ec44b6d",
+      "username": "abstocks",
+      "creatorName": "abstocks",
+      "email": "fahadabu850@gmail.com",
+      "phone": "9756123437",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "6a747aca7fbc090013754e37",
+      "telegramProductLink": "https://superprofile.bio/vig/6a747aca7fbc090013754e37",
+      "telegramProductIds": [
+        "6a747aca7fbc090013754e37"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/6a747aca7fbc090013754e37"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-09-05",
+      "lastSeenDate": "2026-09-05",
+      "datesObserved": [
+        "2026-09-05"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 4734.0,
+      "cumulativePayoutVolume": 4734.0,
+      "maxDailyPayout": 4734.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-09-05",
+          "payoutAmount": 4734.0,
+          "telegramProductId": "6a747aca7fbc090013754e37",
+          "telegramProductLink": "https://superprofile.bio/vig/6a747aca7fbc090013754e37"
+        }
+      ]
+    },
+    "67b9dd1184fb2700139c9e20": {
+      "creatorId": "67b9dd1184fb2700139c9e20",
+      "username": "vippremium1",
+      "creatorName": "vippremium1",
+      "email": "bhairwaramkesh445@gmail.com",
+      "phone": "7339731575",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "68bdc091613da1001336d6fa",
+      "telegramProductLink": "https://superprofile.bio/vig/68bdc091613da1001336d6fa",
+      "telegramProductIds": [
+        "68bdc091613da1001336d6fa"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/68bdc091613da1001336d6fa"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-09-05",
+      "lastSeenDate": "2026-09-05",
+      "datesObserved": [
+        "2026-09-05"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 3834.0,
+      "cumulativePayoutVolume": 3834.0,
+      "maxDailyPayout": 3834.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-09-05",
+          "payoutAmount": 3834.0,
+          "telegramProductId": "68bdc091613da1001336d6fa",
+          "telegramProductLink": "https://superprofile.bio/vig/68bdc091613da1001336d6fa"
+        }
+      ]
+    },
+    "67c5f49ae74b1d0013ea0111": {
+      "creatorId": "67c5f49ae74b1d0013ea0111",
+      "username": "jayb2427",
+      "creatorName": "jayb2427",
+      "email": "astutetrader24@gmail.com",
+      "phone": "9879002427",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "67ecc370d9f0a5001309bd71",
+      "telegramProductLink": "https://superprofile.bio/vig/67ecc370d9f0a5001309bd71",
+      "telegramProductIds": [
+        "67ecc370d9f0a5001309bd71"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/67ecc370d9f0a5001309bd71"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-09-05",
+      "lastSeenDate": "2026-09-05",
+      "datesObserved": [
+        "2026-09-05"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 1350.0,
+      "cumulativePayoutVolume": 1350.0,
+      "maxDailyPayout": 1350.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-09-05",
+          "payoutAmount": 1350.0,
+          "telegramProductId": "67ecc370d9f0a5001309bd71",
+          "telegramProductLink": "https://superprofile.bio/vig/67ecc370d9f0a5001309bd71"
+        }
+      ]
     }
   },
   "dailySnapshots": {
@@ -42175,10 +42331,11 @@
     },
     "2026-09-05": {
       "auditDate": "2026-09-05",
-      "flaggedCount": 25,
-      "totalDayVolume": 215006.0,
+      "flaggedCount": 29,
+      "totalDayVolume": 296128.0,
       "creatorIds": [
         "679cc008836dec0013a115a1",
+        "668e7c221cc9f2001339ee99",
         "663dd24d61f04800142f8ce8",
         "63e0416509bf7d00326f6ef9",
         "6792105c1ca4f90013d8d22a",
@@ -42191,7 +42348,9 @@
         "657154bbf00260001e53e565",
         "628dee579a6375439f68bb26",
         "6a982bce919b22001319d7ea",
+        "64cc03e3836e48001ec44b6d",
         "699334a5992727001374637f",
+        "67b9dd1184fb2700139c9e20",
         "6a100cef9fe3f3001288dbfc",
         "66537525ca30a0001338502e",
         "65f40b7084681c00130db00f",
@@ -42202,7 +42361,8 @@
         "65ec0e3a8760a10013f1f989",
         "649eb5a092e0dc00208bdb3f",
         "656f190c85e895001e492ba2",
-        "688317eedfa617001351288b"
+        "688317eedfa617001351288b",
+        "67c5f49ae74b1d0013ea0111"
       ]
     }
   }
