@@ -649,6 +649,16 @@ def main():
         except Exception:
             results = []
             audited_sids = set()
+    elif os.path.exists(os.path.join(args.out, f"audit_{date_label}.json")):
+        try:
+            with open(os.path.join(args.out, f"audit_{date_label}.json"), "r", encoding="utf-8") as f:
+                chk = json.load(f)
+                results = chk.get("allResults", [])
+                audited_sids = {r.get("settlementId") for r in results if r.get("settlementId")}
+                print(f"[resume] Loaded {len(results)} previously audited settlements from existing audit_{date_label}.json", flush=True)
+        except Exception:
+            results = []
+            audited_sids = set()
 
     remaining_settlements = [r for r in settlements if (r.get("_id") or r.get("settlementId")) not in audited_sids]
     total_count = len(settlements)
