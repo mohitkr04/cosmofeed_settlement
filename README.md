@@ -407,51 +407,28 @@ The dashboard provides 8 instant download options:
 
 ---
 
-## ⏰ 10. Automation & GitHub Actions CI/CD
+## ⏰ 10. 100% Zero-Machine Cloud Autonomy (GitHub Actions)
 
-The workflow in [`.github/workflows/daily_audit.yml`](file:///c:/Users/Mindf/cosmofeed_settlement/.github/workflows/daily_audit.yml) runs every morning automatically:
+The system is powered by **100% Zero-Machine, Zero-Human Cloud Autonomy** running on GitHub's Microsoft Cloud data centers. 
 
-```yaml
-name: Cosmofeed Daily Payout Audit
+> [!NOTE]
+> **No Local Machine Required**: You do not need to keep any computer, laptop, or server turned on. Your PC can be completely shut down, sleeping, or you can be traveling on leave. GitHub's cloud runners autonomously wake up, fetch settlements from Cosmofeed, perform compliance and SEBI audits, update all reports, and publish directly to GitHub Pages.
 
-on:
-  schedule:
-    # Runs daily before 08:00 AM IST (starts 06:30 AM IST / 01:00 AM UTC)
-    - cron: '0 1 * * *'
-    - cron: '30 1 * * *'
-    - cron: '0 2 * * *'
-  push:
-    branches: [ main ]
-  workflow_dispatch:
+### Autonomous Cloud Cadence:
+1. **🌅 Morning Batches (Before 08:00 AM IST)**:
+   - **05:30 AM IST** (`0 0 * * *` UTC) — Initial morning batch run
+   - **06:30 AM IST** (`0 1 * * *` UTC) — Secondary audit sweep
+   - **07:00 AM IST** (`30 1 * * *` UTC) — Verification sweep
+   - **07:30 AM IST** (`0 2 * * *` UTC) — Final pre-8:00 AM seal & publish
+2. **🔄 Continuous Daytime Updates (Every 2 Hours IST)**:
+   - **09:30 AM, 11:30 AM, 01:30 PM, 03:30 PM, 05:30 PM, 07:30 PM, 09:30 PM IST**
+   - Automatically ingests newly created settlements submitted throughout the business day.
 
-jobs:
-  audit-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Install Dependencies
-        run: pip install -r requirements.txt
-
-      - name: Run Daily Payout Audit Pipeline
-        run: python daily_automation.py --no-push
-
-      - name: Commit & Push Updated Reports
-        run: |
-          git add reports/ data/
-          git diff --staged --quiet || git commit -m "auto: Daily payout audit update [skip ci]"
-          git push origin main
-
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4
-```
+### Live Access for Colleagues:
+Colleagues simply open and refresh:  
+👉 **[https://mohitkr04.github.io/cosmofeed_settlement/](https://mohitkr04.github.io/cosmofeed_settlement/)**  
+The dashboard utilizes automated cache-busting (`?t=timestamp` and `cache: 'no-store'`) so that every page refresh immediately retrieves the latest live data for that date.
 
 ---
 
-*Cosmofeed Compliance Operations · Authorized Audit Engine Valid Through 05-September-2026*
+*Cosmofeed Compliance Operations · 100% Cloud Autonomous Audit Engine*

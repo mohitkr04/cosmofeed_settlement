@@ -51,7 +51,8 @@ def parse_txn_date(d_str):
 
 def main(audit_date=None):
     if not audit_date:
-        audit_date = datetime.date.today().strftime("%Y-%m-%d")
+        tz_ist = datetime.timezone(datetime.timedelta(hours=5, minutes=30))
+        audit_date = datetime.datetime.now(tz_ist).strftime("%Y-%m-%d")
     audit_files = [os.path.join(REPORTS_DIR, f) for f in os.listdir(REPORTS_DIR) if f.startswith("audit_") and f.endswith(".json")]
     if not audit_files:
         fallback_data = os.path.join(REPORTS_DIR, "data.json")

@@ -175,19 +175,31 @@
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
       </div>
       <div>
-        <div class="flex items-center gap-2">
+        <div class="flex items-center gap-2 flex-wrap">
           <h1 class="text-lg font-extrabold text-slate-900 tracking-tight">Cosmofeed Payout Audit & SEBI Compliance</h1>
           <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-indigo-50 text-indigo-700 border border-indigo-200/80">
             <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
             T+1 Release Gate
           </span>
+          <span id="cloud-autopilot-badge" class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/80 shadow-xs" title="100% Zero-Machine, Zero-Human Cloud Autonomy via GitHub Actions. Runs automatically before 8 AM IST & every 2 hrs without any computer turned on.">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            </span>
+            100% Cloud Autonomous
+          </span>
         </div>
         <div class="text-xs text-slate-500 mt-0.5 flex flex-wrap items-center gap-2">
-          <span>Audit Date: <b id="hdr-today" class="text-slate-700">2026-08-27</b></span>
+          <span>Audit Date: <b id="hdr-today" class="text-slate-700">2026-09-05</b></span>
           <span>&middot;</span>
-          <span>Sales Reviewed: <b id="hdr-yesterday" class="text-slate-700">2026-08-26</b></span>
+          <span>Sales Reviewed: <b id="hdr-yesterday" class="text-slate-700">2026-09-04</b></span>
           <span>&middot;</span>
-          <span id="hdr-total" class="font-medium text-slate-600">1,831 pending settlements audited</span>
+          <span id="hdr-total" class="font-medium text-slate-600">1,980 pending settlements audited</span>
+          <span>&middot;</span>
+          <span id="hdr-sync" class="text-emerald-700 font-medium flex items-center gap-1">
+            <svg class="w-3 h-3 text-emerald-600 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+            <span id="hdr-last-sync">Auto-Synced</span>
+          </span>
         </div>
       </div>
     </div>
@@ -1006,9 +1018,13 @@ function render() {
   const totalVolume = creators.reduce((acc, c) => acc + (Number(c.payoutAmount) || 0), 0);
 
   // Update Header Badges
-  document.getElementById('hdr-today').textContent = DATA.reviewDateFormatted || DATA.reviewDate || '2026-09-01';
-  document.getElementById('hdr-yesterday').textContent = DATA.productSaleDateFormatted || DATA.productSaleDate || '2026-08-31';
+  document.getElementById('hdr-today').textContent = DATA.reviewDateFormatted || DATA.reviewDate || '2026-09-05';
+  document.getElementById('hdr-yesterday').textContent = DATA.productSaleDateFormatted || DATA.productSaleDate || '2026-09-04';
   document.getElementById('hdr-total').textContent = `${creators.length.toLocaleString()} pending settlements audited`;
+  const lastSyncEl = document.getElementById('hdr-last-sync');
+  if (lastSyncEl) {
+    lastSyncEl.textContent = DATA.generatedAt ? `Cloud Synced: ${DATA.generatedAt}` : 'Autonomous (Pre-8 AM & Every 2h)';
+  }
 
   // Render KPI Cards
   document.getElementById('cards').innerHTML = `

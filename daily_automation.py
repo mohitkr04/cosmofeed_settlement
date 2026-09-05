@@ -36,10 +36,21 @@ LOG_FILE = os.path.join(REPORTS_DIR, "daily_automation.log")
 TARGET_SUBMISSION_DATE = "2026-09-05"
 
 
+def get_ist_now() -> datetime.datetime:
+    """Returns current datetime in Asia/Kolkata timezone (UTC+5:30)."""
+    tz_ist = datetime.timezone(datetime.timedelta(hours=5, minutes=30))
+    return datetime.datetime.now(tz_ist)
+
+
+def get_ist_date_str() -> str:
+    """Returns current date string (YYYY-MM-DD) in Asia/Kolkata timezone."""
+    return get_ist_now().strftime("%Y-%m-%d")
+
+
 def log(msg: str) -> None:
-    now_str = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    formatted = f"[{now_str}] {msg}"
-    print(formatted)
+    now_ist = get_ist_now().strftime("%Y-%m-%d %H:%M:%S IST")
+    formatted = f"[{now_ist}] {msg}"
+    print(formatted, flush=True)
     try:
         os.makedirs(REPORTS_DIR, exist_ok=True)
         with open(LOG_FILE, "a", encoding="utf-8") as f:
@@ -65,11 +76,11 @@ _load_env()
 
 def run_pipeline(audit_date: str = None, push_git: bool = True) -> bool:
     if not audit_date:
-        audit_date = datetime.date.today().strftime("%Y-%m-%d")
+        audit_date = get_ist_date_str()
 
     log("=" * 70)
     log(f"STARTING COSMOFEED DAILY PAYOUT & COMPLIANCE PIPELINE FOR {audit_date}")
-    log(f"Target Manager Submission Deadline: {TARGET_SUBMISSION_DATE}")
+    log(f"Execution Mode: 100% Cloud Autonomous (India Standard Time)")
     log("=" * 70)
 
     # 1. Attempt live settlement scrape if token is available
