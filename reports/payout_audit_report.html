@@ -40,7 +40,7 @@
 <body>
 
 <h1>Cosmofeed Payout Audit Report</h1>
-<div class=sub>Review Date: <b>2026-09-05</b> &middot; Product Sale Date: <b>2026-09-04</b> &middot; Generated: <b>2026-09-05 10:36</b> &middot; <b>1,987</b> pending settlements evaluated</div>
+<div class=sub>Review Date: <b>2026-09-05</b> &middot; Product Sale Date: <b>2026-09-04</b> &middot; Generated: <b>2026-09-05 11:03</b> &middot; <b>1,989</b> pending settlements evaluated</div>
 
 <div class=kpis>
   <div class=kpi><div class=v>26</div><div class=l>Recent self-txn creators (2d)</div></div>
@@ -107,7 +107,7 @@
 <div class=finding><b>🟢 Timezone — pinned to Asia/Kolkata (IST)</b>
   The business window uses IST timezone (Asia/Kolkata) to dynamically filter products sold yesterday (T+1 workflow rule).</div>
 <div class=finding><b>🟠 100-buyer API cap — completeness blind spot</b>
-  <code>getCreatorKundli</code> is hard-capped at 100 buyers (no pagination). 1,987 creators audited. For capped creators whose 100 buyers span &lt;2 days, a recent self-payment can be pushed off the list — so the list above is <em>accurate but may be incomplete</em>. <b>1197 creators</b> could not be fully verified.</div>
+  <code>getCreatorKundli</code> is hard-capped at 100 buyers (no pagination). 1,989 creators audited. For capped creators whose 100 buyers span &lt;2 days, a recent self-payment can be pushed off the list — so the list above is <em>accurate but may be incomplete</em>. <b>1197 creators</b> could not be fully verified.</div>
 <div class=finding><b>🟢 Deep Link Validation — 0 false positives</b>
   Every product detail response is deeply parsed for attached files, redirect URLs, locked content arrays, modules, and Telegram <code>vig/</code> exceptions. API failures are assigned <code>MANUAL_REVIEW_REQUIRED</code> rather than false missing link flags.</div>
 

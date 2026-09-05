@@ -1,7 +1,7 @@
 {
   "report": {
     "date": "2026-09-05",
-    "totalAudited": 1987,
+    "totalAudited": 1989,
     "selfTransactionCount": 176,
     "flaggedCount": 0,
     "errorCount": 40,
@@ -35123,6 +35123,32 @@
       "contentFlags": [],
       "selfTransactions": [],
       "buyersChecked": 3
+    },
+    {
+      "settlementId": "6a932ca312e17cb3117c0210",
+      "creatorId": "6a61c802b3bfec00142f0304",
+      "username": "thirdeyeactivationcombo",
+      "email": "reetexaml1@gmail.com",
+      "phone": "7734047402",
+      "payoutAmount": 761,
+      "totalMemoAmount": 761,
+      "category": "Astrology/Numerology/Tarot Card Reading",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 15
+    },
+    {
+      "settlementId": "6a91db2fed685b6f685654c5",
+      "creatorId": "6a61c802b3bfec00142f0304",
+      "username": "thirdeyeactivationcombo",
+      "email": "reetexaml1@gmail.com",
+      "phone": "7734047402",
+      "payoutAmount": 7588,
+      "totalMemoAmount": 7588,
+      "category": "Astrology/Numerology/Tarot Card Reading",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 15
     }
   ]
 }
