@@ -264,8 +264,6 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             })
 
         if parsed.path == "/api/data":
-            # Auto-check if today's audit should be refreshed in background
-            maybe_trigger_daily_audit()
             fp = os.path.join(HERE, "reports", "data.json")
             if not os.path.exists(fp):
                 fp = os.path.join(HERE, "data.json")
@@ -275,7 +273,8 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                 return self._json(json.load(f))
 
         if parsed.path == "/" or parsed.path == "/index.html":
-            maybe_trigger_daily_audit()
+            self.path = "/index.html"
+            return super().do_GET()
 
         if parsed.path == "/api/nolink":
             q = parse_qs(parsed.query)
@@ -290,6 +289,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 _is_audit_running = False
 _audit_lock = threading.Lock()
 _last_audit_run_date = None
+_last_audit_attempt_time = 0.0
 
 
 def get_today_ist_date():
@@ -305,8 +305,8 @@ def get_today_ist_date():
 
 
 def trigger_autonomous_audit(audit_date=None, force=False):
-    """Triggers the full daily settlement audit and git synchronization in a background thread."""
-    global _is_audit_running, _last_audit_run_date
+    """Triggers the full daily settlement audit and git synchronization in an isolated background thread."""
+    global _is_audit_running, _last_audit_run_date, _last_audit_attempt_time
     if not audit_date:
         audit_date = get_today_ist_date()
 
@@ -314,10 +314,11 @@ def trigger_autonomous_audit(audit_date=None, force=False):
         if _is_audit_running:
             return False
         _is_audit_running = True
+        _last_audit_attempt_time = time.time()
 
     def _worker():
         global _is_audit_running, _last_audit_run_date
-        print(f"\n[AUTONOMOUS ENGINE] Starting automated daily settlement audit for {audit_date}...")
+        print(f"\n[AUTONOMOUS ENGINE] Starting automated daily settlement audit for {audit_date} (runs in background without affecting dashboard)...")
         try:
             import daily_automation
             success = daily_automation.run_pipeline(audit_date=audit_date, push_git=True)
@@ -337,31 +338,29 @@ def trigger_autonomous_audit(audit_date=None, force=False):
     return True
 
 
-def maybe_trigger_daily_audit():
-    """Checks if today's audit has not run yet today and triggers it automatically."""
-    today_str = get_today_ist_date()
-    audit_file = os.path.join(HERE, "reports", f"audit_{today_str}.json")
-    if not os.path.exists(audit_file) and not _is_audit_running:
-        trigger_autonomous_audit(audit_date=today_str, force=False)
-
-
 def autonomous_daily_scheduler_loop():
     """
     24/7 Background Scheduler Loop:
     Checks time every 60 seconds.
-    Automatically executes the live settlement audit daily before 10:00 AM IST.
+    Automatically executes the live settlement audit daily before 08:00 AM IST (at 06:30 AM & 07:00 AM IST).
+    Strict cooldown prevents repeated/endless scraping loops that interfere with dashboard activities.
     """
-    print("[AUTONOMOUS SCHEDULER] 24/7 Daily Compliance Scheduler active (Target: Auto-Audit before 10:00 AM IST daily).")
+    global _last_audit_attempt_time
+    print("[AUTONOMOUS SCHEDULER] 24/7 Daily Compliance Scheduler active (Target: Auto-Audit before 08:00 AM IST daily).")
     
-    # Run check at startup
-    time.sleep(2)
-    maybe_trigger_daily_audit()
+    # Wait 10 seconds after server startup before checking today's audit
+    time.sleep(10)
+    today_str = get_today_ist_date()
+    audit_file = os.path.join(HERE, "reports", f"audit_{today_str}.json")
+    if not os.path.exists(audit_file) and not _is_audit_running:
+        _last_audit_attempt_time = time.time()
+        trigger_autonomous_audit(audit_date=today_str, force=False)
 
     while True:
         try:
             time.sleep(60)
             today_str = get_today_ist_date()
-            audit_file = os.path.join(HERE, "reports", f"audit_{today_str}.json")
+            now_ts = time.time()
 
             try:
                 import zoneinfo
@@ -374,13 +373,14 @@ def autonomous_daily_scheduler_loop():
             hour = now.hour
             minute = now.minute
 
-            # If today's audit has not run yet:
-            if not os.path.exists(audit_file) and not _is_audit_running:
-                print(f"[AUTONOMOUS SCHEDULER] Today's audit ({today_str}) is missing! Running automated audit immediately...")
-                trigger_autonomous_audit(audit_date=today_str, force=True)
-            elif hour in [8, 9] and minute in [0, 30] and not _is_audit_running and _last_audit_run_date != today_str:
-                print(f"[AUTONOMOUS SCHEDULER] Triggering scheduled morning audit at {now.strftime('%H:%M:%S IST')} for {today_str}...")
-                trigger_autonomous_audit(audit_date=today_str, force=True)
+            # Scheduled Slots: 06:30 AM IST and 07:00 AM IST so everything completes BEFORE 08:00 AM IST
+            is_scheduled_slot = (hour == 6 and minute == 30) or (hour == 7 and minute == 0)
+
+            if is_scheduled_slot and not _is_audit_running and _last_audit_run_date != today_str:
+                if now_ts - _last_audit_attempt_time >= 1800:  # minimum 30 min cooldown
+                    print(f"[AUTONOMOUS SCHEDULER] Triggering morning scheduled audit at {now.strftime('%H:%M:%S IST')} for {today_str} (Target: completion before 08:00 AM)...")
+                    _last_audit_attempt_time = now_ts
+                    trigger_autonomous_audit(audit_date=today_str, force=True)
 
         except Exception as e:
             print(f"[AUTONOMOUS SCHEDULER] Loop warning: {e}")
@@ -408,7 +408,7 @@ if __name__ == "__main__":
         print(f"\n  ==================================================================")
         print(f"  Cosmofeed Daily Payout & SEBI Compliance Autonomous Server")
         print(f"  Localhost Dashboard: http://localhost:{PORT}")
-        print(f"  Auto-Pilot Scheduler: Active (Runs daily before 10:00 AM IST)")
+        print(f"  Auto-Pilot Scheduler: Active (Completed daily before 08:00 AM IST)")
         print(f"  ==================================================================\n")
         try:
             httpd.serve_forever()

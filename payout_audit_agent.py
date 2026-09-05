@@ -219,6 +219,38 @@ DETAILS_CACHE = {}
 SELF_TXN_CACHE = {}
 PROD_LIST_CACHE = {}
 
+def seed_caches_from_previous_audits():
+    """Pre-seed DETAILS_CACHE from previous audit files to avoid redundant API calls."""
+    reports_dir = os.path.join(HERE, "reports")
+    if not os.path.exists(reports_dir):
+        return
+    files = [f for f in os.listdir(reports_dir) if f.startswith("audit_") and f.endswith(".json") and not f.startswith("audit_checkpoint_")]
+    files.sort(reverse=True)
+    seeded = 0
+    for fn in files[:3]:
+        fp = os.path.join(reports_dir, fn)
+        try:
+            with open(fp, "r", encoding="utf-8") as f:
+                d = json.load(f)
+            for r in d.get("allResults", []):
+                sid = r.get("settlementId")
+                cid = r.get("creatorId")
+                if sid and cid and sid not in DETAILS_CACHE:
+                    DETAILS_CACHE[sid] = {
+                        "creatorId": cid,
+                        "username": r.get("username"),
+                        "email": r.get("email"),
+                        "phone": r.get("phone"),
+                        "flagLevel": None,
+                        "categoryOfBusiness": r.get("category"),
+                        "totalMemoAmount": r.get("totalMemoAmount"),
+                    }
+                    seeded += 1
+        except Exception:
+            pass
+    if seeded > 0:
+        print(f"[cache] Pre-seeded {seeded} settlement details from recent audit history", flush=True)
+
 
 def resolve_settlement_details(settlement_id, token):
     if settlement_id in DETAILS_CACHE:
@@ -499,20 +531,61 @@ def main():
     date_label = args.date or "run"
 
     print("=== Cosmofeed Payout Audit Agent ===", flush=True)
+    seed_caches_from_previous_audits()
     settlements = fetch_all_settlements(token)
     if args.limit:
         settlements = settlements[:args.limit]
-    print(f"[step2-3] auditing {len(settlements)} creators with {args.workers} workers...", flush=True)
 
+    checkpoint_file = os.path.join(args.out, f"audit_checkpoint_{date_label}.json")
     results = []
-    done = 0
-    with ThreadPoolExecutor(max_workers=args.workers) as ex:
-        futs = {ex.submit(audit_one, r, token): r for r in settlements}
-        for fut in as_completed(futs):
-            results.append(fut.result())
-            done += 1
-            if done % 50 == 0:
-                print(f"  audited {done}/{len(settlements)}", flush=True)
+    audited_sids = set()
+
+    if os.path.exists(checkpoint_file):
+        try:
+            with open(checkpoint_file, "r", encoding="utf-8") as f:
+                chk = json.load(f)
+                results = chk.get("allResults", [])
+                audited_sids = {r.get("settlementId") for r in results if r.get("settlementId")}
+                print(f"[resume] Loaded {len(results)} previously audited settlements from checkpoint", flush=True)
+        except Exception:
+            results = []
+            audited_sids = set()
+
+    remaining_settlements = [r for r in settlements if (r.get("_id") or r.get("settlementId")) not in audited_sids]
+    total_count = len(settlements)
+    print(f"[step2-3] auditing {len(remaining_settlements)} remaining creators ({len(results)} already done) with {args.workers} workers...", flush=True)
+
+    done = len(results)
+
+    def save_checkpoint():
+        self_txn = [r for r in results if r.get("selfTransactions")]
+        flagged = [r for r in results if r.get("contentFlags")]
+        errors = [r for r in results if r.get("error")]
+        rep = {
+            "date": date_label,
+            "totalAudited": len(results),
+            "selfTransactionCount": len(self_txn),
+            "flaggedCount": len(flagged),
+            "errorCount": len(errors),
+            "selfTransactions": sorted(self_txn, key=lambda r: -to_float(r.get("payoutAmount"))),
+            "flagged": sorted(flagged, key=lambda r: -to_float(r.get("payoutAmount"))),
+            "errors": errors[:50],
+        }
+        try:
+            with open(checkpoint_file, "w", encoding="utf-8") as f:
+                json.dump({"report": rep, "allResults": results}, f, indent=2)
+        except Exception:
+            pass
+
+    if remaining_settlements:
+        with ThreadPoolExecutor(max_workers=args.workers) as ex:
+            futs = {ex.submit(audit_one, r, token): r for r in remaining_settlements}
+            for fut in as_completed(futs):
+                results.append(fut.result())
+                done += 1
+                if done % 50 == 0 or done == total_count:
+                    print(f"  audited {done}/{total_count}", flush=True)
+                    save_checkpoint()
 
     # Aggregate findings
     self_txn = [r for r in results if r.get("selfTransactions")]
@@ -538,6 +611,13 @@ def main():
     run_json = os.path.join(args.out, "audit_run.json")
     with open(run_json, "w", encoding="utf-8") as f:
         json.dump({"report": report, "allResults": results}, f, indent=2)
+
+    # Clean up checkpoint on complete success
+    if os.path.exists(checkpoint_file):
+        try:
+            os.remove(checkpoint_file)
+        except Exception:
+            pass
 
     # Human-readable summary
     lines = []

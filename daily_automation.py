@@ -1,7 +1,7 @@
 """
 Cosmofeed Daily Settlement & Compliance Automation Runner
 =========================================================
-Runs automatically before 10:00 AM IST daily (or on-demand).
+Runs automatically before 08:00 AM IST daily (or on-demand).
 Executes the full end-to-end audit lifecycle:
   1. Computes audit date and yesterday's product sale date in Asia/Kolkata timezone.
   2. Scrapes/loads latest daily settlement batch.
@@ -78,12 +78,29 @@ def run_pipeline(audit_date: str = None, push_git: bool = True) -> bool:
     if token and not token.startswith("<") and len(token) > 20:
         log("Found valid COSMOFEED_TOKEN in environment. Initiating LIVE settlement scrape from Cosmofeed API...")
         try:
-            cmd = [sys.executable, "payout_audit_agent.py", "--date", audit_date, "--workers", "16"]
-            res = subprocess.run(cmd, capture_output=True, text=True, timeout=300)
-            if res.returncode == 0:
-                log("Live settlement scrape completed successfully.")
-            else:
-                log(f"Scrape warning (code {res.returncode}): {res.stderr[:300]}")
+            cmd = [sys.executable, "payout_audit_agent.py", "--date", audit_date, "--workers", "12"]
+            creation_flags = 0
+            if sys.platform == "win32":
+                creation_flags = 0x00004000  # BELOW_NORMAL_PRIORITY_CLASS: never starve user dashboard
+
+            proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, creationflags=creation_flags)
+            try:
+                stdout, stderr = proc.communicate(timeout=900)
+                if proc.returncode == 0:
+                    log("Live settlement scrape completed successfully.")
+                else:
+                    log(f"Scrape warning (code {proc.returncode}): {stderr[:300]}")
+            except subprocess.TimeoutExpired:
+                log("Live scrape timed out after 900s — cleanly terminating scraper process...")
+                proc.kill()
+                proc.communicate()
+                # If checkpoint file has data, finalize it into today's audit json
+                chk_file = os.path.join(REPORTS_DIR, f"audit_checkpoint_{audit_date}.json")
+                out_file = os.path.join(REPORTS_DIR, f"audit_{audit_date}.json")
+                if os.path.exists(chk_file) and not os.path.exists(out_file):
+                    import shutil
+                    shutil.copyfile(chk_file, out_file)
+                    log(f"Finalized checkpoint into {out_file}")
         except Exception as e:
             log(f"Live scrape skipped/fallback: {e}")
     else:
@@ -139,7 +156,7 @@ def run_pipeline(audit_date: str = None, push_git: bool = True) -> bool:
             log(f"Git synchronization note: {e}")
 
     log("=" * 70)
-    log("DAILY AUDIT PIPELINE COMPLETED SUCCESSFULLY BEFORE 10:00 AM!")
+    log("DAILY AUDIT PIPELINE COMPLETED SUCCESSFULLY BEFORE 08:00 AM!")
     log("=" * 70)
     return True
 

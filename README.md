@@ -34,7 +34,7 @@ Fintech monetization and creator payment platforms require rigorous compliance c
 │                             │ Sequenced by Date (Today -> Yesterday -> Buffer).   │
 │ 3. PERSISTENT LEDGER        │ Accumulate non-SEBI creators until 05-Sep-2026      │
 │                             │ without duplicate entries across daily runs.        │
-│ 4. DAILY AUTOMATION         │ Auto-executes before 10:00 AM IST every morning.    │
+│ 4. DAILY AUTOMATION         │ Auto-executes before 08:00 AM IST every morning.    │
 │ 5. MULTI-CHANNEL SYNC       │ 100% synchronized on Localhost, Tunnel, & Cloud.    │
 └───────────────────────────────────────────────────────────────────────────────────┘
 ```
@@ -125,7 +125,7 @@ Here is the systematic lifecycle followed during the engineering and refinement 
 │ 1. REQUIREMENT DECONSTRUCTION                                                     │
 │    - Identified the 5 core mandates: Telegram vig/ filtering, SEBI master        │
 │      matching, 2-day self-transaction sorting, non-repeating creator ledger until │
-│      5 Sep, and automated multi-link synchronization before 10:00 AM.              │
+│      5 Sep, and automated multi-link synchronization before 08:00 AM.              │
 │                                                                                   │
 │ 2. LIVE SCRAPING & RATE-PACING OPTIMIZATION                                       │
 │    - Diagnosed environment token loading in Windows/PowerShell subshells.         │
@@ -417,8 +417,10 @@ name: Cosmofeed Daily Payout Audit
 
 on:
   schedule:
-    # Runs daily at 09:00 AM IST (03:30 AM UTC), 1 hour before 10:00 AM deadline
-    - cron: '30 3 * * *'
+    # Runs daily before 08:00 AM IST (starts 06:30 AM IST / 01:00 AM UTC)
+    - cron: '0 1 * * *'
+    - cron: '30 1 * * *'
+    - cron: '0 2 * * *'
   push:
     branches: [ main ]
   workflow_dispatch:
