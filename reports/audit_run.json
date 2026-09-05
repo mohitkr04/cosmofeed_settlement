@@ -1,8 +1,8 @@
 {
   "report": {
     "date": "2026-09-05",
-    "totalAudited": 1980,
-    "selfTransactionCount": 175,
+    "totalAudited": 1987,
+    "selfTransactionCount": 176,
     "flaggedCount": 0,
     "errorCount": 40,
     "selfTransactions": [
@@ -264,6 +264,28 @@
           }
         ],
         "buyersChecked": 100
+      },
+      {
+        "settlementId": "6a99c3cc42f86d2f7aa43fb0",
+        "creatorId": "63cc18f911b7fc0037c5ce3f",
+        "username": "riyabuisness",
+        "email": "dropbusiness61@gmail.com",
+        "phone": "9096692732",
+        "payoutAmount": 7522,
+        "totalMemoAmount": 7522,
+        "category": "Education",
+        "contentFlags": [],
+        "selfTransactions": [
+          {
+            "amountPaid": 2.2,
+            "buyerEmail": "dropbusiness61@gmail.com",
+            "buyerPhone": "9096692732",
+            "IP": "152.59.7.31",
+            "date": "02 Sep, 2026; 10:01 PM",
+            "productId": "6a97fc9d1b4ab200132913fd"
+          }
+        ],
+        "buyersChecked": 5
       },
       {
         "settlementId": "6a9b1591de0de2fb3cb5322a",
@@ -35001,6 +35023,106 @@
         }
       ],
       "buyersChecked": 36
+    },
+    {
+      "settlementId": "6a99c45c42f86d2f7aa4c680",
+      "creatorId": "6a96d9465a0b9a0013412356",
+      "username": "kahanibundle",
+      "email": "kuldeep92127506@gmail.com",
+      "phone": "8306844973",
+      "payoutAmount": 92,
+      "totalMemoAmount": 92.22,
+      "category": "Digital Marketing & Marketing",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 3
+    },
+    {
+      "settlementId": "6a85fda12e8e535cfb0d2b80",
+      "creatorId": "68bc59d89cbe140014d71eca",
+      "username": "thegoldentouchsalon",
+      "email": "thegoldentouchofficial@gmail.com",
+      "phone": "9879992301",
+      "payoutAmount": 186,
+      "totalMemoAmount": 186,
+      "category": "Beauty & Personal Care",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 5
+    },
+    {
+      "settlementId": "6a99c3cc42f86d2f7aa43fb0",
+      "creatorId": "63cc18f911b7fc0037c5ce3f",
+      "username": "riyabuisness",
+      "email": "dropbusiness61@gmail.com",
+      "phone": "9096692732",
+      "payoutAmount": 7522,
+      "totalMemoAmount": 7522,
+      "category": "Education",
+      "contentFlags": [],
+      "selfTransactions": [
+        {
+          "amountPaid": 2.2,
+          "buyerEmail": "dropbusiness61@gmail.com",
+          "buyerPhone": "9096692732",
+          "IP": "152.59.7.31",
+          "date": "02 Sep, 2026; 10:01 PM",
+          "productId": "6a97fc9d1b4ab200132913fd"
+        }
+      ],
+      "buyersChecked": 5
+    },
+    {
+      "settlementId": "6a99c45a42f86d2f7aa4c54f",
+      "creatorId": "68bc59d89cbe140014d71eca",
+      "username": "thegoldentouchsalon",
+      "email": "thegoldentouchofficial@gmail.com",
+      "phone": "9879992301",
+      "payoutAmount": 421,
+      "totalMemoAmount": 420.63,
+      "category": "Beauty & Personal Care",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 5
+    },
+    {
+      "settlementId": "6a9872c642f86d2f7aa4231f",
+      "creatorId": "6a96d9465a0b9a0013412356",
+      "username": "kahanibundle",
+      "email": "kuldeep92127506@gmail.com",
+      "phone": "8306844973",
+      "payoutAmount": 186,
+      "totalMemoAmount": 186.32,
+      "category": "Digital Marketing & Marketing",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 3
+    },
+    {
+      "settlementId": "6a8209216264e8dc38d2918f",
+      "creatorId": "68de1473a6e2fb0013ea515f",
+      "username": "koedits19",
+      "email": "pixelpanic808@gmail.com",
+      "phone": "8810394311",
+      "payoutAmount": 237,
+      "totalMemoAmount": 236.66,
+      "category": "Digital Marketing & Marketing",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 3
+    },
+    {
+      "settlementId": "6a7f664b0bf64570f407a57f",
+      "creatorId": "68de1473a6e2fb0013ea515f",
+      "username": "koedits19",
+      "email": "pixelpanic808@gmail.com",
+      "phone": "8810394311",
+      "payoutAmount": 327,
+      "totalMemoAmount": 327.47,
+      "category": "Digital Marketing & Marketing",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 3
     }
   ]
 }

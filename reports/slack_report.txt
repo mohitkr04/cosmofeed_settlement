@@ -1,10 +1,10 @@
 🚨 *COSMOFEED PAYOUT RISK AUDIT REPORT (T+1 Product Review)*
 📅 *Review Date:* `2026-09-05` | *Product Sale Date:* `2026-09-04`
-🕒 *Generated:* `2026-09-05 06:27` | *Total Audited:* `1,980` creators
+🕒 *Generated:* `2026-09-05 08:51` | *Total Audited:* `1,987` creators
 ──────────────────────────────────
 📊 *SUMMARY METRICS:*
-• *Total Pending Payout:* ₹10,366,817.00
-• *Self-Transaction Flagged:* `25` creators
+• *Total Pending Payout:* ₹10,375,788.00
+• *Self-Transaction Flagged:* `26` creators
 • *No Link / Missing Deliverable Flagged:* `77` creators
 • *Adult Keyword Flagged:* `0` creators
 • *Telegram Integration (vig/ >= ₹1k):* `323` settlements
@@ -41,9 +41,10 @@
 20. *direct2hub* (`6a046010694a59001415be88`) — Self-Txn: *₹199.00* (09:21 AM) | Payout: *₹375.00*
 21. *omkardocs* (`6a4b25b5d5d3ba0013de19ec`) — Self-Txn: *₹99.00* (08:12 PM) | Payout: *₹138.00*
 22. *safetymgmtstudy* (`6891d41ca6ec750013f8bfda`) — Self-Txn: *₹99.00* (01:16 AM) | Payout: *₹510.00*
-23. *akhil270592* (`6663fe8ddd28eb0013932f53`) — Self-Txn: *₹2.00* (10:21 AM) | Payout: *₹358.00*
-24. *sachinkushwahadigital* (`65802c2764b988001f1069b1`) — Self-Txn: *₹1.00* (06:21 PM) | Payout: *₹896.00*
-25. *premiumebooks* (`64de0fb3e570b0001ed83b86`) — Self-Txn: *₹1.00* (11:47 AM) | Payout: *₹375.00*
+23. *riyabuisness* (`63cc18f911b7fc0037c5ce3f`) — Self-Txn: *₹2.20* (10:01 PM) | Payout: *₹7,522.00*
+24. *akhil270592* (`6663fe8ddd28eb0013932f53`) — Self-Txn: *₹2.00* (10:21 AM) | Payout: *₹358.00*
+25. *sachinkushwahadigital* (`65802c2764b988001f1069b1`) — Self-Txn: *₹1.00* (06:21 PM) | Payout: *₹896.00*
+26. *premiumebooks* (`64de0fb3e570b0001ed83b86`) — Self-Txn: *₹1.00* (11:47 AM) | Payout: *₹375.00*
 
 🟡 *TOP FLAGGED NO-LINK PRODUCTS (Payment page exists, but no product/content link attached):*
 1. *jyothishavazhi* (`6a966d80344a0f0013cd315d`) | Prod: `6a967f65d6667500135d9ef6` (—) | URL: https://superprofile.bio/vp/6a967f65d6667500135d9ef6 | ⚠️ No Link Attached
