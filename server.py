@@ -342,19 +342,12 @@ def autonomous_daily_scheduler_loop():
     """
     24/7 Background Scheduler Loop:
     Checks time every 60 seconds.
-    Automatically executes the live settlement audit daily before 08:00 AM IST (at 06:30 AM & 07:00 AM IST).
-    Strict cooldown prevents repeated/endless scraping loops that interfere with dashboard activities.
+    Only triggers during the scheduled early morning window (06:30 AM & 07:00 AM IST)
+    so that all audits finish before 08:00 AM IST, leaving daytime completely free
+    for manual review with zero rate-limit blocks or API interference.
     """
     global _last_audit_attempt_time
-    print("[AUTONOMOUS SCHEDULER] 24/7 Daily Compliance Scheduler active (Target: Auto-Audit before 08:00 AM IST daily).")
-    
-    # Wait 10 seconds after server startup before checking today's audit
-    time.sleep(10)
-    today_str = get_today_ist_date()
-    audit_file = os.path.join(HERE, "reports", f"audit_{today_str}.json")
-    if not os.path.exists(audit_file) and not _is_audit_running:
-        _last_audit_attempt_time = time.time()
-        trigger_autonomous_audit(audit_date=today_str, force=False)
+    print("[AUTONOMOUS SCHEDULER] 24/7 Daily Compliance Scheduler active (Target: Auto-Audit at 06:30 AM IST, before 08:00 AM daily).")
 
     while True:
         try:
@@ -373,7 +366,8 @@ def autonomous_daily_scheduler_loop():
             hour = now.hour
             minute = now.minute
 
-            # Scheduled Slots: 06:30 AM IST and 07:00 AM IST so everything completes BEFORE 08:00 AM IST
+            # Scheduled morning slots: 06:30 AM IST and 07:00 AM IST (completed before 08:00 AM IST)
+            # Daytime scraping is strictly avoided to ensure manual review activities are NEVER blocked.
             is_scheduled_slot = (hour == 6 and minute == 30) or (hour == 7 and minute == 0)
 
             if is_scheduled_slot and not _is_audit_running and _last_audit_run_date != today_str:
