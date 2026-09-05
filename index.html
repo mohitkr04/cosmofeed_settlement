@@ -57,18 +57,19 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  /* Liquid Glass Floating App Bar (iOS 26 / Superprofile Aesthetics) */
+  /* Framer Liquid Glass Floating App Bar (iOS 26 / Framer Aesthetics) */
   .liquid-appbar {
-    background: rgba(255, 255, 255, 0.78);
-    backdrop-filter: blur(32px) saturate(200%);
-    -webkit-backdrop-filter: blur(32px) saturate(200%);
-    border: 1px solid rgba(255, 255, 255, 0.92);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.88) 0%, rgba(255, 255, 255, 0.75) 100%);
+    backdrop-filter: blur(36px) saturate(210%);
+    -webkit-backdrop-filter: blur(36px) saturate(210%);
+    border: 1px solid rgba(255, 255, 255, 0.95);
     box-shadow: 
-      0 14px 40px -6px rgba(15, 23, 42, 0.06),
-      0 4px 12px -2px rgba(15, 23, 42, 0.03),
-      inset 0 1px 1.5px 0 rgba(255, 255, 255, 1);
-    border-radius: 28px;
-    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      0 24px 60px -15px rgba(15, 23, 42, 0.08),
+      0 8px 24px -4px rgba(0, 102, 255, 0.03),
+      0 0 0 1px rgba(255, 255, 255, 0.9),
+      inset 0 1.5px 2px 0 rgba(255, 255, 255, 1);
+    border-radius: 32px;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
   /* Liquid Glass Cards & Panels */
@@ -150,58 +151,64 @@
     box-shadow: 0 4px 14px -1px rgba(0, 102, 255, 0.14), 0 2px 6px -1px rgba(15, 23, 42, 0.04);
   }
 
-  /* Responsive Tap Button Physics */
-  .tap-btn, .btn-futuristic {
-    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  /* Framer Spring Micro-Interactions */
+  .tap-btn, .btn-futuristic, .btn-glass, .btn-glass-primary {
+    transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), 
+                box-shadow 0.22s cubic-bezier(0.16, 1, 0.3, 1), 
+                background 0.2s ease, 
+                border-color 0.2s ease,
+                color 0.15s ease;
     position: relative;
     user-select: none;
   }
-  .tap-btn:hover, .btn-futuristic:hover {
-    transform: translateY(-1.5px);
+  .tap-btn:hover, .btn-futuristic:hover, .btn-glass:hover {
+    transform: translateY(-2.5px) scale(1.02);
   }
-  .tap-btn:active, .btn-futuristic:active {
-    transform: scale(0.955);
+  .tap-btn:active, .btn-futuristic:active, .btn-glass:active {
+    transform: translateY(0.5px) scale(0.95);
+    transition: transform 0.1s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
-  /* Minimal Liquid Glass Buttons */
+  /* Framer Minimal Liquid Glass Buttons */
   .btn-glass {
-    background: rgba(255, 255, 255, 0.78);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(226, 232, 240, 0.85);
-    color: #334155;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(226, 232, 240, 0.95);
+    color: #1e293b;
     font-weight: 600;
-    box-shadow: 0 2px 6px -1px rgba(15, 23, 42, 0.04), inset 0 1px 1px rgba(255, 255, 255, 0.9);
-    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-    user-select: none;
+    box-shadow: 
+      0 2px 8px -1px rgba(15, 23, 42, 0.05),
+      inset 0 1px 1.5px rgba(255, 255, 255, 1);
   }
   .btn-glass:hover {
     background: #ffffff;
-    border-color: rgba(0, 102, 255, 0.3);
+    border-color: rgba(0, 102, 255, 0.4);
     color: #0066ff;
-    box-shadow: 0 6px 18px -2px rgba(0, 102, 255, 0.1), inset 0 1px 1px rgba(255, 255, 255, 1);
-    transform: translateY(-1.5px);
-  }
-  .btn-glass:active {
-    transform: scale(0.955);
+    box-shadow: 
+      0 10px 25px -4px rgba(0, 102, 255, 0.14),
+      0 4px 10px -2px rgba(15, 23, 42, 0.04),
+      inset 0 1px 1.5px rgba(255, 255, 255, 1);
   }
 
   .btn-glass-primary {
     background: linear-gradient(135deg, #0066ff 0%, #0052cc 100%);
     color: #ffffff;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    box-shadow: 0 4px 14px -1px rgba(0, 102, 255, 0.3), inset 0 1px 1px rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    box-shadow: 
+      0 8px 25px -4px rgba(0, 102, 255, 0.45),
+      inset 0 1px 1.5px rgba(255, 255, 255, 0.6);
     font-weight: 600;
-    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-    user-select: none;
   }
   .btn-glass-primary:hover {
     background: linear-gradient(135deg, #0077ff 0%, #005ce6 100%);
-    box-shadow: 0 8px 22px -2px rgba(0, 102, 255, 0.42), inset 0 1px 1px rgba(255, 255, 255, 0.5);
-    transform: translateY(-1.5px);
+    box-shadow: 
+      0 14px 34px -4px rgba(0, 102, 255, 0.55),
+      inset 0 1px 2px rgba(255, 255, 255, 0.7);
+    transform: translateY(-2.5px) scale(1.03);
   }
   .btn-glass-primary:active {
-    transform: scale(0.955);
+    transform: translateY(0.5px) scale(0.96);
   }
 
   /* Liquid Inputs & Dropdowns */
@@ -265,25 +272,25 @@
 </head>
 <body class="selection:bg-blue-600 selection:text-white pb-20">
 
-<!-- Floating Liquid Glass App Bar (iOS 26 / Superprofile Aesthetics) -->
-<header class="sticky top-3 z-40 max-w-[1520px] mx-auto px-4 sm:px-6">
-  <div class="liquid-appbar px-6 py-3.5 flex flex-col gap-3">
+<!-- Floating Framer Liquid Glass App Bar (iOS 26 / Framer Aesthetics) -->
+<header class="sticky top-3 sm:top-5 z-40 w-full max-w-[1520px] mx-auto px-3 sm:px-6">
+  <div class="liquid-appbar p-4 sm:p-5 md:p-6 flex flex-col items-center justify-center gap-4 sm:gap-5 w-full">
     
-    <!-- Top Row: Brand Identity & Action Buttons -->
-    <div class="flex flex-wrap items-center justify-between gap-3.5 w-full">
+    <!-- Top Row: Centralized / Symmetrically Balanced Brand & Dynamic Status Island -->
+    <div class="flex flex-col lg:flex-row items-center justify-between gap-4 w-full">
       
-      <!-- Left: Official Logo + Title + Status Badges -->
-      <div class="flex items-center gap-3 flex-wrap flex-shrink-0">
-        <div class="w-10 h-10 rounded-2xl bg-white/90 p-1.5 border border-white/90 shadow-sm shadow-indigo-500/10 flex items-center justify-center overflow-hidden flex-shrink-0">
+      <!-- Brand Cluster: Logo + Title + Status Badges (Centered on mobile, left on desktop) -->
+      <div class="flex items-center justify-center lg:justify-start gap-3 sm:gap-4 flex-wrap flex-shrink-0">
+        <div class="w-11 h-11 sm:w-13 sm:h-13 rounded-2xl bg-white/95 p-2 border border-white/95 shadow-md shadow-blue-500/10 flex items-center justify-center overflow-hidden flex-shrink-0">
           <img src="assets/logo.png" alt="cosmofeed_payout" class="w-full h-full object-contain">
         </div>
-        <div class="flex items-center gap-2 flex-wrap">
-          <h1 class="text-base sm:text-lg font-bold text-slate-900 tracking-tight">cosmofeed_payout</h1>
-          <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-slate-100/90 text-slate-700 border border-slate-200/80">
-            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+        <div class="flex items-center gap-2 sm:gap-2.5 flex-wrap justify-center lg:justify-start">
+          <h1 class="text-base sm:text-lg md:text-xl font-extrabold text-slate-900 tracking-tight">cosmofeed_payout</h1>
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-slate-100/90 text-slate-700 border border-slate-200/80 shadow-xs">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
             T+1 Release Gate
           </span>
-          <span id="cloud-autopilot-badge" class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-blue-50/90 text-blue-700 border border-blue-200/70 shadow-xs" title="100% Zero-Machine, Zero-Human Cloud Autonomy via GitHub Actions. Runs automatically before 8 AM IST & every 2 hrs without any computer turned on.">
+          <span id="cloud-autopilot-badge" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-blue-50/95 text-blue-700 border border-blue-200/70 shadow-xs" title="100% Zero-Machine, Zero-Human Cloud Autonomy via GitHub Actions. Runs automatically before 8 AM IST & every 2 hrs without any computer turned on.">
             <span class="relative flex h-2 w-2">
               <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
               <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
@@ -293,75 +300,79 @@
         </div>
       </div>
 
-      <!-- Right: Minimal, Clean, Glass Action Buttons -->
-      <div class="flex flex-wrap items-center gap-2 flex-shrink-0">
-        <!-- PDF Report Button -->
-        <button id="downloadPdfBtn" title="Generate and download Executive PDF Report" class="btn-glass px-3 py-1.5 rounded-xl text-xs flex items-center gap-1.5 tap-btn">
-          <svg class="w-3.5 h-3.5 text-rose-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 16l4-5h-3V4h-2v7H8l4 5zm9-9h-4v2h4v11H3V9h4V7H3c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2z"/></svg>
-          <span>PDF Report</span>
-        </button>
-
-        <!-- HTML Report Button -->
-        <button id="downloadHtmlBtn" title="Download standalone executive HTML report" class="btn-glass px-3 py-1.5 rounded-xl text-xs flex items-center gap-1.5 tap-btn">
-          <svg class="w-3.5 h-3.5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
-          <span>HTML Report</span>
-        </button>
-
-        <!-- 10-Day SEBI Excel Button -->
-        <button id="export10dExcelBtn" title="Download cumulative 10-day Telegram & SEBI Excel Tracker" class="btn-glass px-3 py-1.5 rounded-xl text-xs flex items-center gap-1.5 tap-btn">
-          <svg class="w-3.5 h-3.5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-          <span>10-Day Excel</span>
-        </button>
-
-        <!-- 10-Day SEBI CSV Button -->
-        <button id="export10dCsvBtn" title="Download cumulative 10-day Telegram & SEBI CSV Report" class="btn-glass px-3 py-1.5 rounded-xl text-xs flex items-center gap-1.5 tap-btn">
-          <svg class="w-3.5 h-3.5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-          <span>10-Day CSV</span>
-        </button>
-
-        <!-- Manager Submission (5 Sep) Button -->
-        <button id="managerModalBtn" title="Manager Submission: Non-SEBI Cumulative Report (Until 5 Sep)" class="btn-glass-primary px-3.5 py-1.5 rounded-xl text-xs flex items-center gap-1.5 tap-btn">
-          <svg class="w-3.5 h-3.5 text-amber-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-          <span>Manager Report</span>
-        </button>
-
-        <!-- Export Filtered CSV Button -->
-        <button id="exportFilteredBtn" title="Export currently displayed rows as CSV" class="btn-glass px-3.5 py-1.5 rounded-xl text-xs flex items-center gap-1.5 tap-btn">
-          <svg class="w-3.5 h-3.5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-          <span>Export CSV</span>
-        </button>
-
-        <!-- Slack Summary Button -->
-        <button id="slackModalBtn" title="View & copy Slack Markdown summary" class="btn-glass px-3.5 py-1.5 rounded-xl text-xs flex items-center gap-1.5 tap-btn">
-          <svg class="w-3.5 h-3.5 text-slate-600" fill="currentColor" viewBox="0 0 24 24"><path d="M6 15a2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2h2v2zm1 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2v5a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-5zm2-7a2 2 0 0 1-2-2 2 2 0 0 1 2-2 2 2 0 0 1 2 2v2H9zm0 1a2 2 0 0 1 2 2 2 2 0 0 1-2 2H4a2 2 0 0 1-2-2 2 2 0 0 1 2-2h5zm7-2a2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2h-2V7zm-1 0a2 2 0 0 1-2 2 2 2 0 0 1-2-2V2a2 2 0 0 1 2-2 2 2 0 0 1 2 2v5zm-2 7a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2v-2h2zm0-1a2 2 0 0 1-2-2 2 2 0 0 1 2-2h5a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-5z"/></svg>
-          <span>Slack</span>
-        </button>
+      <!-- Dynamic Status Island Pill -->
+      <div class="flex items-center justify-center max-w-full overflow-hidden">
+        <div class="inline-flex items-center justify-center gap-2.5 sm:gap-4 text-xs sm:text-sm text-slate-600 bg-white/85 backdrop-blur-md px-4 sm:px-6 py-2 sm:py-2.5 rounded-full border border-white/95 shadow-xs whitespace-nowrap overflow-x-auto max-w-full">
+          <span class="inline-flex items-center gap-1.5 flex-shrink-0">
+            <span class="text-slate-400 font-normal">Audit Date:</span>
+            <b id="hdr-today" class="text-slate-800 font-semibold">2026-09-05</b>
+          </span>
+          <span class="text-slate-300 flex-shrink-0">•</span>
+          <span class="inline-flex items-center gap-1.5 flex-shrink-0">
+            <span class="text-slate-400 font-normal">Sales Date:</span>
+            <b id="hdr-yesterday" class="text-slate-800 font-semibold">2026-09-04</b>
+          </span>
+          <span class="text-slate-300 flex-shrink-0">•</span>
+          <span class="inline-flex items-center gap-1.5 flex-shrink-0">
+            <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+            <span id="hdr-total" class="font-medium text-slate-700">1,987 pending audited</span>
+          </span>
+          <span class="text-slate-300 flex-shrink-0">•</span>
+          <span id="hdr-sync" class="text-emerald-700 font-medium inline-flex items-center gap-1.5 flex-shrink-0">
+            <svg class="w-4 h-4 text-emerald-600 inline flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+            <span id="hdr-last-sync">Auto-Synced</span>
+          </span>
+        </div>
       </div>
 
     </div>
 
-    <!-- Centered Metadata Bar: Horizontal Dynamic Island (Never Wraps Vertically) -->
-    <div class="flex items-center justify-center pt-2.5 border-t border-slate-200/50 w-full overflow-hidden">
-      <div class="inline-flex items-center justify-center gap-3 sm:gap-4 text-xs text-slate-600 bg-white/75 backdrop-blur-md px-5 py-1.5 rounded-full border border-white/90 shadow-xs whitespace-nowrap overflow-x-auto max-w-full">
-        <span class="inline-flex items-center gap-1.5 flex-shrink-0">
-          <span class="text-slate-400 font-normal">Audit Date:</span>
-          <b id="hdr-today" class="text-slate-800 font-semibold">2026-09-05</b>
-        </span>
-        <span class="text-slate-300 flex-shrink-0">•</span>
-        <span class="inline-flex items-center gap-1.5 flex-shrink-0">
-          <span class="text-slate-400 font-normal">Sales Date:</span>
-          <b id="hdr-yesterday" class="text-slate-800 font-semibold">2026-09-04</b>
-        </span>
-        <span class="text-slate-300 flex-shrink-0">•</span>
-        <span class="inline-flex items-center gap-1.5 flex-shrink-0">
-          <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
-          <span id="hdr-total" class="font-medium text-slate-700">1,987 pending audited</span>
-        </span>
-        <span class="text-slate-300 flex-shrink-0">•</span>
-        <span id="hdr-sync" class="text-emerald-700 font-medium inline-flex items-center gap-1.5 flex-shrink-0">
-          <svg class="w-3.5 h-3.5 text-emerald-600 inline flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
-          <span id="hdr-last-sync">Auto-Synced</span>
-        </span>
+    <!-- Bottom Row: Centralized Framer Action Command Dock -->
+    <div class="w-full flex items-center justify-center pt-3 sm:pt-4 border-t border-slate-200/60">
+      <div class="inline-flex flex-wrap items-center justify-center gap-2 sm:gap-2.5 md:gap-3 p-1 sm:p-1.5 rounded-[22px] bg-slate-900/[0.03] border border-white/80 shadow-inner max-w-full">
+        
+        <!-- PDF Report Button -->
+        <button id="downloadPdfBtn" title="Generate and download Executive PDF Report" class="btn-glass px-3.5 py-2 sm:px-4 sm:py-2.5 md:px-5 md:py-2.5 rounded-2xl text-xs sm:text-[13px] md:text-sm font-semibold flex items-center gap-2 tap-btn">
+          <svg class="w-4 h-4 text-rose-500 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 16l4-5h-3V4h-2v7H8l4 5zm9-9h-4v2h4v11H3V9h4V7H3c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2z"/></svg>
+          <span>PDF Report</span>
+        </button>
+
+        <!-- HTML Report Button -->
+        <button id="downloadHtmlBtn" title="Download standalone executive HTML report" class="btn-glass px-3.5 py-2 sm:px-4 sm:py-2.5 md:px-5 md:py-2.5 rounded-2xl text-xs sm:text-[13px] md:text-sm font-semibold flex items-center gap-2 tap-btn">
+          <svg class="w-4 h-4 text-slate-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+          <span>HTML Report</span>
+        </button>
+
+        <!-- 10-Day SEBI Excel Button -->
+        <button id="export10dExcelBtn" title="Download cumulative 10-day Telegram & SEBI Excel Tracker" class="btn-glass px-3.5 py-2 sm:px-4 sm:py-2.5 md:px-5 md:py-2.5 rounded-2xl text-xs sm:text-[13px] md:text-sm font-semibold flex items-center gap-2 tap-btn">
+          <svg class="w-4 h-4 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          <span>10-Day Excel</span>
+        </button>
+
+        <!-- 10-Day SEBI CSV Button -->
+        <button id="export10dCsvBtn" title="Download cumulative 10-day Telegram & SEBI CSV Report" class="btn-glass px-3.5 py-2 sm:px-4 sm:py-2.5 md:px-5 md:py-2.5 rounded-2xl text-xs sm:text-[13px] md:text-sm font-semibold flex items-center gap-2 tap-btn">
+          <svg class="w-4 h-4 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          <span>10-Day CSV</span>
+        </button>
+
+        <!-- Manager Submission (5 Sep) Button -->
+        <button id="managerModalBtn" title="Manager Submission: Non-SEBI Cumulative Report (Until 5 Sep)" class="btn-glass-primary px-4.5 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-2.5 rounded-2xl text-xs sm:text-[13px] md:text-sm font-bold flex items-center gap-2 tap-btn shadow-md">
+          <svg class="w-4 h-4 text-amber-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          <span>Manager Report</span>
+        </button>
+
+        <!-- Export Filtered CSV Button -->
+        <button id="exportFilteredBtn" title="Export currently displayed rows as CSV" class="btn-glass px-3.5 py-2 sm:px-4 sm:py-2.5 md:px-5 md:py-2.5 rounded-2xl text-xs sm:text-[13px] md:text-sm font-semibold flex items-center gap-2 tap-btn">
+          <svg class="w-4 h-4 text-slate-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+          <span>Export CSV</span>
+        </button>
+
+        <!-- Slack Summary Button -->
+        <button id="slackModalBtn" title="View & copy Slack Markdown summary" class="btn-glass px-3.5 py-2 sm:px-4 sm:py-2.5 md:px-5 md:py-2.5 rounded-2xl text-xs sm:text-[13px] md:text-sm font-semibold flex items-center gap-2 tap-btn">
+          <svg class="w-4 h-4 text-slate-600 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M6 15a2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2h2v2zm1 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2v5a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-5zm2-7a2 2 0 0 1-2-2 2 2 0 0 1 2-2 2 2 0 0 1 2 2v2H9zm0 1a2 2 0 0 1 2 2 2 2 0 0 1-2 2H4a2 2 0 0 1-2-2 2 2 0 0 1 2-2h5zm7-2a2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2h-2V7zm-1 0a2 2 0 0 1-2 2 2 2 0 0 1-2-2V2a2 2 0 0 1 2-2 2 2 0 0 1 2 2v5zm-2 7a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2v-2h2zm0-1a2 2 0 0 1-2-2 2 2 0 0 1 2-2h5a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-5z"/></svg>
+          <span>Slack</span>
+        </button>
+
       </div>
     </div>
 
