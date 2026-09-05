@@ -378,13 +378,12 @@ powershell -ExecutionPolicy Bypass -File .\setup_daily_task.ps1
 
 ## 🌐 8. Live Access & Synchronized URLs
 
-All three links are synchronized with the live audit batch:
+The production dashboards are fully synchronized with the daily audit batch:
 
 | Environment | URL | Purpose |
 | :--- | :--- | :--- |
-| 🌐 **24/7 Cloud Hosted (GitHub Pages)** | **[https://mohitkr04.github.io/cosmofeed_settlement/](https://mohitkr04.github.io/cosmofeed_settlement/)** | Permanent cloud-hosted dashboard. Accessible 24/7 globally. |
-| 🚀 **Live Public Backend Tunnel** | **[https://convention-denied-changing-nascar.trycloudflare.com](https://convention-denied-changing-nascar.trycloudflare.com)** | Live tunnel supporting real-time backend report generation. |
-| 💻 **Offline Localhost** | **[http://localhost:8000/](http://localhost:8000/)** | Fast local HTTP server for offline analysis and direct file downloads. |
+| 🌐 **24/7 Cloud Hosted (GitHub Pages)** | **[https://mohitkr04.github.io/cosmofeed_settlement/](https://mohitkr04.github.io/cosmofeed_settlement/)** | Permanent cloud-hosted dashboard. Accessible 24/7 globally with latest daily updates before 08:00 AM IST. |
+| 💻 **Offline Localhost** | **[http://localhost:8000/](http://localhost:8000/)** | Fast local HTTP server for offline analysis and direct report access. |
 
 ---
 

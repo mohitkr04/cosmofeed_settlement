@@ -1470,14 +1470,15 @@ function render() {
   }
 }
 
-// Initial Data Load with static GitHub Pages fallback
+// Initial Data Load with static GitHub Pages fallback & cache-busting
 const isStatic = window.location.protocol === 'file:' || window.location.hostname.endsWith('github.io');
-const dataUrl = isStatic ? 'reports/data.json' : '/api/data';
+const cacheBuster = '?t=' + Date.now();
+const dataUrl = isStatic ? ('reports/data.json' + cacheBuster) : '/api/data';
 
-fetch(dataUrl)
-  .catch(() => fetch('reports/data.json'))
+fetch(dataUrl, { cache: 'no-store' })
+  .catch(() => fetch('reports/data.json' + cacheBuster, { cache: 'no-store' }))
   .then(r => {
-    if (!r.ok) return fetch('reports/data.json').then(res => res.json());
+    if (!r.ok) return fetch('reports/data.json' + cacheBuster, { cache: 'no-store' }).then(res => res.json());
     return r.json();
   })
   .then(d => {
@@ -1583,25 +1584,25 @@ window.addEventListener('keydown', e => {
 // 1. PDF DOWNLOAD
 document.getElementById('downloadPdfBtn').addEventListener('click', () => {
   showToast("Generating Executive PDF Report...");
-  window.location.href = isStatic ? 'reports/Cosmofeed_Payout_Audit_Report.pdf' : '/api/download-pdf';
+  window.location.href = isStatic ? ('reports/Cosmofeed_Payout_Audit_Report.pdf?t=' + Date.now()) : '/api/download-pdf';
 });
 
 // 2. HTML DOWNLOAD
 document.getElementById('downloadHtmlBtn').addEventListener('click', () => {
   showToast("Downloading Executive HTML Report...");
-  window.location.href = isStatic ? 'reports/payout_audit_report.html' : '/download-report';
+  window.location.href = isStatic ? ('reports/payout_audit_report.html?t=' + Date.now()) : '/download-report';
 });
 
 // 3. 10-DAY SEBI EXCEL DOWNLOAD
 document.getElementById('export10dExcelBtn').addEventListener('click', () => {
   showToast("Downloading 10-Day SEBI Excel Report...");
-  window.location.href = isStatic ? 'reports/telegram_sebi_10day_report.xlsx' : '/api/telegram-sebi/download-excel';
+  window.location.href = isStatic ? ('reports/telegram_sebi_10day_report.xlsx?t=' + Date.now()) : '/api/telegram-sebi/download-excel';
 });
 
 // 4. 10-DAY SEBI CSV DOWNLOAD
 document.getElementById('export10dCsvBtn').addEventListener('click', () => {
   showToast("Downloading 10-Day SEBI CSV Report...");
-  window.location.href = isStatic ? 'reports/telegram_sebi_10day_report.csv' : '/api/telegram-sebi/download-csv';
+  window.location.href = isStatic ? ('reports/telegram_sebi_10day_report.csv?t=' + Date.now()) : '/api/telegram-sebi/download-csv';
 });
 
 // 5. EXPORT FILTERED ROWS CSV (Exact currently visible table)

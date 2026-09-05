@@ -73,11 +73,18 @@ def main(audit_date=None):
         print(f"Error: No audit_*.json files found in {REPORTS_DIR}!")
         return
 
-    dated_audit_files = [f for f in audit_files if re.search(r"audit_\d{4}-\d{2}-\d{2}\.json", os.path.basename(f))]
-    if dated_audit_files:
-        audit_json = sorted(dated_audit_files, key=lambda p: re.search(r"audit_(\d{4}-\d{2}-\d{2})\.json", os.path.basename(p)).group(1), reverse=True)[0]
+    target_audit_file = os.path.join(REPORTS_DIR, f"audit_{audit_date}.json")
+    target_checkpoint_file = os.path.join(REPORTS_DIR, f"audit_checkpoint_{audit_date}.json")
+    if os.path.exists(target_audit_file):
+        audit_json = target_audit_file
+    elif os.path.exists(target_checkpoint_file):
+        audit_json = target_checkpoint_file
     else:
-        audit_json = sorted(audit_files, key=os.path.getmtime, reverse=True)[0]
+        dated_audit_files = [f for f in audit_files if re.search(r"audit_\d{4}-\d{2}-\d{2}\.json", os.path.basename(f))]
+        if dated_audit_files:
+            audit_json = sorted(dated_audit_files, key=lambda p: re.search(r"audit_(\d{4}-\d{2}-\d{2})\.json", os.path.basename(p)).group(1), reverse=True)[0]
+        else:
+            audit_json = sorted(audit_files, key=os.path.getmtime, reverse=True)[0]
 
     with open(audit_json, "r", encoding="utf-8") as f:
         audit_data = json.load(f)

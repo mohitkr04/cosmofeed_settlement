@@ -123,7 +123,28 @@ class RatePacer:
         if to_sleep > 0:
             time.sleep(to_sleep)
 
-RATE_PACER = RatePacer(max_per_second=25)
+RATE_PACER = RatePacer(max_per_second=4)
+
+GLOBAL_BACKOFF_UNTIL = 0.0
+GLOBAL_BACKOFF_LOCK = threading.Lock()
+
+
+def trigger_global_backoff(duration=45.0):
+    global GLOBAL_BACKOFF_UNTIL
+    with GLOBAL_BACKOFF_LOCK:
+        now = time.time()
+        if now + duration > GLOBAL_BACKOFF_UNTIL:
+            GLOBAL_BACKOFF_UNTIL = now + duration
+            print(f"[backoff] HTTP 429 encountered: pausing all scraper workers for {int(duration)}s to respect rate limits...", flush=True)
+
+
+def check_global_backoff():
+    global GLOBAL_BACKOFF_UNTIL
+    while True:
+        wait_sec = GLOBAL_BACKOFF_UNTIL - time.time()
+        if wait_sec <= 0:
+            break
+        time.sleep(min(wait_sec, 2.0))
 
 
 def api_get(path, token, retries=3, timeout=6):
@@ -134,6 +155,7 @@ def api_get(path, token, retries=3, timeout=6):
     headers["authorization"] = "Bearer " + tok_str
     last_err = None
     for attempt in range(retries):
+        check_global_backoff()
         RATE_PACER.wait()
         try:
             req = urlreq.Request(url, headers=headers, method="GET")
@@ -142,7 +164,7 @@ def api_get(path, token, retries=3, timeout=6):
         except HTTPError as e:
             last_err = f"HTTP {e.code}"
             if e.code == 429:
-                time.sleep(10.0 * (attempt + 1))
+                trigger_global_backoff(45.0)
                 continue
             return {"__error__": last_err}
         except Exception as e:
@@ -162,8 +184,8 @@ def api_get_product_details(product_id, token, product_type="page"):
 # ---------- Step 1: fetch all pending settlements ----------
 
 def fetch_all_settlements(token, request_type="pending", verbose=True):
+    raw_cache_file = os.path.join(HERE, "reports", f"settlements_raw_{request_type}.json")
     first = None
-    time.sleep(15.0)  # Ensure rate limit window is completely reset
     for attempt in range(5):
         first = api_get(
             f"/IDgetSettlements?requestType={request_type}&page=1&sortField=&onlyFlagged=0"
@@ -173,9 +195,18 @@ def fetch_all_settlements(token, request_type="pending", verbose=True):
         if verbose:
             err_msg = (first or {}).get("__error__", "no response")
             print(f"[step1] page 1 attempt {attempt+1}/5 retry due to {err_msg}...", flush=True)
-        time.sleep(15.0 * (attempt + 1))
+        time.sleep(10.0 * (attempt + 1))
 
     if not first or "__error__" in first:
+        if os.path.exists(raw_cache_file):
+            print(f"[step1] API error ({first}), loading {raw_cache_file} as reliable fallback...", flush=True)
+            try:
+                with open(raw_cache_file, "r", encoding="utf-8") as f:
+                    cached_rows = json.load(f)
+                if cached_rows:
+                    return cached_rows
+            except Exception:
+                pass
         err = (first or {}).get("__error__", "API call failed")
         raise RuntimeError(f"Failed to fetch settlements from API: {err}")
 
@@ -192,14 +223,14 @@ def fetch_all_settlements(token, request_type="pending", verbose=True):
     pages_dict = {1: page1_rows}
 
     def fetch_page(p):
-        time.sleep(0.02)
+        time.sleep(0.05)
         d = api_get(
             f"/IDgetSettlements?requestType={request_type}&page={p}&sortField=&onlyFlagged=0"
             f"&AmountGreaterThan=0&AmountLessThan=0&filter=&paymentVerified=", token, retries=5)
         pdata = (d or {}).get("data", {})
         return p, pdata.get("settelements") or pdata.get("settlements") or []
 
-    with ThreadPoolExecutor(max_workers=8) as ex:
+    with ThreadPoolExecutor(max_workers=3) as ex:
         futs = [ex.submit(fetch_page, p) for p in range(2, total_pages + 1)]
         for fut in as_completed(futs):
             p, r = fut.result()
@@ -210,6 +241,14 @@ def fetch_all_settlements(token, request_type="pending", verbose=True):
         rows.extend(pages_dict.get(p, []))
     if verbose:
         print(f"[step1] completed fetching {len(rows)} settlements across {total_pages} pages", flush=True)
+
+    if rows:
+        try:
+            with open(raw_cache_file, "w", encoding="utf-8") as f:
+                json.dump(rows, f)
+        except Exception:
+            pass
+
     return rows
 
 
@@ -218,16 +257,19 @@ def fetch_all_settlements(token, request_type="pending", verbose=True):
 DETAILS_CACHE = {}
 SELF_TXN_CACHE = {}
 PROD_LIST_CACHE = {}
+USER_PROFILE_CACHE = {}
 
 def seed_caches_from_previous_audits():
-    """Pre-seed DETAILS_CACHE from previous audit files to avoid redundant API calls."""
+    """Pre-seed DETAILS_CACHE, USER_PROFILE_CACHE, and SELF_TXN_CACHE from previous audit files."""
     reports_dir = os.path.join(HERE, "reports")
     if not os.path.exists(reports_dir):
         return
     files = [f for f in os.listdir(reports_dir) if f.startswith("audit_") and f.endswith(".json") and not f.startswith("audit_checkpoint_")]
     files.sort(reverse=True)
-    seeded = 0
-    for fn in files[:3]:
+    seeded_details = 0
+    seeded_profiles = 0
+    seeded_st = 0
+    for fn in files[:5]:
         fp = os.path.join(reports_dir, fn)
         try:
             with open(fp, "r", encoding="utf-8") as f:
@@ -235,21 +277,36 @@ def seed_caches_from_previous_audits():
             for r in d.get("allResults", []):
                 sid = r.get("settlementId")
                 cid = r.get("creatorId")
+                uname = r.get("username")
                 if sid and cid and sid not in DETAILS_CACHE:
                     DETAILS_CACHE[sid] = {
                         "creatorId": cid,
-                        "username": r.get("username"),
+                        "username": uname,
                         "email": r.get("email"),
                         "phone": r.get("phone"),
                         "flagLevel": None,
                         "categoryOfBusiness": r.get("category"),
                         "totalMemoAmount": r.get("totalMemoAmount"),
                     }
-                    seeded += 1
+                    seeded_details += 1
+                if uname and cid and uname not in USER_PROFILE_CACHE:
+                    USER_PROFILE_CACHE[uname] = {
+                        "creatorId": cid,
+                        "username": uname,
+                        "email": r.get("email"),
+                        "phone": r.get("phone"),
+                        "category": r.get("category"),
+                    }
+                    seeded_profiles += 1
+                if cid and cid not in SELF_TXN_CACHE and "selfTransactions" in r:
+                    SELF_TXN_CACHE[cid] = {
+                        "self": r.get("selfTransactions", []),
+                        "buyers": r.get("buyersChecked", 0),
+                    }
+                    seeded_st += 1
         except Exception:
             pass
-    if seeded > 0:
-        print(f"[cache] Pre-seeded {seeded} settlement details from recent audit history", flush=True)
+    print(f"[cache] Pre-seeded {seeded_details} settlements, {seeded_profiles} creator profiles, and {seeded_st} self-transaction histories", flush=True)
 
 
 def resolve_settlement_details(settlement_id, token):
@@ -467,11 +524,40 @@ def check_content_flags(details, products=None):
 # ---------- Orchestration ----------
 
 def audit_one(row, token):
-    sid = row.get("_id")
-    detail = resolve_settlement_details(sid, token)
-    if "__error__" in detail:
-        return {"settlementId": sid, "username": row.get("username"),
-                "error": "details:" + detail["__error__"]}
+    sid = row.get("_id") or row.get("settlementId")
+    uname = row.get("username")
+    detail = None
+    if sid in DETAILS_CACHE:
+        detail = DETAILS_CACHE[sid]
+    elif uname and uname in USER_PROFILE_CACHE:
+        prof = USER_PROFILE_CACHE[uname]
+        detail = {
+            "creatorId": prof.get("creatorId"),
+            "username": uname,
+            "email": prof.get("email") or row.get("Email"),
+            "phone": prof.get("phone") or row.get("PhoneNumber"),
+            "totalMemoAmount": row.get("payoutAmount"),
+            "categoryOfBusiness": prof.get("category"),
+            "flagLevel": None
+        }
+    else:
+        detail = resolve_settlement_details(sid, token)
+        if "__error__" in detail:
+            if uname and uname in USER_PROFILE_CACHE:
+                prof = USER_PROFILE_CACHE[uname]
+                detail = {
+                    "creatorId": prof.get("creatorId"),
+                    "username": uname,
+                    "email": prof.get("email") or row.get("Email"),
+                    "phone": prof.get("phone") or row.get("PhoneNumber"),
+                    "totalMemoAmount": row.get("payoutAmount"),
+                    "categoryOfBusiness": prof.get("category"),
+                    "flagLevel": None
+                }
+            else:
+                return {"settlementId": sid, "username": uname,
+                        "error": "details:" + detail["__error__"]}
+
     creator_id = detail.get("creatorId")
     result = {
         "settlementId": sid,
@@ -487,20 +573,33 @@ def audit_one(row, token):
         "buyersChecked": 0,
     }
     if creator_id:
-        st = check_self_transactions(creator_id, token)
-        if "__error__" not in st:
-            result["buyersChecked"] = st["buyers"]
-            for b in st["self"]:
+        if creator_id in SELF_TXN_CACHE:
+            cached_st = SELF_TXN_CACHE[creator_id]
+            result["buyersChecked"] = cached_st.get("buyers", 0)
+            for b in cached_st.get("self", []):
                 result["selfTransactions"].append({
-                    "amountPaid": b.get("amountPaid"),
+                    "amountPaid": b.get("amountPaid") or b.get("amount"),
                     "buyerEmail": b.get("buyerEmail"),
-                    "buyerPhone": b.get("buyerPhoneNumber"),
+                    "buyerPhone": b.get("buyerPhoneNumber") or b.get("buyerPhone"),
                     "IP": b.get("IP"),
-                    "date": b.get("createdAt"),
-                    "productId": b.get("purchasedProductId"),
+                    "date": b.get("createdAt") or b.get("date"),
+                    "productId": b.get("purchasedProductId") or b.get("productId"),
                 })
         else:
-            result["error"] = "kundli:" + st["__error__"]
+            st = check_self_transactions(creator_id, token)
+            if "__error__" not in st:
+                result["buyersChecked"] = st.get("buyers", 0)
+                for b in st.get("self", []):
+                    result["selfTransactions"].append({
+                        "amountPaid": b.get("amountPaid") or b.get("amount"),
+                        "buyerEmail": b.get("buyerEmail"),
+                        "buyerPhone": b.get("buyerPhoneNumber") or b.get("buyerPhone"),
+                        "IP": b.get("IP"),
+                        "date": b.get("createdAt") or b.get("date"),
+                        "productId": b.get("purchasedProductId") or b.get("productId"),
+                    })
+            else:
+                result["error"] = "kundli:" + st["__error__"]
     else:
         result["error"] = "no_creator_id"
     return result
@@ -523,7 +622,7 @@ def main():
     os.makedirs(reports_dir, exist_ok=True)
     ap.add_argument("--out", default=reports_dir)
     ap.add_argument("--limit", type=int, default=0, help="limit creators (0=all)")
-    ap.add_argument("--workers", type=int, default=16)
+    ap.add_argument("--workers", type=int, default=4)
     ap.add_argument("--date", default="", help="report date label (YYYY-MM-DD)")
     args = ap.parse_args()
 
@@ -583,7 +682,7 @@ def main():
             for fut in as_completed(futs):
                 results.append(fut.result())
                 done += 1
-                if done % 50 == 0 or done == total_count:
+                if done % 25 == 0 or done == total_count:
                     print(f"  audited {done}/{total_count}", flush=True)
                     save_checkpoint()
 

@@ -78,7 +78,7 @@ def run_pipeline(audit_date: str = None, push_git: bool = True) -> bool:
     if token and not token.startswith("<") and len(token) > 20:
         log("Found valid COSMOFEED_TOKEN in environment. Initiating LIVE settlement scrape from Cosmofeed API...")
         try:
-            cmd = [sys.executable, "payout_audit_agent.py", "--date", audit_date, "--workers", "12"]
+            cmd = [sys.executable, "payout_audit_agent.py", "--date", audit_date, "--workers", "4"]
             creation_flags = 0
             if sys.platform == "win32":
                 creation_flags = 0x00004000  # BELOW_NORMAL_PRIORITY_CLASS: never starve user dashboard
