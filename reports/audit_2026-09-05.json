@@ -1,7 +1,7 @@
 {
   "report": {
     "date": "2026-09-05",
-    "totalAudited": 1989,
+    "totalAudited": 1991,
     "selfTransactionCount": 176,
     "flaggedCount": 0,
     "errorCount": 40,
@@ -35149,6 +35149,32 @@
       "contentFlags": [],
       "selfTransactions": [],
       "buyersChecked": 15
+    },
+    {
+      "settlementId": "6a9bfe75feb4740013799666",
+      "creatorId": "644a20fe4d77cc001f07b1f6",
+      "username": "arvaz",
+      "email": "arvaziphone@gmail.com",
+      "phone": "8871630712",
+      "payoutAmount": 753,
+      "totalMemoAmount": 752.718,
+      "category": "Digital Marketing & Marketing",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 7
+    },
+    {
+      "settlementId": "6a9bfe3ab2637500132f18c3",
+      "creatorId": "65cc4ea750e15f001e19fc3b",
+      "username": "shrutikothari",
+      "email": "shrutikothari.sk65@gmail.com",
+      "phone": "9820950483",
+      "payoutAmount": 180,
+      "totalMemoAmount": 180,
+      "category": "other",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 1
     }
   ]
 }
