@@ -1,16 +1,16 @@
 🚨 *COSMOFEED PAYOUT RISK AUDIT REPORT (T+1 Product Review)*
 📅 *Review Date:* `2026-09-05` | *Product Sale Date:* `2026-09-04`
-🕒 *Generated:* `2026-09-05 11:56` | *Total Audited:* `1,980` creators
+🕒 *Generated:* `2026-09-05 06:27` | *Total Audited:* `1,980` creators
 ──────────────────────────────────
 📊 *SUMMARY METRICS:*
 • *Total Pending Payout:* ₹10,366,817.00
 • *Self-Transaction Flagged:* `25` creators
 • *No Link / Missing Deliverable Flagged:* `77` creators
 • *Adult Keyword Flagged:* `0` creators
-• *Telegram Integration (vig/ >= ₹1k):* `317` settlements
+• *Telegram Integration (vig/ >= ₹1k):* `323` settlements
    ↳ *SEBI Registered (Yes):* `36` verified creators
-   ↳ *SEBI Not Verified (No):* `281` creators
-   ↳ *Manual Review Required:* `281` creators
+   ↳ *SEBI Not Verified (No):* `287` creators
+   ↳ *Manual Review Required:* `287` creators
 
 🔴 *TOP FLAGGED SELF-TRANSACTIONS (Date -> Amount High to Low):*
 

@@ -4967,7 +4967,298 @@
       }
     ],
     "flagged": [],
-    "errors": []
+    "errors": [
+      {
+        "settlementId": "6a9b15a4de0de2fb3cb544e9",
+        "creatorId": "66825187aac8ac00146d3f49",
+        "username": "numerobhrigu",
+        "email": "numerobhrigu@gmail.com",
+        "phone": "9395131559",
+        "payoutAmount": 279,
+        "totalMemoAmount": 279.48,
+        "category": "Not Classified above",
+        "contentFlags": [],
+        "selfTransactions": [],
+        "buyersChecked": 0,
+        "error": "kundli:<urlopen error timed out>"
+      },
+      {
+        "settlementId": "6a9b15aade0de2fb3cb54aac",
+        "creatorId": "670830d91f46ee0013718de7",
+        "username": "vizu",
+        "email": "technozabaaz@gmail.com",
+        "phone": "7310915018",
+        "payoutAmount": 564,
+        "totalMemoAmount": 563.66,
+        "category": "Finance & Trading",
+        "contentFlags": [],
+        "selfTransactions": [],
+        "buyersChecked": 0,
+        "error": "kundli:HTTP 429"
+      },
+      {
+        "settlementId": "6a9b15a5de0de2fb3cb545a0",
+        "creatorId": "661ed9b146ae7d00129ee4d7",
+        "username": "campusify",
+        "email": "info.campusify@gmail.com",
+        "phone": "8169294562",
+        "payoutAmount": 261,
+        "totalMemoAmount": 260.65999999999997,
+        "category": "Retail and Ecommerce - Services",
+        "contentFlags": [],
+        "selfTransactions": [],
+        "buyersChecked": 0,
+        "error": "kundli:HTTP 429"
+      },
+      {
+        "settlementId": "6a9b15a5de0de2fb3cb54566",
+        "creatorId": "699bbd6b34eb5f001399f45e",
+        "username": "mangatrawatvlog10",
+        "email": "mangatrawat6@gmail.com",
+        "phone": "9172991682",
+        "payoutAmount": 188,
+        "totalMemoAmount": 188.2,
+        "category": "Digital Marketing & Marketing",
+        "contentFlags": [],
+        "selfTransactions": [],
+        "buyersChecked": 0,
+        "error": "kundli:HTTP 429"
+      },
+      {
+        "settlementId": "6a9b15a4de0de2fb3cb544dc",
+        "username": "zerotoheroacademy8258",
+        "error": "details:HTTP 429"
+      },
+      {
+        "settlementId": "6a9b15a4de0de2fb3cb544b4",
+        "username": "skrankboost",
+        "error": "details:HTTP 429"
+      },
+      {
+        "settlementId": "6a9b15a4de0de2fb3cb54489",
+        "username": "muleshkumar",
+        "error": "details:HTTP 429"
+      },
+      {
+        "settlementId": "6a9b15a4de0de2fb3cb544f8",
+        "creatorId": "69c93e5500afb60013e20e22",
+        "username": "thearjunsk",
+        "email": "arjunpooranachandran@gmail.com",
+        "phone": "9894041706",
+        "payoutAmount": 2527,
+        "totalMemoAmount": 2526.6000000000004,
+        "category": "Technology & IT",
+        "contentFlags": [],
+        "selfTransactions": [],
+        "buyersChecked": 0,
+        "error": "kundli:HTTP 429"
+      },
+      {
+        "settlementId": "6a9b15a4de0de2fb3cb5447b",
+        "username": "Rohit8210",
+        "error": "details:HTTP 429"
+      },
+      {
+        "settlementId": "6a9b15a4de0de2fb3cb5449a",
+        "creatorId": "67ff97e2e5def10012638baa",
+        "username": "resident",
+        "email": "wfacts88@gmail.com",
+        "phone": "9150223168",
+        "payoutAmount": 752,
+        "totalMemoAmount": 751.8599999999999,
+        "category": "Education",
+        "contentFlags": [],
+        "selfTransactions": [],
+        "buyersChecked": 0,
+        "error": "kundli:HTTP 429"
+      },
+      {
+        "settlementId": "6a9b15a4de0de2fb3cb54461",
+        "creatorId": "66c72b612daa8f00133f10e4",
+        "username": "xtrader01",
+        "email": "dixitvyas191@gmail.com",
+        "phone": "9537610500",
+        "payoutAmount": 2902,
+        "totalMemoAmount": 2901.79,
+        "category": "Professional Services",
+        "contentFlags": [],
+        "selfTransactions": [],
+        "buyersChecked": 0,
+        "error": "kundli:HTTP 429"
+      },
+      {
+        "settlementId": "6a9b15a4de0de2fb3cb5446e",
+        "creatorId": "6a72f4beb6a36a0013d549fc",
+        "username": "tradewar11",
+        "email": "devangibheda77@gmail.com",
+        "phone": "9510353334",
+        "payoutAmount": 752,
+        "totalMemoAmount": 751.8599999999999,
+        "category": "Finance & Trading",
+        "contentFlags": [],
+        "selfTransactions": [],
+        "buyersChecked": 0,
+        "error": "kundli:HTTP 429"
+      },
+      {
+        "settlementId": "6a9b15a4de0de2fb3cb54454",
+        "username": "finesthanma",
+        "error": "details:HTTP 429"
+      },
+      {
+        "settlementId": "6a9b15a3de0de2fb3cb54433",
+        "username": "mediconishant",
+        "error": "details:<urlopen error timed out>"
+      },
+      {
+        "settlementId": "6a9b15a3de0de2fb3cb54446",
+        "username": "ramkushwah1675",
+        "error": "details:HTTP 429"
+      },
+      {
+        "settlementId": "6a9b15a3de0de2fb3cb54419",
+        "username": "gujjutrader20",
+        "error": "details:HTTP 429"
+      },
+      {
+        "settlementId": "6a9b15a3de0de2fb3cb54426",
+        "username": "sachinborde11",
+        "error": "details:HTTP 429"
+      },
+      {
+        "settlementId": "6a9b15a3de0de2fb3cb5440c",
+        "username": "ssbpsych",
+        "error": "details:HTTP 429"
+      },
+      {
+        "settlementId": "6a9b15a3de0de2fb3cb543e3",
+        "username": "designthinkersumaiya",
+        "error": "details:HTTP 429"
+      },
+      {
+        "settlementId": "6a9b15a3de0de2fb3cb543d6",
+        "username": "quietthemindd",
+        "error": "details:HTTP 429"
+      },
+      {
+        "settlementId": "6a9b15a3de0de2fb3cb543fe",
+        "username": "drarpitgupta11",
+        "error": "details:HTTP 429"
+      },
+      {
+        "settlementId": "6a9b15a3de0de2fb3cb543c7",
+        "username": "Rohit6817",
+        "error": "details:HTTP 429"
+      },
+      {
+        "settlementId": "6a9b15a3de0de2fb3cb543f1",
+        "creatorId": "68fc478f390a7600130242ca",
+        "username": "rumanahaaris",
+        "email": "rumanainc@gmail.com",
+        "phone": "9741000202",
+        "payoutAmount": 282,
+        "totalMemoAmount": 282.03000000000003,
+        "category": "Fitness & Nutrition",
+        "contentFlags": [],
+        "selfTransactions": [],
+        "buyersChecked": 0,
+        "error": "kundli:HTTP 429"
+      },
+      {
+        "settlementId": "6a9b15a3de0de2fb3cb543ba",
+        "username": "tradewithmrrathore",
+        "error": "details:HTTP 429"
+      },
+      {
+        "settlementId": "6a9b15a3de0de2fb3cb543aa",
+        "username": "stockwaves01",
+        "error": "details:HTTP 429"
+      },
+      {
+        "settlementId": "6a9b15a3de0de2fb3cb5439d",
+        "username": "investwithmani786",
+        "error": "details:HTTP 429"
+      },
+      {
+        "settlementId": "6a9b15a3de0de2fb3cb54369",
+        "username": "sppupassinghub",
+        "error": "details:<urlopen error timed out>"
+      },
+      {
+        "settlementId": "6a9b15a3de0de2fb3cb54390",
+        "username": "jobposting",
+        "error": "details:HTTP 429"
+      },
+      {
+        "settlementId": "6a9b15a3de0de2fb3cb54377",
+        "username": "kitchentoliving",
+        "error": "details:HTTP 429"
+      },
+      {
+        "settlementId": "6a9b15a3de0de2fb3cb5435c",
+        "username": "edugramvisa",
+        "error": "details:HTTP 429"
+      },
+      {
+        "settlementId": "6a9b15a3de0de2fb3cb5434e",
+        "username": "digitalcreatr",
+        "error": "details:HTTP 429"
+      },
+      {
+        "settlementId": "6a9b15a2de0de2fb3cb5433e",
+        "username": "yourownlibrary",
+        "error": "details:HTTP 429"
+      },
+      {
+        "settlementId": "6a9b15a2de0de2fb3cb54331",
+        "username": "karansinghh",
+        "error": "details:HTTP 429"
+      },
+      {
+        "settlementId": "6a9b15a2de0de2fb3cb54324",
+        "username": "officialsaditya",
+        "error": "details:HTTP 429"
+      },
+      {
+        "settlementId": "6a9b15a2de0de2fb3cb54317",
+        "username": "genz77",
+        "error": "details:HTTP 429"
+      },
+      {
+        "settlementId": "6a9b15a2de0de2fb3cb5430a",
+        "username": "dalalmihir81",
+        "error": "details:HTTP 429"
+      },
+      {
+        "settlementId": "6a9b15a2de0de2fb3cb542ef",
+        "username": "Arbaazshaikh",
+        "error": "details:HTTP 429"
+      },
+      {
+        "settlementId": "6a9b15a2de0de2fb3cb542fc",
+        "creatorId": "696e5e2521ba720013b31e28",
+        "username": "editwithajay",
+        "email": "shopeasy7049@gmail.com",
+        "phone": "7049396746",
+        "payoutAmount": 92,
+        "totalMemoAmount": 92.22,
+        "category": "other",
+        "contentFlags": [],
+        "selfTransactions": [],
+        "buyersChecked": 0,
+        "error": "kundli:HTTP 429"
+      },
+      {
+        "settlementId": "6a9b15a2de0de2fb3cb542e2",
+        "username": "anvithbala",
+        "error": "details:HTTP 429"
+      },
+      {
+        "settlementId": "6a9b15a2de0de2fb3cb542d4",
+        "username": "savithedigitalcreator",
+        "error": "details:HTTP 429"
+      }
+    ]
   },
   "allResults": [
     {
