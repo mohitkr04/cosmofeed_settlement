@@ -267,16 +267,18 @@
 
 <!-- Floating Liquid Glass App Bar (iOS 26 / Superprofile Aesthetics) -->
 <header class="sticky top-3 z-40 max-w-[1520px] mx-auto px-4 sm:px-6">
-  <div class="liquid-appbar px-5 py-3.5 flex flex-col xl:flex-row items-center justify-between gap-4">
+  <div class="liquid-appbar px-6 py-3.5 flex flex-col gap-3">
     
-    <!-- Left: Official Logo + Title + Status Badges -->
-    <div class="flex items-center gap-3.5 flex-shrink-0">
-      <div class="w-11 h-11 rounded-2xl bg-white/90 p-1.5 border border-white/90 shadow-sm shadow-indigo-500/10 flex items-center justify-center overflow-hidden flex-shrink-0">
-        <img src="assets/logo.png" alt="cosmofeed_payout" class="w-full h-full object-contain">
-      </div>
-      <div>
+    <!-- Top Row: Brand Identity & Action Buttons -->
+    <div class="flex flex-wrap items-center justify-between gap-3.5 w-full">
+      
+      <!-- Left: Official Logo + Title + Status Badges -->
+      <div class="flex items-center gap-3 flex-wrap flex-shrink-0">
+        <div class="w-10 h-10 rounded-2xl bg-white/90 p-1.5 border border-white/90 shadow-sm shadow-indigo-500/10 flex items-center justify-center overflow-hidden flex-shrink-0">
+          <img src="assets/logo.png" alt="cosmofeed_payout" class="w-full h-full object-contain">
+        </div>
         <div class="flex items-center gap-2 flex-wrap">
-          <h1 class="text-lg font-bold text-slate-900 tracking-tight">cosmofeed_payout</h1>
+          <h1 class="text-base sm:text-lg font-bold text-slate-900 tracking-tight">cosmofeed_payout</h1>
           <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-slate-100/90 text-slate-700 border border-slate-200/80">
             <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
             T+1 Release Gate
@@ -290,65 +292,77 @@
           </span>
         </div>
       </div>
+
+      <!-- Right: Minimal, Clean, Glass Action Buttons -->
+      <div class="flex flex-wrap items-center gap-2 flex-shrink-0">
+        <!-- PDF Report Button -->
+        <button id="downloadPdfBtn" title="Generate and download Executive PDF Report" class="btn-glass px-3 py-1.5 rounded-xl text-xs flex items-center gap-1.5 tap-btn">
+          <svg class="w-3.5 h-3.5 text-rose-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 16l4-5h-3V4h-2v7H8l4 5zm9-9h-4v2h4v11H3V9h4V7H3c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2z"/></svg>
+          <span>PDF Report</span>
+        </button>
+
+        <!-- HTML Report Button -->
+        <button id="downloadHtmlBtn" title="Download standalone executive HTML report" class="btn-glass px-3 py-1.5 rounded-xl text-xs flex items-center gap-1.5 tap-btn">
+          <svg class="w-3.5 h-3.5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+          <span>HTML Report</span>
+        </button>
+
+        <!-- 10-Day SEBI Excel Button -->
+        <button id="export10dExcelBtn" title="Download cumulative 10-day Telegram & SEBI Excel Tracker" class="btn-glass px-3 py-1.5 rounded-xl text-xs flex items-center gap-1.5 tap-btn">
+          <svg class="w-3.5 h-3.5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          <span>10-Day Excel</span>
+        </button>
+
+        <!-- 10-Day SEBI CSV Button -->
+        <button id="export10dCsvBtn" title="Download cumulative 10-day Telegram & SEBI CSV Report" class="btn-glass px-3 py-1.5 rounded-xl text-xs flex items-center gap-1.5 tap-btn">
+          <svg class="w-3.5 h-3.5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          <span>10-Day CSV</span>
+        </button>
+
+        <!-- Manager Submission (5 Sep) Button -->
+        <button id="managerModalBtn" title="Manager Submission: Non-SEBI Cumulative Report (Until 5 Sep)" class="btn-glass-primary px-3.5 py-1.5 rounded-xl text-xs flex items-center gap-1.5 tap-btn">
+          <svg class="w-3.5 h-3.5 text-amber-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          <span>Manager Report</span>
+        </button>
+
+        <!-- Export Filtered CSV Button -->
+        <button id="exportFilteredBtn" title="Export currently displayed rows as CSV" class="btn-glass px-3.5 py-1.5 rounded-xl text-xs flex items-center gap-1.5 tap-btn">
+          <svg class="w-3.5 h-3.5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+          <span>Export CSV</span>
+        </button>
+
+        <!-- Slack Summary Button -->
+        <button id="slackModalBtn" title="View & copy Slack Markdown summary" class="btn-glass px-3.5 py-1.5 rounded-xl text-xs flex items-center gap-1.5 tap-btn">
+          <svg class="w-3.5 h-3.5 text-slate-600" fill="currentColor" viewBox="0 0 24 24"><path d="M6 15a2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2h2v2zm1 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2v5a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-5zm2-7a2 2 0 0 1-2-2 2 2 0 0 1 2-2 2 2 0 0 1 2 2v2H9zm0 1a2 2 0 0 1 2 2 2 2 0 0 1-2 2H4a2 2 0 0 1-2-2 2 2 0 0 1 2-2h5zm7-2a2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2h-2V7zm-1 0a2 2 0 0 1-2 2 2 2 0 0 1-2-2V2a2 2 0 0 1 2-2 2 2 0 0 1 2 2v5zm-2 7a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2v-2h2zm0-1a2 2 0 0 1-2-2 2 2 0 0 1 2-2h5a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-5z"/></svg>
+          <span>Slack</span>
+        </button>
+      </div>
+
     </div>
 
-    <!-- Center: Well-Organized Centered Meta Indicators -->
-    <div class="flex items-center justify-center gap-2 sm:gap-3 text-xs text-slate-600 bg-white/60 backdrop-blur-md px-4 py-2 rounded-full border border-white/80 shadow-xs flex-wrap mx-auto">
-      <span>Audit: <b id="hdr-today" class="text-slate-800 font-semibold">2026-09-05</b></span>
-      <span class="text-slate-300">•</span>
-      <span>Sales: <b id="hdr-yesterday" class="text-slate-800 font-semibold">2026-09-04</b></span>
-      <span class="text-slate-300">•</span>
-      <span id="hdr-total" class="font-medium text-slate-700">1,987 pending audited</span>
-      <span class="text-slate-300">•</span>
-      <span id="hdr-sync" class="text-emerald-700 font-medium flex items-center gap-1">
-        <svg class="w-3.5 h-3.5 text-emerald-600 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
-        <span id="hdr-last-sync">Auto-Synced</span>
-      </span>
-    </div>
-
-    <!-- Right: Minimal, Clean, Glass Action Buttons -->
-    <div class="flex flex-wrap items-center gap-2 flex-shrink-0">
-      <!-- PDF Report Button -->
-      <button id="downloadPdfBtn" title="Generate and download Executive PDF Report" class="btn-glass px-3.5 py-2 rounded-xl text-xs flex items-center gap-1.5 tap-btn">
-        <svg class="w-3.5 h-3.5 text-rose-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 16l4-5h-3V4h-2v7H8l4 5zm9-9h-4v2h4v11H3V9h4V7H3c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2z"/></svg>
-        <span>PDF Report</span>
-      </button>
-
-      <!-- HTML Report Button -->
-      <button id="downloadHtmlBtn" title="Download standalone executive HTML report" class="btn-glass px-3.5 py-2 rounded-xl text-xs flex items-center gap-1.5 tap-btn">
-        <svg class="w-3.5 h-3.5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
-        <span>HTML Report</span>
-      </button>
-
-      <!-- 10-Day SEBI Excel Button -->
-      <button id="export10dExcelBtn" title="Download cumulative 10-day Telegram & SEBI Excel Tracker" class="btn-glass px-3.5 py-2 rounded-xl text-xs flex items-center gap-1.5 tap-btn">
-        <svg class="w-3.5 h-3.5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-        <span>10-Day Excel</span>
-      </button>
-
-      <!-- 10-Day SEBI CSV Button -->
-      <button id="export10dCsvBtn" title="Download cumulative 10-day Telegram & SEBI CSV Report" class="btn-glass px-3.5 py-2 rounded-xl text-xs flex items-center gap-1.5 tap-btn">
-        <svg class="w-3.5 h-3.5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-        <span>10-Day CSV</span>
-      </button>
-
-      <!-- Manager Submission (5 Sep) Button -->
-      <button id="managerModalBtn" title="Manager Submission: Non-SEBI Cumulative Report (Until 5 Sep)" class="btn-glass-primary px-3.5 py-2 rounded-xl text-xs flex items-center gap-1.5 tap-btn">
-        <svg class="w-3.5 h-3.5 text-amber-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-        <span>Manager Report</span>
-      </button>
-
-      <!-- Export Filtered CSV Button -->
-      <button id="exportFilteredBtn" title="Export currently displayed rows as CSV" class="btn-glass px-3.5 py-2 rounded-xl text-xs flex items-center gap-1.5 tap-btn">
-        <svg class="w-3.5 h-3.5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-        <span>Export CSV</span>
-      </button>
-
-      <!-- Slack Summary Button -->
-      <button id="slackModalBtn" title="View & copy Slack Markdown summary" class="btn-glass px-3.5 py-2 rounded-xl text-xs flex items-center gap-1.5 tap-btn">
-        <svg class="w-3.5 h-3.5 text-slate-600" fill="currentColor" viewBox="0 0 24 24"><path d="M6 15a2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2h2v2zm1 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2v5a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-5zm2-7a2 2 0 0 1-2-2 2 2 0 0 1 2-2 2 2 0 0 1 2 2v2H9zm0 1a2 2 0 0 1 2 2 2 2 0 0 1-2 2H4a2 2 0 0 1-2-2 2 2 0 0 1 2-2h5zm7-2a2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2h-2V7zm-1 0a2 2 0 0 1-2 2 2 2 0 0 1-2-2V2a2 2 0 0 1 2-2 2 2 0 0 1 2 2v5zm-2 7a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2v-2h2zm0-1a2 2 0 0 1-2-2 2 2 0 0 1 2-2h5a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-5z"/></svg>
-        <span>Slack</span>
-      </button>
+    <!-- Centered Metadata Bar: Horizontal Dynamic Island (Never Wraps Vertically) -->
+    <div class="flex items-center justify-center pt-2.5 border-t border-slate-200/50 w-full overflow-hidden">
+      <div class="inline-flex items-center justify-center gap-3 sm:gap-4 text-xs text-slate-600 bg-white/75 backdrop-blur-md px-5 py-1.5 rounded-full border border-white/90 shadow-xs whitespace-nowrap overflow-x-auto max-w-full">
+        <span class="inline-flex items-center gap-1.5 flex-shrink-0">
+          <span class="text-slate-400 font-normal">Audit Date:</span>
+          <b id="hdr-today" class="text-slate-800 font-semibold">2026-09-05</b>
+        </span>
+        <span class="text-slate-300 flex-shrink-0">•</span>
+        <span class="inline-flex items-center gap-1.5 flex-shrink-0">
+          <span class="text-slate-400 font-normal">Sales Date:</span>
+          <b id="hdr-yesterday" class="text-slate-800 font-semibold">2026-09-04</b>
+        </span>
+        <span class="text-slate-300 flex-shrink-0">•</span>
+        <span class="inline-flex items-center gap-1.5 flex-shrink-0">
+          <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+          <span id="hdr-total" class="font-medium text-slate-700">1,987 pending audited</span>
+        </span>
+        <span class="text-slate-300 flex-shrink-0">•</span>
+        <span id="hdr-sync" class="text-emerald-700 font-medium inline-flex items-center gap-1.5 flex-shrink-0">
+          <svg class="w-3.5 h-3.5 text-emerald-600 inline flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+          <span id="hdr-last-sync">Auto-Synced</span>
+        </span>
+      </div>
     </div>
 
   </div>
