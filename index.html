@@ -75,34 +75,56 @@
     transition: opacity 0.3s ease;
   }
 
-  /* Scroll-Responsive Floating App Bar */
+  /* Scroll-Responsive Floating App Bar - Bulletproof Centering */
   #floating-appbar {
     position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0 !important;
+    right: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: -moz-fit-content;
+    width: fit-content;
+    max-width: calc(100vw - 24px);
     z-index: 50;
-    transition: transform 0.32s cubic-bezier(0.16, 1, 0.3, 1), 
-                opacity 0.26s cubic-bezier(0.16, 1, 0.3, 1), 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: auto;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), 
+                opacity 0.28s cubic-bezier(0.16, 1, 0.3, 1), 
+                top 0.32s cubic-bezier(0.16, 1, 0.3, 1),
                 box-shadow 0.3s ease;
-    will-change: transform, opacity;
+    will-change: transform, opacity, top;
   }
 
   #floating-appbar.appbar-docked {
-    opacity: 1;
-    transform: translateX(-50%) translateY(0);
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    pointer-events: auto !important;
   }
 
   #floating-appbar.appbar-floating {
     top: 14px !important;
-    opacity: 1;
-    transform: translateX(-50%) translateY(0);
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    pointer-events: auto !important;
   }
 
   #floating-appbar.appbar-hidden {
-    top: 14px !important;
-    opacity: 0;
-    transform: translateX(-50%) translateY(-140%);
-    pointer-events: none;
+    opacity: 0 !important;
+    transform: translateY(-160%) !important;
+    pointer-events: none !important;
+  }
+
+  /* No Scrollbar utility for Windows Chrome */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
   }
 
   /* Stationary Header Container (iOS 26 / Framer Aesthetics) */
@@ -360,7 +382,7 @@
 
     <!-- Dynamic Status Island -->
     <div class="flex items-center justify-center max-w-full overflow-hidden">
-      <div class="inline-flex items-center justify-center gap-2 sm:gap-3.5 md:gap-4 text-xs sm:text-sm text-slate-600 bg-white/85 backdrop-blur-md px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full border border-white/95 shadow-xs whitespace-nowrap overflow-x-auto max-w-full">
+      <div class="inline-flex items-center justify-center gap-2 sm:gap-3.5 md:gap-4 text-xs sm:text-sm text-slate-600 bg-white/85 backdrop-blur-md px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full border border-white/95 shadow-xs whitespace-nowrap overflow-x-auto no-scrollbar max-w-full">
         <span class="inline-flex items-center gap-1.5 flex-shrink-0">
           <span class="text-slate-400 font-normal">Audit Date:</span>
           <b id="hdr-today" class="text-slate-800 font-semibold">2026-09-06</b>
@@ -387,11 +409,11 @@
 </header>
 
 <!-- App Bar Dock Anchor (Placeholder to maintain smooth layout flow when App Bar floats) -->
-<div id="appbar-dock-anchor" class="w-full max-w-[1520px] mx-auto px-3 sm:px-6 h-[54px] sm:h-[60px] mb-2 pointer-events-none"></div>
+<div id="appbar-dock-anchor" class="w-full max-w-[1520px] mx-auto px-3 sm:px-6 h-[68px] sm:h-[74px] mb-4 pointer-events-none"></div>
 
 <!-- Scroll-Responsive Floating App Bar (Overlays content, hides on scroll down, appears on scroll up) -->
-<nav id="floating-appbar" class="appbar-docked fixed left-1/2 -translate-x-1/2 z-50 pointer-events-auto w-auto max-w-[96vw] sm:max-w-none">
-  <div class="liquid-dock px-2 sm:px-3 py-1.5 sm:py-2 flex items-center justify-center gap-1.5 sm:gap-2.5 rounded-full border border-white/95 bg-white/85 backdrop-blur-2xl shadow-xl shadow-slate-900/6 max-w-full overflow-x-auto no-scrollbar">
+<nav id="floating-appbar" class="appbar-docked fixed left-0 right-0 mx-auto w-fit z-50 pointer-events-auto">
+  <div class="liquid-dock px-2.5 sm:px-3.5 py-1.5 sm:py-2 flex items-center justify-center gap-1.5 sm:gap-2 md:gap-2.5 rounded-full border border-white/95 bg-white/90 backdrop-blur-2xl shadow-xl shadow-slate-900/8 max-w-[96vw] sm:max-w-none overflow-x-auto no-scrollbar">
     
     <!-- PDF Report Button -->
     <button id="downloadPdfBtn" title="Generate and download Executive PDF Report" class="btn-glass px-3 py-1.5 sm:px-4 sm:py-2 md:px-5 md:py-2.5 rounded-full text-xs sm:text-[13px] md:text-sm font-semibold flex items-center gap-1.5 sm:gap-2 tap-btn flex-shrink-0">
@@ -1919,32 +1941,45 @@ document.getElementById('copySlackBtn').addEventListener('click', () => {
 // ==========================================
 (function initScrollAndMotion() {
   const appbar = document.getElementById('floating-appbar');
+  const header = document.getElementById('site-header');
   const anchor = document.getElementById('appbar-dock-anchor');
-  if (!appbar || !anchor) return;
+  if (!appbar) return;
 
   let lastScrollY = window.scrollY || 0;
   let ticking = false;
-  const SCROLL_DELTA = 6;
+  const SCROLL_THRESHOLD = 6;
 
-  function updateAppBar() {
+  function updateDockPosition() {
+    if (appbar.classList.contains('appbar-docked')) {
+      if (anchor) {
+        const rect = anchor.getBoundingClientRect();
+        appbar.style.top = Math.max(10, Math.round(rect.top + 4)) + 'px';
+      } else if (header) {
+        const rect = header.getBoundingClientRect();
+        appbar.style.top = Math.max(10, Math.round(rect.bottom + 8)) + 'px';
+      }
+    }
+  }
+
+  function handleScroll() {
     const currentScrollY = window.scrollY || 0;
-    const rect = anchor.getBoundingClientRect();
-    const isAtTop = currentScrollY <= 20 || rect.top >= 14;
     const delta = currentScrollY - lastScrollY;
+    const headerBottom = header ? (header.offsetTop + header.offsetHeight) : 80;
 
-    if (isAtTop) {
-      // Docked below header
+    if (currentScrollY <= 25) {
+      // At the top of the dashboard: dock directly below header
       appbar.classList.remove('appbar-hidden', 'appbar-floating');
       appbar.classList.add('appbar-docked');
-      appbar.style.top = Math.max(12, Math.round(rect.top)) + 'px';
-    } else if (delta > SCROLL_DELTA && currentScrollY > 60) {
-      // Scrolled DOWN -> Hide App Bar
+      updateDockPosition();
+    } else if (delta > SCROLL_THRESHOLD && currentScrollY > headerBottom) {
+      // Scrolling DOWN: smoothly hide app bar
       appbar.classList.remove('appbar-docked', 'appbar-floating');
       appbar.classList.add('appbar-hidden');
-    } else if (delta < -SCROLL_DELTA) {
-      // Scrolled UP -> Reveal Floating App Bar
+    } else if (delta < -SCROLL_THRESHOLD && currentScrollY > 40) {
+      // Scrolling UP: smoothly reveal floating overlay
       appbar.classList.remove('appbar-docked', 'appbar-hidden');
       appbar.classList.add('appbar-floating');
+      appbar.style.top = ''; // Clear inline style so CSS top: 14px !important applies
     }
 
     lastScrollY = currentScrollY;
@@ -1953,17 +1988,22 @@ document.getElementById('copySlackBtn').addEventListener('click', () => {
 
   window.addEventListener('scroll', () => {
     if (!ticking) {
-      window.requestAnimationFrame(updateAppBar);
+      window.requestAnimationFrame(handleScroll);
       ticking = true;
     }
   }, { passive: true });
 
   window.addEventListener('resize', () => {
-    window.requestAnimationFrame(updateAppBar);
+    updateDockPosition();
   }, { passive: true });
 
   // Initial positioning
-  updateAppBar();
+  appbar.classList.remove('appbar-hidden', 'appbar-floating');
+  appbar.classList.add('appbar-docked');
+  updateDockPosition();
+  setTimeout(updateDockPosition, 50);
+  setTimeout(updateDockPosition, 200);
+  setTimeout(updateDockPosition, 500);
 
   // Cursor Spotlight for Google Antigravity aesthetic
   window.addEventListener('pointermove', e => {
@@ -1975,12 +2015,13 @@ document.getElementById('copySlackBtn').addEventListener('click', () => {
   if (window.Motion && typeof window.Motion.animate === 'function') {
     try {
       window.Motion.animate('#site-header', 
-        { opacity: [0, 1], y: [-18, 0] }, 
-        { duration: 0.55, easing: [0.16, 1, 0.3, 1] }
+        { opacity: [0, 1], y: [-16, 0] }, 
+        { duration: 0.5, easing: [0.16, 1, 0.3, 1] }
       );
-      window.Motion.animate('#floating-appbar', 
-        { opacity: [0, 1], scale: [0.93, 1] }, 
-        { duration: 0.5, delay: 0.1, easing: [0.16, 1, 0.3, 1] }
+      // Animate inner liquid-dock pill, leaving #floating-appbar's outer position & transforms clean!
+      window.Motion.animate('#floating-appbar .liquid-dock', 
+        { opacity: [0, 1], scale: [0.94, 1] }, 
+        { duration: 0.45, delay: 0.08, easing: [0.16, 1, 0.3, 1] }
       );
     } catch (e) {
       console.warn("Motion entrance skipped:", e);
