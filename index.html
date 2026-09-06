@@ -12,6 +12,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Framer Motion Engine (Vanilla JS Motion Library by Framer Motion creator) -->
+<script src="https://cdn.jsdelivr.net/npm/motion@latest/dist/motion.js"></script>
 <script>
   tailwind.config = {
     theme: {
@@ -42,6 +44,10 @@
     --surface-border: rgba(255, 255, 255, 0.88);
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   * {
     font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   }
@@ -55,21 +61,76 @@
     min-height: 100vh;
     color: #0f172a;
     -webkit-font-smoothing: antialiased;
+    position: relative;
   }
 
-  /* Framer Liquid Glass Floating App Bar (iOS 26 / Framer Aesthetics) */
-  .liquid-appbar {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.88) 0%, rgba(255, 255, 255, 0.75) 100%);
+  /* Google Antigravity Cursor Spotlight */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    pointer-events: none;
+    background: radial-gradient(750px circle at var(--cursor-x, 50vw) var(--cursor-y, 30vh), rgba(0, 102, 255, 0.045), transparent 70%);
+    z-index: 1;
+    transition: opacity 0.3s ease;
+  }
+
+  /* Scroll-Responsive Floating App Bar */
+  #floating-appbar {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 50;
+    transition: transform 0.32s cubic-bezier(0.16, 1, 0.3, 1), 
+                opacity 0.26s cubic-bezier(0.16, 1, 0.3, 1), 
+                box-shadow 0.3s ease;
+    will-change: transform, opacity;
+  }
+
+  #floating-appbar.appbar-docked {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  #floating-appbar.appbar-floating {
+    top: 14px !important;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  #floating-appbar.appbar-hidden {
+    top: 14px !important;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-140%);
+    pointer-events: none;
+  }
+
+  /* Stationary Header Container (iOS 26 / Framer Aesthetics) */
+  .liquid-header {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.88) 0%, rgba(255, 255, 255, 0.72) 100%);
+    backdrop-filter: blur(28px) saturate(190%);
+    -webkit-backdrop-filter: blur(28px) saturate(190%);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    box-shadow: 
+      0 12px 32px -8px rgba(15, 23, 42, 0.05),
+      0 2px 8px -2px rgba(0, 102, 255, 0.02),
+      inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.95);
+    border-radius: 28px;
+    transition: all 0.3s ease;
+  }
+
+  /* Liquid Dock / Pill for Action Buttons */
+  .liquid-dock {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0.82) 100%);
     backdrop-filter: blur(36px) saturate(210%);
     -webkit-backdrop-filter: blur(36px) saturate(210%);
     border: 1px solid rgba(255, 255, 255, 0.95);
     box-shadow: 
-      0 24px 60px -15px rgba(15, 23, 42, 0.08),
-      0 8px 24px -4px rgba(0, 102, 255, 0.03),
+      0 22px 55px -12px rgba(15, 23, 42, 0.14),
+      0 8px 24px -4px rgba(0, 102, 255, 0.08),
       0 0 0 1px rgba(255, 255, 255, 0.9),
       inset 0 1.5px 2px 0 rgba(255, 255, 255, 1);
-    border-radius: 32px;
-    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
   /* Liquid Glass Cards & Panels */
@@ -272,112 +333,110 @@
 </head>
 <body class="selection:bg-blue-600 selection:text-white pb-20">
 
-<!-- Floating Framer Liquid Glass App Bar (iOS 26 / Framer Aesthetics) -->
-<header class="sticky top-3 sm:top-5 z-40 w-full max-w-[1520px] mx-auto px-3 sm:px-6">
-  <div class="liquid-appbar p-4 sm:p-5 md:p-6 flex flex-col items-center justify-center gap-4 sm:gap-5 w-full">
+<!-- Stationary Header: Top of landing page (Brand Cluster + Dynamic Status Island) -->
+<header id="site-header" class="w-full max-w-[1520px] mx-auto px-3 sm:px-6 pt-3 sm:pt-4 pb-2 z-30">
+  <div class="liquid-header p-3 sm:p-4 md:px-6 flex flex-col lg:flex-row items-center justify-between gap-3 sm:gap-4 w-full">
     
-    <!-- Top Row: Centralized / Symmetrically Balanced Brand & Dynamic Status Island -->
-    <div class="flex flex-col lg:flex-row items-center justify-between gap-4 w-full">
-      
-      <!-- Brand Cluster: Logo + Title + Status Badges (Centered on mobile, left on desktop) -->
-      <div class="flex items-center justify-center lg:justify-start gap-3 sm:gap-4 flex-wrap flex-shrink-0">
-        <div class="w-11 h-11 sm:w-13 sm:h-13 rounded-2xl bg-white/95 p-2 border border-white/95 shadow-md shadow-blue-500/10 flex items-center justify-center overflow-hidden flex-shrink-0">
-          <img src="assets/logo.png" alt="cosmofeed_payout" class="w-full h-full object-contain">
-        </div>
-        <div class="flex items-center gap-2 sm:gap-2.5 flex-wrap justify-center lg:justify-start">
-          <h1 class="text-base sm:text-lg md:text-xl font-extrabold text-slate-900 tracking-tight">cosmofeed_payout</h1>
-          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-slate-100/90 text-slate-700 border border-slate-200/80 shadow-xs">
-            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-            T+1 Release Gate
-          </span>
-          <span id="cloud-autopilot-badge" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-blue-50/95 text-blue-700 border border-blue-200/70 shadow-xs" title="100% Zero-Machine, Zero-Human Cloud Autonomy via GitHub Actions. Runs automatically before 8 AM IST & every 2 hrs without any computer turned on.">
-            <span class="relative flex h-2 w-2">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
-            </span>
-            100% Cloud Autonomous
-          </span>
-        </div>
+    <!-- Brand Cluster: Logo + Title + Status Badges -->
+    <div class="flex items-center justify-center lg:justify-start gap-3 sm:gap-4 flex-wrap flex-shrink-0">
+      <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-white/95 p-1.5 sm:p-2 border border-white/95 shadow-md shadow-blue-500/10 flex items-center justify-center overflow-hidden flex-shrink-0 transition-transform hover:scale-105">
+        <img src="assets/logo.png" alt="cosmofeed_payout" class="w-full h-full object-contain">
       </div>
-
-      <!-- Dynamic Status Island Pill -->
-      <div class="flex items-center justify-center max-w-full overflow-hidden">
-        <div class="inline-flex items-center justify-center gap-2.5 sm:gap-4 text-xs sm:text-sm text-slate-600 bg-white/85 backdrop-blur-md px-4 sm:px-6 py-2 sm:py-2.5 rounded-full border border-white/95 shadow-xs whitespace-nowrap overflow-x-auto max-w-full">
-          <span class="inline-flex items-center gap-1.5 flex-shrink-0">
-            <span class="text-slate-400 font-normal">Audit Date:</span>
-            <b id="hdr-today" class="text-slate-800 font-semibold">2026-09-05</b>
+      <div class="flex items-center gap-2 sm:gap-2.5 flex-wrap justify-center lg:justify-start">
+        <h1 class="text-base sm:text-lg md:text-xl font-extrabold text-slate-900 tracking-tight">cosmofeed_payout</h1>
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-slate-100/90 text-slate-700 border border-slate-200/80 shadow-xs">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          T+1 Release Gate
+        </span>
+        <span id="cloud-autopilot-badge" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-blue-50/95 text-blue-700 border border-blue-200/70 shadow-xs cursor-pointer hover:bg-blue-100/80 transition" title="100% Zero-Machine, Zero-Human Cloud Autonomy via GitHub Actions. Runs automatically before 8 AM IST & every 2 hrs without any computer turned on.">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
           </span>
-          <span class="text-slate-300 flex-shrink-0">•</span>
-          <span class="inline-flex items-center gap-1.5 flex-shrink-0">
-            <span class="text-slate-400 font-normal">Sales Date:</span>
-            <b id="hdr-yesterday" class="text-slate-800 font-semibold">2026-09-04</b>
-          </span>
-          <span class="text-slate-300 flex-shrink-0">•</span>
-          <span class="inline-flex items-center gap-1.5 flex-shrink-0">
-            <span class="w-2 h-2 rounded-full bg-blue-500"></span>
-            <span id="hdr-total" class="font-medium text-slate-700">1,987 pending audited</span>
-          </span>
-          <span class="text-slate-300 flex-shrink-0">•</span>
-          <span id="hdr-sync" class="text-emerald-700 font-medium inline-flex items-center gap-1.5 flex-shrink-0">
-            <svg class="w-4 h-4 text-emerald-600 inline flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
-            <span id="hdr-last-sync">Auto-Synced</span>
-          </span>
-        </div>
+          100% Cloud Autonomous
+        </span>
       </div>
-
     </div>
 
-    <!-- Bottom Row: Centralized Framer Action Command Dock -->
-    <div class="w-full flex items-center justify-center pt-3 sm:pt-4 border-t border-slate-200/60">
-      <div class="inline-flex flex-wrap items-center justify-center gap-2 sm:gap-2.5 md:gap-3 p-1 sm:p-1.5 rounded-[22px] bg-slate-900/[0.03] border border-white/80 shadow-inner max-w-full">
-        
-        <!-- PDF Report Button -->
-        <button id="downloadPdfBtn" title="Generate and download Executive PDF Report" class="btn-glass px-3.5 py-2 sm:px-4 sm:py-2.5 md:px-5 md:py-2.5 rounded-2xl text-xs sm:text-[13px] md:text-sm font-semibold flex items-center gap-2 tap-btn">
-          <svg class="w-4 h-4 text-rose-500 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 16l4-5h-3V4h-2v7H8l4 5zm9-9h-4v2h4v11H3V9h4V7H3c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2z"/></svg>
-          <span>PDF Report</span>
-        </button>
-
-        <!-- HTML Report Button -->
-        <button id="downloadHtmlBtn" title="Download standalone executive HTML report" class="btn-glass px-3.5 py-2 sm:px-4 sm:py-2.5 md:px-5 md:py-2.5 rounded-2xl text-xs sm:text-[13px] md:text-sm font-semibold flex items-center gap-2 tap-btn">
-          <svg class="w-4 h-4 text-slate-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
-          <span>HTML Report</span>
-        </button>
-
-        <!-- 10-Day SEBI Excel Button -->
-        <button id="export10dExcelBtn" title="Download cumulative 10-day Telegram & SEBI Excel Tracker" class="btn-glass px-3.5 py-2 sm:px-4 sm:py-2.5 md:px-5 md:py-2.5 rounded-2xl text-xs sm:text-[13px] md:text-sm font-semibold flex items-center gap-2 tap-btn">
-          <svg class="w-4 h-4 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-          <span>10-Day Excel</span>
-        </button>
-
-        <!-- 10-Day SEBI CSV Button -->
-        <button id="export10dCsvBtn" title="Download cumulative 10-day Telegram & SEBI CSV Report" class="btn-glass px-3.5 py-2 sm:px-4 sm:py-2.5 md:px-5 md:py-2.5 rounded-2xl text-xs sm:text-[13px] md:text-sm font-semibold flex items-center gap-2 tap-btn">
-          <svg class="w-4 h-4 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-          <span>10-Day CSV</span>
-        </button>
-
-        <!-- Manager Submission (5 Sep) Button -->
-        <button id="managerModalBtn" title="Manager Submission: Non-SEBI Cumulative Report (Until 5 Sep)" class="btn-glass-primary px-4.5 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-2.5 rounded-2xl text-xs sm:text-[13px] md:text-sm font-bold flex items-center gap-2 tap-btn shadow-md">
-          <svg class="w-4 h-4 text-amber-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-          <span>Manager Report</span>
-        </button>
-
-        <!-- Export Filtered CSV Button -->
-        <button id="exportFilteredBtn" title="Export currently displayed rows as CSV" class="btn-glass px-3.5 py-2 sm:px-4 sm:py-2.5 md:px-5 md:py-2.5 rounded-2xl text-xs sm:text-[13px] md:text-sm font-semibold flex items-center gap-2 tap-btn">
-          <svg class="w-4 h-4 text-slate-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-          <span>Export CSV</span>
-        </button>
-
-        <!-- Slack Summary Button -->
-        <button id="slackModalBtn" title="View & copy Slack Markdown summary" class="btn-glass px-3.5 py-2 sm:px-4 sm:py-2.5 md:px-5 md:py-2.5 rounded-2xl text-xs sm:text-[13px] md:text-sm font-semibold flex items-center gap-2 tap-btn">
-          <svg class="w-4 h-4 text-slate-600 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M6 15a2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2h2v2zm1 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2v5a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-5zm2-7a2 2 0 0 1-2-2 2 2 0 0 1 2-2 2 2 0 0 1 2 2v2H9zm0 1a2 2 0 0 1 2 2 2 2 0 0 1-2 2H4a2 2 0 0 1-2-2 2 2 0 0 1 2-2h5zm7-2a2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2h-2V7zm-1 0a2 2 0 0 1-2 2 2 2 0 0 1-2-2V2a2 2 0 0 1 2-2 2 2 0 0 1 2 2v5zm-2 7a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2v-2h2zm0-1a2 2 0 0 1-2-2 2 2 0 0 1 2-2h5a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-5z"/></svg>
-          <span>Slack</span>
-        </button>
-
+    <!-- Dynamic Status Island -->
+    <div class="flex items-center justify-center max-w-full overflow-hidden">
+      <div class="inline-flex items-center justify-center gap-2 sm:gap-3.5 md:gap-4 text-xs sm:text-sm text-slate-600 bg-white/85 backdrop-blur-md px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full border border-white/95 shadow-xs whitespace-nowrap overflow-x-auto max-w-full">
+        <span class="inline-flex items-center gap-1.5 flex-shrink-0">
+          <span class="text-slate-400 font-normal">Audit Date:</span>
+          <b id="hdr-today" class="text-slate-800 font-semibold">2026-09-06</b>
+        </span>
+        <span class="text-slate-300 flex-shrink-0">•</span>
+        <span class="inline-flex items-center gap-1.5 flex-shrink-0">
+          <span class="text-slate-400 font-normal">Sales Date:</span>
+          <b id="hdr-yesterday" class="text-slate-800 font-semibold">2026-09-05</b>
+        </span>
+        <span class="text-slate-300 flex-shrink-0">•</span>
+        <span class="inline-flex items-center gap-1.5 flex-shrink-0">
+          <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+          <span id="hdr-total" class="font-medium text-slate-700">1,764 pending audited</span>
+        </span>
+        <span class="text-slate-300 flex-shrink-0">•</span>
+        <span id="hdr-sync" class="text-emerald-700 font-medium inline-flex items-center gap-1.5 flex-shrink-0">
+          <svg class="w-4 h-4 text-emerald-600 inline flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+          <span id="hdr-last-sync">Auto-Synced</span>
+        </span>
       </div>
     </div>
 
   </div>
 </header>
+
+<!-- App Bar Dock Anchor (Placeholder to maintain smooth layout flow when App Bar floats) -->
+<div id="appbar-dock-anchor" class="w-full max-w-[1520px] mx-auto px-3 sm:px-6 h-[54px] sm:h-[60px] mb-2 pointer-events-none"></div>
+
+<!-- Scroll-Responsive Floating App Bar (Overlays content, hides on scroll down, appears on scroll up) -->
+<nav id="floating-appbar" class="appbar-docked fixed left-1/2 -translate-x-1/2 z-50 pointer-events-auto w-auto max-w-[96vw] sm:max-w-none">
+  <div class="liquid-dock px-2 sm:px-3 py-1.5 sm:py-2 flex items-center justify-center gap-1.5 sm:gap-2.5 rounded-full border border-white/95 bg-white/85 backdrop-blur-2xl shadow-xl shadow-slate-900/6 max-w-full overflow-x-auto no-scrollbar">
+    
+    <!-- PDF Report Button -->
+    <button id="downloadPdfBtn" title="Generate and download Executive PDF Report" class="btn-glass px-3 py-1.5 sm:px-4 sm:py-2 md:px-5 md:py-2.5 rounded-full text-xs sm:text-[13px] md:text-sm font-semibold flex items-center gap-1.5 sm:gap-2 tap-btn flex-shrink-0">
+      <svg class="w-4 h-4 text-rose-500 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 16l4-5h-3V4h-2v7H8l4 5zm9-9h-4v2h4v11H3V9h4V7H3c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2z"/></svg>
+      <span>PDF Report</span>
+    </button>
+
+    <!-- HTML Report Button -->
+    <button id="downloadHtmlBtn" title="Download standalone executive HTML report" class="btn-glass px-3 py-1.5 sm:px-4 sm:py-2 md:px-5 md:py-2.5 rounded-full text-xs sm:text-[13px] md:text-sm font-semibold flex items-center gap-1.5 sm:gap-2 tap-btn flex-shrink-0">
+      <svg class="w-4 h-4 text-slate-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+      <span>HTML Report</span>
+    </button>
+
+    <!-- 10-Day SEBI Excel Button -->
+    <button id="export10dExcelBtn" title="Download cumulative 10-day Telegram & SEBI Excel Tracker" class="btn-glass px-3 py-1.5 sm:px-4 sm:py-2 md:px-5 md:py-2.5 rounded-full text-xs sm:text-[13px] md:text-sm font-semibold flex items-center gap-1.5 sm:gap-2 tap-btn flex-shrink-0">
+      <svg class="w-4 h-4 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+      <span>10-Day Excel</span>
+    </button>
+
+    <!-- 10-Day SEBI CSV Button -->
+    <button id="export10dCsvBtn" title="Download cumulative 10-day Telegram & SEBI CSV Report" class="btn-glass px-3 py-1.5 sm:px-4 sm:py-2 md:px-5 md:py-2.5 rounded-full text-xs sm:text-[13px] md:text-sm font-semibold flex items-center gap-1.5 sm:gap-2 tap-btn flex-shrink-0">
+      <svg class="w-4 h-4 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+      <span>10-Day CSV</span>
+    </button>
+
+    <!-- Manager Submission (5 Sep) Button -->
+    <button id="managerModalBtn" title="Manager Submission: Non-SEBI Cumulative Report (Until 5 Sep)" class="btn-glass-primary px-3.5 py-1.5 sm:px-5 sm:py-2 md:px-6 md:py-2.5 rounded-full text-xs sm:text-[13px] md:text-sm font-bold flex items-center gap-1.5 sm:gap-2 tap-btn flex-shrink-0 shadow-md">
+      <svg class="w-4 h-4 text-amber-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+      <span>Manager Report</span>
+    </button>
+
+    <!-- Export Filtered CSV Button -->
+    <button id="exportFilteredBtn" title="Export currently displayed rows as CSV" class="btn-glass px-3 py-1.5 sm:px-4 sm:py-2 md:px-5 md:py-2.5 rounded-full text-xs sm:text-[13px] md:text-sm font-semibold flex items-center gap-1.5 sm:gap-2 tap-btn flex-shrink-0">
+      <svg class="w-4 h-4 text-slate-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+      <span>Export CSV</span>
+    </button>
+
+    <!-- Slack Summary Button -->
+    <button id="slackModalBtn" title="View & copy Slack Markdown summary" class="btn-glass px-3 py-1.5 sm:px-4 sm:py-2 md:px-5 md:py-2.5 rounded-full text-xs sm:text-[13px] md:text-sm font-semibold flex items-center gap-1.5 sm:gap-2 tap-btn flex-shrink-0">
+      <svg class="w-4 h-4 text-slate-600 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M6 15a2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2h2v2zm1 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2v5a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-5zm2-7a2 2 0 0 1-2-2 2 2 0 0 1 2-2 2 2 0 0 1 2 2v2H9zm0 1a2 2 0 0 1 2 2 2 2 0 0 1-2 2H4a2 2 0 0 1-2-2 2 2 0 0 1 2-2h5zm7-2a2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2h-2V7zm-1 0a2 2 0 0 1-2 2 2 2 0 0 1-2-2V2a2 2 0 0 1 2-2 2 2 0 0 1 2 2v5zm-2 7a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2v-2h2zm0-1a2 2 0 0 1-2-2 2 2 0 0 1 2-2h5a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-5z"/></svg>
+      <span>Slack</span>
+    </button>
+
+  </div>
+</nav>
 
 <!-- Main Container -->
 <main class="max-w-[1520px] mx-auto px-6 pt-6">
@@ -1181,6 +1240,17 @@ function render() {
     </div>
   `;
 
+  // Framer Motion: Staggered entrance for KPI Cards
+  if (!window._kpiAnimated && window.Motion && typeof window.Motion.animate === 'function') {
+    window._kpiAnimated = true;
+    try {
+      window.Motion.animate('#cards .kpi-card', 
+        { opacity: [0, 1], y: [12, 0], scale: [0.97, 1] }, 
+        { delay: window.Motion.stagger ? window.Motion.stagger(0.04) : 0.04, duration: 0.32, easing: [0.16, 1, 0.3, 1] }
+      );
+    } catch (e) {}
+  }
+
   // Update Dropdown options with dynamic counts
   const swFilter = document.getElementById('selfWindowFilter');
   if (swFilter && swFilter.options.length >= 2) {
@@ -1651,6 +1721,7 @@ document.getElementById('tabs').addEventListener('click', e => {
   document.querySelectorAll('#tabs button').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
   currentFilter = btn.dataset.f;
+  window._kpiAnimated = false;
 
   if (currentFilter === "self") {
     sortKey = "selfTxnFlow";
@@ -1842,6 +1913,80 @@ document.getElementById('copySlackBtn').addEventListener('click', () => {
   toast.classList.remove('hidden');
   setTimeout(() => toast.classList.add('hidden'), 2500);
 });
+
+// ==========================================
+// SCROLL-RESPONSIVE FLOATING APP BAR & FRAMER MOTION
+// ==========================================
+(function initScrollAndMotion() {
+  const appbar = document.getElementById('floating-appbar');
+  const anchor = document.getElementById('appbar-dock-anchor');
+  if (!appbar || !anchor) return;
+
+  let lastScrollY = window.scrollY || 0;
+  let ticking = false;
+  const SCROLL_DELTA = 6;
+
+  function updateAppBar() {
+    const currentScrollY = window.scrollY || 0;
+    const rect = anchor.getBoundingClientRect();
+    const isAtTop = currentScrollY <= 20 || rect.top >= 14;
+    const delta = currentScrollY - lastScrollY;
+
+    if (isAtTop) {
+      // Docked below header
+      appbar.classList.remove('appbar-hidden', 'appbar-floating');
+      appbar.classList.add('appbar-docked');
+      appbar.style.top = Math.max(12, Math.round(rect.top)) + 'px';
+    } else if (delta > SCROLL_DELTA && currentScrollY > 60) {
+      // Scrolled DOWN -> Hide App Bar
+      appbar.classList.remove('appbar-docked', 'appbar-floating');
+      appbar.classList.add('appbar-hidden');
+    } else if (delta < -SCROLL_DELTA) {
+      // Scrolled UP -> Reveal Floating App Bar
+      appbar.classList.remove('appbar-docked', 'appbar-hidden');
+      appbar.classList.add('appbar-floating');
+    }
+
+    lastScrollY = currentScrollY;
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      window.requestAnimationFrame(updateAppBar);
+      ticking = true;
+    }
+  }, { passive: true });
+
+  window.addEventListener('resize', () => {
+    window.requestAnimationFrame(updateAppBar);
+  }, { passive: true });
+
+  // Initial positioning
+  updateAppBar();
+
+  // Cursor Spotlight for Google Antigravity aesthetic
+  window.addEventListener('pointermove', e => {
+    document.documentElement.style.setProperty('--cursor-x', `${e.clientX}px`);
+    document.documentElement.style.setProperty('--cursor-y', `${e.clientY}px`);
+  }, { passive: true });
+
+  // Framer Motion Initial Page Entrance
+  if (window.Motion && typeof window.Motion.animate === 'function') {
+    try {
+      window.Motion.animate('#site-header', 
+        { opacity: [0, 1], y: [-18, 0] }, 
+        { duration: 0.55, easing: [0.16, 1, 0.3, 1] }
+      );
+      window.Motion.animate('#floating-appbar', 
+        { opacity: [0, 1], scale: [0.93, 1] }, 
+        { duration: 0.5, delay: 0.1, easing: [0.16, 1, 0.3, 1] }
+      );
+    } catch (e) {
+      console.warn("Motion entrance skipped:", e);
+    }
+  }
+})();
 </script>
 
 </body>
