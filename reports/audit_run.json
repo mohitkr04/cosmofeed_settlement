@@ -1,7 +1,7 @@
 {
   "report": {
     "date": "2026-09-06",
-    "totalAudited": 1762,
+    "totalAudited": 1764,
     "selfTransactionCount": 229,
     "flaggedCount": 0,
     "errorCount": 5,
@@ -32441,6 +32441,32 @@
         }
       ],
       "buyersChecked": 10
+    },
+    {
+      "settlementId": "6a9872ca42f86d2f7aa42602",
+      "creatorId": "64a28d6b1d5c33001ffa0557",
+      "username": "mohitjagwani",
+      "email": "jagwanimohit3@gmail.com",
+      "phone": "7984929973",
+      "payoutAmount": 75279,
+      "totalMemoAmount": 75279.06,
+      "category": "Coaching (Business, Parenting, Relationship etc)",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 25
+    },
+    {
+      "settlementId": "6a8b439c753c527b03cb3682",
+      "creatorId": "6a8006ac3b396a0013157810",
+      "username": "astrovikash22",
+      "email": "astrovikash22@gmail.com",
+      "phone": "7610000156",
+      "payoutAmount": 236,
+      "totalMemoAmount": 236.19,
+      "category": "Astrology/Numerology/Tarot Card Reading",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 1
     }
   ]
 }
