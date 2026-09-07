@@ -4,7 +4,7 @@
     "auditPeriodStart": "2026-08-27",
     "auditPeriodEnd": "2026-09-05",
     "targetSubmissionDate": "2026-09-05",
-    "lastUpdated": "2026-09-07 05:43:51",
+    "lastUpdated": "2026-09-07 06:35:21",
     "totalAuditRuns": 9,
     "auditDates": [
       "2026-08-27",
@@ -2321,7 +2321,7 @@
         "2026-09-07"
       ],
       "daysFlaggedCount": 8,
-      "latestPayoutAmount": 50852.0,
+      "latestPayoutAmount": 8574.0,
       "cumulativePayoutVolume": 250816.0,
       "maxDailyPayout": 50852.0,
       "settlementHistory": [
@@ -12289,7 +12289,7 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-09-06",
+      "lastSeenDate": "2026-09-07",
       "datesObserved": [
         "2026-08-27",
         "2026-08-31",
@@ -12298,11 +12298,12 @@
         "2026-09-03",
         "2026-09-04",
         "2026-09-05",
-        "2026-09-06"
+        "2026-09-06",
+        "2026-09-07"
       ],
-      "daysFlaggedCount": 8,
+      "daysFlaggedCount": 9,
       "latestPayoutAmount": 4029.0,
-      "cumulativePayoutVolume": 81378.0,
+      "cumulativePayoutVolume": 85407.0,
       "maxDailyPayout": 15947.0,
       "settlementHistory": [
         {
@@ -12349,6 +12350,12 @@
         },
         {
           "auditDate": "2026-09-06",
+          "payoutAmount": 4029.0,
+          "telegramProductId": "64ddb6a847ac1d001e9857b1",
+          "telegramProductLink": "https://superprofile.bio/vig/64ddb6a847ac1d001e9857b1"
+        },
+        {
+          "auditDate": "2026-09-07",
           "payoutAmount": 4029.0,
           "telegramProductId": "64ddb6a847ac1d001e9857b1",
           "telegramProductLink": "https://superprofile.bio/vig/64ddb6a847ac1d001e9857b1"
@@ -14080,7 +14087,7 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-09-06",
+      "lastSeenDate": "2026-09-07",
       "datesObserved": [
         "2026-08-27",
         "2026-08-31",
@@ -14089,11 +14096,12 @@
         "2026-09-03",
         "2026-09-04",
         "2026-09-05",
-        "2026-09-06"
+        "2026-09-06",
+        "2026-09-07"
       ],
-      "daysFlaggedCount": 8,
+      "daysFlaggedCount": 9,
       "latestPayoutAmount": 13415.0,
-      "cumulativePayoutVolume": 45542.0,
+      "cumulativePayoutVolume": 58957.0,
       "maxDailyPayout": 13415.0,
       "settlementHistory": [
         {
@@ -14140,6 +14148,12 @@
         },
         {
           "auditDate": "2026-09-06",
+          "payoutAmount": 13415.0,
+          "telegramProductId": "69a63a3b0035f00013abc48a",
+          "telegramProductLink": "https://superprofile.bio/vig/69a63a3b0035f00013abc48a"
+        },
+        {
+          "auditDate": "2026-09-07",
           "payoutAmount": 13415.0,
           "telegramProductId": "69a63a3b0035f00013abc48a",
           "telegramProductLink": "https://superprofile.bio/vig/69a63a3b0035f00013abc48a"
@@ -28066,7 +28080,7 @@
         "2026-09-07"
       ],
       "daysFlaggedCount": 8,
-      "latestPayoutAmount": 21455.0,
+      "latestPayoutAmount": 15997.0,
       "cumulativePayoutVolume": 122989.0,
       "maxDailyPayout": 27571.0,
       "settlementHistory": [
@@ -29121,7 +29135,7 @@
         "2026-09-07"
       ],
       "daysFlaggedCount": 8,
-      "latestPayoutAmount": 13271.0,
+      "latestPayoutAmount": 8124.0,
       "cumulativePayoutVolume": 46555.0,
       "maxDailyPayout": 13271.0,
       "settlementHistory": [
@@ -29702,7 +29716,7 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-31",
-      "lastSeenDate": "2026-09-06",
+      "lastSeenDate": "2026-09-07",
       "datesObserved": [
         "2026-08-31",
         "2026-09-01",
@@ -29710,11 +29724,12 @@
         "2026-09-03",
         "2026-09-04",
         "2026-09-05",
-        "2026-09-06"
+        "2026-09-06",
+        "2026-09-07"
       ],
-      "daysFlaggedCount": 7,
+      "daysFlaggedCount": 8,
       "latestPayoutAmount": 2946.0,
-      "cumulativePayoutVolume": 57383.0,
+      "cumulativePayoutVolume": 60329.0,
       "maxDailyPayout": 20067.0,
       "settlementHistory": [
         {
@@ -29755,6 +29770,12 @@
         },
         {
           "auditDate": "2026-09-06",
+          "payoutAmount": 2946.0,
+          "telegramProductId": "670500b24509b400132cb385",
+          "telegramProductLink": "https://superprofile.bio/vig/670500b24509b400132cb385"
+        },
+        {
+          "auditDate": "2026-09-07",
           "payoutAmount": 2946.0,
           "telegramProductId": "670500b24509b400132cb385",
           "telegramProductLink": "https://superprofile.bio/vig/670500b24509b400132cb385"
@@ -31835,18 +31856,19 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-09-01",
-      "lastSeenDate": "2026-09-06",
+      "lastSeenDate": "2026-09-07",
       "datesObserved": [
         "2026-09-01",
         "2026-09-02",
         "2026-09-03",
         "2026-09-04",
         "2026-09-05",
-        "2026-09-06"
+        "2026-09-06",
+        "2026-09-07"
       ],
-      "daysFlaggedCount": 6,
+      "daysFlaggedCount": 7,
       "latestPayoutAmount": 10240.0,
-      "cumulativePayoutVolume": 51329.0,
+      "cumulativePayoutVolume": 61569.0,
       "maxDailyPayout": 12340.0,
       "settlementHistory": [
         {
@@ -31881,6 +31903,12 @@
         },
         {
           "auditDate": "2026-09-06",
+          "payoutAmount": 10240.0,
+          "telegramProductId": "69bb9a626bc32b00132d43af",
+          "telegramProductLink": "https://superprofile.bio/vig/69bb9a626bc32b00132d43af"
+        },
+        {
+          "auditDate": "2026-09-07",
           "payoutAmount": 10240.0,
           "telegramProductId": "69bb9a626bc32b00132d43af",
           "telegramProductLink": "https://superprofile.bio/vig/69bb9a626bc32b00132d43af"
@@ -47531,8 +47559,8 @@
     },
     "2026-09-07": {
       "auditDate": "2026-09-07",
-      "flaggedCount": 260,
-      "totalDayVolume": 2694467.0,
+      "flaggedCount": 270,
+      "totalDayVolume": 2737539.0,
       "creatorIds": [
         "6a9c25a3213bce0014ff2b98",
         "64bf7c27e98788001f3fa09d",
@@ -47547,6 +47575,7 @@
         "6a55d3282f10800012ed9ab0",
         "68b75b37d58da10013c0e674",
         "64af58ec07df72001f236bc1",
+        "668e7c221cc9f2001339ee99",
         "668e7c221cc9f2001339ee99",
         "62f60f34678fd77b3dabf980",
         "663dd24d61f04800142f8ce8",
@@ -47564,6 +47593,7 @@
         "663089a8dbef200012ff3270",
         "656776a2d7de9b001e22044a",
         "63fb291aa9d0f4001fb12fd3",
+        "65e953798a133b0013814853",
         "6988594920046f00137488ea",
         "670428175f4c600013ce6176",
         "62b9a085bfba080a0feea73d",
@@ -47593,6 +47623,7 @@
         "64b36934286c15002068a2a5",
         "66caccec800f8400130aa224",
         "67d837e1b44d25001392f4dc",
+        "68d8cdc597a50f0013a48905",
         "6772979573de230013e8b9dd",
         "66e9d48eaec7200013a6e690",
         "62b09b5bc9bd4e4d0c4f29d9",
@@ -47600,12 +47631,14 @@
         "6a5daef8336dff00131581e1",
         "649510441a32ba0020928c2d",
         "66c3410bf0a4c400138cd144",
+        "693d2567c5d4f600137fdbb6",
         "61fbeabbd53ac975893897ae",
         "628ed1af4e4a6543a601d1ab",
         "663b5927b1d7040013ca5884",
         "68eb6aab887005001328a799",
         "682b01ebf6370e0013a4a4b5",
         "6658323e77e3a2001367aafb",
+        "698960d575efa100133dc34a",
         "67332673160fd900139f7de9",
         "65ae7ab14009dd001dce5f32",
         "693d2567c5d4f600137fdbb6",
@@ -47623,6 +47656,7 @@
         "66a65b43547f9e0013757c40",
         "6537b227539ccb001fb01744",
         "6861859e611efd0013dc2d7c",
+        "68384fb7f6fecd0013930afc",
         "658720a2a2c6b0001ecbed39",
         "6391d53d8e6bc3002c0f7105",
         "6a0489783a48f8001349af38",
@@ -47639,8 +47673,10 @@
         "69b39a0489520f0013d83fae",
         "67974ec5d4d95b00146607d1",
         "69b8ed4559ad710013c35429",
+        "64cbcd3b93d7e4001d11fdb6",
         "6708183b3a97c6001355987d",
         "6545f8d94b4aeb001f659e30",
+        "67332673160fd900139f7de9",
         "6a1fc44c997af10013463341",
         "64b935c040c1fd00208befb6",
         "679e7bcbadc11c0013e22586",
@@ -47686,6 +47722,7 @@
         "65aa7654460ef2001d58c405",
         "69482c860e733100134ed141",
         "6700b5b72a57240013df898e",
+        "648f53edccfdc8002aff354d",
         "63df9c3c934d930033d43fa0",
         "6476ea3f49dc68002014b8ed",
         "6805ef1fc4530b00138986db",
@@ -47712,6 +47749,7 @@
         "6524ef62cb7ef5001e914ff4",
         "66ee729bd79b93001398cff0",
         "6a1c066a2f39710013bf75e9",
+        "68fc64086d7f7b00132e8664",
         "6a8fb6f61559b900134d4ae8",
         "66dfde423f7d89001324eb00",
         "65fd7074e04d92001271989a",
