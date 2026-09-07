@@ -1,8 +1,8 @@
 {
   "report": {
     "date": "2026-09-07",
-    "totalAudited": 1886,
-    "selfTransactionCount": 245,
+    "totalAudited": 1892,
+    "selfTransactionCount": 246,
     "flaggedCount": 0,
     "errorCount": 8,
     "selfTransactions": [
@@ -1641,6 +1641,28 @@
           }
         ],
         "buyersChecked": 41
+      },
+      {
+        "settlementId": "6a9c67017c4c10e234bffe22",
+        "creatorId": "6a966d80344a0f0013cd315d",
+        "username": "jyothishavazhi",
+        "email": "jyothishavazhi@gmail.com",
+        "phone": "9567415177",
+        "payoutAmount": 939,
+        "totalMemoAmount": 939,
+        "category": "Astrology/Numerology/Tarot Card Reading",
+        "contentFlags": [],
+        "selfTransactions": [
+          {
+            "amountPaid": 499,
+            "buyerEmail": "jyothishavazhi@gmail.com",
+            "buyerPhone": "9567415177",
+            "IP": "150.107.213.5",
+            "date": "04 Sep, 2026; 11:07 PM",
+            "productId": "6a967f65d6667500135d9ef6"
+          }
+        ],
+        "buyersChecked": 6
       },
       {
         "settlementId": "6a9db86ce0f72afc3b34c19c",
@@ -34988,6 +35010,93 @@
       "contentFlags": [],
       "selfTransactions": [],
       "buyersChecked": 46
+    },
+    {
+      "settlementId": "6a9c67017c4c10e234bffe22",
+      "creatorId": "6a966d80344a0f0013cd315d",
+      "username": "jyothishavazhi",
+      "email": "jyothishavazhi@gmail.com",
+      "phone": "9567415177",
+      "payoutAmount": 939,
+      "totalMemoAmount": 939,
+      "category": "Astrology/Numerology/Tarot Card Reading",
+      "contentFlags": [],
+      "selfTransactions": [
+        {
+          "amountPaid": 499,
+          "buyerEmail": "jyothishavazhi@gmail.com",
+          "buyerPhone": "9567415177",
+          "IP": "150.107.213.5",
+          "date": "04 Sep, 2026; 11:07 PM",
+          "productId": "6a967f65d6667500135d9ef6"
+        }
+      ],
+      "buyersChecked": 6
+    },
+    {
+      "settlementId": "6a9c66c27c4c10e234bf9d4e",
+      "creatorId": "63c6e19c85e2d5003e802781",
+      "username": "techsamosha",
+      "email": "manjeshrajputweb@yahoo.com",
+      "phone": "7819862697",
+      "payoutAmount": 4893,
+      "totalMemoAmount": 4893,
+      "category": "Retail and Ecommerce - Services",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 100
+    },
+    {
+      "settlementId": "6a9b157bde0de2fb3cb5189f",
+      "creatorId": "63c6e19c85e2d5003e802781",
+      "username": "techsamosha",
+      "email": "manjeshrajputweb@yahoo.com",
+      "phone": "7819862697",
+      "payoutAmount": 1492,
+      "totalMemoAmount": 1492,
+      "category": "Retail and Ecommerce - Services",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 100
+    },
+    {
+      "settlementId": "6a99c42c42f86d2f7aa4a703",
+      "creatorId": "63c6e19c85e2d5003e802781",
+      "username": "techsamosha",
+      "email": "manjeshrajputweb@yahoo.com",
+      "phone": "7819862697",
+      "payoutAmount": 1194,
+      "totalMemoAmount": 1194,
+      "category": "Retail and Ecommerce - Services",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 100
+    },
+    {
+      "settlementId": "6a9c66f37c4c10e234bfeee0",
+      "creatorId": "6a86de11ac362100138dba8f",
+      "username": "missionor",
+      "email": "ankittechka@gmail.com",
+      "phone": "9608332817",
+      "payoutAmount": 3745,
+      "totalMemoAmount": 3745,
+      "category": "Technology & IT",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 80
+    },
+    {
+      "settlementId": "6a9b15a8de0de2fb3cb54919",
+      "creatorId": "68494f2cb25cf400137d7647",
+      "username": "krssshco",
+      "email": "dastotan496@gmail.com",
+      "phone": "7439069533",
+      "payoutAmount": 93,
+      "totalMemoAmount": 93.16,
+      "category": "Digital Marketing & Marketing",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 1
     }
   ]
 }
