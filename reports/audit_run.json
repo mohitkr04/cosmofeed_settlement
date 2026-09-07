@@ -1,7 +1,7 @@
 {
   "report": {
     "date": "2026-09-07",
-    "totalAudited": 1934,
+    "totalAudited": 1936,
     "selfTransactionCount": 251,
     "flaggedCount": 0,
     "errorCount": 8,
@@ -35846,6 +35846,32 @@
       "contentFlags": [],
       "selfTransactions": [],
       "buyersChecked": 18
+    },
+    {
+      "settlementId": "6a9c671a7c4c10e234c01900",
+      "creatorId": "68da6dc2e2cdea0013a8ffd4",
+      "username": "priyankagrowth",
+      "email": "plbodele9378@gmail.com",
+      "phone": "7020681264",
+      "payoutAmount": 187,
+      "totalMemoAmount": 187.26000000000002,
+      "category": "Digital Marketing & Marketing",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 1
+    },
+    {
+      "settlementId": "6a9c66fe7c4c10e234bffada",
+      "creatorId": "6a8c54406c483000139db29a",
+      "username": "ishita1m",
+      "email": "ishitasharma97349@gmail.com",
+      "phone": "9580414759",
+      "payoutAmount": 1,
+      "totalMemoAmount": 3382.0099999999998,
+      "category": "Entertainment & Media",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 65
     }
   ]
 }
