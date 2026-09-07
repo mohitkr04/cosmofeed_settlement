@@ -16,8 +16,8 @@
     "sebiRegistrationNumber": "INH000019099",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 162819.0,
-    "totalPayoutVolume": 4782245.0,
-    "settlementCount": 72,
+    "totalPayoutVolume": 4788323.0,
+    "settlementCount": 73,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -27,10 +27,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "668d2403bd8d0c001342122d": {
     "creatorId": "668d2403bd8d0c001342122d",
@@ -76,8 +77,8 @@
     "sebiRegistrationNumber": "INH000009782",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 569271.0,
-    "totalPayoutVolume": 13920915.0,
-    "settlementCount": 56,
+    "totalPayoutVolume": 13979497.0,
+    "settlementCount": 57,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -87,10 +88,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "6a118831557fe60013349dbd": {
     "creatorId": "6a118831557fe60013349dbd",
@@ -109,8 +111,8 @@
     "sebiRegistrationNumber": "INH000013518",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 146807.0,
-    "totalPayoutVolume": 4230771.0,
-    "settlementCount": 56,
+    "totalPayoutVolume": 4245501.0,
+    "settlementCount": 57,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -120,10 +122,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "631f3805a293b361d9224396": {
     "creatorId": "631f3805a293b361d9224396",
@@ -142,8 +145,8 @@
     "sebiRegistrationNumber": "INH000020217",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 151478.0,
-    "totalPayoutVolume": 3060877.0,
-    "settlementCount": 56,
+    "totalPayoutVolume": 3097224.0,
+    "settlementCount": 57,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -153,10 +156,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "68947929ec57170013bfec2e": {
     "creatorId": "68947929ec57170013bfec2e",
@@ -175,8 +179,8 @@
     "sebiRegistrationNumber": "INH000020411",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 76419.0,
-    "totalPayoutVolume": 1967752.0,
-    "settlementCount": 56,
+    "totalPayoutVolume": 2009250.0,
+    "settlementCount": 57,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -186,10 +190,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "62e0048df83d933bcd624f83": {
     "creatorId": "62e0048df83d933bcd624f83",
@@ -267,8 +272,8 @@
     "sebiRegistrationNumber": "INH000014368",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 38479.0,
-    "totalPayoutVolume": 750580.0,
-    "settlementCount": 30,
+    "totalPayoutVolume": 770076.0,
+    "settlementCount": 31,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -277,10 +282,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "627d4bbd91125d5ba8a436cf": {
     "creatorId": "627d4bbd91125d5ba8a436cf",
@@ -299,8 +305,8 @@
     "sebiRegistrationNumber": "INH000018878",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 127846.0,
-    "totalPayoutVolume": 2630748.0,
-    "settlementCount": 55,
+    "totalPayoutVolume": 2634676.0,
+    "settlementCount": 56,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -310,10 +316,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "68df70476e897500136b5591": {
     "creatorId": "68df70476e897500136b5591",
@@ -332,8 +339,8 @@
     "sebiRegistrationNumber": "INH000023250",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 48785.0,
-    "totalPayoutVolume": 1330752.0,
-    "settlementCount": 56,
+    "totalPayoutVolume": 1342469.0,
+    "settlementCount": 57,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -343,10 +350,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "68822b829172ab0013e42f43": {
     "creatorId": "68822b829172ab0013e42f43",
@@ -396,8 +404,8 @@
     "sebiRegistrationNumber": "INH000011954",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 66703.0,
-    "totalPayoutVolume": 927122.0,
-    "settlementCount": 56,
+    "totalPayoutVolume": 943780.0,
+    "settlementCount": 57,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -407,10 +415,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "6856780ac5a2ba00132ff991": {
     "creatorId": "6856780ac5a2ba00132ff991",
@@ -429,8 +438,8 @@
     "sebiRegistrationNumber": "INH000020536",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 20138.0,
-    "totalPayoutVolume": 323576.0,
-    "settlementCount": 41,
+    "totalPayoutVolume": 325544.0,
+    "settlementCount": 42,
     "datesSeen": [
       "2026-08-27",
       "2026-08-31",
@@ -438,10 +447,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "69e73e04d2582e0013922cb0": {
     "creatorId": "69e73e04d2582e0013922cb0",
@@ -823,9 +833,9 @@
     "sebiVerificationStatus": "Verified",
     "sebiRegistrationNumber": "INH000016445",
     "reviewStatus": "Normal",
-    "highestPayoutAmount": 12303.0,
-    "totalPayoutVolume": 337752.0,
-    "settlementCount": 56,
+    "highestPayoutAmount": 15009.0,
+    "totalPayoutVolume": 352761.0,
+    "settlementCount": 57,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -835,10 +845,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "69e1cd5f2d292d00136f412f": {
     "creatorId": "69e1cd5f2d292d00136f412f",
@@ -888,15 +899,16 @@
     "sebiRegistrationNumber": "INH000019266",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 3301.0,
-    "totalPayoutVolume": 19629.0,
-    "settlementCount": 7,
+    "totalPayoutVolume": 22930.0,
+    "settlementCount": 8,
     "datesSeen": [
       "2026-08-27",
       "2026-08-31",
-      "2026-09-02"
+      "2026-09-02",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-02"
+    "lastSeen": "2026-09-07"
   },
   "64fb0ee375d3bf001ea52867": {
     "creatorId": "64fb0ee375d3bf001ea52867",
@@ -914,14 +926,15 @@
     "sebiVerificationStatus": "Verified",
     "sebiRegistrationNumber": "INH000014155",
     "reviewStatus": "Normal",
-    "highestPayoutAmount": 2147.0,
-    "totalPayoutVolume": 4294.0,
-    "settlementCount": 2,
+    "highestPayoutAmount": 3709.0,
+    "totalPayoutVolume": 8003.0,
+    "settlementCount": 3,
     "datesSeen": [
-      "2026-08-27"
+      "2026-08-27",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-08-27"
+    "lastSeen": "2026-09-07"
   },
   "67060dac6a83ed0013d5c14c": {
     "creatorId": "67060dac6a83ed0013d5c14c",
@@ -940,8 +953,8 @@
     "sebiRegistrationNumber": "INH000017347",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 6522.0,
-    "totalPayoutVolume": 158300.0,
-    "settlementCount": 49,
+    "totalPayoutVolume": 163907.0,
+    "settlementCount": 50,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -949,10 +962,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "6298da07fa0bd672300dbe1f": {
     "creatorId": "6298da07fa0bd672300dbe1f",
@@ -1001,8 +1015,8 @@
     "sebiRegistrationNumber": "INH000017125",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 25641.0,
-    "totalPayoutVolume": 285391.0,
-    "settlementCount": 37,
+    "totalPayoutVolume": 291288.0,
+    "settlementCount": 38,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -1010,10 +1024,11 @@
       "2026-09-01",
       "2026-09-02",
       "2026-09-03",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "689338363085aa0013cadca4": {
     "creatorId": "689338363085aa0013cadca4",
@@ -1059,8 +1074,8 @@
     "sebiRegistrationNumber": "INH000010690",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 94169.0,
-    "totalPayoutVolume": 2606103.0,
-    "settlementCount": 41,
+    "totalPayoutVolume": 2614941.0,
+    "settlementCount": 42,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -1069,10 +1084,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "67c7d9335fe3f40013cc887d": {
     "creatorId": "67c7d9335fe3f40013cc887d",
@@ -1148,8 +1164,8 @@
     "sebiRegistrationNumber": "INH000016995",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 14767.0,
-    "totalPayoutVolume": 460431.0,
-    "settlementCount": 37,
+    "totalPayoutVolume": 465294.0,
+    "settlementCount": 38,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -1157,10 +1173,11 @@
       "2026-09-01",
       "2026-09-02",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "6969234b76dc8f001352a9b8": {
     "creatorId": "6969234b76dc8f001352a9b8",
@@ -1268,18 +1285,19 @@
     "sebiRegistrationNumber": "INH000017277",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 3942.0,
-    "totalPayoutVolume": 91094.0,
-    "settlementCount": 24,
+    "totalPayoutVolume": 94815.0,
+    "settlementCount": 25,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
       "2026-08-31",
       "2026-09-01",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "68c53cb6c8ee3a0013d207f2": {
     "creatorId": "68c53cb6c8ee3a0013d207f2",
@@ -1327,8 +1345,8 @@
     "sebiRegistrationNumber": "INH000017286",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 23148.0,
-    "totalPayoutVolume": 443238.0,
-    "settlementCount": 50,
+    "totalPayoutVolume": 446716.0,
+    "settlementCount": 51,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -1337,10 +1355,11 @@
       "2026-09-02",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "6954db9e53660300131cc9bc": {
     "creatorId": "6954db9e53660300131cc9bc",
@@ -1386,17 +1405,18 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 9878.0,
-    "totalPayoutVolume": 72899.0,
-    "settlementCount": 17,
+    "totalPayoutVolume": 74780.0,
+    "settlementCount": 18,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
       "2026-08-31",
       "2026-09-01",
-      "2026-09-02"
+      "2026-09-02",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-02"
+    "lastSeen": "2026-09-07"
   },
   "6443c3c058544c002035fae3": {
     "creatorId": "6443c3c058544c002035fae3",
@@ -1415,17 +1435,18 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 16849.0,
-    "totalPayoutVolume": 218391.0,
-    "settlementCount": 17,
+    "totalPayoutVolume": 227917.0,
+    "settlementCount": 18,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
       "2026-08-31",
       "2026-09-01",
-      "2026-09-02"
+      "2026-09-02",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-02"
+    "lastSeen": "2026-09-07"
   },
   "6a54b9ee478445001378e580": {
     "creatorId": "6a54b9ee478445001378e580",
@@ -1444,8 +1465,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 70572.0,
-    "totalPayoutVolume": 1935435.0,
-    "settlementCount": 47,
+    "totalPayoutVolume": 1939394.0,
+    "settlementCount": 48,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -1454,10 +1475,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "6a55d3282f10800012ed9ab0": {
     "creatorId": "6a55d3282f10800012ed9ab0",
@@ -1476,8 +1498,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 58524.0,
-    "totalPayoutVolume": 1349059.0,
-    "settlementCount": 42,
+    "totalPayoutVolume": 1352514.0,
+    "settlementCount": 43,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -1485,10 +1507,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "64af58ec07df72001f236bc1": {
     "creatorId": "64af58ec07df72001f236bc1",
@@ -1507,8 +1530,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 49634.0,
-    "totalPayoutVolume": 1490422.0,
-    "settlementCount": 51,
+    "totalPayoutVolume": 1504050.0,
+    "settlementCount": 52,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -1518,10 +1541,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "677a802db8a1e400132a1a88": {
     "creatorId": "677a802db8a1e400132a1a88",
@@ -1597,18 +1621,19 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 5597.0,
-    "totalPayoutVolume": 105747.0,
-    "settlementCount": 39,
+    "totalPayoutVolume": 106969.0,
+    "settlementCount": 40,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
       "2026-08-31",
       "2026-09-02",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "6435176dc89b300020dab646": {
     "creatorId": "6435176dc89b300020dab646",
@@ -1655,8 +1680,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 99486.0,
-    "totalPayoutVolume": 2980663.0,
-    "settlementCount": 52,
+    "totalPayoutVolume": 3007421.0,
+    "settlementCount": 53,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -1666,10 +1691,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "66713c14317e380014ebf21e": {
     "creatorId": "66713c14317e380014ebf21e",
@@ -1688,18 +1714,19 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 74332.0,
-    "totalPayoutVolume": 1177476.0,
-    "settlementCount": 34,
+    "totalPayoutVolume": 1184104.0,
+    "settlementCount": 35,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
       "2026-08-31",
       "2026-09-01",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "68f0653948c02b001307f329": {
     "creatorId": "68f0653948c02b001307f329",
@@ -1718,8 +1745,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 495829.0,
-    "totalPayoutVolume": 4796199.0,
-    "settlementCount": 52,
+    "totalPayoutVolume": 4821702.0,
+    "settlementCount": 53,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -1729,10 +1756,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "656ee0b105c31b001d36aa9e": {
     "creatorId": "656ee0b105c31b001d36aa9e",
@@ -1782,8 +1810,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 114240.0,
-    "totalPayoutVolume": 2892949.0,
-    "settlementCount": 38,
+    "totalPayoutVolume": 2920512.0,
+    "settlementCount": 39,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -1792,10 +1820,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "65014fed031b76001e9091f6": {
     "creatorId": "65014fed031b76001e9091f6",
@@ -1814,8 +1843,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 65193.0,
-    "totalPayoutVolume": 763940.0,
-    "settlementCount": 26,
+    "totalPayoutVolume": 768617.0,
+    "settlementCount": 27,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -1824,10 +1853,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "6a25a603b47b140013644f6f": {
     "creatorId": "6a25a603b47b140013644f6f",
@@ -1874,8 +1904,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 59566.0,
-    "totalPayoutVolume": 876530.0,
-    "settlementCount": 47,
+    "totalPayoutVolume": 878003.0,
+    "settlementCount": 48,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -1884,10 +1914,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "62b9a085bfba080a0feea73d": {
     "creatorId": "62b9a085bfba080a0feea73d",
@@ -1906,8 +1937,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 54825.0,
-    "totalPayoutVolume": 1318161.0,
-    "settlementCount": 33,
+    "totalPayoutVolume": 1346973.0,
+    "settlementCount": 34,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -1915,10 +1946,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "69d8cfb3611a100013247306": {
     "creatorId": "69d8cfb3611a100013247306",
@@ -1966,8 +1998,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 48086.0,
-    "totalPayoutVolume": 975928.0,
-    "settlementCount": 27,
+    "totalPayoutVolume": 985510.0,
+    "settlementCount": 28,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -1976,10 +2008,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "69fb5881e97f6d0013b67e8f": {
     "creatorId": "69fb5881e97f6d0013b67e8f",
@@ -1998,8 +2031,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 47876.0,
-    "totalPayoutVolume": 1025330.0,
-    "settlementCount": 53,
+    "totalPayoutVolume": 1026767.0,
+    "settlementCount": 54,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -2009,10 +2042,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "63e0416509bf7d00326f6ef9": {
     "creatorId": "63e0416509bf7d00326f6ef9",
@@ -2060,18 +2094,19 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 665098.0,
-    "totalPayoutVolume": 9714259.0,
-    "settlementCount": 35,
+    "totalPayoutVolume": 10002645.0,
+    "settlementCount": 36,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
       "2026-08-31",
       "2026-09-01",
       "2026-09-03",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "6a85a273ac3621001354cbf3": {
     "creatorId": "6a85a273ac3621001354cbf3",
@@ -2179,8 +2214,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 69634.0,
-    "totalPayoutVolume": 1447274.0,
-    "settlementCount": 47,
+    "totalPayoutVolume": 1449156.0,
+    "settlementCount": 48,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -2189,10 +2224,11 @@
       "2026-09-02",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "62d954abba10293040ccce13": {
     "creatorId": "62d954abba10293040ccce13",
@@ -2211,8 +2247,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 65111.0,
-    "totalPayoutVolume": 1085182.0,
-    "settlementCount": 39,
+    "totalPayoutVolume": 1097240.0,
+    "settlementCount": 40,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -2221,10 +2257,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "674f1538a042cd0013656dba": {
     "creatorId": "674f1538a042cd0013656dba",
@@ -2299,9 +2336,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 48520.0,
-    "totalPayoutVolume": 1300423.0,
-    "settlementCount": 47,
+    "highestPayoutAmount": 50852.0,
+    "totalPayoutVolume": 1351275.0,
+    "settlementCount": 48,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -2310,10 +2347,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "61fbeabbd53ac975893897ae": {
     "creatorId": "61fbeabbd53ac975893897ae",
@@ -2332,8 +2370,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 33063.0,
-    "totalPayoutVolume": 776647.0,
-    "settlementCount": 52,
+    "totalPayoutVolume": 790484.0,
+    "settlementCount": 53,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -2343,10 +2381,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "6735d02d1e2c9e00139b37ef": {
     "creatorId": "6735d02d1e2c9e00139b37ef",
@@ -2365,8 +2404,8 @@
     "sebiRegistrationNumber": "INH000018869",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 66718.0,
-    "totalPayoutVolume": 1487734.0,
-    "settlementCount": 52,
+    "totalPayoutVolume": 1498100.0,
+    "settlementCount": 53,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -2376,10 +2415,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "6903094d47fdf40013e5a517": {
     "creatorId": "6903094d47fdf40013e5a517",
@@ -2398,8 +2438,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 69504.0,
-    "totalPayoutVolume": 1126160.0,
-    "settlementCount": 52,
+    "totalPayoutVolume": 1154645.0,
+    "settlementCount": 53,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -2409,10 +2449,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "64846602074f940020401bb7": {
     "creatorId": "64846602074f940020401bb7",
@@ -2431,8 +2472,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 31814.0,
-    "totalPayoutVolume": 728508.0,
-    "settlementCount": 35,
+    "totalPayoutVolume": 748402.0,
+    "settlementCount": 36,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -2440,10 +2481,11 @@
       "2026-09-01",
       "2026-09-02",
       "2026-09-03",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "63735919afd464002db7003c": {
     "creatorId": "63735919afd464002db7003c",
@@ -2494,8 +2536,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 33544.0,
-    "totalPayoutVolume": 664420.0,
-    "settlementCount": 38,
+    "totalPayoutVolume": 669212.0,
+    "settlementCount": 39,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -2504,10 +2546,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "6718ef2cc3ab9800132644dd": {
     "creatorId": "6718ef2cc3ab9800132644dd",
@@ -2526,8 +2569,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 65645.0,
-    "totalPayoutVolume": 1235206.0,
-    "settlementCount": 51,
+    "totalPayoutVolume": 1240990.0,
+    "settlementCount": 52,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -2537,10 +2580,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "65bf8c50336354001e3003a3": {
     "creatorId": "65bf8c50336354001e3003a3",
@@ -2674,8 +2718,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 56775.0,
-    "totalPayoutVolume": 1669742.0,
-    "settlementCount": 52,
+    "totalPayoutVolume": 1683461.0,
+    "settlementCount": 53,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -2685,10 +2729,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "65f40b7084681c00130db00f": {
     "creatorId": "65f40b7084681c00130db00f",
@@ -2737,9 +2782,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 88046.0,
-    "totalPayoutVolume": 1431641.0,
-    "settlementCount": 39,
+    "highestPayoutAmount": 118991.0,
+    "totalPayoutVolume": 1550632.0,
+    "settlementCount": 40,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -2748,10 +2793,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "675fdb7b5794a00013679bcd": {
     "creatorId": "675fdb7b5794a00013679bcd",
@@ -2770,8 +2816,8 @@
     "sebiRegistrationNumber": "INH000019053",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 393135.0,
-    "totalPayoutVolume": 2296236.0,
-    "settlementCount": 52,
+    "totalPayoutVolume": 2322776.0,
+    "settlementCount": 53,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -2781,10 +2827,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "63c0f9c90679410033edf92d": {
     "creatorId": "63c0f9c90679410033edf92d",
@@ -2835,8 +2882,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 25120.0,
-    "totalPayoutVolume": 532751.0,
-    "settlementCount": 40,
+    "totalPayoutVolume": 551781.0,
+    "settlementCount": 41,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -2846,10 +2893,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "6a8d600b4fd9fb00136c64be": {
     "creatorId": "6a8d600b4fd9fb00136c64be",
@@ -2930,8 +2978,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 60291.0,
-    "totalPayoutVolume": 1450064.0,
-    "settlementCount": 39,
+    "totalPayoutVolume": 1453992.0,
+    "settlementCount": 40,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -2940,10 +2988,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "670428175f4c600013ce6176": {
     "creatorId": "670428175f4c600013ce6176",
@@ -2962,8 +3011,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 57602.0,
-    "totalPayoutVolume": 1533595.0,
-    "settlementCount": 39,
+    "totalPayoutVolume": 1562887.0,
+    "settlementCount": 40,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -2972,10 +3021,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "66842a747c9daa001273da10": {
     "creatorId": "66842a747c9daa001273da10",
@@ -3113,8 +3163,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 51138.0,
-    "totalPayoutVolume": 1362739.0,
-    "settlementCount": 52,
+    "totalPayoutVolume": 1381012.0,
+    "settlementCount": 53,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -3124,10 +3174,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "634ab0040e0d2d0c77ce8d01": {
     "creatorId": "634ab0040e0d2d0c77ce8d01",
@@ -3146,8 +3197,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 75133.0,
-    "totalPayoutVolume": 1321004.0,
-    "settlementCount": 51,
+    "totalPayoutVolume": 1323898.0,
+    "settlementCount": 52,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -3157,10 +3208,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "66d46d26d1de2200130aa397": {
     "creatorId": "66d46d26d1de2200130aa397",
@@ -3206,8 +3258,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 63293.0,
-    "totalPayoutVolume": 1413866.0,
-    "settlementCount": 38,
+    "totalPayoutVolume": 1434436.0,
+    "settlementCount": 39,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -3216,10 +3268,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "69967d407ad9570013a2d499": {
     "creatorId": "69967d407ad9570013a2d499",
@@ -3298,8 +3351,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 31199.0,
-    "totalPayoutVolume": 630908.0,
-    "settlementCount": 52,
+    "totalPayoutVolume": 656116.0,
+    "settlementCount": 53,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -3309,10 +3362,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "69c8d48a8d096100146b4c9f": {
     "creatorId": "69c8d48a8d096100146b4c9f",
@@ -3331,8 +3385,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 26814.0,
-    "totalPayoutVolume": 705783.0,
-    "settlementCount": 52,
+    "totalPayoutVolume": 730658.0,
+    "settlementCount": 53,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -3342,10 +3396,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "654fc2cfce9bcc001e36a2cc": {
     "creatorId": "654fc2cfce9bcc001e36a2cc",
@@ -3364,15 +3419,16 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 37585.0,
-    "totalPayoutVolume": 181558.0,
-    "settlementCount": 10,
+    "totalPayoutVolume": 193032.0,
+    "settlementCount": 11,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
-      "2026-08-31"
+      "2026-08-31",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-08-31"
+    "lastSeen": "2026-09-07"
   },
   "62c8635584e4cb17f206459d": {
     "creatorId": "62c8635584e4cb17f206459d",
@@ -3391,8 +3447,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 43047.0,
-    "totalPayoutVolume": 782521.0,
-    "settlementCount": 52,
+    "totalPayoutVolume": 801133.0,
+    "settlementCount": 53,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -3402,10 +3458,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "6a40efdcb275650013d95046": {
     "creatorId": "6a40efdcb275650013d95046",
@@ -3452,8 +3509,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 114194.0,
-    "totalPayoutVolume": 904070.0,
-    "settlementCount": 39,
+    "totalPayoutVolume": 913356.0,
+    "settlementCount": 40,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -3462,10 +3519,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "663089a8dbef200012ff3270": {
     "creatorId": "663089a8dbef200012ff3270",
@@ -3483,9 +3541,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 24466.0,
-    "totalPayoutVolume": 827562.0,
-    "settlementCount": 52,
+    "highestPayoutAmount": 35476.0,
+    "totalPayoutVolume": 863038.0,
+    "settlementCount": 53,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -3495,10 +3553,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "642e454e0c95a50020cda938": {
     "creatorId": "642e454e0c95a50020cda938",
@@ -3548,8 +3607,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 68460.0,
-    "totalPayoutVolume": 361395.0,
-    "settlementCount": 27,
+    "totalPayoutVolume": 363820.0,
+    "settlementCount": 28,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -3558,10 +3617,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "68132601762e3100137b966e": {
     "creatorId": "68132601762e3100137b966e",
@@ -3609,15 +3669,16 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 14380.0,
-    "totalPayoutVolume": 143800.0,
-    "settlementCount": 10,
+    "totalPayoutVolume": 155516.0,
+    "settlementCount": 11,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
-      "2026-08-31"
+      "2026-08-31",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-08-31"
+    "lastSeen": "2026-09-07"
   },
   "6658323e77e3a2001367aafb": {
     "creatorId": "6658323e77e3a2001367aafb",
@@ -3636,8 +3697,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 19255.0,
-    "totalPayoutVolume": 443146.0,
-    "settlementCount": 51,
+    "totalPayoutVolume": 456601.0,
+    "settlementCount": 52,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -3647,10 +3708,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "62484f155bedcb1774bd626f": {
     "creatorId": "62484f155bedcb1774bd626f",
@@ -3669,8 +3731,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 17842.0,
-    "totalPayoutVolume": 466594.0,
-    "settlementCount": 52,
+    "totalPayoutVolume": 472966.0,
+    "settlementCount": 53,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -3680,10 +3742,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "65d814e8b3c15300126617eb": {
     "creatorId": "65d814e8b3c15300126617eb",
@@ -3702,18 +3765,19 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 13912.0,
-    "totalPayoutVolume": 245238.0,
-    "settlementCount": 35,
+    "totalPayoutVolume": 246570.0,
+    "settlementCount": 36,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
       "2026-08-31",
       "2026-09-01",
       "2026-09-03",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "68bd4d38b667e40013327248": {
     "creatorId": "68bd4d38b667e40013327248",
@@ -3732,8 +3796,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 26348.0,
-    "totalPayoutVolume": 391463.0,
-    "settlementCount": 26,
+    "totalPayoutVolume": 394757.0,
+    "settlementCount": 27,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -3742,10 +3806,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "66e901a7945e660013e865b8": {
     "creatorId": "66e901a7945e660013e865b8",
@@ -3764,8 +3829,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 46349.0,
-    "totalPayoutVolume": 1129706.0,
-    "settlementCount": 52,
+    "totalPayoutVolume": 1148603.0,
+    "settlementCount": 53,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -3775,10 +3840,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "6a853ec2b3a9ed0013732f21": {
     "creatorId": "6a853ec2b3a9ed0013732f21",
@@ -3824,8 +3890,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 58176.0,
-    "totalPayoutVolume": 832409.0,
-    "settlementCount": 52,
+    "totalPayoutVolume": 847139.0,
+    "settlementCount": 53,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -3835,10 +3901,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "6a0c06019fc5040013e15958": {
     "creatorId": "6a0c06019fc5040013e15958",
@@ -3919,8 +3986,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 18435.0,
-    "totalPayoutVolume": 473864.0,
-    "settlementCount": 51,
+    "totalPayoutVolume": 478716.0,
+    "settlementCount": 52,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -3930,10 +3997,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "64bb165840c1fd0020968d09": {
     "creatorId": "64bb165840c1fd0020968d09",
@@ -3952,18 +4020,19 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 15488.0,
-    "totalPayoutVolume": 214812.0,
-    "settlementCount": 17,
+    "totalPayoutVolume": 216611.0,
+    "settlementCount": 18,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
       "2026-08-31",
       "2026-09-02",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "68d153ca102bc30013eccc3d": {
     "creatorId": "68d153ca102bc30013eccc3d",
@@ -4013,8 +4082,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 29222.0,
-    "totalPayoutVolume": 431749.0,
-    "settlementCount": 38,
+    "totalPayoutVolume": 435680.0,
+    "settlementCount": 39,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -4023,10 +4092,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "65c3663e3dcad5001eb93f97": {
     "creatorId": "65c3663e3dcad5001eb93f97",
@@ -4072,8 +4142,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 35080.0,
-    "totalPayoutVolume": 816341.0,
-    "settlementCount": 38,
+    "totalPayoutVolume": 820247.0,
+    "settlementCount": 39,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -4082,10 +4152,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "6861859e611efd0013dc2d7c": {
     "creatorId": "6861859e611efd0013dc2d7c",
@@ -4104,8 +4175,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 34334.0,
-    "totalPayoutVolume": 652739.0,
-    "settlementCount": 52,
+    "totalPayoutVolume": 663030.0,
+    "settlementCount": 53,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -4115,10 +4186,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "6a4770db86ff0b0013184b24": {
     "creatorId": "6a4770db86ff0b0013184b24",
@@ -4164,9 +4236,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 35835.0,
-    "totalPayoutVolume": 1298045.0,
-    "settlementCount": 52,
+    "highestPayoutAmount": 51674.0,
+    "totalPayoutVolume": 1349719.0,
+    "settlementCount": 53,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -4176,10 +4248,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "63523e0eb32e743e3a8ee56b": {
     "creatorId": "63523e0eb32e743e3a8ee56b",
@@ -4356,8 +4429,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 27761.0,
-    "totalPayoutVolume": 788904.0,
-    "settlementCount": 47,
+    "totalPayoutVolume": 809719.0,
+    "settlementCount": 48,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -4366,10 +4439,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "68a6949d7552c60013b5e3b1": {
     "creatorId": "68a6949d7552c60013b5e3b1",
@@ -4388,8 +4462,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 22576.0,
-    "totalPayoutVolume": 712104.0,
-    "settlementCount": 52,
+    "totalPayoutVolume": 717748.0,
+    "settlementCount": 53,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -4399,10 +4473,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "64c7e110671a83001de0239f": {
     "creatorId": "64c7e110671a83001de0239f",
@@ -4421,8 +4496,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 56639.0,
-    "totalPayoutVolume": 1075159.0,
-    "settlementCount": 52,
+    "totalPayoutVolume": 1077113.0,
+    "settlementCount": 53,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -4431,10 +4506,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "6a197f48f2ddeb0013cd989f": {
     "creatorId": "6a197f48f2ddeb0013cd989f",
@@ -4484,8 +4560,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 13848.0,
-    "totalPayoutVolume": 329921.0,
-    "settlementCount": 48,
+    "totalPayoutVolume": 332103.0,
+    "settlementCount": 49,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -4493,10 +4569,11 @@
       "2026-09-01",
       "2026-09-02",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "667ea64c49e2db00137a7828": {
     "creatorId": "667ea64c49e2db00137a7828",
@@ -4514,16 +4591,17 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 9704.0,
-    "totalPayoutVolume": 97040.0,
-    "settlementCount": 10,
+    "highestPayoutAmount": 9714.0,
+    "totalPayoutVolume": 106754.0,
+    "settlementCount": 11,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
-      "2026-08-31"
+      "2026-08-31",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-08-31"
+    "lastSeen": "2026-09-07"
   },
   "66cca74d36af210013ada343": {
     "creatorId": "66cca74d36af210013ada343",
@@ -4659,8 +4737,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 9470.0,
-    "totalPayoutVolume": 272918.0,
-    "settlementCount": 52,
+    "totalPayoutVolume": 276075.0,
+    "settlementCount": 53,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -4670,10 +4748,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "68c028c79760310013afe186": {
     "creatorId": "68c028c79760310013afe186",
@@ -4784,8 +4863,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 8847.0,
-    "totalPayoutVolume": 236107.0,
-    "settlementCount": 52,
+    "totalPayoutVolume": 238176.0,
+    "settlementCount": 53,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -4795,10 +4874,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "66536b9aca30a0001337eb70": {
     "creatorId": "66536b9aca30a0001337eb70",
@@ -4874,8 +4954,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 13541.0,
-    "totalPayoutVolume": 276239.0,
-    "settlementCount": 52,
+    "totalPayoutVolume": 280402.0,
+    "settlementCount": 53,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -4885,10 +4965,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "6a2c4c44c6fdeb001326b789": {
     "creatorId": "6a2c4c44c6fdeb001326b789",
@@ -4969,8 +5050,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 16166.0,
-    "totalPayoutVolume": 377903.0,
-    "settlementCount": 39,
+    "totalPayoutVolume": 381244.0,
+    "settlementCount": 40,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -4979,10 +5060,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "688317eedfa617001351288b": {
     "creatorId": "688317eedfa617001351288b",
@@ -5001,18 +5083,19 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 8561.0,
-    "totalPayoutVolume": 137811.0,
-    "settlementCount": 41,
+    "totalPayoutVolume": 139222.0,
+    "settlementCount": 42,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
       "2026-08-31",
       "2026-09-03",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "648d294f6becf40020f34b85": {
     "creatorId": "648d294f6becf40020f34b85",
@@ -5090,8 +5173,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 50155.0,
-    "totalPayoutVolume": 1068955.0,
-    "settlementCount": 52,
+    "totalPayoutVolume": 1073806.0,
+    "settlementCount": 53,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -5101,10 +5184,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "682b01ebf6370e0013a4a4b5": {
     "creatorId": "682b01ebf6370e0013a4a4b5",
@@ -5122,9 +5206,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 12058.0,
-    "totalPayoutVolume": 182313.0,
-    "settlementCount": 22,
+    "highestPayoutAmount": 13504.0,
+    "totalPayoutVolume": 195817.0,
+    "settlementCount": 23,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -5132,10 +5216,11 @@
       "2026-09-01",
       "2026-09-02",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "63ad25d5e0023900370deae4": {
     "creatorId": "63ad25d5e0023900370deae4",
@@ -5154,8 +5239,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 11619.0,
-    "totalPayoutVolume": 234979.0,
-    "settlementCount": 34,
+    "totalPayoutVolume": 241397.0,
+    "settlementCount": 35,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -5163,10 +5248,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "66eecfcebce5f30013f7e375": {
     "creatorId": "66eecfcebce5f30013f7e375",
@@ -5212,8 +5298,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 27294.0,
-    "totalPayoutVolume": 751072.0,
-    "settlementCount": 40,
+    "totalPayoutVolume": 764736.0,
+    "settlementCount": 41,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -5223,10 +5309,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "687a07838aeacf0013a9f58c": {
     "creatorId": "687a07838aeacf0013a9f58c",
@@ -5308,8 +5395,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 17796.0,
-    "totalPayoutVolume": 272235.0,
-    "settlementCount": 26,
+    "totalPayoutVolume": 273933.0,
+    "settlementCount": 27,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -5318,10 +5405,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "629f4ee8b583721ed9a17e2a": {
     "creatorId": "629f4ee8b583721ed9a17e2a",
@@ -5367,8 +5455,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 21731.0,
-    "totalPayoutVolume": 418454.0,
-    "settlementCount": 38,
+    "totalPayoutVolume": 426010.0,
+    "settlementCount": 39,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -5377,10 +5465,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "6537b227539ccb001fb01744": {
     "creatorId": "6537b227539ccb001fb01744",
@@ -5398,16 +5487,17 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 7525.0,
-    "totalPayoutVolume": 75250.0,
-    "settlementCount": 10,
+    "highestPayoutAmount": 10441.0,
+    "totalPayoutVolume": 85691.0,
+    "settlementCount": 11,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
-      "2026-08-31"
+      "2026-08-31",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-08-31"
+    "lastSeen": "2026-09-07"
   },
   "63e79efafb1d710033a11eab": {
     "creatorId": "63e79efafb1d710033a11eab",
@@ -5426,8 +5516,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 12786.0,
-    "totalPayoutVolume": 280442.0,
-    "settlementCount": 39,
+    "totalPayoutVolume": 282303.0,
+    "settlementCount": 40,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -5436,10 +5526,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "67974ec5d4d95b00146607d1": {
     "creatorId": "67974ec5d4d95b00146607d1",
@@ -5458,8 +5549,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 15532.0,
-    "totalPayoutVolume": 335645.0,
-    "settlementCount": 51,
+    "totalPayoutVolume": 344379.0,
+    "settlementCount": 52,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -5469,10 +5560,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "6820dd031afe190013b02381": {
     "creatorId": "6820dd031afe190013b02381",
@@ -5491,8 +5583,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 195176.0,
-    "totalPayoutVolume": 1703495.0,
-    "settlementCount": 38,
+    "totalPayoutVolume": 1705066.0,
+    "settlementCount": 39,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -5501,10 +5593,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "61ad9a66de18c31fc55326dd": {
     "creatorId": "61ad9a66de18c31fc55326dd",
@@ -5523,8 +5616,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 50870.0,
-    "totalPayoutVolume": 628389.0,
-    "settlementCount": 48,
+    "totalPayoutVolume": 648248.0,
+    "settlementCount": 49,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -5533,10 +5626,11 @@
       "2026-09-02",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "63fb291aa9d0f4001fb12fd3": {
     "creatorId": "63fb291aa9d0f4001fb12fd3",
@@ -5555,8 +5649,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 36880.0,
-    "totalPayoutVolume": 913051.0,
-    "settlementCount": 39,
+    "totalPayoutVolume": 947207.0,
+    "settlementCount": 40,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -5565,10 +5659,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "6a02c476d9ec6e0013ad810e": {
     "creatorId": "6a02c476d9ec6e0013ad810e",
@@ -5706,17 +5801,18 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 16248.0,
-    "totalPayoutVolume": 164238.0,
-    "settlementCount": 17,
+    "totalPayoutVolume": 170908.0,
+    "settlementCount": 18,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
       "2026-08-31",
       "2026-09-02",
-      "2026-09-03"
+      "2026-09-03",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-03"
+    "lastSeen": "2026-09-07"
   },
   "64a520adc6f02f00209d9697": {
     "creatorId": "64a520adc6f02f00209d9697",
@@ -5735,8 +5831,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 17124.0,
-    "totalPayoutVolume": 397305.0,
-    "settlementCount": 51,
+    "totalPayoutVolume": 400162.0,
+    "settlementCount": 52,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -5746,10 +5842,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "64b0fcd06794f2002a008a24": {
     "creatorId": "64b0fcd06794f2002a008a24",
@@ -5795,8 +5892,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 6585.0,
-    "totalPayoutVolume": 104891.0,
-    "settlementCount": 21,
+    "totalPayoutVolume": 107244.0,
+    "settlementCount": 22,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -5804,10 +5901,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "695227b072594f0013d75520": {
     "creatorId": "695227b072594f0013d75520",
@@ -5883,18 +5981,19 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 6469.0,
-    "totalPayoutVolume": 128541.0,
-    "settlementCount": 29,
+    "totalPayoutVolume": 130544.0,
+    "settlementCount": 30,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
       "2026-08-31",
       "2026-09-02",
       "2026-09-03",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "6368993ad14cf500377cf057": {
     "creatorId": "6368993ad14cf500377cf057",
@@ -5999,8 +6098,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 10989.0,
-    "totalPayoutVolume": 240045.0,
-    "settlementCount": 52,
+    "totalPayoutVolume": 247741.0,
+    "settlementCount": 53,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -6010,10 +6109,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "6a27eb1c70bfd600133e21ab": {
     "creatorId": "6a27eb1c70bfd600133e21ab",
@@ -6063,8 +6163,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 36417.0,
-    "totalPayoutVolume": 695685.0,
-    "settlementCount": 52,
+    "totalPayoutVolume": 704530.0,
+    "settlementCount": 53,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -6074,10 +6174,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "6713c62afde99a001346c50c": {
     "creatorId": "6713c62afde99a001346c50c",
@@ -6155,8 +6256,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 14410.0,
-    "totalPayoutVolume": 358776.0,
-    "settlementCount": 36,
+    "totalPayoutVolume": 368839.0,
+    "settlementCount": 37,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -6164,10 +6265,11 @@
       "2026-09-01",
       "2026-09-02",
       "2026-09-03",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "65684423d7de9b001e28daa2": {
     "creatorId": "65684423d7de9b001e28daa2",
@@ -6186,8 +6288,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 41270.0,
-    "totalPayoutVolume": 474971.0,
-    "settlementCount": 52,
+    "totalPayoutVolume": 500198.0,
+    "settlementCount": 53,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -6197,10 +6299,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "636504cb207719003705c089": {
     "creatorId": "636504cb207719003705c089",
@@ -6219,8 +6322,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 25381.0,
-    "totalPayoutVolume": 596911.0,
-    "settlementCount": 52,
+    "totalPayoutVolume": 599352.0,
+    "settlementCount": 53,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -6230,10 +6333,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "6784b631154f750013a08f96": {
     "creatorId": "6784b631154f750013a08f96",
@@ -6278,9 +6382,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 5834.0,
-    "totalPayoutVolume": 146416.0,
-    "settlementCount": 46,
+    "highestPayoutAmount": 7810.0,
+    "totalPayoutVolume": 154226.0,
+    "settlementCount": 47,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -6289,10 +6393,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "65b5bc2daa6275001da0c01d": {
     "creatorId": "65b5bc2daa6275001da0c01d",
@@ -6311,8 +6416,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 18517.0,
-    "totalPayoutVolume": 346328.0,
-    "settlementCount": 48,
+    "totalPayoutVolume": 351105.0,
+    "settlementCount": 49,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -6321,10 +6426,11 @@
       "2026-09-02",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "648f53edccfdc8002aff354d": {
     "creatorId": "648f53edccfdc8002aff354d",
@@ -6403,8 +6509,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 35996.0,
-    "totalPayoutVolume": 847685.0,
-    "settlementCount": 47,
+    "totalPayoutVolume": 853084.0,
+    "settlementCount": 48,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -6413,10 +6519,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "65237580a4e730001df28da0": {
     "creatorId": "65237580a4e730001df28da0",
@@ -6464,16 +6571,17 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 5216.0,
-    "totalPayoutVolume": 88014.0,
-    "settlementCount": 17,
+    "totalPayoutVolume": 93230.0,
+    "settlementCount": 18,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
       "2026-08-31",
-      "2026-09-01"
+      "2026-09-01",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-01"
+    "lastSeen": "2026-09-07"
   },
   "641d5f230b2bd4001f31f7e2": {
     "creatorId": "641d5f230b2bd4001f31f7e2",
@@ -6492,15 +6600,16 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 5176.0,
-    "totalPayoutVolume": 51760.0,
-    "settlementCount": 10,
+    "totalPayoutVolume": 53641.0,
+    "settlementCount": 11,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
-      "2026-08-31"
+      "2026-08-31",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-08-31"
+    "lastSeen": "2026-09-07"
   },
   "66ee729bd79b93001398cff0": {
     "creatorId": "66ee729bd79b93001398cff0",
@@ -6519,18 +6628,19 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 5174.0,
-    "totalPayoutVolume": 66131.0,
-    "settlementCount": 18,
+    "totalPayoutVolume": 69235.0,
+    "settlementCount": 19,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
       "2026-08-31",
       "2026-09-02",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "686cef6b09eb2c00131be425": {
     "creatorId": "686cef6b09eb2c00131be425",
@@ -6582,8 +6692,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 14646.0,
-    "totalPayoutVolume": 244034.0,
-    "settlementCount": 51,
+    "totalPayoutVolume": 245987.0,
+    "settlementCount": 52,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -6593,10 +6703,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "69b39a0489520f0013d83fae": {
     "creatorId": "69b39a0489520f0013d83fae",
@@ -6615,17 +6726,18 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 13667.0,
-    "totalPayoutVolume": 255586.0,
-    "settlementCount": 28,
+    "totalPayoutVolume": 264341.0,
+    "settlementCount": 29,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
       "2026-08-31",
       "2026-09-03",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "64ab6b8673ab82002b92ef6a": {
     "creatorId": "64ab6b8673ab82002b92ef6a",
@@ -6676,15 +6788,16 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 4852.0,
-    "totalPayoutVolume": 48520.0,
-    "settlementCount": 10,
+    "totalPayoutVolume": 52401.0,
+    "settlementCount": 11,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
-      "2026-08-31"
+      "2026-08-31",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-08-31"
+    "lastSeen": "2026-09-07"
   },
   "654f049b0ce920001de81c27": {
     "creatorId": "654f049b0ce920001de81c27",
@@ -6850,18 +6963,19 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 4703.0,
-    "totalPayoutVolume": 74877.0,
-    "settlementCount": 22,
+    "totalPayoutVolume": 77229.0,
+    "settlementCount": 23,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
       "2026-08-31",
       "2026-09-01",
       "2026-09-02",
-      "2026-09-03"
+      "2026-09-03",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-03"
+    "lastSeen": "2026-09-07"
   },
   "6708183b3a97c6001355987d": {
     "creatorId": "6708183b3a97c6001355987d",
@@ -6880,8 +6994,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 19107.0,
-    "totalPayoutVolume": 408953.0,
-    "settlementCount": 47,
+    "totalPayoutVolume": 417294.0,
+    "settlementCount": 48,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -6890,10 +7004,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "665d5dcb6344720013cb4e40": {
     "creatorId": "665d5dcb6344720013cb4e40",
@@ -6939,16 +7054,17 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 4373.0,
-    "totalPayoutVolume": 56414.0,
-    "settlementCount": 18,
+    "totalPayoutVolume": 60316.0,
+    "settlementCount": 19,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
       "2026-08-31",
-      "2026-09-01"
+      "2026-09-01",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-01"
+    "lastSeen": "2026-09-07"
   },
   "62e2324735c9e35b636f78f4": {
     "creatorId": "62e2324735c9e35b636f78f4",
@@ -6999,8 +7115,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 211523.0,
-    "totalPayoutVolume": 2489100.0,
-    "settlementCount": 51,
+    "totalPayoutVolume": 2507162.0,
+    "settlementCount": 52,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -7010,10 +7126,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "66706294ffe48100138b663d": {
     "creatorId": "66706294ffe48100138b663d",
@@ -7060,8 +7177,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 27472.0,
-    "totalPayoutVolume": 503250.0,
-    "settlementCount": 57,
+    "totalPayoutVolume": 528789.0,
+    "settlementCount": 58,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -7071,10 +7188,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "698960d575efa100133dc34a": {
     "creatorId": "698960d575efa100133dc34a",
@@ -7156,8 +7274,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 39193.0,
-    "totalPayoutVolume": 445652.0,
-    "settlementCount": 40,
+    "totalPayoutVolume": 454960.0,
+    "settlementCount": 41,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -7167,10 +7285,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "6489d203d28234002a3b5e54": {
     "creatorId": "6489d203d28234002a3b5e54",
@@ -7189,8 +7308,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 21350.0,
-    "totalPayoutVolume": 314702.0,
-    "settlementCount": 52,
+    "totalPayoutVolume": 321150.0,
+    "settlementCount": 53,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -7200,10 +7319,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "68b8146651190f0013db1745": {
     "creatorId": "68b8146651190f0013db1745",
@@ -7222,18 +7342,19 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 30867.0,
-    "totalPayoutVolume": 274866.0,
-    "settlementCount": 31,
+    "totalPayoutVolume": 286512.0,
+    "settlementCount": 32,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
       "2026-08-31",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "67a5b6121602340013351a38": {
     "creatorId": "67a5b6121602340013351a38",
@@ -7431,18 +7552,19 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 4893.0,
-    "totalPayoutVolume": 124963.0,
-    "settlementCount": 34,
+    "totalPayoutVolume": 126469.0,
+    "settlementCount": 35,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
       "2026-08-31",
       "2026-09-01",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "677d0628221dc40013a45c7c": {
     "creatorId": "677d0628221dc40013a45c7c",
@@ -7554,9 +7676,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 27418.0,
-    "totalPayoutVolume": 517311.0,
-    "settlementCount": 36,
+    "highestPayoutAmount": 41114.0,
+    "totalPayoutVolume": 558425.0,
+    "settlementCount": 37,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -7565,10 +7687,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "665459ddb0ccbd0013a77dff": {
     "creatorId": "665459ddb0ccbd0013a77dff",
@@ -7679,17 +7802,18 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 13890.0,
-    "totalPayoutVolume": 275098.0,
-    "settlementCount": 26,
+    "totalPayoutVolume": 288024.0,
+    "settlementCount": 27,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
       "2026-08-31",
       "2026-09-03",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "66ba3fd39dbbdf001363534e": {
     "creatorId": "66ba3fd39dbbdf001363534e",
@@ -7737,8 +7861,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 33294.0,
-    "totalPayoutVolume": 592520.0,
-    "settlementCount": 38,
+    "totalPayoutVolume": 596330.0,
+    "settlementCount": 39,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -7747,10 +7871,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "687a06ae1f7e7c0013f19663": {
     "creatorId": "687a06ae1f7e7c0013f19663",
@@ -7864,9 +7989,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 15081.0,
-    "totalPayoutVolume": 335419.0,
-    "settlementCount": 46,
+    "highestPayoutAmount": 15310.0,
+    "totalPayoutVolume": 350729.0,
+    "settlementCount": 47,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -7875,10 +8000,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "65a90a5ae65236001ea8a365": {
     "creatorId": "65a90a5ae65236001ea8a365",
@@ -7897,8 +8023,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 21056.0,
-    "totalPayoutVolume": 277889.0,
-    "settlementCount": 36,
+    "totalPayoutVolume": 281318.0,
+    "settlementCount": 37,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -7907,10 +8033,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "6a1c066a2f39710013bf75e9": {
     "creatorId": "6a1c066a2f39710013bf75e9",
@@ -7929,8 +8056,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 7825.0,
-    "totalPayoutVolume": 192243.0,
-    "settlementCount": 56,
+    "totalPayoutVolume": 195306.0,
+    "settlementCount": 57,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -7940,10 +8067,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "68468648e8c2e8001376f962": {
     "creatorId": "68468648e8c2e8001376f962",
@@ -8026,18 +8154,19 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 8399.0,
-    "totalPayoutVolume": 81166.0,
-    "settlementCount": 30,
+    "totalPayoutVolume": 88532.0,
+    "settlementCount": 31,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
       "2026-08-31",
       "2026-09-01",
       "2026-09-02",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "6478f24bd858f1002029d016": {
     "creatorId": "6478f24bd858f1002029d016",
@@ -8056,8 +8185,8 @@
     "sebiRegistrationNumber": "INH000019017",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 41300.0,
-    "totalPayoutVolume": 252614.0,
-    "settlementCount": 35,
+    "totalPayoutVolume": 255507.0,
+    "settlementCount": 36,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -8065,10 +8194,11 @@
       "2026-09-01",
       "2026-09-02",
       "2026-09-03",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "65aa4e493c74f1001e4eab0f": {
     "creatorId": "65aa4e493c74f1001e4eab0f",
@@ -8115,8 +8245,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 20991.0,
-    "totalPayoutVolume": 405096.0,
-    "settlementCount": 51,
+    "totalPayoutVolume": 414799.0,
+    "settlementCount": 52,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -8126,10 +8256,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "62d77bd19422e201cc3af7c7": {
     "creatorId": "62d77bd19422e201cc3af7c7",
@@ -8148,15 +8279,16 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 2911.0,
-    "totalPayoutVolume": 23288.0,
-    "settlementCount": 8,
+    "totalPayoutVolume": 26199.0,
+    "settlementCount": 9,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
-      "2026-08-31"
+      "2026-08-31",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-08-31"
+    "lastSeen": "2026-09-07"
   },
   "680cbbd5828a580013dd5a2d": {
     "creatorId": "680cbbd5828a580013dd5a2d",
@@ -8321,18 +8453,19 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 6666.0,
-    "totalPayoutVolume": 134753.0,
-    "settlementCount": 29,
+    "totalPayoutVolume": 136658.0,
+    "settlementCount": 30,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
       "2026-08-31",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "6a3f74be57b8cb0013b3275b": {
     "creatorId": "6a3f74be57b8cb0013b3275b",
@@ -8383,8 +8516,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 13645.0,
-    "totalPayoutVolume": 247027.0,
-    "settlementCount": 38,
+    "totalPayoutVolume": 252673.0,
+    "settlementCount": 39,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -8393,10 +8526,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "6a100cef9fe3f3001288dbfc": {
     "creatorId": "6a100cef9fe3f3001288dbfc",
@@ -8473,17 +8607,18 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 2822.0,
-    "totalPayoutVolume": 45828.0,
-    "settlementCount": 23,
+    "totalPayoutVolume": 47424.0,
+    "settlementCount": 24,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
       "2026-08-31",
       "2026-09-02",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "69b6f9270a70680013a79bde": {
     "creatorId": "69b6f9270a70680013a79bde",
@@ -8502,8 +8637,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 8464.0,
-    "totalPayoutVolume": 140500.0,
-    "settlementCount": 37,
+    "totalPayoutVolume": 142380.0,
+    "settlementCount": 38,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -8512,10 +8647,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "62c838b96177d8196d7b091a": {
     "creatorId": "62c838b96177d8196d7b091a",
@@ -8565,16 +8701,17 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 2744.0,
-    "totalPayoutVolume": 30499.0,
-    "settlementCount": 15,
+    "totalPayoutVolume": 32120.0,
+    "settlementCount": 16,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
       "2026-08-31",
-      "2026-09-01"
+      "2026-09-01",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-01"
+    "lastSeen": "2026-09-07"
   },
   "6800c3e7ace39a0013cc546a": {
     "creatorId": "6800c3e7ace39a0013cc546a",
@@ -8593,8 +8730,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 3306.0,
-    "totalPayoutVolume": 96674.0,
-    "settlementCount": 39,
+    "totalPayoutVolume": 98571.0,
+    "settlementCount": 40,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -8604,10 +8741,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "6545f8d94b4aeb001f659e30": {
     "creatorId": "6545f8d94b4aeb001f659e30",
@@ -8626,8 +8764,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 19981.0,
-    "totalPayoutVolume": 385964.0,
-    "settlementCount": 50,
+    "totalPayoutVolume": 394116.0,
+    "settlementCount": 51,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -8637,10 +8775,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "62d1310e0178fa29153d1f09": {
     "creatorId": "62d1310e0178fa29153d1f09",
@@ -8691,8 +8830,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 27076.0,
-    "totalPayoutVolume": 484006.0,
-    "settlementCount": 49,
+    "totalPayoutVolume": 488945.0,
+    "settlementCount": 50,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -8702,10 +8841,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "647aaeb0bc5c8a0020c70e63": {
     "creatorId": "647aaeb0bc5c8a0020c70e63",
@@ -8724,8 +8864,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 10127.0,
-    "totalPayoutVolume": 183639.0,
-    "settlementCount": 43,
+    "totalPayoutVolume": 187060.0,
+    "settlementCount": 44,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -8733,10 +8873,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "63ad899b2b044c0037cb650c": {
     "creatorId": "63ad899b2b044c0037cb650c",
@@ -8814,8 +8955,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 11226.0,
-    "totalPayoutVolume": 123742.0,
-    "settlementCount": 25,
+    "totalPayoutVolume": 126182.0,
+    "settlementCount": 26,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -8824,10 +8965,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "65ae7ab14009dd001dce5f32": {
     "creatorId": "65ae7ab14009dd001dce5f32",
@@ -8846,8 +8988,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 34930.0,
-    "totalPayoutVolume": 544057.0,
-    "settlementCount": 41,
+    "totalPayoutVolume": 557015.0,
+    "settlementCount": 42,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -8855,10 +8997,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "6325d0f3770ec476f4cfc1f7": {
     "creatorId": "6325d0f3770ec476f4cfc1f7",
@@ -9057,16 +9200,17 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 3525.0,
-    "totalPayoutVolume": 31443.0,
-    "settlementCount": 16,
+    "totalPayoutVolume": 32853.0,
+    "settlementCount": 17,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
       "2026-08-31",
-      "2026-09-01"
+      "2026-09-01",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-01"
+    "lastSeen": "2026-09-07"
   },
   "69cf57311a016000135458b0": {
     "creatorId": "69cf57311a016000135458b0",
@@ -9117,8 +9261,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 6529.0,
-    "totalPayoutVolume": 180575.0,
-    "settlementCount": 46,
+    "totalPayoutVolume": 183451.0,
+    "settlementCount": 47,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -9127,10 +9271,11 @@
       "2026-09-02",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "6798f85f9c782900139f3bb6": {
     "creatorId": "6798f85f9c782900139f3bb6",
@@ -9179,8 +9324,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 5496.0,
-    "totalPayoutVolume": 154253.0,
-    "settlementCount": 41,
+    "totalPayoutVolume": 156374.0,
+    "settlementCount": 42,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -9188,10 +9333,11 @@
       "2026-09-02",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "6a53897d6a98bd00149d8cb1": {
     "creatorId": "6a53897d6a98bd00149d8cb1",
@@ -9243,18 +9389,19 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 14158.0,
-    "totalPayoutVolume": 139181.0,
-    "settlementCount": 29,
+    "totalPayoutVolume": 145528.0,
+    "settlementCount": 30,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
       "2026-08-31",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "653aa2aed87cd0001e6f4b77": {
     "creatorId": "653aa2aed87cd0001e6f4b77",
@@ -9304,8 +9451,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 5674.0,
-    "totalPayoutVolume": 187271.0,
-    "settlementCount": 51,
+    "totalPayoutVolume": 190416.0,
+    "settlementCount": 52,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -9315,10 +9462,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "6252e1d8456e9d46fde5ea47": {
     "creatorId": "6252e1d8456e9d46fde5ea47",
@@ -9337,8 +9485,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 8893.0,
-    "totalPayoutVolume": 244678.0,
-    "settlementCount": 45,
+    "totalPayoutVolume": 253501.0,
+    "settlementCount": 46,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -9346,10 +9494,11 @@
       "2026-09-01",
       "2026-09-03",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "68f5e1cdf03b9000131c0fc2": {
     "creatorId": "68f5e1cdf03b9000131c0fc2",
@@ -9428,8 +9577,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 25014.0,
-    "totalPayoutVolume": 354455.0,
-    "settlementCount": 33,
+    "totalPayoutVolume": 363385.0,
+    "settlementCount": 34,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -9437,10 +9586,11 @@
       "2026-09-01",
       "2026-09-02",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "628dee579a6375439f68bb26": {
     "creatorId": "628dee579a6375439f68bb26",
@@ -9459,8 +9609,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 13860.0,
-    "totalPayoutVolume": 185885.0,
-    "settlementCount": 47,
+    "totalPayoutVolume": 187838.0,
+    "settlementCount": 48,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -9469,10 +9619,11 @@
       "2026-09-02",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "65473a7f3fad8004611cb71e": {
     "creatorId": "65473a7f3fad8004611cb71e",
@@ -9491,8 +9642,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 13563.0,
-    "totalPayoutVolume": 242516.0,
-    "settlementCount": 50,
+    "totalPayoutVolume": 247398.0,
+    "settlementCount": 51,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -9502,10 +9653,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "6a547a7c98b0560013013abd": {
     "creatorId": "6a547a7c98b0560013013abd",
@@ -9616,8 +9768,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 2863.0,
-    "totalPayoutVolume": 98177.0,
-    "settlementCount": 50,
+    "totalPayoutVolume": 99358.0,
+    "settlementCount": 51,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -9627,10 +9779,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "642b8701766534001ff836cf": {
     "creatorId": "642b8701766534001ff836cf",
@@ -9648,19 +9801,20 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 8084.0,
-    "totalPayoutVolume": 48314.0,
-    "settlementCount": 22,
+    "highestPayoutAmount": 9573.0,
+    "totalPayoutVolume": 57887.0,
+    "settlementCount": 23,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
       "2026-08-31",
       "2026-09-01",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "64f7f2c441cc54001fbe7491": {
     "creatorId": "64f7f2c441cc54001fbe7491",
@@ -9708,8 +9862,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 3762.0,
-    "totalPayoutVolume": 45120.0,
-    "settlementCount": 21,
+    "totalPayoutVolume": 46247.0,
+    "settlementCount": 22,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -9717,10 +9871,11 @@
       "2026-09-01",
       "2026-09-02",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "6981d41125307400137323ec": {
     "creatorId": "6981d41125307400137323ec",
@@ -9799,15 +9954,16 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1832.0,
-    "totalPayoutVolume": 15716.0,
-    "settlementCount": 9,
+    "totalPayoutVolume": 17548.0,
+    "settlementCount": 10,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
-      "2026-08-31"
+      "2026-08-31",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-08-31"
+    "lastSeen": "2026-09-07"
   },
   "644bf3523e20660020c9b69d": {
     "creatorId": "644bf3523e20660020c9b69d",
@@ -9825,17 +9981,18 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 3498.0,
-    "totalPayoutVolume": 35658.0,
-    "settlementCount": 15,
+    "highestPayoutAmount": 3622.0,
+    "totalPayoutVolume": 39280.0,
+    "settlementCount": 16,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
       "2026-08-31",
-      "2026-09-03"
+      "2026-09-03",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-03"
+    "lastSeen": "2026-09-07"
   },
   "687f538e23947700130cd9cc": {
     "creatorId": "687f538e23947700130cd9cc",
@@ -9912,8 +10069,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 60916.0,
-    "totalPayoutVolume": 1408898.0,
-    "settlementCount": 44,
+    "totalPayoutVolume": 1418720.0,
+    "settlementCount": 45,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -9922,10 +10079,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "656f190c85e895001e492ba2": {
     "creatorId": "656f190c85e895001e492ba2",
@@ -9944,18 +10102,19 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 24263.0,
-    "totalPayoutVolume": 157983.0,
-    "settlementCount": 30,
+    "totalPayoutVolume": 159535.0,
+    "settlementCount": 31,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
       "2026-08-31",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "646373ce6cbb8200207efe77": {
     "creatorId": "646373ce6cbb8200207efe77",
@@ -10057,9 +10216,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 9028.0,
-    "totalPayoutVolume": 155543.0,
-    "settlementCount": 31,
+    "highestPayoutAmount": 12437.0,
+    "totalPayoutVolume": 167980.0,
+    "settlementCount": 32,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -10067,10 +10226,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "62357fa202100543e97a25fa": {
     "creatorId": "62357fa202100543e97a25fa",
@@ -10148,18 +10308,19 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 8132.0,
-    "totalPayoutVolume": 85767.0,
-    "settlementCount": 29,
+    "totalPayoutVolume": 89001.0,
+    "settlementCount": 30,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
       "2026-08-31",
       "2026-09-01",
       "2026-09-02",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "69e89b0ed9ffde0013e31879": {
     "creatorId": "69e89b0ed9ffde0013e31879",
@@ -10209,17 +10370,18 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 5834.0,
-    "totalPayoutVolume": 35199.0,
-    "settlementCount": 15,
+    "totalPayoutVolume": 37175.0,
+    "settlementCount": 16,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
       "2026-08-31",
       "2026-09-01",
-      "2026-09-02"
+      "2026-09-02",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-02"
+    "lastSeen": "2026-09-07"
   },
   "6986dbd1350e1a0014cdbba8": {
     "creatorId": "6986dbd1350e1a0014cdbba8",
@@ -10238,8 +10400,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 2821.0,
-    "totalPayoutVolume": 57844.0,
-    "settlementCount": 34,
+    "totalPayoutVolume": 59255.0,
+    "settlementCount": 35,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -10248,10 +10410,11 @@
       "2026-09-02",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "67d06a60fac4900013f6e7c8": {
     "creatorId": "67d06a60fac4900013f6e7c8",
@@ -10270,17 +10433,18 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 5643.0,
-    "totalPayoutVolume": 49380.0,
-    "settlementCount": 20,
+    "totalPayoutVolume": 50791.0,
+    "settlementCount": 21,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
       "2026-08-31",
       "2026-09-01",
-      "2026-09-03"
+      "2026-09-03",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-03"
+    "lastSeen": "2026-09-07"
   },
   "66310a2d8235ac00139e18a0": {
     "creatorId": "66310a2d8235ac00139e18a0",
@@ -10299,18 +10463,19 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 2631.0,
-    "totalPayoutVolume": 41255.0,
-    "settlementCount": 29,
+    "totalPayoutVolume": 43228.0,
+    "settlementCount": 30,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
       "2026-08-31",
       "2026-09-01",
       "2026-09-02",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "6a801c20fe7cb80013708271": {
     "creatorId": "6a801c20fe7cb80013708271",
@@ -10476,8 +10641,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 33182.0,
-    "totalPayoutVolume": 303661.0,
-    "settlementCount": 20,
+    "totalPayoutVolume": 308677.0,
+    "settlementCount": 21,
     "datesSeen": [
       "2026-08-27",
       "2026-08-28",
@@ -10485,10 +10650,11 @@
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-27",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "65132965f4d0b1001eba9b70": {
     "creatorId": "65132965f4d0b1001eba9b70",
@@ -10706,18 +10872,19 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 17525.0,
-    "totalPayoutVolume": 335356.0,
-    "settlementCount": 32,
+    "totalPayoutVolume": 337128.0,
+    "settlementCount": 33,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01",
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "634d5391849d61541ff6cd18": {
     "creatorId": "634d5391849d61541ff6cd18",
@@ -10762,18 +10929,19 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 26050.0,
-    "totalPayoutVolume": 492992.0,
-    "settlementCount": 31,
+    "totalPayoutVolume": 496429.0,
+    "settlementCount": 32,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01",
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "673b7c6178dc700013ad956d": {
     "creatorId": "673b7c6178dc700013ad956d",
@@ -10844,18 +11012,19 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 43416.0,
-    "totalPayoutVolume": 216333.0,
-    "settlementCount": 31,
+    "totalPayoutVolume": 217788.0,
+    "settlementCount": 32,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01",
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "6384e99de7291200319784c0": {
     "creatorId": "6384e99de7291200319784c0",
@@ -10899,8 +11068,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 22402.0,
-    "totalPayoutVolume": 630005.0,
-    "settlementCount": 44,
+    "totalPayoutVolume": 648477.0,
+    "settlementCount": 45,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01",
@@ -10908,10 +11077,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "65364004f28141001e752bd2": {
     "creatorId": "65364004f28141001e752bd2",
@@ -10958,16 +11128,17 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 17393.0,
-    "totalPayoutVolume": 262399.0,
-    "settlementCount": 23,
+    "totalPayoutVolume": 274951.0,
+    "settlementCount": 24,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01",
       "2026-09-02",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "65ebfc1dfb9df60013976ba6": {
     "creatorId": "65ebfc1dfb9df60013976ba6",
@@ -11011,17 +11182,18 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 16531.0,
-    "totalPayoutVolume": 291061.0,
-    "settlementCount": 27,
+    "totalPayoutVolume": 301793.0,
+    "settlementCount": 28,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01",
       "2026-09-02",
       "2026-09-03",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "65aa7654460ef2001d58c405": {
     "creatorId": "65aa7654460ef2001d58c405",
@@ -11040,8 +11212,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 32262.0,
-    "totalPayoutVolume": 692137.0,
-    "settlementCount": 44,
+    "totalPayoutVolume": 696653.0,
+    "settlementCount": 45,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01",
@@ -11049,10 +11221,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "667c078d8a21550013342f58": {
     "creatorId": "667c078d8a21550013342f58",
@@ -11097,17 +11270,18 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 48595.0,
-    "totalPayoutVolume": 975587.0,
-    "settlementCount": 25,
+    "totalPayoutVolume": 987791.0,
+    "settlementCount": 26,
     "datesSeen": [
       "2026-08-31",
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "64c187f9fe49f3001ef0c17f": {
     "creatorId": "64c187f9fe49f3001ef0c17f",
@@ -11209,18 +11383,19 @@
     "sebiVerificationStatus": "Verified",
     "sebiRegistrationNumber": "INH000010672",
     "reviewStatus": "Normal",
-    "highestPayoutAmount": 18578.0,
-    "totalPayoutVolume": 296583.0,
-    "settlementCount": 27,
+    "highestPayoutAmount": 26681.0,
+    "totalPayoutVolume": 323264.0,
+    "settlementCount": 28,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "670f725bcfaab800136536fc": {
     "creatorId": "670f725bcfaab800136536fc",
@@ -11348,14 +11523,15 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 15622.0,
-    "totalPayoutVolume": 220534.0,
-    "settlementCount": 15,
+    "totalPayoutVolume": 235873.0,
+    "settlementCount": 16,
     "datesSeen": [
       "2026-08-31",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "663b5927b1d7040013ca5884": {
     "creatorId": "663b5927b1d7040013ca5884",
@@ -11373,16 +11549,17 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 7809.0,
-    "totalPayoutVolume": 81643.0,
-    "settlementCount": 14,
+    "highestPayoutAmount": 13670.0,
+    "totalPayoutVolume": 95313.0,
+    "settlementCount": 15,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01",
-      "2026-09-03"
+      "2026-09-03",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-03"
+    "lastSeen": "2026-09-07"
   },
   "674ae2008b9ead00138c4dba": {
     "creatorId": "674ae2008b9ead00138c4dba",
@@ -11401,18 +11578,19 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 47265.0,
-    "totalPayoutVolume": 772625.0,
-    "settlementCount": 27,
+    "totalPayoutVolume": 800596.0,
+    "settlementCount": 28,
     "datesSeen": [
       "2026-08-31",
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "66af260f98f2e50013c9b094": {
     "creatorId": "66af260f98f2e50013c9b094",
@@ -11431,17 +11609,18 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 14380.0,
-    "totalPayoutVolume": 203103.0,
-    "settlementCount": 25,
+    "totalPayoutVolume": 206635.0,
+    "settlementCount": 26,
     "datesSeen": [
       "2026-08-31",
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "6a6607150a242e0013ff0de8": {
     "creatorId": "6a6607150a242e0013ff0de8",
@@ -11574,13 +11753,14 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 5642.0,
-    "totalPayoutVolume": 16926.0,
-    "settlementCount": 3,
+    "totalPayoutVolume": 20060.0,
+    "settlementCount": 4,
     "datesSeen": [
-      "2026-08-31"
+      "2026-08-31",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-08-31"
+    "lastSeen": "2026-09-07"
   },
   "691b32dfef1f1c0013cb196d": {
     "creatorId": "691b32dfef1f1c0013cb196d",
@@ -11599,13 +11779,14 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 5533.0,
-    "totalPayoutVolume": 11066.0,
-    "settlementCount": 2,
+    "totalPayoutVolume": 12473.0,
+    "settlementCount": 3,
     "datesSeen": [
-      "2026-08-31"
+      "2026-08-31",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-08-31"
+    "lastSeen": "2026-09-07"
   },
   "6630cb412297f40013803174": {
     "creatorId": "6630cb412297f40013803174",
@@ -11649,18 +11830,19 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 5846.0,
-    "totalPayoutVolume": 94679.0,
-    "settlementCount": 31,
+    "highestPayoutAmount": 6169.0,
+    "totalPayoutVolume": 100848.0,
+    "settlementCount": 32,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "64dddecce570b0001ed6706e": {
     "creatorId": "64dddecce570b0001ed6706e",
@@ -11679,18 +11861,19 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 12745.0,
-    "totalPayoutVolume": 129990.0,
-    "settlementCount": 30,
+    "totalPayoutVolume": 137696.0,
+    "settlementCount": 31,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01",
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "6772979573de230013e8b9dd": {
     "creatorId": "6772979573de230013e8b9dd",
@@ -11709,8 +11892,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 26996.0,
-    "totalPayoutVolume": 449199.0,
-    "settlementCount": 44,
+    "totalPayoutVolume": 464553.0,
+    "settlementCount": 45,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01",
@@ -11718,10 +11901,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "6445dc7c221d340020b0e828": {
     "creatorId": "6445dc7c221d340020b0e828",
@@ -11740,8 +11924,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 32087.0,
-    "totalPayoutVolume": 663830.0,
-    "settlementCount": 44,
+    "totalPayoutVolume": 686642.0,
+    "settlementCount": 45,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01",
@@ -11749,10 +11933,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "68037dbe74e41e0013a09d90": {
     "creatorId": "68037dbe74e41e0013a09d90",
@@ -11796,13 +11981,14 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 4294.0,
-    "totalPayoutVolume": 8588.0,
-    "settlementCount": 2,
+    "totalPayoutVolume": 10084.0,
+    "settlementCount": 3,
     "datesSeen": [
-      "2026-08-31"
+      "2026-08-31",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-08-31"
+    "lastSeen": "2026-09-07"
   },
   "66f153fcbce5f30013159b4a": {
     "creatorId": "66f153fcbce5f30013159b4a",
@@ -11981,18 +12167,19 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 6873.0,
-    "totalPayoutVolume": 143153.0,
-    "settlementCount": 30,
+    "totalPayoutVolume": 149043.0,
+    "settlementCount": 31,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01",
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "674eeb8653258d0013c9a903": {
     "creatorId": "674eeb8653258d0013c9a903",
@@ -12035,14 +12222,15 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 3322.0,
-    "totalPayoutVolume": 9206.0,
-    "settlementCount": 3,
+    "highestPayoutAmount": 8069.0,
+    "totalPayoutVolume": 17275.0,
+    "settlementCount": 4,
     "datesSeen": [
-      "2026-08-31"
+      "2026-08-31",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-08-31"
+    "lastSeen": "2026-09-07"
   },
   "647d9398dd6b3d0020306128": {
     "creatorId": "647d9398dd6b3d0020306128",
@@ -12085,14 +12273,15 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 2796.0,
-    "totalPayoutVolume": 5592.0,
-    "settlementCount": 2,
+    "highestPayoutAmount": 5716.0,
+    "totalPayoutVolume": 11308.0,
+    "settlementCount": 3,
     "datesSeen": [
-      "2026-08-31"
+      "2026-08-31",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-08-31"
+    "lastSeen": "2026-09-07"
   },
   "67a99498687e990013b10bd2": {
     "creatorId": "67a99498687e990013b10bd2",
@@ -12188,17 +12377,18 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 4880.0,
-    "totalPayoutVolume": 38454.0,
-    "settlementCount": 15,
+    "totalPayoutVolume": 41382.0,
+    "settlementCount": 16,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01",
       "2026-09-02",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "6386bcb126d3b5003c5dc980": {
     "creatorId": "6386bcb126d3b5003c5dc980",
@@ -12301,16 +12491,17 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 7093.0,
-    "totalPayoutVolume": 81404.0,
-    "settlementCount": 21,
+    "totalPayoutVolume": 86673.0,
+    "settlementCount": 22,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01",
       "2026-09-02",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "67d837e1b44d25001392f4dc": {
     "creatorId": "67d837e1b44d25001392f4dc",
@@ -12328,9 +12519,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 10325.0,
-    "totalPayoutVolume": 176393.0,
-    "settlementCount": 42,
+    "highestPayoutAmount": 16292.0,
+    "totalPayoutVolume": 192685.0,
+    "settlementCount": 43,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01",
@@ -12338,10 +12529,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "6867fda9d6f2420013da1953": {
     "creatorId": "6867fda9d6f2420013da1953",
@@ -12415,16 +12607,17 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 4661.0,
-    "totalPayoutVolume": 88457.0,
-    "settlementCount": 27,
+    "highestPayoutAmount": 11030.0,
+    "totalPayoutVolume": 99487.0,
+    "settlementCount": 28,
     "datesSeen": [
       "2026-08-31",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "636c3a1fac6bc6003dbb97c3": {
     "creatorId": "636c3a1fac6bc6003dbb97c3",
@@ -12468,18 +12661,19 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 9795.0,
-    "totalPayoutVolume": 122952.0,
-    "settlementCount": 18,
+    "totalPayoutVolume": 124911.0,
+    "settlementCount": 19,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01",
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "665e11941fa95b00139155d6": {
     "creatorId": "665e11941fa95b00139155d6",
@@ -12581,18 +12775,19 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 4851.0,
-    "totalPayoutVolume": 86738.0,
-    "settlementCount": 29,
+    "highestPayoutAmount": 8732.0,
+    "totalPayoutVolume": 95470.0,
+    "settlementCount": 30,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "6455b18510c8ef0021bfb87e": {
     "creatorId": "6455b18510c8ef0021bfb87e",
@@ -12691,14 +12886,15 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 1786.0,
-    "totalPayoutVolume": 1786.0,
-    "settlementCount": 1,
+    "highestPayoutAmount": 35379.0,
+    "totalPayoutVolume": 37165.0,
+    "settlementCount": 2,
     "datesSeen": [
-      "2026-08-31"
+      "2026-08-31",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-08-31"
+    "lastSeen": "2026-09-07"
   },
   "6475a085f68c8e0020340ef5": {
     "creatorId": "6475a085f68c8e0020340ef5",
@@ -12742,15 +12938,16 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 3879.0,
-    "totalPayoutVolume": 43825.0,
-    "settlementCount": 19,
+    "totalPayoutVolume": 45570.0,
+    "settlementCount": 20,
     "datesSeen": [
       "2026-08-31",
       "2026-09-03",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "63398a142e52d546d6af08e9": {
     "creatorId": "63398a142e52d546d6af08e9",
@@ -12795,16 +12992,17 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 26286.0,
-    "totalPayoutVolume": 166566.0,
-    "settlementCount": 13,
+    "totalPayoutVolume": 171514.0,
+    "settlementCount": 14,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01",
       "2026-09-02",
-      "2026-09-03"
+      "2026-09-03",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-03"
+    "lastSeen": "2026-09-07"
   },
   "66926a105d82bc0013c1229c": {
     "creatorId": "66926a105d82bc0013c1229c",
@@ -12852,14 +13050,15 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 2096.0,
-    "totalPayoutVolume": 8782.0,
-    "settlementCount": 7,
+    "totalPayoutVolume": 10477.0,
+    "settlementCount": 8,
     "datesSeen": [
       "2026-08-31",
-      "2026-09-03"
+      "2026-09-03",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-03"
+    "lastSeen": "2026-09-07"
   },
   "6520f7847a624b001e93bb99": {
     "creatorId": "6520f7847a624b001e93bb99",
@@ -12903,18 +13102,19 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 3392.0,
-    "totalPayoutVolume": 96450.0,
-    "settlementCount": 38,
+    "totalPayoutVolume": 98332.0,
+    "settlementCount": 39,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01",
       "2026-09-02",
       "2026-09-03",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "67c697963f85b10013f450f5": {
     "creatorId": "67c697963f85b10013f450f5",
@@ -12933,18 +13133,19 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 9814.0,
-    "totalPayoutVolume": 112131.0,
-    "settlementCount": 18,
+    "totalPayoutVolume": 115743.0,
+    "settlementCount": 19,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01",
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "65ec0e3a8760a10013f1f989": {
     "creatorId": "65ec0e3a8760a10013f1f989",
@@ -12963,16 +13164,17 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 2520.0,
-    "totalPayoutVolume": 57722.0,
-    "settlementCount": 29,
+    "totalPayoutVolume": 59117.0,
+    "settlementCount": 30,
     "datesSeen": [
       "2026-08-31",
       "2026-09-02",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "675325243cd5c300136686ad": {
     "creatorId": "675325243cd5c300136686ad",
@@ -13234,18 +13436,19 @@
     "sebiRegistrationNumber": "INH000022765",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 158965.0,
-    "totalPayoutVolume": 1188624.0,
-    "settlementCount": 30,
+    "totalPayoutVolume": 1192096.0,
+    "settlementCount": 31,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01",
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "675ab45e058432001308f3bd": {
     "creatorId": "675ab45e058432001308f3bd",
@@ -13289,14 +13492,15 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 45975.0,
-    "totalPayoutVolume": 634238.0,
-    "settlementCount": 14,
+    "totalPayoutVolume": 679489.0,
+    "settlementCount": 15,
     "datesSeen": [
       "2026-08-31",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "65d0bb030524d90012989f5b": {
     "creatorId": "65d0bb030524d90012989f5b",
@@ -13345,8 +13549,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 27571.0,
-    "totalPayoutVolume": 651030.0,
-    "settlementCount": 42,
+    "totalPayoutVolume": 672485.0,
+    "settlementCount": 43,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01",
@@ -13354,10 +13558,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "6792105c1ca4f90013d8d22a": {
     "creatorId": "6792105c1ca4f90013d8d22a",
@@ -13376,16 +13581,17 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 102168.0,
-    "totalPayoutVolume": 1349836.0,
-    "settlementCount": 26,
+    "totalPayoutVolume": 1369010.0,
+    "settlementCount": 27,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "683166b711fc5b00132764e9": {
     "creatorId": "683166b711fc5b00132764e9",
@@ -13403,18 +13609,19 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 23238.0,
-    "totalPayoutVolume": 602769.0,
-    "settlementCount": 26,
+    "highestPayoutAmount": 46003.0,
+    "totalPayoutVolume": 648772.0,
+    "settlementCount": 27,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01",
       "2026-09-02",
       "2026-09-03",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "62c6764efbc19b0f3303c7ba": {
     "creatorId": "62c6764efbc19b0f3303c7ba",
@@ -13593,15 +13800,16 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 14111.0,
-    "totalPayoutVolume": 178234.0,
-    "settlementCount": 21,
+    "totalPayoutVolume": 182936.0,
+    "settlementCount": 22,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "640d10371bcf9e0020296ad8": {
     "creatorId": "640d10371bcf9e0020296ad8",
@@ -13620,18 +13828,19 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 13768.0,
-    "totalPayoutVolume": 266596.0,
-    "settlementCount": 42,
+    "totalPayoutVolume": 271275.0,
+    "settlementCount": 43,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01",
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "68b54171910f380013e6ec7d": {
     "creatorId": "68b54171910f380013e6ec7d",
@@ -13706,18 +13915,19 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 28077.0,
-    "totalPayoutVolume": 447690.0,
-    "settlementCount": 29,
+    "totalPayoutVolume": 470156.0,
+    "settlementCount": 30,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01",
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "6a0739870374d70013f4a6da": {
     "creatorId": "6a0739870374d70013f4a6da",
@@ -13736,18 +13946,19 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 6554.0,
-    "totalPayoutVolume": 76460.0,
-    "settlementCount": 38,
+    "totalPayoutVolume": 80214.0,
+    "settlementCount": 39,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01",
       "2026-09-02",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "62c3cb33b1e08041dcff0860": {
     "creatorId": "62c3cb33b1e08041dcff0860",
@@ -13818,9 +14029,9 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 8124.0,
-    "totalPayoutVolume": 221387.0,
-    "settlementCount": 42,
+    "highestPayoutAmount": 13271.0,
+    "totalPayoutVolume": 234658.0,
+    "settlementCount": 43,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01",
@@ -13828,10 +14039,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "64da12fda7fdb0001ef2db5c": {
     "creatorId": "64da12fda7fdb0001ef2db5c",
@@ -13960,16 +14172,17 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 12382.0,
-    "totalPayoutVolume": 83869.0,
-    "settlementCount": 20,
+    "totalPayoutVolume": 86345.0,
+    "settlementCount": 21,
     "datesSeen": [
       "2026-08-31",
       "2026-09-02",
       "2026-09-03",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "677934d39aeb4b0013816267": {
     "creatorId": "677934d39aeb4b0013816267",
@@ -14177,8 +14390,8 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 57276.0,
-    "totalPayoutVolume": 1171461.0,
-    "settlementCount": 42,
+    "totalPayoutVolume": 1174403.0,
+    "settlementCount": 43,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01",
@@ -14186,10 +14399,11 @@
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "64a936996a2973002b10c7f6": {
     "creatorId": "64a936996a2973002b10c7f6",
@@ -14318,15 +14532,16 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 6681.0,
-    "totalPayoutVolume": 59753.0,
-    "settlementCount": 19,
+    "totalPayoutVolume": 61635.0,
+    "settlementCount": 20,
     "datesSeen": [
       "2026-08-31",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "64d0b757596d8a001d266a41": {
     "creatorId": "64d0b757596d8a001d266a41",
@@ -14369,16 +14584,17 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 1810.0,
-    "totalPayoutVolume": 10860.0,
-    "settlementCount": 6,
+    "highestPayoutAmount": 10004.0,
+    "totalPayoutVolume": 20864.0,
+    "settlementCount": 7,
     "datesSeen": [
       "2026-08-31",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "6566ea4ad82412001dc91499": {
     "creatorId": "6566ea4ad82412001dc91499",
@@ -14479,18 +14695,19 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 2898.0,
-    "totalPayoutVolume": 45528.0,
-    "settlementCount": 29,
+    "totalPayoutVolume": 46710.0,
+    "settlementCount": 30,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01",
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "66dfde423f7d89001324eb00": {
     "creatorId": "66dfde423f7d89001324eb00",
@@ -14508,18 +14725,19 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 2909.0,
-    "totalPayoutVolume": 26297.0,
-    "settlementCount": 13,
+    "highestPayoutAmount": 2939.0,
+    "totalPayoutVolume": 29236.0,
+    "settlementCount": 14,
     "datesSeen": [
       "2026-08-31",
       "2026-09-01",
       "2026-09-02",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "69157f06e3a0e3001373be01": {
     "creatorId": "69157f06e3a0e3001373be01",
@@ -14617,18 +14835,19 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 3469.0,
-    "totalPayoutVolume": 51492.0,
-    "settlementCount": 29,
+    "totalPayoutVolume": 53934.0,
+    "settlementCount": 30,
     "datesSeen": [
       "2026-09-01",
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-01",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "6a72c84e2b3c700013473c40": {
     "creatorId": "6a72c84e2b3c700013473c40",
@@ -14828,18 +15047,19 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 68202.0,
-    "totalPayoutVolume": 652155.0,
-    "settlementCount": 41,
+    "totalPayoutVolume": 658832.0,
+    "settlementCount": 42,
     "datesSeen": [
       "2026-09-01",
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-01",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "672f43fe084e400013281f92": {
     "creatorId": "672f43fe084e400013281f92",
@@ -14941,16 +15161,17 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 45340.0,
-    "totalPayoutVolume": 867068.0,
-    "settlementCount": 27,
+    "totalPayoutVolume": 897043.0,
+    "settlementCount": 28,
     "datesSeen": [
       "2026-09-01",
       "2026-09-02",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-01",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "653537f0500ece001e141c9c": {
     "creatorId": "653537f0500ece001e141c9c",
@@ -15153,15 +15374,16 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 19350.0,
-    "totalPayoutVolume": 108450.0,
-    "settlementCount": 12,
+    "totalPayoutVolume": 110700.0,
+    "settlementCount": 13,
     "datesSeen": [
       "2026-09-01",
       "2026-09-02",
-      "2026-09-03"
+      "2026-09-03",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-01",
-    "lastSeen": "2026-09-03"
+    "lastSeen": "2026-09-07"
   },
   "68384fb7f6fecd0013930afc": {
     "creatorId": "68384fb7f6fecd0013930afc",
@@ -15268,18 +15490,19 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 24560.0,
-    "totalPayoutVolume": 461736.0,
-    "settlementCount": 41,
+    "totalPayoutVolume": 463617.0,
+    "settlementCount": 42,
     "datesSeen": [
       "2026-09-01",
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-01",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "64191cd926d3cc0020071427": {
     "creatorId": "64191cd926d3cc0020071427",
@@ -15378,18 +15601,19 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 28151.0,
-    "totalPayoutVolume": 301692.0,
-    "settlementCount": 41,
+    "totalPayoutVolume": 312272.0,
+    "settlementCount": 42,
     "datesSeen": [
       "2026-09-01",
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-01",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "641c5efa44359a001f92ebbb": {
     "creatorId": "641c5efa44359a001f92ebbb",
@@ -15433,16 +15657,17 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 7811.0,
-    "totalPayoutVolume": 83262.0,
-    "settlementCount": 12,
+    "totalPayoutVolume": 91073.0,
+    "settlementCount": 13,
     "datesSeen": [
       "2026-09-01",
       "2026-09-02",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-01",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "66c4934ed4a9f8001370ea72": {
     "creatorId": "66c4934ed4a9f8001370ea72",
@@ -15542,16 +15767,17 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 10043.0,
-    "totalPayoutVolume": 110965.0,
-    "settlementCount": 16,
+    "totalPayoutVolume": 114340.0,
+    "settlementCount": 17,
     "datesSeen": [
       "2026-09-01",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-01",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "62eba544f479155041e30334": {
     "creatorId": "62eba544f479155041e30334",
@@ -16165,17 +16391,18 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 26303.0,
-    "totalPayoutVolume": 331761.0,
-    "settlementCount": 28,
+    "totalPayoutVolume": 333690.0,
+    "settlementCount": 29,
     "datesSeen": [
       "2026-09-01",
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-01",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "6967aa5a048bfe0013028036": {
     "creatorId": "6967aa5a048bfe0013028036",
@@ -16344,18 +16571,19 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 14455.0,
-    "totalPayoutVolume": 286180.0,
-    "settlementCount": 41,
+    "totalPayoutVolume": 288107.0,
+    "settlementCount": 42,
     "datesSeen": [
       "2026-09-01",
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-01",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "648c4b2fa1f806002b0e5672": {
     "creatorId": "648c4b2fa1f806002b0e5672",
@@ -16374,13 +16602,14 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 2880.0,
-    "totalPayoutVolume": 20160.0,
-    "settlementCount": 7,
+    "totalPayoutVolume": 23040.0,
+    "settlementCount": 8,
     "datesSeen": [
-      "2026-09-01"
+      "2026-09-01",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-01",
-    "lastSeen": "2026-09-01"
+    "lastSeen": "2026-09-07"
   },
   "6a3a795e7a585c0013785ad0": {
     "creatorId": "6a3a795e7a585c0013785ad0",
@@ -16634,15 +16863,16 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 2425.0,
-    "totalPayoutVolume": 49955.0,
-    "settlementCount": 24,
+    "totalPayoutVolume": 51895.0,
+    "settlementCount": 25,
     "datesSeen": [
       "2026-09-01",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-01",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "67eaa90e47e20c0013033165": {
     "creatorId": "67eaa90e47e20c0013033165",
@@ -16947,15 +17177,16 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 1976.0,
-    "totalPayoutVolume": 12844.0,
-    "settlementCount": 7,
+    "highestPayoutAmount": 3952.0,
+    "totalPayoutVolume": 16796.0,
+    "settlementCount": 8,
     "datesSeen": [
       "2026-09-01",
-      "2026-09-02"
+      "2026-09-02",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-01",
-    "lastSeen": "2026-09-02"
+    "lastSeen": "2026-09-07"
   },
   "67dd417c2e848e001306dae2": {
     "creatorId": "67dd417c2e848e001306dae2",
@@ -17157,17 +17388,18 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 5912.0,
-    "totalPayoutVolume": 56875.0,
-    "settlementCount": 16,
+    "totalPayoutVolume": 58846.0,
+    "settlementCount": 17,
     "datesSeen": [
       "2026-09-01",
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-01",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "653d2bce423d4e001ee4dd1d": {
     "creatorId": "653d2bce423d4e001ee4dd1d",
@@ -17291,17 +17523,18 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 2822.0,
-    "totalPayoutVolume": 35742.0,
-    "settlementCount": 16,
+    "totalPayoutVolume": 37623.0,
+    "settlementCount": 17,
     "datesSeen": [
       "2026-09-01",
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-01",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "69bb97d984e34400131b9844": {
     "creatorId": "69bb97d984e34400131b9844",
@@ -17320,17 +17553,18 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 7524.0,
-    "totalPayoutVolume": 152361.0,
-    "settlementCount": 28,
+    "totalPayoutVolume": 154242.0,
+    "settlementCount": 29,
     "datesSeen": [
       "2026-09-01",
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-01",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "67b1ea9ed639a7001338f759": {
     "creatorId": "67b1ea9ed639a7001338f759",
@@ -17636,14 +17870,15 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 2878.0,
-    "totalPayoutVolume": 12951.0,
-    "settlementCount": 7,
+    "totalPayoutVolume": 15829.0,
+    "settlementCount": 8,
     "datesSeen": [
       "2026-09-01",
-      "2026-09-02"
+      "2026-09-02",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-01",
-    "lastSeen": "2026-09-02"
+    "lastSeen": "2026-09-07"
   },
   "65dedb00c9a3280013f2b031": {
     "creatorId": "65dedb00c9a3280013f2b031",
@@ -17823,14 +18058,15 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1539.0,
-    "totalPayoutVolume": 16452.0,
-    "settlementCount": 12,
+    "totalPayoutVolume": 17703.0,
+    "settlementCount": 13,
     "datesSeen": [
       "2026-09-01",
-      "2026-09-03"
+      "2026-09-03",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-01",
-    "lastSeen": "2026-09-03"
+    "lastSeen": "2026-09-07"
   },
   "67038e07eda36800133f37cc": {
     "creatorId": "67038e07eda36800133f37cc",
@@ -18269,16 +18505,17 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 19326.0,
-    "totalPayoutVolume": 169696.0,
-    "settlementCount": 23,
+    "totalPayoutVolume": 173258.0,
+    "settlementCount": 24,
     "datesSeen": [
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-02",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "6a88686c0011bc00139b8f38": {
     "creatorId": "6a88686c0011bc00139b8f38",
@@ -18297,16 +18534,17 @@
     "sebiRegistrationNumber": "INH000028440",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 17625.0,
-    "totalPayoutVolume": 119253.0,
-    "settlementCount": 11,
+    "totalPayoutVolume": 123567.0,
+    "settlementCount": 12,
     "datesSeen": [
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-02",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "6645fe15c68305001322e7a6": {
     "creatorId": "6645fe15c68305001322e7a6",
@@ -18325,13 +18563,14 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 14157.0,
-    "totalPayoutVolume": 28314.0,
-    "settlementCount": 2,
+    "totalPayoutVolume": 34322.0,
+    "settlementCount": 3,
     "datesSeen": [
-      "2026-09-02"
+      "2026-09-02",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-02",
-    "lastSeen": "2026-09-02"
+    "lastSeen": "2026-09-07"
   },
   "631d97fa6b34337dd3201474": {
     "creatorId": "631d97fa6b34337dd3201474",
@@ -18401,16 +18640,17 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 10675.0,
-    "totalPayoutVolume": 117640.0,
-    "settlementCount": 23,
+    "totalPayoutVolume": 119338.0,
+    "settlementCount": 24,
     "datesSeen": [
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-02",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "658720a2a2c6b0001ecbed39": {
     "creatorId": "658720a2a2c6b0001ecbed39",
@@ -18429,13 +18669,14 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 10069.0,
-    "totalPayoutVolume": 20138.0,
-    "settlementCount": 2,
+    "totalPayoutVolume": 30207.0,
+    "settlementCount": 3,
     "datesSeen": [
-      "2026-09-02"
+      "2026-09-02",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-02",
-    "lastSeen": "2026-09-02"
+    "lastSeen": "2026-09-07"
   },
   "66cc34e0533fed00140e7bfa": {
     "creatorId": "66cc34e0533fed00140e7bfa",
@@ -18454,15 +18695,16 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 9813.0,
-    "totalPayoutVolume": 154443.0,
-    "settlementCount": 19,
+    "totalPayoutVolume": 161766.0,
+    "settlementCount": 20,
     "datesSeen": [
       "2026-09-02",
       "2026-09-03",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-02",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "637374b1afd464002db7382a": {
     "creatorId": "637374b1afd464002db7382a",
@@ -18610,15 +18852,16 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 7520.0,
-    "totalPayoutVolume": 62040.0,
-    "settlementCount": 27,
+    "totalPayoutVolume": 63818.0,
+    "settlementCount": 28,
     "datesSeen": [
       "2026-09-02",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-02",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "62f5f78ece54466bcc8adc03": {
     "creatorId": "62f5f78ece54466bcc8adc03",
@@ -18721,16 +18964,17 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 6588.0,
-    "totalPayoutVolume": 175716.0,
-    "settlementCount": 33,
+    "totalPayoutVolume": 182298.0,
+    "settlementCount": 34,
     "datesSeen": [
       "2026-09-02",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-02",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "6633a3eb4265dc0014959b3e": {
     "creatorId": "6633a3eb4265dc0014959b3e",
@@ -19058,15 +19302,16 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 7564.0,
-    "totalPayoutVolume": 43714.0,
-    "settlementCount": 7,
+    "highestPayoutAmount": 14013.0,
+    "totalPayoutVolume": 57727.0,
+    "settlementCount": 8,
     "datesSeen": [
       "2026-09-02",
-      "2026-09-03"
+      "2026-09-03",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-02",
-    "lastSeen": "2026-09-03"
+    "lastSeen": "2026-09-07"
   },
   "672365fabad6bf0013d98d77": {
     "creatorId": "672365fabad6bf0013d98d77",
@@ -19445,15 +19690,16 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 3066.0,
-    "totalPayoutVolume": 19162.0,
-    "settlementCount": 7,
+    "totalPayoutVolume": 20312.0,
+    "settlementCount": 8,
     "datesSeen": [
       "2026-09-02",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-02",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "67e04bcb1dcab800130c4f34": {
     "creatorId": "67e04bcb1dcab800130c4f34",
@@ -19655,17 +19901,18 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1156.0,
-    "totalPayoutVolume": 26835.0,
-    "settlementCount": 24,
+    "totalPayoutVolume": 27858.0,
+    "settlementCount": 25,
     "datesSeen": [
       "2026-09-02",
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-02",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "666458794ed2f80013dde9ef": {
     "creatorId": "666458794ed2f80013dde9ef",
@@ -19736,14 +19983,15 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1647.0,
-    "totalPayoutVolume": 21411.0,
-    "settlementCount": 13,
+    "totalPayoutVolume": 23058.0,
+    "settlementCount": 14,
     "datesSeen": [
       "2026-09-02",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-02",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "66541c97ca30a000133c3bed": {
     "creatorId": "66541c97ca30a000133c3bed",
@@ -19817,15 +20065,16 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 16004.0,
-    "totalPayoutVolume": 360955.0,
-    "settlementCount": 31,
+    "totalPayoutVolume": 362883.0,
+    "settlementCount": 32,
     "datesSeen": [
       "2026-09-03",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-03",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "67222b9c5ea5240013ca5e36": {
     "creatorId": "67222b9c5ea5240013ca5e36",
@@ -19896,15 +20145,16 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 8932.0,
-    "totalPayoutVolume": 164444.0,
-    "settlementCount": 30,
+    "totalPayoutVolume": 167144.0,
+    "settlementCount": 31,
     "datesSeen": [
       "2026-09-03",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-03",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "67c84d92f8f7120014b2ec89": {
     "creatorId": "67c84d92f8f7120014b2ec89",
@@ -20075,16 +20325,17 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 38879.0,
-    "totalPayoutVolume": 277372.0,
-    "settlementCount": 22,
+    "totalPayoutVolume": 289577.0,
+    "settlementCount": 23,
     "datesSeen": [
       "2026-09-03",
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-03",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "6475a095ab41f2001fa94c93": {
     "creatorId": "6475a095ab41f2001fa94c93",
@@ -20436,14 +20687,15 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1916.0,
-    "totalPayoutVolume": 27040.0,
-    "settlementCount": 17,
+    "totalPayoutVolume": 28477.0,
+    "settlementCount": 18,
     "datesSeen": [
       "2026-09-03",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-03",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "6880988ef959ac0013076234": {
     "creatorId": "6880988ef959ac0013076234",
@@ -20512,15 +20764,16 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 1575.0,
-    "totalPayoutVolume": 28406.0,
-    "settlementCount": 21,
+    "totalPayoutVolume": 29499.0,
+    "settlementCount": 22,
     "datesSeen": [
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-03",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "6468b4144600ce0021548f80": {
     "creatorId": "6468b4144600ce0021548f80",
@@ -20567,15 +20820,16 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 11518.0,
-    "totalPayoutVolume": 151932.0,
-    "settlementCount": 21,
+    "totalPayoutVolume": 153456.0,
+    "settlementCount": 22,
     "datesSeen": [
       "2026-09-03",
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-03",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "65f03772c3be0800137389f9": {
     "creatorId": "65f03772c3be0800137389f9",
@@ -20746,15 +21000,16 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 4710.0,
-    "totalPayoutVolume": 105459.0,
-    "settlementCount": 30,
+    "totalPayoutVolume": 108990.0,
+    "settlementCount": 31,
     "datesSeen": [
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-04",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "6515aeec9433d3001ef9f2a2": {
     "creatorId": "6515aeec9433d3001ef9f2a2",
@@ -20825,15 +21080,16 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 3795.0,
-    "totalPayoutVolume": 214860.0,
-    "settlementCount": 68,
+    "totalPayoutVolume": 224513.0,
+    "settlementCount": 71,
     "datesSeen": [
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-04",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "67af2686f9ff720013d27c31": {
     "creatorId": "67af2686f9ff720013d27c31",
@@ -20852,15 +21108,16 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 52868.0,
-    "totalPayoutVolume": 973008.0,
-    "settlementCount": 30,
+    "totalPayoutVolume": 984627.0,
+    "settlementCount": 31,
     "datesSeen": [
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-04",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "648455ac23048d00206c3067": {
     "creatorId": "648455ac23048d00206c3067",
@@ -21009,15 +21266,16 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 6548.0,
-    "totalPayoutVolume": 109432.0,
-    "settlementCount": 17,
+    "highestPayoutAmount": 17256.0,
+    "totalPayoutVolume": 126688.0,
+    "settlementCount": 18,
     "datesSeen": [
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-04",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "6a107b341c48660013c81d1e": {
     "creatorId": "6a107b341c48660013c81d1e",
@@ -21192,15 +21450,16 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 9108.0,
-    "totalPayoutVolume": 215807.0,
-    "settlementCount": 30,
+    "totalPayoutVolume": 222326.0,
+    "settlementCount": 31,
     "datesSeen": [
       "2026-09-04",
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-04",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "666576a165fdc20013ba3ce8": {
     "creatorId": "666576a165fdc20013ba3ce8",
@@ -21218,15 +21477,16 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 3763.0,
-    "totalPayoutVolume": 18815.0,
-    "settlementCount": 5,
+    "highestPayoutAmount": 7198.0,
+    "totalPayoutVolume": 26013.0,
+    "settlementCount": 6,
     "datesSeen": [
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-04",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "6a48dfdc8c56ff0013d76b6f": {
     "creatorId": "6a48dfdc8c56ff0013d76b6f",
@@ -21402,14 +21662,15 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 2850.0,
-    "totalPayoutVolume": 14250.0,
-    "settlementCount": 5,
+    "totalPayoutVolume": 17100.0,
+    "settlementCount": 6,
     "datesSeen": [
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-04",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "6a259e1d123c58001336d704": {
     "creatorId": "6a259e1d123c58001336d704",
@@ -21557,15 +21818,16 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 1844.0,
-    "totalPayoutVolume": 9220.0,
-    "settlementCount": 5,
+    "highestPayoutAmount": 18000.0,
+    "totalPayoutVolume": 27220.0,
+    "settlementCount": 6,
     "datesSeen": [
       "2026-09-04",
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-04",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "67866c436b549100138a3ed7": {
     "creatorId": "67866c436b549100138a3ed7",
@@ -21688,13 +21950,14 @@
     "sebiRegistrationNumber": "INH000017480",
     "reviewStatus": "Normal",
     "highestPayoutAmount": 57607.0,
-    "totalPayoutVolume": 748891.0,
-    "settlementCount": 13,
+    "totalPayoutVolume": 763359.0,
+    "settlementCount": 14,
     "datesSeen": [
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-05",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "668e7c221cc9f2001339ee99": {
     "creatorId": "668e7c221cc9f2001339ee99",
@@ -21713,14 +21976,15 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 71204.0,
-    "totalPayoutVolume": 1054583.0,
-    "settlementCount": 25,
+    "totalPayoutVolume": 1064465.0,
+    "settlementCount": 26,
     "datesSeen": [
       "2026-09-05",
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-05",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "64cc03e3836e48001ec44b6d": {
     "creatorId": "64cc03e3836e48001ec44b6d",
@@ -21939,14 +22203,15 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 1429.0,
-    "totalPayoutVolume": 14290.0,
-    "settlementCount": 10,
+    "highestPayoutAmount": 4919.0,
+    "totalPayoutVolume": 19209.0,
+    "settlementCount": 11,
     "datesSeen": [
-      "2026-09-05"
+      "2026-09-05",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-05",
-    "lastSeen": "2026-09-05"
+    "lastSeen": "2026-09-07"
   },
   "652e1594cb4c36001e628104": {
     "creatorId": "652e1594cb4c36001e628104",
@@ -22040,13 +22305,14 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 22444.0,
-    "totalPayoutVolume": 291772.0,
-    "settlementCount": 13,
+    "totalPayoutVolume": 306829.0,
+    "settlementCount": 14,
     "datesSeen": [
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-06",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "69e5cb3ddd64680013de5fdb": {
     "creatorId": "69e5cb3ddd64680013de5fdb",
@@ -22165,13 +22431,14 @@
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
     "highestPayoutAmount": 3668.0,
-    "totalPayoutVolume": 47684.0,
-    "settlementCount": 13,
+    "totalPayoutVolume": 51351.0,
+    "settlementCount": 14,
     "datesSeen": [
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-06",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "6a8c54406c483000139db29a": {
     "creatorId": "6a8c54406c483000139db29a",
@@ -22264,14 +22531,15 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 1998.0,
-    "totalPayoutVolume": 25974.0,
-    "settlementCount": 13,
+    "highestPayoutAmount": 4297.0,
+    "totalPayoutVolume": 30271.0,
+    "settlementCount": 14,
     "datesSeen": [
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-06",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
   },
   "65142047830114001e03f40a": {
     "creatorId": "65142047830114001e03f40a",
@@ -22314,13 +22582,389 @@
     "sebiVerificationStatus": "Not Verified",
     "sebiRegistrationNumber": "N/A",
     "reviewStatus": "Manual Review Required",
-    "highestPayoutAmount": 1455.0,
-    "totalPayoutVolume": 18915.0,
-    "settlementCount": 13,
+    "highestPayoutAmount": 3639.0,
+    "totalPayoutVolume": 22554.0,
+    "settlementCount": 14,
     "datesSeen": [
-      "2026-09-06"
+      "2026-09-06",
+      "2026-09-07"
     ],
     "firstSeen": "2026-09-06",
-    "lastSeen": "2026-09-06"
+    "lastSeen": "2026-09-07"
+  },
+  "6a9c25a3213bce0014ff2b98": {
+    "creatorId": "6a9c25a3213bce0014ff2b98",
+    "creatorName": "priyasharma71284",
+    "username": "priyasharma71284",
+    "email": "zerotohero941376@gmail.com",
+    "phone": "9351444938",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "6a9c330b213bce001402122a",
+    "telegramProductName": "Zero to hero premium ",
+    "telegramProductLink": "https://superprofile.bio/vig/6a9c330b213bce001402122a",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 2474.0,
+    "totalPayoutVolume": 2474.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-09-07"
+    ],
+    "firstSeen": "2026-09-07",
+    "lastSeen": "2026-09-07"
+  },
+  "68b75b37d58da10013c0e674": {
+    "creatorId": "68b75b37d58da10013c0e674",
+    "creatorName": "Pulkit4045",
+    "username": "Pulkit4045",
+    "email": "pulkitmalhotra1984@gmail.com",
+    "phone": "9355656120",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "6a467d6d3604a700134eaaa9",
+    "telegramProductName": "Pulkit_AstroPulse PRO (Indicator)",
+    "telegramProductLink": "https://superprofile.bio/vig/6a467d6d3604a700134eaaa9",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 9410.0,
+    "totalPayoutVolume": 9410.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-09-07"
+    ],
+    "firstSeen": "2026-09-07",
+    "lastSeen": "2026-09-07"
+  },
+  "62f60f34678fd77b3dabf980": {
+    "creatorId": "62f60f34678fd77b3dabf980",
+    "creatorName": "fogyan",
+    "username": "fogyan",
+    "email": "mayur22295@gmail.com",
+    "phone": "7041087129",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "6676bedfcfd9310013c8a087",
+    "telegramProductName": "FOGYANPAID",
+    "telegramProductLink": "https://superprofile.bio/vig/6676bedfcfd9310013c8a087",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 2194.0,
+    "totalPayoutVolume": 2194.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-09-07"
+    ],
+    "firstSeen": "2026-09-07",
+    "lastSeen": "2026-09-07"
+  },
+  "67cc53d6f926d700136d8aab": {
+    "creatorId": "67cc53d6f926d700136d8aab",
+    "creatorName": "zillioncapitals",
+    "username": "zillioncapitals",
+    "email": "samratdhere6@gmail.com",
+    "phone": "7387947727",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "682e0372eafe680013782ff6",
+    "telegramProductName": "Zillion Club \u2728",
+    "telegramProductLink": "https://superprofile.bio/vig/682e0372eafe680013782ff6",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 136199.0,
+    "totalPayoutVolume": 136199.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-09-07"
+    ],
+    "firstSeen": "2026-09-07",
+    "lastSeen": "2026-09-07"
+  },
+  "649510441a32ba0020928c2d": {
+    "creatorId": "649510441a32ba0020928c2d",
+    "creatorName": "OmiSakhalkar",
+    "username": "OmiSakhalkar",
+    "email": "sakhalkaronkar@gmail.com",
+    "phone": "9011099529",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "6579601dc879dd001d37904a",
+    "telegramProductName": "omi sakhalkar",
+    "telegramProductLink": "https://superprofile.bio/vig/6579601dc879dd001d37904a",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 14070.0,
+    "totalPayoutVolume": 14070.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-09-07"
+    ],
+    "firstSeen": "2026-09-07",
+    "lastSeen": "2026-09-07"
+  },
+  "693319d6f3052a00135857d9": {
+    "creatorId": "693319d6f3052a00135857d9",
+    "creatorName": "gurusharemarket",
+    "username": "gurusharemarket",
+    "email": "gurusharemarket01@gmail.com",
+    "phone": "9911995213",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "69331ed7c65ec80013b53645",
+    "telegramProductName": "Stock Market ke Arjun \ud83c\udff9",
+    "telegramProductLink": "https://superprofile.bio/vig/69331ed7c65ec80013b53645",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 12702.0,
+    "totalPayoutVolume": 12702.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-09-07"
+    ],
+    "firstSeen": "2026-09-07",
+    "lastSeen": "2026-09-07"
+  },
+  "6669b7bbb2f9520013e6b8d7": {
+    "creatorId": "6669b7bbb2f9520013e6b8d7",
+    "creatorName": "sonalitrades",
+    "username": "sonalitrades",
+    "email": "sohamtalekar24@gmail.com",
+    "phone": "7777071598",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "66aa04eb0c2dc60013ac0e24",
+    "telegramProductName": "Sonali Trades Premium Membership \ud83d\udc69\ud83c\udffb\u200d\ud83d\udcbb\ud83d\udcca\ud83d\udcb8\ud83d\udcab",
+    "telegramProductLink": "https://superprofile.bio/vig/66aa04eb0c2dc60013ac0e24",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 6749.0,
+    "totalPayoutVolume": 6749.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-09-07"
+    ],
+    "firstSeen": "2026-09-07",
+    "lastSeen": "2026-09-07"
+  },
+  "641344de24c7290020be7b2a": {
+    "creatorId": "641344de24c7290020be7b2a",
+    "creatorName": "JSS",
+    "username": "JSS",
+    "email": "Dhavalpatal040@gmail.com",
+    "phone": "7976450407",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "65018a07e24de1001ea91d75",
+    "telegramProductName": "ZERO HERO PREMIUM DAILY EXPIRY",
+    "telegramProductLink": "https://superprofile.bio/vig/65018a07e24de1001ea91d75",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 4882.0,
+    "totalPayoutVolume": 4882.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-09-07"
+    ],
+    "firstSeen": "2026-09-07",
+    "lastSeen": "2026-09-07"
+  },
+  "65751abde98d3e001e379541": {
+    "creatorId": "65751abde98d3e001e379541",
+    "creatorName": "Trademe",
+    "username": "Trademe",
+    "email": "Ankurparmar578@gmail.com",
+    "phone": "7879558404",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "658bcfde15ec6f001f2204fc",
+    "telegramProductName": "Premium group",
+    "telegramProductLink": "https://superprofile.bio/vig/658bcfde15ec6f001f2204fc",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 3379.0,
+    "totalPayoutVolume": 3379.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-09-07"
+    ],
+    "firstSeen": "2026-09-07",
+    "lastSeen": "2026-09-07"
+  },
+  "64ad63228adbd60020406bd9": {
+    "creatorId": "64ad63228adbd60020406bd9",
+    "creatorName": "tradewithvikas",
+    "username": "tradewithvikas",
+    "email": "saniyaroksarkhan@gmail.com",
+    "phone": "7004676482",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "68f893647b56730013ac653b",
+    "telegramProductName": "Trade with Vikas Premium",
+    "telegramProductLink": "https://superprofile.bio/vig/68f893647b56730013ac653b",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 2447.0,
+    "totalPayoutVolume": 2447.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-09-07"
+    ],
+    "firstSeen": "2026-09-07",
+    "lastSeen": "2026-09-07"
+  },
+  "696bad3a78f3790013422449": {
+    "creatorId": "696bad3a78f3790013422449",
+    "creatorName": "zerotohero2",
+    "username": "zerotohero2",
+    "email": "tmind4470@gmail.com",
+    "phone": "9602674910",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "696da8d346bf86001301fded",
+    "telegramProductName": "ZERO TO HERO PREMIUM\u2122",
+    "telegramProductLink": "https://superprofile.bio/vig/696da8d346bf86001301fded",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 1619.0,
+    "totalPayoutVolume": 1619.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-09-07"
+    ],
+    "firstSeen": "2026-09-07",
+    "lastSeen": "2026-09-07"
+  },
+  "62bdb76fb1b4c40c1a7da60d": {
+    "creatorId": "62bdb76fb1b4c40c1a7da60d",
+    "creatorName": "fingrowthacademy",
+    "username": "fingrowthacademy",
+    "email": "financialbyte.feedback@gmail.com",
+    "phone": "9022491483",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "647711d1298789001f3a3968",
+    "telegramProductName": "Combo of 2",
+    "telegramProductLink": "https://superprofile.bio/vig/647711d1298789001f3a3968",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 1465.0,
+    "totalPayoutVolume": 1465.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-09-07"
+    ],
+    "firstSeen": "2026-09-07",
+    "lastSeen": "2026-09-07"
+  },
+  "694b73fb58a19500131a05fc": {
+    "creatorId": "694b73fb58a19500131a05fc",
+    "creatorName": "UPSC1109",
+    "username": "UPSC1109",
+    "email": "upsccurrentaffairs2026@gmail.com",
+    "phone": "7840849825",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "694bc7f749716f00136386dd",
+    "telegramProductName": "Newspapers And Magazines",
+    "telegramProductLink": "https://superprofile.bio/vig/694bc7f749716f00136386dd",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 1409.0,
+    "totalPayoutVolume": 1409.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-09-07"
+    ],
+    "firstSeen": "2026-09-07",
+    "lastSeen": "2026-09-07"
+  },
+  "6613b382df40ae0013ce2e06": {
+    "creatorId": "6613b382df40ae0013ce2e06",
+    "creatorName": "thebullzonetrading",
+    "username": "thebullzonetrading",
+    "email": "adityajangir22@gmail.com",
+    "phone": "9029547188",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "66698a6464d3b00013ffe2cc",
+    "telegramProductName": "Daily zero hero premium plus ",
+    "telegramProductLink": "https://superprofile.bio/vig/66698a6464d3b00013ffe2cc",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 1213.0,
+    "totalPayoutVolume": 1213.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-09-07"
+    ],
+    "firstSeen": "2026-09-07",
+    "lastSeen": "2026-09-07"
+  },
+  "663c8fbea3dd2a0013f1c1e4": {
+    "creatorId": "663c8fbea3dd2a0013f1c1e4",
+    "creatorName": "medrocket",
+    "username": "medrocket",
+    "email": "medrocketofficial@gmail.com",
+    "phone": "8250617057",
+    "onboardedBy": "N/A",
+    "onboardingVertical": "N/A",
+    "telegramProductId": "66694f5004c49a001383e065",
+    "telegramProductName": "MedRocket Premium 2.0",
+    "telegramProductLink": "https://superprofile.bio/vig/66694f5004c49a001383e065",
+    "sebiRegisteredYes": "\u2014",
+    "sebiRegisteredNo": "No",
+    "sebiVerificationStatus": "Not Verified",
+    "sebiRegistrationNumber": "N/A",
+    "reviewStatus": "Manual Review Required",
+    "highestPayoutAmount": 1169.0,
+    "totalPayoutVolume": 1169.0,
+    "settlementCount": 1,
+    "datesSeen": [
+      "2026-09-07"
+    ],
+    "firstSeen": "2026-09-07",
+    "lastSeen": "2026-09-07"
   }
 }
