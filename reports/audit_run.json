@@ -1,8 +1,8 @@
 {
   "report": {
     "date": "2026-09-07",
-    "totalAudited": 1931,
-    "selfTransactionCount": 250,
+    "totalAudited": 1934,
+    "selfTransactionCount": 251,
     "flaggedCount": 0,
     "errorCount": 8,
     "selfTransactions": [
@@ -134,6 +134,28 @@
             "IP": "49.36.232.186",
             "date": "07 May, 2026; 11:07 PM",
             "productId": "668d24d88099cd00132a811d"
+          }
+        ],
+        "buyersChecked": 100
+      },
+      {
+        "settlementId": "6a85fd712e8e535cfb0cf2fb",
+        "creatorId": "635ca7e3716584002d51c158",
+        "username": "zerotoherosite",
+        "email": "Guruvachanmeena9829@gmail.com",
+        "phone": "8875164646",
+        "payoutAmount": 9876,
+        "totalMemoAmount": 9876,
+        "category": "Finance & Trading",
+        "contentFlags": [],
+        "selfTransactions": [
+          {
+            "amountPaid": 1999,
+            "buyerEmail": "Guruvachanmeena9829@gmail.com",
+            "buyerPhone": "8875164646",
+            "IP": "223.188.52.32",
+            "date": "20 Aug, 2026; 10:00 AM",
+            "productId": "66ac77c16b5e9d00121364f1"
           }
         ],
         "buyersChecked": 100
@@ -35776,6 +35798,54 @@
       "contentFlags": [],
       "selfTransactions": [],
       "buyersChecked": 0
+    },
+    {
+      "settlementId": "6a9c66d87c4c10e234bfc83b",
+      "creatorId": "6362b14b3d6753003ed4b144",
+      "username": "adisaas",
+      "email": "hkdigidesk@gmail.com",
+      "phone": "9033947554",
+      "payoutAmount": 53,
+      "totalMemoAmount": 53,
+      "category": "Digital Marketing & Marketing",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 3
+    },
+    {
+      "settlementId": "6a85fd712e8e535cfb0cf2fb",
+      "creatorId": "635ca7e3716584002d51c158",
+      "username": "zerotoherosite",
+      "email": "Guruvachanmeena9829@gmail.com",
+      "phone": "8875164646",
+      "payoutAmount": 9876,
+      "totalMemoAmount": 9876,
+      "category": "Finance & Trading",
+      "contentFlags": [],
+      "selfTransactions": [
+        {
+          "amountPaid": 1999,
+          "buyerEmail": "Guruvachanmeena9829@gmail.com",
+          "buyerPhone": "8875164646",
+          "IP": "223.188.52.32",
+          "date": "20 Aug, 2026; 10:00 AM",
+          "productId": "66ac77c16b5e9d00121364f1"
+        }
+      ],
+      "buyersChecked": 100
+    },
+    {
+      "settlementId": "6a972141e4a5b924d1d1e1b3",
+      "creatorId": "645132a84a4ad2001fc49058",
+      "username": "vinesh3977",
+      "email": "adrootdigitalmarketing@yahoo.com",
+      "phone": "8104438431",
+      "payoutAmount": 449,
+      "totalMemoAmount": 449.1,
+      "category": "Education",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 18
     }
   ]
 }

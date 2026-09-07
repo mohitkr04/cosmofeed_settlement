@@ -1,16 +1,16 @@
 🚨 *COSMOFEED PAYOUT RISK AUDIT REPORT (T+1 Product Review)*
 📅 *Review Date:* `2026-09-07` | *Product Sale Date:* `2026-09-06`
-🕒 *Generated:* `2026-09-07 07:04` | *Total Audited:* `1,931` creators
+🕒 *Generated:* `2026-09-07 08:50` | *Total Audited:* `1,934` creators
 ──────────────────────────────────
 📊 *SUMMARY METRICS:*
-• *Total Pending Payout:* ₹8,055,924.00
+• *Total Pending Payout:* ₹8,066,302.00
 • *Self-Transaction Flagged:* `48` creators
 • *No Link / Missing Deliverable Flagged:* `72` creators
 • *Adult Keyword Flagged:* `0` creators
-• *Telegram Integration (vig/ >= ₹1k):* `297` settlements
+• *Telegram Integration (vig/ >= ₹1k):* `298` settlements
    ↳ *SEBI Registered (Yes):* `27` verified creators
-   ↳ *SEBI Not Verified (No):* `270` creators
-   ↳ *Manual Review Required:* `270` creators
+   ↳ *SEBI Not Verified (No):* `271` creators
+   ↳ *Manual Review Required:* `271` creators
 
 🔴 *TOP FLAGGED SELF-TRANSACTIONS (Date -> Amount High to Low):*
 
@@ -76,18 +76,18 @@ _... and 18 more creators flagged in full report._
 3. *moresuccess* (`64dc627649d054001e7dcd8d`) | Payout: *₹2,442.00* | Prod: `6a89777c9ac5d90013d4f1dc` | ⚠️ SEBI Not Verified
 4. *radiobabaa* (`654e35d70ce920001de26234`) | Payout: *₹3,531.00* | Prod: `6a92b996b3a738001366c2fc` | ⚠️ SEBI Not Verified
 5. *valuevisionclub* (`654fc2cfce9bcc001e36a2cc`) | Payout: *₹11,474.00* | Prod: `6651f0a9faf0e80013d9b771` | ⚠️ SEBI Not Verified
-6. *zerotoherosite* (`635ca7e3716584002d51c158`) | Payout: *₹1,881.00* | Prod: `66ac77c16b5e9d00121364f1` | ⚠️ SEBI Not Verified
-7. *udaymandal* (`679cc008836dec0013a115a1`) | Payout: *₹1,772.00* | Prod: `679dfd77c7375300134bb498` | ⚠️ SEBI Not Verified
-8. *fando* (`649330ea3b6d6900200fdb05`) | Payout: *₹3,437.00* | Prod: `68da766ae5d1d00013cfb6d7` | ⚠️ SEBI Not Verified
-9. *profitmillionaire* (`6443c3c058544c002035fae3`) | Payout: *₹9,526.00* | Prod: `6a58249222d9b50013a45019` | ⚠️ SEBI Not Verified
-10. *himanshi09* (`6a54b9ee478445001378e580`) | Payout: *₹3,959.00* | Prod: `6a59b780bf6f01001379f602` | ⚠️ SEBI Not Verified
-11. *tradewithme47* (`6a55d3282f10800012ed9ab0`) | Payout: *₹3,455.00* | Prod: `6a55e41d11707e0013fb8c68` | ⚠️ SEBI Not Verified
-12. *Pulkit4045* (`68b75b37d58da10013c0e674`) | Payout: *₹9,410.00* | Prod: `6a467d6d3604a700134eaaa9` | ⚠️ SEBI Not Verified
-13. *smtgroup* (`64af58ec07df72001f236bc1`) | Payout: *₹13,628.00* | Prod: `67623373aad4840014b2f2e8` | ⚠️ SEBI Not Verified
-14. *ankit171991* (`668e7c221cc9f2001339ee99`) | Payout: *₹15,395.00* | Prod: `668d25a88099cd00132a8d58` | ⚠️ SEBI Not Verified
-15. *ankit171991* (`668e7c221cc9f2001339ee99`) | Payout: *₹9,882.00* | Prod: `668d25a88099cd00132a8d58` | ⚠️ SEBI Not Verified
-16. *fogyan* (`62f60f34678fd77b3dabf980`) | Payout: *₹2,194.00* | Prod: `6676bedfcfd9310013c8a087` | ⚠️ SEBI Not Verified
-17. *ikhushii-rajput* (`663dd24d61f04800142f8ce8`) | Payout: *₹1,222.00* | Prod: `69ebc141f28b8500138e14f8` | ⚠️ SEBI Not Verified
-18. *aditya* (`62115e4a6bd738258707c0e9`) | Payout: *₹3,795.00* | Prod: `6511690d55ae1b0058703c86` | ⚠️ SEBI Not Verified
-19. *aditya* (`62115e4a6bd738258707c0e9`) | Payout: *₹3,503.00* | Prod: `6511690d55ae1b0058703c86` | ⚠️ SEBI Not Verified
-20. *aditya* (`62115e4a6bd738258707c0e9`) | Payout: *₹2,355.00* | Prod: `6511690d55ae1b0058703c86` | ⚠️ SEBI Not Verified
+6. *zerotoherosite* (`635ca7e3716584002d51c158`) | Payout: *₹9,876.00* | Prod: `66ac77c16b5e9d00121364f1` | ⚠️ SEBI Not Verified
+7. *zerotoherosite* (`635ca7e3716584002d51c158`) | Payout: *₹1,881.00* | Prod: `66ac77c16b5e9d00121364f1` | ⚠️ SEBI Not Verified
+8. *udaymandal* (`679cc008836dec0013a115a1`) | Payout: *₹1,772.00* | Prod: `679dfd77c7375300134bb498` | ⚠️ SEBI Not Verified
+9. *fando* (`649330ea3b6d6900200fdb05`) | Payout: *₹3,437.00* | Prod: `68da766ae5d1d00013cfb6d7` | ⚠️ SEBI Not Verified
+10. *profitmillionaire* (`6443c3c058544c002035fae3`) | Payout: *₹9,526.00* | Prod: `6a58249222d9b50013a45019` | ⚠️ SEBI Not Verified
+11. *himanshi09* (`6a54b9ee478445001378e580`) | Payout: *₹3,959.00* | Prod: `6a59b780bf6f01001379f602` | ⚠️ SEBI Not Verified
+12. *tradewithme47* (`6a55d3282f10800012ed9ab0`) | Payout: *₹3,455.00* | Prod: `6a55e41d11707e0013fb8c68` | ⚠️ SEBI Not Verified
+13. *Pulkit4045* (`68b75b37d58da10013c0e674`) | Payout: *₹9,410.00* | Prod: `6a467d6d3604a700134eaaa9` | ⚠️ SEBI Not Verified
+14. *smtgroup* (`64af58ec07df72001f236bc1`) | Payout: *₹13,628.00* | Prod: `67623373aad4840014b2f2e8` | ⚠️ SEBI Not Verified
+15. *ankit171991* (`668e7c221cc9f2001339ee99`) | Payout: *₹15,395.00* | Prod: `668d25a88099cd00132a8d58` | ⚠️ SEBI Not Verified
+16. *ankit171991* (`668e7c221cc9f2001339ee99`) | Payout: *₹9,882.00* | Prod: `668d25a88099cd00132a8d58` | ⚠️ SEBI Not Verified
+17. *fogyan* (`62f60f34678fd77b3dabf980`) | Payout: *₹2,194.00* | Prod: `6676bedfcfd9310013c8a087` | ⚠️ SEBI Not Verified
+18. *ikhushii-rajput* (`663dd24d61f04800142f8ce8`) | Payout: *₹1,222.00* | Prod: `69ebc141f28b8500138e14f8` | ⚠️ SEBI Not Verified
+19. *aditya* (`62115e4a6bd738258707c0e9`) | Payout: *₹3,795.00* | Prod: `6511690d55ae1b0058703c86` | ⚠️ SEBI Not Verified
+20. *aditya* (`62115e4a6bd738258707c0e9`) | Payout: *₹3,503.00* | Prod: `6511690d55ae1b0058703c86` | ⚠️ SEBI Not Verified
