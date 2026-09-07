@@ -1,8 +1,8 @@
 {
   "report": {
     "date": "2026-09-07",
-    "totalAudited": 1926,
-    "selfTransactionCount": 249,
+    "totalAudited": 1931,
+    "selfTransactionCount": 250,
     "flaggedCount": 0,
     "errorCount": 8,
     "selfTransactions": [
@@ -1949,6 +1949,28 @@
           }
         ],
         "buyersChecked": 3
+      },
+      {
+        "settlementId": "6a99c3eb42f86d2f7aa47307",
+        "creatorId": "69905ae6de63440013c9d2be",
+        "username": "httpscscreativesgroupcom",
+        "email": "vspardhi10@gmail.com",
+        "phone": "9967870528",
+        "payoutAmount": 752,
+        "totalMemoAmount": 751.8599999999999,
+        "category": "Education",
+        "contentFlags": [],
+        "selfTransactions": [
+          {
+            "amountPaid": 799,
+            "buyerEmail": "vspardhi10@gmail.com",
+            "buyerPhone": "9967870528",
+            "IP": "58.84.60.233",
+            "date": "03 Sep, 2026; 01:05 AM",
+            "productId": "6a986d2c22c25600133936e4"
+          }
+        ],
+        "buyersChecked": 1
       },
       {
         "settlementId": "6a9db887e0f72afc3b34e2bb",
@@ -35680,6 +35702,80 @@
         }
       ],
       "buyersChecked": 1
+    },
+    {
+      "settlementId": "6a9b1567de0de2fb3cb50016",
+      "creatorId": "68bd12f6b667e400132c17c3",
+      "username": "digiwowcart",
+      "email": "digiwowcart@gmail.com",
+      "phone": "7208002800",
+      "payoutAmount": 429,
+      "totalMemoAmount": 429,
+      "category": "Digital Marketing & Marketing",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 100
+    },
+    {
+      "settlementId": "6a9b1593de0de2fb3cb533e1",
+      "creatorId": "6a9b1593de0de2fb3cb533e1",
+      "username": "91techavinash",
+      "email": "avinashkumar79001@gmail.com",
+      "phone": "7260830867",
+      "payoutAmount": 375,
+      "totalMemoAmount": 375,
+      "category": "General",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 0
+    },
+    {
+      "settlementId": "6a99c46542f86d2f7aa4cc2a",
+      "creatorId": "68bd12f6b667e400132c17c3",
+      "username": "digiwowcart",
+      "email": "digiwowcart@gmail.com",
+      "phone": "7208002800",
+      "payoutAmount": 149,
+      "totalMemoAmount": 148.68,
+      "category": "Digital Marketing & Marketing",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 100
+    },
+    {
+      "settlementId": "6a99c3eb42f86d2f7aa47307",
+      "creatorId": "69905ae6de63440013c9d2be",
+      "username": "httpscscreativesgroupcom",
+      "email": "vspardhi10@gmail.com",
+      "phone": "9967870528",
+      "payoutAmount": 752,
+      "totalMemoAmount": 751.8599999999999,
+      "category": "Education",
+      "contentFlags": [],
+      "selfTransactions": [
+        {
+          "amountPaid": 799,
+          "buyerEmail": "vspardhi10@gmail.com",
+          "buyerPhone": "9967870528",
+          "IP": "58.84.60.233",
+          "date": "03 Sep, 2026; 01:05 AM",
+          "productId": "6a986d2c22c25600133936e4"
+        }
+      ],
+      "buyersChecked": 1
+    },
+    {
+      "settlementId": "6a95cf9912e17cb3117cb6c3",
+      "creatorId": "6a9b1581de0de2fb3cb52035",
+      "username": "shikhapruthiguptaoffical",
+      "email": "shikhapruthi@gmail.com",
+      "phone": "9971019111",
+      "payoutAmount": 940,
+      "totalMemoAmount": 940,
+      "category": "General",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 0
     }
   ]
 }
