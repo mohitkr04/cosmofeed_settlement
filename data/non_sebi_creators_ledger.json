@@ -4,7 +4,7 @@
     "auditPeriodStart": "2026-08-27",
     "auditPeriodEnd": "2026-09-05",
     "targetSubmissionDate": "2026-09-05",
-    "lastUpdated": "2026-09-08 05:39:29",
+    "lastUpdated": "2026-09-08 06:28:01",
     "totalAuditRuns": 10,
     "auditDates": [
       "2026-08-27",
@@ -38880,7 +38880,7 @@
         "2026-09-08"
       ],
       "daysFlaggedCount": 6,
-      "latestPayoutAmount": 47835.0,
+      "latestPayoutAmount": 11116.0,
       "cumulativePayoutVolume": 283768.0,
       "maxDailyPayout": 78026.0,
       "settlementHistory": [
@@ -51151,8 +51151,8 @@
     },
     "2026-09-08": {
       "auditDate": "2026-09-08",
-      "flaggedCount": 360,
-      "totalDayVolume": 4498403.0,
+      "flaggedCount": 361,
+      "totalDayVolume": 4472800.0,
       "creatorIds": [
         "6a9c25a3213bce0014ff2b98",
         "64bf7c27e98788001f3fa09d",
@@ -51266,6 +51266,7 @@
         "63df9c3c934d930033d43fa0",
         "67974ec5d4d95b00146607d1",
         "69c8d48a8d096100146b4c9f",
+        "67038e07eda36800133f37cc",
         "6a53897d6a98bd00149d8cb1",
         "6489d203d28234002a3b5e54",
         "6748015fe2edb40013d1b7dd",
