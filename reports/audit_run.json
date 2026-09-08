@@ -1,7 +1,7 @@
 {
   "report": {
     "date": "2026-09-08",
-    "totalAudited": 2049,
+    "totalAudited": 2050,
     "selfTransactionCount": 242,
     "flaggedCount": 0,
     "errorCount": 6,
@@ -37258,6 +37258,19 @@
       "contentFlags": [],
       "selfTransactions": [],
       "buyersChecked": 100
+    },
+    {
+      "settlementId": "6a9db83be0f72afc3b34656f",
+      "creatorId": "6a97cc6298de650013a18253",
+      "username": "muskansidana7777",
+      "email": "rahulbharaj020@gmail.com",
+      "phone": "7986320178",
+      "payoutAmount": 283,
+      "totalMemoAmount": 283.24,
+      "category": "Digital Marketing & Marketing",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 4
     }
   ]
 }
