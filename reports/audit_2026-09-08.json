@@ -1,7 +1,7 @@
 {
   "report": {
     "date": "2026-09-08",
-    "totalAudited": 2050,
+    "totalAudited": 2051,
     "selfTransactionCount": 242,
     "flaggedCount": 0,
     "errorCount": 6,
@@ -37271,6 +37271,19 @@
       "contentFlags": [],
       "selfTransactions": [],
       "buyersChecked": 4
+    },
+    {
+      "settlementId": "6a9db88ce0f72afc3b34e737",
+      "creatorId": "6a9cccc9a5683f0013a34a2a",
+      "username": "thirdeyeactivationn",
+      "email": "bskhakoli06@gmail.com",
+      "phone": "7014948211",
+      "payoutAmount": 8576,
+      "totalMemoAmount": 8576.24,
+      "category": "Astrology/Numerology/Tarot Card Reading",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 48
     }
   ]
 }
