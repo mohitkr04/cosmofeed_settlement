@@ -1,7 +1,7 @@
 {
   "report": {
     "date": "2026-09-08",
-    "totalAudited": 2046,
+    "totalAudited": 2048,
     "selfTransactionCount": 242,
     "flaggedCount": 0,
     "errorCount": 6,
@@ -37219,6 +37219,32 @@
         }
       ],
       "buyersChecked": 2
+    },
+    {
+      "settlementId": "6a9c670b7c4c10e234c008da",
+      "creatorId": "67038e07eda36800133f37cc",
+      "username": "topstocker24",
+      "email": "k4vaibhav17@gmail.com",
+      "phone": "7060035920",
+      "payoutAmount": 47835,
+      "totalMemoAmount": 77262,
+      "category": "Education",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 100
+    },
+    {
+      "settlementId": "6a9f90868c215d0013bc335b",
+      "creatorId": "6534b143500ece001e0d9f92",
+      "username": "deepakbhardwaaj4449",
+      "email": "deepak80684449@gmail.com",
+      "phone": "9680684449",
+      "payoutAmount": 2342,
+      "totalMemoAmount": 2341.7999999999997,
+      "category": "Education",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 100
     }
   ]
 }
