@@ -1,8 +1,8 @@
 {
   "report": {
     "date": "2026-09-09",
-    "totalAudited": 2326,
-    "selfTransactionCount": 331,
+    "totalAudited": 2335,
+    "selfTransactionCount": 335,
     "flaggedCount": 0,
     "errorCount": 6,
     "selfTransactions": [
@@ -3378,6 +3378,36 @@
             "IP": "152.59.180.227",
             "date": "07 Sep, 2026; 04:52 PM",
             "productId": "6a9e90674f10660013ff04b6"
+          }
+        ],
+        "buyersChecked": 2
+      },
+      {
+        "settlementId": "6a9c66de7c4c10e234bfd0cd",
+        "creatorId": "6a75afe09065d90013758dab",
+        "username": "kunuz",
+        "email": "adil_ik@hotmail.com",
+        "phone": "9379331751",
+        "payoutAmount": 563,
+        "totalMemoAmount": 562.72,
+        "category": "Entertainment & Media",
+        "contentFlags": [],
+        "selfTransactions": [
+          {
+            "amountPaid": 499,
+            "buyerEmail": "adil_ik@hotmail.com",
+            "buyerPhone": "9379331751",
+            "IP": "192.140.152.83",
+            "date": "05 Sep, 2026; 10:14 AM",
+            "productId": "6a9b57803e87c7001333de3f"
+          },
+          {
+            "amountPaid": 99,
+            "buyerEmail": "adil_ik@hotmail.com",
+            "buyerPhone": "9379331751",
+            "IP": "192.140.152.83",
+            "date": "05 Sep, 2026; 04:30 AM",
+            "productId": "6a9b3efa3e87c70013329e71"
           }
         ],
         "buyersChecked": 2
@@ -7681,6 +7711,36 @@
         "buyersChecked": 43
       },
       {
+        "settlementId": "6a99c3cb42f86d2f7aa43f2c",
+        "creatorId": "6a4a8f00d162100013f552f4",
+        "username": "vaultaivideo",
+        "email": "jashwanthreddypersonal@gmail.com",
+        "phone": "8639293216",
+        "payoutAmount": 107,
+        "totalMemoAmount": 107,
+        "category": "Digital Marketing & Marketing",
+        "contentFlags": [],
+        "selfTransactions": [
+          {
+            "amountPaid": 1,
+            "buyerEmail": "jashwanthreddypersonal@gmail.com",
+            "buyerPhone": "8639293216",
+            "IP": "49.204.214.112",
+            "date": "26 Jul, 2026; 08:56 AM",
+            "productId": "6a650156127837001389bfd1"
+          },
+          {
+            "amountPaid": 1,
+            "buyerEmail": "jashwanthreddypersonal@gmail.com",
+            "buyerPhone": "8639293216",
+            "IP": "49.204.214.112",
+            "date": "21 Jul, 2026; 07:56 PM",
+            "productId": "6a5b9a7c336dff0013c0a94d"
+          }
+        ],
+        "buyersChecked": 93
+      },
+      {
         "settlementId": "6aa05b4828f9fd699353241c",
         "creatorId": "65f110bff146ab001a581f2f",
         "username": "arogyacademy",
@@ -8941,6 +9001,36 @@
         "buyersChecked": 93
       },
       {
+        "settlementId": "6a9720cfe4a5b924d1d157d3",
+        "creatorId": "6a4a8f00d162100013f552f4",
+        "username": "vaultaivideo",
+        "email": "jashwanthreddypersonal@gmail.com",
+        "phone": "8639293216",
+        "payoutAmount": 72,
+        "totalMemoAmount": 72,
+        "category": "Digital Marketing & Marketing",
+        "contentFlags": [],
+        "selfTransactions": [
+          {
+            "amountPaid": 1,
+            "buyerEmail": "jashwanthreddypersonal@gmail.com",
+            "buyerPhone": "8639293216",
+            "IP": "49.204.214.112",
+            "date": "26 Jul, 2026; 08:56 AM",
+            "productId": "6a650156127837001389bfd1"
+          },
+          {
+            "amountPaid": 1,
+            "buyerEmail": "jashwanthreddypersonal@gmail.com",
+            "buyerPhone": "8639293216",
+            "IP": "49.204.214.112",
+            "date": "21 Jul, 2026; 07:56 PM",
+            "productId": "6a5b9a7c336dff0013c0a94d"
+          }
+        ],
+        "buyersChecked": 93
+      },
+      {
         "settlementId": "6aa05c0228f9fd699353cb32",
         "creatorId": "6a7152ce9e13ea0013ce0152",
         "username": "educationwalaclubb",
@@ -9109,6 +9199,92 @@
           }
         ],
         "buyersChecked": 1
+      },
+      {
+        "settlementId": "6a95cf4212e17cb3117c3b09",
+        "creatorId": "67c1677c56f40700136dbfe1",
+        "username": "aaaaadilm",
+        "email": "adilmohdofficial@gmail.com",
+        "phone": "6238778993",
+        "payoutAmount": 56,
+        "totalMemoAmount": 55.51,
+        "category": "Digital Marketing & Marketing",
+        "contentFlags": [],
+        "selfTransactions": [
+          {
+            "amountPaid": 1,
+            "buyerEmail": "adilmohdofficial@gmail.com",
+            "buyerPhone": "6238778993",
+            "IP": "152.58.201.188",
+            "date": "17 Aug, 2026; 01:19 PM",
+            "productId": "6a7f38390fc83f001338bf6f"
+          },
+          {
+            "amountPaid": 1,
+            "buyerEmail": "adilmohdofficial@gmail.com",
+            "buyerPhone": "6238778993",
+            "IP": "152.58.201.188",
+            "date": "17 Aug, 2026; 01:08 PM",
+            "productId": "6a7f38390fc83f001338bf6f"
+          },
+          {
+            "amountPaid": 1,
+            "buyerEmail": "adilmohdofficial@gmail.com",
+            "buyerPhone": "6238778993",
+            "IP": "152.58.201.188",
+            "date": "17 Aug, 2026; 01:05 PM",
+            "productId": "6a7f38390fc83f001338bf6f"
+          },
+          {
+            "amountPaid": 1,
+            "buyerEmail": "adilmohdofficial@gmail.com",
+            "buyerPhone": "6238778993",
+            "IP": "152.58.201.188",
+            "date": "17 Aug, 2026; 12:03 PM",
+            "productId": "6a7f38390fc83f001338bf6f"
+          },
+          {
+            "amountPaid": 1,
+            "buyerEmail": "adilmohdofficial@gmail.com",
+            "buyerPhone": "6238778993",
+            "IP": "152.58.217.131",
+            "date": "16 Aug, 2026; 11:20 AM",
+            "productId": "6a7f38390fc83f001338bf6f"
+          },
+          {
+            "amountPaid": 1,
+            "buyerEmail": "adilmohdofficial@gmail.com",
+            "buyerPhone": "6238778993",
+            "IP": "152.58.217.131",
+            "date": "16 Aug, 2026; 10:59 AM",
+            "productId": "6a7f38390fc83f001338bf6f"
+          },
+          {
+            "amountPaid": 1,
+            "buyerEmail": "adilmohdofficial@gmail.com",
+            "buyerPhone": "6238778993",
+            "IP": "152.58.217.131",
+            "date": "16 Aug, 2026; 10:44 AM",
+            "productId": "6a7f38390fc83f001338bf6f"
+          },
+          {
+            "amountPaid": 1,
+            "buyerEmail": "adilmohdofficial@gmail.com",
+            "buyerPhone": "6238778993",
+            "IP": "152.58.217.131",
+            "date": "16 Aug, 2026; 10:26 AM",
+            "productId": "6a7f38390fc83f001338bf6f"
+          },
+          {
+            "amountPaid": 1,
+            "buyerEmail": "adilmohdofficial@gmail.com",
+            "buyerPhone": "6238778993",
+            "IP": "152.58.217.131",
+            "date": "16 Aug, 2026; 10:20 AM",
+            "productId": "6a7f38390fc83f001338bf6f"
+          }
+        ],
+        "buyersChecked": 12
       },
       {
         "settlementId": "6aa05b5528f9fd6993532bd0",
@@ -44578,6 +44754,247 @@
         }
       ],
       "buyersChecked": 11
+    },
+    {
+      "settlementId": "6a9f09e1ad45fb47a7ab880d",
+      "creatorId": "69bf54acf1587c0013c570d5",
+      "username": "netecart",
+      "email": "mnrunaisworks@gmail.com",
+      "phone": "8606628691",
+      "payoutAmount": 10861,
+      "totalMemoAmount": 10861,
+      "category": "Education",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 100
+    },
+    {
+      "settlementId": "6a9b155cde0de2fb3cb4f097",
+      "creatorId": "6a9b155cde0de2fb3cb4f097",
+      "username": "rajput001",
+      "email": "advedsworks@gmail.com",
+      "phone": "6353336591",
+      "payoutAmount": 445,
+      "totalMemoAmount": 445,
+      "category": "General",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 0
+    },
+    {
+      "settlementId": "6a9db880e0f72afc3b34da3f",
+      "creatorId": "6a9b155cde0de2fb3cb4f097",
+      "username": "rajput001",
+      "email": "advedsworks@gmail.com",
+      "phone": "6353336591",
+      "payoutAmount": 89,
+      "totalMemoAmount": 89,
+      "category": "General",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 0
+    },
+    {
+      "settlementId": "6a99c3cb42f86d2f7aa43f2c",
+      "creatorId": "6a4a8f00d162100013f552f4",
+      "username": "vaultaivideo",
+      "email": "jashwanthreddypersonal@gmail.com",
+      "phone": "8639293216",
+      "payoutAmount": 107,
+      "totalMemoAmount": 107,
+      "category": "Digital Marketing & Marketing",
+      "contentFlags": [],
+      "selfTransactions": [
+        {
+          "amountPaid": 1,
+          "buyerEmail": "jashwanthreddypersonal@gmail.com",
+          "buyerPhone": "8639293216",
+          "IP": "49.204.214.112",
+          "date": "26 Jul, 2026; 08:56 AM",
+          "productId": "6a650156127837001389bfd1"
+        },
+        {
+          "amountPaid": 1,
+          "buyerEmail": "jashwanthreddypersonal@gmail.com",
+          "buyerPhone": "8639293216",
+          "IP": "49.204.214.112",
+          "date": "21 Jul, 2026; 07:56 PM",
+          "productId": "6a5b9a7c336dff0013c0a94d"
+        }
+      ],
+      "buyersChecked": 93
+    },
+    {
+      "settlementId": "6a9f09cead45fb47a7ab674c",
+      "creatorId": "6a9b155cde0de2fb3cb4f097",
+      "username": "rajput001",
+      "email": "advedsworks@gmail.com",
+      "phone": "6353336591",
+      "payoutAmount": 222,
+      "totalMemoAmount": 222,
+      "category": "General",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 0
+    },
+    {
+      "settlementId": "6a9c66de7c4c10e234bfd0cd",
+      "creatorId": "6a75afe09065d90013758dab",
+      "username": "kunuz",
+      "email": "adil_ik@hotmail.com",
+      "phone": "9379331751",
+      "payoutAmount": 563,
+      "totalMemoAmount": 562.72,
+      "category": "Entertainment & Media",
+      "contentFlags": [],
+      "selfTransactions": [
+        {
+          "amountPaid": 499,
+          "buyerEmail": "adil_ik@hotmail.com",
+          "buyerPhone": "9379331751",
+          "IP": "192.140.152.83",
+          "date": "05 Sep, 2026; 10:14 AM",
+          "productId": "6a9b57803e87c7001333de3f"
+        },
+        {
+          "amountPaid": 99,
+          "buyerEmail": "adil_ik@hotmail.com",
+          "buyerPhone": "9379331751",
+          "IP": "192.140.152.83",
+          "date": "05 Sep, 2026; 04:30 AM",
+          "productId": "6a9b3efa3e87c70013329e71"
+        }
+      ],
+      "buyersChecked": 2
+    },
+    {
+      "settlementId": "6a9720f4e4a5b924d1d195d7",
+      "creatorId": "69db74cd96ac6e001315d9d4",
+      "username": "editorcynoxnkdhvm",
+      "email": "rajputdev472003@gmail.com",
+      "phone": "6396827282",
+      "payoutAmount": 92,
+      "totalMemoAmount": 92,
+      "category": "other",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 100
+    },
+    {
+      "settlementId": "6a9720cfe4a5b924d1d157d3",
+      "creatorId": "6a4a8f00d162100013f552f4",
+      "username": "vaultaivideo",
+      "email": "jashwanthreddypersonal@gmail.com",
+      "phone": "8639293216",
+      "payoutAmount": 72,
+      "totalMemoAmount": 72,
+      "category": "Digital Marketing & Marketing",
+      "contentFlags": [],
+      "selfTransactions": [
+        {
+          "amountPaid": 1,
+          "buyerEmail": "jashwanthreddypersonal@gmail.com",
+          "buyerPhone": "8639293216",
+          "IP": "49.204.214.112",
+          "date": "26 Jul, 2026; 08:56 AM",
+          "productId": "6a650156127837001389bfd1"
+        },
+        {
+          "amountPaid": 1,
+          "buyerEmail": "jashwanthreddypersonal@gmail.com",
+          "buyerPhone": "8639293216",
+          "IP": "49.204.214.112",
+          "date": "21 Jul, 2026; 07:56 PM",
+          "productId": "6a5b9a7c336dff0013c0a94d"
+        }
+      ],
+      "buyersChecked": 93
+    },
+    {
+      "settlementId": "6a95cf4212e17cb3117c3b09",
+      "creatorId": "67c1677c56f40700136dbfe1",
+      "username": "aaaaadilm",
+      "email": "adilmohdofficial@gmail.com",
+      "phone": "6238778993",
+      "payoutAmount": 56,
+      "totalMemoAmount": 55.51,
+      "category": "Digital Marketing & Marketing",
+      "contentFlags": [],
+      "selfTransactions": [
+        {
+          "amountPaid": 1,
+          "buyerEmail": "adilmohdofficial@gmail.com",
+          "buyerPhone": "6238778993",
+          "IP": "152.58.201.188",
+          "date": "17 Aug, 2026; 01:19 PM",
+          "productId": "6a7f38390fc83f001338bf6f"
+        },
+        {
+          "amountPaid": 1,
+          "buyerEmail": "adilmohdofficial@gmail.com",
+          "buyerPhone": "6238778993",
+          "IP": "152.58.201.188",
+          "date": "17 Aug, 2026; 01:08 PM",
+          "productId": "6a7f38390fc83f001338bf6f"
+        },
+        {
+          "amountPaid": 1,
+          "buyerEmail": "adilmohdofficial@gmail.com",
+          "buyerPhone": "6238778993",
+          "IP": "152.58.201.188",
+          "date": "17 Aug, 2026; 01:05 PM",
+          "productId": "6a7f38390fc83f001338bf6f"
+        },
+        {
+          "amountPaid": 1,
+          "buyerEmail": "adilmohdofficial@gmail.com",
+          "buyerPhone": "6238778993",
+          "IP": "152.58.201.188",
+          "date": "17 Aug, 2026; 12:03 PM",
+          "productId": "6a7f38390fc83f001338bf6f"
+        },
+        {
+          "amountPaid": 1,
+          "buyerEmail": "adilmohdofficial@gmail.com",
+          "buyerPhone": "6238778993",
+          "IP": "152.58.217.131",
+          "date": "16 Aug, 2026; 11:20 AM",
+          "productId": "6a7f38390fc83f001338bf6f"
+        },
+        {
+          "amountPaid": 1,
+          "buyerEmail": "adilmohdofficial@gmail.com",
+          "buyerPhone": "6238778993",
+          "IP": "152.58.217.131",
+          "date": "16 Aug, 2026; 10:59 AM",
+          "productId": "6a7f38390fc83f001338bf6f"
+        },
+        {
+          "amountPaid": 1,
+          "buyerEmail": "adilmohdofficial@gmail.com",
+          "buyerPhone": "6238778993",
+          "IP": "152.58.217.131",
+          "date": "16 Aug, 2026; 10:44 AM",
+          "productId": "6a7f38390fc83f001338bf6f"
+        },
+        {
+          "amountPaid": 1,
+          "buyerEmail": "adilmohdofficial@gmail.com",
+          "buyerPhone": "6238778993",
+          "IP": "152.58.217.131",
+          "date": "16 Aug, 2026; 10:26 AM",
+          "productId": "6a7f38390fc83f001338bf6f"
+        },
+        {
+          "amountPaid": 1,
+          "buyerEmail": "adilmohdofficial@gmail.com",
+          "buyerPhone": "6238778993",
+          "IP": "152.58.217.131",
+          "date": "16 Aug, 2026; 10:20 AM",
+          "productId": "6a7f38390fc83f001338bf6f"
+        }
+      ],
+      "buyersChecked": 12
     }
   ]
 }
