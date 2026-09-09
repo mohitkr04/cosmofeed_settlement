@@ -1,11 +1,33 @@
 {
   "report": {
     "date": "2026-09-09",
-    "totalAudited": 2339,
-    "selfTransactionCount": 337,
+    "totalAudited": 2348,
+    "selfTransactionCount": 342,
     "flaggedCount": 0,
     "errorCount": 6,
     "selfTransactions": [
+      {
+        "settlementId": "6a9c67147c4c10e234c012a7",
+        "creatorId": "66b791ee89c6c90013d2c326",
+        "username": "chosennkid",
+        "email": "businessmagnet1111@gmail.com",
+        "phone": "8766225583",
+        "payoutAmount": 45027,
+        "totalMemoAmount": 45026.85,
+        "category": "Astrology/Numerology/Tarot Card Reading",
+        "contentFlags": [],
+        "selfTransactions": [
+          {
+            "amountPaid": 111,
+            "buyerEmail": "businessmagnet1111@gmail.com",
+            "buyerPhone": "8766225583",
+            "IP": "205.254.176.236",
+            "date": "28 Jun, 2026; 03:53 PM",
+            "productId": "6a4023c0a694d500139011a4"
+          }
+        ],
+        "buyersChecked": 23
+      },
       {
         "settlementId": "6aa05b7728f9fd6993535d54",
         "creatorId": "630b458e21c343433e1e70e2",
@@ -2841,6 +2863,84 @@
         "buyersChecked": 63
       },
       {
+        "settlementId": "6999fab06dea84a815e3c408",
+        "creatorId": "64421af0262c1c00214f176b",
+        "username": "digitalkishor",
+        "email": "www.kishorkadam248@gmail.com",
+        "phone": "8975110936",
+        "payoutAmount": 806,
+        "totalMemoAmount": 805.5,
+        "category": "Education",
+        "contentFlags": [],
+        "selfTransactions": [
+          {
+            "amountPaid": 1,
+            "buyerEmail": "www.kishorkadam248@gmail.com",
+            "buyerPhone": "8975110936",
+            "IP": "42.104.221.39",
+            "date": "11 Jul, 2025; 09:06 AM",
+            "productId": "687028ce7cb44c0013cb71df"
+          },
+          {
+            "amountPaid": 1,
+            "buyerEmail": "www.kishorkadam248@gmail.com",
+            "buyerPhone": "8975110936",
+            "IP": "42.104.220.14",
+            "date": "14 Sep, 2024; 12:08 AM",
+            "productId": "66e402deec889a00133aa32a"
+          },
+          {
+            "amountPaid": 1,
+            "buyerEmail": "www.kishorkadam248@gmail.com",
+            "buyerPhone": "8975110936",
+            "IP": "42.104.224.103",
+            "date": "25 Mar, 2024; 03:23 PM",
+            "productId": "65ffb820fa2238001224d650"
+          },
+          {
+            "amountPaid": 35,
+            "buyerEmail": "www.kishorkadam248@gmail.com",
+            "buyerPhone": "8975110936",
+            "IP": "106.78.190.87",
+            "date": "03 Nov, 2023; 12:24 PM",
+            "productId": "65250fdacb7ef5001e93de8e"
+          },
+          {
+            "amountPaid": 35,
+            "buyerEmail": "www.kishorkadam248@gmail.com",
+            "buyerPhone": "8975110936",
+            "IP": "106.77.15.210",
+            "date": "10 Oct, 2023; 02:44 PM",
+            "productId": "65250fdacb7ef5001e93de8e"
+          },
+          {
+            "amountPaid": 9,
+            "buyerEmail": "www.kishorkadam248@gmail.com",
+            "buyerPhone": "8975110936",
+            "IP": "106.79.166.171",
+            "date": "19 Jul, 2023; 11:51 AM",
+            "productId": "64b7805e1e1758002053c6ef"
+          },
+          {
+            "amountPaid": 1,
+            "buyerEmail": "www.kishorkadam248@gmail.com",
+            "buyerPhone": "8975110936",
+            "IP": "1.187.138.116",
+            "date": "18 Jun, 2023; 01:49 AM",
+            "productId": "648e154761a63800204d9439"
+          },
+          {
+            "amountPaid": 1,
+            "buyerEmail": "www.kishorkadam248@gmail.com",
+            "buyerPhone": "8975110936",
+            "IP": "106.79.137.144",
+            "date": "14 Jun, 2023; 12:39 AM",
+            "productId": "6488bec6a6ec40002b4da452"
+          }
+        ],
+        "buyersChecked": 18
+      },
+      {
         "settlementId": "6aa05bd428f9fd699353ab94",
         "creatorId": "640d515ac92ddc001fde4b17",
         "username": "shekharkushwaha9223",
@@ -3593,6 +3693,84 @@
         "buyersChecked": 100
       },
       {
+        "settlementId": "6994b4b5476ec0db449ec283",
+        "creatorId": "64421af0262c1c00214f176b",
+        "username": "digitalkishor",
+        "email": "www.kishorkadam248@gmail.com",
+        "phone": "8975110936",
+        "payoutAmount": 537,
+        "totalMemoAmount": 537.3,
+        "category": "Education",
+        "contentFlags": [],
+        "selfTransactions": [
+          {
+            "amountPaid": 1,
+            "buyerEmail": "www.kishorkadam248@gmail.com",
+            "buyerPhone": "8975110936",
+            "IP": "42.104.221.39",
+            "date": "11 Jul, 2025; 09:06 AM",
+            "productId": "687028ce7cb44c0013cb71df"
+          },
+          {
+            "amountPaid": 1,
+            "buyerEmail": "www.kishorkadam248@gmail.com",
+            "buyerPhone": "8975110936",
+            "IP": "42.104.220.14",
+            "date": "14 Sep, 2024; 12:08 AM",
+            "productId": "66e402deec889a00133aa32a"
+          },
+          {
+            "amountPaid": 1,
+            "buyerEmail": "www.kishorkadam248@gmail.com",
+            "buyerPhone": "8975110936",
+            "IP": "42.104.224.103",
+            "date": "25 Mar, 2024; 03:23 PM",
+            "productId": "65ffb820fa2238001224d650"
+          },
+          {
+            "amountPaid": 35,
+            "buyerEmail": "www.kishorkadam248@gmail.com",
+            "buyerPhone": "8975110936",
+            "IP": "106.78.190.87",
+            "date": "03 Nov, 2023; 12:24 PM",
+            "productId": "65250fdacb7ef5001e93de8e"
+          },
+          {
+            "amountPaid": 35,
+            "buyerEmail": "www.kishorkadam248@gmail.com",
+            "buyerPhone": "8975110936",
+            "IP": "106.77.15.210",
+            "date": "10 Oct, 2023; 02:44 PM",
+            "productId": "65250fdacb7ef5001e93de8e"
+          },
+          {
+            "amountPaid": 9,
+            "buyerEmail": "www.kishorkadam248@gmail.com",
+            "buyerPhone": "8975110936",
+            "IP": "106.79.166.171",
+            "date": "19 Jul, 2023; 11:51 AM",
+            "productId": "64b7805e1e1758002053c6ef"
+          },
+          {
+            "amountPaid": 1,
+            "buyerEmail": "www.kishorkadam248@gmail.com",
+            "buyerPhone": "8975110936",
+            "IP": "1.187.138.116",
+            "date": "18 Jun, 2023; 01:49 AM",
+            "productId": "648e154761a63800204d9439"
+          },
+          {
+            "amountPaid": 1,
+            "buyerEmail": "www.kishorkadam248@gmail.com",
+            "buyerPhone": "8975110936",
+            "IP": "106.79.137.144",
+            "date": "14 Jun, 2023; 12:39 AM",
+            "productId": "6488bec6a6ec40002b4da452"
+          }
+        ],
+        "buyersChecked": 18
+      },
+      {
         "settlementId": "6aa05b6228f9fd6993533fa4",
         "creatorId": "64bfb5d1340b3500202037ff",
         "username": "danishkhanin",
@@ -4139,6 +4317,36 @@
           }
         ],
         "buyersChecked": 23
+      },
+      {
+        "settlementId": "6a9f0a4cad45fb47a7abf3b9",
+        "creatorId": "66d1cce209a09d0013e89617",
+        "username": "coachmrhind",
+        "email": "mahendermeena282@gmail.com",
+        "phone": "7793096127",
+        "payoutAmount": 460,
+        "totalMemoAmount": 939.12,
+        "category": "Education",
+        "contentFlags": [],
+        "selfTransactions": [
+          {
+            "amountPaid": 499,
+            "buyerEmail": "mahendermeena282@gmail.com",
+            "buyerPhone": "7793096127",
+            "IP": "110.235.219.138",
+            "date": "07 Sep, 2026; 05:24 PM",
+            "productId": "6a71a0f49e13ea0013dedf2a"
+          },
+          {
+            "amountPaid": 19,
+            "buyerEmail": "mahendermeena282@gmail.com",
+            "buyerPhone": "7793096127",
+            "IP": "110.235.219.150",
+            "date": "04 Aug, 2026; 06:06 PM",
+            "productId": "6a71dc77a03d8c00137fe87a"
+          }
+        ],
+        "buyersChecked": 5
       },
       {
         "settlementId": "6aa05be828f9fd699353b9f5",
@@ -6915,6 +7123,84 @@
           }
         ],
         "buyersChecked": 4
+      },
+      {
+        "settlementId": "699362d97724a35cb5140acf",
+        "creatorId": "64421af0262c1c00214f176b",
+        "username": "digitalkishor",
+        "email": "www.kishorkadam248@gmail.com",
+        "phone": "8975110936",
+        "payoutAmount": 181,
+        "totalMemoAmount": 180.9,
+        "category": "Education",
+        "contentFlags": [],
+        "selfTransactions": [
+          {
+            "amountPaid": 1,
+            "buyerEmail": "www.kishorkadam248@gmail.com",
+            "buyerPhone": "8975110936",
+            "IP": "42.104.221.39",
+            "date": "11 Jul, 2025; 09:06 AM",
+            "productId": "687028ce7cb44c0013cb71df"
+          },
+          {
+            "amountPaid": 1,
+            "buyerEmail": "www.kishorkadam248@gmail.com",
+            "buyerPhone": "8975110936",
+            "IP": "42.104.220.14",
+            "date": "14 Sep, 2024; 12:08 AM",
+            "productId": "66e402deec889a00133aa32a"
+          },
+          {
+            "amountPaid": 1,
+            "buyerEmail": "www.kishorkadam248@gmail.com",
+            "buyerPhone": "8975110936",
+            "IP": "42.104.224.103",
+            "date": "25 Mar, 2024; 03:23 PM",
+            "productId": "65ffb820fa2238001224d650"
+          },
+          {
+            "amountPaid": 35,
+            "buyerEmail": "www.kishorkadam248@gmail.com",
+            "buyerPhone": "8975110936",
+            "IP": "106.78.190.87",
+            "date": "03 Nov, 2023; 12:24 PM",
+            "productId": "65250fdacb7ef5001e93de8e"
+          },
+          {
+            "amountPaid": 35,
+            "buyerEmail": "www.kishorkadam248@gmail.com",
+            "buyerPhone": "8975110936",
+            "IP": "106.77.15.210",
+            "date": "10 Oct, 2023; 02:44 PM",
+            "productId": "65250fdacb7ef5001e93de8e"
+          },
+          {
+            "amountPaid": 9,
+            "buyerEmail": "www.kishorkadam248@gmail.com",
+            "buyerPhone": "8975110936",
+            "IP": "106.79.166.171",
+            "date": "19 Jul, 2023; 11:51 AM",
+            "productId": "64b7805e1e1758002053c6ef"
+          },
+          {
+            "amountPaid": 1,
+            "buyerEmail": "www.kishorkadam248@gmail.com",
+            "buyerPhone": "8975110936",
+            "IP": "1.187.138.116",
+            "date": "18 Jun, 2023; 01:49 AM",
+            "productId": "648e154761a63800204d9439"
+          },
+          {
+            "amountPaid": 1,
+            "buyerEmail": "www.kishorkadam248@gmail.com",
+            "buyerPhone": "8975110936",
+            "IP": "106.79.137.144",
+            "date": "14 Jun, 2023; 12:39 AM",
+            "productId": "6488bec6a6ec40002b4da452"
+          }
+        ],
+        "buyersChecked": 18
       },
       {
         "settlementId": "6aa05b8b28f9fd69935371ae",
@@ -45173,6 +45459,344 @@
       "contentFlags": [],
       "selfTransactions": [],
       "buyersChecked": 1
+    },
+    {
+      "settlementId": "6a9b1581de0de2fb3cb52035",
+      "creatorId": "6a9b1581de0de2fb3cb52035",
+      "username": "shikhapruthiguptaoffical",
+      "email": "shikhapruthi@gmail.com",
+      "phone": "9971019111",
+      "payoutAmount": 8,
+      "totalMemoAmount": 8,
+      "category": "General",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 0
+    },
+    {
+      "settlementId": "6a9db83ee0f72afc3b34682a",
+      "creatorId": "6479bc9931c8a00020201b59",
+      "username": "edigitalworldmall",
+      "email": "malharmtech@gmail.com",
+      "phone": "8866125320",
+      "payoutAmount": 59,
+      "totalMemoAmount": 59.220000000000006,
+      "category": "Design & Arts",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 3
+    },
+    {
+      "settlementId": "6a9c67147c4c10e234c012a7",
+      "creatorId": "66b791ee89c6c90013d2c326",
+      "username": "chosennkid",
+      "email": "businessmagnet1111@gmail.com",
+      "phone": "8766225583",
+      "payoutAmount": 45027,
+      "totalMemoAmount": 45026.85,
+      "category": "Astrology/Numerology/Tarot Card Reading",
+      "contentFlags": [],
+      "selfTransactions": [
+        {
+          "amountPaid": 111,
+          "buyerEmail": "businessmagnet1111@gmail.com",
+          "buyerPhone": "8766225583",
+          "IP": "205.254.176.236",
+          "date": "28 Jun, 2026; 03:53 PM",
+          "productId": "6a4023c0a694d500139011a4"
+        }
+      ],
+      "buyersChecked": 23
+    },
+    {
+      "settlementId": "6a9f0a4cad45fb47a7abf3b9",
+      "creatorId": "66d1cce209a09d0013e89617",
+      "username": "coachmrhind",
+      "email": "mahendermeena282@gmail.com",
+      "phone": "7793096127",
+      "payoutAmount": 460,
+      "totalMemoAmount": 939.12,
+      "category": "Education",
+      "contentFlags": [],
+      "selfTransactions": [
+        {
+          "amountPaid": 499,
+          "buyerEmail": "mahendermeena282@gmail.com",
+          "buyerPhone": "7793096127",
+          "IP": "110.235.219.138",
+          "date": "07 Sep, 2026; 05:24 PM",
+          "productId": "6a71a0f49e13ea0013dedf2a"
+        },
+        {
+          "amountPaid": 19,
+          "buyerEmail": "mahendermeena282@gmail.com",
+          "buyerPhone": "7793096127",
+          "IP": "110.235.219.150",
+          "date": "04 Aug, 2026; 06:06 PM",
+          "productId": "6a71dc77a03d8c00137fe87a"
+        }
+      ],
+      "buyersChecked": 5
+    },
+    {
+      "settlementId": "6a9f0a0ead45fb47a7abbdf3",
+      "creatorId": "6479bc9931c8a00020201b59",
+      "username": "edigitalworldmall",
+      "email": "malharmtech@gmail.com",
+      "phone": "8866125320",
+      "payoutAmount": 78,
+      "totalMemoAmount": 78,
+      "category": "Design & Arts",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 3
+    },
+    {
+      "settlementId": "6a3d747dbae61b33b700d5bb",
+      "creatorId": "6287ceaeea2c6b2330889d33",
+      "username": "techykrishnaofficial",
+      "email": "thekrishnak1@gmail.com",
+      "phone": "7509725219",
+      "payoutAmount": "---",
+      "totalMemoAmount": 971.5,
+      "category": "Not Classified above",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 100
+    },
+    {
+      "settlementId": "6999fab06dea84a815e3c408",
+      "creatorId": "64421af0262c1c00214f176b",
+      "username": "digitalkishor",
+      "email": "www.kishorkadam248@gmail.com",
+      "phone": "8975110936",
+      "payoutAmount": 806,
+      "totalMemoAmount": 805.5,
+      "category": "Education",
+      "contentFlags": [],
+      "selfTransactions": [
+        {
+          "amountPaid": 1,
+          "buyerEmail": "www.kishorkadam248@gmail.com",
+          "buyerPhone": "8975110936",
+          "IP": "42.104.221.39",
+          "date": "11 Jul, 2025; 09:06 AM",
+          "productId": "687028ce7cb44c0013cb71df"
+        },
+        {
+          "amountPaid": 1,
+          "buyerEmail": "www.kishorkadam248@gmail.com",
+          "buyerPhone": "8975110936",
+          "IP": "42.104.220.14",
+          "date": "14 Sep, 2024; 12:08 AM",
+          "productId": "66e402deec889a00133aa32a"
+        },
+        {
+          "amountPaid": 1,
+          "buyerEmail": "www.kishorkadam248@gmail.com",
+          "buyerPhone": "8975110936",
+          "IP": "42.104.224.103",
+          "date": "25 Mar, 2024; 03:23 PM",
+          "productId": "65ffb820fa2238001224d650"
+        },
+        {
+          "amountPaid": 35,
+          "buyerEmail": "www.kishorkadam248@gmail.com",
+          "buyerPhone": "8975110936",
+          "IP": "106.78.190.87",
+          "date": "03 Nov, 2023; 12:24 PM",
+          "productId": "65250fdacb7ef5001e93de8e"
+        },
+        {
+          "amountPaid": 35,
+          "buyerEmail": "www.kishorkadam248@gmail.com",
+          "buyerPhone": "8975110936",
+          "IP": "106.77.15.210",
+          "date": "10 Oct, 2023; 02:44 PM",
+          "productId": "65250fdacb7ef5001e93de8e"
+        },
+        {
+          "amountPaid": 9,
+          "buyerEmail": "www.kishorkadam248@gmail.com",
+          "buyerPhone": "8975110936",
+          "IP": "106.79.166.171",
+          "date": "19 Jul, 2023; 11:51 AM",
+          "productId": "64b7805e1e1758002053c6ef"
+        },
+        {
+          "amountPaid": 1,
+          "buyerEmail": "www.kishorkadam248@gmail.com",
+          "buyerPhone": "8975110936",
+          "IP": "1.187.138.116",
+          "date": "18 Jun, 2023; 01:49 AM",
+          "productId": "648e154761a63800204d9439"
+        },
+        {
+          "amountPaid": 1,
+          "buyerEmail": "www.kishorkadam248@gmail.com",
+          "buyerPhone": "8975110936",
+          "IP": "106.79.137.144",
+          "date": "14 Jun, 2023; 12:39 AM",
+          "productId": "6488bec6a6ec40002b4da452"
+        }
+      ],
+      "buyersChecked": 18
+    },
+    {
+      "settlementId": "6994b4b5476ec0db449ec283",
+      "creatorId": "64421af0262c1c00214f176b",
+      "username": "digitalkishor",
+      "email": "www.kishorkadam248@gmail.com",
+      "phone": "8975110936",
+      "payoutAmount": 537,
+      "totalMemoAmount": 537.3,
+      "category": "Education",
+      "contentFlags": [],
+      "selfTransactions": [
+        {
+          "amountPaid": 1,
+          "buyerEmail": "www.kishorkadam248@gmail.com",
+          "buyerPhone": "8975110936",
+          "IP": "42.104.221.39",
+          "date": "11 Jul, 2025; 09:06 AM",
+          "productId": "687028ce7cb44c0013cb71df"
+        },
+        {
+          "amountPaid": 1,
+          "buyerEmail": "www.kishorkadam248@gmail.com",
+          "buyerPhone": "8975110936",
+          "IP": "42.104.220.14",
+          "date": "14 Sep, 2024; 12:08 AM",
+          "productId": "66e402deec889a00133aa32a"
+        },
+        {
+          "amountPaid": 1,
+          "buyerEmail": "www.kishorkadam248@gmail.com",
+          "buyerPhone": "8975110936",
+          "IP": "42.104.224.103",
+          "date": "25 Mar, 2024; 03:23 PM",
+          "productId": "65ffb820fa2238001224d650"
+        },
+        {
+          "amountPaid": 35,
+          "buyerEmail": "www.kishorkadam248@gmail.com",
+          "buyerPhone": "8975110936",
+          "IP": "106.78.190.87",
+          "date": "03 Nov, 2023; 12:24 PM",
+          "productId": "65250fdacb7ef5001e93de8e"
+        },
+        {
+          "amountPaid": 35,
+          "buyerEmail": "www.kishorkadam248@gmail.com",
+          "buyerPhone": "8975110936",
+          "IP": "106.77.15.210",
+          "date": "10 Oct, 2023; 02:44 PM",
+          "productId": "65250fdacb7ef5001e93de8e"
+        },
+        {
+          "amountPaid": 9,
+          "buyerEmail": "www.kishorkadam248@gmail.com",
+          "buyerPhone": "8975110936",
+          "IP": "106.79.166.171",
+          "date": "19 Jul, 2023; 11:51 AM",
+          "productId": "64b7805e1e1758002053c6ef"
+        },
+        {
+          "amountPaid": 1,
+          "buyerEmail": "www.kishorkadam248@gmail.com",
+          "buyerPhone": "8975110936",
+          "IP": "1.187.138.116",
+          "date": "18 Jun, 2023; 01:49 AM",
+          "productId": "648e154761a63800204d9439"
+        },
+        {
+          "amountPaid": 1,
+          "buyerEmail": "www.kishorkadam248@gmail.com",
+          "buyerPhone": "8975110936",
+          "IP": "106.79.137.144",
+          "date": "14 Jun, 2023; 12:39 AM",
+          "productId": "6488bec6a6ec40002b4da452"
+        }
+      ],
+      "buyersChecked": 18
+    },
+    {
+      "settlementId": "699362d97724a35cb5140acf",
+      "creatorId": "64421af0262c1c00214f176b",
+      "username": "digitalkishor",
+      "email": "www.kishorkadam248@gmail.com",
+      "phone": "8975110936",
+      "payoutAmount": 181,
+      "totalMemoAmount": 180.9,
+      "category": "Education",
+      "contentFlags": [],
+      "selfTransactions": [
+        {
+          "amountPaid": 1,
+          "buyerEmail": "www.kishorkadam248@gmail.com",
+          "buyerPhone": "8975110936",
+          "IP": "42.104.221.39",
+          "date": "11 Jul, 2025; 09:06 AM",
+          "productId": "687028ce7cb44c0013cb71df"
+        },
+        {
+          "amountPaid": 1,
+          "buyerEmail": "www.kishorkadam248@gmail.com",
+          "buyerPhone": "8975110936",
+          "IP": "42.104.220.14",
+          "date": "14 Sep, 2024; 12:08 AM",
+          "productId": "66e402deec889a00133aa32a"
+        },
+        {
+          "amountPaid": 1,
+          "buyerEmail": "www.kishorkadam248@gmail.com",
+          "buyerPhone": "8975110936",
+          "IP": "42.104.224.103",
+          "date": "25 Mar, 2024; 03:23 PM",
+          "productId": "65ffb820fa2238001224d650"
+        },
+        {
+          "amountPaid": 35,
+          "buyerEmail": "www.kishorkadam248@gmail.com",
+          "buyerPhone": "8975110936",
+          "IP": "106.78.190.87",
+          "date": "03 Nov, 2023; 12:24 PM",
+          "productId": "65250fdacb7ef5001e93de8e"
+        },
+        {
+          "amountPaid": 35,
+          "buyerEmail": "www.kishorkadam248@gmail.com",
+          "buyerPhone": "8975110936",
+          "IP": "106.77.15.210",
+          "date": "10 Oct, 2023; 02:44 PM",
+          "productId": "65250fdacb7ef5001e93de8e"
+        },
+        {
+          "amountPaid": 9,
+          "buyerEmail": "www.kishorkadam248@gmail.com",
+          "buyerPhone": "8975110936",
+          "IP": "106.79.166.171",
+          "date": "19 Jul, 2023; 11:51 AM",
+          "productId": "64b7805e1e1758002053c6ef"
+        },
+        {
+          "amountPaid": 1,
+          "buyerEmail": "www.kishorkadam248@gmail.com",
+          "buyerPhone": "8975110936",
+          "IP": "1.187.138.116",
+          "date": "18 Jun, 2023; 01:49 AM",
+          "productId": "648e154761a63800204d9439"
+        },
+        {
+          "amountPaid": 1,
+          "buyerEmail": "www.kishorkadam248@gmail.com",
+          "buyerPhone": "8975110936",
+          "IP": "106.79.137.144",
+          "date": "14 Jun, 2023; 12:39 AM",
+          "productId": "6488bec6a6ec40002b4da452"
+        }
+      ],
+      "buyersChecked": 18
     }
   ]
 }

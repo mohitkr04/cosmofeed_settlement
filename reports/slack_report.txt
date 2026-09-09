@@ -1,10 +1,10 @@
 🚨 *COSMOFEED PAYOUT RISK AUDIT REPORT (T+1 Product Review)*
 📅 *Review Date:* `2026-09-09` | *Product Sale Date:* `2026-09-08`
-🕒 *Generated:* `2026-09-09 08:33` | *Total Audited:* `2,339` creators
+🕒 *Generated:* `2026-09-09 10:49` | *Total Audited:* `2,348` creators
 ──────────────────────────────────
 📊 *SUMMARY METRICS:*
-• *Total Pending Payout:* ₹11,303,478.00
-• *Self-Transaction Flagged:* `56` creators
+• *Total Pending Payout:* ₹11,350,634.00
+• *Self-Transaction Flagged:* `57` creators
 • *No Link / Missing Deliverable Flagged:* `73` creators
 • *Adult Keyword Flagged:* `0` creators
 • *Telegram Integration (vig/ >= ₹1k):* `383` settlements
@@ -48,7 +48,7 @@
 29. *anilpatidarofficial* (`660c3485d850c900130a4a3e`) — Self-Txn: *₹89.00* (02:24 AM) | Payout: *₹160.00*
 30. *crowntechnology* (`69606ea6c6c9a30013ec0c9a`) — Self-Txn: *₹79.00* (10:24 PM) | Payout: *₹74.00*
 
-_... and 26 more creators flagged in full report._
+_... and 27 more creators flagged in full report._
 
 🟡 *TOP FLAGGED NO-LINK PRODUCTS (Payment page exists, but no product/content link attached):*
 1. *jyothishavazhi* (`6a966d80344a0f0013cd315d`) | Prod: `6a967f65d6667500135d9ef6` (—) | URL: https://superprofile.bio/vp/6a967f65d6667500135d9ef6 | ⚠️ No Link Attached
