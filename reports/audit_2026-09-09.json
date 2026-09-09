@@ -1,7 +1,7 @@
 {
   "report": {
     "date": "2026-09-09",
-    "totalAudited": 2338,
+    "totalAudited": 2339,
     "selfTransactionCount": 337,
     "flaggedCount": 0,
     "errorCount": 6,
@@ -45160,6 +45160,19 @@
       "contentFlags": [],
       "selfTransactions": [],
       "buyersChecked": 58
+    },
+    {
+      "settlementId": "6a00cf9cf7758a445a97831d",
+      "creatorId": "69fecdaec3805500136a4267",
+      "username": "digivorashop",
+      "email": "unrated00724may@gmail.com",
+      "phone": "8569998725",
+      "payoutAmount": 470,
+      "totalMemoAmount": 469.56,
+      "category": "Digital Marketing & Marketing",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 1
     }
   ]
 }
