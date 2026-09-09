@@ -1,8 +1,8 @@
 {
   "report": {
     "date": "2026-09-09",
-    "totalAudited": 2335,
-    "selfTransactionCount": 335,
+    "totalAudited": 2336,
+    "selfTransactionCount": 336,
     "flaggedCount": 0,
     "errorCount": 6,
     "selfTransactions": [
@@ -1525,6 +1525,60 @@
           }
         ],
         "buyersChecked": 59
+      },
+      {
+        "settlementId": "6a9f0a09ad45fb47a7abb959",
+        "creatorId": "64f76599c46929001e88de68",
+        "username": "digibundlesshop12",
+        "email": "jigneshbrand@gmail.com",
+        "phone": "7859820547",
+        "payoutAmount": 1548,
+        "totalMemoAmount": 1548,
+        "category": "Coaching (Business, Parenting, Relationship etc)",
+        "contentFlags": [],
+        "selfTransactions": [
+          {
+            "amountPaid": 1,
+            "buyerEmail": "jigneshbrand@gmail.com",
+            "buyerPhone": "7859820547",
+            "IP": "122.173.72.5",
+            "date": "21 Jul, 2026; 09:59 PM",
+            "productId": "6943dbb9b84cba0013a90732"
+          },
+          {
+            "amountPaid": 1,
+            "buyerEmail": "jigneshbrand@gmail.com",
+            "buyerPhone": "7859820547",
+            "IP": "106.202.199.96",
+            "date": "26 Jan, 2026; 11:00 PM",
+            "productId": "6919c9c5892ce6001305ee68"
+          },
+          {
+            "amountPaid": 1,
+            "buyerEmail": "jigneshbrand@gmail.com",
+            "buyerPhone": "7859820547",
+            "IP": "106.202.199.96",
+            "date": "26 Jan, 2026; 10:32 PM",
+            "productId": "6943dbb9b84cba0013a90732"
+          },
+          {
+            "amountPaid": 1,
+            "buyerEmail": "jigneshbrand@gmail.com",
+            "buyerPhone": "7859820547",
+            "IP": "106.202.199.96",
+            "date": "26 Jan, 2026; 10:22 PM",
+            "productId": "6919c9c5892ce6001305ee68"
+          },
+          {
+            "amountPaid": 149,
+            "buyerEmail": "jigneshbrand@gmail.com",
+            "buyerPhone": "7859820547",
+            "IP": "223.226.219.229",
+            "date": "18 Nov, 2025; 09:09 PM",
+            "productId": "6917e66326bbd900148e87e9"
+          }
+        ],
+        "buyersChecked": 100
       },
       {
         "settlementId": "6aa05be128f9fd699353b50a",
@@ -44995,6 +45049,60 @@
         }
       ],
       "buyersChecked": 12
+    },
+    {
+      "settlementId": "6a9f0a09ad45fb47a7abb959",
+      "creatorId": "64f76599c46929001e88de68",
+      "username": "digibundlesshop12",
+      "email": "jigneshbrand@gmail.com",
+      "phone": "7859820547",
+      "payoutAmount": 1548,
+      "totalMemoAmount": 1548,
+      "category": "Coaching (Business, Parenting, Relationship etc)",
+      "contentFlags": [],
+      "selfTransactions": [
+        {
+          "amountPaid": 1,
+          "buyerEmail": "jigneshbrand@gmail.com",
+          "buyerPhone": "7859820547",
+          "IP": "122.173.72.5",
+          "date": "21 Jul, 2026; 09:59 PM",
+          "productId": "6943dbb9b84cba0013a90732"
+        },
+        {
+          "amountPaid": 1,
+          "buyerEmail": "jigneshbrand@gmail.com",
+          "buyerPhone": "7859820547",
+          "IP": "106.202.199.96",
+          "date": "26 Jan, 2026; 11:00 PM",
+          "productId": "6919c9c5892ce6001305ee68"
+        },
+        {
+          "amountPaid": 1,
+          "buyerEmail": "jigneshbrand@gmail.com",
+          "buyerPhone": "7859820547",
+          "IP": "106.202.199.96",
+          "date": "26 Jan, 2026; 10:32 PM",
+          "productId": "6943dbb9b84cba0013a90732"
+        },
+        {
+          "amountPaid": 1,
+          "buyerEmail": "jigneshbrand@gmail.com",
+          "buyerPhone": "7859820547",
+          "IP": "106.202.199.96",
+          "date": "26 Jan, 2026; 10:22 PM",
+          "productId": "6919c9c5892ce6001305ee68"
+        },
+        {
+          "amountPaid": 149,
+          "buyerEmail": "jigneshbrand@gmail.com",
+          "buyerPhone": "7859820547",
+          "IP": "223.226.219.229",
+          "date": "18 Nov, 2025; 09:09 PM",
+          "productId": "6917e66326bbd900148e87e9"
+        }
+      ],
+      "buyersChecked": 100
     }
   ]
 }
