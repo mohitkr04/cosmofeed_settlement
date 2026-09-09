@@ -4,8 +4,8 @@
     "auditPeriodStart": "2026-08-27",
     "auditPeriodEnd": "2026-09-05",
     "targetSubmissionDate": "2026-09-05",
-    "lastUpdated": "2026-09-09 17:44:25",
-    "totalAuditRuns": 11,
+    "lastUpdated": "2026-09-09 18:53:13",
+    "totalAuditRuns": 12,
     "auditDates": [
       "2026-08-27",
       "2026-08-31",
@@ -17,7 +17,8 @@
       "2026-09-06",
       "2026-09-07",
       "2026-09-08",
-      "2026-09-09"
+      "2026-09-09",
+      "2026-09-10"
     ]
   },
   "creators": {
@@ -46273,18 +46274,19 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-09-04",
-      "lastSeenDate": "2026-09-09",
+      "lastSeenDate": "2026-09-10",
       "datesObserved": [
         "2026-09-04",
         "2026-09-05",
         "2026-09-06",
         "2026-09-07",
         "2026-09-08",
-        "2026-09-09"
+        "2026-09-09",
+        "2026-09-10"
       ],
-      "daysFlaggedCount": 6,
-      "latestPayoutAmount": 1752.0,
-      "cumulativePayoutVolume": 17010.0,
+      "daysFlaggedCount": 7,
+      "latestPayoutAmount": 2355.0,
+      "cumulativePayoutVolume": 19365.0,
       "maxDailyPayout": 4379.0,
       "settlementHistory": [
         {
@@ -46319,6 +46321,12 @@
         },
         {
           "auditDate": "2026-09-09",
+          "payoutAmount": 2355.0,
+          "telegramProductId": "6511690d55ae1b0058703c86",
+          "telegramProductLink": "https://superprofile.bio/vig/6511690d55ae1b0058703c86"
+        },
+        {
+          "auditDate": "2026-09-10",
           "payoutAmount": 2355.0,
           "telegramProductId": "6511690d55ae1b0058703c86",
           "telegramProductLink": "https://superprofile.bio/vig/6511690d55ae1b0058703c86"
@@ -54936,6 +54944,14 @@
         "64be3d24125ac80020ca44c7",
         "6990756033447e00137abb03",
         "64e5ae617f68ef001ea74131"
+      ]
+    },
+    "2026-09-10": {
+      "auditDate": "2026-09-10",
+      "flaggedCount": 1,
+      "totalDayVolume": 2355.0,
+      "creatorIds": [
+        "62115e4a6bd738258707c0e9"
       ]
     }
   }
