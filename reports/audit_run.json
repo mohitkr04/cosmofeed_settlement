@@ -1,8 +1,8 @@
 {
   "report": {
     "date": "2026-09-10",
-    "totalAudited": 2131,
-    "selfTransactionCount": 288,
+    "totalAudited": 2135,
+    "selfTransactionCount": 290,
     "flaggedCount": 0,
     "errorCount": 4,
     "selfTransactions": [
@@ -3823,6 +3823,28 @@
         "buyersChecked": 13
       },
       {
+        "settlementId": "68a76678ecb1b6d63bcfde24",
+        "creatorId": "687a4c9cb37a9b001377a0ce",
+        "username": "drshivamagarwal",
+        "email": "aahardarshan@gmail.com",
+        "phone": "8619194920",
+        "payoutAmount": 375,
+        "totalMemoAmount": 374.52000000000004,
+        "category": "Fitness & Nutrition",
+        "contentFlags": [],
+        "selfTransactions": [
+          {
+            "amountPaid": 199,
+            "buyerEmail": "aahardarshan@gmail.com",
+            "buyerPhone": "8619194920",
+            "IP": "157.48.89.190",
+            "date": "20 Aug, 2025; 07:55 PM",
+            "productId": "68a16f0d837d900013de7410"
+          }
+        ],
+        "buyersChecked": 3
+      },
+      {
         "settlementId": "6aa1acbf5c0ee9febc471c8c",
         "creatorId": "68bef0f16e12b90013a635ba",
         "username": "rupalilodhi",
@@ -5929,6 +5951,28 @@
           }
         ],
         "buyersChecked": 84
+      },
+      {
+        "settlementId": "68a61509ecb1b6d63bbdcab7",
+        "creatorId": "687a4c9cb37a9b001377a0ce",
+        "username": "drshivamagarwal",
+        "email": "aahardarshan@gmail.com",
+        "phone": "8619194920",
+        "payoutAmount": 187,
+        "totalMemoAmount": 187.26000000000002,
+        "category": "Fitness & Nutrition",
+        "contentFlags": [],
+        "selfTransactions": [
+          {
+            "amountPaid": 199,
+            "buyerEmail": "aahardarshan@gmail.com",
+            "buyerPhone": "8619194920",
+            "IP": "157.48.89.190",
+            "date": "20 Aug, 2025; 07:55 PM",
+            "productId": "68a16f0d837d900013de7410"
+          }
+        ],
+        "buyersChecked": 3
       },
       {
         "settlementId": "6aa1ad4a5c0ee9febc47beea",
@@ -40314,6 +40358,76 @@
         }
       ],
       "buyersChecked": 7
+    },
+    {
+      "settlementId": "6a9db86ee0f72afc3b34c3b6",
+      "creatorId": "6a61f80deb5aaa0013bdeced",
+      "username": "knowledgedropshq",
+      "email": "gedasingh3@gmail.com",
+      "phone": "9889551206",
+      "payoutAmount": 187,
+      "totalMemoAmount": 187.26000000000002,
+      "category": "other",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 1
+    },
+    {
+      "settlementId": "6a9872c642f86d2f7aa422d1",
+      "creatorId": "66b201a37e6cba0013be80bf",
+      "username": "srsuthar",
+      "email": "sutharsuresh781@gmail.com",
+      "phone": "8769061903",
+      "payoutAmount": 90,
+      "totalMemoAmount": 90,
+      "category": "Education",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 1
+    },
+    {
+      "settlementId": "68a76678ecb1b6d63bcfde24",
+      "creatorId": "687a4c9cb37a9b001377a0ce",
+      "username": "drshivamagarwal",
+      "email": "aahardarshan@gmail.com",
+      "phone": "8619194920",
+      "payoutAmount": 375,
+      "totalMemoAmount": 374.52000000000004,
+      "category": "Fitness & Nutrition",
+      "contentFlags": [],
+      "selfTransactions": [
+        {
+          "amountPaid": 199,
+          "buyerEmail": "aahardarshan@gmail.com",
+          "buyerPhone": "8619194920",
+          "IP": "157.48.89.190",
+          "date": "20 Aug, 2025; 07:55 PM",
+          "productId": "68a16f0d837d900013de7410"
+        }
+      ],
+      "buyersChecked": 3
+    },
+    {
+      "settlementId": "68a61509ecb1b6d63bbdcab7",
+      "creatorId": "687a4c9cb37a9b001377a0ce",
+      "username": "drshivamagarwal",
+      "email": "aahardarshan@gmail.com",
+      "phone": "8619194920",
+      "payoutAmount": 187,
+      "totalMemoAmount": 187.26000000000002,
+      "category": "Fitness & Nutrition",
+      "contentFlags": [],
+      "selfTransactions": [
+        {
+          "amountPaid": 199,
+          "buyerEmail": "aahardarshan@gmail.com",
+          "buyerPhone": "8619194920",
+          "IP": "157.48.89.190",
+          "date": "20 Aug, 2025; 07:55 PM",
+          "productId": "68a16f0d837d900013de7410"
+        }
+      ],
+      "buyersChecked": 3
     }
   ]
 }
