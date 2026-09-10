@@ -1,8 +1,8 @@
 {
   "report": {
     "date": "2026-09-10",
-    "totalAudited": 2110,
-    "selfTransactionCount": 278,
+    "totalAudited": 2113,
+    "selfTransactionCount": 279,
     "flaggedCount": 0,
     "errorCount": 4,
     "selfTransactions": [
@@ -4423,6 +4423,28 @@
           }
         ],
         "buyersChecked": 3
+      },
+      {
+        "settlementId": "6a9c67117c4c10e234c00f53",
+        "creatorId": "6a9ad75dd960420013f32674",
+        "username": "dvsingh2909",
+        "email": "raditivegroup@gmail.com",
+        "phone": "9599021388",
+        "payoutAmount": 278,
+        "totalMemoAmount": 277.59,
+        "category": "Digital Marketing & Marketing",
+        "contentFlags": [],
+        "selfTransactions": [
+          {
+            "amountPaid": 295,
+            "buyerEmail": "raditivegroup@gmail.com",
+            "buyerPhone": "9599021388",
+            "IP": "106.219.154.175",
+            "date": "05 Sep, 2026; 06:36 PM",
+            "productId": "6a9af1466ad77b001333185d"
+          }
+        ],
+        "buyersChecked": 1
       },
       {
         "settlementId": "6aa1ad2e5c0ee9febc47a621",
@@ -39651,6 +39673,54 @@
         }
       ],
       "buyersChecked": 18
+    },
+    {
+      "settlementId": "6a9f0a38ad45fb47a7abe211",
+      "creatorId": "68e7e80b81e08a00137dbb64",
+      "username": "serrical",
+      "email": "abhishek790620@gmail.com",
+      "phone": "7906207789",
+      "payoutAmount": 139,
+      "totalMemoAmount": 139.26999999999998,
+      "category": "other",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 3
+    },
+    {
+      "settlementId": "6aa05bea28f9fd699353bb56",
+      "creatorId": "6a9904a5749cfa0013191e68",
+      "username": "bankniftyniftycalls",
+      "email": "muzzamilhombal5127@gmail.com",
+      "phone": "9929648782",
+      "payoutAmount": 67668,
+      "totalMemoAmount": 67668,
+      "category": "Finance & Trading",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 67
+    },
+    {
+      "settlementId": "6a9c67117c4c10e234c00f53",
+      "creatorId": "6a9ad75dd960420013f32674",
+      "username": "dvsingh2909",
+      "email": "raditivegroup@gmail.com",
+      "phone": "9599021388",
+      "payoutAmount": 278,
+      "totalMemoAmount": 277.59,
+      "category": "Digital Marketing & Marketing",
+      "contentFlags": [],
+      "selfTransactions": [
+        {
+          "amountPaid": 295,
+          "buyerEmail": "raditivegroup@gmail.com",
+          "buyerPhone": "9599021388",
+          "IP": "106.219.154.175",
+          "date": "05 Sep, 2026; 06:36 PM",
+          "productId": "6a9af1466ad77b001333185d"
+        }
+      ],
+      "buyersChecked": 1
     }
   ]
 }
