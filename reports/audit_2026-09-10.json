@@ -1,8 +1,8 @@
 {
   "report": {
     "date": "2026-09-10",
-    "totalAudited": 2122,
-    "selfTransactionCount": 284,
+    "totalAudited": 2131,
+    "selfTransactionCount": 288,
     "flaggedCount": 0,
     "errorCount": 4,
     "selfTransactions": [
@@ -3391,6 +3391,28 @@
         "buyersChecked": 100
       },
       {
+        "settlementId": "6a9db872e0f72afc3b34c98f",
+        "creatorId": "67990d0e9c78290013a12a78",
+        "username": "tradesmartfx088",
+        "email": "nitindangipatel1@gmail.com",
+        "phone": "7725926011",
+        "payoutAmount": 449,
+        "totalMemoAmount": 449.1,
+        "category": "Education",
+        "contentFlags": [],
+        "selfTransactions": [
+          {
+            "amountPaid": 499,
+            "buyerEmail": "nitindangipatel1@gmail.com",
+            "buyerPhone": "7725926011",
+            "IP": "43.228.143.60",
+            "date": "06 Sep, 2026; 09:13 AM",
+            "productId": "6a9c6db2e9379b00137449b4"
+          }
+        ],
+        "buyersChecked": 1
+      },
+      {
         "settlementId": "6aa1ad2c5c0ee9febc47a4b7",
         "creatorId": "65114d97142b0d00467f4739",
         "username": "patterland",
@@ -4573,6 +4595,36 @@
         "buyersChecked": 1
       },
       {
+        "settlementId": "677d750dcf21d296bbc4255b",
+        "creatorId": "677cc693838baf0013769c76",
+        "username": "1preset",
+        "email": "cineeditors5@gmail.com",
+        "phone": "9999266620",
+        "payoutAmount": 276,
+        "totalMemoAmount": 835.1800000000001,
+        "category": "Retail and Ecommerce - Services",
+        "contentFlags": [],
+        "selfTransactions": [
+          {
+            "amountPaid": 1,
+            "buyerEmail": "cineeditors5@gmail.com",
+            "buyerPhone": "9999266620",
+            "IP": "103.90.181.27",
+            "date": "22 Jul, 2025; 11:19 AM",
+            "productId": "677cc8a02511e70013234c64"
+          },
+          {
+            "amountPaid": 299,
+            "buyerEmail": "cineeditors5@gmail.com",
+            "buyerPhone": "9999266620",
+            "IP": "103.90.181.27",
+            "date": "07 Jan, 2025; 03:24 PM",
+            "productId": "677cc8a02511e70013234c64"
+          }
+        ],
+        "buyersChecked": 7
+      },
+      {
         "settlementId": "6aa1ad2e5c0ee9febc47a621",
         "creatorId": "6380540086e6bc003826d377",
         "username": "kiranfont",
@@ -4663,6 +4715,66 @@
           }
         ],
         "buyersChecked": 90
+      },
+      {
+        "settlementId": "67880dd9cf21d296bbc6d146",
+        "creatorId": "677cc693838baf0013769c76",
+        "username": "1preset",
+        "email": "cineeditors5@gmail.com",
+        "phone": "9999266620",
+        "payoutAmount": 270,
+        "totalMemoAmount": 269.99,
+        "category": "Retail and Ecommerce - Services",
+        "contentFlags": [],
+        "selfTransactions": [
+          {
+            "amountPaid": 1,
+            "buyerEmail": "cineeditors5@gmail.com",
+            "buyerPhone": "9999266620",
+            "IP": "103.90.181.27",
+            "date": "22 Jul, 2025; 11:19 AM",
+            "productId": "677cc8a02511e70013234c64"
+          },
+          {
+            "amountPaid": 299,
+            "buyerEmail": "cineeditors5@gmail.com",
+            "buyerPhone": "9999266620",
+            "IP": "103.90.181.27",
+            "date": "07 Jan, 2025; 03:24 PM",
+            "productId": "677cc8a02511e70013234c64"
+          }
+        ],
+        "buyersChecked": 7
+      },
+      {
+        "settlementId": "677ec74ecf21d296bbc47935",
+        "creatorId": "677cc693838baf0013769c76",
+        "username": "1preset",
+        "email": "cineeditors5@gmail.com",
+        "phone": "9999266620",
+        "payoutAmount": 270,
+        "totalMemoAmount": 269.99,
+        "category": "Retail and Ecommerce - Services",
+        "contentFlags": [],
+        "selfTransactions": [
+          {
+            "amountPaid": 1,
+            "buyerEmail": "cineeditors5@gmail.com",
+            "buyerPhone": "9999266620",
+            "IP": "103.90.181.27",
+            "date": "22 Jul, 2025; 11:19 AM",
+            "productId": "677cc8a02511e70013234c64"
+          },
+          {
+            "amountPaid": 299,
+            "buyerEmail": "cineeditors5@gmail.com",
+            "buyerPhone": "9999266620",
+            "IP": "103.90.181.27",
+            "date": "07 Jan, 2025; 03:24 PM",
+            "productId": "677cc8a02511e70013234c64"
+          }
+        ],
+        "buyersChecked": 7
       },
       {
         "settlementId": "6aa1ad435c0ee9febc47b820",
@@ -40025,6 +40137,183 @@
         }
       ],
       "buyersChecked": 96
+    },
+    {
+      "settlementId": "6a9db872e0f72afc3b34c98f",
+      "creatorId": "67990d0e9c78290013a12a78",
+      "username": "tradesmartfx088",
+      "email": "nitindangipatel1@gmail.com",
+      "phone": "7725926011",
+      "payoutAmount": 449,
+      "totalMemoAmount": 449.1,
+      "category": "Education",
+      "contentFlags": [],
+      "selfTransactions": [
+        {
+          "amountPaid": 499,
+          "buyerEmail": "nitindangipatel1@gmail.com",
+          "buyerPhone": "7725926011",
+          "IP": "43.228.143.60",
+          "date": "06 Sep, 2026; 09:13 AM",
+          "productId": "6a9c6db2e9379b00137449b4"
+        }
+      ],
+      "buyersChecked": 1
+    },
+    {
+      "settlementId": "6a9c66f27c4c10e234bfed38",
+      "creatorId": "6a3c1209118f010013696ac4",
+      "username": "Firdosha7665",
+      "email": "firdoshabegum1221@gmail.com",
+      "phone": "8346975298",
+      "payoutAmount": 2823,
+      "totalMemoAmount": 2823,
+      "category": "Education",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 5
+    },
+    {
+      "settlementId": "6a9b15a6de0de2fb3cb546ee",
+      "creatorId": "6a3c1209118f010013696ac4",
+      "username": "Firdosha7665",
+      "email": "firdoshabegum1221@gmail.com",
+      "phone": "8346975298",
+      "payoutAmount": 2823,
+      "totalMemoAmount": 2823,
+      "category": "Education",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 5
+    },
+    {
+      "settlementId": "6a8de6b874bb4e1ef295210f",
+      "creatorId": "6a3c1209118f010013696ac4",
+      "username": "Firdosha7665",
+      "email": "firdoshabegum1221@gmail.com",
+      "phone": "8346975298",
+      "payoutAmount": 941,
+      "totalMemoAmount": 941,
+      "category": "Education",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 5
+    },
+    {
+      "settlementId": "6a874f3012fa1e4dab27401a",
+      "creatorId": "6a3c1209118f010013696ac4",
+      "username": "Firdosha7665",
+      "email": "firdoshabegum1221@gmail.com",
+      "phone": "8346975298",
+      "payoutAmount": 941,
+      "totalMemoAmount": 941,
+      "category": "Education",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 5
+    },
+    {
+      "settlementId": "6a82092e6264e8dc38d29a95",
+      "creatorId": "6a3c1209118f010013696ac4",
+      "username": "Firdosha7665",
+      "email": "firdoshabegum1221@gmail.com",
+      "phone": "8346975298",
+      "payoutAmount": 941,
+      "totalMemoAmount": 941,
+      "category": "Education",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 5
+    },
+    {
+      "settlementId": "67880dd9cf21d296bbc6d146",
+      "creatorId": "677cc693838baf0013769c76",
+      "username": "1preset",
+      "email": "cineeditors5@gmail.com",
+      "phone": "9999266620",
+      "payoutAmount": 270,
+      "totalMemoAmount": 269.99,
+      "category": "Retail and Ecommerce - Services",
+      "contentFlags": [],
+      "selfTransactions": [
+        {
+          "amountPaid": 1,
+          "buyerEmail": "cineeditors5@gmail.com",
+          "buyerPhone": "9999266620",
+          "IP": "103.90.181.27",
+          "date": "22 Jul, 2025; 11:19 AM",
+          "productId": "677cc8a02511e70013234c64"
+        },
+        {
+          "amountPaid": 299,
+          "buyerEmail": "cineeditors5@gmail.com",
+          "buyerPhone": "9999266620",
+          "IP": "103.90.181.27",
+          "date": "07 Jan, 2025; 03:24 PM",
+          "productId": "677cc8a02511e70013234c64"
+        }
+      ],
+      "buyersChecked": 7
+    },
+    {
+      "settlementId": "677ec74ecf21d296bbc47935",
+      "creatorId": "677cc693838baf0013769c76",
+      "username": "1preset",
+      "email": "cineeditors5@gmail.com",
+      "phone": "9999266620",
+      "payoutAmount": 270,
+      "totalMemoAmount": 269.99,
+      "category": "Retail and Ecommerce - Services",
+      "contentFlags": [],
+      "selfTransactions": [
+        {
+          "amountPaid": 1,
+          "buyerEmail": "cineeditors5@gmail.com",
+          "buyerPhone": "9999266620",
+          "IP": "103.90.181.27",
+          "date": "22 Jul, 2025; 11:19 AM",
+          "productId": "677cc8a02511e70013234c64"
+        },
+        {
+          "amountPaid": 299,
+          "buyerEmail": "cineeditors5@gmail.com",
+          "buyerPhone": "9999266620",
+          "IP": "103.90.181.27",
+          "date": "07 Jan, 2025; 03:24 PM",
+          "productId": "677cc8a02511e70013234c64"
+        }
+      ],
+      "buyersChecked": 7
+    },
+    {
+      "settlementId": "677d750dcf21d296bbc4255b",
+      "creatorId": "677cc693838baf0013769c76",
+      "username": "1preset",
+      "email": "cineeditors5@gmail.com",
+      "phone": "9999266620",
+      "payoutAmount": 276,
+      "totalMemoAmount": 835.1800000000001,
+      "category": "Retail and Ecommerce - Services",
+      "contentFlags": [],
+      "selfTransactions": [
+        {
+          "amountPaid": 1,
+          "buyerEmail": "cineeditors5@gmail.com",
+          "buyerPhone": "9999266620",
+          "IP": "103.90.181.27",
+          "date": "22 Jul, 2025; 11:19 AM",
+          "productId": "677cc8a02511e70013234c64"
+        },
+        {
+          "amountPaid": 299,
+          "buyerEmail": "cineeditors5@gmail.com",
+          "buyerPhone": "9999266620",
+          "IP": "103.90.181.27",
+          "date": "07 Jan, 2025; 03:24 PM",
+          "productId": "677cc8a02511e70013234c64"
+        }
+      ],
+      "buyersChecked": 7
     }
   ]
 }
