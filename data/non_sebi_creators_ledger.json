@@ -4,7 +4,7 @@
     "auditPeriodStart": "2026-08-27",
     "auditPeriodEnd": "2026-09-05",
     "targetSubmissionDate": "2026-09-05",
-    "lastUpdated": "2026-09-10 06:34:03",
+    "lastUpdated": "2026-09-10 07:04:00",
     "totalAuditRuns": 12,
     "auditDates": [
       "2026-08-27",
@@ -194,7 +194,7 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-08-27",
-      "lastSeenDate": "2026-09-08",
+      "lastSeenDate": "2026-09-10",
       "datesObserved": [
         "2026-08-27",
         "2026-08-31",
@@ -204,11 +204,12 @@
         "2026-09-05",
         "2026-09-06",
         "2026-09-07",
-        "2026-09-08"
+        "2026-09-08",
+        "2026-09-10"
       ],
-      "daysFlaggedCount": 9,
-      "latestPayoutAmount": 32386.0,
-      "cumulativePayoutVolume": 339599.0,
+      "daysFlaggedCount": 10,
+      "latestPayoutAmount": 3959.0,
+      "cumulativePayoutVolume": 371985.0,
       "maxDailyPayout": 70572.0,
       "settlementHistory": [
         {
@@ -261,6 +262,12 @@
         },
         {
           "auditDate": "2026-09-08",
+          "payoutAmount": 32386.0,
+          "telegramProductId": "6a59b780bf6f01001379f602",
+          "telegramProductLink": "https://superprofile.bio/vig/6a59b780bf6f01001379f602"
+        },
+        {
+          "auditDate": "2026-09-10",
           "payoutAmount": 32386.0,
           "telegramProductId": "6a59b780bf6f01001379f602",
           "telegramProductLink": "https://superprofile.bio/vig/6a59b780bf6f01001379f602"
@@ -58000,8 +58007,8 @@
     },
     "2026-09-10": {
       "auditDate": "2026-09-10",
-      "flaggedCount": 343,
-      "totalDayVolume": 4417779.0,
+      "flaggedCount": 345,
+      "totalDayVolume": 4425697.0,
       "creatorIds": [
         "6a9c25a3213bce0014ff2b98",
         "6a9c25a3213bce0014ff2b98",
@@ -58012,6 +58019,8 @@
         "67626ce51d68710013b2d232",
         "69b3c1dd02fef30013b6cf7d",
         "6443c3c058544c002035fae3",
+        "6a54b9ee478445001378e580",
+        "6a54b9ee478445001378e580",
         "6a55d3282f10800012ed9ab0",
         "6682543e9f94b50014bd0d5f",
         "65f92f6ac022090013a05e2f",

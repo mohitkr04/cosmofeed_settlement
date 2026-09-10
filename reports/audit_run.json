@@ -1,8 +1,8 @@
 {
   "report": {
     "date": "2026-09-10",
-    "totalAudited": 2119,
-    "selfTransactionCount": 282,
+    "totalAudited": 2122,
+    "selfTransactionCount": 284,
     "flaggedCount": 0,
     "errorCount": 4,
     "selfTransactions": [
@@ -71,6 +71,28 @@
           }
         ],
         "buyersChecked": 100
+      },
+      {
+        "settlementId": "6a9f0a16ad45fb47a7abc574",
+        "creatorId": "6a54b9ee478445001378e580",
+        "username": "himanshi09",
+        "email": "himanshisharma88888@gmail.com",
+        "phone": "6375733270",
+        "payoutAmount": 32386,
+        "totalMemoAmount": 32386,
+        "category": "Entertainment & Media",
+        "contentFlags": [],
+        "selfTransactions": [
+          {
+            "amountPaid": 1.18,
+            "buyerEmail": "himanshisharma88888@gmail.com",
+            "buyerPhone": "6375733270",
+            "IP": "171.49.219.157",
+            "date": "17 Jul, 2026; 12:24 PM",
+            "productId": "6a59b780bf6f01001379f602"
+          }
+        ],
+        "buyersChecked": 96
       },
       {
         "settlementId": "6aa1acca5c0ee9febc472f58",
@@ -359,6 +381,28 @@
           }
         ],
         "buyersChecked": 3
+      },
+      {
+        "settlementId": "6a9db89fe0f72afc3b34fab0",
+        "creatorId": "6a54b9ee478445001378e580",
+        "username": "himanshi09",
+        "email": "himanshisharma88888@gmail.com",
+        "phone": "6375733270",
+        "payoutAmount": 3959,
+        "totalMemoAmount": 3959,
+        "category": "Entertainment & Media",
+        "contentFlags": [],
+        "selfTransactions": [
+          {
+            "amountPaid": 1.18,
+            "buyerEmail": "himanshisharma88888@gmail.com",
+            "buyerPhone": "6375733270",
+            "IP": "171.49.219.157",
+            "date": "17 Jul, 2026; 12:24 PM",
+            "productId": "6a59b780bf6f01001379f602"
+          }
+        ],
+        "buyersChecked": 96
       },
       {
         "settlementId": "6aa1ad405c0ee9febc47b5d4",
@@ -39924,6 +39968,63 @@
         }
       ],
       "buyersChecked": 3
+    },
+    {
+      "settlementId": "6a9f0a16ad45fb47a7abc574",
+      "creatorId": "6a54b9ee478445001378e580",
+      "username": "himanshi09",
+      "email": "himanshisharma88888@gmail.com",
+      "phone": "6375733270",
+      "payoutAmount": 32386,
+      "totalMemoAmount": 32386,
+      "category": "Entertainment & Media",
+      "contentFlags": [],
+      "selfTransactions": [
+        {
+          "amountPaid": 1.18,
+          "buyerEmail": "himanshisharma88888@gmail.com",
+          "buyerPhone": "6375733270",
+          "IP": "171.49.219.157",
+          "date": "17 Jul, 2026; 12:24 PM",
+          "productId": "6a59b780bf6f01001379f602"
+        }
+      ],
+      "buyersChecked": 96
+    },
+    {
+      "settlementId": "6aa05bf228f9fd699353c087",
+      "creatorId": "6a867837014dfe001328520f",
+      "username": "theoldmoneyin",
+      "email": "contact@theoldmoney.in",
+      "phone": "9964249393",
+      "payoutAmount": 447,
+      "totalMemoAmount": 446.97,
+      "category": "Entertainment & Media",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 1
+    },
+    {
+      "settlementId": "6a9db89fe0f72afc3b34fab0",
+      "creatorId": "6a54b9ee478445001378e580",
+      "username": "himanshi09",
+      "email": "himanshisharma88888@gmail.com",
+      "phone": "6375733270",
+      "payoutAmount": 3959,
+      "totalMemoAmount": 3959,
+      "category": "Entertainment & Media",
+      "contentFlags": [],
+      "selfTransactions": [
+        {
+          "amountPaid": 1.18,
+          "buyerEmail": "himanshisharma88888@gmail.com",
+          "buyerPhone": "6375733270",
+          "IP": "171.49.219.157",
+          "date": "17 Jul, 2026; 12:24 PM",
+          "productId": "6a59b780bf6f01001379f602"
+        }
+      ],
+      "buyersChecked": 96
     }
   ]
 }
