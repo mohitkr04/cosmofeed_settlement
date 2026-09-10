@@ -1,8 +1,8 @@
 {
   "report": {
     "date": "2026-09-10",
-    "totalAudited": 2113,
-    "selfTransactionCount": 279,
+    "totalAudited": 2119,
+    "selfTransactionCount": 282,
     "flaggedCount": 0,
     "errorCount": 4,
     "selfTransactions": [
@@ -137,6 +137,36 @@
           }
         ],
         "buyersChecked": 100
+      },
+      {
+        "settlementId": "6a9f0a27ad45fb47a7abd4d2",
+        "creatorId": "6a9c25a3213bce0014ff2b98",
+        "username": "priyasharma71284",
+        "email": "zerotohero941376@gmail.com",
+        "phone": "9351444938",
+        "payoutAmount": 8363,
+        "totalMemoAmount": 8363,
+        "category": "Finance & Trading",
+        "contentFlags": [],
+        "selfTransactions": [
+          {
+            "amountPaid": 20,
+            "buyerEmail": "zerotohero941376@gmail.com",
+            "buyerPhone": "9351444938",
+            "IP": "49.36.242.137",
+            "date": "05 Sep, 2026; 08:58 PM",
+            "productId": "6a9c336de9379b0013686b71"
+          },
+          {
+            "amountPaid": 10,
+            "buyerEmail": "zerotohero941376@gmail.com",
+            "buyerPhone": "9351444938",
+            "IP": "49.36.242.137",
+            "date": "05 Sep, 2026; 08:56 PM",
+            "productId": "6a9c330b213bce001402122a"
+          }
+        ],
+        "buyersChecked": 3
       },
       {
         "settlementId": "6aa1acf05c0ee9febc47672e",
@@ -307,6 +337,28 @@
           }
         ],
         "buyersChecked": 64
+      },
+      {
+        "settlementId": "6aa05b4928f9fd6993532530",
+        "creatorId": "65ccc11d72b2e2001ecef7a1",
+        "username": "spiritualtrader108",
+        "email": "aweensalamon@gmail.com",
+        "phone": "8247539049",
+        "payoutAmount": 4509,
+        "totalMemoAmount": 4509,
+        "category": "Finance & Trading",
+        "contentFlags": [],
+        "selfTransactions": [
+          {
+            "amountPaid": 5,
+            "buyerEmail": "aweensalamon@gmail.com",
+            "buyerPhone": "8247539049",
+            "IP": "157.50.72.50",
+            "date": "31 Aug, 2026; 04:43 PM",
+            "productId": "6a955e84bf307e00139166cc"
+          }
+        ],
+        "buyersChecked": 3
       },
       {
         "settlementId": "6aa1ad405c0ee9febc47b5d4",
@@ -843,6 +895,36 @@
           }
         ],
         "buyersChecked": 9
+      },
+      {
+        "settlementId": "6a9db840e0f72afc3b346a1c",
+        "creatorId": "6a9c25a3213bce0014ff2b98",
+        "username": "priyasharma71284",
+        "email": "zerotohero941376@gmail.com",
+        "phone": "9351444938",
+        "payoutAmount": 2474,
+        "totalMemoAmount": 2473.8900000000003,
+        "category": "Finance & Trading",
+        "contentFlags": [],
+        "selfTransactions": [
+          {
+            "amountPaid": 20,
+            "buyerEmail": "zerotohero941376@gmail.com",
+            "buyerPhone": "9351444938",
+            "IP": "49.36.242.137",
+            "date": "05 Sep, 2026; 08:58 PM",
+            "productId": "6a9c336de9379b0013686b71"
+          },
+          {
+            "amountPaid": 10,
+            "buyerEmail": "zerotohero941376@gmail.com",
+            "buyerPhone": "9351444938",
+            "IP": "49.36.242.137",
+            "date": "05 Sep, 2026; 08:56 PM",
+            "productId": "6a9c330b213bce001402122a"
+          }
+        ],
+        "buyersChecked": 3
       },
       {
         "settlementId": "6aa1acd15c0ee9febc473e79",
@@ -39721,6 +39803,127 @@
         }
       ],
       "buyersChecked": 1
+    },
+    {
+      "settlementId": "6aa05b5c28f9fd699353364e",
+      "creatorId": "68d3900fdab36c00133c5e08",
+      "username": "fair69play",
+      "email": "pawanvihari2025@gmail.com",
+      "phone": "6299745077",
+      "payoutAmount": 1895,
+      "totalMemoAmount": 1895,
+      "category": "Entertainment & Media",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 100
+    },
+    {
+      "settlementId": "6a9f0a27ad45fb47a7abd4d2",
+      "creatorId": "6a9c25a3213bce0014ff2b98",
+      "username": "priyasharma71284",
+      "email": "zerotohero941376@gmail.com",
+      "phone": "9351444938",
+      "payoutAmount": 8363,
+      "totalMemoAmount": 8363,
+      "category": "Finance & Trading",
+      "contentFlags": [],
+      "selfTransactions": [
+        {
+          "amountPaid": 20,
+          "buyerEmail": "zerotohero941376@gmail.com",
+          "buyerPhone": "9351444938",
+          "IP": "49.36.242.137",
+          "date": "05 Sep, 2026; 08:58 PM",
+          "productId": "6a9c336de9379b0013686b71"
+        },
+        {
+          "amountPaid": 10,
+          "buyerEmail": "zerotohero941376@gmail.com",
+          "buyerPhone": "9351444938",
+          "IP": "49.36.242.137",
+          "date": "05 Sep, 2026; 08:56 PM",
+          "productId": "6a9c330b213bce001402122a"
+        }
+      ],
+      "buyersChecked": 3
+    },
+    {
+      "settlementId": "6a9f0a13ad45fb47a7abc24f",
+      "creatorId": "68d3900fdab36c00133c5e08",
+      "username": "fair69play",
+      "email": "pawanvihari2025@gmail.com",
+      "phone": "6299745077",
+      "payoutAmount": 5436,
+      "totalMemoAmount": 5435.829999999991,
+      "category": "Entertainment & Media",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 100
+    },
+    {
+      "settlementId": "6aa05b4928f9fd6993532530",
+      "creatorId": "65ccc11d72b2e2001ecef7a1",
+      "username": "spiritualtrader108",
+      "email": "aweensalamon@gmail.com",
+      "phone": "8247539049",
+      "payoutAmount": 4509,
+      "totalMemoAmount": 4509,
+      "category": "Finance & Trading",
+      "contentFlags": [],
+      "selfTransactions": [
+        {
+          "amountPaid": 5,
+          "buyerEmail": "aweensalamon@gmail.com",
+          "buyerPhone": "8247539049",
+          "IP": "157.50.72.50",
+          "date": "31 Aug, 2026; 04:43 PM",
+          "productId": "6a955e84bf307e00139166cc"
+        }
+      ],
+      "buyersChecked": 3
+    },
+    {
+      "settlementId": "6aa05be028f9fd699353b498",
+      "creatorId": "6478beaf7a245400202cf94f",
+      "username": "sajidrafiq",
+      "email": "motivationcrew7@gmail.com",
+      "phone": "6006880565",
+      "payoutAmount": 1954,
+      "totalMemoAmount": 1954,
+      "category": "Education",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 100
+    },
+    {
+      "settlementId": "6a9db840e0f72afc3b346a1c",
+      "creatorId": "6a9c25a3213bce0014ff2b98",
+      "username": "priyasharma71284",
+      "email": "zerotohero941376@gmail.com",
+      "phone": "9351444938",
+      "payoutAmount": 2474,
+      "totalMemoAmount": 2473.8900000000003,
+      "category": "Finance & Trading",
+      "contentFlags": [],
+      "selfTransactions": [
+        {
+          "amountPaid": 20,
+          "buyerEmail": "zerotohero941376@gmail.com",
+          "buyerPhone": "9351444938",
+          "IP": "49.36.242.137",
+          "date": "05 Sep, 2026; 08:58 PM",
+          "productId": "6a9c336de9379b0013686b71"
+        },
+        {
+          "amountPaid": 10,
+          "buyerEmail": "zerotohero941376@gmail.com",
+          "buyerPhone": "9351444938",
+          "IP": "49.36.242.137",
+          "date": "05 Sep, 2026; 08:56 PM",
+          "productId": "6a9c330b213bce001402122a"
+        }
+      ],
+      "buyersChecked": 3
     }
   ]
 }
