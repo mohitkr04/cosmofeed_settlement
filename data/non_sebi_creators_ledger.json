@@ -4,8 +4,8 @@
     "auditPeriodStart": "2026-08-27",
     "auditPeriodEnd": "2026-09-05",
     "targetSubmissionDate": "2026-09-05",
-    "lastUpdated": "2026-09-10 17:37:00",
-    "totalAuditRuns": 12,
+    "lastUpdated": "2026-09-10 18:43:28",
+    "totalAuditRuns": 13,
     "auditDates": [
       "2026-08-27",
       "2026-08-31",
@@ -18,7 +18,8 @@
       "2026-09-07",
       "2026-09-08",
       "2026-09-09",
-      "2026-09-10"
+      "2026-09-10",
+      "2026-09-11"
     ]
   },
   "creators": {
@@ -48276,7 +48277,7 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-09-04",
-      "lastSeenDate": "2026-09-10",
+      "lastSeenDate": "2026-09-11",
       "datesObserved": [
         "2026-09-04",
         "2026-09-05",
@@ -48284,11 +48285,12 @@
         "2026-09-07",
         "2026-09-08",
         "2026-09-09",
-        "2026-09-10"
+        "2026-09-10",
+        "2026-09-11"
       ],
-      "daysFlaggedCount": 7,
+      "daysFlaggedCount": 8,
       "latestPayoutAmount": 2355.0,
-      "cumulativePayoutVolume": 19365.0,
+      "cumulativePayoutVolume": 21720.0,
       "maxDailyPayout": 4379.0,
       "settlementHistory": [
         {
@@ -48329,6 +48331,12 @@
         },
         {
           "auditDate": "2026-09-10",
+          "payoutAmount": 2355.0,
+          "telegramProductId": "6511690d55ae1b0058703c86",
+          "telegramProductLink": "https://superprofile.bio/vig/6511690d55ae1b0058703c86"
+        },
+        {
+          "auditDate": "2026-09-11",
           "payoutAmount": 2355.0,
           "telegramProductId": "6511690d55ae1b0058703c86",
           "telegramProductLink": "https://superprofile.bio/vig/6511690d55ae1b0058703c86"
@@ -58355,6 +58363,14 @@
         "6990756033447e00137abb03",
         "64be3d24125ac80020ca44c7",
         "646d81f18a81c20020631c78"
+      ]
+    },
+    "2026-09-11": {
+      "auditDate": "2026-09-11",
+      "flaggedCount": 1,
+      "totalDayVolume": 2355.0,
+      "creatorIds": [
+        "62115e4a6bd738258707c0e9"
       ]
     }
   }
