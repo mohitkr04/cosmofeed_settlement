@@ -4,8 +4,8 @@
     "auditPeriodStart": "2026-08-27",
     "auditPeriodEnd": "2026-09-05",
     "targetSubmissionDate": "2026-09-05",
-    "lastUpdated": "2026-09-11 17:41:07",
-    "totalAuditRuns": 13,
+    "lastUpdated": "2026-09-11 18:47:11",
+    "totalAuditRuns": 14,
     "auditDates": [
       "2026-08-27",
       "2026-08-31",
@@ -19,7 +19,8 @@
       "2026-09-08",
       "2026-09-09",
       "2026-09-10",
-      "2026-09-11"
+      "2026-09-11",
+      "2026-09-12"
     ]
   },
   "creators": {
@@ -50139,7 +50140,7 @@
       "reviewStatus": "Manual Review Required",
       "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
       "firstSeenDate": "2026-09-04",
-      "lastSeenDate": "2026-09-11",
+      "lastSeenDate": "2026-09-12",
       "datesObserved": [
         "2026-09-04",
         "2026-09-05",
@@ -50148,11 +50149,12 @@
         "2026-09-08",
         "2026-09-09",
         "2026-09-10",
-        "2026-09-11"
+        "2026-09-11",
+        "2026-09-12"
       ],
-      "daysFlaggedCount": 8,
-      "latestPayoutAmount": 2044.0,
-      "cumulativePayoutVolume": 21720.0,
+      "daysFlaggedCount": 9,
+      "latestPayoutAmount": 2355.0,
+      "cumulativePayoutVolume": 24075.0,
       "maxDailyPayout": 4379.0,
       "settlementHistory": [
         {
@@ -50199,6 +50201,12 @@
         },
         {
           "auditDate": "2026-09-11",
+          "payoutAmount": 2355.0,
+          "telegramProductId": "6511690d55ae1b0058703c86",
+          "telegramProductLink": "https://superprofile.bio/vig/6511690d55ae1b0058703c86"
+        },
+        {
+          "auditDate": "2026-09-12",
           "payoutAmount": 2355.0,
           "telegramProductId": "6511690d55ae1b0058703c86",
           "telegramProductLink": "https://superprofile.bio/vig/6511690d55ae1b0058703c86"
@@ -61053,6 +61061,14 @@
         "67d0f64dfac4900013face06",
         "65925b23d9349b001e49b619",
         "6a0739870374d70013f4a6da"
+      ]
+    },
+    "2026-09-12": {
+      "auditDate": "2026-09-12",
+      "flaggedCount": 1,
+      "totalDayVolume": 2355.0,
+      "creatorIds": [
+        "62115e4a6bd738258707c0e9"
       ]
     }
   }
