@@ -1,8 +1,8 @@
 {
   "report": {
     "date": "2026-09-11",
-    "totalAudited": 2174,
-    "selfTransactionCount": 330,
+    "totalAudited": 2177,
+    "selfTransactionCount": 331,
     "flaggedCount": 0,
     "errorCount": 8,
     "selfTransactions": [
@@ -1713,6 +1713,36 @@
           }
         ],
         "buyersChecked": 88
+      },
+      {
+        "settlementId": "6aa1acff5c0ee9febc477928",
+        "creatorId": "6a773fbb5854ff0013f195a8",
+        "username": "tradewithhooda",
+        "email": "jagdish.hooda89@gmail.com",
+        "phone": "8949076053",
+        "payoutAmount": 1642,
+        "totalMemoAmount": 1642,
+        "category": "Finance & Trading",
+        "contentFlags": [],
+        "selfTransactions": [
+          {
+            "amountPaid": 249,
+            "buyerEmail": "jagdish.hooda89@gmail.com",
+            "buyerPhone": "8949076053",
+            "IP": "152.59.127.211",
+            "date": "03 Sep, 2026; 09:45 AM",
+            "productId": "6a7f23895f0ef70013a44d80"
+          },
+          {
+            "amountPaid": 249,
+            "buyerEmail": "jagdish.hooda89@gmail.com",
+            "buyerPhone": "8949076053",
+            "IP": "152.59.75.193",
+            "date": "29 Aug, 2026; 10:23 PM",
+            "productId": "6a7f23895f0ef70013a44d80"
+          }
+        ],
+        "buyersChecked": 16
       },
       {
         "settlementId": "6aa2fec55c0ee9febc48736e",
@@ -43639,6 +43669,62 @@
       "contentFlags": [],
       "selfTransactions": [],
       "buyersChecked": 1
+    },
+    {
+      "settlementId": "6aa05c0328f9fd699353cc2c",
+      "creatorId": "66d329848007d20013cda7e5",
+      "username": "madan21",
+      "email": "madanlal010123@gmail.com",
+      "phone": "9140204389",
+      "payoutAmount": 3600,
+      "totalMemoAmount": 3600,
+      "category": "Education",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 1
+    },
+    {
+      "settlementId": "6aa1ad3e5c0ee9febc47b41d",
+      "creatorId": "6976c66f5994330013382e46",
+      "username": "niftyoptiontrader",
+      "email": "suniltonde5@gmail.com",
+      "phone": "8208110660",
+      "payoutAmount": 3810,
+      "totalMemoAmount": 3810.25,
+      "category": "Finance & Trading",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 1
+    },
+    {
+      "settlementId": "6aa1acff5c0ee9febc477928",
+      "creatorId": "6a773fbb5854ff0013f195a8",
+      "username": "tradewithhooda",
+      "email": "jagdish.hooda89@gmail.com",
+      "phone": "8949076053",
+      "payoutAmount": 1642,
+      "totalMemoAmount": 1642,
+      "category": "Finance & Trading",
+      "contentFlags": [],
+      "selfTransactions": [
+        {
+          "amountPaid": 249,
+          "buyerEmail": "jagdish.hooda89@gmail.com",
+          "buyerPhone": "8949076053",
+          "IP": "152.59.127.211",
+          "date": "03 Sep, 2026; 09:45 AM",
+          "productId": "6a7f23895f0ef70013a44d80"
+        },
+        {
+          "amountPaid": 249,
+          "buyerEmail": "jagdish.hooda89@gmail.com",
+          "buyerPhone": "8949076053",
+          "IP": "152.59.75.193",
+          "date": "29 Aug, 2026; 10:23 PM",
+          "productId": "6a7f23895f0ef70013a44d80"
+        }
+      ],
+      "buyersChecked": 16
     }
   ]
 }
