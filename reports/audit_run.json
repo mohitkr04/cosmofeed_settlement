@@ -1,7 +1,7 @@
 {
   "report": {
     "date": "2026-09-11",
-    "totalAudited": 2173,
+    "totalAudited": 2174,
     "selfTransactionCount": 330,
     "flaggedCount": 0,
     "errorCount": 8,
@@ -43626,6 +43626,19 @@
       "contentFlags": [],
       "selfTransactions": [],
       "buyersChecked": 2
+    },
+    {
+      "settlementId": "6a9b1593de0de2fb3cb53479",
+      "creatorId": "697ee24f1fdf2400131e82b3",
+      "username": "Ankit0520",
+      "email": "ankitgautam34167@gmail.com",
+      "phone": "8181810760",
+      "payoutAmount": 1129,
+      "totalMemoAmount": 1129.2,
+      "category": "Digital Marketing & Marketing",
+      "contentFlags": [],
+      "selfTransactions": [],
+      "buyersChecked": 1
     }
   ]
 }
