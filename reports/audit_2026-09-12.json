@@ -1,8 +1,8 @@
 {
   "report": {
     "date": "2026-09-12",
-    "totalAudited": 2101,
-    "selfTransactionCount": 308,
+    "totalAudited": 2106,
+    "selfTransactionCount": 313,
     "flaggedCount": 0,
     "errorCount": 7,
     "selfTransactions": [
@@ -3487,6 +3487,50 @@
         "buyersChecked": 4
       },
       {
+        "settlementId": "6aa2fe6d5c0ee9febc481b59",
+        "creatorId": "6a4db058bd277000130d2c2d",
+        "username": "marc8byeightlines",
+        "email": "kingfardeenmcr123@gmail.com",
+        "phone": "6361697864",
+        "payoutAmount": 554,
+        "totalMemoAmount": 554.08,
+        "category": "Travel & Hospitality",
+        "contentFlags": [],
+        "selfTransactions": [
+          {
+            "amountPaid": 588.82,
+            "buyerEmail": "kingfardeenmcr123@gmail.com",
+            "buyerPhone": "6361697864",
+            "IP": "122.172.82.88",
+            "date": "10 Sep, 2026; 01:42 AM",
+            "productId": "6a6d58e06e42b80013de43a2"
+          }
+        ],
+        "buyersChecked": 1
+      },
+      {
+        "settlementId": "6aa2fed25c0ee9febc487d2e",
+        "creatorId": "6795d65cfba1200013f13729",
+        "username": "onebyonetips",
+        "email": "winstonjoseph100@gmail.com",
+        "phone": "919495386323",
+        "payoutAmount": 539,
+        "totalMemoAmount": 539.1,
+        "category": "Digital Marketing & Marketing",
+        "contentFlags": [],
+        "selfTransactions": [
+          {
+            "amountPaid": 599,
+            "buyerEmail": "winstonjoseph100@gmail.com",
+            "buyerPhone": "919495386323",
+            "IP": "111.92.86.202",
+            "date": "10 Sep, 2026; 09:14 PM",
+            "productId": "6aa2c4460f85f300133f077e"
+          }
+        ],
+        "buyersChecked": 1
+      },
+      {
         "settlementId": "6aa45024ad45fb47a7acd2c1",
         "creatorId": "666e650054d01800144a7b26",
         "username": "thedigiciouscom",
@@ -3877,6 +3921,28 @@
           }
         ],
         "buyersChecked": 100
+      },
+      {
+        "settlementId": "6aa2feb95c0ee9febc486894",
+        "creatorId": "663882e7f80331001333843e",
+        "username": "freelance-accelerator",
+        "email": "guliakabirr@gmail.com",
+        "phone": "7982125550",
+        "payoutAmount": 449,
+        "totalMemoAmount": 449.1,
+        "category": "Retail and Ecommerce - Services",
+        "contentFlags": [],
+        "selfTransactions": [
+          {
+            "amountPaid": 499,
+            "buyerEmail": "guliakabirr@gmail.com",
+            "buyerPhone": "7982125550",
+            "IP": "157.51.52.132",
+            "date": "10 Sep, 2026; 02:28 PM",
+            "productId": "6a9de8f47177650013aa0c57"
+          }
+        ],
+        "buyersChecked": 1
       },
       {
         "settlementId": "6aa4504bad45fb47a7aceeec",
@@ -4721,6 +4787,44 @@
           }
         ],
         "buyersChecked": 100
+      },
+      {
+        "settlementId": "6a874ebd12fa1e4dab26ab97",
+        "creatorId": "6a76af9f277fc00013ba1651",
+        "username": "mohd-azeem-",
+        "email": "azeemahmad93041@gmail.com",
+        "phone": "9258172879",
+        "payoutAmount": 282,
+        "totalMemoAmount": 282.3,
+        "category": "Digital Marketing & Marketing",
+        "contentFlags": [],
+        "selfTransactions": [
+          {
+            "amountPaid": 1,
+            "buyerEmail": "azeemahmad93041@gmail.com",
+            "buyerPhone": "9258172879",
+            "IP": "152.59.86.82",
+            "date": "03 Sep, 2026; 08:25 PM",
+            "productId": "6a770ac77590c2001319f443"
+          },
+          {
+            "amountPaid": 1,
+            "buyerEmail": "azeemahmad93041@gmail.com",
+            "buyerPhone": "9258172879",
+            "IP": "112.79.18.236",
+            "date": "18 Aug, 2026; 08:33 AM",
+            "productId": "6a770ac77590c2001319f443"
+          },
+          {
+            "amountPaid": 1,
+            "buyerEmail": "azeemahmad93041@gmail.com",
+            "buyerPhone": "9258172879",
+            "IP": "106.78.29.38",
+            "date": "15 Aug, 2026; 09:06 PM",
+            "productId": "6a789cdc62ca790013c9f9b7"
+          }
+        ],
+        "buyersChecked": 5
       },
       {
         "settlementId": "6a9f0a0aad45fb47a7abba0a",
@@ -7107,6 +7211,44 @@
           }
         ],
         "buyersChecked": 2
+      },
+      {
+        "settlementId": "6a8208cf6264e8dc38d239d5",
+        "creatorId": "6a76af9f277fc00013ba1651",
+        "username": "mohd-azeem-",
+        "email": "azeemahmad93041@gmail.com",
+        "phone": "9258172879",
+        "payoutAmount": 129,
+        "totalMemoAmount": 128.92,
+        "category": "Digital Marketing & Marketing",
+        "contentFlags": [],
+        "selfTransactions": [
+          {
+            "amountPaid": 1,
+            "buyerEmail": "azeemahmad93041@gmail.com",
+            "buyerPhone": "9258172879",
+            "IP": "152.59.86.82",
+            "date": "03 Sep, 2026; 08:25 PM",
+            "productId": "6a770ac77590c2001319f443"
+          },
+          {
+            "amountPaid": 1,
+            "buyerEmail": "azeemahmad93041@gmail.com",
+            "buyerPhone": "9258172879",
+            "IP": "112.79.18.236",
+            "date": "18 Aug, 2026; 08:33 AM",
+            "productId": "6a770ac77590c2001319f443"
+          },
+          {
+            "amountPaid": 1,
+            "buyerEmail": "azeemahmad93041@gmail.com",
+            "buyerPhone": "9258172879",
+            "IP": "106.78.29.38",
+            "date": "15 Aug, 2026; 09:06 PM",
+            "productId": "6a789cdc62ca790013c9f9b7"
+          }
+        ],
+        "buyersChecked": 5
       },
       {
         "settlementId": "6aa4504fad45fb47a7acf1e8",
@@ -41143,6 +41285,148 @@
       "contentFlags": [],
       "selfTransactions": [],
       "buyersChecked": 100
+    },
+    {
+      "settlementId": "6aa2fe6d5c0ee9febc481b59",
+      "creatorId": "6a4db058bd277000130d2c2d",
+      "username": "marc8byeightlines",
+      "email": "kingfardeenmcr123@gmail.com",
+      "phone": "6361697864",
+      "payoutAmount": 554,
+      "totalMemoAmount": 554.08,
+      "category": "Travel & Hospitality",
+      "contentFlags": [],
+      "selfTransactions": [
+        {
+          "amountPaid": 588.82,
+          "buyerEmail": "kingfardeenmcr123@gmail.com",
+          "buyerPhone": "6361697864",
+          "IP": "122.172.82.88",
+          "date": "10 Sep, 2026; 01:42 AM",
+          "productId": "6a6d58e06e42b80013de43a2"
+        }
+      ],
+      "buyersChecked": 1
+    },
+    {
+      "settlementId": "6aa2fed25c0ee9febc487d2e",
+      "creatorId": "6795d65cfba1200013f13729",
+      "username": "onebyonetips",
+      "email": "winstonjoseph100@gmail.com",
+      "phone": "919495386323",
+      "payoutAmount": 539,
+      "totalMemoAmount": 539.1,
+      "category": "Digital Marketing & Marketing",
+      "contentFlags": [],
+      "selfTransactions": [
+        {
+          "amountPaid": 599,
+          "buyerEmail": "winstonjoseph100@gmail.com",
+          "buyerPhone": "919495386323",
+          "IP": "111.92.86.202",
+          "date": "10 Sep, 2026; 09:14 PM",
+          "productId": "6aa2c4460f85f300133f077e"
+        }
+      ],
+      "buyersChecked": 1
+    },
+    {
+      "settlementId": "6aa2feb95c0ee9febc486894",
+      "creatorId": "663882e7f80331001333843e",
+      "username": "freelance-accelerator",
+      "email": "guliakabirr@gmail.com",
+      "phone": "7982125550",
+      "payoutAmount": 449,
+      "totalMemoAmount": 449.1,
+      "category": "Retail and Ecommerce - Services",
+      "contentFlags": [],
+      "selfTransactions": [
+        {
+          "amountPaid": 499,
+          "buyerEmail": "guliakabirr@gmail.com",
+          "buyerPhone": "7982125550",
+          "IP": "157.51.52.132",
+          "date": "10 Sep, 2026; 02:28 PM",
+          "productId": "6a9de8f47177650013aa0c57"
+        }
+      ],
+      "buyersChecked": 1
+    },
+    {
+      "settlementId": "6a8208cf6264e8dc38d239d5",
+      "creatorId": "6a76af9f277fc00013ba1651",
+      "username": "mohd-azeem-",
+      "email": "azeemahmad93041@gmail.com",
+      "phone": "9258172879",
+      "payoutAmount": 129,
+      "totalMemoAmount": 128.92,
+      "category": "Digital Marketing & Marketing",
+      "contentFlags": [],
+      "selfTransactions": [
+        {
+          "amountPaid": 1,
+          "buyerEmail": "azeemahmad93041@gmail.com",
+          "buyerPhone": "9258172879",
+          "IP": "152.59.86.82",
+          "date": "03 Sep, 2026; 08:25 PM",
+          "productId": "6a770ac77590c2001319f443"
+        },
+        {
+          "amountPaid": 1,
+          "buyerEmail": "azeemahmad93041@gmail.com",
+          "buyerPhone": "9258172879",
+          "IP": "112.79.18.236",
+          "date": "18 Aug, 2026; 08:33 AM",
+          "productId": "6a770ac77590c2001319f443"
+        },
+        {
+          "amountPaid": 1,
+          "buyerEmail": "azeemahmad93041@gmail.com",
+          "buyerPhone": "9258172879",
+          "IP": "106.78.29.38",
+          "date": "15 Aug, 2026; 09:06 PM",
+          "productId": "6a789cdc62ca790013c9f9b7"
+        }
+      ],
+      "buyersChecked": 5
+    },
+    {
+      "settlementId": "6a874ebd12fa1e4dab26ab97",
+      "creatorId": "6a76af9f277fc00013ba1651",
+      "username": "mohd-azeem-",
+      "email": "azeemahmad93041@gmail.com",
+      "phone": "9258172879",
+      "payoutAmount": 282,
+      "totalMemoAmount": 282.3,
+      "category": "Digital Marketing & Marketing",
+      "contentFlags": [],
+      "selfTransactions": [
+        {
+          "amountPaid": 1,
+          "buyerEmail": "azeemahmad93041@gmail.com",
+          "buyerPhone": "9258172879",
+          "IP": "152.59.86.82",
+          "date": "03 Sep, 2026; 08:25 PM",
+          "productId": "6a770ac77590c2001319f443"
+        },
+        {
+          "amountPaid": 1,
+          "buyerEmail": "azeemahmad93041@gmail.com",
+          "buyerPhone": "9258172879",
+          "IP": "112.79.18.236",
+          "date": "18 Aug, 2026; 08:33 AM",
+          "productId": "6a770ac77590c2001319f443"
+        },
+        {
+          "amountPaid": 1,
+          "buyerEmail": "azeemahmad93041@gmail.com",
+          "buyerPhone": "9258172879",
+          "IP": "106.78.29.38",
+          "date": "15 Aug, 2026; 09:06 PM",
+          "productId": "6a789cdc62ca790013c9f9b7"
+        }
+      ],
+      "buyersChecked": 5
     }
   ]
 }
