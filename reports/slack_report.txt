@@ -1,33 +1,95 @@
 🚨 *COSMOFEED PAYOUT RISK AUDIT REPORT (T+1 Product Review)*
 📅 *Review Date:* `2026-09-12` | *Product Sale Date:* `2026-09-11`
-🕒 *Generated:* `2026-09-11 18:47` | *Total Audited:* `36` creators
+🕒 *Generated:* `2026-09-12 02:36` | *Total Audited:* `2,100` creators
 ──────────────────────────────────
 📊 *SUMMARY METRICS:*
-• *Total Pending Payout:* ₹9,988.00
-• *Self-Transaction Flagged:* `3` creators
-• *No Link / Missing Deliverable Flagged:* `4` creators
+• *Total Pending Payout:* ₹9,490,781.00
+• *Self-Transaction Flagged:* `49` creators
+• *No Link / Missing Deliverable Flagged:* `72` creators
 • *Adult Keyword Flagged:* `0` creators
-• *Telegram Integration (vig/ >= ₹1k):* `1` settlements
-   ↳ *SEBI Registered (Yes):* `0` verified creators
-   ↳ *SEBI Not Verified (No):* `1` creators
-   ↳ *Manual Review Required:* `1` creators
+• *Telegram Integration (vig/ >= ₹1k):* `340` settlements
+   ↳ *SEBI Registered (Yes):* `35` verified creators
+   ↳ *SEBI Not Verified (No):* `305` creators
+   ↳ *Manual Review Required:* `305` creators
 
 🔴 *TOP FLAGGED SELF-TRANSACTIONS (Date -> Amount High to Low):*
 
-📅 *07 Sep, 2026*
-1. *punnamoorthy1960* (`668f445899ca5a00131bc74b`) — Self-Txn: *₹398.00* (07:50 AM) | Payout: *₹281.00*
+📅 *11 Sep, 2026*
+1. *nabarooop* (`6aa1058d53e2ec00135d47e8`) — Self-Txn: *₹499.00* (11:52 AM) | Payout: *₹470.00*
+2. *MOHD4490* (`6a96fb03b70a250013ed41d4`) — Self-Txn: *₹199.00* (09:13 AM) | Payout: *₹187.00*
+3. *sandeepkaushik* (`6a9b96633e87c700133cd59f`) — Self-Txn: *₹199.00* (09:09 AM) | Payout: *₹187.00*
+4. *arjunreddyeditor* (`68bda28ba4b85400136ae902`) — Self-Txn: *₹199.00* (12:14 AM) | Payout: *₹195.00*
+5. *thesyndicatekannada* (`698f25445806b700132885a1`) — Self-Txn: *₹149.00* (05:10 PM) | Payout: *₹140.00*
+6. *admiredamrut* (`6750d0427ebe06001353739a`) — Self-Txn: *₹149.00* (04:26 PM) | Payout: *₹140.00*
+7. *smartresourcehub76* (`66232d1b9dca000013dd0505`) — Self-Txn: *₹149.00* (10:03 AM) | Payout: *₹140.00*
+8. *gokrishdigital* (`6aa0115aac4bdc0013867a12`) — Self-Txn: *₹149.00* (12:23 AM) | Payout: *₹280.00*
+9. *studiowav* (`67abc0dc13442700136dd3f6`) — Self-Txn: *₹100.00* (11:19 PM) | Payout: *₹91.00*
+10. *merakidesignstudio01* (`694062993ec4ff00131c36e3`) — Self-Txn: *₹99.00* (07:55 PM) | Payout: *₹186.00*
+11. *chatgptguide* (`6486f9dd4d7bcd002b30c0f2`) — Self-Txn: *₹99.00* (07:24 PM) | Payout: *₹89.00*
+12. *satyarise* (`64a2ca49f3684a00202aab54`) — Self-Txn: *₹99.00* (06:13 PM) | Payout: *₹93.00*
+13. *mdujale700* (`6a12b3737b3dce00139fb268`) — Self-Txn: *₹99.00* (05:18 PM) | Payout: *₹93.00*
+14. *designwithpriyanka* (`65c431c300ea78001e9908f7`) — Self-Txn: *₹99.00* (01:38 PM) | Payout: *₹209.00*
+15. *vinuarorafitness* (`652fcd62531f9a001e91d8cc`) — Self-Txn: *₹99.00* (12:59 PM) | Payout: *₹96.00*
+16. *Jatin0319* (`6aa0faa21d272f001354b026`) — Self-Txn: *₹99.00* (12:55 PM) | Payout: *₹186.00*
+17. *success1111* (`6a7e186b7b19870013aa8939`) — Self-Txn: *₹99.00* (12:16 PM) | Payout: *₹140.00*
+18. *artkeybybhaskar* (`6aa1808ab9d37a0013fb2e89`) — Self-Txn: *₹99.00* (12:19 AM) | Payout: *₹93.00*
+19. *aivideosclub* (`6708969e1f46ee0013730119`) — Self-Txn: *₹89.00* (12:10 AM) | Payout: *₹396.00*
+20. *bishalupdy* (`6a4c4c583a457d0013858951`) — Self-Txn: *₹79.00* (06:11 AM) | Payout: *₹91.00*
+21. *anandvivekblog* (`6a9e706db6d0f30013007a1d`) — Self-Txn: *₹75.00* (03:27 PM) | Payout: *₹71.00*
+22. *adcraftai2* (`6aa22c096747580013e0e099`) — Self-Txn: *₹49.00* (07:48 PM) | Payout: *₹92.00*
+23. *classesserudite* (`6aa1fcd7507e670015add8f1`) — Self-Txn: *₹29.00* (07:44 PM) | Payout: *₹55.00*
+24. *digitalshaikhh* (`64ddb88201eb8b001dae5721`) — Self-Txn: *₹29.00* (07:26 PM) | Payout: *₹125.00*
+25. *Rinku8687* (`6aa24ef0091d0900138c1b5c`) — Self-Txn: *₹15.00* (12:09 PM) | Payout: *₹2,097.00*
+26. *techrealtors* (`63243b6f436d762ffc182f1e`) — Self-Txn: *₹2.19* (08:31 PM) | Payout: *₹402.00*
+27. *alloverindiajob* (`64e38fecd1134b002853129a`) — Self-Txn: *₹2.00* (07:53 PM) | Payout: *₹136.00*
+28. *legal0039* (`6541e07fc8b47a001ec8088f`) — Self-Txn: *₹1.00* (11:25 AM) | Payout: *₹178.00*
 
-📅 *11 Aug, 2026*
-2. *carftiq* (`652afc5e176ed4001d5b4a5f`) — Self-Txn: *₹50.00* (03:38 AM) | Payout: *₹90.00*
+📅 *10 Sep, 2026*
+29. *theknowledge15* (`65e5902c637d7d0012189231`) — Self-Txn: *₹149.00* (07:26 PM) | Payout: *₹280.00*
+30. *astoicmindsett* (`6a48c3668451060013a692d5`) — Self-Txn: *₹99.00* (03:19 PM) | Payout: *₹186.00*
 
-📅 *04 Aug, 2026*
-3. *kkm582* (`62b4bf0ff3d81d0f2f7a36ef`) — Self-Txn: *₹99.00* (01:34 AM) | Payout: *₹101.00*
+_... and 19 more creators flagged in full report._
 
 🟡 *TOP FLAGGED NO-LINK PRODUCTS (Payment page exists, but no product/content link attached):*
-1. *abdigimedia* (`661e3fa5dc11c80012ab41e4`) | Prod: `6641dbe80f408300136a9f8f` (—) | URL: https://superprofile.bio/vp/6641dbe80f408300136a9f8f | ⚠️ No Link Attached
-2. *inoshi* (`6447b3b487e8c00021393e62`) | Prod: `6450f38e0b8ffc0020ad0e94` (—) | URL: https://superprofile.bio/vp/6450f38e0b8ffc0020ad0e94 | ⚠️ No Link Attached
-3. *grabasset* (`644e20f12c780f0020aa92ed`) | Prod: `6846da3c1703e8001366b29b` (—) | URL: https://superprofile.bio/vp/6846da3c1703e8001366b29b | ⚠️ No Link Attached
-4. *sklimited* (`655476361e31b8001d85bc40`) | Prod: `683885375e489500134f6e5c` (—) | URL: https://superprofile.bio/vp/683885375e489500134f6e5c | ⚠️ No Link Attached
+1. *jyothishavazhi* (`6a966d80344a0f0013cd315d`) | Prod: `6a967f65d6667500135d9ef6` (—) | URL: https://superprofile.bio/vp/6a967f65d6667500135d9ef6 | ⚠️ No Link Attached
+2. *indianewjobs* (`653f014f977f95001f26b494`) | Prod: `6a8ae5cc37b0d200125f3a97` (—) | URL: https://superprofile.bio/vp/6a8ae5cc37b0d200125f3a97 | ⚠️ No Link Attached
+3. *withprashantpawar* (`696af3a80efb9b0013134b07`) | Prod: `69e67b4cbe28590013e529a8` (—) | URL: https://superprofile.bio/vp/69e67b4cbe28590013e529a8 | ⚠️ No Link Attached
+4. *skillsdemy* (`64956b48b0f9b80027333f7d`) | Prod: `69b965410b1cd100133b3dbb` (—) | URL: https://superprofile.bio/vp/69b965410b1cd100133b3dbb | ⚠️ No Link Attached
+5. *abdigimedia* (`661e3fa5dc11c80012ab41e4`) | Prod: `6641dbe80f408300136a9f8f` (—) | URL: https://superprofile.bio/vp/6641dbe80f408300136a9f8f | ⚠️ No Link Attached
+6. *Kuldeep5543* (`6a60ad754857f30013c7ab72`) | Prod: `6a65a1cf12783700139e1ce3` (—) | URL: https://superprofile.bio/vp/6a65a1cf12783700139e1ce3 | ⚠️ No Link Attached
+7. *raags* (`61fd7262f1c77f0fdfa3ea7b`) | Prod: `668c0fe492493a00139c0fae` (—) | URL: https://superprofile.bio/vp/668c0fe492493a00139c0fae | ⚠️ No Link Attached
+8. *inoshi* (`6447b3b487e8c00021393e62`) | Prod: `6450f38e0b8ffc0020ad0e94` (—) | URL: https://superprofile.bio/vp/6450f38e0b8ffc0020ad0e94 | ⚠️ No Link Attached
+9. *tushtg* (`63567035af10da003ed83242`) | Prod: `6667205f65fdc20013cee4ff` (—) | URL: https://superprofile.bio/vp/6667205f65fdc20013cee4ff | ⚠️ No Link Attached
+10. *vijaipanthail* (`622ef8c7730aec1f0ffbc090`) | Prod: `668d008992493a0013a6340e` (—) | URL: https://superprofile.bio/vp/668d008992493a0013a6340e | ⚠️ No Link Attached
+11. *mrrshubh* (`62aec47fd8c43b3c885d81e3`) | Prod: `65d04c7e084fe90012518e4a` (—) | URL: https://superprofile.bio/vp/65d04c7e084fe90012518e4a | ⚠️ No Link Attached
+12. *grabasset* (`644e20f12c780f0020aa92ed`) | Prod: `6846da3c1703e8001366b29b` (—) | URL: https://superprofile.bio/vp/6846da3c1703e8001366b29b | ⚠️ No Link Attached
+13. *danishkhanin* (`64bfb5d1340b3500202037ff`) | Prod: `65b300b01632ef001e2d0acf` (—) | URL: https://superprofile.bio/vp/65b300b01632ef001e2d0acf | ⚠️ No Link Attached
+14. *vivek* (`61472fd1bf6550252deed422`) | Prod: `64157166d0659500207fee1f` (—) | URL: https://superprofile.bio/vp/64157166d0659500207fee1f | ⚠️ No Link Attached
+15. *sheelaambajaj* (`66c5a06de0af540013320179`) | Prod: `69ce1b2e2e0cf300137cae78` (—) | URL: https://superprofile.bio/vp/69ce1b2e2e0cf300137cae78 | ⚠️ No Link Attached
+16. *drsankalpjain* (`65fd040c6eb5e900124d007c`) | Prod: `667864f8cfd9310013da3d4d` (—) | URL: https://superprofile.bio/vp/667864f8cfd9310013da3d4d | ⚠️ No Link Attached
+17. *prateekgarg409* (`66a72874e053ce0013b7d971`) | Prod: `68ff6587bdeb7800135b43ec` (—) | URL: https://superprofile.bio/vp/68ff6587bdeb7800135b43ec | ⚠️ No Link Attached
+18. *adarshav* (`636ffc5720af49002ce37eaa`) | Prod: `67501e8bce765e0013d88c38` (—) | URL: https://superprofile.bio/vp/67501e8bce765e0013d88c38 | ⚠️ No Link Attached
+19. *parthjoshi2005* (`64f43ddd095729001f520b86`) | Prod: `6a3f9c5ab420830014b44ee1` (—) | URL: https://superprofile.bio/vp/6a3f9c5ab420830014b44ee1 | ⚠️ No Link Attached
+20. *thetushargaur* (`6615c63018b903001317f9c3`) | Prod: `6a6a252e8d035c0013d53ced` (—) | URL: https://superprofile.bio/vp/6a6a252e8d035c0013d53ced | ⚠️ No Link Attached
 
 🔵 *TELEGRAM INTEGRATION (vig/) — MANUAL SEBI REVIEW REQUIRED:*
-1. *aditya* (`62115e4a6bd738258707c0e9`) | Payout: *₹2,355.00* | Prod: `6511690d55ae1b0058703c86` | ⚠️ SEBI Not Verified
+1. *Rinku8687* (`6aa24ef0091d0900138c1b5c`) | Payout: *₹2,097.00* | Prod: `6aa25748b9d37a00131b442b` | ⚠️ SEBI Not Verified
+2. *chaudhary29* (`64bf7c27e98788001f3fa09d`) | Payout: *₹4,735.00* | Prod: `6620be84ec6aa900121eccc4` | ⚠️ SEBI Not Verified
+3. *moresuccess* (`64dc627649d054001e7dcd8d`) | Payout: *₹4,855.00* | Prod: `6a89777c9ac5d90013d4f1dc` | ⚠️ SEBI Not Verified
+4. *radiobabaa* (`654e35d70ce920001de26234`) | Payout: *₹9,914.00* | Prod: `6a92b996b3a738001366c2fc` | ⚠️ SEBI Not Verified
+5. *Ankit3741* (`6a72c84e2b3c700013473c40`) | Payout: *₹5,645.00* | Prod: `6a889aaccf18c7001341f552` | ⚠️ SEBI Not Verified
+6. *zerotoherosite* (`635ca7e3716584002d51c158`) | Payout: *₹7,995.00* | Prod: `66ac77c16b5e9d00121364f1` | ⚠️ SEBI Not Verified
+7. *experttraders31* (`67626ce51d68710013b2d232`) | Payout: *₹1,928.00* | Prod: `6763d0c931b9a500134c4cd3` | ⚠️ SEBI Not Verified
+8. *udaymandal* (`679cc008836dec0013a115a1`) | Payout: *₹26,171.00* | Prod: `679dfd77c7375300134bb498` | ⚠️ SEBI Not Verified
+9. *fando* (`649330ea3b6d6900200fdb05`) | Payout: *₹2,946.00* | Prod: `68da766ae5d1d00013cfb6d7` | ⚠️ SEBI Not Verified
+10. *tradewithme47* (`6a55d3282f10800012ed9ab0`) | Payout: *₹25,272.00* | Prod: `6a55e41d11707e0013fb8c68` | ⚠️ SEBI Not Verified
+11. *nidhishah0710* (`672f1dbffc8e62001219a6bc`) | Payout: *₹9,931.00* | Prod: `6447d56d87e8c0002139dcfb` | ⚠️ SEBI Not Verified
+12. *charthubbb* (`6682543e9f94b50014bd0d5f`) | Payout: *₹27,504.00* | Prod: `6780c8071dd04400134cfa0b` | ⚠️ SEBI Not Verified
+13. *8080615513* (`68ee1f02eb549e001367aa61`) | Payout: *₹94,006.00* | Prod: `6a97dbfee2662c0013545b78` | ⚠️ SEBI Not Verified
+14. *ankit171991* (`668e7c221cc9f2001339ee99`) | Payout: *₹1,065.00* | Prod: `668d25a88099cd00132a8d58` | ⚠️ SEBI Not Verified
+15. *mohdkhang* (`6330752e4f829f25135f791a`) | Payout: *₹61,734.00* | Prod: `67a394133c2d6b0013afb82d` | ⚠️ SEBI Not Verified
+16. *raags* (`61fd7262f1c77f0fdfa3ea7b`) | Payout: *₹33,874.00* | Prod: `6514028aa06132001dfcb8ac` | ⚠️ SEBI Not Verified
+17. *radhikabhabhi* (`64968e0c486e6b0020225310`) | Payout: *₹2,050.00* | Prod: `6a87e7b179d74e0013dcd3e5` | ⚠️ SEBI Not Verified
+18. *aditya* (`62115e4a6bd738258707c0e9`) | Payout: *₹3,795.00* | Prod: `6511690d55ae1b0058703c86` | ⚠️ SEBI Not Verified
+19. *aditya* (`62115e4a6bd738258707c0e9`) | Payout: *₹2,355.00* | Prod: `6511690d55ae1b0058703c86` | ⚠️ SEBI Not Verified
+20. *pooja4164* (`68f0653948c02b001307f329`) | Payout: *₹89,036.00* | Prod: `667b91e4fb75ca0013ebba39` | ⚠️ SEBI Not Verified
