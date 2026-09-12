@@ -1,8 +1,8 @@
 {
   "report": {
     "date": "2026-09-12",
-    "totalAudited": 2122,
-    "selfTransactionCount": 316,
+    "totalAudited": 2124,
+    "selfTransactionCount": 317,
     "topPriorityCount": 0,
     "flaggedCount": 0,
     "errorCount": 7,
@@ -742,6 +742,37 @@
           }
         ],
         "buyersChecked": 100
+      },
+      {
+        "settlementId": "6aa2feb95c0ee9febc4868ea",
+        "creatorId": "697a1f57461b16001323f921",
+        "username": "mrdipanshu-s6f6i",
+        "email": "officialankushkumarz@gmail.com",
+        "phone": "8439864546",
+        "payoutAmount": 18,
+        "totalMemoAmount": 469.56,
+        "category": "Education",
+        "subCategory": null,
+        "flagLevel": null,
+        "contentFlags": [],
+        "topPriority": {
+          "flagged": false,
+          "category": null,
+          "reason": "",
+          "matches": []
+        },
+        "selfTransactions": [
+          {
+            "amountPaid": 499.0,
+            "buyerEmail": "officialankushkumarz@gmail.com",
+            "buyerPhone": "8439864546",
+            "IP": "223.188.233.223",
+            "date": "10 Sep, 2026; 02:30 PM",
+            "productId": "6a54767ee7a7f600138edbf9",
+            "matchType": "backend_flag+email_match+phone_match"
+          }
+        ],
+        "buyersChecked": 1
       },
       {
         "settlementId": "6aa45007ad45fb47a7acbb91",
@@ -42014,6 +42045,58 @@
       },
       "selfTransactions": [],
       "buyersChecked": 100
+    },
+    {
+      "settlementId": "6aa2feb95c0ee9febc4868ea",
+      "creatorId": "697a1f57461b16001323f921",
+      "username": "mrdipanshu-s6f6i",
+      "email": "officialankushkumarz@gmail.com",
+      "phone": "8439864546",
+      "payoutAmount": 18,
+      "totalMemoAmount": 469.56,
+      "category": "Education",
+      "subCategory": null,
+      "flagLevel": null,
+      "contentFlags": [],
+      "topPriority": {
+        "flagged": false,
+        "category": null,
+        "reason": "",
+        "matches": []
+      },
+      "selfTransactions": [
+        {
+          "amountPaid": 499.0,
+          "buyerEmail": "officialankushkumarz@gmail.com",
+          "buyerPhone": "8439864546",
+          "IP": "223.188.233.223",
+          "date": "10 Sep, 2026; 02:30 PM",
+          "productId": "6a54767ee7a7f600138edbf9",
+          "matchType": "backend_flag+email_match+phone_match"
+        }
+      ],
+      "buyersChecked": 1
+    },
+    {
+      "settlementId": "69f4f2254a12dcf317728ee5",
+      "creatorId": "69ec81771a704100130f824d",
+      "username": "confession",
+      "email": "confession229@gmail.com",
+      "phone": "9462003290",
+      "payoutAmount": 3696,
+      "totalMemoAmount": 3696.25,
+      "category": "other",
+      "subCategory": "---",
+      "flagLevel": "---",
+      "contentFlags": [],
+      "topPriority": {
+        "flagged": false,
+        "category": null,
+        "reason": "",
+        "matches": []
+      },
+      "selfTransactions": [],
+      "buyersChecked": 20
     }
   ]
 }

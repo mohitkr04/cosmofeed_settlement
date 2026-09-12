@@ -1,16 +1,16 @@
 🚨 *COSMOFEED PAYOUT RISK AUDIT REPORT (T+1 Product Review)*
 📅 *Review Date:* `2026-09-12` | *Product Sale Date:* `2026-09-11`
-🕒 *Generated:* `2026-09-12 08:18` | *Total Audited:* `2,122` creators
+🕒 *Generated:* `2026-09-12 10:09` | *Total Audited:* `2,124` creators
 ──────────────────────────────────
 📊 *SUMMARY METRICS:*
-• *Total Pending Payout:* ₹9,746,682.00
+• *Total Pending Payout:* ₹9,750,396.00
 • *Top-Priority Compliance Flagged:* `20` creators
-• *Self-Transaction Flagged (2d Window):* `50` creators
+• *Self-Transaction Flagged (2d Window):* `51` creators
 • *No Link / Missing Deliverable Flagged:* `23` creators
-• *Telegram Integration (vig/ >= ₹1k):* `341` settlements
+• *Telegram Integration (vig/ >= ₹1k):* `342` settlements
    ↳ *SEBI Registered (Yes):* `35` verified creators
-   ↳ *SEBI Not Verified (No):* `306` creators
-   ↳ *Manual Review Required:* `306` creators
+   ↳ *SEBI Not Verified (No):* `307` creators
+   ↳ *Manual Review Required:* `307` creators
 
 🚨 *TOP-PRIORITY COMPLIANCE FLAGS (Adult, Betting, Cracked APK, Pirated Media, Fraud):*
 1. *nifty50dominator* (`66e901a7945e660013e865b8`) | Payout: *₹79,195.00* | [BETTING_GAMBLING] BETTING_GAMBLING:sure shot
@@ -66,11 +66,11 @@
 📅 *10 Sep, 2026*
 26. *onebyonetips* (`6795d65cfba1200013f13729`) — Self-Txn: *₹599.00* (09:14 PM) | Payout: *₹539.00*
 27. *marc8byeightlines* (`6a4db058bd277000130d2c2d`) — Self-Txn: *₹588.82* (01:42 AM) | Payout: *₹554.00*
-28. *freelance-accelerator* (`663882e7f80331001333843e`) — Self-Txn: *₹499.00* (02:28 PM) | Payout: *₹449.00*
-29. *theknowledge15* (`65e5902c637d7d0012189231`) — Self-Txn: *₹149.00* (07:26 PM) | Payout: *₹280.00*
-30. *simplystructured* (`63996e5fb413750037c21bf3`) — Self-Txn: *₹149.00* (01:11 PM) | Payout: *₹140.00*
+28. *mrdipanshu-s6f6i* (`697a1f57461b16001323f921`) — Self-Txn: *₹499.00* (02:30 PM) | Payout: *₹18.00*
+29. *freelance-accelerator* (`663882e7f80331001333843e`) — Self-Txn: *₹499.00* (02:28 PM) | Payout: *₹449.00*
+30. *theknowledge15* (`65e5902c637d7d0012189231`) — Self-Txn: *₹149.00* (07:26 PM) | Payout: *₹280.00*
 
-_... and 20 more creators flagged in full report._
+_... and 21 more creators flagged in full report._
 
 🟡 *TOP FLAGGED NO-LINK PRODUCTS (Payment page exists, but no product/content link attached):*
 1. *theinfinitystore* (`6498736ca1373e002ae9ea7d`) | Prod: `6a29c667f9de8900132df2c7` (—) | URL: https://superprofile.bio/vp/6a29c667f9de8900132df2c7 | ⚠️ No Link Attached
