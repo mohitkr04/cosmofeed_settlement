@@ -101414,5 +101414,405 @@
       "productTtile": "\u0939\u092e\u093e\u0930\u0940 \u0935\u0936\u0940\u0915\u0930\u0923 \u0938\u0947\u0935\u093e\u0913\u0902 \u0915\u094b \u0915\u094d\u092f\u094b\u0902 \u091a\u0941\u0928\u0947\u0902?",
       "productLink": "https://superprofile.bio/vp/68ce181b1217d30013ac3887"
     }
+  ],
+  "67dbe0a6981c700013c41df1": [
+    {
+      "_id": "69d21038a96c490013b68546",
+      "count": 2,
+      "productType": "paidService",
+      "productTtile": "SRH vs LSG Toss Prediction",
+      "productLink": "https://superprofile.bio/ps/69d21038a96c490013b68546"
+    },
+    {
+      "_id": "69db39a6da78960013e92ec1",
+      "count": 3,
+      "productType": "paidService",
+      "productTtile": "LSG vs GT Toss Prediction",
+      "productLink": "https://superprofile.bio/ps/69db39a6da78960013e92ec1"
+    },
+    {
+      "_id": "69cd09f609730e0013b09360",
+      "count": 3,
+      "productType": "paidService",
+      "productTtile": "LSG vs DC Toss Prediction",
+      "productLink": "https://superprofile.bio/ps/69cd09f609730e0013b09360"
+    },
+    {
+      "_id": "69d90ded5273140013c98563",
+      "count": 1,
+      "productType": "paidService",
+      "productTtile": "RR vs RCB Match Prediction",
+      "productLink": "https://superprofile.bio/ps/69d90ded5273140013c98563"
+    },
+    {
+      "_id": "69db7cb877163000147b5bc6",
+      "count": 5,
+      "productType": "paidService",
+      "productTtile": "MI vs RCB Toss Prediction",
+      "productLink": "https://superprofile.bio/ps/69db7cb877163000147b5bc6"
+    },
+    {
+      "_id": "69da289a9e79520013600660",
+      "count": 3,
+      "productType": "paidService",
+      "productTtile": "CSK vs DC Toss Prediction",
+      "productLink": "https://superprofile.bio/ps/69da289a9e79520013600660"
+    },
+    {
+      "_id": "69d63cd24742b20013fa00ff",
+      "count": 3,
+      "productType": "paidService",
+      "productTtile": "DC vs GT Toss Prediction",
+      "productLink": "https://superprofile.bio/ps/69d63cd24742b20013fa00ff"
+    },
+    {
+      "_id": "6961f867cb164600132544ef",
+      "count": 2,
+      "productType": "paidService",
+      "productTtile": "WPL GGW vs UPW Toss Prediction",
+      "productLink": "https://superprofile.bio/ps/6961f867cb164600132544ef"
+    },
+    {
+      "_id": "69d4c2eb73b150001364f0d5",
+      "count": 3,
+      "productType": "paidService",
+      "productTtile": "RR vs MI Toss Prediction",
+      "productLink": "https://superprofile.bio/ps/69d4c2eb73b150001364f0d5"
+    },
+    {
+      "_id": "696736ce4d08d2001320a55f",
+      "count": 1,
+      "productType": "paidService",
+      "productTtile": "Ind vs Nz 2nd ODI Toss Prediction",
+      "productLink": "https://superprofile.bio/ps/696736ce4d08d2001320a55f"
+    },
+    {
+      "_id": "69ce4e93d3afa7001373a9e8",
+      "count": 2,
+      "productType": "paidService",
+      "productTtile": "KKR vs SRH Toss Prediction",
+      "productLink": "https://superprofile.bio/ps/69ce4e93d3afa7001373a9e8"
+    },
+    {
+      "_id": "69d7b63e46d72f0013ca1ac6",
+      "count": 1,
+      "productType": "paidService",
+      "productTtile": "KKR vs LSG Match Prediction",
+      "productLink": "https://superprofile.bio/ps/69d7b63e46d72f0013ca1ac6"
+    },
+    {
+      "_id": "69ce75f87efdb10013146b25",
+      "count": 2,
+      "productType": "paidService",
+      "productTtile": "KKR vs SRH Match Prediction",
+      "productLink": "https://superprofile.bio/ps/69ce75f87efdb10013146b25"
+    },
+    {
+      "_id": "69cbb6e977f6270013d14c01",
+      "count": 2,
+      "productType": "paidService",
+      "productTtile": "Pk vs GT Toss Prediction",
+      "productLink": "https://superprofile.bio/ps/69cbb6e977f6270013d14c01"
+    },
+    {
+      "_id": "69dcc90481ef030013ef0a05",
+      "count": 3,
+      "productType": "paidService",
+      "productTtile": "SRH vs RR Toss Prediction",
+      "productLink": "https://superprofile.bio/ps/69dcc90481ef030013ef0a05"
+    },
+    {
+      "_id": "69d0be112e28390013f3fdbb",
+      "count": 3,
+      "productType": "paidService",
+      "productTtile": "DC vs MI Toss Prediction",
+      "productLink": "https://superprofile.bio/ps/69d0be112e28390013f3fdbb"
+    },
+    {
+      "_id": "69cfa38f7efdb1001342429b",
+      "count": 3,
+      "productType": "paidService",
+      "productTtile": "Csk vs PKBS Toss Prediction",
+      "productLink": "https://superprofile.bio/ps/69cfa38f7efdb1001342429b"
+    },
+    {
+      "_id": "69db6b731a3f740013d86052",
+      "count": 2,
+      "productType": "paidService",
+      "productTtile": "LSG vs GT Match Prediction",
+      "productLink": "https://superprofile.bio/ps/69db6b731a3f740013d86052"
+    },
+    {
+      "_id": "69d4c578ee19cf0013fdf410",
+      "count": 1,
+      "productType": "paidService",
+      "productTtile": "PSL - PZ vs HK Toss Prediction",
+      "productLink": "https://superprofile.bio/ps/69d4c578ee19cf0013fdf410"
+    },
+    {
+      "_id": "69d1714f4c7056001394d59a",
+      "count": 1,
+      "productType": "paidService",
+      "productTtile": "Super Sunday Pack",
+      "productLink": "https://superprofile.bio/ps/69d1714f4c7056001394d59a"
+    },
+    {
+      "_id": "69dba2d477163000148227f5",
+      "count": 2,
+      "productType": "paidService",
+      "productTtile": "MI vs RCB Match Prediction",
+      "productLink": "https://superprofile.bio/ps/69dba2d477163000148227f5"
+    },
+    {
+      "_id": "69d0fb8bf0dd7000133c104b",
+      "count": 3,
+      "productType": "paidService",
+      "productTtile": "GT vs RR Toss Prediction",
+      "productLink": "https://superprofile.bio/ps/69d0fb8bf0dd7000133c104b"
+    },
+    {
+      "_id": "69cfd536beaebd00138912a5",
+      "count": 2,
+      "productType": "paidService",
+      "productTtile": "Csk vs PKBS Match Prediction ",
+      "productLink": "https://superprofile.bio/ps/69cfd536beaebd00138912a5"
+    },
+    {
+      "_id": "69dca5b8f2e2e300133749c4",
+      "count": 1,
+      "productType": "paidService",
+      "productTtile": "Only Toss Pack",
+      "productLink": "https://superprofile.bio/ps/69dca5b8f2e2e300133749c4"
+    },
+    {
+      "_id": "69c7c5f4dc6ca80013fedd0c",
+      "count": 3,
+      "productType": "paidService",
+      "productTtile": "IPL - RCB vs SRH - Toss Prediction",
+      "productLink": "https://superprofile.bio/ps/69c7c5f4dc6ca80013fedd0c"
+    },
+    {
+      "_id": "6968beef16a32b001331fae2",
+      "count": 1,
+      "productType": "paidService",
+      "productTtile": "WPL MIW vs UPW Toss Prediction",
+      "productLink": "https://superprofile.bio/ps/6968beef16a32b001331fae2"
+    },
+    {
+      "_id": "69d65f133b8d29001359eba0",
+      "count": 1,
+      "productType": "paidService",
+      "productTtile": "DC vs GT Match Prediction",
+      "productLink": "https://superprofile.bio/ps/69d65f133b8d29001359eba0"
+    },
+    {
+      "_id": "69d8c520afcbb60013dbcfeb",
+      "count": 3,
+      "productType": "paidService",
+      "productTtile": "RR vs RCB Toss Prediction",
+      "productLink": "https://superprofile.bio/ps/69d8c520afcbb60013dbcfeb"
+    },
+    {
+      "_id": "69d39b307ac0ba0014f47c9d",
+      "count": 3,
+      "productType": "paidService",
+      "productTtile": "KKR vs PKBS Toss Prediction",
+      "productLink": "https://superprofile.bio/ps/69d39b307ac0ba0014f47c9d"
+    },
+    {
+      "_id": "69d23a29a96c490013beaa25",
+      "count": 1,
+      "productType": "paidService",
+      "productTtile": "RCB vs CSK Toss Prediction",
+      "productLink": "https://superprofile.bio/ps/69d23a29a96c490013beaa25"
+    },
+    {
+      "_id": "69688cd41f8eef0013a0444f",
+      "count": 1,
+      "productType": "paidService",
+      "productTtile": "BBL MLR vs PRS Toss Prediction",
+      "productLink": "https://superprofile.bio/ps/69688cd41f8eef0013a0444f"
+    },
+    {
+      "_id": "6967b5fb6d218c0013adb935",
+      "count": 1,
+      "productType": "paidService",
+      "productTtile": "SA 20 SEC vs JSK Match Prediction ",
+      "productLink": "https://superprofile.bio/ps/6967b5fb6d218c0013adb935"
+    },
+    {
+      "_id": "69c7dbb778895a00139fb699",
+      "count": 1,
+      "productType": "paidService",
+      "productTtile": "RCB vs SRH Match Prediction",
+      "productLink": "https://superprofile.bio/ps/69c7dbb778895a00139fb699"
+    },
+    {
+      "_id": "6968ee1209ca7a001358baad",
+      "count": 1,
+      "productType": "paidService",
+      "productTtile": "WPL MIW vs UPW Toss Prediction",
+      "productLink": "https://superprofile.bio/ps/6968ee1209ca7a001358baad"
+    },
+    {
+      "_id": "68f92e523108ae0013cbf7e7",
+      "count": 3,
+      "productType": "paidService",
+      "productTtile": "Australia vs India 2nd ODI Match Prediction ",
+      "productLink": "https://superprofile.bio/ps/68f92e523108ae0013cbf7e7"
+    },
+    {
+      "_id": "69ddf3abc0d3740013ebefec",
+      "count": 4,
+      "productType": "paidService",
+      "productTtile": "CSK vs KKR Toss Prediction",
+      "productLink": "https://superprofile.bio/ps/69ddf3abc0d3740013ebefec"
+    },
+    {
+      "_id": "69d9f4c823d2d200131c5765",
+      "count": 3,
+      "productType": "paidService",
+      "productTtile": "PKBS vs SRH Toss Prediction",
+      "productLink": "https://superprofile.bio/ps/69d9f4c823d2d200131c5765"
+    },
+    {
+      "_id": "69d0e33cf0dd70001336d7da",
+      "count": 1,
+      "productType": "paidService",
+      "productTtile": "DC vs MI Match Prediction",
+      "productLink": "https://superprofile.bio/ps/69d0e33cf0dd70001336d7da"
+    },
+    {
+      "_id": "69ca63fbb024f3001386a6ad",
+      "count": 2,
+      "productType": "paidService",
+      "productTtile": "RR vs CSK Toss Prediction",
+      "productLink": "https://superprofile.bio/ps/69ca63fbb024f3001386a6ad"
+    },
+    {
+      "_id": "69d760b4ea13140013b90970",
+      "count": 2,
+      "productType": "paidService",
+      "productTtile": "KKR vs LSG Toss Prediction",
+      "productLink": "https://superprofile.bio/ps/69d760b4ea13140013b90970"
+    },
+    {
+      "_id": "69d119904d47110014542753",
+      "count": 1,
+      "productType": "paidService",
+      "productTtile": "GT vs RR Match Prediction",
+      "productLink": "https://superprofile.bio/ps/69d119904d47110014542753"
+    },
+    {
+      "_id": "696a13150c5e1f00132236bd",
+      "count": 1,
+      "productType": "paidService",
+      "productTtile": "WPL RCBW vs GGW Toss Predictiom",
+      "productLink": "https://superprofile.bio/ps/696a13150c5e1f00132236bd"
+    },
+    {
+      "_id": "69da193c9e795200135cb0a0",
+      "count": 1,
+      "productType": "paidService",
+      "productTtile": "PKBS vs SRH Match Prediction",
+      "productLink": "https://superprofile.bio/ps/69da193c9e795200135cb0a0"
+    },
+    {
+      "_id": "6969c9540b9f0a0013c1cd68",
+      "count": 1,
+      "productType": "paidService",
+      "productTtile": "BBL SYS vs SYT Toss Prediction ",
+      "productLink": "https://superprofile.bio/ps/6969c9540b9f0a0013c1cd68"
+    },
+    {
+      "_id": "69677e42fb98fa0013c8e054",
+      "count": 1,
+      "productType": "paidService",
+      "productTtile": "WPL DCW vs UPW Toss Preriction",
+      "productLink": "https://superprofile.bio/ps/69677e42fb98fa0013c8e054"
+    },
+    {
+      "_id": "6960ca6b270f35001363ff02",
+      "count": 3,
+      "productType": "paidService",
+      "productTtile": "WPL MI vs RCB Toss Prediction",
+      "productLink": "https://superprofile.bio/ps/6960ca6b270f35001363ff02"
+    }
+  ],
+  "633541729da2b17ac8c1bb90": [
+    {
+      "_id": "69dfdc2e76f9a60013581f97",
+      "count": 58,
+      "productType": "page",
+      "productTtile": "\u0924\u0902\u0924\u094d\u0930 \u092a\u094b\u091c\u093c\u093f\u0936\u0928 \u0938\u0902\u092d\u094b\u0917 \u0915\u094d\u0930\u093f\u092f\u093e \u0908\u092c\u0941\u0915 (PDF)",
+      "productLink": "https://superprofile.bio/vp/69dfdc2e76f9a60013581f97"
+    }
+  ],
+  "6891f2a547882e0013794da9": [
+    {
+      "_id": "669e46c778795600130d6fac",
+      "count": 20,
+      "productType": "integratedGroup",
+      "productTtile": "Membership Group (Full Team)",
+      "productLink": "https://superprofile.bio/vig/669e46c778795600130d6fac"
+    },
+    {
+      "_id": "68adafc70cb1e40013750bc2",
+      "count": 14,
+      "productType": "integratedGroup",
+      "productTtile": "Membership Group ",
+      "productLink": "https://superprofile.bio/vig/68adafc70cb1e40013750bc2"
+    },
+    {
+      "_id": "669e45ab7200ef00133f70e8",
+      "count": 3,
+      "productType": "integratedGroup",
+      "productTtile": "Star Membership Group",
+      "productLink": "https://superprofile.bio/vig/669e45ab7200ef00133f70e8"
+    },
+    {
+      "_id": "68a34029407a700013b7f03c",
+      "count": 53,
+      "productType": "integratedGroup",
+      "productTtile": "Membership Group ",
+      "productLink": "https://superprofile.bio/vig/68a34029407a700013b7f03c"
+    },
+    {
+      "_id": "669e475db032d8001360584b",
+      "count": 6,
+      "productType": "integratedGroup",
+      "productTtile": "Membership Group (Single Same team)",
+      "productLink": "https://superprofile.bio/vig/669e475db032d8001360584b"
+    },
+    {
+      "_id": "684cf42e94b2c30013e45995",
+      "count": 2,
+      "productType": "integratedGroup",
+      "productTtile": "Membership Group ",
+      "productLink": "https://superprofile.bio/vig/684cf42e94b2c30013e45995"
+    },
+    {
+      "_id": "669a34ece214970013ad6574",
+      "count": 2,
+      "productType": "integratedGroup",
+      "productTtile": "Star Membership Group ( Same Result Team & Expert Guidance )",
+      "productLink": "https://superprofile.bio/vig/669a34ece214970013ad6574"
+    }
+  ],
+  "69bd53cff1587c00137eb872": [
+    {
+      "_id": "69fc5bd61753840013e3b39d",
+      "count": 3,
+      "productType": "page",
+      "productTtile": "5000 Budget users",
+      "productLink": "https://superprofile.bio/vp/69fc5bd61753840013e3b39d"
+    },
+    {
+      "_id": "69d4f0c63505a50013f3bdc1",
+      "count": 3,
+      "productType": "page",
+      "productTtile": "Wkt not fancy membership ",
+      "productLink": "https://superprofile.bio/vp/69d4f0c63505a50013f3bdc1"
+    }
   ]
 }

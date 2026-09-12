@@ -1,8 +1,8 @@
 {
   "report": {
     "date": "2026-09-12",
-    "totalAudited": 2107,
-    "selfTransactionCount": 313,
+    "totalAudited": 2122,
+    "selfTransactionCount": 316,
     "topPriorityCount": 0,
     "flaggedCount": 0,
     "errorCount": 7,
@@ -2894,6 +2894,100 @@
           }
         ],
         "buyersChecked": 1
+      },
+      {
+        "settlementId": "6aa2fe445c0ee9febc47dbfc",
+        "creatorId": "63996e5fb413750037c21bf3",
+        "username": "simplystructured",
+        "email": "cvaidya2017@gmail.com",
+        "phone": "9099974645",
+        "payoutAmount": 140,
+        "totalMemoAmount": 286.06,
+        "category": "Fitness & Nutrition",
+        "subCategory": null,
+        "flagLevel": null,
+        "contentFlags": [],
+        "topPriority": {
+          "flagged": false,
+          "category": null,
+          "reason": "",
+          "matches": []
+        },
+        "selfTransactions": [
+          {
+            "amountPaid": 149.0,
+            "buyerEmail": "cvaidya2017@gmail.com",
+            "buyerPhone": "7359391355",
+            "IP": "116.74.100.2",
+            "date": "10 Sep, 2026; 01:11 PM",
+            "productId": "6a9e96c10b14950013f0a6f5",
+            "matchType": "backend_flag+email_match"
+          },
+          {
+            "amountPaid": 149.0,
+            "buyerEmail": "cvaidya2017@gmail.com",
+            "buyerPhone": "7359391355",
+            "IP": "116.74.100.2",
+            "date": "10 Sep, 2026; 10:52 AM",
+            "productId": "6a9e96c10b14950013f0a6f5",
+            "matchType": "backend_flag+email_match"
+          },
+          {
+            "amountPaid": 1.0,
+            "buyerEmail": "cvaidya2017@gmail.com",
+            "buyerPhone": "7359391355",
+            "IP": "116.74.100.2",
+            "date": "10 Sep, 2026; 11:44 AM",
+            "productId": "6a9fbcdc91ffdf0013e8195b",
+            "matchType": "backend_flag+email_match"
+          },
+          {
+            "amountPaid": 1.0,
+            "buyerEmail": "cvaidya2017@gmail.com",
+            "buyerPhone": "7359391355",
+            "IP": "116.74.100.252",
+            "date": "08 Sep, 2026; 07:28 PM",
+            "productId": "6a9fbcdc91ffdf0013e8195b",
+            "matchType": "backend_flag+email_match"
+          },
+          {
+            "amountPaid": 1.0,
+            "buyerEmail": "cvaidya2017@gmail.com",
+            "buyerPhone": "7359391355",
+            "IP": "116.74.100.2",
+            "date": "08 Sep, 2026; 03:56 PM",
+            "productId": "6a9fbcdc91ffdf0013e8195b",
+            "matchType": "backend_flag+email_match"
+          },
+          {
+            "amountPaid": 1.0,
+            "buyerEmail": "cvaidya2017@gmail.com",
+            "buyerPhone": "7359391355",
+            "IP": "116.74.100.2",
+            "date": "08 Sep, 2026; 03:49 PM",
+            "productId": "6a9fbcdc91ffdf0013e8195b",
+            "matchType": "backend_flag+email_match"
+          },
+          {
+            "amountPaid": 1.0,
+            "buyerEmail": "cvaidya2017@gmail.com",
+            "buyerPhone": "7359391355",
+            "IP": "116.74.100.2",
+            "date": "08 Sep, 2026; 02:12 PM",
+            "productId": "6a9fbcdc91ffdf0013e8195b",
+            "matchType": "backend_flag+email_match"
+          },
+          {
+            "amountPaid": 1.0,
+            "buyerEmail": "cvaidya2017@gmail.com",
+            "buyerPhone": "7359391355",
+            "IP": "116.74.100.2",
+            "date": "08 Sep, 2026; 01:15 PM",
+            "productId": "6a9fbcdc91ffdf0013e8195b",
+            "matchType": "backend_flag+email_match"
+          }
+        ],
+        "buyersChecked": 8
       },
       {
         "settlementId": "6aa45057ad45fb47a7acf8b0",
@@ -8082,6 +8176,37 @@
         "buyersChecked": 46
       },
       {
+        "settlementId": "69a87ad41bf1163e75660878",
+        "creatorId": "695e480611d5940013ffcb5c",
+        "username": "fantasyrobinhood22",
+        "email": "fantasyrobinhood@gmail.com",
+        "phone": "9555870984",
+        "payoutAmount": 472,
+        "totalMemoAmount": 472.38,
+        "category": "other",
+        "subCategory": "---",
+        "flagLevel": "---",
+        "contentFlags": [],
+        "topPriority": {
+          "flagged": false,
+          "category": null,
+          "reason": "",
+          "matches": []
+        },
+        "selfTransactions": [
+          {
+            "amountPaid": 1.0,
+            "buyerEmail": "fantasyrobinhood@gmail.com",
+            "buyerPhone": "9555870984",
+            "IP": "106.219.184.138",
+            "date": "03 Mar, 2026; 11:26 PM",
+            "productId": "69a71e843af480001373c31e",
+            "matchType": "backend_flag+email_match+phone_match"
+          }
+        ],
+        "buyersChecked": 4
+      },
+      {
         "settlementId": "6aa45031ad45fb47a7acdc50",
         "creatorId": "65802c2764b988001f1069b1",
         "username": "sachinkushwahadigital",
@@ -8871,6 +8996,37 @@
             "IP": "223.190.87.254",
             "date": "10 Sep, 2026; 02:36 PM",
             "productId": "6a9e188a7177650013ae2585"
+          }
+        ],
+        "buyersChecked": 4
+      },
+      {
+        "settlementId": "69bd9329fb19c574a5276bfa",
+        "creatorId": "695e480611d5940013ffcb5c",
+        "username": "fantasyrobinhood22",
+        "email": "fantasyrobinhood@gmail.com",
+        "phone": "9555870984",
+        "payoutAmount": 94,
+        "totalMemoAmount": 94.1,
+        "category": "other",
+        "subCategory": "---",
+        "flagLevel": "---",
+        "contentFlags": [],
+        "topPriority": {
+          "flagged": false,
+          "category": null,
+          "reason": "",
+          "matches": []
+        },
+        "selfTransactions": [
+          {
+            "amountPaid": 1.0,
+            "buyerEmail": "fantasyrobinhood@gmail.com",
+            "buyerPhone": "9555870984",
+            "IP": "106.219.184.138",
+            "date": "03 Mar, 2026; 11:26 PM",
+            "productId": "69a71e843af480001373c31e",
+            "matchType": "backend_flag+email_match+phone_match"
           }
         ],
         "buyersChecked": 4
@@ -41441,6 +41597,414 @@
       "category": "Education",
       "subCategory": null,
       "flagLevel": null,
+      "contentFlags": [],
+      "topPriority": {
+        "flagged": false,
+        "category": null,
+        "reason": "",
+        "matches": []
+      },
+      "selfTransactions": [],
+      "buyersChecked": 100
+    },
+    {
+      "settlementId": "6aa2fe715c0ee9febc482199",
+      "creatorId": "6aa1a5fb697292001371e847",
+      "username": "digitalgyanindia",
+      "email": "help.digitalgyanindia@gmail.com",
+      "phone": "9512129495",
+      "payoutAmount": 448,
+      "totalMemoAmount": 447.91999999999996,
+      "category": "Digital Marketing & Marketing",
+      "subCategory": null,
+      "flagLevel": null,
+      "contentFlags": [],
+      "topPriority": {
+        "flagged": false,
+        "category": null,
+        "reason": "",
+        "matches": []
+      },
+      "selfTransactions": [],
+      "buyersChecked": 15
+    },
+    {
+      "settlementId": "6aa2fe445c0ee9febc47dbfc",
+      "creatorId": "63996e5fb413750037c21bf3",
+      "username": "simplystructured",
+      "email": "cvaidya2017@gmail.com",
+      "phone": "9099974645",
+      "payoutAmount": 140,
+      "totalMemoAmount": 286.06,
+      "category": "Fitness & Nutrition",
+      "subCategory": null,
+      "flagLevel": null,
+      "contentFlags": [],
+      "topPriority": {
+        "flagged": false,
+        "category": null,
+        "reason": "",
+        "matches": []
+      },
+      "selfTransactions": [
+        {
+          "amountPaid": 149.0,
+          "buyerEmail": "cvaidya2017@gmail.com",
+          "buyerPhone": "7359391355",
+          "IP": "116.74.100.2",
+          "date": "10 Sep, 2026; 01:11 PM",
+          "productId": "6a9e96c10b14950013f0a6f5",
+          "matchType": "backend_flag+email_match"
+        },
+        {
+          "amountPaid": 149.0,
+          "buyerEmail": "cvaidya2017@gmail.com",
+          "buyerPhone": "7359391355",
+          "IP": "116.74.100.2",
+          "date": "10 Sep, 2026; 10:52 AM",
+          "productId": "6a9e96c10b14950013f0a6f5",
+          "matchType": "backend_flag+email_match"
+        },
+        {
+          "amountPaid": 1.0,
+          "buyerEmail": "cvaidya2017@gmail.com",
+          "buyerPhone": "7359391355",
+          "IP": "116.74.100.2",
+          "date": "10 Sep, 2026; 11:44 AM",
+          "productId": "6a9fbcdc91ffdf0013e8195b",
+          "matchType": "backend_flag+email_match"
+        },
+        {
+          "amountPaid": 1.0,
+          "buyerEmail": "cvaidya2017@gmail.com",
+          "buyerPhone": "7359391355",
+          "IP": "116.74.100.252",
+          "date": "08 Sep, 2026; 07:28 PM",
+          "productId": "6a9fbcdc91ffdf0013e8195b",
+          "matchType": "backend_flag+email_match"
+        },
+        {
+          "amountPaid": 1.0,
+          "buyerEmail": "cvaidya2017@gmail.com",
+          "buyerPhone": "7359391355",
+          "IP": "116.74.100.2",
+          "date": "08 Sep, 2026; 03:56 PM",
+          "productId": "6a9fbcdc91ffdf0013e8195b",
+          "matchType": "backend_flag+email_match"
+        },
+        {
+          "amountPaid": 1.0,
+          "buyerEmail": "cvaidya2017@gmail.com",
+          "buyerPhone": "7359391355",
+          "IP": "116.74.100.2",
+          "date": "08 Sep, 2026; 03:49 PM",
+          "productId": "6a9fbcdc91ffdf0013e8195b",
+          "matchType": "backend_flag+email_match"
+        },
+        {
+          "amountPaid": 1.0,
+          "buyerEmail": "cvaidya2017@gmail.com",
+          "buyerPhone": "7359391355",
+          "IP": "116.74.100.2",
+          "date": "08 Sep, 2026; 02:12 PM",
+          "productId": "6a9fbcdc91ffdf0013e8195b",
+          "matchType": "backend_flag+email_match"
+        },
+        {
+          "amountPaid": 1.0,
+          "buyerEmail": "cvaidya2017@gmail.com",
+          "buyerPhone": "7359391355",
+          "IP": "116.74.100.2",
+          "date": "08 Sep, 2026; 01:15 PM",
+          "productId": "6a9fbcdc91ffdf0013e8195b",
+          "matchType": "backend_flag+email_match"
+        }
+      ],
+      "buyersChecked": 8
+    },
+    {
+      "settlementId": "6aa1acc35c0ee9febc471fe6",
+      "creatorId": "6587c234ea8865001e4ea50f",
+      "username": "luxuryreels4k",
+      "email": "djogani61@gmail.com",
+      "phone": "9664537877",
+      "payoutAmount": 221,
+      "totalMemoAmount": 221.13999999999996,
+      "category": "Digital Marketing & Marketing",
+      "subCategory": null,
+      "flagLevel": null,
+      "contentFlags": [],
+      "topPriority": {
+        "flagged": false,
+        "category": null,
+        "reason": "",
+        "matches": []
+      },
+      "selfTransactions": [],
+      "buyersChecked": 11
+    },
+    {
+      "settlementId": "6a02213c73e2c74b3b0fe8ff",
+      "creatorId": "69bd53cff1587c00137eb872",
+      "username": "Fantasy1037",
+      "email": "fantasyrobinhood22@gmail.com",
+      "phone": "8383085494",
+      "payoutAmount": 941,
+      "totalMemoAmount": 941,
+      "category": "other",
+      "subCategory": "---",
+      "flagLevel": "---",
+      "contentFlags": [],
+      "topPriority": {
+        "flagged": false,
+        "category": null,
+        "reason": "",
+        "matches": []
+      },
+      "selfTransactions": [],
+      "buyersChecked": 6
+    },
+    {
+      "settlementId": "6a00cf57f7758a445a971ccb",
+      "creatorId": "69bd53cff1587c00137eb872",
+      "username": "Fantasy1037",
+      "email": "fantasyrobinhood22@gmail.com",
+      "phone": "8383085494",
+      "payoutAmount": 1430,
+      "totalMemoAmount": 1430.3200000000002,
+      "category": "other",
+      "subCategory": "---",
+      "flagLevel": "---",
+      "contentFlags": [],
+      "topPriority": {
+        "flagged": false,
+        "category": null,
+        "reason": "",
+        "matches": []
+      },
+      "selfTransactions": [],
+      "buyersChecked": 6
+    },
+    {
+      "settlementId": "69e7c30b2927d965080da541",
+      "creatorId": "633541729da2b17ac8c1bb90",
+      "username": "spiritualbaabaa",
+      "email": "pragyanbharti914@gmail.com",
+      "phone": "7003622131",
+      "payoutAmount": 3451,
+      "totalMemoAmount": 3450.5999999999995,
+      "category": "Digital Marketing & Marketing",
+      "subCategory": "---",
+      "flagLevel": "---",
+      "contentFlags": [],
+      "topPriority": {
+        "flagged": false,
+        "category": null,
+        "reason": "",
+        "matches": []
+      },
+      "selfTransactions": [],
+      "buyersChecked": 58
+    },
+    {
+      "settlementId": "69e671838772ee2d21c9b7e0",
+      "creatorId": "633541729da2b17ac8c1bb90",
+      "username": "spiritualbaabaa",
+      "email": "pragyanbharti914@gmail.com",
+      "phone": "7003622131",
+      "payoutAmount": 5645,
+      "totalMemoAmount": 5645.4000000000015,
+      "category": "Digital Marketing & Marketing",
+      "subCategory": "---",
+      "flagLevel": "---",
+      "contentFlags": [],
+      "topPriority": {
+        "flagged": false,
+        "category": null,
+        "reason": "",
+        "matches": []
+      },
+      "selfTransactions": [],
+      "buyersChecked": 58
+    },
+    {
+      "settlementId": "69e52004175d1163135f8d01",
+      "creatorId": "633541729da2b17ac8c1bb90",
+      "username": "spiritualbaabaa",
+      "email": "pragyanbharti914@gmail.com",
+      "phone": "7003622131",
+      "payoutAmount": 3236,
+      "totalMemoAmount": 3236,
+      "category": "Digital Marketing & Marketing",
+      "subCategory": "---",
+      "flagLevel": "---",
+      "contentFlags": [],
+      "topPriority": {
+        "flagged": false,
+        "category": null,
+        "reason": "",
+        "matches": []
+      },
+      "selfTransactions": [],
+      "buyersChecked": 58
+    },
+    {
+      "settlementId": "69e914765700d648a6998e06",
+      "creatorId": "633541729da2b17ac8c1bb90",
+      "username": "spiritualbaabaa",
+      "email": "pragyanbharti914@gmail.com",
+      "phone": "7003622131",
+      "payoutAmount": 5113,
+      "totalMemoAmount": 5112.900000000001,
+      "category": "Digital Marketing & Marketing",
+      "subCategory": "---",
+      "flagLevel": "---",
+      "contentFlags": [],
+      "topPriority": {
+        "flagged": false,
+        "category": null,
+        "reason": "",
+        "matches": []
+      },
+      "selfTransactions": [],
+      "buyersChecked": 58
+    },
+    {
+      "settlementId": "69e3ce839663fc8f9e6359f8",
+      "creatorId": "633541729da2b17ac8c1bb90",
+      "username": "spiritualbaabaa",
+      "email": "pragyanbharti914@gmail.com",
+      "phone": "7003622131",
+      "payoutAmount": 598,
+      "totalMemoAmount": 598,
+      "category": "Digital Marketing & Marketing",
+      "subCategory": "---",
+      "flagLevel": "---",
+      "contentFlags": [],
+      "topPriority": {
+        "flagged": false,
+        "category": null,
+        "reason": "",
+        "matches": []
+      },
+      "selfTransactions": [],
+      "buyersChecked": 58
+    },
+    {
+      "settlementId": "69dd3723a3afb5a78ec99eb4",
+      "creatorId": "67dbe0a6981c700013c41df1",
+      "username": "cricphilosophy07",
+      "email": "parmathma07@gmail.com",
+      "phone": "7338043977",
+      "payoutAmount": 12501,
+      "totalMemoAmount": 12500.860000000002,
+      "category": "Education",
+      "subCategory": "---",
+      "flagLevel": "---",
+      "contentFlags": [],
+      "topPriority": {
+        "flagged": false,
+        "category": null,
+        "reason": "",
+        "matches": []
+      },
+      "selfTransactions": [],
+      "buyersChecked": 93
+    },
+    {
+      "settlementId": "69bd9329fb19c574a5276bfa",
+      "creatorId": "695e480611d5940013ffcb5c",
+      "username": "fantasyrobinhood22",
+      "email": "fantasyrobinhood@gmail.com",
+      "phone": "9555870984",
+      "payoutAmount": 94,
+      "totalMemoAmount": 94.1,
+      "category": "other",
+      "subCategory": "---",
+      "flagLevel": "---",
+      "contentFlags": [],
+      "topPriority": {
+        "flagged": false,
+        "category": null,
+        "reason": "",
+        "matches": []
+      },
+      "selfTransactions": [
+        {
+          "amountPaid": 1.0,
+          "buyerEmail": "fantasyrobinhood@gmail.com",
+          "buyerPhone": "9555870984",
+          "IP": "106.219.184.138",
+          "date": "03 Mar, 2026; 11:26 PM",
+          "productId": "69a71e843af480001373c31e",
+          "matchType": "backend_flag+email_match+phone_match"
+        }
+      ],
+      "buyersChecked": 4
+    },
+    {
+      "settlementId": "69a87ad41bf1163e75660878",
+      "creatorId": "695e480611d5940013ffcb5c",
+      "username": "fantasyrobinhood22",
+      "email": "fantasyrobinhood@gmail.com",
+      "phone": "9555870984",
+      "payoutAmount": 472,
+      "totalMemoAmount": 472.38,
+      "category": "other",
+      "subCategory": "---",
+      "flagLevel": "---",
+      "contentFlags": [],
+      "topPriority": {
+        "flagged": false,
+        "category": null,
+        "reason": "",
+        "matches": []
+      },
+      "selfTransactions": [
+        {
+          "amountPaid": 1.0,
+          "buyerEmail": "fantasyrobinhood@gmail.com",
+          "buyerPhone": "9555870984",
+          "IP": "106.219.184.138",
+          "date": "03 Mar, 2026; 11:26 PM",
+          "productId": "69a71e843af480001373c31e",
+          "matchType": "backend_flag+email_match+phone_match"
+        }
+      ],
+      "buyersChecked": 4
+    },
+    {
+      "settlementId": "697cf9d9cf14d689910453ed",
+      "creatorId": "6891f2a547882e0013794da9",
+      "username": "11starteam",
+      "email": "lokeshgurjar0930@gmail.com",
+      "phone": "9509698741",
+      "payoutAmount": 515,
+      "totalMemoAmount": 514.51,
+      "category": "other",
+      "subCategory": "---",
+      "flagLevel": "---",
+      "contentFlags": [],
+      "topPriority": {
+        "flagged": false,
+        "category": null,
+        "reason": "",
+        "matches": []
+      },
+      "selfTransactions": [],
+      "buyersChecked": 100
+    },
+    {
+      "settlementId": "697a57090331ac567b81f631",
+      "creatorId": "6891f2a547882e0013794da9",
+      "username": "11starteam",
+      "email": "lokeshgurjar0930@gmail.com",
+      "phone": "9509698741",
+      "payoutAmount": 1467,
+      "totalMemoAmount": 1467.3100000000002,
+      "category": "other",
+      "subCategory": "---",
+      "flagLevel": "---",
       "contentFlags": [],
       "topPriority": {
         "flagged": false,

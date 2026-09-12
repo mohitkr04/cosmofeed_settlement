@@ -4,7 +4,7 @@
     "auditPeriodStart": "2026-08-27",
     "auditPeriodEnd": "2026-09-05",
     "targetSubmissionDate": "2026-09-05",
-    "lastUpdated": "2026-09-12 06:56:45",
+    "lastUpdated": "2026-09-12 08:18:55",
     "totalAuditRuns": 14,
     "auditDates": [
       "2026-08-27",
@@ -59628,6 +59628,45 @@
           "telegramProductLink": "https://superprofile.bio/vig/680e309d146ab000130197f0"
         }
       ]
+    },
+    "6891f2a547882e0013794da9": {
+      "creatorId": "6891f2a547882e0013794da9",
+      "username": "11starteam",
+      "creatorName": "11starteam",
+      "email": "lokeshgurjar0930@gmail.com",
+      "phone": "9509698741",
+      "onboardedBy": "N/A",
+      "onboardingVertical": "N/A",
+      "telegramProductId": "669e46c778795600130d6fac",
+      "telegramProductLink": "https://superprofile.bio/vig/669e46c778795600130d6fac",
+      "telegramProductIds": [
+        "669e46c778795600130d6fac"
+      ],
+      "telegramProductLinks": [
+        "https://superprofile.bio/vig/669e46c778795600130d6fac"
+      ],
+      "sebiVerificationStatus": "Not Verified",
+      "sebiRegisteredYes": "—",
+      "sebiRegisteredNo": "No",
+      "reviewStatus": "Manual Review Required",
+      "complianceHoldStatus": "HOLD - RELEASE RESTRICTED",
+      "firstSeenDate": "2026-09-12",
+      "lastSeenDate": "2026-09-12",
+      "datesObserved": [
+        "2026-09-12"
+      ],
+      "daysFlaggedCount": 1,
+      "latestPayoutAmount": 1467.0,
+      "cumulativePayoutVolume": 1467.0,
+      "maxDailyPayout": 1467.0,
+      "settlementHistory": [
+        {
+          "auditDate": "2026-09-12",
+          "payoutAmount": 1467.0,
+          "telegramProductId": "669e46c778795600130d6fac",
+          "telegramProductLink": "https://superprofile.bio/vig/669e46c778795600130d6fac"
+        }
+      ]
     }
   },
   "dailySnapshots": {
@@ -63698,8 +63737,8 @@
     },
     "2026-09-12": {
       "auditDate": "2026-09-12",
-      "flaggedCount": 305,
-      "totalDayVolume": 2988779.0,
+      "flaggedCount": 306,
+      "totalDayVolume": 2990246.0,
       "creatorIds": [
         "6aa24ef0091d0900138c1b5c",
         "64bf7c27e98788001f3fa09d",
@@ -63978,6 +64017,7 @@
         "68538cf11838b3001339832b",
         "67d837e1b44d25001392f4dc",
         "62fd0aaed7f1067b018a5ebf",
+        "6891f2a547882e0013794da9",
         "68037dbe74e41e0013a09d90",
         "65f03772c3be0800137389f9",
         "66926a105d82bc0013c1229c",
