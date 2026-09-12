@@ -1,7 +1,7 @@
 {
   "report": {
     "date": "2026-09-12",
-    "totalAudited": 2124,
+    "totalAudited": 2125,
     "selfTransactionCount": 317,
     "topPriorityCount": 0,
     "flaggedCount": 0,
@@ -42097,6 +42097,27 @@
       },
       "selfTransactions": [],
       "buyersChecked": 20
+    },
+    {
+      "settlementId": "6a99c45a42f86d2f7aa4c4fc",
+      "creatorId": "6a40239de64c5900131a0811",
+      "username": "officialstoretechco",
+      "email": "techstoreya@gmail.com",
+      "phone": "7544946975",
+      "payoutAmount": 280,
+      "totalMemoAmount": 280,
+      "category": "Technology & IT",
+      "subCategory": null,
+      "flagLevel": null,
+      "contentFlags": [],
+      "topPriority": {
+        "flagged": false,
+        "category": null,
+        "reason": "",
+        "matches": []
+      },
+      "selfTransactions": [],
+      "buyersChecked": 100
     }
   ]
 }

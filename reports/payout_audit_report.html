@@ -40,14 +40,14 @@
 <body>
 
 <h1>Cosmofeed Payout Audit Report</h1>
-<div class=sub>Review Date: <b>2026-09-12</b> &middot; Product Sale Date: <b>2026-09-11</b> &middot; Generated: <b>2026-09-12 10:09</b> &middot; <b>2,124</b> pending settlements evaluated</div>
+<div class=sub>Review Date: <b>2026-09-12</b> &middot; Product Sale Date: <b>2026-09-11</b> &middot; Generated: <b>2026-09-12 11:59</b> &middot; <b>2,125</b> pending settlements evaluated</div>
 
 <div class=kpis>
   <div class="kpi danger"><div class=v>20</div><div class=l>Top-priority flags</div></div>
   <div class=kpi><div class=v>51</div><div class=l>Recent self-txn creators (2d)</div></div>
   <div class="kpi warn"><div class=v>23</div><div class=l>No-content creators</div></div>
   <div class="kpi danger"><div class=v>0</div><div class=l>In both lists (top risk)</div></div>
-  <div class="kpi warn"><div class=v>1213</div><div class=l>Unverifiable (buyer cap)</div></div>
+  <div class="kpi warn"><div class=v>1214</div><div class=l>Unverifiable (buyer cap)</div></div>
   <div class=kpi><div class=v>&#8377;109k</div><div class=l>Pending across no-content</div></div>
 </div>
 
@@ -102,7 +102,7 @@
   </tbody>
 </table></div>
 
-<h2>3 · Could not fully verify — 100-buyer cap (1213 creators)</h2>
+<h2>3 · Could not fully verify — 100-buyer cap (1214 creators)</h2>
 <div class=sub>High-velocity creators whose 100 most-recent buyers span less than 2 days. The API returns at most 100 buyers (no pagination), so a self-transaction inside the window could sit <em>below</em> the cap and be invisible. These are <b>not</b> flagged as self-txn — they are cases the audit <em>cannot rule out</em>. Review manually.</div>
 <div class="note">Sorted by pending payout. <code>window</code> = how many days back the visible 100 buyers reach; <code>0d</code> means all 100 landed the same day.</div>
 <div class=scroll><table>
@@ -116,7 +116,7 @@
 <div class=finding><b>🟢 Timezone — pinned to Asia/Kolkata (IST)</b>
   The business window uses IST timezone (Asia/Kolkata) to dynamically filter products sold yesterday (T+1 workflow rule).</div>
 <div class=finding><b>🟠 100-buyer API cap — completeness blind spot</b>
-  <code>getCreatorKundli</code> is hard-capped at 100 buyers (no pagination). 2,124 creators audited. For capped creators whose 100 buyers span &lt;2 days, a recent self-payment can be pushed off the list — so the list above is <em>accurate but may be incomplete</em>. <b>1213 creators</b> could not be fully verified.</div>
+  <code>getCreatorKundli</code> is hard-capped at 100 buyers (no pagination). 2,125 creators audited. For capped creators whose 100 buyers span &lt;2 days, a recent self-payment can be pushed off the list — so the list above is <em>accurate but may be incomplete</em>. <b>1214 creators</b> could not be fully verified.</div>
 <div class=finding><b>🟢 Deep Link Validation — 0 false positives</b>
   Every product detail response is deeply parsed for attached files, redirect URLs, locked content arrays, modules, and Telegram <code>vig/</code> exceptions. API failures are assigned <code>MANUAL_REVIEW_REQUIRED</code> rather than false missing link flags.</div>
 
