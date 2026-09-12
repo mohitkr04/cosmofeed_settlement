@@ -4,33 +4,18 @@ import os
 import datetime
 import re
 
+import payout_audit_agent as agent
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPORTS_DIR = os.path.join(HERE, "reports")
 os.makedirs(REPORTS_DIR, exist_ok=True)
 DATA_JSON = os.path.join(REPORTS_DIR, "data.json")
-
-ADULT_KEYWORDS = [
-    "adult", "18+", "xxx", "porn", "sex", "nude", "nudes", "escort", "erotic",
-    "onlyfans", "camgirl", "camgirls", "hotgirl", "desixxx", "bhabhi", "randi",
-    "callgirl", "call girl", "hookup", "fetish", "boobs", "bikini", "sensual",
-    "seduction", "kamasutra", "milf", "bdsm", "hentai", "lewd", "nsfw", "sexy",
-]
 
 def to_float(v):
     try:
         return float(v) if v is not None else 0.0
     except (ValueError, TypeError):
         return 0.0
-
-def adult_check(username, display, category, subcategory, product_titles=None):
-    product_str = " ".join([str(t or "") for t in (product_titles or [])])
-    hay = " ".join([str(x or "").lower() for x in (username, display, category, subcategory, product_str)])
-    hits = []
-    for k in ADULT_KEYWORDS:
-        pat = r"(?<![a-z0-9])" + re.escape(k) + r"(?![a-z0-9])"
-        if re.search(pat, hay):
-            hits.append(k)
-    return (len(hits) > 0, ", ".join(hits))
 
 def parse_txn_date(d_str):
     if not d_str:
@@ -93,6 +78,15 @@ def main(audit_date=None):
     all_results = audit_data.get("allResults", [])
     print(f"Loaded {len(all_results)} audited records from {audit_json}")
 
+    prod_cache_file = os.path.join(REPORTS_DIR, "creator_products_cache.json")
+    prod_cache = {}
+    if os.path.exists(prod_cache_file):
+        try:
+            with open(prod_cache_file, "r", encoding="utf-8") as pf:
+                prod_cache = json.load(pf)
+        except Exception:
+            prod_cache = {}
+
     out = []
     for r in all_results:
         sid = r.get("settlementId")
@@ -104,6 +98,10 @@ def main(audit_date=None):
         category = r.get("category")
         self_txns_raw = r.get("selfTransactions") or []
         buyers_checked = r.get("buyersChecked", 0)
+
+        c_prods = prod_cache.get(cid, []) if cid else []
+        product_titles = [str(p.get("productTtile") or p.get("productTitle") or p.get("title") or "").strip() for p in c_prods if isinstance(p, dict)]
+        product_titles = [t for t in product_titles if t]
 
         self_txns = []
         for s in self_txns_raw:
@@ -118,7 +116,7 @@ def main(audit_date=None):
                 "timestamp": ts,
                 "productId": s.get("productId")
             })
-        self_txns.sort(key=lambda item: -item["timestamp"])
+        self_txns.sort(key=lambda item: (-item["amount"], -item["timestamp"]))
 
         is_self_txn = len(self_txns) > 0
         self_txn_count = len(self_txns)
@@ -126,7 +124,28 @@ def main(audit_date=None):
         latest_date = self_txns[0]["date"] if self_txns else ""
         latest_ts = self_txns[0]["timestamp"] if self_txns else 0.0
 
-        is_adult, adult_reason = adult_check(username, "", category, "", [])
+        # Scan text against top-priority keyword categories
+        haystack = f"{username} {r.get('displayName') or ''} {category or ''} {r.get('subCategory') or ''} {' '.join(product_titles)}"
+        priority_res = agent.check_priority_keywords(haystack)
+
+        fl = str(r.get("flagLevel") or "").strip()
+        if fl and fl not in ("---", "", "None", "null", "0"):
+            priority_res["flagged"] = True
+            priority_res["flagLevel"] = fl
+            if not priority_res.get("category"):
+                priority_res["category"] = "ADMIN_FLAG"
+            priority_res["reason"] = (f"flagLevel={fl}; " + priority_res["reason"]).strip("; ")
+
+        # If audit record already carried topPriority flag, merge
+        if (r.get("topPriority") or {}).get("flagged"):
+            audit_tp = r.get("topPriority")
+            priority_res["flagged"] = True
+            if not priority_res.get("category"):
+                priority_res["category"] = audit_tp.get("category")
+            if audit_tp.get("reason") and audit_tp.get("reason") not in priority_res["reason"]:
+                priority_res["reason"] = (priority_res["reason"] + "; " + audit_tp.get("reason")).strip("; ")
+
+        is_adult = (priority_res.get("category") == "ADULT_CONTENT")
 
         out.append({
             "settlementId": sid,
@@ -138,9 +157,9 @@ def main(audit_date=None):
             "onboardedBy": r.get("onboardedBy", ""),
             "status": "pendingSettlement",
             "category": category,
-            "subCategory": None,
-            "flagLevel": None,
-            "displayName": username,
+            "subCategory": r.get("subCategory"),
+            "flagLevel": r.get("flagLevel"),
+            "displayName": r.get("displayName") or username,
             "selfTransaction": is_self_txn,
             "selfTxnCount": self_txn_count,
             "selfTxnMaxAmount": self_txn_max_amount,
@@ -148,10 +167,14 @@ def main(audit_date=None):
             "latestSelfTxnDate": latest_date,
             "latestSelfTxnTimestamp": latest_ts,
             "buyersChecked": buyers_checked,
-            "productTitles": [],
-            "productsCount": 0,
+            "productTitles": product_titles,
+            "productsCount": len(c_prods),
             "adultFlag": is_adult,
-            "adultReason": ("keyword: " + adult_reason) if is_adult else "",
+            "adultReason": priority_res["reason"] if is_adult else "",
+            "topPriorityFlag": priority_res.get("flagged", False),
+            "priorityCategory": priority_res.get("category"),
+            "priorityReason": priority_res.get("reason", ""),
+            "priorityMatches": priority_res.get("matches", []),
             "noLink": False,
             "noLinkCount": 0,
             "noLinkProducts": [],
@@ -230,6 +253,7 @@ def main(audit_date=None):
         "counts": {
             "selfTransaction": sum(1 for r in out if r.get("selfTransaction")),
             "selfTransaction2d": sum(1 for r in out if r.get("selfTransaction") and r.get("inSelf2DayWindow")),
+            "topPriority": sum(1 for r in out if r.get("topPriorityFlag")),
             "adult": sum(1 for r in out if r.get("adultFlag")),
             "noLink": sum(1 for r in out if r.get("noLink") is True),
             "topRiskBoth": sum(1 for r in out if r.get("topRiskBoth") is True),
@@ -251,6 +275,7 @@ def main(audit_date=None):
     print(f"Successfully generated data.json!")
     print(f"  Total Creators: {len(out)}")
     print(f"  Self-Transactions: {data['counts']['selfTransaction']} (2-Day Window: {data['counts']['selfTransaction2d']})")
+    print(f"  Top-Priority Flags: {data['counts']['topPriority']}")
     print(f"  Missing Deliverable (No-Content): {data['counts']['noLink']}")
     print(f"  In Both Lists (Top Risk): {data['counts']['topRiskBoth']}")
     print(f"  Unverifiable (100-Cap): {data['counts']['unverifiableCap']}")

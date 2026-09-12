@@ -86,10 +86,33 @@ def generate_pdf_report(json_data_path: str = None, output_pdf_path: str = None)
 
     total_payout = sum(float(c.get("payoutAmount") or 0) for c in creators)
     self_creators = [c for c in creators if c.get("selfTransaction")]
+    top_priority_creators = [c for c in creators if c.get("topPriorityFlag")]
     tele_creators = [c for c in creators if c.get("telegramIntegration") and c.get("telegramEligible")]
     tele_sebi_yes = [c for c in tele_creators if c.get("sebiRegisteredYes") == "Yes"]
     tele_sebi_no = [c for c in tele_creators if c.get("sebiRegisteredNo") == "No"]
     manual_review_creators = [c for c in tele_creators if c.get("sebiReviewStatus") == "Manual Review Required"]
+
+    import re
+    def get_self_sort_tuple(c):
+        dt_str = str(c.get("latestSelfTxnDate") or "").strip()
+        day_key = 0
+        if dt_str:
+            m = re.search(r"(\d{1,2})\s+([A-Za-z]{3}),?\s+(\d{4})", dt_str)
+            if m:
+                day = int(m.group(1))
+                months = {"Jan": 1, "Feb": 2, "Mar": 3, "Apr": 4, "May": 5, "Jun": 6, "Jul": 7, "Aug": 8, "Sep": 9, "Oct": 10, "Nov": 11, "Dec": 12}
+                month = months.get(m.group(2), 0)
+                year = int(m.group(3))
+                if day and month and year:
+                    day_key = year * 10000 + month * 100 + day
+        max_amt = float(c.get("selfTxnMaxAmount") or 0)
+        return (day_key, max_amt)
+
+    distinct_self_days = sorted(list(set(get_self_sort_tuple(c)[0] for c in self_creators if get_self_sort_tuple(c)[0] > 0)), reverse=True)
+    top_3_days = set(distinct_self_days[:3])
+    self_2d_creators = [c for c in self_creators if (not top_3_days or get_self_sort_tuple(c)[0] in top_3_days)]
+    sorted_self = sorted(self_2d_creators, key=get_self_sort_tuple, reverse=True)
+    self_2d_count = counts.get("selfTransaction2d") or len(self_2d_creators)
 
     # Setup Document
     doc = SimpleDocTemplate(
@@ -193,31 +216,51 @@ def generate_pdf_report(json_data_path: str = None, output_pdf_path: str = None)
     elements.append(Paragraph(meta_text, subtitle_style))
     elements.append(Spacer(1, 10))
 
-    # Executive KPI Metric Grid
+    # Executive KPI Metric Grid (7 metrics)
     kpi_data = [
         [
-            Paragraph(f"<b>₹{total_payout:,.2f}</b><br/><font size=7 color='#64748b'>TOTAL PENDING PAYOUT</font>", table_cell_style),
-            Paragraph(f"<b>{len(self_creators)}</b><br/><font size=7 color='#64748b'>SELF-TXN FLAGGED (2D)</font>", table_cell_style),
-            Paragraph(f"<b>{len(tele_creators)}</b><br/><font size=7 color='#64748b'>TELEGRAM (≥ ₹1K)</font>", table_cell_style),
-            Paragraph(f"<font color='#047857'><b>{len(tele_sebi_yes)}</b></font><br/><font size=7 color='#64748b'>SEBI VERIFIED (YES)</font>", table_cell_style),
-            Paragraph(f"<font color='#b91c1c'><b>{len(tele_sebi_no)}</b></font><br/><font size=7 color='#64748b'>SEBI UNVERIFIED (NO)</font>", table_cell_style),
-            Paragraph(f"<font color='#b45309'><b>{len(manual_review_creators)}</b></font><br/><font size=7 color='#64748b'>MANUAL REVIEW REQ</font>", table_cell_style),
+            Paragraph(f"<b>₹{total_payout:,.0f}</b><br/><font size=6.5 color='#64748b'>TOTAL PAYOUT</font>", table_cell_style),
+            Paragraph(f"<font color='#b91c1c'><b>{len(top_priority_creators)}</b></font><br/><font size=6.5 color='#64748b'>TOP PRIORITY</font>", table_cell_style),
+            Paragraph(f"<b>{self_2d_count}</b><br/><font size=6.5 color='#64748b'>SELF-TXN (2D)</font>", table_cell_style),
+            Paragraph(f"<b>{len(tele_creators)}</b><br/><font size=6.5 color='#64748b'>TELEGRAM (&ge; ₹1K)</font>", table_cell_style),
+            Paragraph(f"<font color='#047857'><b>{len(tele_sebi_yes)}</b></font><br/><font size=6.5 color='#64748b'>SEBI VERIFIED</font>", table_cell_style),
+            Paragraph(f"<font color='#b91c1c'><b>{len(tele_sebi_no)}</b></font><br/><font size=6.5 color='#64748b'>SEBI UNVERIFIED</font>", table_cell_style),
+            Paragraph(f"<font color='#b45309'><b>{len(manual_review_creators)}</b></font><br/><font size=6.5 color='#64748b'>MANUAL REVIEW</font>", table_cell_style),
         ]
     ]
-    kpi_table = Table(kpi_data, colWidths=[90, 85, 80, 85, 90, 110])
+    kpi_table = Table(kpi_data, colWidths=[80, 75, 75, 75, 75, 80, 80])
     kpi_table.setStyle(TableStyle([
         ('BACKGROUND', (0, 0), (-1, -1), colors.HexColor("#f8fafc")),
         ('BOX', (0, 0), (-1, -1), 1, colors.HexColor("#cbd5e1")),
         ('INNERGRID', (0, 0), (-1, -1), 0.5, colors.HexColor("#e2e8f0")),
         ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
         ('VALIGN', (0, 0), (-1, -1), 'MIDDLE'),
-        ('TOPPADDING', (0, 0), (-1, -1), 8),
-        ('BOTTOMPADDING', (0, 0), (-1, -1), 8),
+        ('TOPPADDING', (0, 0), (-1, -1), 7),
+        ('BOTTOMPADDING', (0, 0), (-1, -1), 7),
     ]))
     elements.append(kpi_table)
-    elements.append(Spacer(1, 12))
+    elements.append(Spacer(1, 10))
 
-    # Priority Action Alert (If any non-SEBI or self-txns)
+    # Priority Action Alerts
+    if top_priority_creators:
+        top_alert_p = Paragraph(
+            f"<b>CRITICAL POLICY VIOLATION NOTICE:</b> <b>{len(top_priority_creators)} creator(s)</b> flagged with "
+            "<b>TOP-PRIORITY</b> prohibited violations (Adult Content, Betting/Gambling, Pirated Media, Cracked Software, Fraud Guarantees). "
+            "Immediate payout suspension and compliance review required.",
+            ParagraphStyle("TopAlertText", parent=body_style, textColor=colors.HexColor("#991b1b"), fontSize=8)
+        )
+        top_alert_box = Table([[top_alert_p]], colWidths=[540])
+        top_alert_box.setStyle(TableStyle([
+            ('BACKGROUND', (0, 0), (-1, -1), colors.HexColor("#fef2f2")),
+            ('BOX', (0, 0), (-1, -1), 1.2, colors.HexColor("#f87171")),
+            ('TOPPADDING', (0, 0), (-1, -1), 6),
+            ('BOTTOMPADDING', (0, 0), (-1, -1), 6),
+            ('LEFTPADDING', (0, 0), (-1, -1), 10),
+            ('RIGHTPADDING', (0, 0), (-1, -1), 10),
+        ]))
+        elements.append(top_alert_box)
+        elements.append(Spacer(1, 8))
+
     if tele_sebi_no:
         alert_p = Paragraph(
             f"<b>CRITICAL COMPLIANCE NOTICE:</b> {len(tele_sebi_no)} creator(s) are using Telegram integration "
@@ -235,10 +278,64 @@ def generate_pdf_report(json_data_path: str = None, output_pdf_path: str = None)
             ('RIGHTPADDING', (0, 0), (-1, -1), 10),
         ]))
         elements.append(alert_box)
-        elements.append(Spacer(1, 12))
+        elements.append(Spacer(1, 10))
 
-    # SECTION 1: Telegram Integration & SEBI Compliance (Sorted Highest -> Lowest)
-    elements.append(Paragraph(f"1 · Telegram Integration & SEBI Compliance ({len(tele_creators)} settlements &ge; ₹1,000)", h2_style))
+    sec_counter = 1
+
+    # SECTION: Top-Priority Compliance Violations (If Any)
+    if top_priority_creators:
+        elements.append(Paragraph(f"{sec_counter} · Top-Priority Policy Violations ({len(top_priority_creators)} Flagged Creators)", h2_style))
+        elements.append(Paragraph(
+            "Creators flagged under critical compliance categories (Adult/Pornography, Gambling/Casino/Prediction, Pirated Content, Cracked APK/Software, Fraudulent Guarantees). Sorted from Highest to Lowest payout amount.",
+            subtitle_style
+        ))
+        elements.append(Spacer(1, 6))
+
+        top_table_data = [
+            [
+                Paragraph("#", table_header_style),
+                Paragraph("Payout (₹)", table_header_style),
+                Paragraph("Creator Name", table_header_style),
+                Paragraph("Creator ID", table_header_style),
+                Paragraph("Violation Category", table_header_style),
+                Paragraph("Reason / Matched Keywords", table_header_style),
+            ]
+        ]
+        sorted_top = sorted(top_priority_creators, key=lambda c: -float(c.get("payoutAmount") or 0))
+        for idx, c in enumerate(sorted_top[:30], 1):
+            p_amt = float(c.get("payoutAmount") or 0)
+            u_name = str(c.get("username") or c.get("displayName") or "—")[:20]
+            cid = str(c.get("creatorId") or "—")
+            cat = str(c.get("priorityCategory") or "PROHIBITED").replace("_", " ")
+            reason = str(c.get("priorityReason") or "—")[:48]
+            matches = c.get("priorityMatches") or []
+            if matches:
+                reason += f" (<i>{', '.join(matches[:3])}</i>)"
+
+            top_table_data.append([
+                Paragraph(str(idx), table_cell_style),
+                Paragraph(f"<b>₹{p_amt:,.0f}</b>", table_cell_style),
+                Paragraph(f"<b>{u_name}</b>", table_cell_style),
+                Paragraph(f"<font face='Courier' size=6>{cid[:10]}..</font>", table_cell_style),
+                Paragraph(f"<font color='#b91c1c'><b>{cat}</b></font>", table_cell_style),
+                Paragraph(reason, table_cell_style),
+            ])
+
+        top_table = Table(top_table_data, colWidths=[20, 65, 95, 75, 95, 190])
+        top_table.setStyle(TableStyle([
+            ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor("#fee2e2")),
+            ('BOX', (0, 0), (-1, -1), 0.5, colors.HexColor("#fca5a5")),
+            ('INNERGRID', (0, 0), (-1, -1), 0.5, colors.HexColor("#fee2e2")),
+            ('VALIGN', (0, 0), (-1, -1), 'MIDDLE'),
+            ('TOPPADDING', (0, 0), (-1, -1), 3),
+            ('BOTTOMPADDING', (0, 0), (-1, -1), 3),
+        ]))
+        elements.append(top_table)
+        elements.append(Spacer(1, 14))
+        sec_counter += 1
+
+    # SECTION: Telegram Integration & SEBI Compliance (Sorted Highest -> Lowest)
+    elements.append(Paragraph(f"{sec_counter} · Telegram Integration & SEBI Compliance ({len(tele_creators)} settlements &ge; ₹1,000)", h2_style))
     elements.append(Paragraph(
         "Settlements &ge; ₹1,000 utilizing Telegram integration (<code>vig/productId</code>) cross-referenced against the organization's SEBI Master Registry. Sorted strictly from Highest to Lowest payout amount.",
         subtitle_style
@@ -305,34 +402,11 @@ def generate_pdf_report(json_data_path: str = None, output_pdf_path: str = None)
         elements.append(Spacer(1, 4))
         elements.append(Paragraph(f"<i>... and {len(sorted_tele) - 40} additional Telegram settlements available in full CSV/Excel export.</i>", subtitle_style))
 
-    # SECTION 2: Self-Transactions in the last 2 days
+    # SECTION: Self-Transactions in the last 2 days
     elements.append(Spacer(1, 14))
-
-    import re
-    def get_self_sort_tuple(c):
-        dt_str = str(c.get("latestSelfTxnDate") or "").strip()
-        day_key = 0
-        if dt_str:
-            m = re.search(r"(\d{1,2})\s+([A-Za-z]{3}),?\s+(\d{4})", dt_str)
-            if m:
-                day = int(m.group(1))
-                months = {"Jan": 1, "Feb": 2, "Mar": 3, "Apr": 4, "May": 5, "Jun": 6, "Jul": 7, "Aug": 8, "Sep": 9, "Oct": 10, "Nov": 11, "Dec": 12}
-                month = months.get(m.group(2), 0)
-                year = int(m.group(3))
-                if day and month and year:
-                    day_key = year * 10000 + month * 100 + day
-        max_amt = float(c.get("selfTxnMaxAmount") or 0)
-        return (day_key, max_amt)
-
-    # Filter to 2-day rolling window dynamically based on top 3 distinct days present
-    distinct_self_days = sorted(list(set(get_self_sort_tuple(c)[0] for c in self_creators if get_self_sort_tuple(c)[0] > 0)), reverse=True)
-    top_3_days = set(distinct_self_days[:3])
-    self_2d_creators = [c for c in self_creators if (not top_3_days or get_self_sort_tuple(c)[0] in top_3_days)]
-    sorted_self = sorted(self_2d_creators, key=get_self_sort_tuple, reverse=True)
-
-    elements.append(Paragraph(f"2 · Flagged Self-Transactions ({len(sorted_self)} creators in 2-day rolling window)", h2_style))
+    elements.append(Paragraph(f"{sec_counter} · Flagged Self-Transactions ({len(sorted_self)} creators in 2-day rolling window)", h2_style))
     elements.append(Paragraph(
-        "Creators with verified native <code>selfPayment</code> flag in the rolling 2-day audit window, sorted strictly by Date descending &rarr; Highest Self-Transaction Amount to Lowest.",
+        "Creators with verified native <code>selfPayment</code> or buyer matching in the rolling 2-day audit window, sorted strictly by Date descending &rarr; Highest Self-Transaction Amount to Lowest.",
         subtitle_style
     ))
     elements.append(Spacer(1, 6))

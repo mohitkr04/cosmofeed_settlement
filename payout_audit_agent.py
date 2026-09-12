@@ -23,6 +23,7 @@ NOTE on content categories:
 import json
 import os
 import sys
+import re
 import time
 import socket
 import argparse
@@ -40,6 +41,77 @@ except ImportError:
 
 API_BASE = "https://prod.api.cosmofeed.com/api/internal_dashboard"
 HERE = os.path.dirname(os.path.abspath(__file__))
+
+
+def normalize_email(email):
+    """Normalize email address for strict comparison."""
+    if not email:
+        return ""
+    return str(email).strip().lower()
+
+
+def normalize_phone(phone):
+    """Normalize phone numbers by stripping non-digits and leading country codes (+91, 0)."""
+    if not phone:
+        return ""
+    cleaned = re.sub(r"\D", "", str(phone))
+    if len(cleaned) > 10 and cleaned.startswith("91"):
+        cleaned = cleaned[2:]
+    elif len(cleaned) > 10 and cleaned.startswith("0"):
+        cleaned = cleaned[1:]
+    return cleaned[-10:] if len(cleaned) >= 10 else cleaned
+
+
+TOP_PRIORITY_KEYWORDS = {
+    "ADULT_CONTENT": [
+        "adult", "18+", "xxx", "porn", "sex", "nude", "nudes", "escort", "erotic",
+        "onlyfans", "camgirl", "camgirls", "hotgirl", "desixxx", "bhabhi", "randi",
+        "callgirl", "call girl", "hookup", "fetish", "boobs", "bikini", "sensual",
+        "seduction", "kamasutra", "milf", "bdsm", "hentai", "lewd", "nsfw", "sexy"
+    ],
+    "BETTING_GAMBLING": [
+        "betting", "gambling", "casino", "color prediction", "rummy", "aviator",
+        "sure shot", "fixed match", "binary options", "trading bot", "100% win",
+        "dream11 prediction", "satta", "matka", "roulette"
+    ],
+    "CRACKED_APK_SOFTWARE": [
+        "apk", "mod apk", "cracked", "hack", "cheats", "keygen", "license key",
+        "activation key", "key generator", "premium account", "modded"
+    ],
+    "PIRATED_MEDIA": [
+        "movie", "movies", "web series", "netflix", "prime video", "hotstar",
+        "filmywap", "hd movies", "ott leak", "cinema leak", "torrent", "pirated",
+        "leaked course"
+    ],
+    "FRAUD_GUARANTEES": [
+        "guaranteed profit", "100% profit", "daily return", "double money",
+        "instant profit", "no loss", "sure profit"
+    ]
+}
+
+
+def check_priority_keywords(text):
+    """Scan text against top-priority keyword categories. Returns dict with hits."""
+    if not text:
+        return {"flagged": False, "category": None, "reason": "", "matches": []}
+    text_lower = " " + str(text).lower() + " "
+    matches = []
+    first_cat = None
+    for cat, words in TOP_PRIORITY_KEYWORDS.items():
+        for kw in words:
+            pat = r"(?<![a-z0-9])" + re.escape(kw) + r"(?![a-z0-9])"
+            if re.search(pat, text_lower):
+                matches.append(f"{cat}:{kw}")
+                if not first_cat:
+                    first_cat = cat
+    if matches:
+        return {
+            "flagged": True,
+            "category": first_cat,
+            "reason": "; ".join(matches),
+            "matches": matches
+        }
+    return {"flagged": False, "category": None, "reason": "", "matches": []}
 
 
 def get_business_dates(timezone_str="Asia/Kolkata", now_dt=None):
@@ -298,7 +370,7 @@ def seed_caches_from_previous_audits():
                         "category": r.get("category"),
                     }
                     seeded_profiles += 1
-                if cid and cid not in SELF_TXN_CACHE and "selfTransactions" in r:
+                if cid and cid not in SELF_TXN_CACHE and r.get("selfTransactions"):
                     SELF_TXN_CACHE[cid] = {
                         "self": r.get("selfTransactions", []),
                         "buyers": r.get("buyersChecked", 0),
@@ -355,16 +427,49 @@ def extract_kundli_payload(d, key):
 
 # ---------- Step 3: self-transaction check via buyer list ----------
 
-def check_self_transactions(creator_id, token):
-    if creator_id in SELF_TXN_CACHE:
+def check_self_transactions(creator_id, token, creator_email=None, creator_phone=None):
+    c_email_norm = normalize_email(creator_email)
+    c_phone_norm = normalize_phone(creator_phone)
+    cache_key = f"{creator_id}:{c_email_norm}:{c_phone_norm}"
+    if cache_key in SELF_TXN_CACHE:
+        return SELF_TXN_CACHE[cache_key]
+    if creator_id in SELF_TXN_CACHE and not c_email_norm and not c_phone_norm:
         return SELF_TXN_CACHE[creator_id]
+
     d = api_get(f"/getCreatorKundli?type=userId&value={creator_id}"
                 f"&requestedAction=groupedByBuyerId", token)
     if not d or "__error__" in d:
         return {"__error__": (d or {}).get("__error__", "unknown"), "self": [], "buyers": 0}
     buyers = extract_kundli_payload(d, "groupedByBuyerId")
-    self_txns = [b for b in buyers if isinstance(b, dict) and b.get("selfPayment") is True]
+
+    self_txns = []
+    for b in buyers:
+        if not isinstance(b, dict):
+            continue
+        is_self = False
+        match_types = []
+        if b.get("selfPayment") is True:
+            is_self = True
+            match_types.append("backend_flag")
+
+        b_email = normalize_email(b.get("buyerEmail") or b.get("Email"))
+        b_phone = normalize_phone(b.get("buyerPhoneNumber") or b.get("buyerPhone") or b.get("PhoneNumber"))
+
+        if c_email_norm and b_email and c_email_norm == b_email:
+            is_self = True
+            match_types.append("email_match")
+        if c_phone_norm and b_phone and c_phone_norm == b_phone:
+            is_self = True
+            match_types.append("phone_match")
+
+        if is_self:
+            b_dict = dict(b)
+            b_dict["selfPayment"] = True
+            b_dict["matchType"] = "+".join(match_types) if match_types else "flagged"
+            self_txns.append(b_dict)
+
     res = {"self": self_txns, "buyers": len(buyers)}
+    SELF_TXN_CACHE[cache_key] = res
     SELF_TXN_CACHE[creator_id] = res
     return res
 
@@ -516,7 +621,7 @@ def check_previous_payouts(creator_id, token):
 def check_content_flags(details, products=None):
     flags = []
     fl = (details.get("flagLevel") or "").strip()
-    if fl and fl not in ("---", "", "None", "null"):
+    if fl and fl not in ("---", "", "None", "null", "0"):
         flags.append(f"flagLevel={fl}")
     return flags
 
@@ -559,47 +664,61 @@ def audit_one(row, token):
                         "error": "details:" + detail["__error__"]}
 
     creator_id = detail.get("creatorId")
+    c_email = detail.get("email") or row.get("email") or row.get("Email") or ""
+    c_phone = detail.get("phone") or row.get("phone") or row.get("PhoneNumber") or ""
+    if not c_phone and uname and re.match(r"^\d{10}$", str(uname)):
+        c_phone = str(uname)
+
+    # Top priority keyword check across username, category, subcategory
+    haystack = f"{uname or ''} {detail.get('categoryOfBusiness') or ''} {detail.get('subCategoryOfBusiness') or ''}"
+    priority_res = check_priority_keywords(haystack)
+    fl = str(detail.get("flagLevel") or "").strip()
+    if fl and fl not in ("---", "", "None", "null", "0"):
+        priority_res["flagged"] = True
+        priority_res["flagLevel"] = fl
+        if not priority_res.get("category"):
+            priority_res["category"] = "ADMIN_FLAG"
+        if "flagLevel" not in priority_res["reason"]:
+            priority_res["reason"] = (f"flagLevel={fl}; " + priority_res["reason"]).strip("; ")
+
+    content_flags = check_content_flags(detail)
+    if priority_res["flagged"]:
+        content_flags.append(f"TopPriority:{priority_res['category']}:{priority_res['reason']}")
+
     result = {
         "settlementId": sid,
         "creatorId": creator_id,
         "username": detail.get("username") or row.get("username"),
-        "email": detail.get("email") or row.get("Email"),
-        "phone": detail.get("phone") or row.get("PhoneNumber"),
+        "email": c_email,
+        "phone": c_phone,
         "payoutAmount": row.get("payoutAmount"),
         "totalMemoAmount": detail.get("totalMemoAmount"),
         "category": detail.get("categoryOfBusiness"),
-        "contentFlags": check_content_flags(detail),
+        "subCategory": detail.get("subCategoryOfBusiness"),
+        "flagLevel": detail.get("flagLevel"),
+        "contentFlags": content_flags,
+        "topPriority": priority_res,
         "selfTransactions": [],
         "buyersChecked": 0,
     }
     if creator_id:
-        if creator_id in SELF_TXN_CACHE:
-            cached_st = SELF_TXN_CACHE[creator_id]
-            result["buyersChecked"] = cached_st.get("buyers", 0)
-            for b in cached_st.get("self", []):
+        st = check_self_transactions(creator_id, token, creator_email=c_email, creator_phone=c_phone)
+        if "__error__" not in st:
+            result["buyersChecked"] = st.get("buyers", 0)
+            for b in st.get("self", []):
+                amt_val = to_float(b.get("amountPaid") or b.get("amount"))
                 result["selfTransactions"].append({
-                    "amountPaid": b.get("amountPaid") or b.get("amount"),
-                    "buyerEmail": b.get("buyerEmail"),
-                    "buyerPhone": b.get("buyerPhoneNumber") or b.get("buyerPhone"),
+                    "amountPaid": amt_val,
+                    "buyerEmail": b.get("buyerEmail") or b.get("Email"),
+                    "buyerPhone": b.get("buyerPhoneNumber") or b.get("buyerPhone") or b.get("PhoneNumber"),
                     "IP": b.get("IP"),
                     "date": b.get("createdAt") or b.get("date"),
                     "productId": b.get("purchasedProductId") or b.get("productId"),
+                    "matchType": b.get("matchType", "flagged"),
                 })
         else:
-            st = check_self_transactions(creator_id, token)
-            if "__error__" not in st:
-                result["buyersChecked"] = st.get("buyers", 0)
-                for b in st.get("self", []):
-                    result["selfTransactions"].append({
-                        "amountPaid": b.get("amountPaid") or b.get("amount"),
-                        "buyerEmail": b.get("buyerEmail"),
-                        "buyerPhone": b.get("buyerPhoneNumber") or b.get("buyerPhone"),
-                        "IP": b.get("IP"),
-                        "date": b.get("createdAt") or b.get("date"),
-                        "productId": b.get("purchasedProductId") or b.get("productId"),
-                    })
-            else:
-                result["error"] = "kundli:" + st["__error__"]
+            result["error"] = "kundli:" + st["__error__"]
+        result["selfTransactions"].sort(key=lambda s: -to_float(s.get("amountPaid") or s.get("amount")))
     else:
         result["error"] = "no_creator_id"
     return result
@@ -610,6 +729,11 @@ def to_float(v):
         return float(v) if v is not None else 0.0
     except (ValueError, TypeError):
         return 0.0
+
+
+def max_self_amount(r):
+    st_list = r.get("selfTransactions") or []
+    return max((to_float(s.get("amountPaid") or s.get("amount")) for s in st_list), default=0.0)
 
 
 def main():
@@ -668,15 +792,20 @@ def main():
 
     def save_checkpoint():
         self_txn = [r for r in results if r.get("selfTransactions")]
+        for r in self_txn:
+            r["selfTransactions"].sort(key=lambda s: -to_float(s.get("amountPaid") or s.get("amount")))
         flagged = [r for r in results if r.get("contentFlags")]
+        top_priority = [r for r in results if (r.get("topPriority") or {}).get("flagged")]
         errors = [r for r in results if r.get("error")]
         rep = {
             "date": date_label,
             "totalAudited": len(results),
             "selfTransactionCount": len(self_txn),
+            "topPriorityCount": len(top_priority),
             "flaggedCount": len(flagged),
             "errorCount": len(errors),
-            "selfTransactions": sorted(self_txn, key=lambda r: -to_float(r.get("payoutAmount"))),
+            "selfTransactions": sorted(self_txn, key=lambda r: (-max_self_amount(r), -to_float(r.get("payoutAmount")))),
+            "topPriority": sorted(top_priority, key=lambda r: -to_float(r.get("payoutAmount"))),
             "flagged": sorted(flagged, key=lambda r: -to_float(r.get("payoutAmount"))),
             "errors": errors[:50],
         }
@@ -698,16 +827,21 @@ def main():
 
     # Aggregate findings
     self_txn = [r for r in results if r.get("selfTransactions")]
+    for r in self_txn:
+        r["selfTransactions"].sort(key=lambda s: -to_float(s.get("amountPaid") or s.get("amount")))
     flagged = [r for r in results if r.get("contentFlags")]
+    top_priority = [r for r in results if (r.get("topPriority") or {}).get("flagged")]
     errors = [r for r in results if r.get("error")]
 
     report = {
         "date": date_label,
         "totalAudited": len(results),
         "selfTransactionCount": len(self_txn),
+        "topPriorityCount": len(top_priority),
         "flaggedCount": len(flagged),
         "errorCount": len(errors),
-        "selfTransactions": sorted(self_txn, key=lambda r: -to_float(r.get("payoutAmount"))),
+        "selfTransactions": sorted(self_txn, key=lambda r: (-max_self_amount(r), -to_float(r.get("payoutAmount")))),
+        "topPriority": sorted(top_priority, key=lambda r: -to_float(r.get("payoutAmount"))),
         "flagged": sorted(flagged, key=lambda r: -to_float(r.get("payoutAmount"))),
         "errors": errors[:50],
     }
@@ -733,14 +867,21 @@ def main():
     lines.append(f"# Payout Audit Report — {date_label}")
     lines.append(f"Audited: {len(results)} pending settlements")
     lines.append(f"Self-transactions found: {len(self_txn)}")
+    lines.append(f"Top-priority flags found: {len(top_priority)}")
     lines.append(f"Flagged (flagLevel): {len(flagged)}")
     lines.append(f"Errors: {len(errors)}")
     lines.append("")
+    if top_priority:
+        lines.append("## TOP-PRIORITY FLAGS (Adult, Betting, Cracked APK, Pirated Media, Fraud)")
+        for r in report["topPriority"]:
+            tp = r.get("topPriority", {})
+            lines.append(f"- {r['username']} ({r['email']}) | payout ₹{r['payoutAmount']} | [{tp.get('category')}] {tp.get('reason')}")
+        lines.append("")
     if self_txn:
-        lines.append("## SELF-TRANSACTIONS (creator bought own product)")
+        lines.append("## SELF-TRANSACTIONS (creator bought own product — sorted by highest txn)")
         for r in report["selfTransactions"]:
             lines.append(f"- {r['username']} ({r['email']}) | payout ₹{r['payoutAmount']} "
-                         f"| creatorId={r['creatorId']} | {len(r['selfTransactions'])} self-txn(s)")
+                         f"| creatorId={r['creatorId']} | {len(r['selfTransactions'])} self-txn(s) | max: ₹{max_self_amount(r)}")
             for s in r["selfTransactions"]:
                 lines.append(f"    ↳ ₹{s['amountPaid']} by {s['buyerEmail']} "
                              f"(IP {s['IP']}) on {s['date']}")

@@ -95,6 +95,9 @@ def generate_reports():
     tele_sebi_no = [c for c in tele_creators if c.get('sebiRegisteredNo') == 'No']
     tele_manual = [c for c in tele_creators if c.get('sebiReviewStatus') == 'Manual Review Required']
 
+    top_priority_creators = [c for c in creators if c.get('topPriorityFlag') or c.get('adultFlag')]
+    top_priority_creators.sort(key=lambda c: float(c.get('payoutAmount', 0)), reverse=True)
+
     # -------------------------------------------------------------
     # 1. GENERATE SLACK-FRIENDLY MARKDOWN REPORT
     # -------------------------------------------------------------
@@ -105,16 +108,28 @@ def generate_reports():
         "──────────────────────────────────",
         "📊 *SUMMARY METRICS:*",
         f"• *Total Pending Payout:* ₹{sum(c.get('payoutAmount',0) for c in creators):,.2f}",
-        f"• *Self-Transaction Flagged:* `{len(self_creators)}` creators",
+        f"• *Top-Priority Compliance Flagged:* `{len(top_priority_creators)}` creators",
+        f"• *Self-Transaction Flagged (2d Window):* `{len(self_creators)}` creators",
         f"• *No Link / Missing Deliverable Flagged:* `{len(nolink_creators)}` creators",
-        f"• *Adult Keyword Flagged:* `{data.get('counts',{}).get('adult',0)}` creators",
         f"• *Telegram Integration (vig/ >= ₹1k):* `{len(tele_creators)}` settlements",
         f"   ↳ *SEBI Registered (Yes):* `{len(tele_sebi_yes)}` verified creators",
         f"   ↳ *SEBI Not Verified (No):* `{len(tele_sebi_no)}` creators",
         f"   ↳ *Manual Review Required:* `{len(tele_manual)}` creators",
         "",
-        "🔴 *TOP FLAGGED SELF-TRANSACTIONS (Date -> Amount High to Low):*"
     ]
+
+    if top_priority_creators:
+        slack_lines.append("🚨 *TOP-PRIORITY COMPLIANCE FLAGS (Adult, Betting, Cracked APK, Pirated Media, Fraud):*")
+        for idx, c in enumerate(top_priority_creators[:25], 1):
+            u = c.get('username')
+            cid = c.get('creatorId', '—')
+            p = c.get('payoutAmount', 0)
+            cat = c.get('priorityCategory') or ('ADULT_CONTENT' if c.get('adultFlag') else 'FLAGGED')
+            reason = c.get('priorityReason') or c.get('adultReason') or 'Prohibited risk match'
+            slack_lines.append(f"{idx}. *{u}* (`{cid}`) | Payout: *₹{p:,.2f}* | [{cat}] {reason}")
+        slack_lines.append("")
+
+    slack_lines.append("🔴 *TOP FLAGGED SELF-TRANSACTIONS (Date -> Amount High to Low):*")
 
     current_day = None
     count = 0
@@ -171,6 +186,18 @@ def generate_reports():
     # -------------------------------------------------------------
     # 2. GENERATE FORMAL EXECUTIVE HTML REPORT (User Template Match)
     # -------------------------------------------------------------
+    top_priority_rows_html = ""
+    for idx, c in enumerate(top_priority_creators, 1):
+        cid = c.get('creatorId', '—')
+        u = c.get('username', '—')
+        p = c.get('payoutAmount', 0)
+        cat = c.get('priorityCategory') or ('ADULT_CONTENT' if c.get('adultFlag') else 'FLAGGED')
+        reason = c.get('priorityReason') or c.get('adultReason') or 'Prohibited risk match'
+        top_priority_rows_html += f"""<tr><td>{idx}</td><td class=id>{cid}</td><td>{u}</td><td class=num>{p:,.0f}</td><td style="color:#e11d48;font-weight:bold">{cat}</td><td>{reason}</td></tr>"""
+
+    if not top_priority_rows_html:
+        top_priority_rows_html = """<tr><td colspan="6" style="text-align:center;color:var(--muted)">No creators flagged under Top-Priority compliance categories.</td></tr>"""
+
     both_rows_html = ""
     if both_creators:
         for c in both_creators:
@@ -280,13 +307,22 @@ def generate_reports():
 <div class=sub>Review Date: <b>{rev_date}</b> &middot; Product Sale Date: <b>{sale_date}</b> &middot; Generated: <b>{data.get('generatedAt', '—')}</b> &middot; <b>{len(creators):,}</b> pending settlements evaluated</div>
 
 <div class=kpis>
+  <div class="kpi danger"><div class=v>{len(top_priority_creators)}</div><div class=l>Top-priority flags</div></div>
   <div class=kpi><div class=v>{len(self_creators)}</div><div class=l>Recent self-txn creators (2d)</div></div>
   <div class="kpi warn"><div class=v>{len(nolink_creators)}</div><div class=l>No-content creators</div></div>
   <div class="kpi danger"><div class=v>{len(both_creators)}</div><div class=l>In both lists (top risk)</div></div>
-  <div class="kpi warn"><div class=v>31</div><div class=l>Unverifiable (buyer cap)</div></div>
+  <div class="kpi warn"><div class=v>{len(cap_unverifiable_creators)}</div><div class=l>Unverifiable (buyer cap)</div></div>
   <div class=kpi><div class=v>&#8377;{total_pending_nolink/1000:,.0f}k</div><div class=l>Pending across no-content</div></div>
-  <div class=kpi><div class=v>51%</div><div class=l>Product coverage</div></div>
 </div>
+
+<h2>Top-Priority Compliance Flags (Adult, Betting, Cracked APK, Pirated Media, Fraud)</h2>
+<div class=sub>Audit of all creators flagged on top-priority risk categories. Immediate manual review and hold required prior to payout release.</div>
+<div class=scroll><table>
+  <thead><tr><th>#</th><th>Creator ID</th><th>Username</th><th>Pending (&#8377;)</th><th>Category</th><th>Reason / Matched Keywords</th></tr></thead>
+  <tbody>
+    {top_priority_rows_html}
+  </tbody>
+</table></div>
 
 <h2>Telegram Integration & SEBI Compliance (vig/ products ≥ &#8377;1,000)</h2>
 <div class=sub>Audit of all creators using Telegram integration (vig/productId) whose settlements are &#8377;1,000 or higher, verified against our SEBI-registered creator master list. Sorted from Highest to Lowest settlement amount.</div>

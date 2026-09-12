@@ -464,7 +464,7 @@
 <main class="max-w-[1520px] mx-auto px-6 pt-6">
 
   <!-- Executive KPI Cards Grid -->
-  <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3.5 mb-6" id="cards">
+  <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-3.5 mb-6" id="cards">
     <!-- Rendered dynamically by render() -->
   </div>
 
@@ -498,6 +498,11 @@
       <span class="w-2 h-2 rounded-full bg-blue-600"></span>
       Telegram SEBI (₹1k+)
       <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200/80" id="b-telegram-sebi">0</span>
+    </button>
+    <button class="filter-tab px-4 py-2 font-semibold text-xs text-slate-700 flex items-center gap-2 tap-btn" data-f="top_priority">
+      <span class="w-2 h-2 rounded-full bg-red-600 animate-pulse"></span>
+      Top-Priority Flags
+      <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-red-50 text-red-700 border border-red-200/80" id="b-top-priority">0</span>
     </button>
     <button class="filter-tab px-4 py-2 font-semibold text-xs text-slate-700 flex items-center gap-2 tap-btn" data-f="self">
       <span class="w-2 h-2 rounded-full bg-rose-500"></span>
@@ -757,6 +762,7 @@ let sortOrder = "desc";
 const HINTS = {
   all: "<b>All Settlements:</b> Displaying all pending payout settlements audited for today's payout release.",
   telegram_sebi: "<b>Telegram SEBI Review:</b> Displaying all creators with payouts ≥ ₹1,000 using Telegram integration (<code>vig/productId</code>) cross-referenced against the organization's SEBI Master Registry. Sorted strictly from Highest to Lowest payout.",
+  top_priority: "<b>Top-Priority Flags:</b> Critical-risk creators flagged for Adult Content, Betting/Gambling, Cracked Software/APKs, Pirated Media, Fraudulent Guarantees, or Admin Flags. Strict holds required prior to payout release!",
   self: "<b>Self-Transactions (2-Day Window):</b> Creators who bought their own products in the 2-day audit window. Sequenced strictly by Date descending (Highest Self-Txn → Lowest within each day) to strictly maintain the 2-day window rule.",
   nolink: "<b>Missing Deliverable Content:</b> Downloadable products with no attached file, course, video, or content deliverable.",
   both: "<b>CRITICAL RISK:</b> Creators flagged on BOTH self-transaction AND missing product content. Priority holds required!",
@@ -806,6 +812,10 @@ function sebiStatusBadge(status) {
 
 function flagsHtml(r) {
   let h = [];
+  if (r.topPriorityFlag || r.adultFlag) {
+    const cat = r.priorityCategory || (r.adultFlag ? "ADULT" : "TOP PRIORITY");
+    h.push(`<span class="status-badge bg-red-100 text-red-700 border border-red-300 font-bold">TOP PRIORITY · ${cat}</span>`);
+  }
   if (r.selfTransaction && r.noLink) {
     h.push(`<span class="status-badge bg-purple-100 text-purple-800 border border-purple-200">TOP RISK (BOTH)</span>`);
   } else {
@@ -834,6 +844,7 @@ function flagsHtml(r) {
 
 function matchFilter(r) {
   // 1. Tab Level Filter
+  if (currentFilter === "top_priority" && !r.topPriorityFlag && !r.adultFlag) return false;
   if (currentFilter === "self") {
     if (!r.selfTransaction) return false;
     const windowSel = document.getElementById('selfWindowFilter');
@@ -847,7 +858,7 @@ function matchFilter(r) {
   if (currentFilter === "nolink" && !r.noLink) return false;
   if (currentFilter === "both" && !(r.topRiskBoth || (r.selfTransaction && r.noLink && r.inSelf2DayWindow !== false))) return false;
   if (currentFilter === "cap" && !(r.unverifiableCap || (r.buyersChecked >= 100 && !r.selfTransaction && r.buyerWindow))) return false;
-  if (currentFilter === "approved" && (r.selfTransaction || r.noLink || (r.telegramIntegration && r.sebiRegisteredNo === 'No'))) return false;
+  if (currentFilter === "approved" && (r.selfTransaction || r.noLink || r.topPriorityFlag || r.adultFlag || (r.telegramIntegration && r.sebiRegisteredNo === 'No'))) return false;
   if (currentFilter === "telegram_sebi" && (!r.telegramEligible || !r.telegramIntegration)) return false;
 
   // 2. Dropdown Filter: Telegram
@@ -926,6 +937,11 @@ function rows() {
   // Sorting
   list.sort((a, b) => {
     let diff = 0;
+    if (currentFilter === "top_priority") {
+      const pDiff = (Number(b.payoutAmount) || 0) - (Number(a.payoutAmount) || 0);
+      if (pDiff !== 0) return pDiff;
+    }
+
     if (currentFilter === "self" || sortKey === "selfTxnFlow") {
       // 1. Primary Flow: Date descending (27 Aug -> 26 Aug -> 25 Aug)
       const dayDiff = getDayKey(b) - getDayKey(a);
@@ -1026,7 +1042,26 @@ function openDetailModal(idx) {
     `;
   }
 
+  let topPriorityBannerHtml = '';
+  if (r.topPriorityFlag || r.adultFlag) {
+    topPriorityBannerHtml = `
+      <div class="bg-red-50/90 border border-red-200 rounded-2xl p-4 mb-4">
+        <div class="flex items-center gap-2 text-red-800 font-extrabold text-xs uppercase tracking-wider">
+          <span class="w-2.5 h-2.5 rounded-full bg-red-600 animate-pulse"></span>
+          CRITICAL COMPLIANCE FLAG · ${r.priorityCategory || (r.adultFlag ? 'ADULT' : 'TOP PRIORITY')}
+        </div>
+        <div class="text-xs text-red-800 mt-1.5 font-medium">
+          <b>Flag Trigger:</b> ${r.priorityReason || r.adultReason || 'Matches prohibited risk keywords'}
+        </div>
+        <div class="text-[11px] text-red-600 mt-1">
+          Requires strict compliance review prior to payout release.
+        </div>
+      </div>
+    `;
+  }
+
   document.getElementById('dm-body').innerHTML = `
+    ${topPriorityBannerHtml}
     <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
       <div class="bg-slate-50 p-3 rounded-xl border border-slate-200/70">
         <div class="text-[10px] font-bold text-slate-400 uppercase">Creator ID</div>
@@ -1218,6 +1253,8 @@ function render() {
   const capCnt = creators.filter(c => c.unverifiableCap || (c.buyersChecked >= 100 && !c.selfTransaction && c.buyerWindow)).length;
   const approvedCnt = creators.filter(c => !c.selfTransaction && !c.noLink && !(c.telegramIntegration && c.sebiRegisteredNo === 'No')).length;
 
+  const topPriorityCnt = creators.filter(c => c.topPriorityFlag || c.adultFlag).length;
+
   const teleEligible = creators.filter(c => c.telegramEligible && c.telegramIntegration);
   const teleCnt = teleEligible.length;
   const teleSebiYes = teleEligible.filter(c => c.sebiRegisteredYes === "Yes").length;
@@ -1252,6 +1289,10 @@ function render() {
       <div class="text-2xl font-extrabold text-rose-600">${teleSebiNo}</div>
       <div class="text-[11px] font-bold text-slate-500 uppercase tracking-wider mt-1">SEBI Reg: NO</div>
     </div>
+    <div class="kpi-card p-4 kpi-rose border border-red-200/80 bg-red-50/40">
+      <div class="text-2xl font-extrabold text-red-600">${topPriorityCnt}</div>
+      <div class="text-[11px] font-bold text-red-700 uppercase tracking-wider mt-1">Top-Priority Flags</div>
+    </div>
     <div class="kpi-card p-4 kpi-amber">
       <div class="text-2xl font-extrabold text-amber-600">${teleManualReview}</div>
       <div class="text-[11px] font-bold text-slate-500 uppercase tracking-wider mt-1">Manual Review Req</div>
@@ -1283,6 +1324,9 @@ function render() {
   // Update Tab Badges
   document.getElementById('b-all').textContent = creators.length;
   document.getElementById('b-telegram-sebi').textContent = teleCnt;
+  if (document.getElementById('b-top-priority')) {
+    document.getElementById('b-top-priority').textContent = topPriorityCnt;
+  }
   document.getElementById('b-self').textContent = self2dCnt;
   document.getElementById('b-nolink').textContent = noLinkCnt;
   document.getElementById('b-both').textContent = bothCnt;
@@ -1291,8 +1335,9 @@ function render() {
 
   // Priority Risk Alert
   const riskBanner = document.getElementById('risk-alert');
-  if (bothCnt > 0 || teleSebiNo > 0) {
+  if (bothCnt > 0 || teleSebiNo > 0 || topPriorityCnt > 0) {
     let alertMsg = [];
+    if (topPriorityCnt > 0) alertMsg.push(`<b>${topPriorityCnt}</b> Top-Priority compliance violations`);
     if (bothCnt > 0) alertMsg.push(`<b>${bothCnt}</b> in both self-txn & missing-link lists`);
     if (teleSebiNo > 0) alertMsg.push(`<b>${teleSebiNo}</b> Telegram creators NOT SEBI registered`);
     document.getElementById('alert-detail').innerHTML = alertMsg.join(" · ") + ". Priority holds required before release.";
@@ -1750,7 +1795,7 @@ document.getElementById('tabs').addEventListener('click', e => {
     sortOrder = "desc";
     const winSel = document.getElementById('selfWindowFilter');
     if (winSel) winSel.value = '2day';
-  } else if (currentFilter === "telegram_sebi" || currentFilter === "all") {
+  } else if (currentFilter === "telegram_sebi" || currentFilter === "all" || currentFilter === "top_priority") {
     sortKey = "payoutAmount";
     sortOrder = "desc";
   }
@@ -1873,7 +1918,8 @@ document.getElementById('exportFilteredBtn').addEventListener('click', () => {
   const csvRows = [csvHeaders];
   list.forEach(r => {
     let statusStr = "APPROVED";
-    if (r.selfTransaction && r.noLink) statusStr = "TOP RISK (BOTH)";
+    if (r.topPriorityFlag) statusStr = `TOP PRIORITY (${r.priorityCategory || 'FLAGGED'})`;
+    else if (r.selfTransaction && r.noLink) statusStr = "TOP RISK (BOTH)";
     else if (r.selfTransaction) statusStr = "SELF-TXN FLAGGED";
     else if (r.noLink) statusStr = "NO LINK ATTACHED";
     else if (r.buyersChecked >= 100) statusStr = "UNVERIFIABLE (100-CAP)";
