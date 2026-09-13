@@ -157,7 +157,7 @@ class TestTelegramSEBIVerifier(unittest.TestCase):
                 "productType": "vig"
             }
         ]
-        verified_rows, stats = verifier.verify_all_settlements(settlements)
+        verified_rows, stats = verifier.verify_all_settlements(settlements, update_10day=False)
         self.assertEqual(len(verified_rows), 2)
         self.assertEqual(stats["uniqueTelegramCreators"], 1)
         self.assertEqual(stats["telegramCount"], 2)

@@ -385,13 +385,14 @@ def verify_all_settlements(settlements: List[Dict[str, Any]],
                            excel_path: Optional[str] = None,
                            token: Optional[str] = None,
                            fetch_remote: bool = True,
-                           workers: int = 12) -> Tuple[List[Dict[str, Any]], Dict[str, Any]]:
+                           workers: int = 12,
+                           update_10day: bool = True) -> Tuple[List[Dict[str, Any]], Dict[str, Any]]:
     """
     Process entire daily settlement batch:
       1. Resolves and caches products for all eligible creators (payout >= 1000).
       2. Detects Telegram integration (vig/{product_id} or integratedGroup).
       3. Verifies against SEBI master list.
-      4. Accumulates 10-day tracking records.
+      4. Accumulates 10-day tracking records (if update_10day=True).
     Returns:
       (verified_settlements: list, summary_stats: dict)
     """
@@ -465,7 +466,8 @@ def verify_all_settlements(settlements: List[Dict[str, Any]],
     }
 
     # Update cumulative 10-day audit records
-    update_10day_audit_records(tele_prods)
+    if update_10day:
+        update_10day_audit_records(tele_prods)
 
     return verified_rows, stats
 

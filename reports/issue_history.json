@@ -1,7 +1,7 @@
 {
   "c_repeat_test": [
     {
-      "timestamp": "2026-09-13T11:48:27.852837",
+      "timestamp": "2026-09-13T11:50:39.360137",
       "reviewDate": "2026-09-13",
       "issue": "Prohibited Software / APK Delivery",
       "normalizedIssue": "prohibited software apk delivery",
@@ -10,7 +10,7 @@
       "remarks": "Pending manual link verification due to API timeout/error"
     },
     {
-      "timestamp": "2026-09-13T11:48:28.110114",
+      "timestamp": "2026-09-13T11:50:40.118620",
       "reviewDate": "2026-09-13",
       "issue": "Prohibited Software / APK Delivery",
       "normalizedIssue": "prohibited software apk delivery",
