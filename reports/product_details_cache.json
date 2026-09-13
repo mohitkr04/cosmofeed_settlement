@@ -11108,5 +11108,1655 @@
     "finalOutcome": "LINK_ATTACHED",
     "reason": "Attached content found in unlockedImages (1 item(s))",
     "isVigExcluded": false
+  },
+  "6a40efb446bff6001337c76d": {
+    "productId": "6a40efb446bff6001337c76d",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a40efb446bff6001337c76d",
+    "isAttached": null,
+    "validationStatus": "API_VALIDATION_FAILED",
+    "finalOutcome": "API_VALIDATION_FAILED",
+    "reason": "API request failed: HTTP 429",
+    "isVigExcluded": false
+  },
+  "6a300e583d7d2c00132a3f25": {
+    "productId": "6a300e583d7d2c00132a3f25",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a300e583d7d2c00132a3f25",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a9a9642f29e060013b8982a": {
+    "productId": "6a9a9642f29e060013b8982a",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a9a9642f29e060013b8982a",
+    "isAttached": null,
+    "validationStatus": "API_VALIDATION_FAILED",
+    "finalOutcome": "API_VALIDATION_FAILED",
+    "reason": "API request failed: HTTP 429",
+    "isVigExcluded": false
+  },
+  "69fec6ceb44a7d00139bc39e": {
+    "productId": "69fec6ceb44a7d00139bc39e",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69fec6ceb44a7d00139bc39e",
+    "isAttached": null,
+    "validationStatus": "API_VALIDATION_FAILED",
+    "finalOutcome": "API_VALIDATION_FAILED",
+    "reason": "API request failed: HTTP 429",
+    "isVigExcluded": false
+  },
+  "6a5cb5778411290013c2b2e7": {
+    "productId": "6a5cb5778411290013c2b2e7",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a5cb5778411290013c2b2e7",
+    "isAttached": null,
+    "validationStatus": "API_VALIDATION_FAILED",
+    "finalOutcome": "API_VALIDATION_FAILED",
+    "reason": "API request failed: HTTP 429",
+    "isVigExcluded": false
+  },
+  "69bd1f008a994f0013046f2e": {
+    "productId": "69bd1f008a994f0013046f2e",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69bd1f008a994f0013046f2e",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (4 item(s))",
+    "isVigExcluded": false
+  },
+  "68c2adbf902da80013b29087": {
+    "productId": "68c2adbf902da80013b29087",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/68c2adbf902da80013b29087",
+    "isAttached": null,
+    "validationStatus": "API_VALIDATION_FAILED",
+    "finalOutcome": "API_VALIDATION_FAILED",
+    "reason": "API request failed: HTTP 429",
+    "isVigExcluded": false
+  },
+  "6a7ee315267ae60013f56bc5": {
+    "productId": "6a7ee315267ae60013f56bc5",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a7ee315267ae60013f56bc5",
+    "isAttached": null,
+    "validationStatus": "API_VALIDATION_FAILED",
+    "finalOutcome": "API_VALIDATION_FAILED",
+    "reason": "API request failed: HTTP 429",
+    "isVigExcluded": false
+  },
+  "69d13a59f0dd700013485909": {
+    "productId": "69d13a59f0dd700013485909",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69d13a59f0dd700013485909",
+    "isAttached": null,
+    "validationStatus": "API_VALIDATION_FAILED",
+    "finalOutcome": "API_VALIDATION_FAILED",
+    "reason": "API request failed: HTTP 429",
+    "isVigExcluded": false
+  },
+  "69957f5c9ab1df00130c41c4": {
+    "productId": "69957f5c9ab1df00130c41c4",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69957f5c9ab1df00130c41c4",
+    "isAttached": null,
+    "validationStatus": "API_VALIDATION_FAILED",
+    "finalOutcome": "API_VALIDATION_FAILED",
+    "reason": "API request failed: HTTP 429",
+    "isVigExcluded": false
+  },
+  "69ea3a16ba5f160013e4db0c": {
+    "productId": "69ea3a16ba5f160013e4db0c",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69ea3a16ba5f160013e4db0c",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (9 item(s))",
+    "isVigExcluded": false
+  },
+  "67b35d1270cfc80013f8beb0": {
+    "productId": "67b35d1270cfc80013f8beb0",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/67b35d1270cfc80013f8beb0",
+    "isAttached": null,
+    "validationStatus": "API_VALIDATION_FAILED",
+    "finalOutcome": "API_VALIDATION_FAILED",
+    "reason": "API request failed: HTTP 429",
+    "isVigExcluded": false
+  },
+  "6a4e865e180c810013ed1059": {
+    "productId": "6a4e865e180c810013ed1059",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a4e865e180c810013ed1059",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "69fb10bc762c21001312b215": {
+    "productId": "69fb10bc762c21001312b215",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69fb10bc762c21001312b215",
+    "isAttached": null,
+    "validationStatus": "API_VALIDATION_FAILED",
+    "finalOutcome": "API_VALIDATION_FAILED",
+    "reason": "API request failed: HTTP 429",
+    "isVigExcluded": false
+  },
+  "6a953ece7cf7480013787883": {
+    "productId": "6a953ece7cf7480013787883",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a953ece7cf7480013787883",
+    "isAttached": null,
+    "validationStatus": "API_VALIDATION_FAILED",
+    "finalOutcome": "API_VALIDATION_FAILED",
+    "reason": "API request failed: HTTP 429",
+    "isVigExcluded": false
+  },
+  "69a2b660b2b4c90013eac50f": {
+    "productId": "69a2b660b2b4c90013eac50f",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69a2b660b2b4c90013eac50f",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (1 item(s))",
+    "isVigExcluded": false
+  },
+  "676af7fbe7a2b600131e3d72": {
+    "productId": "676af7fbe7a2b600131e3d72",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/676af7fbe7a2b600131e3d72",
+    "isAttached": null,
+    "validationStatus": "API_VALIDATION_FAILED",
+    "finalOutcome": "API_VALIDATION_FAILED",
+    "reason": "API request failed: HTTP 429",
+    "isVigExcluded": false
+  },
+  "68c3c09507687000135f6209": {
+    "productId": "68c3c09507687000135f6209",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/68c3c09507687000135f6209",
+    "isAttached": null,
+    "validationStatus": "API_VALIDATION_FAILED",
+    "finalOutcome": "API_VALIDATION_FAILED",
+    "reason": "API request failed: HTTP 429",
+    "isVigExcluded": false
+  },
+  "69ef526c7ed12700148547b5": {
+    "productId": "69ef526c7ed12700148547b5",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69ef526c7ed12700148547b5",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a58cb9e15bdb10013ea3a23": {
+    "productId": "6a58cb9e15bdb10013ea3a23",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a58cb9e15bdb10013ea3a23",
+    "isAttached": null,
+    "validationStatus": "API_VALIDATION_FAILED",
+    "finalOutcome": "API_VALIDATION_FAILED",
+    "reason": "API request failed: HTTP 429",
+    "isVigExcluded": false
+  },
+  "696737c7f825a700134d2311": {
+    "productId": "696737c7f825a700134d2311",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/696737c7f825a700134d2311",
+    "isAttached": null,
+    "validationStatus": "API_VALIDATION_FAILED",
+    "finalOutcome": "API_VALIDATION_FAILED",
+    "reason": "API request failed: HTTP 429",
+    "isVigExcluded": false
+  },
+  "65733b205b4946001e3bfe1f": {
+    "productId": "65733b205b4946001e3bfe1f",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/65733b205b4946001e3bfe1f",
+    "isAttached": null,
+    "validationStatus": "API_VALIDATION_FAILED",
+    "finalOutcome": "API_VALIDATION_FAILED",
+    "reason": "API request failed: HTTP 429",
+    "isVigExcluded": false
+  },
+  "6a788a917590c200135ea9b6": {
+    "productId": "6a788a917590c200135ea9b6",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a788a917590c200135ea9b6",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a87bf11ac36210013b295e7": {
+    "productId": "6a87bf11ac36210013b295e7",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a87bf11ac36210013b295e7",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (1 item(s))",
+    "isVigExcluded": false
+  },
+  "693c8d525b6d5b00132576bc": {
+    "productId": "693c8d525b6d5b00132576bc",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/693c8d525b6d5b00132576bc",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedImages (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a85e169014dfe0013104929": {
+    "productId": "6a85e169014dfe0013104929",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a85e169014dfe0013104929",
+    "isAttached": null,
+    "validationStatus": "API_VALIDATION_FAILED",
+    "finalOutcome": "API_VALIDATION_FAILED",
+    "reason": "API request failed: HTTP 404",
+    "isVigExcluded": false
+  },
+  "6a800917fe7cb800136cba3c": {
+    "productId": "6a800917fe7cb800136cba3c",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a800917fe7cb800136cba3c",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "69afaf772b94b300138e27df": {
+    "productId": "69afaf772b94b300138e27df",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69afaf772b94b300138e27df",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (1 item(s))",
+    "isVigExcluded": false
+  },
+  "675fcfab5794a0001366791f": {
+    "productId": "675fcfab5794a0001366791f",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/675fcfab5794a0001366791f",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "69f4bc6605c9680013d3dd1f": {
+    "productId": "69f4bc6605c9680013d3dd1f",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69f4bc6605c9680013d3dd1f",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (4 item(s))",
+    "isVigExcluded": false
+  },
+  "673f01fa8f514800133ae24e": {
+    "productId": "673f01fa8f514800133ae24e",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/673f01fa8f514800133ae24e",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (1 item(s))",
+    "isVigExcluded": false
+  },
+  "69f72c66bbbbcd0013bf2b53": {
+    "productId": "69f72c66bbbbcd0013bf2b53",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69f72c66bbbbcd0013bf2b53",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "69cdcac9241c780013e19c89": {
+    "productId": "69cdcac9241c780013e19c89",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69cdcac9241c780013e19c89",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "69ef50747c24ec00130e808f": {
+    "productId": "69ef50747c24ec00130e808f",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69ef50747c24ec00130e808f",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6983920376a42500135a2f7c": {
+    "productId": "6983920376a42500135a2f7c",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6983920376a42500135a2f7c",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (4 item(s))",
+    "isVigExcluded": false
+  },
+  "6a4a15509777fa0013d8adf9": {
+    "productId": "6a4a15509777fa0013d8adf9",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a4a15509777fa0013d8adf9",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a53bfa494c4f30013f43df2": {
+    "productId": "6a53bfa494c4f30013f43df2",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a53bfa494c4f30013f43df2",
+    "isAttached": null,
+    "validationStatus": "API_VALIDATION_FAILED",
+    "finalOutcome": "API_VALIDATION_FAILED",
+    "reason": "API request failed: HTTP 404",
+    "isVigExcluded": false
+  },
+  "65a3c15c5dea29001ee1ce31": {
+    "productId": "65a3c15c5dea29001ee1ce31",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/65a3c15c5dea29001ee1ce31",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (1 item(s))",
+    "isVigExcluded": false
+  },
+  "69afddfc9502450013e05054": {
+    "productId": "69afddfc9502450013e05054",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69afddfc9502450013e05054",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "69ef50357c24ec00130e74ff": {
+    "productId": "69ef50357c24ec00130e74ff",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69ef50357c24ec00130e74ff",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "666fbf6009a9110013646b49": {
+    "productId": "666fbf6009a9110013646b49",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/666fbf6009a9110013646b49",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Redirect URL present: https://drive.google.com/drive/folders/1PTvXUn9gHsNQfWlK1wcRtF2okmElQBZh?usp=drive_link",
+    "isVigExcluded": false
+  },
+  "6971c3d238e3590013ec3733": {
+    "productId": "6971c3d238e3590013ec3733",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6971c3d238e3590013ec3733",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a492257349fcd0013bf1630": {
+    "productId": "6a492257349fcd0013bf1630",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a492257349fcd0013bf1630",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (1 item(s))",
+    "isVigExcluded": false
+  },
+  "69854c890e609100139d904c": {
+    "productId": "69854c890e609100139d904c",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69854c890e609100139d904c",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (5 item(s))",
+    "isVigExcluded": false
+  },
+  "68109dc1bb470b0013763e96": {
+    "productId": "68109dc1bb470b0013763e96",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/68109dc1bb470b0013763e96",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (14 item(s))",
+    "isVigExcluded": false
+  },
+  "6a87e2e979d74e0013dbdbea": {
+    "productId": "6a87e2e979d74e0013dbdbea",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a87e2e979d74e0013dbdbea",
+    "isAttached": null,
+    "validationStatus": "API_VALIDATION_FAILED",
+    "finalOutcome": "API_VALIDATION_FAILED",
+    "reason": "API request failed: HTTP 404",
+    "isVigExcluded": false
+  },
+  "69ef51ef7c24ec00130ecc10": {
+    "productId": "69ef51ef7c24ec00130ecc10",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69ef51ef7c24ec00130ecc10",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a7b11e06a57c90013084bf6": {
+    "productId": "6a7b11e06a57c90013084bf6",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a7b11e06a57c90013084bf6",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a7828607590c200134a655c": {
+    "productId": "6a7828607590c200134a655c",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a7828607590c200134a655c",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a6095cb4857f30013c34401": {
+    "productId": "6a6095cb4857f30013c34401",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a6095cb4857f30013c34401",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "693c8c855b6d5b0013256c71": {
+    "productId": "693c8c855b6d5b0013256c71",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/693c8c855b6d5b0013256c71",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedImages (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a8d5d0fb630070012a0e871": {
+    "productId": "6a8d5d0fb630070012a0e871",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a8d5d0fb630070012a0e871",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a8ecd3f35fd00001342d325": {
+    "productId": "6a8ecd3f35fd00001342d325",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a8ecd3f35fd00001342d325",
+    "isAttached": null,
+    "validationStatus": "API_VALIDATION_FAILED",
+    "finalOutcome": "API_VALIDATION_FAILED",
+    "reason": "API request failed: HTTP 404",
+    "isVigExcluded": false
+  },
+  "69ef50fc7c24ec00130e9a8c": {
+    "productId": "69ef50fc7c24ec00130e9a8c",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69ef50fc7c24ec00130e9a8c",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a8d9570339da50013b13e58": {
+    "productId": "6a8d9570339da50013b13e58",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a8d9570339da50013b13e58",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (1 item(s))",
+    "isVigExcluded": false
+  },
+  "68a568617a9d660013df4652": {
+    "productId": "68a568617a9d660013df4652",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/68a568617a9d660013df4652",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (1 item(s))",
+    "isVigExcluded": false
+  },
+  "674b6ac7c3946200135ee631": {
+    "productId": "674b6ac7c3946200135ee631",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/674b6ac7c3946200135ee631",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (3 item(s))",
+    "isVigExcluded": false
+  },
+  "69ef52247ed1270014853a8f": {
+    "productId": "69ef52247ed1270014853a8f",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69ef52247ed1270014853a8f",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a9039fc282ef20013db29f6": {
+    "productId": "6a9039fc282ef20013db29f6",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a9039fc282ef20013db29f6",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a1b0b31ef4a900013b0fc7b": {
+    "productId": "6a1b0b31ef4a900013b0fc7b",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a1b0b31ef4a900013b0fc7b",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (1 item(s))",
+    "isVigExcluded": false
+  },
+  "65b2581199245d001eb19355": {
+    "productId": "65b2581199245d001eb19355",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/65b2581199245d001eb19355",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedVideos (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a86f9caaa812f0013f7dc07": {
+    "productId": "6a86f9caaa812f0013f7dc07",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a86f9caaa812f0013f7dc07",
+    "isAttached": null,
+    "validationStatus": "API_VALIDATION_FAILED",
+    "finalOutcome": "API_VALIDATION_FAILED",
+    "reason": "API request failed: HTTP 404",
+    "isVigExcluded": false
+  },
+  "6a6da58e33211a00131bac71": {
+    "productId": "6a6da58e33211a00131bac71",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a6da58e33211a00131bac71",
+    "isAttached": null,
+    "validationStatus": "API_VALIDATION_FAILED",
+    "finalOutcome": "API_VALIDATION_FAILED",
+    "reason": "API request failed: HTTP 404",
+    "isVigExcluded": false
+  },
+  "6a8ad5021a5bd100133dbd7d": {
+    "productId": "6a8ad5021a5bd100133dbd7d",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a8ad5021a5bd100133dbd7d",
+    "isAttached": null,
+    "validationStatus": "API_VALIDATION_FAILED",
+    "finalOutcome": "API_VALIDATION_FAILED",
+    "reason": "API request failed: HTTP 404",
+    "isVigExcluded": false
+  },
+  "679b24b4cc40e300138a50ee": {
+    "productId": "679b24b4cc40e300138a50ee",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/679b24b4cc40e300138a50ee",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a5d868f336dff00130d4cff": {
+    "productId": "6a5d868f336dff00130d4cff",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a5d868f336dff00130d4cff",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (1 item(s))",
+    "isVigExcluded": false
+  },
+  "68a6db66d182fd0013029d4d": {
+    "productId": "68a6db66d182fd0013029d4d",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/68a6db66d182fd0013029d4d",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (1 item(s))",
+    "isVigExcluded": false
+  },
+  "67f2364f6fe9dc0013875372": {
+    "productId": "67f2364f6fe9dc0013875372",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/67f2364f6fe9dc0013875372",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (6 item(s))",
+    "isVigExcluded": false
+  },
+  "6a2f979fe5b8d70013c29135": {
+    "productId": "6a2f979fe5b8d70013c29135",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a2f979fe5b8d70013c29135",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (4 item(s))",
+    "isVigExcluded": false
+  },
+  "69f241e20170890012b59954": {
+    "productId": "69f241e20170890012b59954",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69f241e20170890012b59954",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a6ee1da7687a70013cd24f4": {
+    "productId": "6a6ee1da7687a70013cd24f4",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a6ee1da7687a70013cd24f4",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "67f22d15d1cb6b0013ea2620": {
+    "productId": "67f22d15d1cb6b0013ea2620",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/67f22d15d1cb6b0013ea2620",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (10 item(s))",
+    "isVigExcluded": false
+  },
+  "69b2ac1acede7900135eb0d0": {
+    "productId": "69b2ac1acede7900135eb0d0",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69b2ac1acede7900135eb0d0",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a872208014dfe00134a1ac6": {
+    "productId": "6a872208014dfe00134a1ac6",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a872208014dfe00134a1ac6",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "693c8df255492b0013e9abbd": {
+    "productId": "693c8df255492b0013e9abbd",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/693c8df255492b0013e9abbd",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedImages (1 item(s))",
+    "isVigExcluded": false
+  },
+  "68f1ee4774a07300134644f6": {
+    "productId": "68f1ee4774a07300134644f6",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/68f1ee4774a07300134644f6",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (4 item(s))",
+    "isVigExcluded": false
+  },
+  "69a29d3dc4ed3300137506a4": {
+    "productId": "69a29d3dc4ed3300137506a4",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69a29d3dc4ed3300137506a4",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (4 item(s))",
+    "isVigExcluded": false
+  },
+  "69fade0c1d376600132f122b": {
+    "productId": "69fade0c1d376600132f122b",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69fade0c1d376600132f122b",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a7897ddb611ed00138d9a9b": {
+    "productId": "6a7897ddb611ed00138d9a9b",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a7897ddb611ed00138d9a9b",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a6c8c9ec508400013d0932c": {
+    "productId": "6a6c8c9ec508400013d0932c",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a6c8c9ec508400013d0932c",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a5ce4ea8411290013cbe3d0": {
+    "productId": "6a5ce4ea8411290013cbe3d0",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a5ce4ea8411290013cbe3d0",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a840708fb1cde0013f03652": {
+    "productId": "6a840708fb1cde0013f03652",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a840708fb1cde0013f03652",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (9 item(s))",
+    "isVigExcluded": false
+  },
+  "69d5eb1bdd6ff00013254f22": {
+    "productId": "69d5eb1bdd6ff00013254f22",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69d5eb1bdd6ff00013254f22",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a5dc43c336dff00131a18e1": {
+    "productId": "6a5dc43c336dff00131a18e1",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a5dc43c336dff00131a18e1",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedImages (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a8aa8259ac5d90013083713": {
+    "productId": "6a8aa8259ac5d90013083713",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a8aa8259ac5d90013083713",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a5dcb1f8411290013eeb582": {
+    "productId": "6a5dcb1f8411290013eeb582",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a5dcb1f8411290013eeb582",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (4 item(s))",
+    "isVigExcluded": false
+  },
+  "69bd4c278bdb600013242797": {
+    "productId": "69bd4c278bdb600013242797",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69bd4c278bdb600013242797",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "69fff4bbeeb06e001392b0e7": {
+    "productId": "69fff4bbeeb06e001392b0e7",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69fff4bbeeb06e001392b0e7",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "69ef517a7ed1270014851a1c": {
+    "productId": "69ef517a7ed1270014851a1c",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69ef517a7ed1270014851a1c",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6942bdf430194900124c947d": {
+    "productId": "6942bdf430194900124c947d",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6942bdf430194900124c947d",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (1 item(s))",
+    "isVigExcluded": false
+  },
+  "692c1c6f9854400013d058c5": {
+    "productId": "692c1c6f9854400013d058c5",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/692c1c6f9854400013d058c5",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a2d4c14e5b8d700135e3378": {
+    "productId": "6a2d4c14e5b8d700135e3378",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a2d4c14e5b8d700135e3378",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedImages (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a7d5c65ec010b00138bf920": {
+    "productId": "6a7d5c65ec010b00138bf920",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a7d5c65ec010b00138bf920",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a5a5de180cbcb0013ea5cdd": {
+    "productId": "6a5a5de180cbcb0013ea5cdd",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a5a5de180cbcb0013ea5cdd",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6997e6c636c517001321106a": {
+    "productId": "6997e6c636c517001321106a",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6997e6c636c517001321106a",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6691411cb2cd640013d707c6": {
+    "productId": "6691411cb2cd640013d707c6",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6691411cb2cd640013d707c6",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Redirect URL present: https://numerobhriguacademyy.in/tq/",
+    "isVigExcluded": false
+  },
+  "676ee0e2a3ae3100139e8a08": {
+    "productId": "676ee0e2a3ae3100139e8a08",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/676ee0e2a3ae3100139e8a08",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "69ef514b7c24ec00130eaab1": {
+    "productId": "69ef514b7c24ec00130eaab1",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69ef514b7c24ec00130eaab1",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "65fb3b39928e8f00128db43c": {
+    "productId": "65fb3b39928e8f00128db43c",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/65fb3b39928e8f00128db43c",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "67dc580804bc180013ad2417": {
+    "productId": "67dc580804bc180013ad2417",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/67dc580804bc180013ad2417",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a789b397590c200136228b2": {
+    "productId": "6a789b397590c200136228b2",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a789b397590c200136228b2",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "698cb3e2648fed00134dac60": {
+    "productId": "698cb3e2648fed00134dac60",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/698cb3e2648fed00134dac60",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (12 item(s))",
+    "isVigExcluded": false
+  },
+  "6a722e2d9b236b00139b305a": {
+    "productId": "6a722e2d9b236b00139b305a",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a722e2d9b236b00139b305a",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (2 item(s))",
+    "isVigExcluded": false
+  },
+  "6a6b5e598d035c0013076f72": {
+    "productId": "6a6b5e598d035c0013076f72",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a6b5e598d035c0013076f72",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (1 item(s))",
+    "isVigExcluded": false
+  },
+  "69cd1a1ef97a470013f19ba2": {
+    "productId": "69cd1a1ef97a470013f19ba2",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69cd1a1ef97a470013f19ba2",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (2 item(s))",
+    "isVigExcluded": false
+  },
+  "69db0b8921153d0013ff6b05": {
+    "productId": "69db0b8921153d0013ff6b05",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69db0b8921153d0013ff6b05",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (18 item(s))",
+    "isVigExcluded": false
+  },
+  "698cbf58db2b7a00137a951a": {
+    "productId": "698cbf58db2b7a00137a951a",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/698cbf58db2b7a00137a951a",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (13 item(s))",
+    "isVigExcluded": false
+  },
+  "656f64d15b243b001dbdbc2c": {
+    "productId": "656f64d15b243b001dbdbc2c",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/656f64d15b243b001dbdbc2c",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "66b6605dc2435e0013b01bba": {
+    "productId": "66b6605dc2435e0013b01bba",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/66b6605dc2435e0013b01bba",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (14 item(s))",
+    "isVigExcluded": false
+  },
+  "6a92ca8ff6013c00133804d5": {
+    "productId": "6a92ca8ff6013c00133804d5",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a92ca8ff6013c00133804d5",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a59d2b3aa49dd0013a7d6cd": {
+    "productId": "6a59d2b3aa49dd0013a7d6cd",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a59d2b3aa49dd0013a7d6cd",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (14 item(s))",
+    "isVigExcluded": false
+  },
+  "690d773121148b0013cfcf42": {
+    "productId": "690d773121148b0013cfcf42",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/690d773121148b0013cfcf42",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (6 item(s))",
+    "isVigExcluded": false
+  },
+  "68a82e117e4cc30013425c03": {
+    "productId": "68a82e117e4cc30013425c03",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/68a82e117e4cc30013425c03",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (1 item(s))",
+    "isVigExcluded": false
+  },
+  "685a640cb8877f0013098e90": {
+    "productId": "685a640cb8877f0013098e90",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/685a640cb8877f0013098e90",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (3 item(s))",
+    "isVigExcluded": false
+  },
+  "691d9ea1bc70f400131207d4": {
+    "productId": "691d9ea1bc70f400131207d4",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/691d9ea1bc70f400131207d4",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (4 item(s))",
+    "isVigExcluded": false
+  },
+  "6a0601bdc20a5e001378d981": {
+    "productId": "6a0601bdc20a5e001378d981",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a0601bdc20a5e001378d981",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a85814c014dfe0013fe320a": {
+    "productId": "6a85814c014dfe0013fe320a",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a85814c014dfe0013fe320a",
+    "isAttached": null,
+    "validationStatus": "API_VALIDATION_FAILED",
+    "finalOutcome": "API_VALIDATION_FAILED",
+    "reason": "API request failed: HTTP 404",
+    "isVigExcluded": false
+  },
+  "69fff621d1ab300013d60a68": {
+    "productId": "69fff621d1ab300013d60a68",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69fff621d1ab300013d60a68",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "67fb9a9ce604c00013e57d0a": {
+    "productId": "67fb9a9ce604c00013e57d0a",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/67fb9a9ce604c00013e57d0a",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Redirect URL present: https://aurolinguacareer.com/",
+    "isVigExcluded": false
+  },
+  "6aa0f58d1d272f0013539dbf": {
+    "productId": "6aa0f58d1d272f0013539dbf",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6aa0f58d1d272f0013539dbf",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (1 item(s))",
+    "isVigExcluded": false
+  },
+  "68663dd43450300013e777bd": {
+    "productId": "68663dd43450300013e777bd",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/68663dd43450300013e777bd",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (4 item(s))",
+    "isVigExcluded": false
+  },
+  "69f861a69642ca0013670827": {
+    "productId": "69f861a69642ca0013670827",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69f861a69642ca0013670827",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "69e9cfb7fcab8f00130fdf1d": {
+    "productId": "69e9cfb7fcab8f00130fdf1d",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69e9cfb7fcab8f00130fdf1d",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "68ba9f37144d960013f527d0": {
+    "productId": "68ba9f37144d960013f527d0",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/68ba9f37144d960013f527d0",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (5 item(s))",
+    "isVigExcluded": false
+  },
+  "6a817171537d0d001341bebe": {
+    "productId": "6a817171537d0d001341bebe",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a817171537d0d001341bebe",
+    "isAttached": false,
+    "validationStatus": "LINK_MISSING",
+    "finalOutcome": "LINK_MISSING",
+    "reason": "Payment page exists, but no product/content link is attached",
+    "isVigExcluded": false
+  },
+  "6a5cab5b336dff0013ee029b": {
+    "productId": "6a5cab5b336dff0013ee029b",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a5cab5b336dff0013ee029b",
+    "isAttached": null,
+    "validationStatus": "API_VALIDATION_FAILED",
+    "finalOutcome": "API_VALIDATION_FAILED",
+    "reason": "API request failed: HTTP 404",
+    "isVigExcluded": false
+  },
+  "6755223e39f2ab00131ee59c": {
+    "productId": "6755223e39f2ab00131ee59c",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6755223e39f2ab00131ee59c",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (32 item(s))",
+    "isVigExcluded": false
+  },
+  "6a05754b3a48f80013702119": {
+    "productId": "6a05754b3a48f80013702119",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a05754b3a48f80013702119",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "68a83813881dee00134a6ca9": {
+    "productId": "68a83813881dee00134a6ca9",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/68a83813881dee00134a6ca9",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (1 item(s))",
+    "isVigExcluded": false
+  },
+  "69fb87b11b03b9001326030d": {
+    "productId": "69fb87b11b03b9001326030d",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69fb87b11b03b9001326030d",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a68a3c9409adc001370cb79": {
+    "productId": "6a68a3c9409adc001370cb79",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a68a3c9409adc001370cb79",
+    "isAttached": null,
+    "validationStatus": "API_VALIDATION_FAILED",
+    "finalOutcome": "API_VALIDATION_FAILED",
+    "reason": "API request failed: HTTP 404",
+    "isVigExcluded": false
+  },
+  "6a1cd5cb2337e300139f7d9c": {
+    "productId": "6a1cd5cb2337e300139f7d9c",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a1cd5cb2337e300139f7d9c",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (2 item(s))",
+    "isVigExcluded": false
+  },
+  "68b74a16d41395001306a427": {
+    "productId": "68b74a16d41395001306a427",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/68b74a16d41395001306a427",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (1 item(s))",
+    "isVigExcluded": false
+  },
+  "69ef52487c24ec00130edd24": {
+    "productId": "69ef52487c24ec00130edd24",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69ef52487c24ec00130edd24",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a6edc5c7687a70013cbe3f3": {
+    "productId": "6a6edc5c7687a70013cbe3f3",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a6edc5c7687a70013cbe3f3",
+    "isAttached": null,
+    "validationStatus": "API_VALIDATION_FAILED",
+    "finalOutcome": "API_VALIDATION_FAILED",
+    "reason": "API request failed: HTTP 404",
+    "isVigExcluded": false
+  },
+  "68af0546bc0f3e001388a778": {
+    "productId": "68af0546bc0f3e001388a778",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/68af0546bc0f3e001388a778",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedImages (1 item(s))",
+    "isVigExcluded": false
+  },
+  "675b098ee877b800133c7552": {
+    "productId": "675b098ee877b800133c7552",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/675b098ee877b800133c7552",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedImages (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a7750ef16016900137a24f3": {
+    "productId": "6a7750ef16016900137a24f3",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a7750ef16016900137a24f3",
+    "isAttached": null,
+    "validationStatus": "API_VALIDATION_FAILED",
+    "finalOutcome": "API_VALIDATION_FAILED",
+    "reason": "API request failed: HTTP 404",
+    "isVigExcluded": false
+  },
+  "65f6dd09930bb000130db32b": {
+    "productId": "65f6dd09930bb000130db32b",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/65f6dd09930bb000130db32b",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (42 item(s))",
+    "isVigExcluded": false
+  },
+  "693f757ae524c50013cfbba5": {
+    "productId": "693f757ae524c50013cfbba5",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/693f757ae524c50013cfbba5",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (10 item(s))",
+    "isVigExcluded": false
+  },
+  "6880ce5fcb46fb0013762903": {
+    "productId": "6880ce5fcb46fb0013762903",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6880ce5fcb46fb0013762903",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (1 item(s))",
+    "isVigExcluded": false
+  },
+  "69aa709b883c1f00139f9a03": {
+    "productId": "69aa709b883c1f00139f9a03",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69aa709b883c1f00139f9a03",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (4 item(s))",
+    "isVigExcluded": false
+  },
+  "6a8ab6cad6403e0013ad9475": {
+    "productId": "6a8ab6cad6403e0013ad9475",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a8ab6cad6403e0013ad9475",
+    "isAttached": null,
+    "validationStatus": "API_VALIDATION_FAILED",
+    "finalOutcome": "API_VALIDATION_FAILED",
+    "reason": "API request failed: HTTP 404",
+    "isVigExcluded": false
+  },
+  "69fc04ce1b03b9001334a9b2": {
+    "productId": "69fc04ce1b03b9001334a9b2",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69fc04ce1b03b9001334a9b2",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (22 item(s))",
+    "isVigExcluded": false
+  },
+  "6a3cc0389a74380013692067": {
+    "productId": "6a3cc0389a74380013692067",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a3cc0389a74380013692067",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (16 item(s))",
+    "isVigExcluded": false
+  },
+  "6a64f3b66f7bc6001210231f": {
+    "productId": "6a64f3b66f7bc6001210231f",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a64f3b66f7bc6001210231f",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (2 item(s))",
+    "isVigExcluded": false
+  },
+  "6a6df15133211a00132af8cf": {
+    "productId": "6a6df15133211a00132af8cf",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a6df15133211a00132af8cf",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (1 item(s))",
+    "isVigExcluded": false
+  },
+  "67c1600ca512d300131870e2": {
+    "productId": "67c1600ca512d300131870e2",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/67c1600ca512d300131870e2",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a81c638d001ed0013bcf539": {
+    "productId": "6a81c638d001ed0013bcf539",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a81c638d001ed0013bcf539",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a09c6cc37a61300135fa4ec": {
+    "productId": "6a09c6cc37a61300135fa4ec",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a09c6cc37a61300135fa4ec",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (1 item(s))",
+    "isVigExcluded": false
+  },
+  "69c3e81758ea630014ecd4ba": {
+    "productId": "69c3e81758ea630014ecd4ba",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69c3e81758ea630014ecd4ba",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a5ba257274cdf00135f8d7b": {
+    "productId": "6a5ba257274cdf00135f8d7b",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a5ba257274cdf00135f8d7b",
+    "isAttached": null,
+    "validationStatus": "API_VALIDATION_FAILED",
+    "finalOutcome": "API_VALIDATION_FAILED",
+    "reason": "API request failed: HTTP 404",
+    "isVigExcluded": false
+  },
+  "6a88903d47d8100013fce70e": {
+    "productId": "6a88903d47d8100013fce70e",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a88903d47d8100013fce70e",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a89cf86ec55200013b592bb": {
+    "productId": "6a89cf86ec55200013b592bb",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a89cf86ec55200013b592bb",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (1 item(s))",
+    "isVigExcluded": false
+  },
+  "677bf29ef7087e00133f4ed7": {
+    "productId": "677bf29ef7087e00133f4ed7",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/677bf29ef7087e00133f4ed7",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a4df332dd09f400131539e5": {
+    "productId": "6a4df332dd09f400131539e5",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a4df332dd09f400131539e5",
+    "isAttached": null,
+    "validationStatus": "API_VALIDATION_FAILED",
+    "finalOutcome": "API_VALIDATION_FAILED",
+    "reason": "API request failed: HTTP 404",
+    "isVigExcluded": false
+  },
+  "68a569b9342f1300131ec8cf": {
+    "productId": "68a569b9342f1300131ec8cf",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/68a569b9342f1300131ec8cf",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (1 item(s))",
+    "isVigExcluded": false
+  },
+  "66bc3d3c713888001359b3ca": {
+    "productId": "66bc3d3c713888001359b3ca",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/66bc3d3c713888001359b3ca",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Redirect URL present: https://aurolinguacareer.com/",
+    "isVigExcluded": false
+  },
+  "69f45e1288d92e001352f40f": {
+    "productId": "69f45e1288d92e001352f40f",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69f45e1288d92e001352f40f",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (2 item(s))",
+    "isVigExcluded": false
+  },
+  "68a5d5b28aaba60013879aab": {
+    "productId": "68a5d5b28aaba60013879aab",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/68a5d5b28aaba60013879aab",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedImages (1 item(s))",
+    "isVigExcluded": false
+  },
+  "69c27d762e29a80013d3d7c0": {
+    "productId": "69c27d762e29a80013d3d7c0",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69c27d762e29a80013d3d7c0",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (1 item(s))",
+    "isVigExcluded": false
+  },
+  "69f9f54dabc3bf00138cda42": {
+    "productId": "69f9f54dabc3bf00138cda42",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69f9f54dabc3bf00138cda42",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedLinks (1 item(s))",
+    "isVigExcluded": false
+  },
+  "69d024af1a016000137a57b5": {
+    "productId": "69d024af1a016000137a57b5",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/69d024af1a016000137a57b5",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
+  },
+  "6a7771137590c200132f8025": {
+    "productId": "6a7771137590c200132f8025",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a7771137590c200132f8025",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedImages (10 item(s))",
+    "isVigExcluded": false
+  },
+  "6a8d83b9e4f3b800139660a0": {
+    "productId": "6a8d83b9e4f3b800139660a0",
+    "productType": "page",
+    "productUrl": "https://superprofile.bio/vp/6a8d83b9e4f3b800139660a0",
+    "isAttached": true,
+    "validationStatus": "LINK_ATTACHED",
+    "finalOutcome": "LINK_ATTACHED",
+    "reason": "Attached content found in unlockedFiles (1 item(s))",
+    "isVigExcluded": false
   }
 }
