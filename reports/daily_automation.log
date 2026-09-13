@@ -2064,3 +2064,23 @@ error: failed to push some refs to 'https://github.com/mohitkr04/cosmofeed_settl
 [2026-09-13 11:51:46 IST] ======================================================================
 [2026-09-13 11:51:46 IST] DAILY AUDIT PIPELINE COMPLETED SUCCESSFULLY BEFORE 05:00 AM!
 [2026-09-13 11:51:46 IST] ======================================================================
+[2026-09-13 14:12:30 IST] ======================================================================
+[2026-09-13 14:12:30 IST] STARTING COSMOFEED DAILY PAYOUT & COMPLIANCE PIPELINE FOR 2026-09-13
+[2026-09-13 14:12:30 IST] Execution Mode: 100% Cloud Autonomous (India Standard Time)
+[2026-09-13 14:12:30 IST] ======================================================================
+[2026-09-13 14:12:30 IST] Found valid COSMOFEED_TOKEN in environment. Initiating LIVE settlement scrape from Cosmofeed API...
+[2026-09-13 14:12:30 IST] Running scraper pass 1/3 with 6 workers...
+[2026-09-13 14:12:49 IST] Live settlement scrape completed successfully.
+[2026-09-13 14:12:49 IST] [reconciliation] Pass 1: Source pending = 1920 | Audited = 1938
+[2026-09-13 14:12:49 IST] 100% Reconciliation Verified! All 1938/1920 pending settlements processed.
+[2026-09-13 14:12:49 IST] Running build_data_from_audit.py (SEBI verification & Non-SEBI ledger)...
+[2026-09-13 14:12:52 IST] Data building and Non-SEBI ledger upsert finished.
+[2026-09-13 14:12:52 IST] Non-SEBI Cumulative Ledger Status:
+[2026-09-13 14:12:52 IST]   Total Unique Creators: 836
+[2026-09-13 14:12:52 IST]   Cumulative Volume Held: INR 55,754,074.00
+[2026-09-13 14:12:52 IST]   Excel Generated: True
+[2026-09-13 14:12:52 IST]   Manager PDF Generated: True
+[2026-09-13 14:12:52 IST]   Payout PDF Generated: True
+[2026-09-13 14:12:52 IST] ======================================================================
+[2026-09-13 14:12:52 IST] DAILY AUDIT PIPELINE COMPLETED SUCCESSFULLY BEFORE 05:00 AM!
+[2026-09-13 14:12:52 IST] ======================================================================
