@@ -88,32 +88,69 @@ def run_pipeline(audit_date: str = None, push_git: bool = True) -> bool:
     token = os.environ.get("COSMOFEED_TOKEN", "").strip() or "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGVmNTM3ZmZkYWNlNzlkNzQ4ZGI1MTciLCJpYXQiOjE3ODY1OTQ4NDMsImV4cCI6MjEwMTk1NDg0M30.r47i32k6PktqovRWGptLLFQ8GW1OuDxgCI-XIm3m5DI"
     if token and not token.startswith("<") and len(token) > 20:
         log("Found valid COSMOFEED_TOKEN in environment. Initiating LIVE settlement scrape from Cosmofeed API...")
-        try:
-            cmd = [sys.executable, "payout_audit_agent.py", "--date", audit_date, "--workers", "4"]
-            creation_flags = 0
-            if sys.platform == "win32":
-                creation_flags = 0x00004000  # BELOW_NORMAL_PRIORITY_CLASS: never starve user dashboard
-
-            proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, creationflags=creation_flags)
+        scrape_success = False
+        max_scrape_attempts = 3
+        
+        for scrape_attempt in range(1, max_scrape_attempts + 1):
             try:
-                stdout, stderr = proc.communicate(timeout=900)
-                if proc.returncode == 0:
-                    log("Live settlement scrape completed successfully.")
-                else:
-                    log(f"Scrape warning (code {proc.returncode}): {stderr[:300]}")
-            except subprocess.TimeoutExpired:
-                log("Live scrape timed out after 900s — cleanly terminating scraper process...")
-                proc.kill()
-                proc.communicate()
-                # If checkpoint file has data, finalize it into today's audit json
-                chk_file = os.path.join(REPORTS_DIR, f"audit_checkpoint_{audit_date}.json")
+                cmd = [sys.executable, "payout_audit_agent.py", "--date", audit_date, "--workers", "6"]
+                creation_flags = 0
+                if sys.platform == "win32":
+                    creation_flags = 0x00004000  # BELOW_NORMAL_PRIORITY_CLASS
+
+                log(f"Running scraper pass {scrape_attempt}/{max_scrape_attempts} with 6 workers...")
+                proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, creationflags=creation_flags)
+                try:
+                    stdout, stderr = proc.communicate(timeout=1800)
+                    if proc.returncode == 0:
+                        log("Live settlement scrape completed successfully.")
+                        scrape_success = True
+                    else:
+                        log(f"Scraper returned non-zero code {proc.returncode}: {stderr[:300]}")
+                except subprocess.TimeoutExpired:
+                    log("Scraper timed out after 1800s — cleanly terminating scraper process...")
+                    proc.kill()
+                    proc.communicate()
+
+                # Check reconciliation: verify audit file matches raw pending source count
                 out_file = os.path.join(REPORTS_DIR, f"audit_{audit_date}.json")
-                if os.path.exists(chk_file) and not os.path.exists(out_file):
-                    import shutil
-                    shutil.copyfile(chk_file, out_file)
-                    log(f"Finalized checkpoint into {out_file}")
-        except Exception as e:
-            log(f"Live scrape skipped/fallback: {e}")
+                chk_file = os.path.join(REPORTS_DIR, f"audit_checkpoint_{audit_date}.json")
+                raw_file = os.path.join(REPORTS_DIR, "settlements_raw_pending.json")
+                
+                source_count = 0
+                if os.path.exists(raw_file):
+                    try:
+                        with open(raw_file, "r", encoding="utf-8") as rf:
+                            source_count = len(json.load(rf))
+                    except Exception:
+                        pass
+
+                audited_count = 0
+                if os.path.exists(out_file):
+                    try:
+                        with open(out_file, "r", encoding="utf-8") as of:
+                            audited_count = len(json.load(of).get("allResults", []))
+                    except Exception:
+                        pass
+
+                log(f"[reconciliation] Pass {scrape_attempt}: Source pending = {source_count} | Audited = {audited_count}")
+                if source_count > 0 and audited_count >= source_count:
+                    log(f"100% Reconciliation Verified! All {audited_count}/{source_count} pending settlements processed.")
+                    scrape_success = True
+                    break
+                elif scrape_attempt < max_scrape_attempts:
+                    log(f"Incomplete audit detected ({audited_count}/{source_count}). Resuming from checkpoint in attempt {scrape_attempt+1}...")
+                    time.sleep(3)
+                else:
+                    log(f"WARNING: Audit count ({audited_count}) does not match source ({source_count}) after {max_scrape_attempts} attempts.")
+            except Exception as e:
+                log(f"Live scrape error in attempt {scrape_attempt}: {e}")
+                time.sleep(3)
+
+        if not scrape_success and os.path.exists(chk_file) and not os.path.exists(out_file):
+            import shutil
+            shutil.copyfile(chk_file, out_file)
+            log(f"Emergency fallback: copied checkpoint into {out_file}")
     else:
         log("No active COSMOFEED_TOKEN set. Utilizing latest stored audit batch data.")
 
@@ -167,7 +204,7 @@ def run_pipeline(audit_date: str = None, push_git: bool = True) -> bool:
             log(f"Git synchronization note: {e}")
 
     log("=" * 70)
-    log("DAILY AUDIT PIPELINE COMPLETED SUCCESSFULLY BEFORE 08:00 AM!")
+    log("DAILY AUDIT PIPELINE COMPLETED SUCCESSFULLY BEFORE 05:00 AM!")
     log("=" * 70)
     return True
 

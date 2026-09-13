@@ -173,41 +173,54 @@ HEADERS_BASE = {
 import http.client
 import threading
 
-class RatePacer:
-    """Thread-safe rate pacer to cap request rate and eliminate HTTP 429 stalls."""
-    def __init__(self, max_per_second=30):
-        self.interval = 1.0 / max_per_second
+class AdaptiveRatePacer:
+    """Thread-safe adaptive rate pacer to prevent and recover from HTTP 429 limits."""
+    def __init__(self, target_per_second=6.0, min_per_second=2.0, max_per_second=8.0):
+        self.current_rate = float(target_per_second)
+        self.min_rate = float(min_per_second)
+        self.max_rate = float(max_per_second)
         self.lock = threading.Lock()
         self.last_time = 0.0
 
     def wait(self):
-        to_sleep = 0.0
         with self.lock:
+            interval = 1.0 / self.current_rate
             now = time.time()
             if self.last_time < now:
                 self.last_time = now
-            scheduled = self.last_time + self.interval
+            scheduled = self.last_time + interval
             to_sleep = scheduled - now
             if to_sleep > 1.0:
-                scheduled = now + self.interval
-                to_sleep = self.interval
+                scheduled = now + interval
+                to_sleep = interval
             self.last_time = scheduled
         if to_sleep > 0:
             time.sleep(to_sleep)
 
-RATE_PACER = RatePacer(max_per_second=4)
+    def on_429(self):
+        with self.lock:
+            self.current_rate = max(self.min_rate, self.current_rate * 0.7)
+            self.last_time = time.time() + 2.0
+
+    def on_success(self):
+        with self.lock:
+            if self.current_rate < self.max_rate:
+                self.current_rate = min(self.max_rate, self.current_rate + 0.02)
+
+
+RATE_PACER = AdaptiveRatePacer(target_per_second=6.0, min_per_second=2.0, max_per_second=8.0)
 
 GLOBAL_BACKOFF_UNTIL = 0.0
 GLOBAL_BACKOFF_LOCK = threading.Lock()
 
 
-def trigger_global_backoff(duration=45.0):
+def trigger_global_backoff(duration=6.0):
     global GLOBAL_BACKOFF_UNTIL
     with GLOBAL_BACKOFF_LOCK:
         now = time.time()
         if now + duration > GLOBAL_BACKOFF_UNTIL:
             GLOBAL_BACKOFF_UNTIL = now + duration
-            print(f"[backoff] HTTP 429 encountered: pausing all scraper workers for {int(duration)}s to respect rate limits...", flush=True)
+            print(f"[backoff] HTTP 429 encountered: cooling down workers for {int(duration)}s to respect rate limits...", flush=True)
 
 
 def check_global_backoff():
@@ -216,10 +229,10 @@ def check_global_backoff():
         wait_sec = GLOBAL_BACKOFF_UNTIL - time.time()
         if wait_sec <= 0:
             break
-        time.sleep(min(wait_sec, 2.0))
+        time.sleep(min(wait_sec, 1.0))
 
 
-def api_get(path, token, retries=3, timeout=6):
+def api_get(path, token, retries=5, timeout=10):
     """GET a dashboard API path (starting with /), return parsed JSON or None."""
     url = API_BASE + path
     headers = dict(HEADERS_BASE)
@@ -232,16 +245,19 @@ def api_get(path, token, retries=3, timeout=6):
         try:
             req = urlreq.Request(url, headers=headers, method="GET")
             with urlreq.urlopen(req, timeout=timeout) as resp:
+                RATE_PACER.on_success()
                 return json.loads(resp.read().decode("utf-8"))
         except HTTPError as e:
             last_err = f"HTTP {e.code}"
             if e.code == 429:
-                trigger_global_backoff(45.0)
+                RATE_PACER.on_429()
+                trigger_global_backoff(6.0)
+                time.sleep((attempt + 1) * 2.0)
                 continue
             return {"__error__": last_err}
         except Exception as e:
             last_err = str(e)
-            time.sleep(1.0)
+            time.sleep((attempt + 1) * 1.5)
     return {"__error__": last_err or "failed"}
 
 
@@ -295,24 +311,37 @@ def fetch_all_settlements(token, request_type="pending", verbose=True):
     pages_dict = {1: page1_rows}
 
     def fetch_page(p):
-        time.sleep(0.05)
-        d = api_get(
-            f"/IDgetSettlements?requestType={request_type}&page={p}&sortField=&onlyFlagged=0"
-            f"&AmountGreaterThan=0&AmountLessThan=0&filter=&paymentVerified=", token, retries=5)
-        pdata = (d or {}).get("data", {})
-        return p, pdata.get("settelements") or pdata.get("settlements") or []
+        for page_attempt in range(5):
+            time.sleep(0.04)
+            d = api_get(
+                f"/IDgetSettlements?requestType={request_type}&page={p}&sortField=&onlyFlagged=0"
+                f"&AmountGreaterThan=0&AmountLessThan=0&filter=&paymentVerified=", token, retries=5)
+            pdata = (d or {}).get("data", {})
+            rows = pdata.get("settelements") or pdata.get("settlements") or []
+            if rows or pdata.get("totalPages"):
+                return p, rows
+            time.sleep(1.0 * (page_attempt + 1))
+        return p, []
 
-    with ThreadPoolExecutor(max_workers=3) as ex:
+    with ThreadPoolExecutor(max_workers=6) as ex:
         futs = [ex.submit(fetch_page, p) for p in range(2, total_pages + 1)]
         for fut in as_completed(futs):
             p, r = fut.result()
             pages_dict[p] = r
 
+    # Validate all pages were retrieved and retry any missed pages
+    for p in range(1, total_pages + 1):
+        if p not in pages_dict or not pages_dict[p]:
+            if verbose:
+                print(f"[step1] Retrying empty page {p}/{total_pages}...", flush=True)
+            p_id, r = fetch_page(p)
+            pages_dict[p_id] = r
+
     rows = []
     for p in range(1, total_pages + 1):
         rows.extend(pages_dict.get(p, []))
     if verbose:
-        print(f"[step1] completed fetching {len(rows)} settlements across {total_pages} pages", flush=True)
+        print(f"[step1] completed fetching {len(rows)}/{total} settlements across {total_pages} pages", flush=True)
 
     if rows:
         try:
@@ -330,18 +359,58 @@ DETAILS_CACHE = {}
 SELF_TXN_CACHE = {}
 PROD_LIST_CACHE = {}
 USER_PROFILE_CACHE = {}
+PROFILE_CACHE_FILE = os.path.join(HERE, "reports", "creator_profiles_cache.json")
+
+
+def save_profile_cache():
+    try:
+        os.makedirs(os.path.dirname(PROFILE_CACHE_FILE), exist_ok=True)
+        with open(PROFILE_CACHE_FILE, "w", encoding="utf-8") as f:
+            json.dump(USER_PROFILE_CACHE, f, indent=2)
+    except Exception:
+        pass
+
 
 def seed_caches_from_previous_audits():
-    """Pre-seed DETAILS_CACHE, USER_PROFILE_CACHE, and SELF_TXN_CACHE from previous audit files."""
+    """Pre-seed DETAILS_CACHE, USER_PROFILE_CACHE, and SELF_TXN_CACHE from previous audit files and persistent cache."""
     reports_dir = os.path.join(HERE, "reports")
     if not os.path.exists(reports_dir):
         return
+
+    # 1. Load persistent profile cache if exists
+    if os.path.exists(PROFILE_CACHE_FILE):
+        try:
+            with open(PROFILE_CACHE_FILE, "r", encoding="utf-8") as f:
+                saved_profs = json.load(f)
+                USER_PROFILE_CACHE.update(saved_profs)
+        except Exception:
+            pass
+
+    # 2. Load from Non-SEBI ledger if exists
+    ledger_path = os.path.join(HERE, "data", "non_sebi_creators_ledger.json")
+    if os.path.exists(ledger_path):
+        try:
+            with open(ledger_path, "r", encoding="utf-8") as f:
+                led = json.load(f)
+                for cid, c in led.get("creators", {}).items():
+                    u = c.get("username")
+                    if u and cid and u not in USER_PROFILE_CACHE:
+                        USER_PROFILE_CACHE[u] = {
+                            "creatorId": cid,
+                            "username": u,
+                            "email": c.get("email"),
+                            "phone": c.get("phone"),
+                            "category": c.get("onboardingVertical")
+                        }
+        except Exception:
+            pass
+
+    # 3. Load from ALL historical audit files in reports
     files = [f for f in os.listdir(reports_dir) if f.startswith("audit_") and f.endswith(".json") and not f.startswith("audit_checkpoint_")]
     files.sort(reverse=True)
     seeded_details = 0
-    seeded_profiles = 0
     seeded_st = 0
-    for fn in files[:5]:
+    for fn in files:
         fp = os.path.join(reports_dir, fn)
         try:
             with open(fp, "r", encoding="utf-8") as f:
@@ -369,7 +438,6 @@ def seed_caches_from_previous_audits():
                         "phone": r.get("phone"),
                         "category": r.get("category"),
                     }
-                    seeded_profiles += 1
                 if cid and cid not in SELF_TXN_CACHE and r.get("selfTransactions"):
                     SELF_TXN_CACHE[cid] = {
                         "self": r.get("selfTransactions", []),
@@ -378,7 +446,9 @@ def seed_caches_from_previous_audits():
                     seeded_st += 1
         except Exception:
             pass
-    print(f"[cache] Pre-seeded {seeded_details} settlements, {seeded_profiles} creator profiles, and {seeded_st} self-transaction histories", flush=True)
+
+    save_profile_cache()
+    print(f"[cache] Pre-seeded {seeded_details} settlements, {len(USER_PROFILE_CACHE)} creator profiles, and {seeded_st} self-transaction histories", flush=True)
 
 
 def resolve_settlement_details(settlement_id, token):
@@ -402,6 +472,16 @@ def resolve_settlement_details(settlement_id, token):
         "currentStatus": sett.get("currentStatus"),
     }
     DETAILS_CACHE[settlement_id] = res
+    uname = res.get("username")
+    cid = res.get("creatorId")
+    if uname and cid:
+        USER_PROFILE_CACHE[uname] = {
+            "creatorId": cid,
+            "username": uname,
+            "email": res.get("email"),
+            "phone": res.get("phone"),
+            "category": res.get("categoryOfBusiness")
+        }
     return res
 
 
@@ -746,7 +826,7 @@ def main():
     os.makedirs(reports_dir, exist_ok=True)
     ap.add_argument("--out", default=reports_dir)
     ap.add_argument("--limit", type=int, default=0, help="limit creators (0=all)")
-    ap.add_argument("--workers", type=int, default=4)
+    ap.add_argument("--workers", type=int, default=10)
     ap.add_argument("--date", default="", help="report date label (YYYY-MM-DD)")
     args = ap.parse_args()
 
@@ -825,6 +905,25 @@ def main():
                     print(f"  audited {done}/{total_count}", flush=True)
                     save_checkpoint()
 
+    # Recovery pass: verify 100% of settlements are in results AND retry any errored records
+    done_sids = {r.get("settlementId") for r in results if r.get("settlementId") and not r.get("error")}
+    to_retry = [r for r in settlements if (r.get("_id") or r.get("settlementId")) not in done_sids]
+    if to_retry:
+        print(f"[recovery] {len(to_retry)} settlements missed or had transient errors. Running recovery pass...", flush=True)
+        retry_sids = {r.get("_id") or r.get("settlementId") for r in to_retry}
+        results = [r for r in results if r.get("settlementId") not in retry_sids]
+        for r in to_retry:
+            try:
+                res = audit_one(r, token)
+                results.append(res)
+            except Exception as e:
+                sid = r.get("_id") or r.get("settlementId")
+                results.append({"settlementId": sid, "username": r.get("username"), "error": f"exception:{e}"})
+        save_checkpoint()
+
+    # Persist resolved profile cache for future audits
+    save_profile_cache()
+
     # Aggregate findings
     self_txn = [r for r in results if r.get("selfTransactions")]
     for r in self_txn:
@@ -855,8 +954,11 @@ def main():
     with open(run_json, "w", encoding="utf-8") as f:
         json.dump({"report": report, "allResults": results}, f, indent=2)
 
-    # Clean up checkpoint on complete success
-    if os.path.exists(checkpoint_file):
+    # Reconciliation check & checkpoint cleanup
+    is_100_percent = len(results) >= total_count
+    print(f"[reconciliation] Source: {total_count} | Audited: {len(results)} | 100% Processed: {is_100_percent}", flush=True)
+
+    if is_100_percent and os.path.exists(checkpoint_file):
         try:
             os.remove(checkpoint_file)
         except Exception:

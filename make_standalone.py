@@ -14,17 +14,37 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 
 with open(os.path.join(HERE, "index.html"), encoding="utf-8") as f:
     html = f.read()
-with open(os.path.join(HERE, "data.json"), encoding="utf-8") as f:
+data_path = os.path.join(HERE, "reports", "data.json") if os.path.exists(os.path.join(HERE, "reports", "data.json")) else os.path.join(HERE, "data.json")
+with open(data_path, encoding="utf-8") as f:
     data = json.load(f)
 embedded = "const EMBEDDED_DATA = " + json.dumps(data, ensure_ascii=False) + ";\n"
-embedded += "DATA = EMBEDDED_DATA; init();\n"
+embedded += """DATA = EMBEDDED_DATA;
+const onboarders = [...new Set((DATA.creators || []).map(c => c.onboardedBy).filter(Boolean))].sort();
+const sel = document.getElementById('onboardFilter');
+if (sel) {
+  onboarders.forEach(o => {
+    const opt = document.createElement('option');
+    opt.value = o;
+    opt.textContent = o;
+    sel.appendChild(opt);
+  });
+}
+render();"""
 
 new_html, n = re.subn(
-    r"function fatal\(html\)\{.*?\n\}\nif\(location\.protocol.*?\n\}\n</script>",
-    embedded + "</script>",
+    r"// Initial Data Load with static GitHub Pages fallback & cache-busting.*?\n\s*\.catch\(err => \{.*?\n\s*\}\);",
+    embedded,
     html,
     flags=re.S,
 )
+if n != 1:
+    # Fallback to general fetch block replacement
+    new_html, n = re.subn(
+        r"const isStatic = window\.location\.protocol === 'file:'.*?\n\s*\}\);",
+        embedded,
+        html,
+        flags=re.S,
+    )
 if n != 1:
     raise SystemExit("Could not find bootstrap block to replace (n=%d). "
                      "index.html may have changed." % n)

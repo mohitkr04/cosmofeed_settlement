@@ -13,9 +13,8 @@ Serves:
   GET /api/nolink?username= -> live-checks one creator's public page and
                                reports whether the page/link works.
 
-To refresh the underlying data (re-run the self-transaction sweep):
-    python3 build_data.py            # full
-    python3 build_data.py --limit 100
+To refresh the underlying data (run the daily audit & compliance sweep):
+    python daily_automation.py --no-push
 """
 import os
 import json

@@ -5,17 +5,15 @@ on:
     branches: [ main ]
   schedule:
     # -------------------------------------------------------------
-    # 1. MORNING CADENCE (Runs automatically before 08:00 AM IST)
+    # 1. MORNING CADENCE (Runs and finishes before 05:00 AM IST SLA)
     # Note: GitHub Actions cron uses UTC (IST = UTC + 5:30)
-    # - 05:30 AM IST (00:00 UTC) - Initial morning batch
-    # - 06:30 AM IST (01:00 UTC) - Secondary morning audit sweep
-    # - 07:00 AM IST (01:30 UTC) - Verification sweep
-    # - 07:30 AM IST (02:00 UTC) - Final pre-8 AM seal & publish
+    # - 03:30 AM IST (22:00 UTC) - Initial early morning batch
+    # - 04:00 AM IST (22:30 UTC) - Secondary morning audit sweep
+    # - 04:30 AM IST (23:00 UTC) - Final pre-5 AM seal & publish (Ready before 05:00 AM)
     # -------------------------------------------------------------
-    - cron: '0 0 * * *'
-    - cron: '0 1 * * *'
-    - cron: '30 1 * * *'
-    - cron: '0 2 * * *'
+    - cron: '0 22 * * *'
+    - cron: '30 22 * * *'
+    - cron: '0 23 * * *'
     # -------------------------------------------------------------
     # 2. CONTINUOUS DAYTIME UPDATES (Every 2 hours during business hours)
     # Captures newly created settlements submitted throughout the day:

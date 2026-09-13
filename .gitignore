@@ -13,5 +13,6 @@ env/
 
 # Temporary scratchpad & logs
 scratch/
+dashboard.html
 *.log
 !reports/daily_automation.log

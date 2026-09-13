@@ -97,7 +97,7 @@
     "6974ad7974b37200132b6ada": {
       "creatorId": "6974ad7974b37200132b6ada",
       "username": "whatsyoursignsays",
-      "pending": 1672.0,
+      "pending": 2820.0,
       "emptyProductsCount": 4,
       "exampleTitle": "Raksha Bandhan Special Crystal Rakhi Collection",
       "productUrl": "https://superprofile.bio/vp/6a71f4819e13ea0013efeb9b",
@@ -183,17 +183,6 @@
       "imgs": 1,
       "productUrl": "https://superprofile.bio/vp/6a98126769da9c0013ce3b39",
       "productId": "6a98126769da9c0013ce3b39"
-    },
-    "6798a2df50fda20013a8a41f": {
-      "creatorId": "6798a2df50fda20013a8a41f",
-      "username": "coachabhishek",
-      "pending": 1959.0,
-      "emptyProductsCount": 1,
-      "exampleTitle": "1:1 call min 60 min",
-      "descChars": 8,
-      "imgs": 1,
-      "productUrl": "https://superprofile.bio/vp/67e457989e997b0013e8699e",
-      "productId": "67e457989e997b0013e8699e"
     },
     "64ae7fc478944e0020850fb4": {
       "creatorId": "64ae7fc478944e0020850fb4",
@@ -289,17 +278,6 @@
       "productUrl": "https://superprofile.bio/vp/69b58c5c5c399f0013d859c7",
       "productId": "69b58c5c5c399f0013d859c7"
     },
-    "68c5290b7fa23b00131bbce5": {
-      "creatorId": "68c5290b7fa23b00131bbce5",
-      "username": "faceyogabyswathi",
-      "pending": 975.0,
-      "emptyProductsCount": 5,
-      "exampleTitle": "group class",
-      "descChars": 430,
-      "imgs": 1,
-      "productUrl": "https://superprofile.bio/vp/69b7fff955e8c0001363e3fd",
-      "productId": "69b7fff955e8c0001363e3fd"
-    },
     "6a4fbc2af615110013fb9ef2": {
       "creatorId": "6a4fbc2af615110013fb9ef2",
       "username": "mukeshkumar1",
@@ -358,7 +336,7 @@
     "64d5d53a0fd19f001e95c6c8": {
       "creatorId": "64d5d53a0fd19f001e95c6c8",
       "username": "samratkhatwe",
-      "pending": 2771.0,
+      "pending": 4760.0,
       "emptyProductsCount": 1,
       "exampleTitle": "365 LOVE POSITIONS YOU MUST TRY BEFORE YOU DIE ",
       "productUrl": "https://superprofile.bio/vp/6a0c53bb1f32e300145cb59d",
@@ -727,7 +705,7 @@
     "6498736ca1373e002ae9ea7d": {
       "creatorId": "6498736ca1373e002ae9ea7d",
       "username": "theinfinitystore",
-      "pending": 572.0,
+      "pending": 278.0,
       "emptyProductsCount": 1,
       "exampleTitle": "OPD Mastery ebook (Edition-2026)",
       "productUrl": "https://superprofile.bio/vp/6a29c667f9de8900132df2c7",
@@ -791,7 +769,42 @@
           "reason": "Payment page exists, but no product/content link is attached"
         }
       ]
+    },
+    "67bd9a2130c188001372049d": {
+      "creatorId": "67bd9a2130c188001372049d",
+      "username": "olympiadindia2",
+      "pending": 10708.0,
+      "emptyProductsCount": 4,
+      "exampleTitle": "SMC 2026 - Indus International School Pune",
+      "productUrl": "https://superprofile.bio/vp/6a72cd8a2b3c7000134853f0",
+      "productId": "6a72cd8a2b3c7000134853f0",
+      "products": [
+        {
+          "productId": "6a72cd8a2b3c7000134853f0",
+          "title": "SMC 2026 - Indus International School Pune",
+          "productUrl": "https://superprofile.bio/vp/6a72cd8a2b3c7000134853f0",
+          "reason": "Payment page exists, but no product/content link is attached"
+        },
+        {
+          "productId": "6a70433099878a0013b98baf",
+          "title": "SMC 2026 - City Montessori School",
+          "productUrl": "https://superprofile.bio/vp/6a70433099878a0013b98baf",
+          "reason": "Payment page exists, but no product/content link is attached"
+        },
+        {
+          "productId": "6a7433497eaa3900137a4fce",
+          "title": "SMC 2026 - JAMNABAI NARSEE SCHOOL",
+          "productUrl": "https://superprofile.bio/vp/6a7433497eaa3900137a4fce",
+          "reason": "Payment page exists, but no product/content link is attached"
+        },
+        {
+          "productId": "6a43be9f179e0a0013bb85c5",
+          "title": "SMC 2026 - Registration Form",
+          "productUrl": "https://superprofile.bio/vp/6a43be9f179e0a0013bb85c5",
+          "reason": "Payment page exists, but no product/content link is attached"
+        }
+      ]
     }
   },
-  "count": 66
+  "count": 65
 }
